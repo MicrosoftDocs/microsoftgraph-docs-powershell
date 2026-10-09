@@ -84,16 +84,6 @@ Update the navigation property managedDeviceEncryptionStates in deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -914,6 +904,7 @@ POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddeviceencryptionstate)
+
 
 
 
