@@ -83,8 +83,9 @@ Update conversation thread
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgGroupThread Cmdlet.
+
 
 ## PARAMETERS
 

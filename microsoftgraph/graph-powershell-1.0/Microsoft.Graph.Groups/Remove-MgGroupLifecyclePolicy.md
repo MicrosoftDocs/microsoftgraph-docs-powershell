@@ -74,12 +74,17 @@ Delete a groupLifecyclePolicy.
 | Application | Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
+
+```
+This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 
