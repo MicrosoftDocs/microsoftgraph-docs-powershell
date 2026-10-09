@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the map of a building in IMDF format.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgPlaceAsBuildingMap -PlaceId $placeId
+
+```
+This example shows how to use the Get-MgPlaceAsBuildingMap Cmdlet.
+
 
 ## PARAMETERS
 

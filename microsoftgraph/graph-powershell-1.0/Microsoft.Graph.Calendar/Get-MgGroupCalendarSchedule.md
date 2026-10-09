@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -598,6 +588,7 @@ See below for more possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule)
 - [](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
+
 
 
 
