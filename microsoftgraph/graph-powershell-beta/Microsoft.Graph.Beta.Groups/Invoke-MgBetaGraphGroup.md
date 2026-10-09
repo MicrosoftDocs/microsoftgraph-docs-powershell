@@ -58,12 +58,17 @@ Supported for Microsoft 365 groups only.
 | Application | Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Invoke-MgBetaGraphGroup -GroupId $groupId
+
+```
+This example shows how to use the Invoke-MgBetaGraphGroup Cmdlet.
+
 
 ## PARAMETERS
 
