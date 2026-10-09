@@ -794,7 +794,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -885,7 +885,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>: deviceConfigurationDeviceOverview
+DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -897,7 +897,7 @@ Read-only.
   [PendingCount <Int32?>]: Number of pending devices
   [SuccessCount <Int32?>]: Number of succeeded devices
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -941,7 +941,7 @@ Read-only.
   [UserDisplayName <String>]: User name of the DevicePolicyStatus.
   [UserPrincipalName <String>]: UserPrincipalName.
 
-USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
+USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -957,3 +957,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

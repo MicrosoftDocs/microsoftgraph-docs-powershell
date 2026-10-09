@@ -639,7 +639,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphLocalizedNotificationMessage>: The text content of a Notification Message Template for the specified locale.
+BODYPARAMETER `<IMicrosoftGraphLocalizedNotificationMessage>`: The text content of a Notification Message Template for the specified locale.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -651,7 +651,7 @@ To unset, set this property to true on another Localized Notification Message.
   [MessageTemplate <String>]: The Message Template content.
   [Subject <String>]: The Message Template Subject.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -690,3 +690,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
