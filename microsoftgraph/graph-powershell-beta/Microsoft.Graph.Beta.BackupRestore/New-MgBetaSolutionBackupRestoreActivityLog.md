@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to activityLogs for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActivityType
@@ -560,6 +550,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreactivitylog)
+
 
 
 

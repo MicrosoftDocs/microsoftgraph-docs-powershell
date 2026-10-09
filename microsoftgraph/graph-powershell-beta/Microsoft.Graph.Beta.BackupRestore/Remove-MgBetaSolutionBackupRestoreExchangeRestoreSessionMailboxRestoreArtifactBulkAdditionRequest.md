@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Delete a mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -459,6 +449,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifactbulkadditionrequest)
 - [](https://learn.microsoft.com/graph/api/mailboxrestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta)
+
 
 
 

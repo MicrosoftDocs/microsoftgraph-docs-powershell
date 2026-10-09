@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Get the statistics that correspond to the specified policy ID of a backupPolicyReport.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -347,6 +337,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy)
 - [](https://learn.microsoft.com/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta)
+
 
 
 
