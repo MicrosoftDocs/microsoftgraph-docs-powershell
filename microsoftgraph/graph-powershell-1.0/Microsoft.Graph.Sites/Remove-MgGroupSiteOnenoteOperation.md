@@ -467,7 +467,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenoteoperation)
+- [Remove-MgGroupSiteOnenoteOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenoteoperation)
 
 
 

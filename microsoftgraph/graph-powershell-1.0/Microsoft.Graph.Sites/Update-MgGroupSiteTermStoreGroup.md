@@ -1051,7 +1051,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroup)
+- [Update-MgGroupSiteTermStoreGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroup)
 
 
 

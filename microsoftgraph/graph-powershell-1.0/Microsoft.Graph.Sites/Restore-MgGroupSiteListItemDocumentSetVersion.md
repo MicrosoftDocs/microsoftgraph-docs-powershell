@@ -489,8 +489,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemdocumentsetversion)
-- [](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
+- [Restore-MgGroupSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemdocumentsetversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
 
 
 

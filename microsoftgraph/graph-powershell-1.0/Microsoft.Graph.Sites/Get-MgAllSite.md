@@ -441,8 +441,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
-- [](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
+- [Get-MgAllSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
 
 
 

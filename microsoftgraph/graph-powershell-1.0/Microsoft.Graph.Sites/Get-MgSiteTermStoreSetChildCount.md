@@ -567,7 +567,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildcount)
+- [Get-MgSiteTermStoreSetChildCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildcount)
 
 
 

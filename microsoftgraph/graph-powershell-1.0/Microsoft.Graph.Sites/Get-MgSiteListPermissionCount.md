@@ -410,7 +410,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistpermissioncount)
+- [Get-MgSiteListPermissionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistpermissioncount)
 
 
 
