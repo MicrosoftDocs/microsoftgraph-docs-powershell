@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 The binary content stream for the attachment.
 Use the Upload content and Download content methods to access it.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -529,6 +519,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycasemanagementcaseattachmentcontent)
+
 
 
 

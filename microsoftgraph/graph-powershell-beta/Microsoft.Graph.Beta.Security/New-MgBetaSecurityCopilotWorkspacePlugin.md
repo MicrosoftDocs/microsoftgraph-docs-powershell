@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to plugins for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -884,6 +874,7 @@ SETTINGS <IMicrosoftGraphSecurityCopilotPluginSetting[]>: Settings for the plugi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspaceplugin)
+
 
 
 
