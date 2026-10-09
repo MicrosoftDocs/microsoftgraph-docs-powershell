@@ -53,18 +53,28 @@ You can get the id of a callRecord in two ways:\r* Subscribe to change notificat
 The call record is available only after the associated call is completed.
 
 ## EXAMPLES
+### Example 1: Get basic details
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
 
-### EXAMPLE 2
+```
+This example will get basic details
+
+### Example 2: Get full details
+
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
+Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
+
+```
+This example will get full details
+
 
 ## PARAMETERS
 
