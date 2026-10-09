@@ -15,6 +15,9 @@ title: Get-MgBetaGroupOwnerAsGroup
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -17,6 +17,9 @@ Read the properties of an onPremisesSyncBehavior object.
 The isCloudManaged property indicates whether the object's source of authority is set to the cloud.
 If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnPremiseSyncBehavior?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaRetryGroupServiceProvisioning
 
 Retry the group service provisioning.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retry (Default)
