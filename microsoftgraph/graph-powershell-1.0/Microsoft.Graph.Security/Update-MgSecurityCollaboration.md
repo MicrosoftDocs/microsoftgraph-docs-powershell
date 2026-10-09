@@ -655,7 +655,7 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycollaboration)
+- [Update-MgSecurityCollaboration](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycollaboration)
 
 
 

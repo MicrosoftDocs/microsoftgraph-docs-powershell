@@ -491,8 +491,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasemember)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-1.0)
+- [Remove-MgSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasemember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-1.0)
 
 
 

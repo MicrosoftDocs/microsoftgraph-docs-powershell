@@ -477,8 +477,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggerretentionevent)
-- [](https://learn.microsoft.com/graph/api/security-retentionevent-delete?view=graph-rest-1.0)
+- [Remove-MgSecurityTriggerRetentionEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggerretentionevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-delete?view=graph-rest-1.0)
 
 
 

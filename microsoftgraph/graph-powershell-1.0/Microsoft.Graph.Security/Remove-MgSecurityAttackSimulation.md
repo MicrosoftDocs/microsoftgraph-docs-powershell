@@ -477,8 +477,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation)
-- [](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0)
+- [Remove-MgSecurityAttackSimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0)
 
 
 

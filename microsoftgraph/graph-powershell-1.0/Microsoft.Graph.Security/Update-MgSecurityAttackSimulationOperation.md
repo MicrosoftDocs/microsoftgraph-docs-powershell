@@ -776,7 +776,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationoperation)
+- [Update-MgSecurityAttackSimulationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationoperation)
 
 
 

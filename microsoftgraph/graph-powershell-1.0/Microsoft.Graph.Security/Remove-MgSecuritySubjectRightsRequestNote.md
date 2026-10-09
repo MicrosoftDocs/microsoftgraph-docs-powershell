@@ -477,7 +477,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysubjectrightsrequestnote)
+- [Remove-MgSecuritySubjectRightsRequestNote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysubjectrightsrequestnote)
 
 
 
