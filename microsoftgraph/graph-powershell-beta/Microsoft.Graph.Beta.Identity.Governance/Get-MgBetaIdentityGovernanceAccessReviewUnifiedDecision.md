@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecision
 
 Represents the unified (vNext) access review decisions on an instance of a review.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewUnifiedDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewUnifiedDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

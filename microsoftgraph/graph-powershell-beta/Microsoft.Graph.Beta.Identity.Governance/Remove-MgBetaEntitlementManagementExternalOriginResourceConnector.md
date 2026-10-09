@@ -15,6 +15,9 @@ title: Remove-MgBetaEntitlementManagementExternalOriginResourceConnector
 
 Delete an externalOriginResourceConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementExternalOriginResourceConnector](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementExternalOriginResourceConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

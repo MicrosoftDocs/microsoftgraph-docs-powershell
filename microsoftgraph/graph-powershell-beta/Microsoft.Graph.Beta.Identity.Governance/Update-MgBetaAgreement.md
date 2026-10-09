@@ -15,6 +15,9 @@ title: Update-MgBetaAgreement
 
 Update entity in agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

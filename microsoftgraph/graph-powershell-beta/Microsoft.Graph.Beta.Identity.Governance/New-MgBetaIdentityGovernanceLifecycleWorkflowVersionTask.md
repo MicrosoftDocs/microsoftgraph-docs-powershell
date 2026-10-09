@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask
 
 Create new navigation property to tasks for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

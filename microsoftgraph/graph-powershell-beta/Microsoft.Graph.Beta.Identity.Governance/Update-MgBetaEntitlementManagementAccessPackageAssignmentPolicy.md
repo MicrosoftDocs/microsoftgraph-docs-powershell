@@ -15,6 +15,9 @@ title: Update-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaEntitlementManagementConnectedOrganization
 
 Create a new connectedOrganization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateWithDomainIdentitySource (Default)

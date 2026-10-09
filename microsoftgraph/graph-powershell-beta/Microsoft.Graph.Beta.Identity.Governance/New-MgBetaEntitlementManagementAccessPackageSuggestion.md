@@ -15,6 +15,9 @@ title: New-MgBetaEntitlementManagementAccessPackageSuggestion
 
 Create new navigation property to accessPackageSuggestions for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageSuggestion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageSuggestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

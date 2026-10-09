@@ -17,6 +17,9 @@ The administrative units in the scope of the workflow.
 Optional.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

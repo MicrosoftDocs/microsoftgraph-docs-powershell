@@ -17,6 +17,9 @@ Validate the tasks configured in a workflow to check for configuration errors.
 This action identifies any tasks that would fail during execution, allowing you to fix issues before running the workflow.
 Returns an empty collection if no task failures are detected.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowTaskFailure](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowTaskFailure?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Preview (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementExternalOriginResourceConnector
 
 Represents the connectors used to communicate with external resource systems.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementExternalOriginResourceConnector](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementExternalOriginResourceConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaRoleManagementEntitlementManagementResourceNamespace
 
 Delete navigation property resourceNamespaces for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

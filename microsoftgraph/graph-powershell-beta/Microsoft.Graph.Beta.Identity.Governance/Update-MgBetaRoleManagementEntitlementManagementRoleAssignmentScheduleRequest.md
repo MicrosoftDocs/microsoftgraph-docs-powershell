@@ -15,6 +15,9 @@ title: Update-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleReq
 
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
