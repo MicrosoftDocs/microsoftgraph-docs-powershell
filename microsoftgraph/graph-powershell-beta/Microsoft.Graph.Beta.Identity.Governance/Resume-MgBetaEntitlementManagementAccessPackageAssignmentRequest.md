@@ -74,6 +74,14 @@ Resume a user's access package request after waiting for a callback from a custo
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

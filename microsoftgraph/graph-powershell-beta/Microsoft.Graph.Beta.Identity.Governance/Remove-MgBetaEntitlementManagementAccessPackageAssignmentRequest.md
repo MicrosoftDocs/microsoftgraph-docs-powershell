@@ -50,6 +50,14 @@ Delete an accessPackageAssignmentRequest object.
 This request can be made to remove a denied or completed request.
 You can't delete an access package assignment request if it has any accessPackageAssignment objects.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
