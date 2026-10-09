@@ -528,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSetting>: Setting instance within policy
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSetting>`: Setting instance within policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -576,7 +576,7 @@ Applicable for reusable setting.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [SettingInstanceTemplateId <String>]: Setting instance template id
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -689,7 +689,7 @@ Applicable for reusable setting.
   [Version <String>]: Item Version
   [Visibility <DeviceManagementConfigurationSettingVisibility?>]: Supported setting types
 
-SETTINGINSTANCE <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>: Setting instance within policy
+SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`: Setting instance within policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SettingDefinitionId <String>]: Setting Definition Id
   [SettingInstanceTemplateReference <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference>]: Setting instance template reference information
@@ -700,3 +700,25 @@ SETTINGINSTANCE <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>: S
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
