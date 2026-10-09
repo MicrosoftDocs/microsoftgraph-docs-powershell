@@ -15,6 +15,9 @@ title: New-MgDeviceManagementTermAndCondition
 
 Create new navigation property to termsAndConditions for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

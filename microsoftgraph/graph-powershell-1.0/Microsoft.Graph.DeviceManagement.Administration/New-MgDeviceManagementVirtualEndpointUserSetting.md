@@ -15,6 +15,9 @@ title: New-MgDeviceManagementVirtualEndpointUserSetting
 
 Create a new cloudPcUserSetting object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
