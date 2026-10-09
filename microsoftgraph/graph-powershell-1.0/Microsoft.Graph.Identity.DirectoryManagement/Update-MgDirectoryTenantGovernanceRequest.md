@@ -79,16 +79,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property governanceRequests in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11567,6 +11557,7 @@ POLICYSNAPSHOT `<IMicrosoftGraphRelationshipPolicy>`: relationshipPolicy
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerequest)
+
 
 
 
