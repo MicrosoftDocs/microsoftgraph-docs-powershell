@@ -151,7 +151,7 @@ HelpMessage: ''
 
 ### -BargeInAllowed
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -254,7 +254,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-.
+
 
 ```yaml
 Type: System.String
@@ -366,7 +366,7 @@ HelpMessage: ''
 
 ### -InitialSilenceTimeoutInSeconds
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -421,7 +421,7 @@ HelpMessage: ''
 
 ### -MaxRecordDurationInSeconds
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -448,7 +448,7 @@ HelpMessage: ''
 
 ### -MaxSilenceTimeoutInSeconds
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -475,7 +475,7 @@ HelpMessage: ''
 
 ### -PlayBeep
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -502,7 +502,7 @@ HelpMessage: ''
 
 ### -Prompts
 
-.
+
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrompt[]
@@ -614,7 +614,7 @@ HelpMessage: ''
 
 ### -StopTones
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -641,7 +641,7 @@ HelpMessage: ''
 
 ### -StreamWhileRecording
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
