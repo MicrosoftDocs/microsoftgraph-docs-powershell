@@ -613,8 +613,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelclassificationresult)
-- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
+- [Test-MgBetaGroupSiteInformationProtectionPolicyLabelClassificationResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelclassificationresult)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
 
 
 

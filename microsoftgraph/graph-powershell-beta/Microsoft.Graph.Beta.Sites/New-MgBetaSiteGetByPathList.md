@@ -57872,7 +57872,7 @@ For more information, see RFC 8291 Section 3.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathlist)
+- [New-MgBetaSiteGetByPathList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathlist)
 
 
 

@@ -1964,8 +1964,8 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn)
-- [](https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-beta)
+- [New-MgBetaSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttypecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-beta)
 
 
 

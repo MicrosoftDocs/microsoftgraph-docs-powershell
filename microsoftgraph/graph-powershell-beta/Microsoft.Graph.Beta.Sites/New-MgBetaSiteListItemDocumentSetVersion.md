@@ -945,8 +945,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion)
-- [](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-beta)
+- [New-MgBetaSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-beta)
 
 
 

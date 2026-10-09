@@ -604,7 +604,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/confirm-mgbetagroupsiteinformationprotectionsignature)
+- [Confirm-MgBetaGroupSiteInformationProtectionSignature](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/confirm-mgbetagroupsiteinformationprotectionsignature)
 
 
 
