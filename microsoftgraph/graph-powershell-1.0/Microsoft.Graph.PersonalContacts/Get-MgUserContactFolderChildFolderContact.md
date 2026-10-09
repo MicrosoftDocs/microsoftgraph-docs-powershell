@@ -18,6 +18,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

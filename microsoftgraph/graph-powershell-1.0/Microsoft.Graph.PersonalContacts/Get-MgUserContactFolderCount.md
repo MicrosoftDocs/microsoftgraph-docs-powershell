@@ -15,6 +15,9 @@ title: Get-MgUserContactFolderCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
