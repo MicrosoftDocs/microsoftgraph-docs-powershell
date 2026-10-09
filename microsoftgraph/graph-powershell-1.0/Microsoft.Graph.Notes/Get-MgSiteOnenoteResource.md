@@ -568,7 +568,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresource)
+- [Get-MgSiteOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresource)
 
 
 

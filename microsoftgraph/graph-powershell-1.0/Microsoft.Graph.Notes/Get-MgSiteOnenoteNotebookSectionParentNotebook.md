@@ -398,7 +398,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksectionparentnotebook)
+- [Get-MgSiteOnenoteNotebookSectionParentNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksectionparentnotebook)
 
 
 

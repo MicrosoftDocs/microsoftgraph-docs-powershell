@@ -1336,7 +1336,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook)
+- [New-MgUserOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook)
 
 
 

@@ -1518,7 +1518,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroup)
+- [New-MgUserOnenoteSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroup)
 
 
 

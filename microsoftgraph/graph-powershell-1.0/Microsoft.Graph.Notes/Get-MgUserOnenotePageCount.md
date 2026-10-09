@@ -358,7 +358,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount)
+- [Get-MgUserOnenotePageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount)
 
 
 

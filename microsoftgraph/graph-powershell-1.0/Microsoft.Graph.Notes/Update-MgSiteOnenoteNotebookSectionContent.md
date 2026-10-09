@@ -1443,7 +1443,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotenotebooksectioncontent)
+- [Update-MgSiteOnenoteNotebookSectionContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotenotebooksectioncontent)
 
 
 
