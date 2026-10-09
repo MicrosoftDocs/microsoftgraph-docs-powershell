@@ -15,6 +15,9 @@ title: New-MgBookingBusinessAppointment
 
 Create a new bookingAppointment for the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
