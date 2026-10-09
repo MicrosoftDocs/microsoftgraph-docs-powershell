@@ -139,7 +139,7 @@ HelpMessage: ''
 
 ### -BalancingAccountId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ HelpMessage: ''
 
 ### -BalancingAccountNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ HelpMessage: ''
 
 ### -Code
 
-.
+
 
 ```yaml
 Type: System.String
@@ -318,7 +318,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -408,7 +408,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -490,7 +490,7 @@ HelpMessage: ''
 
 ### -JournalLines
 
-.
+
 To construct, see NOTES section for JOURNALLINES properties and create a hash table.
 
 ```yaml
@@ -518,7 +518,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime

@@ -222,7 +222,7 @@ HelpMessage: ''
 
 ### -ContentType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ HelpMessage: ''
 
 ### -Height
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -339,7 +339,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -501,7 +501,7 @@ HelpMessage: ''
 
 ### -Width
 
-.
+
 
 ```yaml
 Type: System.Int32
