@@ -324,7 +324,7 @@ HelpMessage: ''
 
 ### -GranularMailboxRestoreArtifacts
 
-.
+
 To construct, see NOTES section for GRANULARMAILBOXRESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
