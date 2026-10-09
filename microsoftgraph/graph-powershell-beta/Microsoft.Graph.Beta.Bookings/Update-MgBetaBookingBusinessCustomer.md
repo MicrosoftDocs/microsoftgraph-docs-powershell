@@ -920,7 +920,7 @@ PHONES <IMicrosoftGraphPhone[]>: Phone numbers associated with the customer, inc
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
+- [Update-MgBetaBookingBusinessCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
 
 
 
