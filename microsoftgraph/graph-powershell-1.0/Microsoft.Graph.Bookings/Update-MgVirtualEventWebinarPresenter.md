@@ -665,8 +665,8 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarpresenter)
-- [](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-1.0)
+- [Update-MgVirtualEventWebinarPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarpresenter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-1.0)
 
 
 

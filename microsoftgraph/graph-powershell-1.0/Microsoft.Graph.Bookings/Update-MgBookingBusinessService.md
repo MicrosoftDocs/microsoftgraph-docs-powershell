@@ -1334,8 +1334,8 @@ Use the email address specified in the email property of the bookingBusiness ent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice)
-- [](https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0)
+- [Update-MgBookingBusinessService](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingservice-update?view=graph-rest-1.0)
 
 
 

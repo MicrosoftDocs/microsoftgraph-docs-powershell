@@ -593,9 +593,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
+- [Get-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
 
 
 
