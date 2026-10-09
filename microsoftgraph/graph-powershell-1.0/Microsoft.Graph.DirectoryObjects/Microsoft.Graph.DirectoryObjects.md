@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DirectoryObjects
-Module Guid: f005c5e3-79f4-4c69-9516-69cca66bb314
+Module Guid: 99a4745b-6176-4bfd-ae2f-2aa568ddaa97
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,23 +36,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Test-MgDirectoryObjectProperty](Test-MgDirectoryObjectProperty.md)
 
 ### [Update-MgDirectoryObject](Update-MgDirectoryObject.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
