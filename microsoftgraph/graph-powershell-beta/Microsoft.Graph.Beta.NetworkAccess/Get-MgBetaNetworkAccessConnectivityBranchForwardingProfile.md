@@ -590,8 +590,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchforwardingprofile)
-- [](https://learn.microsoft.com/graph/api/networkaccess-branchsite-list-forwardingprofiles?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivitybranchforwardingprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-branchsite-list-forwardingprofiles?view=graph-rest-beta)
 
 
 

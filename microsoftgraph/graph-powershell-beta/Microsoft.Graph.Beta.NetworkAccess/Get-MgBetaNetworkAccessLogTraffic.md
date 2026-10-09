@@ -568,8 +568,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtraffic)
-- [](https://learn.microsoft.com/graph/api/networkaccess-logs-list-traffic?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessLogTraffic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtraffic)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-logs-list-traffic?view=graph-rest-beta)
 
 
 
