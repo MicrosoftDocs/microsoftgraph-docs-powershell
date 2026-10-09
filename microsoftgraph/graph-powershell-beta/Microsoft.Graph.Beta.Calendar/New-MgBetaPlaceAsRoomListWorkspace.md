@@ -15,6 +15,9 @@ title: New-MgBetaPlaceAsRoomListWorkspace
 
 Create new navigation property to workspaces for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsRoomListWorkspace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

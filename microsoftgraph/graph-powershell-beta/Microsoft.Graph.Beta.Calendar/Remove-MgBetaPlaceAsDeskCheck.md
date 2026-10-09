@@ -15,6 +15,9 @@ title: Remove-MgBetaPlaceAsDeskCheck
 
 Delete navigation property checkIns for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsDeskCheck](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsDeskCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

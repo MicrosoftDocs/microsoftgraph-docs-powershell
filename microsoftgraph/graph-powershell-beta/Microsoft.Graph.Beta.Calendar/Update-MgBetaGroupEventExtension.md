@@ -15,6 +15,9 @@ title: Update-MgBetaGroupEventExtension
 
 Update the navigation property extensions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
