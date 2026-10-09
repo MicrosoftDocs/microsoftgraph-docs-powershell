@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewunifiedinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgIdentityGovernanceAccessReviewUnifiedInstance
 ---
@@ -17,9 +17,6 @@ Stop a currently active accessReviewInstance.
 After the access review instance stops, the instance status is marked as Completed, the reviewers can no longer give input, and the access review decisions are applied.
 Stopping an instance will not stop future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ Stop a currently active accessReviewInstance.
 After the access review instance stops, the instance status is marked as Completed, the reviewers can no longer give input, and the access review decisions are applied.
 Stopping an instance will not stop future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -362,7 +369,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -445,28 +452,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgIdentityGovernanceAccessReviewUnifiedInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewunifiedinstance)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewunifiedinstance)
+- [](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0)

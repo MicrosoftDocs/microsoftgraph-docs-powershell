@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupresource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernancePrivilegedAccessGroupResource
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernancePrivilegedAccessGroupResource
 ## SYNOPSIS
 
 Create new navigation property to resources for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernancePrivilegedAccessGroupResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to resources for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -376,27 +383,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernancePrivilegedAccessGroupResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupresource)

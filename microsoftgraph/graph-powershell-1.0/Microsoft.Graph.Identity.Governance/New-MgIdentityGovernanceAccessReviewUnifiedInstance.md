@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewunifiedinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewUnifiedInstance
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceAccessReviewUnifiedInstance
 ## SYNOPSIS
 
 Create new navigation property to instances for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to instances for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -602,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstance>: accessReviewInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -950,27 +957,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceAccessReviewUnifiedInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewunifiedinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewunifiedinstance)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstancedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
 ## SYNOPSIS
 
 Update the navigation property decisions in identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -86,6 +83,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property decisions in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -963,7 +970,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+APPLIEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -972,7 +979,7 @@ For example, in the access reviews decisions API, this property might record the
   [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
   [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstanceDecisionItem>`: accessReviewInstanceDecisionItem
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstanceDecisionItem>: accessReviewInstanceDecisionItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1043,7 +1050,7 @@ Read-only.
 Supports $select.
 Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1129,21 +1136,21 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
-PERMISSION `<IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>`: accessReviewInstanceDecisionItemPermission
+PERMISSION <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>: accessReviewInstanceDecisionItemPermission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: 
   [DisplayName <String>]: 
   [Id <String>]: 
   [Type <String>]: 
 
-PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
+PRINCIPAL <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
+RESOURCE <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: 
   [DisplayName <String>]: Display name of the resource
@@ -1151,7 +1158,7 @@ RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessRevi
   [Type <String>]: Type of resource.
 Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
 
-REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+REVIEWEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1163,27 +1170,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstancedecision)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstancedecision)
