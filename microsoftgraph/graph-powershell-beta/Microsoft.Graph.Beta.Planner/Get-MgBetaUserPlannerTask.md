@@ -53,13 +53,18 @@ Returns the plannerTasks assigned to the user.
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerTask -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 
