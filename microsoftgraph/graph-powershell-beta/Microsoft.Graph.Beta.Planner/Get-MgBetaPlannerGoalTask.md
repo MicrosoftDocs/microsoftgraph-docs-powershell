@@ -64,16 +64,6 @@ The tasks associated with the goal.
 This relationship doesn't support direct retrieval or $expand.
 To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -578,6 +568,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannergoaltask)
+
 
 
 
