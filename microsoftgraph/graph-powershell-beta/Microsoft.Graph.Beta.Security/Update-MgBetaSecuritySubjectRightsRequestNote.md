@@ -15,6 +15,9 @@ title: Update-MgBetaSecuritySubjectRightsRequestNote
 
 Update the navigation property notes in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

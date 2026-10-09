@@ -16,6 +16,9 @@ title: New-MgBetaSecurityAlertV2
 Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
 When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperat
 
 Operation entity that represents the latest indexing for the non-custodial data source.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

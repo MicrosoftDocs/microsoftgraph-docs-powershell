@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostComponentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostComponentCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

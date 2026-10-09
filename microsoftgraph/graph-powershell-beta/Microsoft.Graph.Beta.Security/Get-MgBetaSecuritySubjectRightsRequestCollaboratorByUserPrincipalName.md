@@ -15,6 +15,9 @@ title: Get-MgBetaSecuritySubjectRightsRequestCollaboratorByUserPrincipalName
 
 Get collaborators from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestCollaboratorByUserPrincipalName](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestCollaboratorByUserPrincipalName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

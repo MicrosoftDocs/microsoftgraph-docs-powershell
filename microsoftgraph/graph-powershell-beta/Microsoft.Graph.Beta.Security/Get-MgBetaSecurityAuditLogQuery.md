@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAuditLogQuery
 
 Read the properties and relationships of an auditLogQuery object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLogQuery](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLogQuery?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

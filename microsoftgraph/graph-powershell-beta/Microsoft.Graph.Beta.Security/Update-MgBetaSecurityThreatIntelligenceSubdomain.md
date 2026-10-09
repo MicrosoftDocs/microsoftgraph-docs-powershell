@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityThreatIntelligenceSubdomain
 
 Update the navigation property subdomains in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

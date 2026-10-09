@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityCaseEdiscoveryCaseMember
 
 Remove an ediscoveryCaseMember from an ediscoveryCase.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

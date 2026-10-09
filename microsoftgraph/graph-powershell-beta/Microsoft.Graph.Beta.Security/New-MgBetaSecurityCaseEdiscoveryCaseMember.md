@@ -16,6 +16,9 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

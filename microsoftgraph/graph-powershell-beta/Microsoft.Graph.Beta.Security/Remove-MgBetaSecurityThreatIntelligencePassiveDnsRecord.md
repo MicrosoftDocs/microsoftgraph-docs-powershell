@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityThreatIntelligencePassiveDnsRecord
 
 Delete navigation property passiveDnsRecords for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

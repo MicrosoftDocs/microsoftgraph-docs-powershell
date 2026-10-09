@@ -16,6 +16,9 @@ title: Close-MgBetaSecurityCaseEdiscoveryCase
 Close an eDiscovery case.
 For details, see Close a case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Close (Default)

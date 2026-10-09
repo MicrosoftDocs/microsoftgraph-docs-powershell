@@ -15,6 +15,9 @@ title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
 
 Invoke action compute
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Security/Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ComputeExpanded (Default)

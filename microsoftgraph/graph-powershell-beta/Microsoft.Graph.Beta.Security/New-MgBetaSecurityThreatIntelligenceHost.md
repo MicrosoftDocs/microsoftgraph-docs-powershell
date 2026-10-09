@@ -15,6 +15,9 @@ title: New-MgBetaSecurityThreatIntelligenceHost
 
 Create new navigation property to hosts for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

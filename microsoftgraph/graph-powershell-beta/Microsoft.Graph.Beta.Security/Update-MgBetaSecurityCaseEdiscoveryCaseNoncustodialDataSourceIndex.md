@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex
 
 Trigger an indexOperation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecuritySubjectRightsRequestCollaboratorServiceProvisioningErro
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
