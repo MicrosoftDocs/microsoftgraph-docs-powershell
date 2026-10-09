@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaVirtualEventTownhallRegistrationEmail
 ---
@@ -14,9 +14,6 @@ title: Stop-MgBetaVirtualEventTownhallRegistrationEmail
 ## SYNOPSIS
 
 Invoke action cancel
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEventTownhallRegistrationEmail](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEventTownhallRegistrationEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action cancel
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -377,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -402,27 +409,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaVirtualEventTownhallRegistrationEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationemail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationemail)
