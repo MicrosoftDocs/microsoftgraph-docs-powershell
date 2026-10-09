@@ -363,7 +363,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcountasserviceprincipal)
+- [Get-MgUserCreatedObjectCountAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcountasserviceprincipal)
 
 
 

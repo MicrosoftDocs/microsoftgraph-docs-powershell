@@ -608,8 +608,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskdelta)
-- [](https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0)
+- [Get-MgUserTodoTaskDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/todotask-delta?view=graph-rest-1.0)
 
 
 

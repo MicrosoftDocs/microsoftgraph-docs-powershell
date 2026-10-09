@@ -538,8 +538,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight)
-- [](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0)
+- [Update-MgUserSettingItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingiteminsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0)
 
 
 

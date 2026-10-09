@@ -720,7 +720,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingworkhourandlocationrecurrence)
+- [New-MgUserSettingWorkHourAndLocationRecurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingworkhourandlocationrecurrence)
 
 
 
