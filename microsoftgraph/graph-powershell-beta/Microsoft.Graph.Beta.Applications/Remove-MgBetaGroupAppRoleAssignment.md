@@ -56,12 +56,17 @@ Delete an appRoleAssignment that a group has been granted.
 | Application | AppRoleAssignment.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaGroupAppRoleAssignment -GroupId $groupId -AppRoleAssignmentId $appRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgBetaGroupAppRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an appRoleAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalAppRoleAssignedTo Cmdlet.
+
 
 ## PARAMETERS
 

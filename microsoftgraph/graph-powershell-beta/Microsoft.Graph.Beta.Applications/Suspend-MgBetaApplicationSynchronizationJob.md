@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -433,6 +423,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta)
+
 
 
 
