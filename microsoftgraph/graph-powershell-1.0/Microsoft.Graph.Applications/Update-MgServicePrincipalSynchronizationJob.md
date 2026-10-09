@@ -84,16 +84,6 @@ Update the navigation property jobs in servicePrincipals
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Synchronization.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1154,6 +1144,7 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjob)
+
 
 
 
