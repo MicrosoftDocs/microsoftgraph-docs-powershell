@@ -59,13 +59,18 @@ This cmdlet has the following aliases,
 Get followedSites from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserFollowedSite -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserFollowedSite Cmdlet.
+
 
 ## PARAMETERS
 

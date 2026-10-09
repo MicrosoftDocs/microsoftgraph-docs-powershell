@@ -53,12 +53,17 @@ Get the status of a SharePoint site creation operation to monitor its progress.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteOperationStatus -OperationId $operationIdId
+Get-MgBetaSiteOperationStatus -OperationId $operationIdId 
+
+```
+This example shows how to use the Get-MgBetaSiteOperationStatus Cmdlet.
+
 
 ## PARAMETERS
 

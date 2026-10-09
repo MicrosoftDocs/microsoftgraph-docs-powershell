@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Unarchive an archived SharePoint site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -451,6 +441,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaunarchivegroupsite)
 - [](https://learn.microsoft.com/graph/api/site-unarchive?view=graph-rest-beta)
+
 
 
 

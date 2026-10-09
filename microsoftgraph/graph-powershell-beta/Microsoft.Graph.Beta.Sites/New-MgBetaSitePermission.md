@@ -78,8 +78,9 @@ This cmdlet has the following aliases,
 Create a new permission object on a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -98,6 +99,10 @@ grantedToIdentities = @(
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

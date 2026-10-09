@@ -102,8 +102,9 @@ Update columnDefinition
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -114,6 +115,10 @@ $params = @{
 }
 
 Update-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

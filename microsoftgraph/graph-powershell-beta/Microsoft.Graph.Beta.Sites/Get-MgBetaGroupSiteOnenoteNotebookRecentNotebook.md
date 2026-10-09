@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -518,6 +508,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebookrecentnotebook)
 - [](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta)
+
 
 
 

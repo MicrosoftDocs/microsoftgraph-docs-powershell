@@ -67,12 +67,17 @@ Get the metadata for a baseSitePage in the site pages list in a site.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSitePage -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSitePage Cmdlet.
+
 
 ## PARAMETERS
 
