@@ -79,8 +79,9 @@ Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
 The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaRoleManagementCloudPcRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -68,12 +68,17 @@ The following RBAC providers are currently supported:\r- Cloud PC \r- device man
 | Application | RoleManagement.Read.Exchange, CloudPC.Read.All, CloudPC.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange,  |
 
 ## EXAMPLES
+### Example 1: Get the definition of a built-in role for the Exchange Online provider
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Get-MgBetaRoleManagementExchangeRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a built-in role for the exchange online provider
+
 
 ## PARAMETERS
 
