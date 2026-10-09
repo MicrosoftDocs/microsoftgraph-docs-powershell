@@ -430,7 +430,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure)
+- [Get-MgUserManagedDeviceWithAppFailure](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure)
 
 
 
