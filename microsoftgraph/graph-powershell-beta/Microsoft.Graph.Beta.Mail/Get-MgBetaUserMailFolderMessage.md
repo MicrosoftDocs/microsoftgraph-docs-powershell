@@ -15,6 +15,9 @@ title: Get-MgBetaUserMailFolderMessage
 
 The collection of messages in the mailFolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

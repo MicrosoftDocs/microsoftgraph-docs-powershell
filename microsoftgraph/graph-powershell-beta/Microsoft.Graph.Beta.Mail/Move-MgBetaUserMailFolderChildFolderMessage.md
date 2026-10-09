@@ -16,6 +16,9 @@ title: Move-MgBetaUserMailFolderChildFolderMessage
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)

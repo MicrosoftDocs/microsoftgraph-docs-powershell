@@ -15,6 +15,9 @@ title: New-MgBetaUserMailFolderMessageExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessageExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
