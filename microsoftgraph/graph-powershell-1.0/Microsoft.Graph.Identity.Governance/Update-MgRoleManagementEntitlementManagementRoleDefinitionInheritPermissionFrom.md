@@ -927,7 +927,7 @@ Not yet supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
+- [Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
 
 
 

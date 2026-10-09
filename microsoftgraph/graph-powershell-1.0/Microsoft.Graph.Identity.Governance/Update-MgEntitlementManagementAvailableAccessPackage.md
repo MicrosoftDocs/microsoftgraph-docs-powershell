@@ -873,7 +873,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementavailableaccesspackage)
+- [Update-MgEntitlementManagementAvailableAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementavailableaccesspackage)
 
 
 
