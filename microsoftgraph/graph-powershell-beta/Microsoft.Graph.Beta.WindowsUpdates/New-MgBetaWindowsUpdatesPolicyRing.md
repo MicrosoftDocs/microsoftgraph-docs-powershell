@@ -75,6 +75,14 @@ This cmdlet has the following aliases,
 Create a new ring object.
 You can use this method with the following child object type: qualityUpdateRing.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
