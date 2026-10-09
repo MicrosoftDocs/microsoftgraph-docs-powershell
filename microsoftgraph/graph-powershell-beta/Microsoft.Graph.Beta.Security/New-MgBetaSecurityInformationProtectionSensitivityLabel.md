@@ -581,7 +581,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecuritySensitivityLabel>: sensitivityLabel
+BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -598,7 +598,7 @@ False if the label is a parent with child labels.
   [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
   [Tooltip <String>]: The tooltip that should be displayed for the label in a UI.
 
-PARENT <IMicrosoftGraphSecuritySensitivityLabel>: sensitivityLabel
+PARENT `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -619,3 +619,25 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

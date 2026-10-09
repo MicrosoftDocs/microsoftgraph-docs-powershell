@@ -636,7 +636,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [Identifier <String>]: The account ID.
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
+BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -651,7 +651,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -773,3 +773,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
