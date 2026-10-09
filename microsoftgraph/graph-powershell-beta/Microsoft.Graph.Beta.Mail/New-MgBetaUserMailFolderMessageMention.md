@@ -751,7 +751,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphMention>: mention
+BODYPARAMETER `<IMicrosoftGraphMention>`: mention
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -777,12 +777,12 @@ To get the mentions in a message, see the bodyPreview property of the message in
 Optional.
 Not used and defaulted as null for message.
 
-CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
+CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -795,7 +795,7 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   [UserConfigurationId <String>]: The unique identifier of userConfiguration
   [UserId <String>]: The unique identifier of user
 
-MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
+MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
@@ -804,3 +804,25 @@ MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
