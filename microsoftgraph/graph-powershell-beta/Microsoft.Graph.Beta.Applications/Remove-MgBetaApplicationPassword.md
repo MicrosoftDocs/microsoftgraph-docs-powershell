@@ -546,8 +546,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword)
-- [](https://learn.microsoft.com/graph/api/application-removepassword?view=graph-rest-beta)
+- [Remove-MgBetaApplicationPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-removepassword?view=graph-rest-beta)
 
 
 

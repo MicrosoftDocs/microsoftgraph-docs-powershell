@@ -617,7 +617,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjobschemadirectory)
+- [Get-MgBetaApplicationSynchronizationJobSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjobschemadirectory)
 
 
 

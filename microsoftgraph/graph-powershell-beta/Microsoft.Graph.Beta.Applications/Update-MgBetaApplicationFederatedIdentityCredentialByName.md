@@ -767,8 +767,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredentialbyname)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta)
+- [Update-MgBetaApplicationFederatedIdentityCredentialByName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredentialbyname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta)
 
 
 

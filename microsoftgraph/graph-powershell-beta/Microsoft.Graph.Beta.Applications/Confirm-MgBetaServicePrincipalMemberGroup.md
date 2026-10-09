@@ -516,8 +516,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaserviceprincipalmembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
+- [Confirm-MgBetaServicePrincipalMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaserviceprincipalmembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
 
 
 

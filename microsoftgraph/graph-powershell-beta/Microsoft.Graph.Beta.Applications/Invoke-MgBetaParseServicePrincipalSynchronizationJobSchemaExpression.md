@@ -723,8 +723,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta)
+- [Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-beta)
 
 
 

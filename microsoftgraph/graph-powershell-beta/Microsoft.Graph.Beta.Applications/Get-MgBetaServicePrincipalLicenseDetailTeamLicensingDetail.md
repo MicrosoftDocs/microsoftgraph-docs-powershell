@@ -329,8 +329,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail)
-- [](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
 
 
 

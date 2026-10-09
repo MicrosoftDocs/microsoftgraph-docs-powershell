@@ -601,9 +601,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto)
-- [](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalAppRoleAssignedTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignedto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-beta)
 
 
 

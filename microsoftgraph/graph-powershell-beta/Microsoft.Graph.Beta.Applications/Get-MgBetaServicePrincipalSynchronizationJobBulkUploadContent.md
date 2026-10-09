@@ -396,7 +396,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent)
+- [Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent)
 
 
 
