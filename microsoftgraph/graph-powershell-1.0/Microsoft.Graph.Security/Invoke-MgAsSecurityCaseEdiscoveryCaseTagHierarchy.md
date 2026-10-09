@@ -60,12 +60,17 @@ List eDiscovery review tags with the tag hierarchy shown.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve child tags of a specific eDiscovery
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example will retrieve child tags of a specific ediscovery
+
 
 ## PARAMETERS
 

@@ -101,12 +101,17 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
+
 
 ## PARAMETERS
 

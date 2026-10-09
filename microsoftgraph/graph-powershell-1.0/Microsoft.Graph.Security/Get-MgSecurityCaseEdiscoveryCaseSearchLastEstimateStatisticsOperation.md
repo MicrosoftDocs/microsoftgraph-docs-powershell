@@ -58,12 +58,17 @@ Get the last  ediscoveryEstimateOperation objects and their properties.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
+
 
 ## PARAMETERS
 
