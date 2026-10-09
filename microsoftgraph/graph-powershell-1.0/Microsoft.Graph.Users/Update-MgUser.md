@@ -812,7 +812,7 @@ HelpMessage: ''
 
 ### -Chats
 
-.
+
 To construct, see NOTES section for CHATS properties and create a hash table.
 
 ```yaml
@@ -1815,7 +1815,7 @@ HelpMessage: ''
 
 ### -FollowedSites
 
-.
+
 To construct, see NOTES section for FOLLOWEDSITES properties and create a hash table.
 
 ```yaml
@@ -2028,7 +2028,7 @@ HelpMessage: ''
 
 ### -IdentityParentId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -2284,7 +2284,7 @@ HelpMessage: ''
 
 ### -JoinedTeams
 
-.
+
 To construct, see NOTES section for JOINEDTEAMS properties and create a hash table.
 
 ```yaml
@@ -2790,7 +2790,7 @@ HelpMessage: ''
 
 ### -Oauth2PermissionGrants
 
-.
+
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
@@ -4005,7 +4005,7 @@ HelpMessage: ''
 
 ### -ScopedRoleMemberOf
 
-.
+
 To construct, see NOTES section for SCOPEDROLEMEMBEROF properties and create a hash table.
 
 ```yaml
