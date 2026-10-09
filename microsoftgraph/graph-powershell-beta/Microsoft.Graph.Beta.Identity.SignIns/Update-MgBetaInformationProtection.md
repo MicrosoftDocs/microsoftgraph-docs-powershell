@@ -502,7 +502,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
+BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -514,7 +514,7 @@ Read-only.
     [Key <String>]: The BitLocker recovery key.
     [VolumeType <String>]: volumeType
 
-BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
+BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -629,7 +629,7 @@ DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
 Read-only.
   [Name <String>]: 
 
-POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
+POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -683,7 +683,7 @@ Read-only.
   [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
   [ToolTip <String>]: 
 
-SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>: sensitivityPolicySettings
+SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -727,3 +727,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
