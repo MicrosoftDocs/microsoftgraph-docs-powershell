@@ -838,8 +838,8 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
-- [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
+- [Send-MgUserMail](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
 
 
 
