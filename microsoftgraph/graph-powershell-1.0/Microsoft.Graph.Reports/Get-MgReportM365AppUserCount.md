@@ -15,6 +15,9 @@ title: Get-MgReportM365AppUserCount
 
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

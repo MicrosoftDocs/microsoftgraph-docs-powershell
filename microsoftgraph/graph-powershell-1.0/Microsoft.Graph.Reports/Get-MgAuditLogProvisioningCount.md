@@ -15,6 +15,9 @@ title: Get-MgAuditLogProvisioningCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioningCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioningCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

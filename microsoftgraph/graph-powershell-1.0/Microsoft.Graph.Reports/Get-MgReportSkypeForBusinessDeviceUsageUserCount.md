@@ -16,6 +16,9 @@ title: Get-MgReportSkypeForBusinessDeviceUsageUserCount
 Get the usage trends on how many users in your organization have connected using the Skype for Business app.
 You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgReportPartnerBillingUsageUnbilled
 
 Update the navigation property unbilled in reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

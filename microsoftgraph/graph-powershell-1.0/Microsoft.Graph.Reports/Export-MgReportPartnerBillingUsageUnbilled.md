@@ -15,6 +15,9 @@ title: Export-MgReportPartnerBillingUsageUnbilled
 
 Export unbilled Azure usage data for a specific billing period and currency.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

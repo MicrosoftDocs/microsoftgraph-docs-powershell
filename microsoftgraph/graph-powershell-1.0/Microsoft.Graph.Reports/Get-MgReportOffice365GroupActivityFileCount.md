@@ -15,6 +15,9 @@ title: Get-MgReportOffice365GroupActivityFileCount
 
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
