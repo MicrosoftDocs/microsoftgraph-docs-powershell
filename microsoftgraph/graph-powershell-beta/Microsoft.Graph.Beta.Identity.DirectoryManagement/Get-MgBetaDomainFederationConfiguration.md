@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an internalDomainFederation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain-InternalFederation.Read.All, Domain-InternalFederation.ReadWrite.All, Domain.Read.All, Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain-InternalFederation.Read.All, Domain-InternalFederation.ReadWrite.All, Domain.Read.All, Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
