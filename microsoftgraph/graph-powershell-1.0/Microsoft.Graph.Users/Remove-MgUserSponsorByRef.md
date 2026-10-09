@@ -15,6 +15,9 @@ title: Remove-MgUserSponsorByRef
 
 Remove an agentUser's sponsor.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

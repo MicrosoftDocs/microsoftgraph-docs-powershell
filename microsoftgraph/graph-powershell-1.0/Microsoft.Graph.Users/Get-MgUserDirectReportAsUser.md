@@ -15,6 +15,9 @@ title: Get-MgUserDirectReportAsUser
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDirectReportAsUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserDirectReportAsUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

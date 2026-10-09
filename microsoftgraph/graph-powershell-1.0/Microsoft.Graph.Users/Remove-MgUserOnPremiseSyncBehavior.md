@@ -15,6 +15,9 @@ title: Remove-MgUserOnPremiseSyncBehavior
 
 Delete navigation property onPremisesSyncBehavior for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

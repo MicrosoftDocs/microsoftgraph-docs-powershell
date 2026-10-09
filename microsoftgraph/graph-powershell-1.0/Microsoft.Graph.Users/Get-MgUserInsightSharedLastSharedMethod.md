@@ -15,6 +15,9 @@ title: Get-MgUserInsightSharedLastSharedMethod
 
 Get lastSharedMethod from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightSharedLastSharedMethod](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightSharedLastSharedMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
