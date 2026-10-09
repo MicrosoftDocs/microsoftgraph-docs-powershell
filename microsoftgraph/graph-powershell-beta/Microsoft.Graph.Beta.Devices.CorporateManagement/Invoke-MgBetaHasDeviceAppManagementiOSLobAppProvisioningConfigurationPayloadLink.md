@@ -362,7 +362,7 @@ BODY `<IPaths9Fmuz0DeviceappmanagementIoslobappprovisioningconfigurationsMicroso
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementioslobappprovisioningconfigurationpayloadlink)
+- [Invoke-MgBetaHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementioslobappprovisioningconfigurationpayloadlink)
 
 
 

@@ -388,7 +388,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelocaladminaccountdetail)
+- [Get-MgBetaUserManagedDeviceLocalAdminAccountDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelocaladminaccountdetail)
 
 
 
