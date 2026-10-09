@@ -384,8 +384,8 @@ BODYPARAMETER `<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkre
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-beta)
+- [Invoke-MgBetaMarkServiceAnnouncementMessageRead](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-beta)
 
 
 
