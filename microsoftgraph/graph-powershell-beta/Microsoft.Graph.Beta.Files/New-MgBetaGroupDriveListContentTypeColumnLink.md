@@ -573,7 +573,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumnlink)
+- [New-MgBetaGroupDriveListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumnlink)
 
 
 

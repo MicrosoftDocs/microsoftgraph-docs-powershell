@@ -471,7 +471,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversionfield)
+- [Remove-MgBetaUserDriveItemListItemDocumentSetVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriveitemlistitemdocumentsetversionfield)
 
 
 

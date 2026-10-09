@@ -487,8 +487,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
+- [Add-MgBetaDriveListContentTypeCopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
 
 
 

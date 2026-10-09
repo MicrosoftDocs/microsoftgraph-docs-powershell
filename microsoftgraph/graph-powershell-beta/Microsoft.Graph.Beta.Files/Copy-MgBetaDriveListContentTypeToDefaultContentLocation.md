@@ -624,8 +624,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation)
-- [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
+- [Copy-MgBetaDriveListContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-beta)
 
 
 

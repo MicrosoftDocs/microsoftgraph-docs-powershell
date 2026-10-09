@@ -911,7 +911,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemdocumentsetversion)
+- [Update-MgBetaUserDriveListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemdocumentsetversion)
 
 
 

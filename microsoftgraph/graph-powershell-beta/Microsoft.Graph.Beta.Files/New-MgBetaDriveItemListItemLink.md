@@ -728,8 +728,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemlink)
-- [](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
+- [New-MgBetaDriveItemListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemlink)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
 
 
 

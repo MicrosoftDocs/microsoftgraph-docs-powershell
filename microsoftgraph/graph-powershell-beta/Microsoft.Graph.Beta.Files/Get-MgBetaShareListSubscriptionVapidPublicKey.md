@@ -318,8 +318,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistsubscriptionvapidpublickey)
-- [](https://learn.microsoft.com/graph/api/subscription-getvapidpublickey?view=graph-rest-beta)
+- [Get-MgBetaShareListSubscriptionVapidPublicKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistsubscriptionvapidpublickey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-getvapidpublickey?view=graph-rest-beta)
 
 
 

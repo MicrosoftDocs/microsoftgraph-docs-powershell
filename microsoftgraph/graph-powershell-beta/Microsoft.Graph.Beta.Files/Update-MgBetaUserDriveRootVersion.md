@@ -740,7 +740,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootversion)
+- [Update-MgBetaUserDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriverootversion)
 
 
 

@@ -407,8 +407,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
+- [Publish-MgBetaDriveListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
 
 
 
