@@ -55,16 +55,6 @@ This cmdlet has the following aliases,
 
 Represents an audit activity type which includes the associated service and category for a specific activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -594,6 +584,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogauditactivitytype)
 - [](https://learn.microsoft.com/graph/api/auditlogroot-list-auditactivitytypes?view=graph-rest-beta)
+
+
 
 
 
