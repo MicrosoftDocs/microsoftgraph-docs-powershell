@@ -52,6 +52,14 @@ Get a list of newly-created or updated assignments without reading the entire co
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.Read, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
