@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get a list of capabilities for the printer.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Read.All, Printer.FullControl.All, Printer.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

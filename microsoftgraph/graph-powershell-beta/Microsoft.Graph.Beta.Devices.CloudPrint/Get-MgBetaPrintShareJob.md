@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 The list of jobs that are queued for printing by the printer/printerShare.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
