@@ -112,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -210,7 +210,7 @@ HelpMessage: ''
 
 ### -EnrollmentConfigurationAssignments
 
-.
+
 To construct, see NOTES section for ENROLLMENTCONFIGURATIONASSIGNMENTS properties and create a hash table.
 
 ```yaml
