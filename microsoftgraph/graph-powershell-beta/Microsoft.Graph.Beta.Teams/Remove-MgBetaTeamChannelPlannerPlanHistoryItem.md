@@ -495,7 +495,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelplannerplanhistoryitem)
+- [Remove-MgBetaTeamChannelPlannerPlanHistoryItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelplannerplanhistoryitem)
 
 
 

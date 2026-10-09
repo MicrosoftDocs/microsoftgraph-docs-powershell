@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting)
-- [](https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-beta)
+- [Get-MgBetaTeamworkTeamAppSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-beta)
 
 
 
