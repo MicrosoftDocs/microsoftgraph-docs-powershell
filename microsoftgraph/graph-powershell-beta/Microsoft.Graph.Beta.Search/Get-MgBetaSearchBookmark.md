@@ -15,6 +15,9 @@ title: Get-MgBetaSearchBookmark
 
 Read the properties and relationships of a bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
