@@ -608,8 +608,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
-- [](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)
+- [New-MgBetaCommunicationCallAudioRoutingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)
 
 
 
