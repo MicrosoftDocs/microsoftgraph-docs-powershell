@@ -15,6 +15,9 @@ title: Remove-MgUserAuthenticationPhoneMethod
 
 Delete navigation property phoneMethods for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

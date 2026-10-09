@@ -16,6 +16,9 @@ title: Get-MgPolicyFeatureRolloutPolicyApplyToByRef
 Nullable.
 Specifies a list of directoryObject resources that feature is enabled for.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

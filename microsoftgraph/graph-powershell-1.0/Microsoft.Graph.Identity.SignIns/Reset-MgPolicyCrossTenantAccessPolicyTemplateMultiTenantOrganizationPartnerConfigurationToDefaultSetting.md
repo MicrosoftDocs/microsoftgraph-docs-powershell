@@ -16,6 +16,9 @@ title: Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartn
 Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values.
 In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multitenant organization tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

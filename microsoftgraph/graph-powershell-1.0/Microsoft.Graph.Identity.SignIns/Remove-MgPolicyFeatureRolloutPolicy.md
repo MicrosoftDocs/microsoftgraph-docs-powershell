@@ -15,6 +15,9 @@ title: Remove-MgPolicyFeatureRolloutPolicy
 
 Delete a featureRolloutPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

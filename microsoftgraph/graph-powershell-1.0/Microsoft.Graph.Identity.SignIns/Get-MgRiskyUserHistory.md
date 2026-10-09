@@ -15,6 +15,9 @@ title: Get-MgRiskyUserHistory
 
 The activity related to user risk level change
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

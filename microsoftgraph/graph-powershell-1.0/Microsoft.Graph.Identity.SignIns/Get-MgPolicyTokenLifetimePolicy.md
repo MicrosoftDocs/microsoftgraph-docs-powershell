@@ -15,6 +15,9 @@ title: Get-MgPolicyTokenLifetimePolicy
 
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

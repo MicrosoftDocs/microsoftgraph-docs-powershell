@@ -16,6 +16,9 @@ title: Get-MgIdentityB2XUserFlowLanguageDefaultPage
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection doesn't allow any kind of modification.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

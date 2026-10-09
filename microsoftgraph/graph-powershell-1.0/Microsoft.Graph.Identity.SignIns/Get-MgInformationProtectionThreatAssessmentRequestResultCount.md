@@ -15,6 +15,9 @@ title: Get-MgInformationProtectionThreatAssessmentRequestResultCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequestResultCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequestResultCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

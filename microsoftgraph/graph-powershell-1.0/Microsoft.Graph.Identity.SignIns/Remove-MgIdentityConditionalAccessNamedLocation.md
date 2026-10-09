@@ -15,6 +15,9 @@ title: Remove-MgIdentityConditionalAccessNamedLocation
 
 Delete a countryNamedLocation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
