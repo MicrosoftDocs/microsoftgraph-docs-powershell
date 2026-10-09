@@ -15,6 +15,9 @@ title: New-MgUserOnenoteNotebookSectionGroupSection
 
 Create new navigation property to sections for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSectionGroupSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

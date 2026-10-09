@@ -16,6 +16,9 @@ title: Get-MgSiteOnenoteNotebookSectionGroupSectionPageParentNotebook
 The notebook that contains the page.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteNotebookSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebookSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgGroupOnenoteNotebook
 
 Update the navigation property notebooks in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
