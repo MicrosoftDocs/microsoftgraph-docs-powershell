@@ -95,8 +95,9 @@ Update the properties of the specified channel.
 | Application | ChannelSettings.ReadWrite.Group, ChannelSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -113,7 +114,12 @@ $params = @{
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -123,7 +129,12 @@ $params = @{
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -132,6 +143,10 @@ $params = @{
 }
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,12 +53,17 @@ Get the configuration details of a Microsoft Teams-enabled device, including sof
 | Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId $teamworkDeviceId
+
+```
+This example shows how to use the Get-MgBetaTeamworkDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
