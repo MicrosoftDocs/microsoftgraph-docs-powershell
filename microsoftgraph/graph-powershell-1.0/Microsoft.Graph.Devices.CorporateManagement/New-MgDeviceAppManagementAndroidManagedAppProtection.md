@@ -78,8 +78,9 @@ Create new navigation property to androidManagedAppProtections for deviceAppMana
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -129,6 +130,10 @@ customBrowserDisplayName = "Custom Browser Display Name value"
 }
 
 New-MgDeviceAppManagementAndroidManagedAppProtection -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementAndroidManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

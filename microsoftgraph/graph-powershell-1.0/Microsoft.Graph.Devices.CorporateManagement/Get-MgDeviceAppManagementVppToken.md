@@ -68,12 +68,17 @@ List of Vpp tokens for this organization.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementVppToken
+
+```
+This example shows how to use the Get-MgDeviceAppManagementVppToken Cmdlet.
+
 
 ## PARAMETERS
 
