@@ -15,6 +15,9 @@ title: Remove-MgBetaServicePrincipalSynchronizationTemplate
 
 Delete navigation property templates for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

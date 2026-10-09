@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalMemberObject
 
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

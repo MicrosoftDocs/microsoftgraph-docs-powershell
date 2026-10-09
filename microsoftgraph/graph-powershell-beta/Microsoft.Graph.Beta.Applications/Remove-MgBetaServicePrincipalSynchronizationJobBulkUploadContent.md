@@ -15,6 +15,9 @@ title: Remove-MgBetaServicePrincipalSynchronizationJobBulkUploadContent
 
 The bulk upload operation for the job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

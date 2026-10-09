@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationSynchronizationJob
 
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

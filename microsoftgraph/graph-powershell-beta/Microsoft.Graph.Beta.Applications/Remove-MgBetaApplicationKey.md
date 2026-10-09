@@ -16,6 +16,9 @@ title: Remove-MgBetaApplicationKey
 Remove a key credential from an agentIdentityBlueprint.
 This method along with addKey can be used to automate rolling its expiring keys.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

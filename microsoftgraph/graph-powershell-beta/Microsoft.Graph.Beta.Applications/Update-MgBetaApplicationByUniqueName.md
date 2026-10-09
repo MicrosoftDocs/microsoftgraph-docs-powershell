@@ -16,6 +16,9 @@ title: Update-MgBetaApplicationByUniqueName
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 This API can also create an agentIdentityBlueprint object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprint, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

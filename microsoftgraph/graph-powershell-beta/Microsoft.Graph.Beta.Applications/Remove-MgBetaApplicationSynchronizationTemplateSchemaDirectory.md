@@ -15,6 +15,9 @@ title: Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory
 
 Delete navigation property directories for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
