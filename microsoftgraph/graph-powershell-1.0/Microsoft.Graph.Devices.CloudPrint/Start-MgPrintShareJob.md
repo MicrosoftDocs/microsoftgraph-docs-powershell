@@ -58,12 +58,17 @@ It will be printed after any existing pending jobs are completed, aborted, or ca
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Start-MgPrintShareJob -PrinterShareId $printerShareId -PrintJobId $printJobId
+
+```
+This example shows how to use the Start-MgPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
