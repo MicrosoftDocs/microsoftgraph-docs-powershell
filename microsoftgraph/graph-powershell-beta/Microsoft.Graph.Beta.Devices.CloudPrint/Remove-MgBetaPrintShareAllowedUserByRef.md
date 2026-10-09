@@ -15,6 +15,9 @@ title: Remove-MgBetaPrintShareAllowedUserByRef
 
 Delete ref of navigation property allowedUsers for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
