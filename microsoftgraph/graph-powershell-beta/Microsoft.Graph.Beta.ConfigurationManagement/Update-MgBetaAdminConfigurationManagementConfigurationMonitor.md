@@ -16,6 +16,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationMonitor
 Update the properties of a configurationMonitor object, including the monitor name, description, and baseline.
 You must provide the full monitor body when you call this API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
