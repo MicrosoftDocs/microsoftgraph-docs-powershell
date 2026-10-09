@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffrequest)
-- [](https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0)
+- [Remove-MgTeamScheduleTimeOffRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0)
 
 
 

@@ -1740,8 +1740,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
-- [](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)
+- [Set-MgTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-1.0)
 
 
 

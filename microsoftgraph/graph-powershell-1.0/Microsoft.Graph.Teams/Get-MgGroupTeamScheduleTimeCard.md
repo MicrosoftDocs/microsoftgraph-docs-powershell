@@ -586,7 +586,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimecard)
+- [Get-MgGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimecard)
 
 
 

@@ -382,8 +382,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelemail)
-- [](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)
+- [New-MgGroupTeamPrimaryChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)
 
 
 

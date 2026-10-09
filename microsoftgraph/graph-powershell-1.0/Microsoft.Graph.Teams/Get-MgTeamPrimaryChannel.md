@@ -397,8 +397,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel)
-- [](https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0)
+- [Get-MgTeamPrimaryChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0)
 
 
 

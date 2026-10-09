@@ -587,7 +587,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelenabledapp)
+- [Get-MgGroupTeamPrimaryChannelEnabledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelenabledapp)
 
 
 

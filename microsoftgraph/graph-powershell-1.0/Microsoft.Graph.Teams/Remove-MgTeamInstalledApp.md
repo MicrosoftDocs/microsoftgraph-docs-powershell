@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp)
-- [](https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0)
+- [Remove-MgTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteaminstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0)
 
 
 

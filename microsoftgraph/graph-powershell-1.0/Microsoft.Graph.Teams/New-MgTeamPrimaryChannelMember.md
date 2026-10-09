@@ -730,7 +730,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmember)
+- [New-MgTeamPrimaryChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmember)
 
 
 

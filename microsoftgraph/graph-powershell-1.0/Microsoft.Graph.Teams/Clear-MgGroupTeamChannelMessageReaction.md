@@ -576,7 +576,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mggroupteamchannelmessagereaction)
+- [Clear-MgGroupTeamChannelMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mggroupteamchannelmessagereaction)
 
 
 

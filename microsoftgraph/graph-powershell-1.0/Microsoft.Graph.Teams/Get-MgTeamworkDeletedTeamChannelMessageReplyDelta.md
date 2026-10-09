@@ -630,8 +630,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta)
-- [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
+- [Get-MgTeamworkDeletedTeamChannelMessageReplyDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
 
 
 
