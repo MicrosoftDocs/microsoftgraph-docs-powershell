@@ -145,7 +145,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -336,7 +336,7 @@ HelpMessage: ''
 
 ### -Requests
 
-.
+
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
