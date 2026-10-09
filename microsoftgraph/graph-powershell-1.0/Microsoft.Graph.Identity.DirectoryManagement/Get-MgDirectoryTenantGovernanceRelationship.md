@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Get governanceRelationships from directory
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-Relationship.Read.All, TenantGovernance-Relationship.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-Relationship.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
