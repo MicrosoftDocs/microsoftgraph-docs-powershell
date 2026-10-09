@@ -15,6 +15,9 @@ title: Get-MgSecuritySubjectRightsRequestCollaborator
 
 Collection of users who can collaborate on the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestCollaborator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

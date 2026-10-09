@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseCustodian
 
 Delete navigation property custodians for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

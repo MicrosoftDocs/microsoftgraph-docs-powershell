@@ -15,6 +15,9 @@ title: Get-MgSecurityAttackSimulationOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationOperationCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationOperationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

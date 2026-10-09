@@ -15,6 +15,9 @@ title: New-MgSecurityCaseEdiscoveryCaseSearch
 
 Create a new ediscoverySearch object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

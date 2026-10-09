@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligenceHostComponent
 
 Delete navigation property hostComponents for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSecurityAttackSimulationAutomation
 
 Delete navigation property simulationAutomations for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

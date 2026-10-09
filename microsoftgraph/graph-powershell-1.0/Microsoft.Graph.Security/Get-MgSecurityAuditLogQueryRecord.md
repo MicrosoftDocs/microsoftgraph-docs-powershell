@@ -15,6 +15,9 @@ title: Get-MgSecurityAuditLogQueryRecord
 
 The collection of audit log records retrieved by the query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAuditLogQueryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAuditLogQueryRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

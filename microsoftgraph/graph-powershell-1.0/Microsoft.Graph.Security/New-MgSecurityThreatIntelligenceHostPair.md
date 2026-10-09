@@ -15,6 +15,9 @@ title: New-MgSecurityThreatIntelligenceHostPair
 
 Create new navigation property to hostPairs for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

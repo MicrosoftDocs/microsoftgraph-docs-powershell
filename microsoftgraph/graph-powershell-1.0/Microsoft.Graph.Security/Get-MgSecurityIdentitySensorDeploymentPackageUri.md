@@ -16,6 +16,9 @@ title: Get-MgSecurityIdentitySensorDeploymentPackageUri
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentPackageUri](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentPackageUri?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

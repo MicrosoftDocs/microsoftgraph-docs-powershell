@@ -15,6 +15,9 @@ title: Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceProfileIndicator
 
 Read the properties and relationships of a intelligenceProfileIndicator object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
