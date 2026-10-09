@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 67468566-b81a-4ebc-b76b-55da6c15680b
+Module Guid: b1ccbfcc-cb53-427a-8c31-5073c1543dc5
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -436,23 +436,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
