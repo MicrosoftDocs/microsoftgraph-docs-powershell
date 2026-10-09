@@ -15,6 +15,9 @@ title: Remove-MgUserDriveItemListItem
 
 Delete navigation property listItem for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

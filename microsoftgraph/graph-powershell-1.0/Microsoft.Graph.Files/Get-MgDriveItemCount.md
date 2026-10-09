@@ -15,6 +15,9 @@ title: Get-MgDriveItemCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

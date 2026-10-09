@@ -15,6 +15,9 @@ title: Update-MgShareListItemVersion
 
 Update the navigation property versions in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

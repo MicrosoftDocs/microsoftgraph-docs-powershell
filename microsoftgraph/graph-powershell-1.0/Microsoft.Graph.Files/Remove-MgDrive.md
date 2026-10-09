@@ -15,6 +15,9 @@ title: Remove-MgDrive
 
 Delete entity from drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

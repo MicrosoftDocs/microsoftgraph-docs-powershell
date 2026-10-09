@@ -15,6 +15,9 @@ title: Test-MgDriveListContentTypePublished
 
 Check the publishing status of a contentType in a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)

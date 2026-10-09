@@ -15,6 +15,9 @@ title: Update-MgUserDriveRootPermission
 
 Update the navigation property permissions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgUserDriveRootSubscription
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

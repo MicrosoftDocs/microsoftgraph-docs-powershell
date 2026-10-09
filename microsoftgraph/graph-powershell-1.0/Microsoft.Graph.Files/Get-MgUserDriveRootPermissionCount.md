@@ -15,6 +15,9 @@ title: Get-MgUserDriveRootPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootPermissionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

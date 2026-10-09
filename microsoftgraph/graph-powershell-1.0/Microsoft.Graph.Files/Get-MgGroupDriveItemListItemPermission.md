@@ -17,6 +17,9 @@ The set of permissions for the item.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

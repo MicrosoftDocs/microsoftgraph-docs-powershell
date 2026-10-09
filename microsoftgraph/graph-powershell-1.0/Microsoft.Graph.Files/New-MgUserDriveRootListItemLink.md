@@ -15,6 +15,9 @@ title: New-MgUserDriveRootListItemLink
 
 Invoke action createLink
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootListItemLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootListItemLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

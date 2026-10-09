@@ -15,6 +15,9 @@ title: Invoke-MgPreviewUserDriveItem
 
 Invoke action preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)
