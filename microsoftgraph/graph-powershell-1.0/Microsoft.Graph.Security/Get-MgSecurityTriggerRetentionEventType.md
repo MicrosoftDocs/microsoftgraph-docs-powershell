@@ -56,16 +56,6 @@ Specifies the event that will start the retention period for labels that use thi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -434,6 +424,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentioneventtype)
+
 
 
 
