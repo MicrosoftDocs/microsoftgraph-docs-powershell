@@ -53,6 +53,14 @@ This cmdlet has the following aliases,
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
 The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
