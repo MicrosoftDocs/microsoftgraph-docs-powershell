@@ -699,13 +699,13 @@ Read-only.
 Read-only.
   [Status <String>]: delegatedAdminAccessAssignmentStatus
 
-ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>: delegatedAdminAccessDetails
+ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]: The directory roles that the Microsoft partner is assigned in the customer tenant.
     [RoleDefinitionId <String>]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER <IMicrosoftGraphDelegatedAdminRelationship>: delegatedAdminRelationship
+BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationship>`: delegatedAdminRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -774,7 +774,7 @@ Read-only.
     [Status <String>]: delegatedAdminRelationshipRequestStatus
   [Status <String>]: delegatedAdminRelationshipStatus
 
-CUSTOMER <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>: delegatedAdminRelationshipCustomerParticipant
+CUSTOMER `<IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>`: delegatedAdminRelationshipCustomerParticipant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the customer tenant as set by Microsoft Entra ID.
 Read-only
@@ -807,3 +807,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship)
 - [](https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

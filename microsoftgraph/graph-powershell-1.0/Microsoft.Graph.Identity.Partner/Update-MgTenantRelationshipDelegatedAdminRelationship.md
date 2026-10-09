@@ -14,7 +14,7 @@ title: Update-MgTenantRelationshipDelegatedAdminRelationship
 ## SYNOPSIS
 
 Update the properties of a delegatedAdminRelationship object.
-The following restrictions apply:\r\n- You can update this relationship when its status property is created.\r\n- You can update the autoExtendDuration property when status is either created or active.\r\n- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
+The following restrictions apply:\r- You can update this relationship when its status property is created.\r- You can update the autoExtendDuration property when status is either created or active.\r- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
 
 ## SYNTAX
 
@@ -80,7 +80,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a delegatedAdminRelationship object.
-The following restrictions apply:\r\n- You can update this relationship when its status property is created.\r\n- You can update the autoExtendDuration property when status is either created or active.\r\n- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
+The following restrictions apply:\r- You can update this relationship when its status property is created.\r- You can update the autoExtendDuration property when status is either created or active.\r- You can only remove the Microsoft Entra Global Administrator role when the status property is active, which indicates a long-running operation.
 
 ## EXAMPLES
 
@@ -889,13 +889,13 @@ Read-only.
 Read-only.
   [Status <String>]: delegatedAdminAccessAssignmentStatus
 
-ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>: delegatedAdminAccessDetails
+ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]: The directory roles that the Microsoft partner is assigned in the customer tenant.
     [RoleDefinitionId <String>]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER <IMicrosoftGraphDelegatedAdminRelationship>: delegatedAdminRelationship
+BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationship>`: delegatedAdminRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -964,13 +964,13 @@ Read-only.
     [Status <String>]: delegatedAdminRelationshipRequestStatus
   [Status <String>]: delegatedAdminRelationshipStatus
 
-CUSTOMER <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>: delegatedAdminRelationshipCustomerParticipant
+CUSTOMER `<IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>`: delegatedAdminRelationshipCustomerParticipant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the customer tenant as set by Microsoft Entra ID.
 Read-only
   [TenantId <String>]: The Microsoft Entra ID-assigned tenant ID of the customer tenant.
 
-INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   [DelegatedAdminAccessAssignmentId <String>]: The unique identifier of delegatedAdminAccessAssignment
   [DelegatedAdminCustomerId <String>]: The unique identifier of delegatedAdminCustomer
   [DelegatedAdminRelationshipId <String>]: The unique identifier of delegatedAdminRelationship
@@ -1005,3 +1005,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship)
 - [](https://learn.microsoft.com/graph/api/delegatedadminrelationship-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
