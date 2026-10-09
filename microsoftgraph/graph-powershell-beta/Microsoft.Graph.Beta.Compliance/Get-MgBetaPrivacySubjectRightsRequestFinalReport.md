@@ -50,12 +50,17 @@ Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Get-MgBetaPrivacySubjectRightsRequestFinalReport -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequestFinalReport Cmdlet.
+
 
 ## PARAMETERS
 

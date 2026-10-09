@@ -71,8 +71,9 @@ This cmdlet has the following aliases,
 Create a new unifiedGroupSource object.
 
 ## EXAMPLES
+### Example 1: Create unifiedGroupSource with group SMTP address
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -85,7 +86,12 @@ $params = @{
 
 New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create unifiedgroupsource with group smtp address
+
+### Example 2: Create unifiedGroupSource with group@odata.bind
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -95,6 +101,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+
+```
+This example will create unifiedgroupsource with group@odata.bind
+
 
 ## PARAMETERS
 
