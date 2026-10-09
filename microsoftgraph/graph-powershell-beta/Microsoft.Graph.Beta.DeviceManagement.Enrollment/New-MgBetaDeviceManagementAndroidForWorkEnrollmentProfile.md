@@ -604,7 +604,7 @@ QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroidforworkenrollmentprofile)
+- [New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroidforworkenrollmentprofile)
 
 
 

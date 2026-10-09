@@ -912,7 +912,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroledefinitioninheritpermissionfrom)
+- [New-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroledefinitioninheritpermissionfrom)
 
 
 

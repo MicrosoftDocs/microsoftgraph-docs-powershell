@@ -597,7 +597,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddeviceresourceaccounttodevice)
+- [Set-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceResourceAccountToDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddeviceresourceaccounttodevice)
 
 
 
