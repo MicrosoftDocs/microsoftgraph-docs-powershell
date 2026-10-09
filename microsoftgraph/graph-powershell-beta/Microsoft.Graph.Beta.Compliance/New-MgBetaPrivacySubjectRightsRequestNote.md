@@ -618,8 +618,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote)
-- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-beta)
+- [New-MgBetaPrivacySubjectRightsRequestNote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequestnote)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-beta)
 
 
 

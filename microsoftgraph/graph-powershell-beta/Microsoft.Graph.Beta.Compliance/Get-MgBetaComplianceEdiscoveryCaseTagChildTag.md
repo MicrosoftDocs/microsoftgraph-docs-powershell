@@ -607,8 +607,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag)
-- [](https://learn.microsoft.com/graph/api/ediscovery-tag-childtags?view=graph-rest-beta)
+- [Get-MgBetaComplianceEdiscoveryCaseTagChildTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-tag-childtags?view=graph-rest-beta)
 
 
 

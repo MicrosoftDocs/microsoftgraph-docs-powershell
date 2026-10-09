@@ -653,8 +653,8 @@ TOPICMODELING `<IMicrosoftGraphEdiscoveryTopicModelingSettings>`: topicModelingS
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
-- [](https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta)
+- [Update-MgBetaComplianceEdiscoveryCaseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-casesettings-update?view=graph-rest-beta)
 
 
 
