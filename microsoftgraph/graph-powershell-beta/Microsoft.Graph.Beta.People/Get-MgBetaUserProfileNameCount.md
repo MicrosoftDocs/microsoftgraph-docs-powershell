@@ -365,7 +365,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenamecount)
+- [Get-MgBetaUserProfileNameCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilenamecount)
 
 
 
