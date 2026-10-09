@@ -700,7 +700,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER <IMicrosoftGraphDirectory>: directory
+BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2027,7 +2027,7 @@ Always set to en-us.
                   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6024,8 +6024,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6592,7 +6592,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6627,7 +6627,7 @@ Maximum length is 256 characters.
     [Status <String>]: The status of any asynchronous jobs runs on the object which can be upload or delete.
     [StatusDetails <String>]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
-RECOVERY <IMicrosoftGraphEntraRecoveryServicesRecovery>: recovery
+RECOVERY `<IMicrosoftGraphEntraRecoveryServicesRecovery>`: recovery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6730,7 +6730,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
   [TotalLicenses <Int32?>]: The number of licenses included in this subscription.
 
-TENANTGOVERNANCE <IMicrosoftGraphTenantGovernance>: tenantGovernance
+TENANTGOVERNANCE `<IMicrosoftGraphTenantGovernance>`: tenantGovernance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7782,7 +7782,7 @@ Always set to en-us.
                 [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11790,8 +11790,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -12262,3 +12262,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

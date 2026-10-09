@@ -390,7 +390,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPronounsSettings>: pronounsSettings
+BODYPARAMETER `<IMicrosoftGraphPronounsSettings>`: pronounsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -402,3 +402,25 @@ The default value is false, and pronouns are disabled.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeoplepronoun)
 - [](https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
