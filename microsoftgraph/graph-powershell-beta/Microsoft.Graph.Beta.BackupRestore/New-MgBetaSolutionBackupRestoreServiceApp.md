@@ -495,7 +495,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATION <IMicrosoftGraphIdentity>: identity
+APPLICATION `<IMicrosoftGraphIdentity>`: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -503,7 +503,7 @@ For example, if a user changes their display name the API might show the new val
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-BODYPARAMETER <IMicrosoftGraphServiceApp>: serviceApp
+BODYPARAMETER `<IMicrosoftGraphServiceApp>`: serviceApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -524,7 +524,7 @@ For example, in the access reviews decisions API, this property might record the
   [RegistrationDateTime <DateTime?>]: Timestamp of the creation of the service app entity.
   [Status <String>]: serviceAppStatus
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -541,3 +541,25 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
