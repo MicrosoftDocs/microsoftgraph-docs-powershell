@@ -82,8 +82,9 @@ This method returns an apiConnector.
 | Application | APIConnectors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
+
 
 ## PARAMETERS
 

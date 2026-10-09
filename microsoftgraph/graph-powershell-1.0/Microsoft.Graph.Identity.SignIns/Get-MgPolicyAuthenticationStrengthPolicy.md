@@ -69,18 +69,28 @@ Read the properties and relationships of an authenticationStrengthPolicy object.
 | Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Get all authentication strength policies
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAuthenticationStrengthPolicy
 
-### EXAMPLE 2
+```
+This example will get all authentication strength policies
+
+### Example 2: Get policies that include specific authentication method modes
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyAuthenticationStrengthPolicy -Filter "allowedCombinations/any(x:x has 'sms, password')"
+Get-MgPolicyAuthenticationStrengthPolicy -Filter "allowedCombinations/any(x:x has 'sms, password')" 
+
+```
+This example will get policies that include specific authentication method modes
+
 
 ## PARAMETERS
 

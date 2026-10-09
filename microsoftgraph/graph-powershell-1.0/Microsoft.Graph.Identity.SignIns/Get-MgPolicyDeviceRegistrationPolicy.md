@@ -49,12 +49,17 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 | Application | Policy.Read.DeviceConfiguration, Policy.ReadWrite.DeviceConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyDeviceRegistrationPolicy
+
+```
+This example shows how to use the Get-MgPolicyDeviceRegistrationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update an existing Microsoft 365 cross-tenant capability for the default cross-tenant access policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -659,6 +649,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicydefaultm365capability)
 - [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities?view=graph-rest-1.0)
+
 
 
 
