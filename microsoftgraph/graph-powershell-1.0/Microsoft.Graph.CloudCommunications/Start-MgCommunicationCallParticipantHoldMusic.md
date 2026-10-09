@@ -15,6 +15,9 @@ title: Start-MgCommunicationCallParticipantHoldMusic
 
 Put a participant on hold and play music in the background.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

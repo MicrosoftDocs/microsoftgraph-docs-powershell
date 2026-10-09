@@ -16,6 +16,9 @@ title: Set-MgUserPresence
 Set the state of a user's presence session as an application.
 For more information about presence sessions, states permutations, and timeouts, see Manage presence state using the Microsoft Graph API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

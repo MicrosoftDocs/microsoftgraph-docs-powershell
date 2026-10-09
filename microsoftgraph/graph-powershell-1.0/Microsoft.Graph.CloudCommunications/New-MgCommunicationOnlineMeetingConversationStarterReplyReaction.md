@@ -15,6 +15,9 @@ title: New-MgCommunicationOnlineMeetingConversationStarterReplyReaction
 
 Create new navigation property to reactions for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgCommunicationOnlineMeetingRecording
 
 Create new navigation property to recordings for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

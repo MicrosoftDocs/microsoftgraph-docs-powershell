@@ -16,6 +16,9 @@ title: Set-MgCommunicationOnlineMeetingRecordingContent
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

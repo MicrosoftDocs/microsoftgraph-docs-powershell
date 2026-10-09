@@ -15,6 +15,9 @@ title: Update-MgUserOnlineMeetingRecording
 
 Update the navigation property recordings in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeetingRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

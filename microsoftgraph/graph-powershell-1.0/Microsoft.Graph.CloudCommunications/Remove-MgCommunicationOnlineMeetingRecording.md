@@ -15,6 +15,9 @@ title: Remove-MgCommunicationOnlineMeetingRecording
 
 Delete navigation property recordings for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationOnlineMeetingRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

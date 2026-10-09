@@ -15,6 +15,9 @@ title: Update-MgCommunicationCallRecordParticipantV2
 
 Update the navigation property participants_v2 in communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordParticipantV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
