@@ -16,6 +16,9 @@ title: Remove-MgAdminConfigurationManagementConfigurationMonitor
 Delete a configurationMonitor object permanently.
 A deleted configurationMonitor can't be restored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Remove-MgBetaAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
