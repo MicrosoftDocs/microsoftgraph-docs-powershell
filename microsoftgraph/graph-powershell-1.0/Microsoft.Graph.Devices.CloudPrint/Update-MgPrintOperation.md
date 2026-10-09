@@ -15,6 +15,9 @@ title: Update-MgPrintOperation
 
 Update the navigation property operations in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

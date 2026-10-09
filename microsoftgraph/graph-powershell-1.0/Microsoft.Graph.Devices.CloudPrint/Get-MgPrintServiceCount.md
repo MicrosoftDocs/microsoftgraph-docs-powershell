@@ -15,6 +15,9 @@ title: Get-MgPrintServiceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintServiceCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintServiceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
