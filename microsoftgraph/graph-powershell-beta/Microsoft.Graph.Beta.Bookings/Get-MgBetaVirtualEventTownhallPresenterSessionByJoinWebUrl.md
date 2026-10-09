@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Get sessions from solutions
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

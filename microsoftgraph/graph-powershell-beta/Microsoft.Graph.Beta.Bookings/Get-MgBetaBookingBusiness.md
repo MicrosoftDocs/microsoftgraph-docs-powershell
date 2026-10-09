@@ -84,6 +84,14 @@ This cmdlet has the following aliases,
 
 Represents a Microsoft Bookings Business.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
