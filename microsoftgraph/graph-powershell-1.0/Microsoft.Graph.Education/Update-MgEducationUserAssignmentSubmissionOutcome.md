@@ -15,6 +15,9 @@ title: Update-MgEducationUserAssignmentSubmissionOutcome
 
 Update the navigation property outcomes in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

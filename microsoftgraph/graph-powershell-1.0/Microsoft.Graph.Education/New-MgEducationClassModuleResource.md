@@ -17,6 +17,9 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

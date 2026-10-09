@@ -17,6 +17,9 @@ Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

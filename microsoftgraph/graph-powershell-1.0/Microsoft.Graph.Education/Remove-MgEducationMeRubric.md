@@ -16,6 +16,9 @@ title: Remove-MgEducationMeRubric
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
