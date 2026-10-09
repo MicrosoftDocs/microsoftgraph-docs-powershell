@@ -14,7 +14,7 @@ title: Get-MgBetaGroupThreadPost
 ## SYNOPSIS
 
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent\r\nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent\rconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ## SYNTAX
@@ -76,7 +76,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent\r\nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent\rconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ## EXAMPLES
@@ -625,7 +625,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -655,3 +655,25 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpost)
 - [](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
