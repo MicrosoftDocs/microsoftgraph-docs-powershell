@@ -150,7 +150,7 @@ HelpMessage: ''
 
 ### -All
 
-.
+
 To construct, see NOTES section for ALL properties and create a hash table.
 
 ```yaml
@@ -476,7 +476,7 @@ HelpMessage: ''
 
 ### -Plans
 
-.
+
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
