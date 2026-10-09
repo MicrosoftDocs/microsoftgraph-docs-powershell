@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteListContentTypeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

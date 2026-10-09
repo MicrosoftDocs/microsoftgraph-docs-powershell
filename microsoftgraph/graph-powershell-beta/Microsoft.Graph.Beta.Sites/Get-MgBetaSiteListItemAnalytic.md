@@ -15,6 +15,9 @@ title: Get-MgBetaSiteListItemAnalytic
 
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

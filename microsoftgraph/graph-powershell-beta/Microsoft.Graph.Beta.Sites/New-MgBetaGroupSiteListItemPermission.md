@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteListItemPermission
 
 Create new navigation property to permissions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItemPermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

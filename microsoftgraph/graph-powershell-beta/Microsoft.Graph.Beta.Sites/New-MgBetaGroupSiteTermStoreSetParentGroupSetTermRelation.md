@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation
 
 Create new navigation property to relations for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

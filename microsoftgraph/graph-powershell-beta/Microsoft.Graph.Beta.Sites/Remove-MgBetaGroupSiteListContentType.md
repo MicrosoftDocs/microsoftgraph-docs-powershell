@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteListContentType
 
 Delete navigation property contentTypes for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

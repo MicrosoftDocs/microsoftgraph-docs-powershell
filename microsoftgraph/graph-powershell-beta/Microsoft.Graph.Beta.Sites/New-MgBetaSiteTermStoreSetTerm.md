@@ -15,6 +15,9 @@ title: New-MgBetaSiteTermStoreSetTerm
 
 Create new navigation property to terms for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

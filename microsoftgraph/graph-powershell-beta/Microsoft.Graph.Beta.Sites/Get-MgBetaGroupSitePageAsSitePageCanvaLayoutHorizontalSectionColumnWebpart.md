@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpar
 
 The collection of WebParts in this column.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

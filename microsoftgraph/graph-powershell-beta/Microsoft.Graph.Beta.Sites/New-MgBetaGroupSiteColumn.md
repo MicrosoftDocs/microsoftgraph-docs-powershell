@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteColumn
 
 Create new navigation property to columns for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

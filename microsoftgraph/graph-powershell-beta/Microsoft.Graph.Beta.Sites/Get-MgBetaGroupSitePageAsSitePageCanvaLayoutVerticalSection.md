@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection
 
 Vertical section on the SharePoint page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

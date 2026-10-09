@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteTermStoreSetTerm
 
 Update the navigation property terms in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

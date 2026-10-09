@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteGetByPathAnalytic
 
 Update the navigation property analytics in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteGetByPathAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

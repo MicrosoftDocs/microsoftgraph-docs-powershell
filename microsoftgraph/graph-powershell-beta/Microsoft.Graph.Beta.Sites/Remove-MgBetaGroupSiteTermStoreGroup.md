@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteTermStoreGroup
 
 Delete navigation property groups for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

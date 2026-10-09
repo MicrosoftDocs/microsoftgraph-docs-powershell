@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteCreatedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteCreatedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Set-MgBetaGroupSiteOnenoteNotebookSectionPageContent
 
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

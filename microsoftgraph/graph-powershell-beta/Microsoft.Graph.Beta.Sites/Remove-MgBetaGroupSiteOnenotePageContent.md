@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteOnenotePageContent
 
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenotePageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
