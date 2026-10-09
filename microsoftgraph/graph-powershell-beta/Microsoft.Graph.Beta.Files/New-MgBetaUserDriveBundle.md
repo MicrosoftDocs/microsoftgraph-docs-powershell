@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveBundle
 
 Create new navigation property to bundles for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveBundle?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

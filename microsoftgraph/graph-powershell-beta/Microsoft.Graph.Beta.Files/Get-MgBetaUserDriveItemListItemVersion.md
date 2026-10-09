@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveItemListItemVersion
 
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

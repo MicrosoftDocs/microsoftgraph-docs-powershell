@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveRoot
 
 Update the navigation property root in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

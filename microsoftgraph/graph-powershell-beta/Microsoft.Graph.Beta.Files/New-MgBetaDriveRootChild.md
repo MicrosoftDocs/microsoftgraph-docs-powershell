@@ -15,6 +15,9 @@ title: New-MgBetaDriveRootChild
 
 Create new navigation property to children for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

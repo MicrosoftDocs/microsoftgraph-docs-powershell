@@ -15,6 +15,9 @@ title: Publish-MgBetaGroupDriveListContentType
 
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgGroupDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

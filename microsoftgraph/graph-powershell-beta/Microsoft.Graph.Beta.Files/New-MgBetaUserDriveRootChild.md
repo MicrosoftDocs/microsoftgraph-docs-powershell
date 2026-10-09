@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveRootChild
 
 Create new navigation property to children for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

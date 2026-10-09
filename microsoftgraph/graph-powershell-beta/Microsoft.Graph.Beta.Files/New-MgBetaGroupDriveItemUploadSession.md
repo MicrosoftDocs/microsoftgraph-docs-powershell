@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveItemUploadSession
 
 Invoke action createUploadSession
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemUploadSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

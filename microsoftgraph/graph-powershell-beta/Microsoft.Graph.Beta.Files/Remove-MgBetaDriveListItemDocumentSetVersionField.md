@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveListItemDocumentSetVersionField
 
 Delete navigation property fields for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

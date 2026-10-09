@@ -15,6 +15,9 @@ title: Get-MgBetaDriveItemVersionContent
 
 Get content for the navigation property versions from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDriveRootListItem
 
 Update the navigation property listItem in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

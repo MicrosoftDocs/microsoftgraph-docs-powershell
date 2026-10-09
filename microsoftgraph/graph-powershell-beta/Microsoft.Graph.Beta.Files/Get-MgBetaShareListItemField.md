@@ -15,6 +15,9 @@ title: Get-MgBetaShareListItemField
 
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

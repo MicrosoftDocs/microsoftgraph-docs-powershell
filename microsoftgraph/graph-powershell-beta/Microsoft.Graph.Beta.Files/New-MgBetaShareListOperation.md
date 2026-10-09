@@ -15,6 +15,9 @@ title: New-MgBetaShareListOperation
 
 Create new navigation property to operations for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/New-MgShareListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDriveItemAnalyticItemActivityStat
 
 Get itemActivityStats from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaExtractUserDriveRootSensitivityLabel
 
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Invoke-MgExtractUserDriveRootSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Extract (Default)

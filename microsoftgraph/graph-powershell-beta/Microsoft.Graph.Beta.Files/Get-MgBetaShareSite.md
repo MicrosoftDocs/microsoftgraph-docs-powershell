@@ -15,6 +15,9 @@ title: Get-MgBetaShareSite
 
 Used to access the underlying site
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareSite](/powershell/module/Microsoft.Graph.Files/Get-MgShareSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

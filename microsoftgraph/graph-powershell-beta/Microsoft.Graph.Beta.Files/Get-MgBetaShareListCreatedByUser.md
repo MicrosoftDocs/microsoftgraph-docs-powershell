@@ -15,6 +15,9 @@ title: Get-MgBetaShareListCreatedByUser
 
 Get createdByUser from shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

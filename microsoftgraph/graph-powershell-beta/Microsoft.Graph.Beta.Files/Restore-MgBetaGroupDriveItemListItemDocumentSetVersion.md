@@ -15,6 +15,9 @@ title: Restore-MgBetaGroupDriveItemListItemDocumentSetVersion
 
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

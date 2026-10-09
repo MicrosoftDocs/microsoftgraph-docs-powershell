@@ -15,6 +15,9 @@ title: Restore-MgBetaDriveRoot
 
 Restore a deleted driveItem that is currently in the recycle bin.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)

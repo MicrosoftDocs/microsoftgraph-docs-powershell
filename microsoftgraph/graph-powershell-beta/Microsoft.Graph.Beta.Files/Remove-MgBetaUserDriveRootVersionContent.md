@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveRootVersionContent
 
 Delete content for the navigation property versions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

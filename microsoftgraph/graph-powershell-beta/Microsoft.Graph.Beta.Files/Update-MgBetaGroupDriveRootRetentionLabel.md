@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveRootRetentionLabel
 
 Update the navigation property retentionLabel in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

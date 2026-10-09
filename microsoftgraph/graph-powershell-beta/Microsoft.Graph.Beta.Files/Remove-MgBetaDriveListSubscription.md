@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveListSubscription
 
 Delete navigation property subscriptions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
