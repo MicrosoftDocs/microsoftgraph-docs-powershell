@@ -530,8 +530,8 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy)
-- [](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyAdminConsentRequestPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-beta)
 
 
 

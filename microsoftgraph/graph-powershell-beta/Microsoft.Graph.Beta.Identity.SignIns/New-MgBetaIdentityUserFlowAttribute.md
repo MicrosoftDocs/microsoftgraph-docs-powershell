@@ -484,8 +484,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-beta)
+- [New-MgBetaIdentityUserFlowAttribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-beta)
 
 
 

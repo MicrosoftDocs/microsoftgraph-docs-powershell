@@ -412,8 +412,8 @@ BODYPARAMETER `<IPathsZhzgo2IdentityprotectionRiskyagentsMicrosoftGraphDismissPo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyagent)
-- [](https://learn.microsoft.com/graph/api/riskyagent-dismiss?view=graph-rest-beta)
+- [Invoke-MgBetaDismissRiskyAgent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyagent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-dismiss?view=graph-rest-beta)
 
 
 
