@@ -734,8 +734,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-beta)
+- [Update-MgBetaSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-beta)
 
 
 

@@ -599,8 +599,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-beta)
+- [Get-MgBetaExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-beta)
 
 
 

@@ -625,8 +625,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
-- [](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta)
+- [Invoke-MgBetaQuerySearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta)
 
 
 
