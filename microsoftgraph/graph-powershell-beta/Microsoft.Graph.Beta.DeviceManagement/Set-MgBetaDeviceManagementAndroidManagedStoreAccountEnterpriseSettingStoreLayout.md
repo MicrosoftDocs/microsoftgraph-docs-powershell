@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Sets the Managed Google Play store layout type via Google EMM API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,6 +386,7 @@ Values correspond directly to the store layout types of Google enterprise object
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)
+
 
 
 
