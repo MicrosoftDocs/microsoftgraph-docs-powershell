@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the properties and relationships of a shiftPreferences object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserShiftPreferences.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
