@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ServiceHealth.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ServiceHealth.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
