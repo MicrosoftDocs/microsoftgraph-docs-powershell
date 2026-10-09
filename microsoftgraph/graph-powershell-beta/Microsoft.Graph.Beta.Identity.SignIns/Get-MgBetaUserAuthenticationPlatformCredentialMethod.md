@@ -15,6 +15,9 @@ title: Get-MgBetaUserAuthenticationPlatformCredentialMethod
 
 Represents a platform credential instance registered to a user on Mac OS.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationPlatformCredentialMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationPlatformCredentialMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

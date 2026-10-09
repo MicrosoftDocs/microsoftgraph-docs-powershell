@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation
 
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

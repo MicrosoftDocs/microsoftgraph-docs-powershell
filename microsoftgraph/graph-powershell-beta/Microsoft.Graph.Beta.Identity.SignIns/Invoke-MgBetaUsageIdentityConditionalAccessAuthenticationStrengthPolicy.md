@@ -17,6 +17,9 @@ The usage function allows the caller to see which Conditional Access policies re
 The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Usage (Default)

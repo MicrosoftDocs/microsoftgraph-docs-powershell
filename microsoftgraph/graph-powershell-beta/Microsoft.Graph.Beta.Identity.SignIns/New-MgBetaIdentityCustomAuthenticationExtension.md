@@ -16,6 +16,9 @@ title: New-MgBetaIdentityCustomAuthenticationExtension
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

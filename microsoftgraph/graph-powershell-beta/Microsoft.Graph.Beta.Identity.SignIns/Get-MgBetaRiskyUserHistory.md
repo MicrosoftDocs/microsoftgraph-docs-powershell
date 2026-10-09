@@ -15,6 +15,9 @@ title: Get-MgBetaRiskyUserHistory
 
 Get a riskyUserHistoryItem object of a riskyUser.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

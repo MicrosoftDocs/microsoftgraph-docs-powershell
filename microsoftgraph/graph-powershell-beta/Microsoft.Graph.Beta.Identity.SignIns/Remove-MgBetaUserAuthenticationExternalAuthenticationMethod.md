@@ -16,6 +16,9 @@ title: Remove-MgBetaUserAuthenticationExternalAuthenticationMethod
 Delete an externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

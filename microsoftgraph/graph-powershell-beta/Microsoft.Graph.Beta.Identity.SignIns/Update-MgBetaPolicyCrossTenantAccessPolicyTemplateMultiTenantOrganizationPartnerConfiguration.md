@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganization
 
 Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

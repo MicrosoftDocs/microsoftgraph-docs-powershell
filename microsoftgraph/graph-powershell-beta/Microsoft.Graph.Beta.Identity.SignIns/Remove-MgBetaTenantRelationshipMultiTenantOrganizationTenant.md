@@ -16,6 +16,9 @@ title: Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 Remove a tenant from a multitenant organization.
 A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

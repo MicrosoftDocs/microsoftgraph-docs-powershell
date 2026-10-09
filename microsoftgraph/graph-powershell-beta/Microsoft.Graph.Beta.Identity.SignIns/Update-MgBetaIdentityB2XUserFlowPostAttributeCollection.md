@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityB2XUserFlowPostAttributeCollection
 
 Update the navigation property postAttributeCollection in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2XUserFlowPostAttributeCollection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowPostAttributeCollection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

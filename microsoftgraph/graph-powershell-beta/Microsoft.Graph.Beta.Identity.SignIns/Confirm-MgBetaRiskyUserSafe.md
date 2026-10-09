@@ -16,6 +16,9 @@ title: Confirm-MgBetaRiskyUserSafe
 Confirm one or more riskyUser objects as safe.
 This action sets the targeted user's risk level to none.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyUserSafe](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserSafe?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)

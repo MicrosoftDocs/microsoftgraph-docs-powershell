@@ -17,6 +17,9 @@ Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
