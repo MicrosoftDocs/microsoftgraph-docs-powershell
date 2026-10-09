@@ -15,6 +15,9 @@ title: Get-MgApplicationSynchronizationJobSchemaDirectory
 
 Contains the collection of directories and all of their objects.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

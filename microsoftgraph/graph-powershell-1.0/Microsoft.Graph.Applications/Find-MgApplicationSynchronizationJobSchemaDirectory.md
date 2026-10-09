@@ -15,6 +15,9 @@ title: Find-MgApplicationSynchronizationJobSchemaDirectory
 
 Discover the latest schema definition for provisioning to an application for the directoryDefinition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discover (Default)

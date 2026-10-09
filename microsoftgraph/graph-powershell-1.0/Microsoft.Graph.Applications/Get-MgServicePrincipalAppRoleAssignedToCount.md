@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalAppRoleAssignedToCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignedToCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignedToCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

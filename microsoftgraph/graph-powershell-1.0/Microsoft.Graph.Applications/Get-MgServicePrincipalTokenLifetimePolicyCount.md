@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalTokenLifetimePolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenLifetimePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

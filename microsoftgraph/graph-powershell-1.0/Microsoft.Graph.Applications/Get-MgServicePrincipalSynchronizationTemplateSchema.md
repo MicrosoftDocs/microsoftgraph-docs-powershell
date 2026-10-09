@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalSynchronizationTemplateSchema
 
 Default synchronization schema for the jobs based on this template.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

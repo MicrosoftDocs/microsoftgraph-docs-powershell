@@ -15,6 +15,9 @@ title: Set-MgServicePrincipalSynchronizationSecret
 
 Provide credentials for establishing connectivity with the target system and store them in the synchronization resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
