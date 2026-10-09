@@ -15,6 +15,9 @@ title: Invoke-MgBetaUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFr
 
 Unassigns the user from an Autopilot device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unassign (Default)
