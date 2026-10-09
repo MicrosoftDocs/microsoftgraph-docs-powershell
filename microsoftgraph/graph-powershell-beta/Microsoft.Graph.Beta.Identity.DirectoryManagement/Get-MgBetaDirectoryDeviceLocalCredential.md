@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryDeviceLocalCredential
 
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

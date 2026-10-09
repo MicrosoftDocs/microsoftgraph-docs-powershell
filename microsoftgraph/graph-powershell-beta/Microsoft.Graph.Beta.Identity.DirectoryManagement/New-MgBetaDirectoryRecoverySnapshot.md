@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryRecoverySnapshot
 
 Create new navigation property to snapshots for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRecoverySnapshot](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRecoverySnapshot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

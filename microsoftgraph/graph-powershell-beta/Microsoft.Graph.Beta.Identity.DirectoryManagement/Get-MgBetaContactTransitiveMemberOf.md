@@ -15,6 +15,9 @@ title: Get-MgBetaContactTransitiveMemberOf
 
 Get transitiveMemberOf from contacts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

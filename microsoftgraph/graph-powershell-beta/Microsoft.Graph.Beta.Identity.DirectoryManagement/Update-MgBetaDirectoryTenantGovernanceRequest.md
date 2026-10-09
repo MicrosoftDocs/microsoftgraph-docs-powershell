@@ -16,6 +16,9 @@ title: Update-MgBetaDirectoryTenantGovernanceRequest
 Update the status property of a governanceRequest to accept or reject the governance request.
 Only the governed tenant can update the request status.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryTenantGovernanceRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

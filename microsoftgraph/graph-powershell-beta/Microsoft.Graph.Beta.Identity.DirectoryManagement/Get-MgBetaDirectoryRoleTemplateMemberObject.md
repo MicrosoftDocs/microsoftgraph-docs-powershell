@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryRoleTemplateMemberObject
 
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleTemplateMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaContract
 
 Retrieve the properties and relationships of contract object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContract?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryRoleTemplate
 
 Add new entity to directoryRoleTemplates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

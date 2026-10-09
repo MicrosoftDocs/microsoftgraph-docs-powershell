@@ -16,6 +16,9 @@ title: New-MgBetaDirectoryTenantGovernanceRequest
 Create a new governanceRequest to establish a governance relationship with a governed tenant.
 The governed tenant can then accept or reject the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernanceRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaContactTransitiveMemberOfCountAsGroup
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactTransitiveMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOfCountAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

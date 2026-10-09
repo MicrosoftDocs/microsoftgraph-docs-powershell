@@ -15,6 +15,9 @@ title: New-MgBetaAdminPeopleProfilePropertySetting
 
 Create a new profilePropertySetting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

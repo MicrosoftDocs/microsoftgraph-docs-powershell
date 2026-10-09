@@ -16,6 +16,9 @@ title: Find-MgBetaTenantRelationshipTenantInformationByTenantId
 Given a tenant ID, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant cross-tenant access settings between you and the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgTenantRelationshipTenantInformationByTenantId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Find-MgTenantRelationshipTenantInformationByTenantId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Find (Default)
