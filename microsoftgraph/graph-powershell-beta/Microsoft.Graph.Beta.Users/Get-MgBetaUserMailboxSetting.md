@@ -61,16 +61,6 @@ Requires $select to retrieve.
 | Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 | Application | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +387,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermailboxsetting)
+
 
 
 
