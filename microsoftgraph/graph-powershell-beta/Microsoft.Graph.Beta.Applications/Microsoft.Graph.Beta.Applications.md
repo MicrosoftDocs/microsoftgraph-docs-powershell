@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: e164fadb-dcd2-4723-a48c-2e89bfd8a422
+Module Guid: 405ade47-03c1-42e1-8795-9b8d2cf5fb14
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -830,23 +830,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
