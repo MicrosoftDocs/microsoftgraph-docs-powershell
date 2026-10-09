@@ -49,6 +49,14 @@ Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TrustFrameworkKeySet.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

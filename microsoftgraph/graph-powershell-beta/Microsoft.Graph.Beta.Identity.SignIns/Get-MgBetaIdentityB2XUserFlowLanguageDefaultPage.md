@@ -61,6 +61,14 @@ This cmdlet has the following aliases,
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection doesn't allow any kind of modification.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
