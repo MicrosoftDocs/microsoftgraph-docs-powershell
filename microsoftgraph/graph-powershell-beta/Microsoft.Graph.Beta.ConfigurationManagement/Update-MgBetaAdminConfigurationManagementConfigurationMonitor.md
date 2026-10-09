@@ -75,6 +75,14 @@ This cmdlet has the following aliases,
 Update the properties of a configurationMonitor object, including the monitor name, description, and baseline.
 You must provide the full monitor body when you call this API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConfigurationMonitoring.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
