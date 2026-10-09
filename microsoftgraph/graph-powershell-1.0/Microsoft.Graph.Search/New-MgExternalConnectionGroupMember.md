@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Create an identity resource for a new member in an externalGroup.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
