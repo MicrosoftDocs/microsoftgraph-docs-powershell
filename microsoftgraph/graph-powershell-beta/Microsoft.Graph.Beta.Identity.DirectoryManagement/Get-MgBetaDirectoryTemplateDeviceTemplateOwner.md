@@ -66,12 +66,17 @@ There can be a maximum of 100 owners on a device template.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryTemplateDeviceTemplateOwner -DeviceTemplateId $deviceTemplateId
+
+```
+This example shows how to use the Get-MgBetaDirectoryTemplateDeviceTemplateOwner Cmdlet.
+
 
 ## PARAMETERS
 

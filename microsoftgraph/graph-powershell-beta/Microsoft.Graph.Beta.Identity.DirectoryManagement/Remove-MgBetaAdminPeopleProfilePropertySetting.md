@@ -62,12 +62,17 @@ This delete operation is supported but fails unless the prioritizedSourceUrls pr
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $profilePropertySettingId
+
+```
+This example shows how to use the Remove-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
+
 
 ## PARAMETERS
 

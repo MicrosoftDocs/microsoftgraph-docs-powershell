@@ -57,18 +57,28 @@ This cmdlet has the following aliases,
 Represents the usage rights a device has been granted.
 
 ## EXAMPLES
+### Example 1: Get all usage rights for a device
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDeviceUsageRights -DeviceId $deviceId
 
-### EXAMPLE 2
+```
+This example will get all usage rights for a device
+
+### Example 2: Get usage rights for a device with specific service identifiers and states
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"
+Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')" 
+
+```
+This example will get usage rights for a device with specific service identifiers and states
+
 
 ## PARAMETERS
 

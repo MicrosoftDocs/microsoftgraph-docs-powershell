@@ -44,12 +44,17 @@ Get the status of the related tenants refresh action.
 | Application | TenantGovernance-RelatedTenant.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus
+
+```
+This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus Cmdlet.
+
 
 ## PARAMETERS
 
