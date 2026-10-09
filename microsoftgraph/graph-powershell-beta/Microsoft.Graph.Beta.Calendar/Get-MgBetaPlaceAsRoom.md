@@ -65,12 +65,17 @@ Compared with the findRooms and findRoomLists functions, this operation returns 
 For details about how they compare, see Using the places API.
 
 ## EXAMPLES
+### Example 1: List all rooms defined in the tenant
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceAsRoom
+
+```
+This example will list all rooms defined in the tenant
+
 
 ## PARAMETERS
 

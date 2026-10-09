@@ -114,8 +114,9 @@ This cmdlet has the following aliases,
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -124,6 +125,10 @@ $params = @{
 }
 
 Update-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserCalendarPermission Cmdlet.
+
 
 ## PARAMETERS
 
