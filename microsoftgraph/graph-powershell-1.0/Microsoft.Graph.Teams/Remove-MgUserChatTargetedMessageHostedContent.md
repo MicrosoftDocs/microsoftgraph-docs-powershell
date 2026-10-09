@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserChatTargetedMessageHostedContent
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserChatTargetedMessageHostedContent
 ## SYNOPSIS
 
 Delete navigation property hostedContents for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTargetedMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,6 +63,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property hostedContents for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -490,7 +497,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -531,27 +538,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserChatTargetedMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagehostedcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagehostedcontent)
