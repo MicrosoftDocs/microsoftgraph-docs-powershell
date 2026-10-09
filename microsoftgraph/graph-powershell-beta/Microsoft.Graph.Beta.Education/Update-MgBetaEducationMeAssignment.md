@@ -1445,7 +1445,7 @@ If the value is null, the student uploaded the resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignment)
+- [Update-MgBetaEducationMeAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignment)
 
 
 

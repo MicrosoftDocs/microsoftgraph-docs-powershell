@@ -366,7 +366,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationusermailboxsetting)
+- [Get-MgBetaEducationUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationusermailboxsetting)
 
 
 
