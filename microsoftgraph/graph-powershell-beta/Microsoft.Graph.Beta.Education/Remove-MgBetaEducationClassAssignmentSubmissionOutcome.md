@@ -16,6 +16,9 @@ title: Remove-MgBetaEducationClassAssignmentSubmissionOutcome
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -20,6 +20,9 @@ During the submit process, all the resources are copied from submittedResources 
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubmitEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationUserAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unsubmit (Default)

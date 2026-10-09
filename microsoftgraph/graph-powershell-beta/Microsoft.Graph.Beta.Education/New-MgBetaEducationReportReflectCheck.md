@@ -15,6 +15,9 @@ title: New-MgBetaEducationReportReflectCheck
 
 Create new navigation property to reflectCheckInResponses for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Education/New-MgEducationReportReflectCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

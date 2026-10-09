@@ -15,6 +15,9 @@ title: Update-MgBetaEducationClass
 
 Update the properties of a class.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

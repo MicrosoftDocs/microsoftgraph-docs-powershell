@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationClassAssignmentSettingGradingScheme
 
 Delete an educationGradingScheme object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSettingGradingScheme?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

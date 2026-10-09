@@ -15,6 +15,9 @@ title: New-MgBetaEducationReportReadingAssignmentSubmission
 
 Create new navigation property to readingAssignmentSubmissions for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationReportReadingAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
