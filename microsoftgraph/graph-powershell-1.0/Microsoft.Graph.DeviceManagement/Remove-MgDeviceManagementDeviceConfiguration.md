@@ -56,12 +56,17 @@ Delete navigation property deviceConfigurations for deviceManagement
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Remove-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId $deviceConfigurationId
+
+```
+This example shows how to use the Remove-MgDeviceManagementDeviceConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

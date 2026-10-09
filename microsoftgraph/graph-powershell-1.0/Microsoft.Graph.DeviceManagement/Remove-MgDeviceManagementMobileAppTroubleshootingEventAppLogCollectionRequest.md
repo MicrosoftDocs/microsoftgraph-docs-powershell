@@ -58,12 +58,17 @@ Delete navigation property appLogCollectionRequests for deviceManagement
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId
+
+```
+This example shows how to use the Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 
