@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaDirectoryRecoveryJob
 ---
@@ -16,9 +16,6 @@ title: Stop-MgBetaDirectoryRecoveryJob
 Cancel a running recoveryJobBase object (either a preview or recovery job).
 The job must be in a non-terminal state (initialized, calculating, loadingData, or running).
 After cancellation, the job status changes to abandoned.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Stop-MgDirectoryRecoveryJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,17 +49,12 @@ The job must be in a non-terminal state (initialized, calculating, loadingData, 
 After cancellation, the job status changes to abandoned.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Stop-MgBetaDirectoryRecoveryJob -RecoveryJobBaseId $recoveryJobBaseId
-
-```
-This example shows how to use the Stop-MgBetaDirectoryRecoveryJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -373,7 +365,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -444,27 +436,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaDirectoryRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entrarecoveryservices-recoveryjobbase-cancel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob)
+- [](https://learn.microsoft.com/graph/api/entrarecoveryservices-recoveryjobbase-cancel?view=graph-rest-beta)
