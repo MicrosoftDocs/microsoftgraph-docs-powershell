@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a virtualEventTownhall object.
 All roles can get the details of a townhall event.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
