@@ -15,6 +15,9 @@ title: Get-MgBetaGroupOnenoteOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteOperationCount](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteOperationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
