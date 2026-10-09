@@ -15,6 +15,9 @@ title: Get-MgPrivacySubjectRightsRequestCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
