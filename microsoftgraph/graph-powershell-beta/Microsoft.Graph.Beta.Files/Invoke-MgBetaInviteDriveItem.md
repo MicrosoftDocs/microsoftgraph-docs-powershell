@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Send a sharing invitation for a driveItem.
 A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
