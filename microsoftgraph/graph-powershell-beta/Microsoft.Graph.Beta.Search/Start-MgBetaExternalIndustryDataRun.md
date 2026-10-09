@@ -49,16 +49,6 @@ An on-demand run causes the next system-scheduled run to be skipped if it is set
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-Run.Start,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -319,6 +309,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/start-mgbetaexternalindustrydatarun)
+
 
 
 
