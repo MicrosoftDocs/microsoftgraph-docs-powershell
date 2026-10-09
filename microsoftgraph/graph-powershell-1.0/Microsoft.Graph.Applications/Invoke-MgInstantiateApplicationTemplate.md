@@ -544,8 +544,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mginstantiateapplicationtemplate)
-- [](https://learn.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
+- [Invoke-MgInstantiateApplicationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mginstantiateapplicationtemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 
 
 

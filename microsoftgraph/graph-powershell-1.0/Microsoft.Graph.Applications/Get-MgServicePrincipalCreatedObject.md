@@ -594,8 +594,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-createdobjects?view=graph-rest-1.0)
+- [Get-MgServicePrincipalCreatedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-createdobjects?view=graph-rest-1.0)
 
 
 

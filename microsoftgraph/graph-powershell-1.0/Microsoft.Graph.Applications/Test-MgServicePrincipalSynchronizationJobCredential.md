@@ -641,8 +641,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalsynchronizationjobcredential)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)
+- [Test-MgServicePrincipalSynchronizationJobCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalsynchronizationjobcredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)
 
 
 

@@ -564,8 +564,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-removekey?view=graph-rest-1.0)
+- [Remove-MgServicePrincipalKey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-removekey?view=graph-rest-1.0)
 
 
 

@@ -470,8 +470,8 @@ BODYPARAMETER `<IPathsYq15M4ServiceprincipalsMicrosoftGraphValidatepropertiesPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgServicePrincipalProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

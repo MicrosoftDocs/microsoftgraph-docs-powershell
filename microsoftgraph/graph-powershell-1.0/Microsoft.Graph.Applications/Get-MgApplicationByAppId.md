@@ -388,8 +388,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid)
-- [](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+- [Get-MgApplicationByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyappid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
 
 
 

@@ -598,9 +598,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
+- [Get-MgServicePrincipalSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
 
 
 

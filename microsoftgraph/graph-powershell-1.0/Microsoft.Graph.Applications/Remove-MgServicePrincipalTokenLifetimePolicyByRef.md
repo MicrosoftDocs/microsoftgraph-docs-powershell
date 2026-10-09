@@ -428,8 +428,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenlifetimepolicybyref)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-delete-tokenlifetimepolicies?view=graph-rest-1.0)
+- [Remove-MgServicePrincipalTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaltokenlifetimepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

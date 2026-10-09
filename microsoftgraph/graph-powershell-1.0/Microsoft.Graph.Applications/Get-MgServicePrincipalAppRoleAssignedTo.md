@@ -590,9 +590,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto)
-- [](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-1.0)
+- [Get-MgServicePrincipalAppRoleAssignedTo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignedto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignedto?view=graph-rest-1.0)
 
 
 

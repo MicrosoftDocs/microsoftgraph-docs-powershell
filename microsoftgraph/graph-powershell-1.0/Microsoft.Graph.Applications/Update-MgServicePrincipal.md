@@ -3588,8 +3588,8 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
+- [Update-MgServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
 
 
 

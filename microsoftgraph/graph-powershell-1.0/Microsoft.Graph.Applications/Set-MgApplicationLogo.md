@@ -470,7 +470,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationlogo)
+- [Set-MgApplicationLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationlogo)
 
 
 
