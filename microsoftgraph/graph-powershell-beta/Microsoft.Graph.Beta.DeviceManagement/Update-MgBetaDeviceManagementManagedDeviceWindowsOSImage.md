@@ -719,7 +719,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsosimage)
+- [Update-MgBetaDeviceManagementManagedDeviceWindowsOSImage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicewindowsosimage)
 
 
 

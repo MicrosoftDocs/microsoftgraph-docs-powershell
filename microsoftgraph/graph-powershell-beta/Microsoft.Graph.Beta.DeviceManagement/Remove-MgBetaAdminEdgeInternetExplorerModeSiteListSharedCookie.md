@@ -544,8 +544,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
-- [](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta)
+- [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-beta)
 
 
 

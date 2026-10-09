@@ -362,7 +362,7 @@ BODY `<IPathsJjrzryDevicemanagementDevicecompliancepoliciesMicrosoftGraphHaspayl
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementdevicecompliancepolicypayloadlink)
+- [Invoke-MgBetaHasDeviceManagementDeviceCompliancePolicyPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetahasdevicemanagementdevicecompliancepolicypayloadlink)
 
 
 

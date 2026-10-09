@@ -466,7 +466,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/stop-mgbetadevicemanagementcomanageddeviceenhancedlogcollection)
+- [Stop-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/stop-mgbetadevicemanagementcomanageddeviceenhancedlogcollection)
 
 
 

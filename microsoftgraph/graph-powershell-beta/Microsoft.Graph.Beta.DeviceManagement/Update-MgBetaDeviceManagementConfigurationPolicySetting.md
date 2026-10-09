@@ -756,7 +756,7 @@ SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`:
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting)
+- [Update-MgBetaDeviceManagementConfigurationPolicySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting)
 
 
 

@@ -372,7 +372,7 @@ BODYPARAMETER `<IPaths1AzqjnzDevicemanagementAndroidmanagedstoreaccountenterpris
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingzerotouchwebtoken)
+- [New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingZeroTouchWebToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingzerotouchwebtoken)
 
 
 
