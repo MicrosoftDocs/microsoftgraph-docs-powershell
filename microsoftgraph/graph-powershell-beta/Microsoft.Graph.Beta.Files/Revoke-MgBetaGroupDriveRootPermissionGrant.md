@@ -98,7 +98,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -196,7 +196,7 @@ HelpMessage: ''
 
 ### -Grantees
 
-.
+
 To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
