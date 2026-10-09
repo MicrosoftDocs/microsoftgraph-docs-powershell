@@ -671,8 +671,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootdelta)
-- [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
+- [Get-MgUserDriveRootDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
 
 
 

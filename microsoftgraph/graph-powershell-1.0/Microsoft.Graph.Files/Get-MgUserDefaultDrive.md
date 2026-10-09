@@ -388,7 +388,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdefaultdrive)
+- [Get-MgUserDefaultDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdefaultdrive)
 
 
 

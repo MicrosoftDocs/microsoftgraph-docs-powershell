@@ -28082,7 +28082,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem)
+- [New-MgGroupDriveListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem)
 
 
 

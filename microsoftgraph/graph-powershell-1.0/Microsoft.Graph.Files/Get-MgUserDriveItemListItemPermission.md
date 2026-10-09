@@ -633,7 +633,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitempermission)
+- [Get-MgUserDriveItemListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitempermission)
 
 
 

@@ -625,8 +625,8 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdrivelistcontenttypetodefaultcontentlocation)
-- [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
+- [Copy-MgDriveListContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdrivelistcontenttypetodefaultcontentlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
 
 
 

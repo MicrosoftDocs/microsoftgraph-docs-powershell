@@ -564,7 +564,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mggroupdriverootpermission)
+- [Test-MgGroupDriveRootPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mggroupdriverootpermission)
 
 
 

@@ -585,8 +585,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckingroupdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)
+- [Invoke-MgCheckinGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckingroupdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)
 
 
 

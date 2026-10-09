@@ -621,7 +621,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemactivitybyinterval)
+- [Get-MgDriveItemListItemActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemactivitybyinterval)
 
 
 

@@ -633,8 +633,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriveitemsensitivitylabel)
-- [](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
+- [Set-MgGroupDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriveitemsensitivitylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
 
 
 
