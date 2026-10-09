@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)
+- [Get-MgReportEmailAppUsageAppUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)
 
 
 

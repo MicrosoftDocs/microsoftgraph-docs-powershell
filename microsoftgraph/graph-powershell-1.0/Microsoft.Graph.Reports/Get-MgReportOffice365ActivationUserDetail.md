@@ -295,8 +295,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
-- [](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)
+- [Get-MgReportOffice365ActivationUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)
 
 
 

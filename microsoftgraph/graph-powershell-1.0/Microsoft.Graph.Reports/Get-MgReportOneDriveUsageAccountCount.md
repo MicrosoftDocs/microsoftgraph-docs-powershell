@@ -375,8 +375,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)
+- [Get-MgReportOneDriveUsageAccountCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)
 
 
 

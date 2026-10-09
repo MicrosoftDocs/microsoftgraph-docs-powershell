@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)
+- [Get-MgReportOffice365ActiveUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)
 
 
 
