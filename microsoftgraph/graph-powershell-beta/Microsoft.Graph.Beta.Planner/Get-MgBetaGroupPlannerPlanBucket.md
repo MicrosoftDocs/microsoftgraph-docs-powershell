@@ -17,6 +17,9 @@ Collection of buckets in the plan.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

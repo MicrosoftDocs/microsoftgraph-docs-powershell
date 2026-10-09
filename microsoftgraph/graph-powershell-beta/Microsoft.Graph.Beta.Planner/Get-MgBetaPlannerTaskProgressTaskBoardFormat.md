@@ -15,6 +15,9 @@ title: Get-MgBetaPlannerTaskProgressTaskBoardFormat
 
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
