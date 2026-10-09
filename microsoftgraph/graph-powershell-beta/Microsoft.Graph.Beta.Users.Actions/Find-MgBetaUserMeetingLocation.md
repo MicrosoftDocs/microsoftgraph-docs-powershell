@@ -100,7 +100,7 @@ HelpMessage: ''
 
 ### -AllowFreeOnly
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-.
+
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -155,7 +155,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -317,7 +317,7 @@ HelpMessage: ''
 
 ### -MaxCandidates
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -344,7 +344,7 @@ HelpMessage: ''
 
 ### -MeetingDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -434,7 +434,7 @@ HelpMessage: ''
 
 ### -Query
 
-.
+
 
 ```yaml
 Type: System.String
