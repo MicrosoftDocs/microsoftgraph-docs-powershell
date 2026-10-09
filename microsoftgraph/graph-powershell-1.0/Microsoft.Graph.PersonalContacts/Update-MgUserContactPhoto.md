@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property photo in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Contacts.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Contacts.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
