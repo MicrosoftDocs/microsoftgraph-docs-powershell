@@ -369,7 +369,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverbyuserprincipalname)
+- [Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverbyuserprincipalname)
 
 
 
