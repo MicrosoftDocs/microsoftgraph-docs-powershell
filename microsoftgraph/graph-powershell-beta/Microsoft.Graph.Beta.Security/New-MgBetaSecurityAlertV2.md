@@ -69,16 +69,16 @@ When the alert is created, the backend automatically creates a new incident to c
 | Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a manual alert with a new incident
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.manualAlert"
 	title = "Suspicious login from TOR exit node"
-	description = "User account showed login activity from known TOR exit node.
-Manual investigation revealed potential account compromise."
+	description = "User account showed login activity from known TOR exit node. Manual investigation revealed potential account compromise."
 	category = "InitialAccess"
 	severity = "high"
 	recommendedActions = "Reset user credentials, enable MFA, review recent user activity"
@@ -103,7 +103,12 @@ entityDefinitions = @(
 
 New-MgBetaSecurityAlertV2 -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a manual alert with a new incident
+
+### Example 2: Create a manual alert linked to an existing incident
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -132,6 +137,10 @@ $params = @{
 }
 
 New-MgBetaSecurityAlertV2 -BodyParameter $params
+
+```
+This example will create a manual alert linked to an existing incident
+
 
 ## PARAMETERS
 

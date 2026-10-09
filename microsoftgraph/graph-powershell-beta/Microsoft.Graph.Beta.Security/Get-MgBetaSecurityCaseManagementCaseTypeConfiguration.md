@@ -69,16 +69,6 @@ Supports $select, $count, and $expand of the statuses and customFields relations
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -662,6 +652,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcasetypeconfiguration)
 - [](https://learn.microsoft.com/graph/api/security-casemanagementroot-list-casetypeconfigurations?view=graph-rest-beta)
+
+
 
 
 

@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete a retentionLabel object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
+
+```
+This example shows how to use the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

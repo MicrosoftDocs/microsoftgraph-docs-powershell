@@ -56,12 +56,17 @@ This cmdlet has the following aliases,
 A collection of tasks associated with security incidents.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIncidentTask
+
+```
+This example shows how to use the Get-MgBetaSecurityIncidentTask Cmdlet.
+
 
 ## PARAMETERS
 

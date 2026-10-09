@@ -79,8 +79,9 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 | Application | InformationProtectionPolicy.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -123,6 +124,10 @@ $params = @{
 }
 
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet.
+
 
 ## PARAMETERS
 

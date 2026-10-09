@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Move one or more alert resources to a new or existing incident.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -443,6 +433,7 @@ BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPos
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert)
 - [](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-beta)
+
 
 
 

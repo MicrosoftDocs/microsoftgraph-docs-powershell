@@ -62,16 +62,6 @@ For files larger than 1 MB, send one PUT request for each chunk until all byte r
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -577,6 +567,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycasemanagementcaseattachmentcontent)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta)
+
 
 
 
