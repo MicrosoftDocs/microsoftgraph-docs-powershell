@@ -201,7 +201,7 @@ HelpMessage: ''
 
 ### -AccessPackageAssignmentRequests
 
-.
+
 To construct, see NOTES section for ACCESSPACKAGEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml

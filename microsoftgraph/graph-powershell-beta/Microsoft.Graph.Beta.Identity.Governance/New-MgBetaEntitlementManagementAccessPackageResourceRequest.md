@@ -219,7 +219,7 @@ HelpMessage: ''
 
 ### -ExecuteImmediately
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -497,7 +497,7 @@ HelpMessage: ''
 
 ### -RequestStatus
 
-.
+
 
 ```yaml
 Type: System.String

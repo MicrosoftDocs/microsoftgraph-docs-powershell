@@ -53,7 +53,7 @@ Add new entity to privilegedOperationEvents
 
 ### -AdditionalInformation
 
-.
+
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ HelpMessage: ''
 
 ### -CreationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -181,7 +181,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -350,7 +350,7 @@ HelpMessage: ''
 
 ### -ReferenceKey
 
-.
+
 
 ```yaml
 Type: System.String
@@ -371,7 +371,7 @@ HelpMessage: ''
 
 ### -ReferenceSystem
 
-.
+
 
 ```yaml
 Type: System.String
@@ -392,7 +392,7 @@ HelpMessage: ''
 
 ### -RequestorId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -413,7 +413,7 @@ HelpMessage: ''
 
 ### -RequestorName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -434,7 +434,7 @@ HelpMessage: ''
 
 ### -RequestType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -477,7 +477,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -498,7 +498,7 @@ HelpMessage: ''
 
 ### -RoleName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -519,7 +519,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -540,7 +540,7 @@ HelpMessage: ''
 
 ### -UserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -561,7 +561,7 @@ HelpMessage: ''
 
 ### -UserMail
 
-.
+
 
 ```yaml
 Type: System.String
@@ -582,7 +582,7 @@ HelpMessage: ''
 
 ### -UserName
 
-.
+
 
 ```yaml
 Type: System.String
