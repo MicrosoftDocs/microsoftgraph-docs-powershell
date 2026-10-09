@@ -72,16 +72,6 @@ You can add azureADDevice resources as members, but may not add updatableAssetGr
 Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it doesn't already exist.
 You can also use the method addMembersById to add members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -552,6 +542,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesdeploymentaudiencemember)
 - [](https://learn.microsoft.com/graph/api/windowsupdates-updatableassetgroup-addmembers?view=graph-rest-beta)
+
 
 
 
