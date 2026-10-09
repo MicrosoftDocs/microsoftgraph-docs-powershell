@@ -531,8 +531,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizedmsisignin)
-- [](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizedmsisignins?view=graph-rest-beta)
+- [Get-MgBetaAuditLogSummarizedMsiSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizedmsisignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizedmsisignins?view=graph-rest-beta)
 
 
 

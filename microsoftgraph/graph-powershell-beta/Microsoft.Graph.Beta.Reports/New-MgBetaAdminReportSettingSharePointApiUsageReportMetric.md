@@ -386,7 +386,7 @@ The supported values are: egressReport, throttlingReport.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetaadminreportsettingsharepointapiusagereportmetric)
+- [New-MgBetaAdminReportSettingSharePointApiUsageReportMetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetaadminreportsettingsharepointapiusagereportmetric)
 
 
 
