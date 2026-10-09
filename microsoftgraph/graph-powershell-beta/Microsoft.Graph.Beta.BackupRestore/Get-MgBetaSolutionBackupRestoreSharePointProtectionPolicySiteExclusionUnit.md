@@ -592,9 +592,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteexclusionunit)
-- [](https://learn.microsoft.com/graph/api/siteexclusionunit-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteexclusionunits?view=graph-rest-beta)
+- [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteexclusionunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/siteexclusionunit-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteexclusionunits?view=graph-rest-beta)
 
 
 
