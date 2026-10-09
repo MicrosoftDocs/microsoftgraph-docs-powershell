@@ -3270,8 +3270,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent)
-- [](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-beta)
+- [New-MgBetaGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-beta)
 
 
 

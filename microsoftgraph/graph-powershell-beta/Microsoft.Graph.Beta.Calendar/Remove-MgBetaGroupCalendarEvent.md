@@ -431,7 +431,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarevent)
+- [Remove-MgBetaGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupcalendarevent)
 
 
 
