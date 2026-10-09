@@ -609,7 +609,7 @@ Read-only.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>: managedTenantAlertRuleDefinition
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -699,7 +699,7 @@ Optional.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-DEFINITIONTEMPLATE <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>: alertRuleDefinitionTemplate
+DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`: alertRuleDefinitionTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultSeverity <String>]: alertSeverity
 
@@ -707,3 +707,25 @@ DEFINITIONTEMPLATE <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>: a
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertruledefinition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

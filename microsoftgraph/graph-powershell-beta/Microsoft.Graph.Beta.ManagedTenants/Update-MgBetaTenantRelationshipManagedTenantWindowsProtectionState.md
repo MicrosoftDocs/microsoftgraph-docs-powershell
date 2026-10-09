@@ -1208,7 +1208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsWindowsProtectionState>: windowsProtectionState
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsWindowsProtectionState>`: windowsProtectionState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1288,7 +1288,7 @@ Read-only.
 Optional.
 Read-only.
 
-INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
+INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -1332,3 +1332,25 @@ INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantwindowsprotectionstate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
