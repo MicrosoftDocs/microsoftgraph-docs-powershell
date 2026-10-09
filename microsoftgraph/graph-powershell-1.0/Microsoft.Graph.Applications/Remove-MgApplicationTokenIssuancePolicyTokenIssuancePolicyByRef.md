@@ -57,12 +57,17 @@ Remove a tokenIssuancePolicy from an application.
 | Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
+
+```
+This example shows how to use the Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef Cmdlet.
+
 
 ## PARAMETERS
 

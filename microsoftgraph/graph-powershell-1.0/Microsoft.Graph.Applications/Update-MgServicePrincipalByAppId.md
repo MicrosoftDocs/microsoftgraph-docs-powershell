@@ -131,8 +131,24 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 ## EXAMPLES
+### Example 1: Create a new servicePrincipal if it doesn't exist
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgServicePrincipalByAppId -BodyParameter $params
+
+```
+This example will create a new serviceprincipal if it doesn't exist
+
+### Example 2: Update an existing servicePrincipal
+
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -142,15 +158,9 @@ $params = @{
 
 Update-MgServicePrincipalByAppId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update an existing serviceprincipal
 
-Import-Module Microsoft.Graph.Applications
-
-$params = @{
-	displayName = "My app instance"
-}
-
-Update-MgServicePrincipalByAppId -BodyParameter $params
 
 ## PARAMETERS
 

@@ -50,12 +50,17 @@ Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removin
 For more information, see Publisher verification.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId
+
+```
+This example shows how to use the Clear-MgApplicationVerifiedPublisher Cmdlet.
+
 
 ## PARAMETERS
 
