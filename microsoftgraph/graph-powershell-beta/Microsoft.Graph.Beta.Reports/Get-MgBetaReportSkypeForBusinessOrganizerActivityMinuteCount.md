@@ -15,6 +15,9 @@ title: Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount
 
 Invoke function getSkypeForBusinessOrganizerActivityMinuteCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

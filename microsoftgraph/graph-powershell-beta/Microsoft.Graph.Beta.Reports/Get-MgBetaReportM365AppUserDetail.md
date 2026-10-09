@@ -15,6 +15,9 @@ title: Get-MgBetaReportM365AppUserDetail
 
 Get a report that provides the details about which apps and platforms users have used.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

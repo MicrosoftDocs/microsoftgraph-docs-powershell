@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportPolicyNonComplianceReport
 
 Invoke action getPolicyNonComplianceReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

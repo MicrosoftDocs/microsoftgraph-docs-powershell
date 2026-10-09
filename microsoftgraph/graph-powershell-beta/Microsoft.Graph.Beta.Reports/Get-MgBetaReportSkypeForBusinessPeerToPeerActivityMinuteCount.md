@@ -15,6 +15,9 @@ title: Get-MgBetaReportSkypeForBusinessPeerToPeerActivityMinuteCount
 
 Invoke function getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

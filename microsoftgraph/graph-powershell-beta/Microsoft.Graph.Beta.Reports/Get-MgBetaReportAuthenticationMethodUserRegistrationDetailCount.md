@@ -15,6 +15,9 @@ title: Get-MgBetaReportAuthenticationMethodUserRegistrationDetailCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetailCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetailCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
