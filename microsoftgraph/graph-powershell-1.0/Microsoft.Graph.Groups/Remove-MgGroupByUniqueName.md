@@ -409,8 +409,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
-- [](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
+- [Remove-MgGroupByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
 
 
 

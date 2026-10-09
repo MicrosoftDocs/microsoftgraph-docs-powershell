@@ -525,8 +525,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref)
-- [](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0)
+- [New-MgGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupacceptedsenderbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0)
 
 
 

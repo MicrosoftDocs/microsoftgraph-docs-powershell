@@ -588,8 +588,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
-- [](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
+- [Update-MgGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
 
 
 

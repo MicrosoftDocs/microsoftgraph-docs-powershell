@@ -388,8 +388,8 @@ BODYPARAMETER `<IPathsRyc91VGroupsettingtemplatesMicrosoftGraphGetbyidsPostReque
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatebyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+- [Get-MgGroupSettingTemplateById](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatebyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 
 
 

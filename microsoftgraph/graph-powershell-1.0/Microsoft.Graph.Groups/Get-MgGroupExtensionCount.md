@@ -357,7 +357,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupextensioncount)
+- [Get-MgGroupExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupextensioncount)
 
 
 

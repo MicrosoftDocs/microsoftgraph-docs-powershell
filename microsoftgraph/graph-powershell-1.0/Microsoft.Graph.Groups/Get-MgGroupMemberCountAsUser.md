@@ -380,7 +380,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercountasuser)
+- [Get-MgGroupMemberCountAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercountasuser)
 
 
 

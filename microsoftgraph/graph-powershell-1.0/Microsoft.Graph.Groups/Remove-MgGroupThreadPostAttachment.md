@@ -465,7 +465,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostattachment)
+- [Remove-MgGroupThreadPostAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostattachment)
 
 
 
