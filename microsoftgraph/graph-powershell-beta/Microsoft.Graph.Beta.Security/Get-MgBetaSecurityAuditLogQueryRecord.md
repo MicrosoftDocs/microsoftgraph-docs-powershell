@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAuditLogQueryRecord
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityAuditLogQueryRecord
 ## SYNOPSIS
 
 An individual audit log record.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLogQueryRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLogQueryRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,17 +57,12 @@ This cmdlet has the following aliases,
 An individual audit log record.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId $auditLogQueryId
-
-```
-This example shows how to use the Get-MgBetaSecurityAuditLogQueryRecord Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -680,27 +672,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityAuditLogQueryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecord)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditlogquery-list-records?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecord)
+- [](https://learn.microsoft.com/graph/api/security-auditlogquery-list-records?view=graph-rest-beta)

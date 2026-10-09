@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAuditLog
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityAuditLog
 ## SYNOPSIS
 
 Update the navigation property auditLog in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAuditLog?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property auditLog in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -286,7 +293,7 @@ HelpMessage: ''
 
 ### -Queries
 
-
+.
 To construct, see NOTES section for QUERIES properties and create a hash table.
 
 ```yaml
@@ -380,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAuditCoreRoot>`: Root entity for the audit log API.
+BODYPARAMETER <IMicrosoftGraphSecurityAuditCoreRoot>: Root entity for the audit log API.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -473,27 +480,4 @@ It indicates that the 'user' who performed the activity was an application with 
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityAuditLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog)

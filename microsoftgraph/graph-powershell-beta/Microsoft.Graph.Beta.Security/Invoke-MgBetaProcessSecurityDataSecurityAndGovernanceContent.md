@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContent
 ---
@@ -52,13 +52,15 @@ Use this API when an application needs to evaluate content before or during data
 In Agent-to-Tool (A2T) scenarios, the agent runtime calls this API before invoking an external tool to determine whether the content should be allowed, blocked, or audited according to Microsoft Purview policies.
 For A2T scenarios: The response contains any applicable policy actions together with the protection scope state, allowing callers to determine whether cached protection scopes should be refreshed.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Content.Process.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Content.Process.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -85,7 +87,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -370,7 +372,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1IozinuSecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1IozinuSecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentToProcess <IMicrosoftGraphProcessContentRequest>]: processContentRequest
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -428,7 +430,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
 
-CONTENTTOPROCESS `<IMicrosoftGraphProcessContentRequest>`: processContentRequest
+CONTENTTOPROCESS <IMicrosoftGraphProcessContentRequest>: processContentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -487,28 +489,5 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
+- [](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)

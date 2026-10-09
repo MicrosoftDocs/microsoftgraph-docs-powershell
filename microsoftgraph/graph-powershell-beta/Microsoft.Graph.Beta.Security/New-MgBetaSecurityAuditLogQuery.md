@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityAuditLogQuery
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityAuditLogQuery
 ## SYNOPSIS
 
 Create a new auditLogQuery object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAuditLogQuery](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAuditLogQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new auditLogQuery object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -96,10 +84,6 @@ status = "String"
 }
 
 New-MgBetaSecurityAuditLogQuery -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityAuditLogQuery Cmdlet.
-
 
 ## PARAMETERS
 
@@ -575,7 +559,7 @@ HelpMessage: ''
 
 ### -ServiceFilters
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -688,7 +672,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAuditLogQuery>`: Represents a query against the unified audit log.
+BODYPARAMETER <IMicrosoftGraphSecurityAuditLogQuery>: Represents a query against the unified audit log.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -760,27 +744,5 @@ It indicates that the 'user' who performed the activity was an application with 
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityAuditLogQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery)
+- [](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-beta)

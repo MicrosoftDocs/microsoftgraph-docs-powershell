@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityCollaborationAnalyzedEmail
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityCollaborationAnalyzedEmail
 ## SYNOPSIS
 
 Read the properties and relationships of an analyzedEmail object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an analyzedEmail object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAnalyzedMessage.Read.All, SecurityAnalyzedMessage.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityCollaborationAnalyzedEmail -AnalyzedEmailId $analyzedEmailId
-
-```
-This example shows how to use the Get-MgBetaSecurityCollaborationAnalyzedEmail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -540,7 +524,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -661,27 +645,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
+- [](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-beta)
