@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernancePrivilegedAccessGroupResource
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaIdentityGovernancePrivilegedAccessGroupResource
 ## SYNOPSIS
 
 Update the navigation property resources in identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernancePrivilegedAccessGroupResource](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroupResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
