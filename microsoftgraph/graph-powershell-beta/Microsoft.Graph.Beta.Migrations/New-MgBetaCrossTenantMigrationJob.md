@@ -55,8 +55,9 @@ A job defines the migration batch but doesn't start validation or migration.
 After you create the job, call validate to verify tenant and resource configuration, then call migrate to begin the actual migration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
@@ -82,6 +83,10 @@ workloads = @(
 }
 
 New-MgBetaCrossTenantMigrationJob -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 
