@@ -593,7 +593,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanygeneralledgerentry)
+- [Get-MgBetaFinancialCompanyGeneralLedgerEntry](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanygeneralledgerentry)
 
 
 

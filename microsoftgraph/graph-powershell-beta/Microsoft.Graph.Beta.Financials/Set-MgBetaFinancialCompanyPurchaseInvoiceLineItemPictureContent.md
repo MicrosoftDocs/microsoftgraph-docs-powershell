@@ -556,7 +556,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanypurchaseinvoicelineitempicturecontent)
+- [Set-MgBetaFinancialCompanyPurchaseInvoiceLineItemPictureContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanypurchaseinvoicelineitempicturecontent)
 
 
 
