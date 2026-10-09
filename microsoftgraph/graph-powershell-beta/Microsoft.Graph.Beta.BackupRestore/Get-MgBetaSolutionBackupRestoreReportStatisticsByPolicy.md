@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy
 ---
@@ -43,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the statistics that correspond to the specified policy ID of a backupPolicyReport.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -288,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -335,28 +345,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy)
+- [](https://learn.microsoft.com/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta)

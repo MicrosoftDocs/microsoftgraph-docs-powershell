@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BackupRestore
-Module Guid: 0bd1a821-fd5d-4f4c-af06-0cf4b7569793
+Module Guid: bdc6da2e-32d5-4701-8cb8-adb16d491a8f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.backuprestore/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -520,23 +520,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnit](Update-MgBetaSolutionBackupRestoreSiteProtectionUnit.md)
 
 ### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

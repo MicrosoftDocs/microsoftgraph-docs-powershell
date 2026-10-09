@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorepointprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestorePointProtectionUnit
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaSolutionBackupRestorePointProtectionUnit
 
 The site, drive, or mailbox unit protected under a protection policy.
 Supports $expand and $filter on protectionUnit/policyId using the eq operator.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestorePointProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestorePointProtectionUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 The site, drive, or mailbox unit protected under a protection policy.
 Supports $expand and $filter on protectionUnit/policyId using the eq operator.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -339,7 +346,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -386,27 +393,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBackupRestorePointProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorepointprotectionunit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorepointprotectionunit)
