@@ -600,8 +600,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
-- [](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaGroupProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
 
 
 

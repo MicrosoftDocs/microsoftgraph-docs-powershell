@@ -1000,8 +1000,8 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthread)
-- [](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-beta)
+- [New-MgBetaGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-beta)
 
 
 

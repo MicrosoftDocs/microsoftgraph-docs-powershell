@@ -478,7 +478,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension)
+- [New-MgBetaGroupExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension)
 
 
 
