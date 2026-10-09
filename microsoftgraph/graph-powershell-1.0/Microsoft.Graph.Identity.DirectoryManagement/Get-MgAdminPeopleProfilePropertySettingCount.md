@@ -15,6 +15,9 @@ title: Get-MgAdminPeopleProfilePropertySettingCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfilePropertySettingCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfilePropertySettingCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

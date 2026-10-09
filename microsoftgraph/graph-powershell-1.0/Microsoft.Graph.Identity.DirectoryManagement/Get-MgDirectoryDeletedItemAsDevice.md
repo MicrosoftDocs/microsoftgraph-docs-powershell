@@ -15,6 +15,9 @@ title: Get-MgDirectoryDeletedItemAsDevice
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

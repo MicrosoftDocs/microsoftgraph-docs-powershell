@@ -15,6 +15,9 @@ title: Get-MgSubscribedSku
 
 Get a specific commercial subscription that an organization has acquired.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaSubscribedSku?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

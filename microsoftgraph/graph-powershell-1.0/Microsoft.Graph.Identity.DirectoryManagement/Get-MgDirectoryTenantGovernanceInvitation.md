@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceInvitation
 
 Get governanceInvitations from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

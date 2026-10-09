@@ -15,6 +15,9 @@ title: Update-MgDomainFederationConfiguration
 
 Update the properties of an internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

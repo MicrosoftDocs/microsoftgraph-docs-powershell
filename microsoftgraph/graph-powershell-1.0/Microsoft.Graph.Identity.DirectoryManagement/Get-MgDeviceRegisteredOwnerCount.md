@@ -15,6 +15,9 @@ title: Get-MgDeviceRegisteredOwnerCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwnerCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwnerCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

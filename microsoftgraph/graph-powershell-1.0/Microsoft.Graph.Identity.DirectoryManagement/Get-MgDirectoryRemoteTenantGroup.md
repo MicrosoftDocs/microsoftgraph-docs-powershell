@@ -15,6 +15,9 @@ title: Get-MgDirectoryRemoteTenantGroup
 
 Read the properties and relationships of a remoteTenantGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRemoteTenantGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceRequest
 
 Get governanceRequests from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

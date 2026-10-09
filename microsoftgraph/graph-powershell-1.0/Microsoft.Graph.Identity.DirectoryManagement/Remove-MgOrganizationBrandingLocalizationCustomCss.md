@@ -16,6 +16,9 @@ title: Remove-MgOrganizationBrandingLocalizationCustomCss
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

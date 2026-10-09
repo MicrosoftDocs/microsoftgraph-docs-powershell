@@ -15,6 +15,9 @@ title: Update-MgDirectoryRoleScopedMember
 
 Update the navigation property scopedMembers in directoryRoles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

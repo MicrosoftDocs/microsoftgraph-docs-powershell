@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric
 
 Get appB2BSignInActivityMetrics from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

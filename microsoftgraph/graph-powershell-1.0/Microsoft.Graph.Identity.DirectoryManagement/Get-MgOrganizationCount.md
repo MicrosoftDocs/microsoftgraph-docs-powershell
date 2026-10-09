@@ -15,6 +15,9 @@ title: Get-MgOrganizationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

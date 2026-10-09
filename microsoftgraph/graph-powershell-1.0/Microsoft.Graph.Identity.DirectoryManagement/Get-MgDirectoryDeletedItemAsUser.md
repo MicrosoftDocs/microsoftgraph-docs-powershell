@@ -15,6 +15,9 @@ title: Get-MgDirectoryDeletedItemAsUser
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

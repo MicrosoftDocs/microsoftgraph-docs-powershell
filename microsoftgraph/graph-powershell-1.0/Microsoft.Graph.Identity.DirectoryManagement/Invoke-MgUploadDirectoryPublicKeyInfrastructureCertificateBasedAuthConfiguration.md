@@ -18,6 +18,9 @@ Only one operation can run at a time and this operation can take up to 30 minute
 To know whether another upload is in progress, call the Get certificateBasedAuthPki.
 The status property will have the value running.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)

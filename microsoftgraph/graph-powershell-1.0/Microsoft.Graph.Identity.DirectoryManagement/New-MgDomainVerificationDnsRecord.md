@@ -15,6 +15,9 @@ title: New-MgDomainVerificationDnsRecord
 
 Create new navigation property to verificationDnsRecords for domains
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

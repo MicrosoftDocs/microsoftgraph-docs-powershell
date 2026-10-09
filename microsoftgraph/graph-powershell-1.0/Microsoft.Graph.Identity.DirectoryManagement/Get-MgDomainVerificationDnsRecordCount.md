@@ -15,6 +15,9 @@ title: Get-MgDomainVerificationDnsRecordCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainVerificationDnsRecordCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainVerificationDnsRecordCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

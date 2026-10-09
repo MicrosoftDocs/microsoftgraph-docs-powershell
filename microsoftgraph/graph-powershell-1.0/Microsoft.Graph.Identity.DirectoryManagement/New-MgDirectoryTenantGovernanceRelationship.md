@@ -15,6 +15,9 @@ title: New-MgDirectoryTenantGovernanceRelationship
 
 Create new navigation property to governanceRelationships for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryTenantGovernanceRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryTenantGovernanceRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
