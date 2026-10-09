@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatRscConfiguration
 ---
@@ -33,6 +33,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get chat RSC configuration for tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -181,27 +191,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaChatRscConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatrscconfiguration)

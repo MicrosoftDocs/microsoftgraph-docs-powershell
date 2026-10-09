@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamapppreapproval
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTeamAppPreApproval
 ---
@@ -33,6 +33,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete Preapproval policy associated with a Teams App.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -246,27 +256,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTeamAppPreApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamapppreapproval)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamapppreapproval)
