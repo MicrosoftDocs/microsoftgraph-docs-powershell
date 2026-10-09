@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementPartner
 
 Create new navigation property to deviceManagementPartners for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

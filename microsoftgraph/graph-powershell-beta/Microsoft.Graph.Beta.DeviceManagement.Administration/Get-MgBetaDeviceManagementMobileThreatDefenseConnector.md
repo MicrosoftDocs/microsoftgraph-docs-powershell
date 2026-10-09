@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementMobileThreatDefenseConnector
 
 The list of Mobile threat Defense connectors configured by the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

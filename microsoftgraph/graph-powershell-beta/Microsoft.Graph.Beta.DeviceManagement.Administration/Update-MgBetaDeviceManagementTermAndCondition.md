@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementTermAndCondition
 
 Update the navigation property termsAndConditions in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

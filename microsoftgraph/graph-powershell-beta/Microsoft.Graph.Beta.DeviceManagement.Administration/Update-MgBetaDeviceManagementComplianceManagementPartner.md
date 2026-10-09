@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementComplianceManagementPartner
 
 Update the navigation property complianceManagementPartners in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementComplianceManagementPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

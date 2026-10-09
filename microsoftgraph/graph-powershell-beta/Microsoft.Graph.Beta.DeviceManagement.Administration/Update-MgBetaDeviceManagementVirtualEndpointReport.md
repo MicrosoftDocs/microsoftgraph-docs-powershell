@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementVirtualEndpointReport
 
 Update the navigation property reports in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementVirtualEndpointDeviceImageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointDeviceImageCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointDeviceImageCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

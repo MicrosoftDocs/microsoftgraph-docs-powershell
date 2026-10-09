@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementExchangeConnector
 
 The list of Exchange Connectors configured by the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
