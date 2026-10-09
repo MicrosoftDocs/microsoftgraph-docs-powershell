@@ -607,7 +607,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 To construct, see NOTES section for TAGS properties and create a hash table.
 
 ```yaml
