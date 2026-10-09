@@ -939,7 +939,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerelatedtenant)
+- [Update-MgDirectoryTenantGovernanceRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerelatedtenant)
 
 
 

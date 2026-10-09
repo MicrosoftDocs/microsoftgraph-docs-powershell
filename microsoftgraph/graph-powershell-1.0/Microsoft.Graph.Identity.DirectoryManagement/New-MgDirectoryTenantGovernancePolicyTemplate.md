@@ -11279,7 +11279,7 @@ MULTITENANTAPPLICATIONSTOPROVISION <IMicrosoftGraphMultiTenantApplicationsToProv
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancepolicytemplate)
+- [New-MgDirectoryTenantGovernancePolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancepolicytemplate)
 
 
 
