@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsSectionCheck
 
 Delete navigation property checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsSectionCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsSectionCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

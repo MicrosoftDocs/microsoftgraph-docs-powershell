@@ -15,6 +15,9 @@ title: Remove-MgUserEventExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

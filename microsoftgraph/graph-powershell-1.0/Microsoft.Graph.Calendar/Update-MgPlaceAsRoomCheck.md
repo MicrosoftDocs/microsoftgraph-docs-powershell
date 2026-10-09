@@ -15,6 +15,9 @@ title: Update-MgPlaceAsRoomCheck
 
 Update the navigation property checkIns in places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsRoomCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsRoomCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
