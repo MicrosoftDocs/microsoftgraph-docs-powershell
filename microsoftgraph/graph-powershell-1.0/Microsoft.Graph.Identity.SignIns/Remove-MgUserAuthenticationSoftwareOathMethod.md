@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Delete a user's Software OATH token authentication method object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

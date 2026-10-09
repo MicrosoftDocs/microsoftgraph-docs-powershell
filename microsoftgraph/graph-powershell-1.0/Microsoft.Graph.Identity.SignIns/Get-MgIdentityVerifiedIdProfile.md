@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of verifiedIdProfile object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VerifiedId-Profile.Read.All, VerifiedId-Profile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VerifiedId-Profile.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:\r- externalUsersSelfServiceSignupEventsFlow
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.Read.All, EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.Read.All, EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

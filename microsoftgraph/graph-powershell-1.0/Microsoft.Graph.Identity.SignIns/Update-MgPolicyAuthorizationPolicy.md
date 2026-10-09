@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 
 Update the properties of an authorizationPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.Authorization,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
