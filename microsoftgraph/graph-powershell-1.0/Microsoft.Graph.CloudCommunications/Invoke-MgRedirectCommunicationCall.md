@@ -638,8 +638,8 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall)
-- [](https://learn.microsoft.com/graph/api/call-redirect?view=graph-rest-1.0)
+- [Invoke-MgRedirectCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-redirect?view=graph-rest-1.0)
 
 
 

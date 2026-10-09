@@ -520,8 +520,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole)
-- [](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0)
+- [Rename-MgCommunicationCallScreenSharingRole](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0)
 
 
 

@@ -443,8 +443,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallaudioroutinggroup)
-- [](https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-1.0)
+- [Remove-MgCommunicationCallAudioRoutingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallaudioroutinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-1.0)
 
 
 
