@@ -41,6 +41,14 @@ Industry data automates a run every 12 hours; however, users can use the start a
 The industry data service throttles the start of runs, allowing up to five successful runs every 12 hours.
 An on-demand run causes the next system-scheduled run to be skipped if it is set to run within the next 10 hours.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-Run.Start,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-Run.Start,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
