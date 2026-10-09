@@ -1078,8 +1078,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy)
-- [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0)
+- [Update-MgSolutionBackupRestoreSharePointProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointprotectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-update?view=graph-rest-1.0)
 
 
 
