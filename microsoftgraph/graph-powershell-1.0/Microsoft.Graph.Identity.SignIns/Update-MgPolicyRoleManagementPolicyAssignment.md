@@ -783,7 +783,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment)
+- [Update-MgPolicyRoleManagementPolicyAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment)
 
 
 

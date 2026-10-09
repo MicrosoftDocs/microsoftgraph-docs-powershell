@@ -428,7 +428,7 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfederatedtokenvalidationpolicy)
+- [Update-MgPolicyFederatedTokenValidationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfederatedtokenvalidationpolicy)
 
 
 

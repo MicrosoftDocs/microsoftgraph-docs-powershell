@@ -684,8 +684,8 @@ This property is set by Intune.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
+- [Test-MgIdentityConditionalAccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/test-mgidentityconditionalaccess)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-evaluate?view=graph-rest-1.0)
 
 
 

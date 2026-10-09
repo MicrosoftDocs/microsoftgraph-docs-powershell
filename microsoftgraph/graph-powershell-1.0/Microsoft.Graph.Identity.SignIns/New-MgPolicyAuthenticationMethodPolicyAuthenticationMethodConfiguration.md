@@ -419,7 +419,7 @@ EXCLUDETARGETS <IMicrosoftGraphExcludeTarget[]>: Groups of users that are exclud
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
+- [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration)
 
 
 
