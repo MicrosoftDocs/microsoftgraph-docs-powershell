@@ -57,16 +57,6 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 | Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite,  |
 | Application | Notes.Read.All, Notes.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -457,6 +447,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenoterecentnotebook)
 - [](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta)
+
 
 
 
