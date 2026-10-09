@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 The Windows settings of the user stored in the cloud.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.Read.All,  |
+| Delegated (personal Microsoft account) | UserWindowsSettings.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
