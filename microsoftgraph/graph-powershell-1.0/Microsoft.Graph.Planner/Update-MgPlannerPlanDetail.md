@@ -15,6 +15,9 @@ title: Update-MgPlannerPlanDetail
 
 Update the properties of plannerplandetails object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
