@@ -49,6 +49,14 @@ Get the room lists defined in a tenant, as represented by their emailAddress obj
 Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadBasic.All, User.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, User.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
