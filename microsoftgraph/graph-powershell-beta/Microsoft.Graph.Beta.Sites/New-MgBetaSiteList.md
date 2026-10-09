@@ -84,6 +84,14 @@ This cmdlet has the following aliases,
 
 Create a new list in a site.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Manage.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
