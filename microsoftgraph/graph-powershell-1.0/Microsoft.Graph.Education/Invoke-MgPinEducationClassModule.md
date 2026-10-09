@@ -48,6 +48,14 @@ Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
