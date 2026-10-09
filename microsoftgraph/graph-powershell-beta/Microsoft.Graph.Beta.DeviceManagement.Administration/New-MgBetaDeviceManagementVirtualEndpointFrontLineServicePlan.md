@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to frontLineServicePlans for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,6 +455,7 @@ For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
+
 
 
 

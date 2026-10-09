@@ -82,16 +82,6 @@ Create new navigation property to acceptanceStatuses for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AcceptedDateTime
@@ -770,6 +760,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandconditionacceptancestatus)
+
 
 
 
