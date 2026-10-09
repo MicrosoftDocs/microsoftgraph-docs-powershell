@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Represents detailed information about websites associated with a user in various services.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read.All, User.ReadBasic.All, User.ReadWrite, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
+| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

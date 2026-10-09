@@ -77,6 +77,14 @@ This cmdlet has the following aliases,
 
 Create new navigation property to account for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
