@@ -377,7 +377,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcheckincount)
+- [Get-MgPlaceAsRoomListRoomCheckInCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcheckincount)
 
 
 

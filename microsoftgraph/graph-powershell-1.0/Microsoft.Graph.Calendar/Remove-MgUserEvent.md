@@ -443,7 +443,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent)
+- [Remove-MgUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent)
 
 
 

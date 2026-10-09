@@ -356,7 +356,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprintcount)
+- [Get-MgPlaceAsBuildingMapFootprintCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprintcount)
 
 
 
