@@ -56,26 +56,41 @@ Read the properties and relationships of a unifiedStorageQuota object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Get the unified quota information for the current user
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingStorageQuota -UserId $userId
 
-### EXAMPLE 2
+```
+This example will get the unified quota information for the current user
+
+### Example 2: Get the unified quota information for the current user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingStorageQuota -UserId $userId
 
-### EXAMPLE 3
+```
+This example will get the unified quota information for the current user
+
+### Example 3: Get the unified quota information, along with the service breakdowns, for the current user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserSettingStorageQuota -UserId $userId -ExpandProperty "services"
+Get-MgBetaUserSettingStorageQuota -UserId $userId -ExpandProperty "services" 
+
+```
+This example will get the unified quota information, along with the service breakdowns, for the current user
+
 
 ## PARAMETERS
 
