@@ -76,6 +76,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a browserSharedCookie object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BrowserSiteLists.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
