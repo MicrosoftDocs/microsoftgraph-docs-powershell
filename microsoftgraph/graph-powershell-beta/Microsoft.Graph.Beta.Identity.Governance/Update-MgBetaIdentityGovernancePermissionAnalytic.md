@@ -433,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AWS <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
+AWS `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -470,7 +470,7 @@ Read-only.
     [LowRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
     [MediumRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
 
-AZURE <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
+AZURE `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -507,7 +507,7 @@ Read-only.
     [LowRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
     [MediumRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
 
-BODYPARAMETER <IMicrosoftGraphPermissionsAnalyticsAggregation>: permissionsAnalyticsAggregation
+BODYPARAMETER `<IMicrosoftGraphPermissionsAnalyticsAggregation>`: permissionsAnalyticsAggregation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -550,7 +550,7 @@ Read-only.
   [Azure <IMicrosoftGraphPermissionsAnalytics>]: permissionsAnalytics
   [Gcp <IMicrosoftGraphPermissionsAnalytics>]: permissionsAnalytics
 
-GCP <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
+GCP `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -591,3 +591,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalytic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
