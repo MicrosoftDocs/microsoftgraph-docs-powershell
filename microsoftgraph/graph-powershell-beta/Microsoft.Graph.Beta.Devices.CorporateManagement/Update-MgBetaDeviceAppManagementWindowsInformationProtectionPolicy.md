@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy
 
 Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState
 
 Update the navigation property deviceStates in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

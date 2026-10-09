@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptA
 
 Delete navigation property exemptAppLockerFiles for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

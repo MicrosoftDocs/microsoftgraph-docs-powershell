@@ -16,6 +16,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion
 The list of content versions for this app.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

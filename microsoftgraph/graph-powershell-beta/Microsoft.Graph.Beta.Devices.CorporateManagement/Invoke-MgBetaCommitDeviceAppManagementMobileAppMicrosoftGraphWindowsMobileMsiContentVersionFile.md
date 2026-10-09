@@ -15,6 +15,9 @@ title: Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobil
 
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

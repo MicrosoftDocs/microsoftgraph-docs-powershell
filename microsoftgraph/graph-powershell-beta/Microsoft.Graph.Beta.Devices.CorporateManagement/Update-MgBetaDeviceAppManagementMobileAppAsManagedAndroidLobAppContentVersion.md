@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVer
 
 Update the navigation property contentVersions in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
