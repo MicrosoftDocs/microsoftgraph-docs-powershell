@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 
 Create a new urlThreatSubmission object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatSubmission.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatSubmission.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

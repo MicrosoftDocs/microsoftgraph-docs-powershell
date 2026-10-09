@@ -61,6 +61,14 @@ The collection of case type configurations that define the statuses and custom f
 Read-only.
 Supports $select, $count, and $expand of the statuses and customFields relationships.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
