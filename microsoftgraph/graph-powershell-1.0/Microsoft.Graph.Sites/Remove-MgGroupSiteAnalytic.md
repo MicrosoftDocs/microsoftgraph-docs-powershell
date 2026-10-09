@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteAnalytic
 
 Delete navigation property analytics for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

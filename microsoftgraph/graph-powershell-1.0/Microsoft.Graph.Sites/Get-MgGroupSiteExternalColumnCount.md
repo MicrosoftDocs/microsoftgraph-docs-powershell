@@ -15,6 +15,9 @@ title: Get-MgGroupSiteExternalColumnCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteExternalColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

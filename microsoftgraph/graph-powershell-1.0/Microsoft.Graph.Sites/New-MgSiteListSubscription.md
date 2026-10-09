@@ -15,6 +15,9 @@ title: New-MgSiteListSubscription
 
 Create new navigation property to subscriptions for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

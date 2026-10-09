@@ -15,6 +15,9 @@ title: Remove-MgGroupSitePage
 
 Delete navigation property pages for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

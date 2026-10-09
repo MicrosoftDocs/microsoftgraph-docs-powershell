@@ -15,6 +15,9 @@ title: Remove-MgSiteListPermission
 
 Delete navigation property permissions for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

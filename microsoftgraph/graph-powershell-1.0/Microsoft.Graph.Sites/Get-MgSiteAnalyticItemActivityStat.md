@@ -15,6 +15,9 @@ title: Get-MgSiteAnalyticItemActivityStat
 
 Get itemActivityStats from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

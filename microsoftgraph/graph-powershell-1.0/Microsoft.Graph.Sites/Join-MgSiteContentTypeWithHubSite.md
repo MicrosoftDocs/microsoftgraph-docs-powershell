@@ -15,6 +15,9 @@ title: Join-MgSiteContentTypeWithHubSite
 
 Associate a published content type present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgSiteTermStoreGroupSetChildRelation
 
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

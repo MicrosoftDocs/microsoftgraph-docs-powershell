@@ -15,6 +15,9 @@ title: New-MgGroupSiteListContentType
 
 Create new navigation property to contentTypes for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

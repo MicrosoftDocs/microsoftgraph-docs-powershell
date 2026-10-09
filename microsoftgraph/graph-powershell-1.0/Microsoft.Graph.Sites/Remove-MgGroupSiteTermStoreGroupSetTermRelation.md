@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteTermStoreGroupSetTermRelation
 
 Delete navigation property relations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroupSetTermRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

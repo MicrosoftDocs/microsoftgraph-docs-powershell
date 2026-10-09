@@ -15,6 +15,9 @@ title: Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn
 
 Delete navigation property columns for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

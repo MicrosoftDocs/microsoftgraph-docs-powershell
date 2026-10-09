@@ -15,6 +15,9 @@ title: Get-MgSiteListItemDriveItem
 
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
