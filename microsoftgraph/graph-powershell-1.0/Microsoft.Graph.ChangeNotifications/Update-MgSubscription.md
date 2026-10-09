@@ -986,8 +986,8 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0)
+- [Update-MgSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0)
 
 
 
