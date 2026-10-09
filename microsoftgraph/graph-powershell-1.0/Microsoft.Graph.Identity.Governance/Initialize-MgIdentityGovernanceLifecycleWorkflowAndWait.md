@@ -70,6 +70,14 @@ Activate a lifecycle workflow for a specified subject and synchronously wait for
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
