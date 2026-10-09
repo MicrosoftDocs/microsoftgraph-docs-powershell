@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Returns a collection of discovered application segments based on aggregated traffic logs for a given period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessReportDiscoveredApplicationSegmentReport Cmdlet.
+
 
 ## PARAMETERS
 

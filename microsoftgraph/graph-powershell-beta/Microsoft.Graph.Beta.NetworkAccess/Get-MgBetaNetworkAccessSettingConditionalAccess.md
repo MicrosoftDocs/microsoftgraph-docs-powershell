@@ -44,12 +44,17 @@ Retrieve the conditional access settings, which include the preservation of the 
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingConditionalAccess
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingConditionalAccess Cmdlet.
+
 
 ## PARAMETERS
 

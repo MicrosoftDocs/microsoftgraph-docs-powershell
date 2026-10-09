@@ -44,12 +44,17 @@ Read the properties and relationships of microsoft.graph.networkaccess.customBlo
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingCustomBlockPage
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingCustomBlockPage Cmdlet.
+
 
 ## PARAMETERS
 
