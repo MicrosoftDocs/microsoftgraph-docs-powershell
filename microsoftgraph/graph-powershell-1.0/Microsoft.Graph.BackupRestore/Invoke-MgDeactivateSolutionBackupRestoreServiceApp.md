@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Deactivate a serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -385,6 +375,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/serviceapp-deactivate?view=graph-rest-1.0)
+
 
 
 

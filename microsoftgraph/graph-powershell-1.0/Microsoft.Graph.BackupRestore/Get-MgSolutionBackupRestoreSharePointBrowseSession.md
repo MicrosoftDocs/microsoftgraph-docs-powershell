@@ -68,16 +68,6 @@ Read the properties and relationships of sharePointBrowseSession object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Restore.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -579,6 +569,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointbrowsesession)
 - [](https://learn.microsoft.com/graph/api/sharepointbrowsesession-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-sharepointbrowsesessions?view=graph-rest-1.0)
+
 
 
 
