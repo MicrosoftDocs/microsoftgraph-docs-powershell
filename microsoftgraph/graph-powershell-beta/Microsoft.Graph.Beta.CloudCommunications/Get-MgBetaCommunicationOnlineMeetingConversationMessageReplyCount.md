@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversationMessageReplyCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversationMessageReplyCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

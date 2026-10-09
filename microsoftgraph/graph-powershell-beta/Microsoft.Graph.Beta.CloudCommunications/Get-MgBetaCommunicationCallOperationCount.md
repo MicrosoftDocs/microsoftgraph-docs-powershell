@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationCallOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallOperationCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallOperationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

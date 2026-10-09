@@ -16,6 +16,9 @@ title: Get-MgBetaCommunicationAdhocCallTranscript
 The transcripts of a call.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationAdhocCallTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

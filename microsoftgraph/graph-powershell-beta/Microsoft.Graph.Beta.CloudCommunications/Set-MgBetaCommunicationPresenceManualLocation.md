@@ -16,6 +16,9 @@ title: Set-MgBetaCommunicationPresenceManualLocation
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgCommunicationPresenceManualLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceManualLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

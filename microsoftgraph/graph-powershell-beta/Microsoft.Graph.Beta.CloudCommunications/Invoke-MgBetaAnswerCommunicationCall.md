@@ -21,6 +21,9 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AnswerExpanded (Default)
