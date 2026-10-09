@@ -668,7 +668,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphIndustryDataInboundFlow>: inboundFlow
+BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name of the activity.
 Maximum supported length is 100 characters.
@@ -736,7 +736,7 @@ Maximum supported length is 100 characters.
       [Code <String>]: The code of the desired referenceDefinition entry.
       [Value <IMicrosoftGraphIndustryDataReferenceDefinition>]: referenceDefinition
 
-DATACONNECTOR <IMicrosoftGraphIndustryDataConnector>: industryDataConnector
+DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -778,7 +778,7 @@ Read-only.
     [Vendor <String>]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -801,7 +801,7 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [SourceSystemDefinitionId <String>]: The unique identifier of sourceSystemDefinition
   [YearTimePeriodDefinitionId <String>]: The unique identifier of yearTimePeriodDefinition
 
-YEAR <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>: yearTimePeriodDefinition
+YEAR `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -828,3 +828,25 @@ Must be unique within the referenceType.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
 - [](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

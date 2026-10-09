@@ -418,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphIndustryDataConnector>: industryDataConnector
+BODYPARAMETER `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -460,7 +460,7 @@ Read-only.
     [Vendor <String>]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-SOURCESYSTEM <IMicrosoftGraphIndustryDataSourceSystemDefinition>: sourceSystemDefinition
+SOURCESYSTEM `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -501,3 +501,25 @@ Maximum supported length is 100 characters.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
 - [](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
