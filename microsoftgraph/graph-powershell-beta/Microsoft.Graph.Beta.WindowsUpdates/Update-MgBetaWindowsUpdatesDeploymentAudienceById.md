@@ -115,7 +115,7 @@ This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudienceB
 
 ### -AddExclusions
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -169,7 +169,7 @@ HelpMessage: ''
 
 ### -AddMembers
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -196,7 +196,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -385,7 +385,7 @@ HelpMessage: ''
 
 ### -MemberEntityType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -496,7 +496,7 @@ HelpMessage: ''
 
 ### -RemoveExclusions
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -523,7 +523,7 @@ HelpMessage: ''
 
 ### -RemoveMembers
 
-.
+
 
 ```yaml
 Type: System.String[]
