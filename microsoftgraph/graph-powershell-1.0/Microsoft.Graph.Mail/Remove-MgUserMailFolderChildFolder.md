@@ -15,6 +15,9 @@ title: Remove-MgUserMailFolderChildFolder
 
 Delete navigation property childFolders for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

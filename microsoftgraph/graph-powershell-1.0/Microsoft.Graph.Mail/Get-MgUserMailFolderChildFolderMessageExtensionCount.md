@@ -15,6 +15,9 @@ title: Get-MgUserMailFolderChildFolderMessageExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageExtensionCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserInferenceClassificationOverride
 
 Update the navigation property overrides in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
