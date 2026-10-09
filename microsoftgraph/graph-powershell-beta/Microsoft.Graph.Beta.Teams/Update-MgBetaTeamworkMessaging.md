@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property messaging in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -437,6 +427,7 @@ Must be unique and must not conflict with existing emoji names.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkmessaging)
+
 
 
 
