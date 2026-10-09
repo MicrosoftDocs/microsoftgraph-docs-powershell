@@ -81,6 +81,14 @@ After the POST clone returns, you need to GET the operation returned by the Loca
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

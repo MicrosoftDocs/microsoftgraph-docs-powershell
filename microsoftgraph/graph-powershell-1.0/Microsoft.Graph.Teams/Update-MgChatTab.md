@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Update the properties of the specified tab in a chat.
 \rThis can be used to configure the content of the tab.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
