@@ -68,8 +68,9 @@ This cmdlet has the following aliases,
 Add a user to a school.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -78,6 +79,10 @@ $params = @{
 }
 
 New-MgEducationSchoolUserByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationSchoolUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

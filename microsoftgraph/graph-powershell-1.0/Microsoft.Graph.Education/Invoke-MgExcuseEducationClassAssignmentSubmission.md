@@ -69,18 +69,28 @@ For more information about how to use this header, see the Examples section.
 | Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Request with optional Prefer header
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Invoke-MgExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example will request with optional prefer header
+
+### Example 2: Request without the Prefer request header
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 2
+```
+This example will request without the prefer request header
 
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgExcuseEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ## PARAMETERS
 

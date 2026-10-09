@@ -63,12 +63,17 @@ This cmdlet has the following aliases,
 A collection of submission resources that depend on the parent educationSubmissionResource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionResourceDependentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentSubmissionResourceDependentResource Cmdlet.
+
 
 ## PARAMETERS
 

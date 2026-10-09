@@ -82,24 +82,39 @@ Only teachers, students, and applications with application permissions can perfo
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Get assignment categories
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId
 
-### EXAMPLE 2
+```
+This example will get assignment categories
+
+### Example 2: Using `$filter` to get assignment categories
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'"
+Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Filter "id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'" 
 
-### EXAMPLE 3
+```
+This example shows using `$filter` to get assignment categories
+
+### Example 3: Using `$orderby` to get assignment categories
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName"
+Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -Sort "displayName" 
+
+```
+This example shows using `$orderby` to get assignment categories
+
 
 ## PARAMETERS
 

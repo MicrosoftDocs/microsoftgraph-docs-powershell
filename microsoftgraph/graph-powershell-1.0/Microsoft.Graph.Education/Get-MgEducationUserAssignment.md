@@ -60,18 +60,28 @@ This cmdlet has the following aliases,
 Assignments belonging to the user.
 
 ## EXAMPLES
+### Example 1: Get assignments of a user
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
 
-### EXAMPLE 2
+```
+This example will get assignments of a user
+
+### Example 2: Get user assignments with expand submissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
+Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions" 
+
+```
+This example will get user assignments with expand submissions
+
 
 ## PARAMETERS
 

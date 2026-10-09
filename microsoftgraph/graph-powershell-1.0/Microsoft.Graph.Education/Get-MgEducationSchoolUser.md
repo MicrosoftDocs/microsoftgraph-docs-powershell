@@ -49,12 +49,17 @@ Get the educationUser resources associated with an educationSchool.
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgEducationSchoolUser Cmdlet.
+
 
 ## PARAMETERS
 
