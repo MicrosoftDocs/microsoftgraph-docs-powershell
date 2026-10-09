@@ -457,7 +457,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessSettings>: settings
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessSettings>`: settings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -484,19 +484,19 @@ Read-only.
 Read-only.
     [SkipDnsLookupState <String>]: status
 
-CONDITIONALACCESS <IMicrosoftGraphNetworkaccessConditionalAccessSettings>: conditionalAccessSettings
+CONDITIONALACCESS `<IMicrosoftGraphNetworkaccessConditionalAccessSettings>`: conditionalAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [SignalingStatus <String>]: status
 
-CROSSTENANTACCESS <IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>: crossTenantAccessSettings
+CROSSTENANTACCESS `<IMicrosoftGraphNetworkaccessCrossTenantAccessSettings>`: crossTenantAccessSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [NetworkPacketTaggingStatus <String>]: status
 
-CUSTOMBLOCKPAGE <IMicrosoftGraphNetworkaccessCustomBlockPage>: customBlockPage
+CUSTOMBLOCKPAGE `<IMicrosoftGraphNetworkaccessCustomBlockPage>`: customBlockPage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -504,7 +504,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: status
 
-FORWARDINGOPTIONS <IMicrosoftGraphNetworkaccessForwardingOptions>: forwardingOptions
+FORWARDINGOPTIONS `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -514,3 +514,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
