@@ -78,8 +78,9 @@ A user can self-activate their token or an admin can activate for a user.
 | Application | UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,6 +91,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -UserId $userId -HardwareOathAuthenticationMethodId $hardwareOathAuthenticationMethodId -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgBetaUserAuthenticationHardwareOathMethod Cmdlet.
+
 
 ## PARAMETERS
 

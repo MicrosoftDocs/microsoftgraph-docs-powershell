@@ -61,8 +61,9 @@ You can create one of the following subtypes that are derived from authenticatio
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an onTokenIssuanceStartListener object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -89,7 +90,12 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an ontokenissuancestartlistener object
+
+### Example 2: Create an onAttributeCollectionStartListener object
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -116,7 +122,12 @@ $params = @{
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create an onattributecollectionstartlistener object
+
+### Example 3: Create an onAttributeCollectionSubmitListener object
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -142,6 +153,10 @@ $params = @{
 }
 
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter $params
+
+```
+This example will create an onattributecollectionsubmitlistener object
+
 
 ## PARAMETERS
 

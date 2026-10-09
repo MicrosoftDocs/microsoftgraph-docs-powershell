@@ -56,8 +56,9 @@ Update the properties of a continuousAccessEvaluationPolicy object.
 | Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -67,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

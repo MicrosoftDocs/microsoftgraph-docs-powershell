@@ -64,18 +64,28 @@ Retrieve the properties and relationships of a b2cUserFlow object.
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: List all b2cIdentityUserFlow objects
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2CUserFlow
 
-### EXAMPLE 2
+```
+This example will list all b2cidentityuserflow objects
+
+### Example 2: List all b2cIdentityUserFlow objects and expand identityProviders
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityB2CUserFlow -ExpandProperty "identityProviders"
+Get-MgBetaIdentityB2CUserFlow -ExpandProperty "identityProviders" 
+
+```
+This example will list all b2cidentityuserflow objects and expand identityproviders
+
 
 ## PARAMETERS
 
