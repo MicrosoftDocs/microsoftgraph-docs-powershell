@@ -15,6 +15,9 @@ title: Get-MgGroupTeamGroup
 
 Get group from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

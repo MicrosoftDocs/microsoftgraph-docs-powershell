@@ -15,6 +15,9 @@ title: Get-MgUserChatTargetedMessageReplyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatTargetedMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatTargetedMessageReplyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

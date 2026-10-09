@@ -15,6 +15,9 @@ title: Update-MgGroupTeamTag
 
 Update the navigation property tags in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

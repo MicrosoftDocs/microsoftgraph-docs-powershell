@@ -19,6 +19,9 @@ For more information, see Import third-party platform messages to Teams using Mi
 Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
 This API supportes the following channel types.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaGroupTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaGroupTeamChannelMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Complete (Default)

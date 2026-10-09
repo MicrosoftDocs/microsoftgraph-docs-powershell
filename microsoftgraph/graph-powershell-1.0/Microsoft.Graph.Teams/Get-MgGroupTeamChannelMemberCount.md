@@ -15,6 +15,9 @@ title: Get-MgGroupTeamChannelMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

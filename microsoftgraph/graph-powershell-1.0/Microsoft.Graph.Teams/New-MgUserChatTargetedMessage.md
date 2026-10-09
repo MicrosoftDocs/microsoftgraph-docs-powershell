@@ -15,6 +15,9 @@ title: New-MgUserChatTargetedMessage
 
 Create new navigation property to targetedMessages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTargetedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

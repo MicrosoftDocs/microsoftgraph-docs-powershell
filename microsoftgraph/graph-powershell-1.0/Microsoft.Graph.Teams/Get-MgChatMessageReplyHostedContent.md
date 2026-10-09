@@ -15,6 +15,9 @@ title: Get-MgChatMessageReplyHostedContent
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

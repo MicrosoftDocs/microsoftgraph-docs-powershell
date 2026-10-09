@@ -15,6 +15,9 @@ title: Remove-MgTeamScheduleOfferShiftRequest
 
 Delete navigation property offerShiftRequests for teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

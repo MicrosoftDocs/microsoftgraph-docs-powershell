@@ -15,6 +15,9 @@ title: Get-MgTeamTagCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamTagCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

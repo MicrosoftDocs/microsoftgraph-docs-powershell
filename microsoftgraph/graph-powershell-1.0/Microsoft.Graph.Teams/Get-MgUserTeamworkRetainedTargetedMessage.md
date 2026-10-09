@@ -15,6 +15,9 @@ title: Get-MgUserTeamworkRetainedTargetedMessage
 
 Get all retained targeted messages sent to a specific user in group chats and channels.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkRetainedTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkRetainedTargetedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

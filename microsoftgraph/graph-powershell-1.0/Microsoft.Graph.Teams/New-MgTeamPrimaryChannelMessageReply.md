@@ -15,6 +15,9 @@ title: New-MgTeamPrimaryChannelMessageReply
 
 Create new navigation property to replies for teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

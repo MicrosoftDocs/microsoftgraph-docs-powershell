@@ -16,6 +16,9 @@ title: Get-MgUserChatMember
 A collection of all the members in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

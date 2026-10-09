@@ -19,6 +19,9 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

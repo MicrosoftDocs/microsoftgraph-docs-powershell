@@ -15,6 +15,9 @@ title: Get-MgUserTeamworkTargetedMessage
 
 Get all targeted messages sent to a specific user in group chats and channels.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkTargetedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

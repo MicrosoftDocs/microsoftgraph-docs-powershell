@@ -15,6 +15,9 @@ title: Get-MgTeamworkDeletedTeamChannelMessageHostedContentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContentCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

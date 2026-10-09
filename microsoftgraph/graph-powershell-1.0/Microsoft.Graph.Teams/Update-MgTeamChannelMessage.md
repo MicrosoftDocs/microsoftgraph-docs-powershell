@@ -20,6 +20,9 @@ If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

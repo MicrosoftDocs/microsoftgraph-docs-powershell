@@ -15,6 +15,9 @@ title: Update-MgTeamworkDeletedChat
 
 Update the navigation property deletedChats in teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

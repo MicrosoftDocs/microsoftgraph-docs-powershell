@@ -15,6 +15,9 @@ title: Update-MgTeamChannelMember
 
 Update the navigation property allMembers in teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgTeamworkWorkforceIntegration
 
 Create a new workforceIntegration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

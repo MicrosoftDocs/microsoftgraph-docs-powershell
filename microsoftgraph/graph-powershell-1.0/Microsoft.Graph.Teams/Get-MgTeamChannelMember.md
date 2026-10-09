@@ -15,6 +15,9 @@ title: Get-MgTeamChannelMember
 
 A collection of membership records associated with the channel, including both direct and indirect members of shared channels.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Update-MgChatMessage
 
 Update the navigation property messages in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

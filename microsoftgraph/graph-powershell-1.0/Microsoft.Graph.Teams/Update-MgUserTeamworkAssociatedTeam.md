@@ -15,6 +15,9 @@ title: Update-MgUserTeamworkAssociatedTeam
 
 Update the navigation property associatedTeams in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
