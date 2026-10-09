@@ -501,7 +501,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
+BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CloudPc <IMicrosoftGraphRbacApplicationMultiple>]: rbacApplicationMultiple
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -990,7 +990,7 @@ Read-only.
     [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: The roles allowed by RBAC providers and the permissions assigned to the roles.
     [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: Resource to grant access to users or groups that are transitive.
 
-CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
+CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1124,7 +1124,7 @@ Read-only when isBuiltIn is true.
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
   [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: 
 
-DEFENDER <IMicrosoftGraphUnifiedRbacApplicationMultiple>: unifiedRbacApplicationMultiple
+DEFENDER `<IMicrosoftGraphUnifiedRbacApplicationMultiple>`: unifiedRbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -1267,7 +1267,7 @@ Read-only.
     [CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]: customAppScopeAttributesDictionary
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
+DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1401,7 +1401,7 @@ Read-only when isBuiltIn is true.
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
   [RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]: 
 
-DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
+DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2248,7 +2248,7 @@ Supports $filter (eq, ne).
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: 
   [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: 
 
-ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
+ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2672,7 +2672,7 @@ Supports $filter (eq, ne).
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: 
   [TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]: 
 
-EXCHANGE <IMicrosoftGraphUnifiedRbacApplication>: unifiedRbacApplication
+EXCHANGE `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2821,3 +2821,25 @@ Supports $filter (eq, in).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
