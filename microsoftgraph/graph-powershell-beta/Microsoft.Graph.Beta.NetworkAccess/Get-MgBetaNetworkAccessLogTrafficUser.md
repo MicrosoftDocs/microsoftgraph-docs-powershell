@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Represents the user associated with the network traffic, providing details about the individual or account initiating the transaction.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -376,6 +366,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesslogtrafficuser)
+
 
 
 
