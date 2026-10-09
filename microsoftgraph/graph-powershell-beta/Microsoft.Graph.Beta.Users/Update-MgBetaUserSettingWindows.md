@@ -15,6 +15,9 @@ title: Update-MgBetaUserSettingWindows
 
 Update the navigation property windows in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWindows?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

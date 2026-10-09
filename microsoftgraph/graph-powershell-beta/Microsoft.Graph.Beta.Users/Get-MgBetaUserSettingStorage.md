@@ -15,6 +15,9 @@ title: Get-MgBetaUserSettingStorage
 
 Get storage from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingStorage](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingStorage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

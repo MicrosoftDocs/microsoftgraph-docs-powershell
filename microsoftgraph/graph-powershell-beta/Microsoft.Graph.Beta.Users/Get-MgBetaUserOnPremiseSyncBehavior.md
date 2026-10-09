@@ -16,6 +16,9 @@ title: Get-MgBetaUserOnPremiseSyncBehavior
 Indicates the state of synchronization for a user between the cloud and on-premises Active Directory.
 Supports $filter only with advanced query capabilities, for example, $filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Users/Get-MgUserOnPremiseSyncBehavior?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

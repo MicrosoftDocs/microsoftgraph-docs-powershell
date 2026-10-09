@@ -15,6 +15,9 @@ title: Get-MgBetaUserOutlookMasterCategory
 
 A list of categories defined for the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

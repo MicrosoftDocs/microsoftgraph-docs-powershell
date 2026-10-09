@@ -16,6 +16,9 @@ title: Remove-MgBetaUserTodoListTaskAttachmentContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

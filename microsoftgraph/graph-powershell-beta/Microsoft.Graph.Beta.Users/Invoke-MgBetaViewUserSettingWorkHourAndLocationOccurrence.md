@@ -16,6 +16,9 @@ title: Invoke-MgBetaViewUserSettingWorkHourAndLocationOccurrence
 Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgViewUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Users/Invoke-MgViewUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### View (Default)

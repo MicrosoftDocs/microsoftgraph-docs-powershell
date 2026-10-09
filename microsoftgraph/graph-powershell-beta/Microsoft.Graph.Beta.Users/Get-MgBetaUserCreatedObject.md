@@ -17,6 +17,9 @@ Directory objects that the user created.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

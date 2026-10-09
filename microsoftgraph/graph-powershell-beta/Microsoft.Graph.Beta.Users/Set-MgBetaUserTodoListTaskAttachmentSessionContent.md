@@ -15,6 +15,9 @@ title: Set-MgBetaUserTodoListTaskAttachmentSessionContent
 
 The content streams that are uploaded.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
