@@ -110,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -272,7 +272,7 @@ HelpMessage: ''
 
 ### -ManagedEBookAssignments
 
-.
+
 To construct, see NOTES section for MANAGEDEBOOKASSIGNMENTS properties and create a hash table.
 
 ```yaml
