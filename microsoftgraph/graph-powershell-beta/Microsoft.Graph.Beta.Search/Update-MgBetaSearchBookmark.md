@@ -89,8 +89,9 @@ Update the properties of a bookmark object.
 | Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

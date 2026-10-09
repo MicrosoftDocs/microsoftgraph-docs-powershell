@@ -65,12 +65,17 @@ Read the properties and relationships of an inboundFlow object.
 | Application | IndustryData-InboundFlow.Read.All, IndustryData-InboundFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalIndustryDataInboundFlow
+
+```
+This example shows how to use the Get-MgBetaExternalIndustryDataInboundFlow Cmdlet.
+
 
 ## PARAMETERS
 
