@@ -388,13 +388,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOAUDITINGCONFIGURATION <IMicrosoftGraphSecurityAutoAuditingConfiguration>: autoAuditingConfiguration
+AUTOAUDITINGCONFIGURATION `<IMicrosoftGraphSecurityAutoAuditingConfiguration>`: autoAuditingConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
 
-BODYPARAMETER <IMicrosoftGraphSecuritySettingsContainer>: settingsContainer
+BODYPARAMETER `<IMicrosoftGraphSecuritySettingsContainer>`: settingsContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -408,3 +408,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
