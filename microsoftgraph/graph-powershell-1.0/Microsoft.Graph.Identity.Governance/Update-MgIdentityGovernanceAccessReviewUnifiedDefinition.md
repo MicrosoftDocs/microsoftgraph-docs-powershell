@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property definitions in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -1601,6 +1591,7 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinition)
+
 
 
 
