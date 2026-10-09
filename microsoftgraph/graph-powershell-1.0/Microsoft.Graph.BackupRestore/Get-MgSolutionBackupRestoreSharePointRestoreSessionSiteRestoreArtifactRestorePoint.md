@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRes
 
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

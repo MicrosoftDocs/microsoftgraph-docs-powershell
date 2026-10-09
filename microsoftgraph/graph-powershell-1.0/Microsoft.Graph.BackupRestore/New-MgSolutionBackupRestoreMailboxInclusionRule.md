@@ -15,6 +15,9 @@ title: New-MgSolutionBackupRestoreMailboxInclusionRule
 
 Create new navigation property to mailboxInclusionRules for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

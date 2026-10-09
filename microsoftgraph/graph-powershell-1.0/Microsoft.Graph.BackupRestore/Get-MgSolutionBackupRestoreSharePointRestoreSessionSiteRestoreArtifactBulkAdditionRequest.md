@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBul
 
 Get a siteRestoreArtifactsBulkAdditionRequest object by its id, associated with a sharePointRestoreSession.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

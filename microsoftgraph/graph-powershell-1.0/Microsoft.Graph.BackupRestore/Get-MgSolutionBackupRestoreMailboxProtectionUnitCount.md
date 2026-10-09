@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreMailboxProtectionUnitCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreMailboxProtectionUnitCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

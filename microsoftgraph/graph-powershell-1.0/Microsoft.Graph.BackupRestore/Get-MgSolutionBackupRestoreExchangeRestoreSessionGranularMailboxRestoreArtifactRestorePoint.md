@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreAr
 
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifactRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
