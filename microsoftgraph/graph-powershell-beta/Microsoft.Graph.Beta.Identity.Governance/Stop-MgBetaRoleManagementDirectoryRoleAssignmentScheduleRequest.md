@@ -60,12 +60,17 @@ After calling this action, the status of the canceled unifiedRoleAssignmentSched
 | Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest -UnifiedRoleAssignmentScheduleRequestId $unifiedRoleAssignmentScheduleRequestId
+
+```
+This example shows how to use the Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

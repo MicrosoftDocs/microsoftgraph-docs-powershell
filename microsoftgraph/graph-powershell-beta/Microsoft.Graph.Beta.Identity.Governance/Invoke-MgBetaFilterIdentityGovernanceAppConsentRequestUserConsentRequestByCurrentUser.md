@@ -60,12 +60,17 @@ Retrieve a collection of userConsentRequest objects for accessing a specified ap
 | Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser -AppConsentRequestId $appConsentRequestId -Filter "(status eq 'Completed')"  -On $onId
+Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser -AppConsentRequestId $appConsentRequestId -Filter "(status eq 'Completed')"  -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

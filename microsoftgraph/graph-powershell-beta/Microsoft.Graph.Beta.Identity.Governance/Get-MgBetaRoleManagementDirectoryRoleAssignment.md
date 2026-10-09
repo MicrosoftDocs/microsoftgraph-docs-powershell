@@ -69,18 +69,28 @@ Retrieve the properties and relationships of a unifiedRoleAssignment object.
 | Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Get details of a role assignment
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
 
-### EXAMPLE 2
+```
+This example will get details of a role assignment
+
+### Example 2: Get details of a role assignment and expand the role definition
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition"
+Get-MgBetaRoleManagementDirectoryRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId -ExpandProperty "roleDefinition" 
+
+```
+This example will get details of a role assignment and expand the role definition
+
 
 ## PARAMETERS
 

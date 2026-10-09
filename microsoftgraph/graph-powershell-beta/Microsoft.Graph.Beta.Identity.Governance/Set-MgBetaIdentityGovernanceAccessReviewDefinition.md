@@ -96,8 +96,9 @@ Update an existing accessReviewScheduleDefinition object to change one or more o
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -141,6 +142,10 @@ $params = @{
 }
 
 Set-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
 
 ## PARAMETERS
 

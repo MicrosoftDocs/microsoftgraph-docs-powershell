@@ -65,8 +65,9 @@ Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 | Application | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup, PrivilegedEligibilitySchedule.Remove.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: An admin creates an eligible group ownership request for a principal
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -87,7 +88,12 @@ $params = @{
 
 New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will an admin creates an eligible group ownership request for a principal
+
+### Example 2: An admin extends an eligible group membership for a principal
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -107,6 +113,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will an admin extends an eligible group membership for a principal
+
 
 ## PARAMETERS
 

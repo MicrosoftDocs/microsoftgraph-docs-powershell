@@ -66,12 +66,17 @@ Read the properties and relationships of an accessPackageResourceEnvironment obj
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -Filter "originSystem eq 'SharePointOnline'"
+Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -Filter "originSystem eq 'SharePointOnline'" 
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet.
+
 
 ## PARAMETERS
 
