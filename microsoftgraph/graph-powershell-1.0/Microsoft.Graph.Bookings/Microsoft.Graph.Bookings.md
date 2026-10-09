@@ -361,3 +361,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
