@@ -19,6 +19,9 @@ The app that creates a schema extension is the owner app.
 Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
