@@ -66,14 +66,20 @@ After 30 days, the item is permanently deleted.
 | Application | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.ReadWrite.CrossCloud,  |
 
 ## EXAMPLES
+### Example 1: Restore a deleted item
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 
-### EXAMPLE 2
+```
+This example will restore a deleted item
+
+### Example 2: Restore a deleted item and remove any conflicting proxy addresses
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -82,6 +88,10 @@ $params = @{
 }
 
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will restore a deleted item and remove any conflicting proxy addresses
+
 
 ## PARAMETERS
 

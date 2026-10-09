@@ -51,12 +51,17 @@ For cloud joined devices and registered personal devices, registered users are s
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceRegisteredUser -DeviceId $deviceId
+
+```
+This example shows how to use the Get-MgDeviceRegisteredUser Cmdlet.
+
 
 ## PARAMETERS
 

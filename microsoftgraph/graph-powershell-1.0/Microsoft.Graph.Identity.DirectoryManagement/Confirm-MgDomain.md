@@ -60,12 +60,17 @@ For an unverified domain, the isVerified property is false.
 | Application | Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Confirm-MgDomain -DomainId $domainId
+
+```
+This example shows how to use the Confirm-MgDomain Cmdlet.
+
 
 ## PARAMETERS
 

@@ -81,8 +81,9 @@ Update the properties of a profileSource object.
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -106,7 +107,11 @@ $params = @{
 	)
 }
 
-Update-MgAdminPeopleProfileSourceBySourceId -BodyParameter $params -SourceId $sourceIdId
+Update-MgAdminPeopleProfileSourceBySourceId -BodyParameter $params -SourceId $sourceIdId 
+
+```
+This example shows how to use the Update-MgAdminPeopleProfileSourceBySourceId Cmdlet.
+
 
 ## PARAMETERS
 
