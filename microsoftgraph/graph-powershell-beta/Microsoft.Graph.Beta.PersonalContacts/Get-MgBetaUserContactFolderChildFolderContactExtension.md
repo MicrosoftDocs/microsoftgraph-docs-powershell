@@ -16,6 +16,9 @@ title: Get-MgBetaUserContactFolderChildFolderContactExtension
 The collection of open extensions defined for the contact.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
