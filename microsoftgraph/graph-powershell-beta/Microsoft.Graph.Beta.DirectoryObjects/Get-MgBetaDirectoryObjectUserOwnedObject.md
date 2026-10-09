@@ -386,8 +386,8 @@ BODYPARAMETER `<IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+- [Get-MgBetaDirectoryObjectUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectuserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 

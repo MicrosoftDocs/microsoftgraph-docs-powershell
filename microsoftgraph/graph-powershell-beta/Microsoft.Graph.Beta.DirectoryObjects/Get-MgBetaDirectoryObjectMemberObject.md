@@ -475,7 +475,7 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmemberobject)
+- [Get-MgBetaDirectoryObjectMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectmemberobject)
 
 
 
