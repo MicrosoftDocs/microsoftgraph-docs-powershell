@@ -517,7 +517,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/sync-mgdevicemanagementexchangeconnector)
+- [Sync-MgDeviceManagementExchangeConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/sync-mgdevicemanagementexchangeconnector)
 
 
 

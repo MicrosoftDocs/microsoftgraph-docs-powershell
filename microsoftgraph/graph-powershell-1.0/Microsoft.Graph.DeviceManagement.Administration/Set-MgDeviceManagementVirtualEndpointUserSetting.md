@@ -561,8 +561,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementvirtualendpointusersetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcusersetting-assign?view=graph-rest-1.0)
+- [Set-MgDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementvirtualendpointusersetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcusersetting-assign?view=graph-rest-1.0)
 
 
 
