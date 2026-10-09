@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/09/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Select-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ---
