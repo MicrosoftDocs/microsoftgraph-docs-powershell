@@ -600,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTaxGroup>: taxGroup
+BODYPARAMETER `<IMicrosoftGraphTaxGroup>`: taxGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -609,7 +609,7 @@ Read-only.
   [LastModifiedDateTime <DateTime?>]: 
   [TaxType <String>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -651,3 +651,25 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanytaxgroup)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
