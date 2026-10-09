@@ -905,8 +905,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
-- [](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta)
+- [Find-MgBetaUserMeetingTime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-beta)
 
 
 
