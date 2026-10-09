@@ -15,6 +15,9 @@ title: Get-MgGroupMemberOfCountAsAdministrativeUnit
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOfCountAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
