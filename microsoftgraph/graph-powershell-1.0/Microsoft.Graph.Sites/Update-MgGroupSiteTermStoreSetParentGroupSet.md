@@ -1043,7 +1043,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTermStoreSet>: set
+BODYPARAMETER `<IMicrosoftGraphTermStoreSet>`: set
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1145,7 +1145,7 @@ Read-only.
     [ToTerm <IMicrosoftGraphTermStoreTerm>]: term
   [Set <IMicrosoftGraphTermStoreSet>]: set
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -1194,7 +1194,7 @@ LOCALIZEDNAMES <IMicrosoftGraphTermStoreLocalizedName[]>: Name of the set for ea
   [LanguageTag <String>]: The language tag for the label.
   [Name <String>]: The name in the localized language.
 
-PARENTGROUP <IMicrosoftGraphTermStoreGroup>: group
+PARENTGROUP `<IMicrosoftGraphTermStoreGroup>`: group
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1355,3 +1355,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoresetparentgroupset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
