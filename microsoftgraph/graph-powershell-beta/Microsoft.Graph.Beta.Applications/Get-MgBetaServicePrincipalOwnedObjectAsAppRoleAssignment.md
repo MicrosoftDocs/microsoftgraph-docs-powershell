@@ -588,7 +588,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasapproleassignment)
+- [Get-MgBetaServicePrincipalOwnedObjectAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectasapproleassignment)
 
 
 

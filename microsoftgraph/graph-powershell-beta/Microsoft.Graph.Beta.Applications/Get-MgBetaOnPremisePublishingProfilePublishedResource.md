@@ -602,8 +602,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource)
-- [](https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-beta)
+- [Get-MgBetaOnPremisePublishingProfilePublishedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-beta)
 
 
 

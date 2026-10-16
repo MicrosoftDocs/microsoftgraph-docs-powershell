@@ -395,8 +395,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy)
-- [](https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalClaimPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customclaimspolicy-get?view=graph-rest-beta)
 
 
 

@@ -330,7 +330,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization)
+- [Ping-MgBetaApplicationSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization)
 
 
 
