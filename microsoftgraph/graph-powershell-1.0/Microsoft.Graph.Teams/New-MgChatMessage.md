@@ -1616,8 +1616,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
-- [](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
+- [New-MgChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
 
 
 

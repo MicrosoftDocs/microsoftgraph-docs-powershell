@@ -395,7 +395,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelfilefoldercontent)
+- [Get-MgTeamPrimaryChannelFileFolderContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelfilefoldercontent)
 
 
 

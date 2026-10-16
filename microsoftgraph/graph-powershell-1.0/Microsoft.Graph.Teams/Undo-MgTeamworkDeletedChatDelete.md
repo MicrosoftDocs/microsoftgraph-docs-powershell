@@ -418,8 +418,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedchatdelete)
-- [](https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0)
+- [Undo-MgTeamworkDeletedChatDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamworkdeletedchatdelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0)
 
 
 

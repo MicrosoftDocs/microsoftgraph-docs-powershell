@@ -653,9 +653,9 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
-- [](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+- [Remove-MgChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
 
 
 
