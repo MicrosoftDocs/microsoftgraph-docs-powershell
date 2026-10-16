@@ -944,8 +944,8 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
-- [](https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-beta)
+- [Update-MgBetaUserProfileEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-beta)
 
 
 
