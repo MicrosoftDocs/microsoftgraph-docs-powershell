@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

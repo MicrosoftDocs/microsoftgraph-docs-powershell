@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an analyzedEmail object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAnalyzedMessage.Read.All, SecurityAnalyzedMessage.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

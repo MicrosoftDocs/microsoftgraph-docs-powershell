@@ -49,6 +49,14 @@ Disable an eDiscovery hold policy (legal hold) to release the hold across all th
 This operation runs asynchronously.
 To track completion, get the ediscoveryHoldPolicy and review its isEnabled and errors properties.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

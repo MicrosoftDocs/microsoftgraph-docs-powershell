@@ -52,6 +52,14 @@ Use this API when an application needs to evaluate content before or during data
 In Agent-to-Tool (A2T) scenarios, the agent runtime calls this API before invoking an external tool to determine whether the content should be allowed, blocked, or audited according to Microsoft Purview policies.
 For A2T scenarios: The response contains any applicable policy actions together with the protection scope state, allowing callers to determine whether cached protection scopes should be refreshed.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Content.Process.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Content.Process.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
