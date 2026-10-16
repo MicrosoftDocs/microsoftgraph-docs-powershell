@@ -660,7 +660,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphConversation>: conversation
+BODYPARAMETER `<IMicrosoftGraphConversation>`: conversation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -784,7 +784,7 @@ Returned by default.
 This property can be set when the conversation is created, but it can't be updated.
   [UniqueSenders <String[]>]: All the users that sent a message to this Conversation.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -924,3 +924,25 @@ Returned by default.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation)
 - [](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
