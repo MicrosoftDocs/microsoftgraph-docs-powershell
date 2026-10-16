@@ -769,7 +769,7 @@ HelpMessage: ''
 
 ### -FederatedIdentityCredentials
 
-.
+
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -988,7 +988,7 @@ HelpMessage: ''
 
 ### -LicenseDetails
 
-.
+
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
@@ -1242,7 +1242,7 @@ HelpMessage: ''
 
 ### -PermissionGrantPreApprovalPolicies
 
-.
+
 To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1739,7 +1739,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-.
+
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
