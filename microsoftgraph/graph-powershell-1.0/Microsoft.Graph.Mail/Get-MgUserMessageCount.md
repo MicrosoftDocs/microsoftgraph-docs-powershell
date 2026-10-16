@@ -15,6 +15,9 @@ title: Get-MgUserMessageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
