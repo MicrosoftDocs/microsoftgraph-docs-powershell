@@ -567,7 +567,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacechild)
+- [Get-MgBetaPlaceChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacechild)
 
 
 

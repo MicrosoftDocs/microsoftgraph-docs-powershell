@@ -373,8 +373,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmap)
-- [](https://learn.microsoft.com/graph/api/buildingmap-get?view=graph-rest-beta)
+- [Get-MgBetaPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmap)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-get?view=graph-rest-beta)
 
 
 
