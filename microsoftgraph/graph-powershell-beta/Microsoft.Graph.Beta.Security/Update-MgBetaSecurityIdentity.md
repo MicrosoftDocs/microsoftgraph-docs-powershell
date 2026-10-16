@@ -379,7 +379,7 @@ HelpMessage: ''
 
 ### -SensorCandidates
 
-.
+
 To construct, see NOTES section for SENSORCANDIDATES properties and create a hash table.
 
 ```yaml
