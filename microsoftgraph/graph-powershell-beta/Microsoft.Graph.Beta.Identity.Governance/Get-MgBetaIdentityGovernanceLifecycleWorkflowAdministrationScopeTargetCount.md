@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTargetCou
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTargetCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTargetCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

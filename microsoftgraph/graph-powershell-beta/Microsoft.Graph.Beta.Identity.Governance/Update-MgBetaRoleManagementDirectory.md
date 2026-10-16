@@ -15,6 +15,9 @@ title: Update-MgBetaRoleManagementDirectory
 
 Update the navigation property directory in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
