@@ -463,7 +463,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitegetbypathtermstore)
+- [Remove-MgBetaSiteGetByPathTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitegetbypathtermstore)
 
 
 
