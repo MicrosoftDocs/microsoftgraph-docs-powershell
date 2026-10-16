@@ -69,6 +69,14 @@ This cmdlet has the following aliases,
 
 Create new navigation property to hardwareOathMethods for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-HardwareOATH.ReadWrite, UserAuthMethod-HardwareOATH.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-HardwareOATH.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
