@@ -712,8 +712,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
+- [Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
 
 
 

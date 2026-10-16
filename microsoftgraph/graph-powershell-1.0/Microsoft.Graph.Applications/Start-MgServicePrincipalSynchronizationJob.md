@@ -437,8 +437,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgserviceprincipalsynchronizationjob)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-1.0)
+- [Start-MgServicePrincipalSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgserviceprincipalsynchronizationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-1.0)
 
 
 
