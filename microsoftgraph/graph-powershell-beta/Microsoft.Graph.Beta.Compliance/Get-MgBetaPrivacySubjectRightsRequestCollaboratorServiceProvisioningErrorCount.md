@@ -379,7 +379,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratorserviceprovisioningerrorcount)
+- [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratorserviceprovisioningerrorcount)
 
 
 
