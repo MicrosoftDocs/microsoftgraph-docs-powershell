@@ -204,7 +204,7 @@ HelpMessage: ''
 
 ### -Excludes
 
-.
+
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
@@ -311,7 +311,7 @@ HelpMessage: ''
 
 ### -Includes
 
-.
+
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
@@ -333,7 +333,7 @@ HelpMessage: ''
 
 ### -IsBuiltIn
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
