@@ -41,6 +41,14 @@ Retrieve a list of the group's owners.
 The owners are a set of users who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
