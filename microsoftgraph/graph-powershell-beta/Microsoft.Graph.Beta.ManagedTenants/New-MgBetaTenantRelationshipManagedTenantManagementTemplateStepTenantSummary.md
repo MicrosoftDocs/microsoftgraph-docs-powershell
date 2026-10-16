@@ -77,7 +77,7 @@ HelpMessage: ''
 
 ### -AssignedTenantsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -141,7 +141,7 @@ HelpMessage: ''
 
 ### -CompliantTenantsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -184,7 +184,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -205,7 +205,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -226,7 +226,7 @@ HelpMessage: ''
 
 ### -DismissedTenantsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -332,7 +332,7 @@ HelpMessage: ''
 
 ### -IneligibleTenantsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -353,7 +353,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -374,7 +374,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -395,7 +395,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -416,7 +416,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -437,7 +437,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -458,7 +458,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -479,7 +479,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -500,7 +500,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ HelpMessage: ''
 
 ### -NotCompliantTenantsCount
 
-.
+
 
 ```yaml
 Type: System.Int32
