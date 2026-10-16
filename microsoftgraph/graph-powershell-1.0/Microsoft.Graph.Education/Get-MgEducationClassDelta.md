@@ -473,8 +473,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
-- [](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)
+- [Get-MgEducationClassDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)
 
 
 

@@ -362,7 +362,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentgradingscheme)
+- [Get-MgEducationMeAssignmentGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentgradingscheme)
 
 
 
