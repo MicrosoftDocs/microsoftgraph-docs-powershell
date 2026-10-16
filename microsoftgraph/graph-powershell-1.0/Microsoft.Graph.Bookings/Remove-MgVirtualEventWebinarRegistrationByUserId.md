@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventWebinarRegistrationByUserId
 
 Delete navigation property registrations for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarRegistrationByUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarRegistrationByUserId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

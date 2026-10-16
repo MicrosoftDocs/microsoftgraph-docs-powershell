@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventPresenter
 
 Delete navigation property presenters for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
