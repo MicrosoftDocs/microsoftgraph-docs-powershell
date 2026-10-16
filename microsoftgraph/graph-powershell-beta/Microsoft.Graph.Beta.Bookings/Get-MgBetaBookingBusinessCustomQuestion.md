@@ -15,6 +15,9 @@ title: Get-MgBetaBookingBusinessCustomQuestion
 
 All custom questions of this business.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
