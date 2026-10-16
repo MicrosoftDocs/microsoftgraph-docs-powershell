@@ -460,8 +460,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta)
-- [](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRoleTemplateDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
 
 
 
