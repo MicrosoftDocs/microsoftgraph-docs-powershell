@@ -69,12 +69,17 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 | Application | ServiceMessage.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get an attachment message ID
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
+```
+This example will get an attachment message id
+
 
 ## PARAMETERS
 

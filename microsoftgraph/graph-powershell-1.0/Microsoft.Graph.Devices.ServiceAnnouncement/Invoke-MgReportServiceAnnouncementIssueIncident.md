@@ -60,12 +60,17 @@ The operation returns an error if the specified issue doesn't exist for the tena
 | Application | ServiceHealth.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
+
+```
+This example shows how to use the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet.
+
 
 ## PARAMETERS
 
