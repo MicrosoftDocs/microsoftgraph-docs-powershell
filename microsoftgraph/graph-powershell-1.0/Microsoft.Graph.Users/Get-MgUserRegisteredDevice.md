@@ -619,7 +619,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice)
+- [Get-MgUserRegisteredDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice)
 
 
 

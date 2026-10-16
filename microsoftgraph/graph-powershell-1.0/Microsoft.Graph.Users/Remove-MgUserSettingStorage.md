@@ -407,7 +407,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingstorage)
+- [Remove-MgUserSettingStorage](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingstorage)
 
 
 

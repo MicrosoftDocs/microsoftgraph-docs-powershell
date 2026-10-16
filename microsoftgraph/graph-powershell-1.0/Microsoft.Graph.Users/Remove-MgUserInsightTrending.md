@@ -428,7 +428,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserinsighttrending)
+- [Remove-MgUserInsightTrending](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserinsighttrending)
 
 
 

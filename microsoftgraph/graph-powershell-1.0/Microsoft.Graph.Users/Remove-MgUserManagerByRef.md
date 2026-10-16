@@ -424,8 +424,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref)
-- [](https://learn.microsoft.com/graph/api/agentuser-delete-manager?view=graph-rest-1.0)
+- [Remove-MgUserManagerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-delete-manager?view=graph-rest-1.0)
 
 
 

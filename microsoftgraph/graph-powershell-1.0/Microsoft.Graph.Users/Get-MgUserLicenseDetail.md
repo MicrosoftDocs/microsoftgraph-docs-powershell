@@ -592,7 +592,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)
+- [Get-MgUserLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)
 
 
 
