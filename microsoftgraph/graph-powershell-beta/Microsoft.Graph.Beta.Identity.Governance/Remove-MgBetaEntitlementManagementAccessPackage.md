@@ -62,11 +62,14 @@ For more information on how to remove assignments that are still in the delivere
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Remove an access package
 
-### EXAMPLE 1
-
+```powershell
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Remove-MgBetaEntitlementManagementAccessPackage -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656'
+```
+
+This example removes the specified access package.
 
 ## PARAMETERS
 
