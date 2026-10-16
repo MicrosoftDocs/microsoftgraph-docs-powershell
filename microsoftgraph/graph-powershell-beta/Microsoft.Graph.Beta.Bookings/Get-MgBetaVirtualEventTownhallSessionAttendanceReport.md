@@ -64,12 +64,17 @@ Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
 
 ## EXAMPLES
+### Example 1: List attendance reports for a town hall session
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventTownhallSessionAttendanceReport -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventSessionId $virtualEventSessionId
+
+```
+This example will list attendance reports for a town hall session
+
 
 ## PARAMETERS
 
