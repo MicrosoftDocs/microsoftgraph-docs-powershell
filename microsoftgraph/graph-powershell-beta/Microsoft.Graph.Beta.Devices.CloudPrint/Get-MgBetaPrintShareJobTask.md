@@ -15,6 +15,9 @@ title: Get-MgBetaPrintShareJobTask
 
 A list of printTasks that were triggered by this print job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaPrintShareJob
 
 Create a new printJob for a printerShare.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
