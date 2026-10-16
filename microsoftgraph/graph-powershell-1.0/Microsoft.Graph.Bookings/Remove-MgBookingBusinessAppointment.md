@@ -56,12 +56,17 @@ Delete a bookingAppointment in the specified bookingBusiness.
 | Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Remove-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
+
+```
+This example shows how to use the Remove-MgBookingBusinessAppointment Cmdlet.
+
 
 ## PARAMETERS
 

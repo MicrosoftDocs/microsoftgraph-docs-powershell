@@ -62,12 +62,17 @@ This cmdlet has the following aliases,
 Registration questions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId
+
+```
+This example shows how to use the Get-MgVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
+
 
 ## PARAMETERS
 
