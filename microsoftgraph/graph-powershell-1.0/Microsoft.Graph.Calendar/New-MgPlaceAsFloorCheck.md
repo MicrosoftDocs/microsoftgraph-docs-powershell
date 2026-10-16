@@ -15,6 +15,9 @@ title: New-MgPlaceAsFloorCheck
 
 Create new navigation property to checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsFloorCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsFloorCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

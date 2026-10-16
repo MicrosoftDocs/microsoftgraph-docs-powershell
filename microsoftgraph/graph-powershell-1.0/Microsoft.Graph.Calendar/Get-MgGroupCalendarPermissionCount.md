@@ -15,6 +15,9 @@ title: Get-MgGroupCalendarPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarPermissionCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarPermissionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
