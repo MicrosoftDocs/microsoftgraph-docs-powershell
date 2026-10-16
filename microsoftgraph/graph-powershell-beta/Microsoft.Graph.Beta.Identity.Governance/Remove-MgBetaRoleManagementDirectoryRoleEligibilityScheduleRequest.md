@@ -495,7 +495,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroleeligibilityschedulerequest)
+- [Remove-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagementdirectoryroleeligibilityschedulerequest)
 
 
 
