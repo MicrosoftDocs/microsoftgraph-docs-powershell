@@ -15,6 +15,9 @@ title: New-MgBetaSecurityAttackSimulationAutomationRun
 
 Create new navigation property to runs for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

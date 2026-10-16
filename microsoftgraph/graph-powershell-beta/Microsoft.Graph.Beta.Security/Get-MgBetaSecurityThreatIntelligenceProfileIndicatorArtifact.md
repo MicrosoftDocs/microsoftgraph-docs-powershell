@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact
 
 The artifact related to this indicator.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 Read the properties and relationships of an ediscoveryReviewSetQuery object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

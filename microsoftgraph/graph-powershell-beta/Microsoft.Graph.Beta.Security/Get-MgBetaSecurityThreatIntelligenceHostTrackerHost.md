@@ -16,6 +16,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostTrackerHost
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostTrackerHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTrackerHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

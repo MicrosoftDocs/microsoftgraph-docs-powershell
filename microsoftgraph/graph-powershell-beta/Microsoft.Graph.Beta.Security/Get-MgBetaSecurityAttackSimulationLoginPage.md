@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAttackSimulationLoginPage
 
 Represents an attack simulation training login page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
