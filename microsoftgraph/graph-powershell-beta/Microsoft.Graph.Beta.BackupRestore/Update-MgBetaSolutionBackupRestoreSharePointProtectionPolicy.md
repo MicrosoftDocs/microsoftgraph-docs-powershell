@@ -16,6 +16,9 @@ title: Update-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 Update a SharePoint protection policy.
 This method adds a siteprotectionunit to or removes it from the protection policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

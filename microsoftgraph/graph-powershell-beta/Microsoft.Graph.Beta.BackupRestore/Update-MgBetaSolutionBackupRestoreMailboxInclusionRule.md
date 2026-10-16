@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreMailboxInclusionRule
 
 Update the navigation property mailboxInclusionRules in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

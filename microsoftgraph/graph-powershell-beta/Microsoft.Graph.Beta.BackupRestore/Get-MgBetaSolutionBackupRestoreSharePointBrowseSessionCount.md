@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointBrowseSessionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointBrowseSessionCount](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointBrowseSessionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

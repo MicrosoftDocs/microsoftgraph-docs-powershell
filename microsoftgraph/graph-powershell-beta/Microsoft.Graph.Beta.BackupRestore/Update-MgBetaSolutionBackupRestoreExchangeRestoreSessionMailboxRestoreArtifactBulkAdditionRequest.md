@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArt
 
 Update the navigation property mailboxRestoreArtifactsBulkAdditionRequests in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

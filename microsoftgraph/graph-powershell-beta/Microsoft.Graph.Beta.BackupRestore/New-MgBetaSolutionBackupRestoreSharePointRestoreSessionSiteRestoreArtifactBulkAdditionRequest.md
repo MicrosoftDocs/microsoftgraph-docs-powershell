@@ -16,6 +16,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifac
 Create a new siteRestoreArtifactsBulkAdditionRequest object associated with a sharePointRestoreSession.
 The following steps describe how to create and manage a sharePointRestoreSession with bulk artifact additions:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

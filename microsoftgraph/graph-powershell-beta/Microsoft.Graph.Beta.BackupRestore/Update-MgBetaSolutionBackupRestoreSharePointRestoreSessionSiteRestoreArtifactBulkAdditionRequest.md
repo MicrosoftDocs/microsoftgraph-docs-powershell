@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArti
 
 Update the navigation property siteRestoreArtifactsBulkAdditionRequests in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
