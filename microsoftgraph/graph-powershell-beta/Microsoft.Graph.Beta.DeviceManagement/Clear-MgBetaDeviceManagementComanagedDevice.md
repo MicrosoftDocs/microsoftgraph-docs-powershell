@@ -107,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -269,7 +269,7 @@ HelpMessage: ''
 
 ### -KeepEnrollmentData
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +296,7 @@ HelpMessage: ''
 
 ### -KeepUserData
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -323,7 +323,7 @@ HelpMessage: ''
 
 ### -MacOSUnlockCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -429,7 +429,7 @@ HelpMessage: ''
 
 ### -PersistEsimDataPlan
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -541,7 +541,7 @@ HelpMessage: ''
 
 ### -UseProtectedWipe
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
