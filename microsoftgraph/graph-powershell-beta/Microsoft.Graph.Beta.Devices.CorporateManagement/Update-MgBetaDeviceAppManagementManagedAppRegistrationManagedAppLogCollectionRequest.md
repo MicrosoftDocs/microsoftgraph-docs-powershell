@@ -811,7 +811,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
+- [Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedappregistrationmanagedapplogcollectionrequest)
 
 
 
