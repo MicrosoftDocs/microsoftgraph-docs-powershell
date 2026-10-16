@@ -15,6 +15,9 @@ title: Get-MgUserManagedDeviceWithAppFailure
 
 Retrieves the list of devices with failed apps
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
