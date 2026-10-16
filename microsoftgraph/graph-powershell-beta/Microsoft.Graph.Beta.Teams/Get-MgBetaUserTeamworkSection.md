@@ -64,16 +64,6 @@ Read the properties of a section in a user's teamwork.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.Read.All, TeamworkSection.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -621,6 +611,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworksection)
 - [](https://learn.microsoft.com/graph/api/teamworksection-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/userteamwork-list-sections?view=graph-rest-beta)
+
+
 
 
 
