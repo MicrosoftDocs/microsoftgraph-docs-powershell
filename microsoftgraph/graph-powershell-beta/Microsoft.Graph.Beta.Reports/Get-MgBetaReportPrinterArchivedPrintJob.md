@@ -15,6 +15,9 @@ title: Get-MgBetaReportPrinterArchivedPrintJob
 
 Get a list of archived print jobs that were queued for particular printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

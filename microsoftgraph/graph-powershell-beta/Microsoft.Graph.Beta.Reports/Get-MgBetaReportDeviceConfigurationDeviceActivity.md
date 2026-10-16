@@ -15,6 +15,9 @@ title: Get-MgBetaReportDeviceConfigurationDeviceActivity
 
 Metadata for the device configuration device activity report
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDeviceConfigurationDeviceActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationDeviceActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Device (Default)

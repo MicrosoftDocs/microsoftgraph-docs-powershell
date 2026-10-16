@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamDeviceUsageUserDetail
 
 Invoke function getTeamsDeviceUsageUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamDeviceUsageUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
