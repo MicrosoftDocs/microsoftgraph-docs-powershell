@@ -15,6 +15,9 @@ title: Get-MgUserOnPremiseSyncBehavior
 
 Get onPremisesSyncBehavior from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

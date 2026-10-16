@@ -15,6 +15,9 @@ title: Update-MgUserOnPremiseSyncBehavior
 
 Update the navigation property onPremisesSyncBehavior in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
