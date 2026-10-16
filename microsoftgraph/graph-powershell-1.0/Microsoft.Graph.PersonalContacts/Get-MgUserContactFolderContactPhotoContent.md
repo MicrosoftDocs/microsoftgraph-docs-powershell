@@ -16,6 +16,9 @@ title: Get-MgUserContactFolderContactPhotoContent
 Optional contact picture.
 You can get or set a photo for a contact.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

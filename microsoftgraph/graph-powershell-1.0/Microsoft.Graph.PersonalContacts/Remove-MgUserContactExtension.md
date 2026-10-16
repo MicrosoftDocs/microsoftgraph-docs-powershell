@@ -15,6 +15,9 @@ title: Remove-MgUserContactExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
