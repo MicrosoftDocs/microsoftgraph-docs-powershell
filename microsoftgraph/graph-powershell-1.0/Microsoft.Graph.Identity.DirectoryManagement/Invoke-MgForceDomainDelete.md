@@ -71,6 +71,14 @@ Before performing this operation, you must update or remove any references to Ex
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
