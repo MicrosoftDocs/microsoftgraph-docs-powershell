@@ -15,6 +15,9 @@ title: Get-MgTenantRelationshipMultiTenantOrganizationTenantCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenantCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaTenantRelationshipMultiTenantOrganizationTenantCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

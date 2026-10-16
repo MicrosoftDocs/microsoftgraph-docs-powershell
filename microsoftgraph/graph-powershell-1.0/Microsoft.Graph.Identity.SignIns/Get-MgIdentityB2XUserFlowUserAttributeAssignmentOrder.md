@@ -15,6 +15,9 @@ title: Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder
 
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

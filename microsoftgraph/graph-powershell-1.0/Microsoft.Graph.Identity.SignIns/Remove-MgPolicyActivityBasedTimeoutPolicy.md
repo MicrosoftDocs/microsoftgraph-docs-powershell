@@ -15,6 +15,9 @@ title: Remove-MgPolicyActivityBasedTimeoutPolicy
 
 Delete an activityBasedTimeoutPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
