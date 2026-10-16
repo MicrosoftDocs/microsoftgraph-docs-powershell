@@ -412,8 +412,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0)
+- [Remove-MgSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0)
 
 
 
