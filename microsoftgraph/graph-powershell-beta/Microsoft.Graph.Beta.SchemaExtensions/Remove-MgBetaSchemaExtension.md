@@ -52,6 +52,14 @@ In delegated scenarios, the owner of the owner app can delete the schema extensi
 Deleting a schema extension definition before deleting the data associated with the extension in the target resources makes the data inaccessible.
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
