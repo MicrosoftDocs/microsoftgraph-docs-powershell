@@ -54,6 +54,14 @@ The app that creates a schema extension is the owner app.
 Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
