@@ -15,6 +15,9 @@ title: Get-MgSiteGetByPathDrive
 
 The default drive (document library) for this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

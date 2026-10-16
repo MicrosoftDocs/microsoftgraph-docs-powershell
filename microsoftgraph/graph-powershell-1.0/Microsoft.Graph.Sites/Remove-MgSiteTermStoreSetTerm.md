@@ -15,6 +15,9 @@ title: Remove-MgSiteTermStoreSetTerm
 
 Delete a term object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

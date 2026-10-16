@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteGetByPathOnenote
 
 Delete navigation property onenote for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
