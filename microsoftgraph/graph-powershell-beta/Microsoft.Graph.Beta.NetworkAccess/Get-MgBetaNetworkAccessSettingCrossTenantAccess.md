@@ -44,12 +44,17 @@ Retrieve the cross-tenant access settings, which include network packet tagging 
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingCrossTenantAccess
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingCrossTenantAccess Cmdlet.
+
 
 ## PARAMETERS
 
