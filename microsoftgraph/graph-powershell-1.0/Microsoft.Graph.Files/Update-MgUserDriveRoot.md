@@ -15,6 +15,9 @@ title: Update-MgUserDriveRoot
 
 Update the navigation property root in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

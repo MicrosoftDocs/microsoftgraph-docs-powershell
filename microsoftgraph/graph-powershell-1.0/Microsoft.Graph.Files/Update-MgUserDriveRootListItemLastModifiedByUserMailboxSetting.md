@@ -15,6 +15,9 @@ title: Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Set-MgShareListItemDriveItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaShareListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareListItemDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set1 (Default)

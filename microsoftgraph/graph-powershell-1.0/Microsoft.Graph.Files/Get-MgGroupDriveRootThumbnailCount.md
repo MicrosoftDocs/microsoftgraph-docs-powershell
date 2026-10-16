@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootThumbnailCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootThumbnailCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootThumbnailCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

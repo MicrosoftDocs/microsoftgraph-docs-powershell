@@ -15,6 +15,9 @@ title: Invoke-MgCheckoutDriveRoot
 
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Checkout (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgFollowGroupDriveRoot
 
 Follow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Follow (Default)

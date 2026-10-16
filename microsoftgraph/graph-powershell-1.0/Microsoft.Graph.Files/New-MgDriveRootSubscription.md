@@ -15,6 +15,9 @@ title: New-MgDriveRootSubscription
 
 Create new navigation property to subscriptions for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

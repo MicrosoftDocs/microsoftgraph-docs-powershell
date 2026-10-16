@@ -15,6 +15,9 @@ title: Get-MgShareListItemPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemPermissionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemPermissionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)
