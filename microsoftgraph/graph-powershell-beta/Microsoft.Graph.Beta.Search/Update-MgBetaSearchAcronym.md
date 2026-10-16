@@ -15,6 +15,9 @@ title: Update-MgBetaSearchAcronym
 
 Update the properties of an acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

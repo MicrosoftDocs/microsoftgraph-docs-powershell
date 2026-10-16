@@ -15,6 +15,9 @@ title: Remove-MgBetaExternalConnectionGroup
 
 Delete an externalGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
