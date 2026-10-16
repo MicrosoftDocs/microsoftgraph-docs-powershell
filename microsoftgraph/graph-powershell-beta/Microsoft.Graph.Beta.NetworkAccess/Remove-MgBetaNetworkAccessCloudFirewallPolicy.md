@@ -426,8 +426,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesscloudfirewallpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaNetworkAccessCloudFirewallPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesscloudfirewallpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-delete?view=graph-rest-beta)
 
 
 

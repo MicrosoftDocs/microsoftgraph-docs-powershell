@@ -288,8 +288,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption)
-- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessSettingForwardingOption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingforwardingoption)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-get?view=graph-rest-beta)
 
 
 
