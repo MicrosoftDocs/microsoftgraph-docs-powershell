@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 Update an existing Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

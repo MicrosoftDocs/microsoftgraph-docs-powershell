@@ -15,6 +15,9 @@ title: New-MgBetaUserAuthenticationMethod
 
 Create new navigation property to methods for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
