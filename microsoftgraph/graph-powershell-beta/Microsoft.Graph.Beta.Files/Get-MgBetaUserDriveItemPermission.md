@@ -634,7 +634,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitempermission)
+- [Get-MgBetaUserDriveItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitempermission)
 
 
 

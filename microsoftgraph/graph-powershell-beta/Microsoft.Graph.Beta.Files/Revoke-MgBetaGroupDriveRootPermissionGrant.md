@@ -550,8 +550,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriverootpermissiongrant)
-- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+- [Revoke-MgBetaGroupDriveRootPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriverootpermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
 
 
 
