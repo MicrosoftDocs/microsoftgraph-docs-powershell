@@ -51,12 +51,17 @@ Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityB2XUserFlowLanguageOverridePageContent -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId
+
+```
+This example shows how to use the Remove-MgIdentityB2XUserFlowLanguageOverridePageContent Cmdlet.
+
 
 ## PARAMETERS
 

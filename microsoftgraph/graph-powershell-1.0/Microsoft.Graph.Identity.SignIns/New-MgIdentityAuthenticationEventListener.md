@@ -61,8 +61,9 @@ You can create one of the following subtypes that are derived from authenticatio
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create authenticationEventListener
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -87,7 +88,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create authenticationeventlistener
+
+### Example 2: Enable Fraud Protection during sign-up with Arkose Labs
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -116,7 +122,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will enable fraud protection during sign-up with arkose labs
+
+### Example 3: Enable Fraud Protection during sign-up with HUMAN Security
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -145,7 +156,12 @@ $params = @{
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will enable fraud protection during sign-up with human security
+
+### Example 4: Create an onPasswordSubmitListener object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -172,6 +188,10 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventListener -BodyParameter $params
+
+```
+This example will create an onpasswordsubmitlistener object
+
 
 ## PARAMETERS
 
