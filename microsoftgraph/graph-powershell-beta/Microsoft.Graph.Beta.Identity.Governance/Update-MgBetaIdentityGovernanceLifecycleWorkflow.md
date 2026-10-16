@@ -938,7 +938,7 @@ HelpMessage: ''
 
 ### -SubjectProcessingResults
 
-.
+
 To construct, see NOTES section for SUBJECTPROCESSINGRESULTS properties and create a hash table.
 
 ```yaml
