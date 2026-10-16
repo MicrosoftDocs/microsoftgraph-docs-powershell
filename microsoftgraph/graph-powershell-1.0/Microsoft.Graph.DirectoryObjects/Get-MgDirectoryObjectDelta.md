@@ -16,6 +16,9 @@ title: Get-MgDirectoryObjectDelta
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectDelta](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
