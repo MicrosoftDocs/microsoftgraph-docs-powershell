@@ -111,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -198,7 +198,7 @@ HelpMessage: ''
 
 ### -ConnectorId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -219,7 +219,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ HelpMessage: ''
 
 ### -HasPhysicalDevice
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +324,7 @@ HelpMessage: ''
 
 ### -Manufacturer
 
-.
+
 
 ```yaml
 Type: System.String
@@ -345,7 +345,7 @@ HelpMessage: ''
 
 ### -Model
 
-.
+
 
 ```yaml
 Type: System.String
@@ -387,7 +387,7 @@ HelpMessage: ''
 
 ### -PhysicalDeviceId
 
-.
+
 
 ```yaml
 Type: System.String
