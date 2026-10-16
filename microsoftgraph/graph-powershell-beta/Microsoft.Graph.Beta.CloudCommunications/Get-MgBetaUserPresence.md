@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get a user's presence information.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Presence.Read, Presence.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Presence.Read.All, Presence.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
