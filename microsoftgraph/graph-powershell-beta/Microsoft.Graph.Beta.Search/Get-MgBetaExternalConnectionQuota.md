@@ -371,8 +371,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta)
+- [Get-MgBetaExternalConnectionQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta)
 
 
 

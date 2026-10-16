@@ -1054,8 +1054,8 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
-- [](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta)
+- [Update-MgBetaSearchBookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta)
 
 
 
