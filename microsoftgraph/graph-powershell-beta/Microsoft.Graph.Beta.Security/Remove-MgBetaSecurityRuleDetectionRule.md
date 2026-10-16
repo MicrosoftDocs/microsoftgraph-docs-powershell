@@ -516,8 +516,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityruledetectionrule)
-- [](https://learn.microsoft.com/graph/api/security-rulesroot-delete-detectionrules?view=graph-rest-beta)
+- [Remove-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityruledetectionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-rulesroot-delete-detectionrules?view=graph-rest-beta)
 
 
 

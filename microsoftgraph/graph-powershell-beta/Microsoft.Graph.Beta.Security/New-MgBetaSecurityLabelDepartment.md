@@ -456,8 +456,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta)
+- [New-MgBetaSecurityLabelDepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-beta)
 
 
 

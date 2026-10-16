@@ -524,8 +524,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycasemanagementcaserelation)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityCaseManagementCaseRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycasemanagementcaserelation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta)
 
 
 
