@@ -646,8 +646,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattargetedmessagereplydelta)
-- [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
+- [Get-MgBetaUserChatTargetedMessageReplyDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattargetedmessagereplydelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
 
 
 

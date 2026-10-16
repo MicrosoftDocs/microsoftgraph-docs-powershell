@@ -544,8 +544,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksection)
-- [](https://learn.microsoft.com/graph/api/teamworksection-reorder?view=graph-rest-beta)
+- [Invoke-MgBetaReorderUserTeamworkSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksection-reorder?view=graph-rest-beta)
 
 
 

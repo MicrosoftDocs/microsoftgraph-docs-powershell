@@ -505,8 +505,8 @@ CUSTOMAPPSETTINGS `<IMicrosoftGraphCustomAppSettings>`: customAppSettings
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
-- [](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
+- [Update-MgBetaTeamworkTeamAppSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-beta)
 
 
 

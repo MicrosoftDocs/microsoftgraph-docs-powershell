@@ -426,7 +426,7 @@ Must be unique and must not conflict with existing emoji names.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkmessaging)
+- [Update-MgBetaTeamworkMessaging](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkmessaging)
 
 
 

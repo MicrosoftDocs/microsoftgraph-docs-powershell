@@ -876,8 +876,8 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworksection)
-- [](https://learn.microsoft.com/graph/api/teamworksection-update?view=graph-rest-beta)
+- [Update-MgBetaUserTeamworkSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamworksection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksection-update?view=graph-rest-beta)
 
 
 
