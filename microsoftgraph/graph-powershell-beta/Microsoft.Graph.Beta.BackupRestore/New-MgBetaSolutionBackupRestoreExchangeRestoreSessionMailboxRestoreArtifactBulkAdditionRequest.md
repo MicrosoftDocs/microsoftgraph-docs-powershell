@@ -996,8 +996,8 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifactbulkadditionrequest)
-- [](https://learn.microsoft.com/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta)
+- [New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreexchangerestoresessionmailboxrestoreartifactbulkadditionrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta)
 
 
 
