@@ -15,6 +15,9 @@ title: Remove-MgBetaCommunicationOnlineMeetingConversation
 
 Delete navigation property onlineMeetingConversations for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingConversation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

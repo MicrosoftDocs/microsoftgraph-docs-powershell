@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationCall
 
 Retrieve the properties and relationships of a call object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
