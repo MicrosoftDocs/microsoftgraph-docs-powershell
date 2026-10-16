@@ -73,16 +73,6 @@ The following table lists the differences between the delta function on events a
 | Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
 | Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -635,6 +625,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventdelta)
 - [](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)
+
 
 
 
