@@ -15,7 +15,7 @@ title: Find-MgBetaUserRoomList
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\r\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\r\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.\rYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## EXAMPLES
 
@@ -408,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [RoomList <String>]: Usage: RoomList='{RoomList}'
   [Skip <Int32?>]: Usage: skip={skip}
@@ -421,3 +421,25 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
 - [](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
