@@ -16,6 +16,9 @@ title: Remove-MgBetaUserChatTargetedMessage
 Delete a specific targeted message from a chat context.
 Teams administrators can use this API to remove targeted messages from group chats.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatTargetedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

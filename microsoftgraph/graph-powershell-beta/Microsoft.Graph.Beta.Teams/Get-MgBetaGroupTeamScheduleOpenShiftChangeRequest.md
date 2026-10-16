@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest
 
 The open shift requests in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

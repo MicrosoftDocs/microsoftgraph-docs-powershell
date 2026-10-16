@@ -15,6 +15,9 @@ title: New-MgBetaTeamPrimaryChannelTab
 
 Create new navigation property to tabs for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

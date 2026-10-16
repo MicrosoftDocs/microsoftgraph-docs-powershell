@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest
 
 The swap requests for shifts in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamSchedule
 
 Delete navigation property schedule for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
