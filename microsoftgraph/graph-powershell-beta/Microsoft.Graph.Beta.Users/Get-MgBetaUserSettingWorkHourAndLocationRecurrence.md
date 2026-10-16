@@ -15,6 +15,9 @@ title: Get-MgBetaUserSettingWorkHourAndLocationRecurrence
 
 Collection of recurring work plans defined by the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
