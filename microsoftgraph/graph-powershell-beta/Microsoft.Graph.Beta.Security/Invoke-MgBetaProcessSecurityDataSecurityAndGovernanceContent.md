@@ -372,7 +372,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths1IozinuSecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths1IozinuSecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentToProcess <IMicrosoftGraphProcessContentRequest>]: processContentRequest
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -430,7 +430,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
 
-CONTENTTOPROCESS <IMicrosoftGraphProcessContentRequest>: processContentRequest
+CONTENTTOPROCESS `<IMicrosoftGraphProcessContentRequest>`: processContentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -491,3 +491,25 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
 - [](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

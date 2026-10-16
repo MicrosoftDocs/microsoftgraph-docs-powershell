@@ -961,7 +961,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
+BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -990,7 +990,7 @@ Read-only.
   [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
   [ToolTip <String>]: 
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -1108,7 +1108,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-RIGHTS <IMicrosoftGraphUsageRightsIncluded>: usageRightsIncluded
+RIGHTS `<IMicrosoftGraphUsageRightsIncluded>`: usageRightsIncluded
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1148,3 +1148,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernancesensitivitylabel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
