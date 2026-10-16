@@ -1304,7 +1304,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetparentgroupsettermchild)
+- [New-MgSiteTermStoreSetParentGroupSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetparentgroupsettermchild)
 
 
 

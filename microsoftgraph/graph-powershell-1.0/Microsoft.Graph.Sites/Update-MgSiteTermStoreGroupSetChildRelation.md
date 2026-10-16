@@ -1617,7 +1617,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetchildrelation)
+- [Update-MgSiteTermStoreGroupSetChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetchildrelation)
 
 
 
