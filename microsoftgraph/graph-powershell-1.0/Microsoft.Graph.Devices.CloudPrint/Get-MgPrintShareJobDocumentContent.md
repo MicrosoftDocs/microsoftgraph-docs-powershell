@@ -16,6 +16,9 @@ title: Get-MgPrintShareJobDocumentContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
