@@ -16,6 +16,9 @@ title: Remove-MgServicePrincipalSynchronizationJob
 Stop the synchronizationJob, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
