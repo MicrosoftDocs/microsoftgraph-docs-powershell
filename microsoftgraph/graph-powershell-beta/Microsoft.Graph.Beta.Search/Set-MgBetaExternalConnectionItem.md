@@ -692,7 +692,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: externalActivityType
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem>: externalItem
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -730,18 +730,18 @@ To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerSh
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
+CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: externalItemContentType
   [Value <String>]: The content for the externalItem.
 Required.
 
-INFORMATIONPROTECTIONLABEL <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>: externalItemInformationProtectionLabel
+INFORMATIONPROTECTIONLABEL `<IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>`: externalItemInformationProtectionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabelId <String>]: The GUID of the Purview sensitivity label.
 To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerShell command.
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -769,3 +769,25 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
 - [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
