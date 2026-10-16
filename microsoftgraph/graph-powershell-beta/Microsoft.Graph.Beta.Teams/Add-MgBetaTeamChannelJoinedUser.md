@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
