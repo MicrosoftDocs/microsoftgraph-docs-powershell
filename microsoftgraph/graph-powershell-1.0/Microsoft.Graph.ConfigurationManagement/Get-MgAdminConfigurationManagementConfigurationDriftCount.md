@@ -15,6 +15,9 @@ title: Get-MgAdminConfigurationManagementConfigurationDriftCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationDriftCount](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationDriftCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
