@@ -651,7 +651,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation)
+- [Update-MgTenantRelationshipDelegatedAdminRelationshipOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationshipoperation)
 
 
 
