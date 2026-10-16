@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreDriveInclusionRuleCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreDriveInclusionRuleCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreDriveInclusionRuleCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

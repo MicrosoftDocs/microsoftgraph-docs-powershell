@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtec
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJobCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJobCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
