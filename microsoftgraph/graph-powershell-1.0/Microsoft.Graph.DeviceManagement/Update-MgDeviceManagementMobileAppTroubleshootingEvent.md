@@ -503,7 +503,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: mobileAppTroubleshootingEvent
+BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: mobileAppTroubleshootingEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -515,7 +515,7 @@ Read-only.
     [ErrorMessage <String>]: Indicates error message if any during the upload process.
     [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -554,3 +554,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
