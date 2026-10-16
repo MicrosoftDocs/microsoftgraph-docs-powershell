@@ -15,6 +15,9 @@ title: Get-MgBetaGroupMemberAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberAsApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
