@@ -101,7 +101,7 @@ HelpMessage: ''
 
 ### -AppServiceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ HelpMessage: ''
 
 ### -Error
 
-.
+
 
 ```yaml
 Type: System.String
@@ -399,7 +399,7 @@ HelpMessage: ''
 
 ### -PackageFamilyName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -453,7 +453,7 @@ HelpMessage: ''
 
 ### -PermissionTicket
 
-.
+
 
 ```yaml
 Type: System.String
@@ -480,7 +480,7 @@ HelpMessage: ''
 
 ### -PostBackUri
 
-.
+
 
 ```yaml
 Type: System.String
@@ -619,7 +619,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -646,7 +646,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String
