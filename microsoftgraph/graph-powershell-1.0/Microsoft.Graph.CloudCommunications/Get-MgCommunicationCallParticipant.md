@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a participant object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
