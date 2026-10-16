@@ -17,6 +17,9 @@ Create a new group object if it doesn't exist, or update the properties of an ex
 For a list of properties that are returned by default, see the Properties section of the group resource.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

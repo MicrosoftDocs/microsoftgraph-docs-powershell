@@ -15,6 +15,9 @@ title: Invoke-MgReplyGroupThreadPost
 
 Invoke action reply
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThreadPost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)

@@ -17,6 +17,9 @@ Create a new group setting based on the templates available in groupSettingTempl
 These settings can be at the tenant-level or at the group level.
 The following group setting templates are available for groups:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
