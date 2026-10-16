@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersio
 
 The collection of contained apps in a MobileLobApp acting as a package.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

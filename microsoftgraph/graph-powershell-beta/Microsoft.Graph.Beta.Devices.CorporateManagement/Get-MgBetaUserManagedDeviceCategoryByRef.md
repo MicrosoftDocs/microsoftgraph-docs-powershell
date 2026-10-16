@@ -15,6 +15,9 @@ title: Get-MgBetaUserManagedDeviceCategoryByRef
 
 Device category
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementManagedAppPolicy
 
 Delete navigation property managedAppPolicies for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedAppPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

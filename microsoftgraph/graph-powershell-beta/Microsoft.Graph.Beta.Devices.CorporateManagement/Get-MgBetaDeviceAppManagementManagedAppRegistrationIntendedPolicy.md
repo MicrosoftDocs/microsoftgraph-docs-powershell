@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 
 Zero or more policies admin intended for the app as of now.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
