@@ -15,6 +15,9 @@ title: Remove-MgAllUserDeviceFromManagement
 
 Retire all devices from management for this user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAllUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaAllUserDeviceFromManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Remove (Default)
