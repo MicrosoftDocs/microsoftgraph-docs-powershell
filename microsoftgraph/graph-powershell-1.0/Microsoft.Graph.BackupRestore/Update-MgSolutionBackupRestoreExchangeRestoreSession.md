@@ -1169,8 +1169,8 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession)
-- [](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0)
+- [Update-MgSolutionBackupRestoreExchangeRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreexchangerestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangerestoresession-update?view=graph-rest-1.0)
 
 
 

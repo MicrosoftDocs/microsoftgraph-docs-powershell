@@ -364,8 +364,8 @@ BODYPARAMETER `<IPathsI0X7PjSolutionsBackuprestoreMicrosoftGraphEnablePostReques
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
+- [Enable-MgSolutionBackupRestore](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/enable-mgsolutionbackuprestore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-enable?view=graph-rest-1.0)
 
 
 
