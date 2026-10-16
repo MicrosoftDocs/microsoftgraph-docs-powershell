@@ -17,6 +17,9 @@ The set of permissions for the item.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemListItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemListItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

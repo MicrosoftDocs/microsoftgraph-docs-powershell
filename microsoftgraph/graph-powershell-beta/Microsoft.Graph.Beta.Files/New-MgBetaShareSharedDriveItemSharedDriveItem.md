@@ -15,6 +15,9 @@ title: New-MgBetaShareSharedDriveItemSharedDriveItem
 
 Add new entity to shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

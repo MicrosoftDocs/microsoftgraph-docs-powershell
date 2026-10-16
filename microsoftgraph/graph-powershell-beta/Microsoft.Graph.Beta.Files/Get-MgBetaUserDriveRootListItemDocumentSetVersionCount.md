@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveRootListItemDocumentSetVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootListItemDocumentSetVersionCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootListItemDocumentSetVersionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

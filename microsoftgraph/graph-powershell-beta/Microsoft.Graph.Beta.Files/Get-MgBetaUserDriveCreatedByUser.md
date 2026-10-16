@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveCreatedByUser
 
 Get createdByUser from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

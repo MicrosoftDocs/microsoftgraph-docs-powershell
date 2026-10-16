@@ -15,6 +15,9 @@ title: New-MgBetaDriveListContentType
 
 Create new navigation property to contentTypes for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ For more info, see getting previous versions.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
