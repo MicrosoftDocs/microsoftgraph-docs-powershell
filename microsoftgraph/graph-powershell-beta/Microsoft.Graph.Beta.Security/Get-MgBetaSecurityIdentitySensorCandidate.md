@@ -59,14 +59,6 @@ This cmdlet has the following aliases,
 
 Get sensorCandidates from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityIdentitySensorCandidate
-
 ## PARAMETERS
 
 ### -All
@@ -650,6 +642,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidate)
 - [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensorcandidates?view=graph-rest-beta)
+
+
 
 
 

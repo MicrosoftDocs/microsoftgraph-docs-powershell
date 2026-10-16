@@ -56,16 +56,6 @@ The action accepts a createAlertInput complex type that combines alert metadata 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -421,6 +411,7 @@ Use 0 or omit the value to create a new incident.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
 - [](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)
+
 
 
 

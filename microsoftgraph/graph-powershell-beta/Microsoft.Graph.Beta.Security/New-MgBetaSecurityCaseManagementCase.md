@@ -57,16 +57,6 @@ Create a case object in case management.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -762,6 +752,7 @@ Supports $filter.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagementroot-post-cases?view=graph-rest-beta)
+
 
 
 
