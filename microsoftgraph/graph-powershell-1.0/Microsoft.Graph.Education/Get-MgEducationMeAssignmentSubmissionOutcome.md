@@ -15,6 +15,9 @@ title: Get-MgEducationMeAssignmentSubmissionOutcome
 
 Get outcomes from education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

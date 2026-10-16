@@ -15,6 +15,9 @@ title: New-MgEducationReportReadingCoachPassage
 
 Create new navigation property to readingCoachPassages for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
