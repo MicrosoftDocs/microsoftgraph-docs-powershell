@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreGroupSetTermChild
 
 Children of current term.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetTermChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

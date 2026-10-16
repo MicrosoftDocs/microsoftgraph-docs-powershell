@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteGetByPathColumn
 
 The collection of column definitions reusable across lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

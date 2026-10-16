@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteGetByPathOnenote
 
 Update the navigation property onenote in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteGetByPathOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

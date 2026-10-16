@@ -15,6 +15,9 @@ title: Get-MgBetaSiteListContentTypeColumnPositionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentTypeColumnPositionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
