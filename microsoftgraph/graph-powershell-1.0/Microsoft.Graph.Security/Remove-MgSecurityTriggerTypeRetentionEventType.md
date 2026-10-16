@@ -56,12 +56,17 @@ Delete a retentionEventType object.
 | Application | RecordsManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
+
+```
+This example shows how to use the Remove-MgSecurityTriggerTypeRetentionEventType Cmdlet.
+
 
 ## PARAMETERS
 
