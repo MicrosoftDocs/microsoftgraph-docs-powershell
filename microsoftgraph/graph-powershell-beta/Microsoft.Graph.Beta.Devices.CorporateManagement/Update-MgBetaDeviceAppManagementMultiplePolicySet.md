@@ -592,7 +592,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IPathsNb5PtwDeviceappmanagementPolicysetsPolicysetIdMicrosoftGraphUpdatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsNb5PtwDeviceappmanagementPolicysetsPolicysetIdMicrosoftGraphUpdatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedPolicySetItems <IMicrosoftGraphPolicySetItem[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -616,7 +616,7 @@ Read-only.
   [DeletedPolicySetItems <String[]>]: 
   [UpdatedPolicySetItems <IMicrosoftGraphPolicySetItem[]>]: 
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -707,3 +707,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmultiplepolicyset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
