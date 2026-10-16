@@ -646,9 +646,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationresourceaccountkeyauthenticationmethod)
-- [](https://learn.microsoft.com/graph/api/resourceaccountkeyauthenticationmethod-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/authentication-list-resourceaccountkeyauthenticationmethods?view=graph-rest-beta)
+- [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationresourceaccountkeyauthenticationmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/resourceaccountkeyauthenticationmethod-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-list-resourceaccountkeyauthenticationmethods?view=graph-rest-beta)
 
 
 

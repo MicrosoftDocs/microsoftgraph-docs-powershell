@@ -509,8 +509,8 @@ When the external user leaves the tenant, their data in the guest tenant is firs
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyexternalidentitypolicy)
-- [](https://learn.microsoft.com/graph/api/externalidentitiespolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyExternalIdentityPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyexternalidentitypolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalidentitiespolicy-update?view=graph-rest-beta)
 
 
 

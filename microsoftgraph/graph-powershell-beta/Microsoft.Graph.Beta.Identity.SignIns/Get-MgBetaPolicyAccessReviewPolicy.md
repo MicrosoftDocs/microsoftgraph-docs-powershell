@@ -294,8 +294,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy)
-- [](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta)
+- [Get-MgBetaPolicyAccessReviewPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-beta)
 
 
 

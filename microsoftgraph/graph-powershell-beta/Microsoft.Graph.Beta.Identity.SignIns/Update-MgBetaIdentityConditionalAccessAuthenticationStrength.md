@@ -500,7 +500,7 @@ Supports $filter (eq, ne, not , and in).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
+- [Update-MgBetaIdentityConditionalAccessAuthenticationStrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
 
 
 
