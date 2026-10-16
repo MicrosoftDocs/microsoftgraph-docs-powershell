@@ -15,6 +15,9 @@ title: Get-MgBetaEducationUserAssignmentResourceDependentResource
 
 A collection of assignment resources that depend on the parent educationAssignmentResource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

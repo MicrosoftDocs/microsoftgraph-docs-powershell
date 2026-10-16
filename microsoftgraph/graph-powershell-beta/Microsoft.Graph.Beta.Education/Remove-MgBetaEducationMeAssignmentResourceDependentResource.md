@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationMeAssignmentResourceDependentResource
 
 Delete navigation property dependentResources for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
