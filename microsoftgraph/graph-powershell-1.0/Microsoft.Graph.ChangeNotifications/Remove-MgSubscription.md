@@ -16,6 +16,9 @@ title: Remove-MgSubscription
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
