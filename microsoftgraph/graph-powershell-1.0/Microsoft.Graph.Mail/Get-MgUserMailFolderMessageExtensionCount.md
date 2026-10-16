@@ -389,7 +389,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount)
+- [Get-MgUserMailFolderMessageExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextensioncount)
 
 
 
