@@ -13,7 +13,7 @@ title: Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport
 
 ## SYNOPSIS
 
-Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of pstnOnlineMeetingDialoutReport entries.\r\nThe report is aggregated by user, user location, destination context (domestic/international), and currency.
+Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of pstnOnlineMeetingDialoutReport entries.\rThe report is aggregated by user, user location, destination context (domestic/international), and currency.
 The report includes:
 
 ## SYNTAX
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of pstnOnlineMeetingDialoutReport entries.\r\nThe report is aggregated by user, user location, destination context (domestic/international), and currency.
+Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of pstnOnlineMeetingDialoutReport entries.\rThe report is aggregated by user, user location, destination context (domestic/international), and currency.
 The report includes:
 
 ## EXAMPLES
@@ -429,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -460,3 +460,25 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordpstnonlinemeetingdialoutreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
