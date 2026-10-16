@@ -84,8 +84,9 @@ Only teachers can perform this operation.
 | Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a feedback outcome
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -95,7 +96,12 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update a feedback outcome
+
+### Example 2: Update a points outcome
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -109,7 +115,12 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update a points outcome
+
+### Example 3: Update a rubric outcome
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -122,6 +133,10 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
+
+```
+This example will update a rubric outcome
+
 
 ## PARAMETERS
 
