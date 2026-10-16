@@ -60,12 +60,17 @@ List all operators supported in the scoping filters for a synchronizationSchema.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator Cmdlet.
+
 
 ## PARAMETERS
 
