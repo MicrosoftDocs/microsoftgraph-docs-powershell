@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceSetting
 
 Get settings from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceSetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

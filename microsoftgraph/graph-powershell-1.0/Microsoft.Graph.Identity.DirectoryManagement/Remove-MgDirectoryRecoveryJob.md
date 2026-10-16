@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRecoveryJob
 
 Delete navigation property jobs for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRecoveryJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

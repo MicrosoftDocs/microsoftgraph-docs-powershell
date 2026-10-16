@@ -16,6 +16,9 @@ title: Get-MgDirectoryDeletedItemAsGroup
 Retrieve a list of recently deleted directory objects from deleted items.
 The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
