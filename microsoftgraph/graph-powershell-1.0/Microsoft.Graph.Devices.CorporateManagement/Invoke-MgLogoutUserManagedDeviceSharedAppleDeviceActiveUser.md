@@ -419,7 +419,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mglogoutusermanageddevicesharedappledeviceactiveuser)
+- [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mglogoutusermanageddevicesharedappledeviceactiveuser)
 
 
 
