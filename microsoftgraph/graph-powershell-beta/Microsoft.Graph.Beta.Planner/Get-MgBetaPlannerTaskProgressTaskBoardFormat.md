@@ -57,12 +57,17 @@ Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat 
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId
+
+```
+This example shows how to use the Get-MgBetaPlannerTaskProgressTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

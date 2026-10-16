@@ -61,12 +61,17 @@ Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaUserPlannerRosterPlan -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserPlannerRosterPlan Cmdlet.
+
 
 ## PARAMETERS
 

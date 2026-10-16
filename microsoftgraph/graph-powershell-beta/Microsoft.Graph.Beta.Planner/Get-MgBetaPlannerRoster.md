@@ -64,12 +64,17 @@ Read the properties and relationships of a plannerRoster object.
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
+
+```
+This example shows how to use the Get-MgBetaPlannerRoster Cmdlet.
+
 
 ## PARAMETERS
 
