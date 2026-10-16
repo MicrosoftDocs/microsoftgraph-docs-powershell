@@ -608,7 +608,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementcomanageddeviceconfigurationmanageraction)
+- [Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementcomanageddeviceconfigurationmanageraction)
 
 
 

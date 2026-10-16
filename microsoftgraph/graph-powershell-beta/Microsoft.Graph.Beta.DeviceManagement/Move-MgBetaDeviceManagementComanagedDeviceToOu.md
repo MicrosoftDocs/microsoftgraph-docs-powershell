@@ -413,7 +413,7 @@ BODYPARAMETER `<IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovede
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementcomanageddevicetoou)
+- [Move-MgBetaDeviceManagementComanagedDeviceToOu](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementcomanageddevicetoou)
 
 
 
