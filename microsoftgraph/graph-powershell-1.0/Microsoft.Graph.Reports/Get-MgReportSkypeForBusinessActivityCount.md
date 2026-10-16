@@ -50,12 +50,17 @@ Get the trends on how many users organized and participated in conference sessio
 The report also includes the number of peer-to-peer sessions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessActivityCount -Period $periodId
+Get-MgReportSkypeForBusinessActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessActivityCount Cmdlet.
+
 
 ## PARAMETERS
 
