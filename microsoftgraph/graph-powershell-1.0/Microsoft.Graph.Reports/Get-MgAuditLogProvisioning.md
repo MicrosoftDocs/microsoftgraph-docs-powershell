@@ -15,6 +15,9 @@ title: Get-MgAuditLogProvisioning
 
 Get provisioning from auditLogs
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

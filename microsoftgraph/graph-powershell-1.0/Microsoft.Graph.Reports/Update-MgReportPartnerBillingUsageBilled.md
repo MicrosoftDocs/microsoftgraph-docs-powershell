@@ -15,6 +15,9 @@ title: Update-MgReportPartnerBillingUsageBilled
 
 Update the navigation property billed in reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportPartnerBillingUsageBilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
