@@ -1890,7 +1890,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
+- [Update-MgBetaUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
 
 
 
