@@ -523,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Configuration <IMicrosoftGraphPrintJobConfiguration>]: printJobConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -562,7 +562,7 @@ Read-only.
     [Scaling <String>]: printScaling
   [DestinationPrinterId <String>]: 
 
-CONFIGURATION <IMicrosoftGraphPrintJobConfiguration>: printJobConfiguration
+CONFIGURATION `<IMicrosoftGraphPrintJobConfiguration>`: printJobConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Collate <Boolean?>]: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
   [ColorMode <String>]: printColorMode
@@ -598,7 +598,7 @@ Read-only.
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -618,3 +618,25 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintsharejob)
 - [](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
