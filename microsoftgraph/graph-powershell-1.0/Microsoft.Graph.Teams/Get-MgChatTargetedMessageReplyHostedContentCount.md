@@ -15,6 +15,9 @@ title: Get-MgChatTargetedMessageReplyHostedContentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTargetedMessageReplyHostedContentCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTargetedMessageReplyHostedContentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgTeamworkDeletedTeamChannelMessageReply
 
 Delete navigation property replies for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
