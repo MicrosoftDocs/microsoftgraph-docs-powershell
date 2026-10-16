@@ -315,7 +315,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
+- [Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping)
 
 
 
