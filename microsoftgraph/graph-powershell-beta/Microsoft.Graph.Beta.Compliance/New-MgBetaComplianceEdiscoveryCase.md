@@ -64,8 +64,9 @@ Create a new case object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -74,6 +75,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCase -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 
