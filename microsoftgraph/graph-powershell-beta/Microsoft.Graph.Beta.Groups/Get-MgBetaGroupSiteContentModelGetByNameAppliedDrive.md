@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 List all the contentModelUsage information related to a contentModel applied to a SharePoint document library.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -477,6 +467,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitecontentmodelgetbynameapplieddrive)
 - [](https://learn.microsoft.com/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta)
+
 
 
 
