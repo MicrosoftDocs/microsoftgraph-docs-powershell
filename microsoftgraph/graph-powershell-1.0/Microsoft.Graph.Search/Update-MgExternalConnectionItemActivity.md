@@ -15,6 +15,9 @@ title: Update-MgExternalConnectionItemActivity
 
 Update the navigation property activities in external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
