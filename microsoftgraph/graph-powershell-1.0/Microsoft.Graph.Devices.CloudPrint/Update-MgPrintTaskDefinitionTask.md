@@ -739,8 +739,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask)
-- [](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-1.0)
+- [Update-MgPrintTaskDefinitionTask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-1.0)
 
 
 
