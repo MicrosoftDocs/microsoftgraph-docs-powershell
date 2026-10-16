@@ -16,6 +16,9 @@ title: Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 Delete a cloudPcProvisioningPolicy object.
 You can’t delete a policy that’s in use.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 
 Delete navigation property assignments for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
