@@ -70,8 +70,9 @@ This cmdlet has the following aliases,
 Remove access to a chat for a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -84,6 +85,10 @@ $params = @{
 }
 
 Remove-MgChatAccessForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgChatAccessForUser Cmdlet.
+
 
 ## PARAMETERS
 
