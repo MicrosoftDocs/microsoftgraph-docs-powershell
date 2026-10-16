@@ -586,7 +586,7 @@ POLICYSNAPSHOT `<IMicrosoftGraphRelationshipPolicy>`: relationshipPolicy
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancerelationship)
+- [New-MgDirectoryTenantGovernanceRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancerelationship)
 
 
 
