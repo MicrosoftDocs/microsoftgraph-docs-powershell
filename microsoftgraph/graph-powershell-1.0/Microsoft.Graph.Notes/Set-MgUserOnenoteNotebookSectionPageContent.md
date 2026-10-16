@@ -15,6 +15,9 @@ title: Set-MgUserOnenoteNotebookSectionPageContent
 
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaUserOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
