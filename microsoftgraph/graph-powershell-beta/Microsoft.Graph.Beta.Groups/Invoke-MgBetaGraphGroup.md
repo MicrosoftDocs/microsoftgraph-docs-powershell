@@ -406,8 +406,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroup)
-- [](https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-beta)
+- [Invoke-MgBetaGraphGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetagraphgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-unsubscribebymail?view=graph-rest-beta)
 
 
 
