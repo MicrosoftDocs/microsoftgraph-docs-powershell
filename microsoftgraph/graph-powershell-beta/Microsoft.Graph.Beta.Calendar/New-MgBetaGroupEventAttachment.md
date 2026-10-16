@@ -15,6 +15,9 @@ title: New-MgBetaGroupEventAttachment
 
 Create new navigation property to attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -18,6 +18,9 @@ Email clients such as Outlook or the Outlook on the web can't access permanently
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
