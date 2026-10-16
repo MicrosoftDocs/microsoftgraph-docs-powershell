@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage
 
 Delete a cloudPcDeviceImage object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
