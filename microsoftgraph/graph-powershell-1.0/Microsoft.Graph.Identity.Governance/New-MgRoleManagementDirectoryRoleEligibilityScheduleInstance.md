@@ -15,6 +15,9 @@ title: New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
 
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

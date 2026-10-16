@@ -15,6 +15,9 @@ title: Update-MgEntitlementManagementAccessPackageAssignmentApproval
 
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

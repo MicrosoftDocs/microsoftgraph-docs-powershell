@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowPreviewScope
 
 The preview scope for the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

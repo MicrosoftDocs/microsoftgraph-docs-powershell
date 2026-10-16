@@ -15,6 +15,9 @@ title: Update-MgRoleManagementEntitlementManagement
 
 Update the navigation property entitlementManagement in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

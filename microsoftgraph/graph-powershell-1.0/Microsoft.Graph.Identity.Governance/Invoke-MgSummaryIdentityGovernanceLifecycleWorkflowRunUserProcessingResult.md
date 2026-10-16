@@ -15,6 +15,9 @@ title: Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResul
 
 Invoke function summary
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Summary (Default)
