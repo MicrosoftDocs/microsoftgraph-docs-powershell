@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryRoleMemberAsServicePrincipal
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMemberAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

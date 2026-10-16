@@ -16,6 +16,9 @@ title: Update-MgBetaDomain
 Update the properties of domain object.
 Only verified domains can be updated.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

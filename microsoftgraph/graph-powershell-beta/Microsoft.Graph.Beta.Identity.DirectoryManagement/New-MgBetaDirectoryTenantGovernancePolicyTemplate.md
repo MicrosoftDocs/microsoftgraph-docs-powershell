@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryTenantGovernancePolicyTemplate
 
 Create a new governancePolicyTemplate that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
