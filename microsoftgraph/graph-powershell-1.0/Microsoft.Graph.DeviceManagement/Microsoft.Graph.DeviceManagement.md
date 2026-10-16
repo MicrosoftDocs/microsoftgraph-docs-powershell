@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 0af7f750-1adc-46c5-8202-a5752c2c20c2
+Module Guid: 62c90116-af92-4130-bd75-fd97567db269
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -468,23 +468,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDeviceManagementWindowsMalwareInformation](Update-MgDeviceManagementWindowsMalwareInformation.md)
 
 ### [Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
