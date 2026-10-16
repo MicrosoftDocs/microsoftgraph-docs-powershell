@@ -15,6 +15,9 @@ title: Update-MgSecurityCase
 
 Update the navigation property cases in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

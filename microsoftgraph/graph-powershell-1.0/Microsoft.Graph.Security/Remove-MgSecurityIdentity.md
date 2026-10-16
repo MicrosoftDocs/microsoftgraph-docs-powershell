@@ -15,6 +15,9 @@ title: Remove-MgSecurityIdentity
 
 Delete navigation property identities for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
