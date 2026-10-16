@@ -483,12 +483,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IReferenceCreate>: .
+BODYPARAMETER `<IReferenceCreate>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId <String>: The entity reference URL of the resource.
+  OdataId `<String>`: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -514,3 +514,25 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)
 - [](https://learn.microsoft.com/graph/api/group-post-owners?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
