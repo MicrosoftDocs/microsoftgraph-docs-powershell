@@ -549,9 +549,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertask)
-- [](https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0)
+- [Get-MgPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0)
 
 
 
