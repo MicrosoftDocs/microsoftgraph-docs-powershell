@@ -1616,7 +1616,7 @@ For example, 08:00:00.0000000.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness)
+- [New-MgBetaBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusiness)
 
 
 
