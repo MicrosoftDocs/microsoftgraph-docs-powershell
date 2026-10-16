@@ -15,6 +15,9 @@ title: Invoke-MgBetaArchiveServiceAnnouncementMessage
 
 Archive a list of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgArchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
