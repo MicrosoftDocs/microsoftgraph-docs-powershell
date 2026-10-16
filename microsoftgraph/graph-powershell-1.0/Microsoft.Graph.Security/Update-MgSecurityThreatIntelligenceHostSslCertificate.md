@@ -1518,7 +1518,7 @@ Note: This is not the signature.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostsslcertificate)
+- [Update-MgSecurityThreatIntelligenceHostSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostsslcertificate)
 
 
 

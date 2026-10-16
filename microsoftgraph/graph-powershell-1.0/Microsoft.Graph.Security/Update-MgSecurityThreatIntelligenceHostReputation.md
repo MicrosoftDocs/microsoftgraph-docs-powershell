@@ -639,7 +639,7 @@ RULES <IMicrosoftGraphSecurityHostReputationRule[]>: A collection of rules that 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation)
+- [Update-MgSecurityThreatIntelligenceHostReputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation)
 
 
 
