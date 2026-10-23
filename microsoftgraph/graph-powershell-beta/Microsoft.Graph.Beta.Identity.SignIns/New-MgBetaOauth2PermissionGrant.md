@@ -589,8 +589,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-beta)
+- [New-MgBetaOauth2PermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-beta)
 
 
 
