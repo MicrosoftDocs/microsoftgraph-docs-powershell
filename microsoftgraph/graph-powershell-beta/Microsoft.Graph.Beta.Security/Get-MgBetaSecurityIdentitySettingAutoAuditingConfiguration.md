@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysettingautoauditingconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/23/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 ## SYNOPSIS
 
 Get the properties and relationships of an microsoft.graph.security.autoAuditingConfiguration object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,13 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of an microsoft.graph.security.autoAuditingConfiguration object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesAutoConfig.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesAutoConfig.Read.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 
 ## PARAMETERS
 
@@ -284,28 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysettingautoauditingconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysettingautoauditingconfiguration)
+- [](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-beta)
