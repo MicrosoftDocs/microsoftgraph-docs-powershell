@@ -393,8 +393,8 @@ BODYPARAMETER `<IPaths1Fs10W4SecurityIdentitiesSensorcandidatesMicrosoftGraphSec
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecurityidentitysensorcandidate)
-- [](https://learn.microsoft.com/graph/api/security-sensorcandidate-activate?view=graph-rest-beta)
+- [Initialize-MgBetaSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecurityidentitysensorcandidate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensorcandidate-activate?view=graph-rest-beta)
 
 
 
