@@ -46,14 +46,6 @@ Get the properties and relationships of an microsoft.graph.security.autoAuditing
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesAutoConfig.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
-
 ## PARAMETERS
 
 ### -Break
@@ -294,6 +286,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysettingautoauditingconfiguration)
 - [](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-beta)
+
 
 
 
