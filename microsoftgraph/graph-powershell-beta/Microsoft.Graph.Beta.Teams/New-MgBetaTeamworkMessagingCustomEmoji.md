@@ -434,7 +434,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTeamworkCustomEmoji>: teamworkCustomEmoji
+BODYPARAMETER `<IMicrosoftGraphTeamworkCustomEmoji>`: teamworkCustomEmoji
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentBytes <String>]: The base64-encoded image content of the emoji.
 Supported formats include PNG and GIF.
@@ -461,3 +461,25 @@ Must be unique and must not conflict with existing emoji names.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
 - [](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
