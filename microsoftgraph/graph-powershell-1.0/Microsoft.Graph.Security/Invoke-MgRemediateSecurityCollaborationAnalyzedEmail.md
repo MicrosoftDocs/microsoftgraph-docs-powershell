@@ -775,8 +775,8 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgremediatesecuritycollaborationanalyzedemail)
-- [](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0)
+- [Invoke-MgRemediateSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgremediatesecuritycollaborationanalyzedemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0)
 
 
 
