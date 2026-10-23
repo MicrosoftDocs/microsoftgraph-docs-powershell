@@ -70,18 +70,28 @@ This operation provides the health information of a specified service for a tena
 | Application | ServiceHealth.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get serviceHealth resources
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementHealthOverview
 
-### EXAMPLE 2
+```
+This example will get servicehealth resources
+
+### Example 2: Include navigation property issues
+
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
-Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues"
+Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues" 
+
+```
+This example will include navigation property issues
+
 
 ## PARAMETERS
 
