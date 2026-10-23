@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Confirm one or more riskyAgent objects as safe.
 This action sets the targeted agent's riskLevel to none.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyAgent.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyAgent.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 The @odata.type property in the request body is required to specify which type of capability to create.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.CrossTenantCapability,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.CrossTenantCapability,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
