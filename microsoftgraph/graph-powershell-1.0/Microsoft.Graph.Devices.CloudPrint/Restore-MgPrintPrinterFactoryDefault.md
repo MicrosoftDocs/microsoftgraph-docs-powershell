@@ -395,8 +395,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault)
-- [](https://learn.microsoft.com/graph/api/printer-restorefactorydefaults?view=graph-rest-1.0)
+- [Restore-MgPrintPrinterFactoryDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-restorefactorydefaults?view=graph-rest-1.0)
 
 
 
