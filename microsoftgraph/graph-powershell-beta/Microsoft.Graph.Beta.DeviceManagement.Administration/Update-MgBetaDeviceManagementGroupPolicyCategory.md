@@ -694,7 +694,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -809,7 +809,7 @@ For example: edge.admx
   [LastModifiedDateTime <DateTime?>]: The date and time the entity was last modified.
   [Parent <IMicrosoftGraphGroupPolicyCategory>]: The category entity stores the category of a group policy definition
 
-DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents an ADMX (Administrative Template) XML file.
+DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -927,7 +927,7 @@ The default value is empty.
   [SupportedOn <String>]: Localized string used to specify what operating system or application version is affected by the policy.
   [Version <String>]: Setting definition version
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -985,7 +985,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [UserPfxCertificateId <String>]: The unique identifier of userPFXCertificate
 
-PARENT <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
+PARENT `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1047,3 +1047,25 @@ For example: edge.admx
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicycategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
