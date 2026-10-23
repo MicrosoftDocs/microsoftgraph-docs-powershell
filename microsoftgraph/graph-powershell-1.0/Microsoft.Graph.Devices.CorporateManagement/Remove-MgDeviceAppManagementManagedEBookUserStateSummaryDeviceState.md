@@ -470,7 +470,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummarydevicestate)
+- [Remove-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummarydevicestate)
 
 
 

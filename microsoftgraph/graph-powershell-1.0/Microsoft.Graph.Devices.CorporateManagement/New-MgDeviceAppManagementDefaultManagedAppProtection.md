@@ -1488,7 +1488,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementdefaultmanagedappprotection)
+- [New-MgDeviceAppManagementDefaultManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementdefaultmanagedappprotection)
 
 
 
