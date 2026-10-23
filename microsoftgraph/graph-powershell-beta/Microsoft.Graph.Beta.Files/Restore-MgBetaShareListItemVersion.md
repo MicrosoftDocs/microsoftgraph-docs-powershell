@@ -15,6 +15,9 @@ title: Restore-MgBetaShareListItemVersion
 
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgShareListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore1 (Default)

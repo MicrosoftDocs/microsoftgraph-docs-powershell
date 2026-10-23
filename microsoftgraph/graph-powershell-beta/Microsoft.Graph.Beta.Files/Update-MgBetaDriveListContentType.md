@@ -15,6 +15,9 @@ title: Update-MgBetaDriveListContentType
 
 Update the navigation property contentTypes in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveRoot
 
 Delete navigation property root for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

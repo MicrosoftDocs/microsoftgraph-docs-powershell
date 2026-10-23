@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveRootThumbnail
 
 Update the navigation property thumbnails in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
