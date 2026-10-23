@@ -461,8 +461,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewsetquery)
-- [](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-delete?view=graph-rest-beta)
+- [Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewsetquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-delete?view=graph-rest-beta)
 
 
 
