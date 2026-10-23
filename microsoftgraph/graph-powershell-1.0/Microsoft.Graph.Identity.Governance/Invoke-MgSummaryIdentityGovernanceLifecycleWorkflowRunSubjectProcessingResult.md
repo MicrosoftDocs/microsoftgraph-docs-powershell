@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Provide a subjectSummary for subjectProcessingResult objects over a specified time period.
 Because the number of subject processing results returned by the list API can be overwhelming, this summary allows administrators to get a quick overview based on counts.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
