@@ -15,6 +15,9 @@ title: New-MgBetaEntitlementManagementExternalOriginResourceConnector
 
 Creates a new externalOriginResourceConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementExternalOriginResourceConnector](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementExternalOriginResourceConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult
 
 Read the properties and relationships of a subjectProcessingResult object for a workflow run.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
