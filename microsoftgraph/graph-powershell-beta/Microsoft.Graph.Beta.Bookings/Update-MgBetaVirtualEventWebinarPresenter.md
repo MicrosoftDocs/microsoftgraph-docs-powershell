@@ -1064,8 +1064,8 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter)
-- [](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-beta)
+- [Update-MgBetaVirtualEventWebinarPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarpresenter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventpresenter-update?view=graph-rest-beta)
 
 
 
