@@ -15,6 +15,9 @@ title: New-MgBetaPlannerTask
 
 Create a new plannerTask.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

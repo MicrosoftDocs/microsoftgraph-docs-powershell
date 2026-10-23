@@ -17,6 +17,9 @@ Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
