@@ -339,7 +339,7 @@ HelpMessage: ''
 
 ### -IsRegistrationEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
