@@ -1029,11 +1029,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONSNAPSHOT <IMicrosoftGraphNetworkaccessApplicationSnapshot>: applicationSnapshot
+APPLICATIONSNAPSHOT `<IMicrosoftGraphNetworkaccessApplicationSnapshot>`: applicationSnapshot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppId <String>]: The unique identifier of the application accessed during the transaction.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessConnection>: connection
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessConnection>`: connection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1085,7 +1085,7 @@ Read-only.
   [UserId <String>]: The user ID.
   [UserPrincipalName <String>]: The principal name of the user.
 
-PRIVATEACCESSDETAILS <IMicrosoftGraphNetworkaccessPrivateAccessDetails>: privateAccessDetails
+PRIVATEACCESSDETAILS `<IMicrosoftGraphNetworkaccessPrivateAccessDetails>`: privateAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessType <String>]: accessType
   [AppSegmentId <String>]: The unique identifier for Application segment ID from Azure AD.
@@ -1105,3 +1105,25 @@ PRIVATEACCESSDETAILS <IMicrosoftGraphNetworkaccessPrivateAccessDetails>: private
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogconnection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
