@@ -15,6 +15,9 @@ title: New-MgVirtualEventTownhallRegistration
 
 Create new navigation property to registrations for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhallRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhallRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
