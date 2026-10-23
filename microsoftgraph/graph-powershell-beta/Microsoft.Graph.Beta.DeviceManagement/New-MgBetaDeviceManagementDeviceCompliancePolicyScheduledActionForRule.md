@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 Create new navigation property to scheduledActionsForRule for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

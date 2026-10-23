@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary
 
 Compliance Setting State Device Summary
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
