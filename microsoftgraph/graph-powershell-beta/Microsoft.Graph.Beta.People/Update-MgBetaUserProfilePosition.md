@@ -1094,7 +1094,7 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition)
+- [Update-MgBetaUserProfilePosition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition)
 
 
 
