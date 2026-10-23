@@ -619,7 +619,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: Event representing a users device application install status.
+BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     [Name <String>]: Name for this key-value pair
@@ -668,7 +668,7 @@ HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Ap
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -683,3 +683,25 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

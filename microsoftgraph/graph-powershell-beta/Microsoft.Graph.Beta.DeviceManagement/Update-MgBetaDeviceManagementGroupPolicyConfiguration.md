@@ -698,7 +698,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphGroupPolicyConfiguration>: The group policy configuration entity contains the configured values for one or more group policy definitions.
+BODYPARAMETER `<IMicrosoftGraphGroupPolicyConfiguration>`: The group policy configuration entity contains the configured values for one or more group policy definitions.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -862,7 +862,7 @@ Read-only.
     [LastModifiedDateTime <DateTime?>]: The date and time the object was last modified.
     [Presentation <IMicrosoftGraphGroupPolicyPresentation>]: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -975,3 +975,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementgrouppolicyconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
