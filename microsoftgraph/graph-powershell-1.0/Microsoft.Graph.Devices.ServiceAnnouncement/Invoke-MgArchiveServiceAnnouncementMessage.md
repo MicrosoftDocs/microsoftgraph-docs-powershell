@@ -384,8 +384,8 @@ BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0)
+- [Invoke-MgArchiveServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0)
 
 
 
