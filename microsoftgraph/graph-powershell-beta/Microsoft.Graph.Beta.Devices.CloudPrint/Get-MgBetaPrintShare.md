@@ -67,12 +67,17 @@ Retrieve the properties and relationships of a printer share.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintShare
+
+```
+This example shows how to use the Get-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 
