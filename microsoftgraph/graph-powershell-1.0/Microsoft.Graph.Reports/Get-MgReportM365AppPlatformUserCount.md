@@ -384,8 +384,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appplatformusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-1.0)
+- [Get-MgReportM365AppPlatformUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appplatformusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-1.0)
 
 
 
