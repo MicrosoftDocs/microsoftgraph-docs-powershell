@@ -56,12 +56,17 @@ Clear the preferred availability and activity status for a user.
 | Application | Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Clear-MgBetaUserPresenceUserPreferredPresence -UserId $userId
+
+```
+This example shows how to use the Clear-MgBetaUserPresenceUserPreferredPresence Cmdlet.
+
 
 ## PARAMETERS
 
