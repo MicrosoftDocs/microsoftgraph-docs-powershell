@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the amount of storage used in your organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMailboxUsageStorage -Period $periodId
+Get-MgReportMailboxUsageStorage -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportMailboxUsageStorage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -50,12 +50,17 @@ Get the trend in the number of active users.
 A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointActivityUserCount -Period $periodId
+Get-MgReportSharePointActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
