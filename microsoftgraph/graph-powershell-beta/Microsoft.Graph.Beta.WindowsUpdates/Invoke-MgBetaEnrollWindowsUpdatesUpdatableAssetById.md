@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Enroll updatableAsset resources of the same type in update management by Windows Autopatch.
 You can also use the method enrollAssets to enroll assets.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
