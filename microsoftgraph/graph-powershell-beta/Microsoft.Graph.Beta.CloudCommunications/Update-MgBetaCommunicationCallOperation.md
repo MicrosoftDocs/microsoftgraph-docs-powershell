@@ -575,7 +575,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCommsOperation>: commsOperation
+BODYPARAMETER `<IMicrosoftGraphCommsOperation>`: commsOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -588,7 +588,7 @@ Max limit is 256 chars.
     [Subcode <Int32?>]: The result sub-code.
   [Status <String>]: operationStatus
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -615,7 +615,7 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [ToDateTime <DateTime?>]: Usage: toDateTime={toDateTime}
   [UserId <String>]: The unique identifier of user
 
-RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
+RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <Int32?>]: The result code.
   [Message <String>]: The message.
@@ -625,3 +625,25 @@ RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
