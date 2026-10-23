@@ -80,8 +80,9 @@ Create a new delegatedAdminRelationshipRequest object.
 | Application | DelegatedAdminRelationship.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Partner
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 New-MgTenantRelationshipDelegatedAdminRelationshipRequest -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTenantRelationshipDelegatedAdminRelationshipRequest Cmdlet.
+
 
 ## PARAMETERS
 
