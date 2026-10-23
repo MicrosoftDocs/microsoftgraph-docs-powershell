@@ -489,11 +489,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdDomainPassword <String>]: 
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -527,3 +527,25 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnectionaddomainpassword)
 - [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
