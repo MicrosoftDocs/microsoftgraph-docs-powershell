@@ -62,6 +62,14 @@ Retrieve an accessReviewInstance object using the identifier of an accessReviewI
 This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
