@@ -373,7 +373,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootitemlastmodifiedbyusermailboxsetting)
+- [Get-MgBetaDriveRootItemLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootitemlastmodifiedbyusermailboxsetting)
 
 
 
