@@ -439,8 +439,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkworkforceintegration)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-1.0)
+- [Remove-MgTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkworkforceintegration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-1.0)
 
 
 

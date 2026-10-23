@@ -656,8 +656,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember)
-- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0)
+- [Get-MgTeamChannelSharedWithTeamAllowedMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0)
 
 
 

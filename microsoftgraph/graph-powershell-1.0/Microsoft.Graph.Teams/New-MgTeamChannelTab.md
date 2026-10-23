@@ -771,8 +771,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchanneltab)
-- [](https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0)
+- [New-MgTeamChannelTab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchanneltab)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0)
 
 
 

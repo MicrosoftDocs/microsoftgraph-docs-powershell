@@ -924,8 +924,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphgroupteamprimarychannelmessage)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
+- [Invoke-MgGraphGroupTeamPrimaryChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphgroupteamprimarychannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
 
 
 

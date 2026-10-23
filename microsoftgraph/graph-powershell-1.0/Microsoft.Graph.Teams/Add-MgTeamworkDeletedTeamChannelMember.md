@@ -552,8 +552,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteamworkdeletedteamchannelmember)
-- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
+- [Add-MgTeamworkDeletedTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteamworkdeletedteamchannelmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
 
 
 

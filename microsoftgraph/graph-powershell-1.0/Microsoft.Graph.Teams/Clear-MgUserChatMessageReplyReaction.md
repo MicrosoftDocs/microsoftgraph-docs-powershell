@@ -603,7 +603,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mguserchatmessagereplyreaction)
+- [Clear-MgUserChatMessageReplyReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mguserchatmessagereplyreaction)
 
 
 
