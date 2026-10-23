@@ -69,12 +69,17 @@ Read the properties and relationships of a privilegedAccessGroupAssignmentSchedu
 | Application | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: Retrieve an assignment schedule
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -PrivilegedAccessGroupAssignmentScheduleId $privilegedAccessGroupAssignmentScheduleId
+
+```
+This example will retrieve an assignment schedule
+
 
 ## PARAMETERS
 

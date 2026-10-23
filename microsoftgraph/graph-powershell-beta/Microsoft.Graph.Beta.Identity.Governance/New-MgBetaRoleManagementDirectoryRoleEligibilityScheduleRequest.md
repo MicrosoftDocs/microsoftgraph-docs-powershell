@@ -67,8 +67,9 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 | Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Admin to assign a role eligibility schedule request
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -89,7 +90,12 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will admin to assign a role eligibility schedule request
+
+### Example 2: Admin to remove an existing role eligibility schedule request
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -109,6 +115,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params
+
+```
+This example will admin to remove an existing role eligibility schedule request
+
 
 ## PARAMETERS
 

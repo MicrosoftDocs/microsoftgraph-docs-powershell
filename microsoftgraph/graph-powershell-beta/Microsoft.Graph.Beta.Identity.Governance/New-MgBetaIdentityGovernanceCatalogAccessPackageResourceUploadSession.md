@@ -86,8 +86,9 @@ The following table lists the derived types of customDataProvidedResourceUploadS
 Specify the @odata.type in the request body to indicate the derived type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession -AccessPackageCatalogId $accessPackageCatalogId -AccessPackageResourceId $accessPackageResourceId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession Cmdlet.
+
 
 ## PARAMETERS
 
