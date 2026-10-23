@@ -76,16 +76,6 @@ The section must have sortType set to userDefinedCustomOrder, and the itemsOrder
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -582,6 +572,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksectionitem)
 - [](https://learn.microsoft.com/graph/api/teamworksectionitem-reorder?view=graph-rest-beta)
+
 
 
 
