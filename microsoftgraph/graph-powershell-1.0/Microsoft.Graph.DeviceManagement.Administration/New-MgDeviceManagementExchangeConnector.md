@@ -15,6 +15,9 @@ title: New-MgDeviceManagementExchangeConnector
 
 Create new navigation property to exchangeConnectors for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

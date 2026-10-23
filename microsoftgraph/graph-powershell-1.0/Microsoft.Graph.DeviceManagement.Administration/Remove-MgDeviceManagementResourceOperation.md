@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementResourceOperation
 
 Delete navigation property resourceOperations for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
