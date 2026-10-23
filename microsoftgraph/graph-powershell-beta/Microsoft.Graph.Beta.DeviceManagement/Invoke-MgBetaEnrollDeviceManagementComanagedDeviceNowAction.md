@@ -473,7 +473,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaenrolldevicemanagementcomanageddevicenowaction)
+- [Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaenrolldevicemanagementcomanageddevicenowaction)
 
 
 
