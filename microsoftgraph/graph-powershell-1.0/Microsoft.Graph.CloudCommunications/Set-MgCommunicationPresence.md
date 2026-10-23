@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 Set the state of a user's presence session as an application.
 For more information about presence sessions, states permutations, and timeouts, see Manage presence state using the Microsoft Graph API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -603,6 +593,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence)
 - [](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0)
+
 
 
 
