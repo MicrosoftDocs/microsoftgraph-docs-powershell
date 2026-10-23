@@ -581,8 +581,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem)
-- [](https://learn.microsoft.com/graph/api/teamworksectionitem-move?view=graph-rest-beta)
+- [Move-MgBetaUserTeamworkSectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksectionitem-move?view=graph-rest-beta)
 
 
 
