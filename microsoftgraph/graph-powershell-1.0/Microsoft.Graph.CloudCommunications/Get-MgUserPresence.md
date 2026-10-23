@@ -392,8 +392,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
-- [](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
+- [Get-MgUserPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
 
 
 

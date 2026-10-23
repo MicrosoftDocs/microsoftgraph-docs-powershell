@@ -592,9 +592,9 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup)
-- [](https://learn.microsoft.com/graph/api/audioroutinggroup-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/call-list-audioroutinggroups?view=graph-rest-1.0)
+- [Get-MgCommunicationCallAudioRoutingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/audioroutinggroup-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-list-audioroutinggroups?view=graph-rest-1.0)
 
 
 
