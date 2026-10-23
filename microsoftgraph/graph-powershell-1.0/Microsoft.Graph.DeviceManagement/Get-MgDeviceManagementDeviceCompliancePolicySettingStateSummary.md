@@ -69,12 +69,17 @@ The summary states of compliance policy settings for this account.
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

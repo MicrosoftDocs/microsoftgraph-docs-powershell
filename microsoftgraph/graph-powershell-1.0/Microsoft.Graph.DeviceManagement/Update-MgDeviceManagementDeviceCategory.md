@@ -78,8 +78,9 @@ Update the navigation property deviceCategories in deviceManagement
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCategory -DeviceCategoryId $deviceCategoryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 
