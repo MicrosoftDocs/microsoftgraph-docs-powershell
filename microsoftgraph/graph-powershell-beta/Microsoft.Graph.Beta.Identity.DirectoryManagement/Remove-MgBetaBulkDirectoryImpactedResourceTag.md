@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action removeTag
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +385,7 @@ BODYPARAMETER `<IPaths1T0TwwpDirectoryImpactedresourcesMicrosoftGraphRemovetagPo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetabulkdirectoryimpactedresourcetag)
+
 
 
 
