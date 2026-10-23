@@ -719,3 +719,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaEducationUserRubric](Update-MgBetaEducationUserRubric.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
