@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 Defines the default Microsoft 365 cross-tenant capabilities for inbound access from external organizations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -603,6 +593,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicydefaultm365capability)
 - [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities?view=graph-rest-1.0)
+
+
 
 
 

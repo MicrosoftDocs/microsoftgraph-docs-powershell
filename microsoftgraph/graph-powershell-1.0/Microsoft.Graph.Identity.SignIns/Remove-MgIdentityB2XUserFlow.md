@@ -56,12 +56,17 @@ Delete a b2xIdentityUserFlow object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityB2XUserFlow -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Remove-MgIdentityB2XUserFlow Cmdlet.
+
 
 ## PARAMETERS
 
