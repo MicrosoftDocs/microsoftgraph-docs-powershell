@@ -627,8 +627,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstancedelta)
-- [](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
+- [Get-MgUserEventInstanceDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstancedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
 
 
 

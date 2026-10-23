@@ -886,8 +886,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
-- [](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
+- [Update-MgUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
 
 
 

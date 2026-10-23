@@ -628,8 +628,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelfixture)
-- [](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-1.0)
+- [Update-MgPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelfixture)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-update?view=graph-rest-1.0)
 
 
 
