@@ -382,7 +382,7 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/remove-mgbetacrosstenantmigrationjob)
+- [Remove-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/remove-mgbetacrosstenantmigrationjob)
 
 
 
