@@ -41,6 +41,14 @@ This API returns data about how many premium licenses are entitled and how the a
 The calling tenant must have at least one Microsoft Entra ID P1 or P2 license.
 Tenants without a premium license receive a 403 Forbidden response with the missingLicense error code.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
