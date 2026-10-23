@@ -98,12 +98,17 @@ This cmdlet has the following aliases,
 A reference to the geolocation environments in which a resource is located.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgEntitlementManagementResourceEnvironment -Filter "originSystem eq 'SharePointOnline'"
+Get-MgEntitlementManagementResourceEnvironment -Filter "originSystem eq 'SharePointOnline'" 
+
+```
+This example shows how to use the Get-MgEntitlementManagementResourceEnvironment Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,12 +61,17 @@ Return all accessReviewStage objects on a given accessReviewInstance where the c
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
