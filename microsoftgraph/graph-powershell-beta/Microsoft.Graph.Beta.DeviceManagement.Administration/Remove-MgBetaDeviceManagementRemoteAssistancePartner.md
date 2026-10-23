@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementRemoteAssistancePartner
 
 Delete navigation property remoteAssistancePartners for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
