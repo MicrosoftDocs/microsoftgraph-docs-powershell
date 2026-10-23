@@ -90,8 +90,9 @@ Update a content type.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -139,6 +140,10 @@ $params = @{
 }
 
 Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 
