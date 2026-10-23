@@ -67,11 +67,13 @@ Get entity from drives by key
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the Get-MgDrive Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Files
 Get-MgDrive -DriveId $driveId
+```
+This example shows how to use the Get-MgDrive Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
