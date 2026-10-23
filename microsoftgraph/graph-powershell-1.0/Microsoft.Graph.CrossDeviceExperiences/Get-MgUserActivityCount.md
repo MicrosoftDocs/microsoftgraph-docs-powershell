@@ -15,6 +15,9 @@ title: Get-MgUserActivityCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityCount](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
