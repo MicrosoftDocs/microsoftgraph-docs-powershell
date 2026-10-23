@@ -1205,8 +1205,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjob)
-- [](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-beta)
+- [Update-MgBetaPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-update?view=graph-rest-beta)
 
 
 
