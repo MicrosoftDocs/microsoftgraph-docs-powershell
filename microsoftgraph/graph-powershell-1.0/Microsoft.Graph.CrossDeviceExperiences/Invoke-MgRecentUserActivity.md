@@ -61,6 +61,14 @@ The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filteri
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp,  |
+| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
