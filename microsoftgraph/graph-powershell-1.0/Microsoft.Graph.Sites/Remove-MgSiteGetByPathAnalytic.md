@@ -15,6 +15,9 @@ title: Remove-MgSiteGetByPathAnalytic
 
 Delete navigation property analytics for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
