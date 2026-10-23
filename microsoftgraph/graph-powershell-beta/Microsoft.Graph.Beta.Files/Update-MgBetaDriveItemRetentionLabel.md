@@ -78,8 +78,9 @@ For information about retention labels from an administrator's perspective, see 
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
