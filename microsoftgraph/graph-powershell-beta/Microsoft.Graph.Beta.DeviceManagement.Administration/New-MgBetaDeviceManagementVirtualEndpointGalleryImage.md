@@ -368,7 +368,7 @@ HelpMessage: ''
 
 ### -OSVersionNumber
 
-.
+
 
 ```yaml
 Type: System.String

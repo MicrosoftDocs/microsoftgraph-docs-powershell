@@ -413,7 +413,7 @@ HelpMessage: ''
 
 ### -OSVersionNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -519,7 +519,7 @@ HelpMessage: ''
 
 ### -ScopeIds
 
-.
+
 
 ```yaml
 Type: System.String[]
