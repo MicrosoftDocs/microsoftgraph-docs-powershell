@@ -51,24 +51,39 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Default properties
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
 Get-MgBetaUserDelta
 
-### EXAMPLE 2
+```
+This example will default properties
+
+### Example 2: Selecting three properties
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
 
-### EXAMPLE 3
+```
+This example shows selecting three properties
+
+### Example 3: Alternative minimal response behavior
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone"
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
+
+```
+This example will alternative minimal response behavior
+
 
 ## PARAMETERS
 
