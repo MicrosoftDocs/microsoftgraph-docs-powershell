@@ -781,7 +781,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgbrowsesolutionbackuprestorebrowsesession)
+- [Invoke-MgBrowseSolutionBackupRestoreBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgbrowsesolutionbackuprestorebrowsesession)
 
 
 
