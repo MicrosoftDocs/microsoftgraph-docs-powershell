@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMet
 
 Get multiTenantApplicationMetrics from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

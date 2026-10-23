@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectorySubscriptionByCommerceSubscriptionId
 
 Delete navigation property subscriptions for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
