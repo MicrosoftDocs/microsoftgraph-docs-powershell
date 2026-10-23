@@ -896,7 +896,7 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
+- [Update-MgBetaDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent)
 
 
 
