@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
