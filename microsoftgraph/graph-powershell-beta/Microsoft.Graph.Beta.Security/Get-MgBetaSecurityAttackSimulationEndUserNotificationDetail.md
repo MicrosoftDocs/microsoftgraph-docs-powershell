@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail
 
 Get details from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

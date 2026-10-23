@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityLabelCategorySubcategory
 
 Update the navigation property subcategories in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

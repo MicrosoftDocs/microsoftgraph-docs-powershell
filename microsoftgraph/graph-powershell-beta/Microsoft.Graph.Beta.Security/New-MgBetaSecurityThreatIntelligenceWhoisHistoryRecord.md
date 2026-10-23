@@ -15,6 +15,9 @@ title: New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord
 
 Create new navigation property to whoisHistoryRecords for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

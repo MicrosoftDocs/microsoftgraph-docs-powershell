@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 
 Get the properties and relationships of an microsoft.graph.security.autoAuditingConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

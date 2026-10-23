@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource
 
 Data source entity for SharePoint sites associated with the custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
