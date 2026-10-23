@@ -14,7 +14,7 @@ title: Confirm-MgDirectoryObjectMemberGroup
 ## SYNOPSIS
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+The specified object can be of one of the following types:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
@@ -68,7 +68,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Check for membership in a specified list of group IDs, and return from that list the IDs of groups where a specified object is a member.
-The specified object can be of one of the following types:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
+The specified object can be of one of the following types:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
@@ -477,11 +477,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Ffes6MDirectoryobjectsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Ffes6MDirectoryobjectsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupIds <String[]>]: 
 
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
+INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
   [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
   [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
@@ -491,3 +491,25 @@ INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/confirm-mgdirectoryobjectmembergroup)
 - [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
