@@ -15,6 +15,9 @@ title: Get-MgGroupPlannerPlanCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
