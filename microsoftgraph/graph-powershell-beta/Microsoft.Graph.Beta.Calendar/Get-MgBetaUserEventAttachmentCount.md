@@ -15,6 +15,9 @@ title: Get-MgBetaUserEventAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventAttachmentCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
