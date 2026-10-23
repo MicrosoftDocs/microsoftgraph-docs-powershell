@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationUser
 
 Delete a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

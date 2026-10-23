@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationReportReadingCoachPassage
 
 Delete navigation property readingCoachPassages for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationReportReadingCoachPassage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
