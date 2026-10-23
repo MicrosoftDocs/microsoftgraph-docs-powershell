@@ -15,6 +15,9 @@ title: Get-MgPolicyRoleManagementPolicyEffectiveRuleCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyEffectiveRuleCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyEffectiveRuleCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

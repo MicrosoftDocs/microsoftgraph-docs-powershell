@@ -15,6 +15,9 @@ title: Get-MgPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

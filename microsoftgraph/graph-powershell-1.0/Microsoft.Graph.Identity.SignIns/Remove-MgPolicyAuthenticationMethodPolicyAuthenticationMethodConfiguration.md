@@ -15,6 +15,9 @@ title: Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguratio
 
 Delete an externalAuthenticationMethodConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

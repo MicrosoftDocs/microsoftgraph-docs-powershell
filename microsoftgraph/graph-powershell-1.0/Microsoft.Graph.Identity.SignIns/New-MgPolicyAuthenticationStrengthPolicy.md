@@ -15,6 +15,9 @@ title: New-MgPolicyAuthenticationStrengthPolicy
 
 Create a new custom authenticationStrengthPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
