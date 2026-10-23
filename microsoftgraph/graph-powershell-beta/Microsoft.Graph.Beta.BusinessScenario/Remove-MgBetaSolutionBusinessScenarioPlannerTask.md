@@ -428,8 +428,8 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertask)
-- [](https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-beta)
+- [Remove-MgBetaSolutionBusinessScenarioPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-beta)
 
 
 
