@@ -15,6 +15,9 @@ title: Remove-MgEntitlementManagementSubject
 
 Delete navigation property subjects for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

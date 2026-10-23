@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

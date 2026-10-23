@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAccessReviewDefinitionInstance
 
 Read the properties and relationships of an accessReviewInstance object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultCoun
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

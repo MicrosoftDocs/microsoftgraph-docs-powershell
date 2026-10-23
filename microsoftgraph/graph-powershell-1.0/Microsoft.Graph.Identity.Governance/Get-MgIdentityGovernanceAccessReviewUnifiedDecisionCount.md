@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAccessReviewUnifiedDecisionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

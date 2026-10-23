@@ -16,6 +16,9 @@ title: Stop-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing
 Cancel one or more workflow runs that are currently in queued or inProgress status.
 Currently limited to canceling one run per request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
