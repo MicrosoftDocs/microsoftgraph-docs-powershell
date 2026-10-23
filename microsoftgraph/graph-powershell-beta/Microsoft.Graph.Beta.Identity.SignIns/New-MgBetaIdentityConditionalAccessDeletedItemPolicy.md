@@ -15,6 +15,9 @@ title: New-MgBetaIdentityConditionalAccessDeletedItemPolicy
 
 Create new navigation property to policies for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

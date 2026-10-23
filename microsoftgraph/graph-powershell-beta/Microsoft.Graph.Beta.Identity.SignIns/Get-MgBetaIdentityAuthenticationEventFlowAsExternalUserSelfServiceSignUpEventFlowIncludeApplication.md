@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpE
 
 Get includeApplications from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

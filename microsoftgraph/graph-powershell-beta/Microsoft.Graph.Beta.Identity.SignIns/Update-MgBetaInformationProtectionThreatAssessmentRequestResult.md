@@ -15,6 +15,9 @@ title: Update-MgBetaInformationProtectionThreatAssessmentRequestResult
 
 Update the navigation property results in informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

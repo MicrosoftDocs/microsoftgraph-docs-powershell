@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyFederatedTokenValidationPolicy
 
 Read the properties and relationships of a federatedTokenValidationPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

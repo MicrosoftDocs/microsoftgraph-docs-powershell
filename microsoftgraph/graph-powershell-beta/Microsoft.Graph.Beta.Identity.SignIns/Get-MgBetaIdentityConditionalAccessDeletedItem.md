@@ -17,6 +17,9 @@ Read-only.
 Nullable.
 Returns a collection of the deleted Conditional Access objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessDeletedItem](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessDeletedItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

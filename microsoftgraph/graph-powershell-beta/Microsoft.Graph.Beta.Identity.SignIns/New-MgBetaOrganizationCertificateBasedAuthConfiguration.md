@@ -15,6 +15,9 @@ title: New-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 Create a new certificateBasedAuthConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

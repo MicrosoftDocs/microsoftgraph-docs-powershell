@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityConditionalAccessDeletedItem
 
 Delete navigation property deletedItems for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessDeletedItem](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessDeletedItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

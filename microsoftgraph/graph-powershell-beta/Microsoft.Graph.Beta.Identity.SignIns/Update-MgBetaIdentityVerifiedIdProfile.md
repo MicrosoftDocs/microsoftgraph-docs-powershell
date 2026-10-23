@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityVerifiedIdProfile
 
 Update the properties of a verifiedIdProfile object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityVerifiedIdProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

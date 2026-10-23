@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyDefaultAppManagementPolicy
 
 Delete navigation property defaultAppManagementPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
