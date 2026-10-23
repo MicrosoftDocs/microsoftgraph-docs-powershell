@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Cancels an in-progress enhanced log collection session on a supervised Apple device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -477,6 +467,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/stop-mgbetadevicemanagementcomanageddeviceenhancedlogcollection)
+
 
 
 
