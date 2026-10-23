@@ -473,7 +473,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactserviceprovisioningerror)
+- [Get-MgContactServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactserviceprovisioningerror)
 
 
 

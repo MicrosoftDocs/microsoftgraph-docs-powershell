@@ -11475,7 +11475,7 @@ MULTITENANTAPPLICATIONSTOPROVISION <IMicrosoftGraphMultiTenantApplicationsToProv
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancepolicytemplate)
+- [Update-MgDirectoryTenantGovernancePolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancepolicytemplate)
 
 
 
