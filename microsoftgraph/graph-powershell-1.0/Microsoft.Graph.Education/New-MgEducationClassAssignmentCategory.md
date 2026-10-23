@@ -16,6 +16,9 @@ title: New-MgEducationClassAssignmentCategory
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
