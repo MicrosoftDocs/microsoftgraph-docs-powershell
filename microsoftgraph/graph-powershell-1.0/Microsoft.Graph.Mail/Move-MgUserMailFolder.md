@@ -523,8 +523,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfolder)
-- [](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0)
+- [Move-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0)
 
 
 
