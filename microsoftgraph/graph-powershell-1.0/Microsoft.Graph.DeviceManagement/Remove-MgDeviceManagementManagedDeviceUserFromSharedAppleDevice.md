@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice
 
 Delete user from shared Apple device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DeleteExpanded (Default)
