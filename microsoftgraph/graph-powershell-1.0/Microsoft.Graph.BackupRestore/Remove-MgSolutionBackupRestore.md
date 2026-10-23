@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestore
 
 Delete navigation property backupRestore for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestore](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

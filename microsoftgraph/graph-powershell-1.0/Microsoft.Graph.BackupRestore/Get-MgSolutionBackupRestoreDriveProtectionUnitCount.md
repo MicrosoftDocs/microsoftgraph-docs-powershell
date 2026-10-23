@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreDriveProtectionUnitCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreDriveProtectionUnitCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

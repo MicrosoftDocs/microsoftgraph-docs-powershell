@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreServiceAppCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreServiceAppCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreServiceAppCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
