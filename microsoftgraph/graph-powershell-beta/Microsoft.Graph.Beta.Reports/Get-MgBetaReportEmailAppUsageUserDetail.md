@@ -15,6 +15,9 @@ title: Get-MgBetaReportEmailAppUsageUserDetail
 
 Invoke function getEmailAppUsageUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportEmailAppUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailAppUsageUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
