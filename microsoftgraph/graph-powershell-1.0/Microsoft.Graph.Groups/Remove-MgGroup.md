@@ -52,6 +52,14 @@ After that time, they're permanently deleted.
 This doesn't apply to Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
