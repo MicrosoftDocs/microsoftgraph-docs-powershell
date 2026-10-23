@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-Module Guid: e91944c2-ada2-46de-8aab-06ded58a271f
+Module Guid: 4b01e8f9-13f2-4920-ab78-e0da07d6daa2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.configurationmanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -36,23 +36,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob.md)
 
 ### [Update-MgBetaAdminConfigurationManagementConfigurationMonitor](Update-MgBetaAdminConfigurationManagementConfigurationMonitor.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
