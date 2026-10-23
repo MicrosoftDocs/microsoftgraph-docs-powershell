@@ -68,6 +68,14 @@ Submit a data policy operation request from a company administrator or an applic
 This data includes the user's data stored in OneDrive and their activity reports.
 For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Export.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Export.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
