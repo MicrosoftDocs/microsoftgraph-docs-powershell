@@ -15,6 +15,9 @@ title: Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningError
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
