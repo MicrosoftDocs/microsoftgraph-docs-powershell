@@ -358,8 +358,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationrepeatoffender)
-- [](https://learn.microsoft.com/graph/api/reportroot-getattacksimulationrepeatoffenders?view=graph-rest-beta)
+- [Get-MgBetaReportAttackSimulationRepeatOffender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationrepeatoffender)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getattacksimulationrepeatoffenders?view=graph-rest-beta)
 
 
 

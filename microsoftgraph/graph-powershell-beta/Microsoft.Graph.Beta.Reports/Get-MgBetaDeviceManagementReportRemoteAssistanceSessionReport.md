@@ -593,7 +593,7 @@ BODYPARAMETER `<IPaths1Ch0ZdjDevicemanagementReportsMicrosoftGraphGetremoteassis
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportremoteassistancesessionreport)
+- [Get-MgBetaDeviceManagementReportRemoteAssistanceSessionReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportremoteassistancesessionreport)
 
 
 

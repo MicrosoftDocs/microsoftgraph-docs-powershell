@@ -290,8 +290,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
-- [](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta)
+- [Get-MgBetaReportSlaAzureAdAuthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta)
 
 
 

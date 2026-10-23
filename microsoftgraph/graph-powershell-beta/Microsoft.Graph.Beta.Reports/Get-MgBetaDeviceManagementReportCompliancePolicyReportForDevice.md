@@ -585,7 +585,7 @@ BODYPARAMETER `<IPaths1VpdeuuDevicemanagementReportsMicrosoftGraphGetcompliancep
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcompliancepolicyreportfordevice)
+- [Get-MgBetaDeviceManagementReportCompliancePolicyReportForDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcompliancepolicyreportfordevice)
 
 
 
