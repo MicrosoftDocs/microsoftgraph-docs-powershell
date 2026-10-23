@@ -59,18 +59,28 @@ This cmdlet has the following aliases,
 Returns the metadata for a sitePage in the site pages list in a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
 
-### EXAMPLE 2
+```
+This example shows how to use the Get-MgBetaSitePageAsSitePage Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name"
+Get-MgBetaSitePageAsSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId -Property "id,name" 
+
+```
+This example shows how to use the Get-MgBetaSitePageAsSitePage Cmdlet.
+
 
 ## PARAMETERS
 
