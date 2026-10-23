@@ -51,24 +51,39 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Default properties
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactDelta
 
-### EXAMPLE 2
+```
+This example will default properties
+
+### Example 2: Selecting three properties
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDelta -Property "displayName,jobTitle,mail"
+Get-MgContactDelta -Property "displayName,jobTitle,mail" 
 
-### EXAMPLE 3
+```
+This example shows selecting three properties
+
+### Example 3: Alternative minimal response behavior
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDelta -Property "displayName,jobTitle,mail"
+Get-MgContactDelta -Property "displayName,jobTitle,mail" 
+
+```
+This example will alternative minimal response behavior
+
 
 ## PARAMETERS
 

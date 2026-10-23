@@ -69,12 +69,17 @@ Read the properties and relationships of a certificateBasedAuthPki object.
 | Application | PublicKeyInfrastructure.Read.All, PublicKeyInfrastructure.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration
+
+```
+This example shows how to use the Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
