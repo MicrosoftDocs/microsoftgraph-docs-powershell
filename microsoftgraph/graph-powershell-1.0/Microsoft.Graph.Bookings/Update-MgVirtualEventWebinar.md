@@ -90,8 +90,9 @@ Update the properties of a virtualEventWebinar object.
 Only the Organizer and Co-organizer can make changes to a webinar event.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -107,6 +108,10 @@ $params = @{
 }
 
 Update-MgVirtualEventWebinar -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgVirtualEventWebinar Cmdlet.
+
 
 ## PARAMETERS
 

@@ -91,16 +91,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property calendarView in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -1502,6 +1492,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscalendarview)
+
 
 
 
