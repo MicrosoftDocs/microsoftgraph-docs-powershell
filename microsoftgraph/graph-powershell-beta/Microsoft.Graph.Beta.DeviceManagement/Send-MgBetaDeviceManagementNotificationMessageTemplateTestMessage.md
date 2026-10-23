@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Sends test message using the specified notificationMessageTemplate in the default locale
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
