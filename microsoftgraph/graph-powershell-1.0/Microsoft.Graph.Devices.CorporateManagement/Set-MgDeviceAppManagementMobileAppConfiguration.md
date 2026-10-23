@@ -502,7 +502,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IPaths1Pwcjs5DeviceappmanagementMobileappconfigurationsManageddevicemobileappconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Pwcjs5DeviceappmanagementMobileappconfigurationsManageddevicemobileappconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -510,7 +510,7 @@ Read-only.
     [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -552,3 +552,25 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmobileappconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

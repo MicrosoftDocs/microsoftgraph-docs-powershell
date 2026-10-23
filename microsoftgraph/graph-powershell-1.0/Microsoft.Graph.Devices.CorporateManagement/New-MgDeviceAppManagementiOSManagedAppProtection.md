@@ -1303,7 +1303,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphIosManagedAppProtection>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+BODYPARAMETER `<IMicrosoftGraphIosManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
     [Id <String>]: The unique identifier for an entity.
@@ -1370,7 +1370,7 @@ Read-only.
   [FaceIdBlocked <Boolean?>]: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   [MinimumRequiredSdkVersion <String>]: Versions less than the specified version will block the managed app from accessing company data.
 
-DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1387,3 +1387,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

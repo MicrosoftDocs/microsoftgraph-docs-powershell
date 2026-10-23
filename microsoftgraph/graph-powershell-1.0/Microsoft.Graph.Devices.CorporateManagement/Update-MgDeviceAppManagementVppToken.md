@@ -780,7 +780,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVppToken>: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+BODYPARAMETER `<IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
 This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
 You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 You can upload multiple Apple VPP Business or Education tokens.
@@ -799,7 +799,7 @@ Read-only.
   [Token <String>]: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
   [VppTokenAccountType <VppTokenAccountType?>]: Possible types of an Apple Volume Purchase Program token.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -841,3 +841,25 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementvpptoken)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
