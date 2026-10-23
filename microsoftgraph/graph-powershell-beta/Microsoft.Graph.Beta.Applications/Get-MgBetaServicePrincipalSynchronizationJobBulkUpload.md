@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalSynchronizationJobBulkUpload
 
 The bulk upload operation for the job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
