@@ -84,8 +84,9 @@ Create new navigation property to userStatuses for deviceAppManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 New-MgDeviceAppManagementMobileAppConfigurationUserStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementMobileAppConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
