@@ -15,6 +15,9 @@ title: Update-MgBetaUserContactFolderChildFolderContactExtension
 
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContactExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
