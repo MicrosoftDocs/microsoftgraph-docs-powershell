@@ -407,8 +407,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationuserassignmentsubmission)
-- [](https://learn.microsoft.com/graph/api/educationsubmission-return?view=graph-rest-beta)
+- [Invoke-MgBetaReturnEducationUserAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationuserassignmentsubmission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-return?view=graph-rest-beta)
 
 
 
