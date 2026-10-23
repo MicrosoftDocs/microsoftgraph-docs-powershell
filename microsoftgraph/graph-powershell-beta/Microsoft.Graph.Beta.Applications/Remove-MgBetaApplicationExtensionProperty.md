@@ -58,12 +58,17 @@ You can delete only directory extensions that aren't synced from on-premises act
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
+
+```
+This example shows how to use the Remove-MgBetaApplicationExtensionProperty Cmdlet.
+
 
 ## PARAMETERS
 

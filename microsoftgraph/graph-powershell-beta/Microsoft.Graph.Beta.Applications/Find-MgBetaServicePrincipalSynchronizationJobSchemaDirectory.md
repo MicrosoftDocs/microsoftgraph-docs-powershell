@@ -57,12 +57,17 @@ Discover the latest schema for a directoryDefinition to provision to an applicat
 | Application | Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId
+
+```
+This example shows how to use the Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory Cmdlet.
+
 
 ## PARAMETERS
 

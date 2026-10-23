@@ -80,8 +80,9 @@ Classify a delegated permission by adding a delegatedPermissionClassification to
 | Application | Policy.ReadWrite.PermissionGrant,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
+
 
 ## PARAMETERS
 
