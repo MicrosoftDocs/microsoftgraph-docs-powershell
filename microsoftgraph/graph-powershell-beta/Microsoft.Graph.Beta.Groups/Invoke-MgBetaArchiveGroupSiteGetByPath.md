@@ -422,8 +422,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaarchivegroupsitegetbypath)
-- [](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)
+- [Invoke-MgBetaArchiveGroupSiteGetByPath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaarchivegroupsitegetbypath)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-archive?view=graph-rest-beta)
 
 
 
