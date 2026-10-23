@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClient
 
 Delete approvedClientApp
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

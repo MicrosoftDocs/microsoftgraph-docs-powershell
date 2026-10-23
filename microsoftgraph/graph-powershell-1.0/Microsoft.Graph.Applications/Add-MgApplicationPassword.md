@@ -16,6 +16,9 @@ title: Add-MgApplicationPassword
 Adds a strong password or secret to an application.
 You can also add passwords while creating the application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
