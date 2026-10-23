@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

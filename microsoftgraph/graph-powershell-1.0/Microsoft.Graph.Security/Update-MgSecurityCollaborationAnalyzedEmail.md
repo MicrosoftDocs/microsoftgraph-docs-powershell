@@ -15,6 +15,9 @@ title: Update-MgSecurityCollaborationAnalyzedEmail
 
 Update the navigation property analyzedEmails in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCollaborationAnalyzedEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

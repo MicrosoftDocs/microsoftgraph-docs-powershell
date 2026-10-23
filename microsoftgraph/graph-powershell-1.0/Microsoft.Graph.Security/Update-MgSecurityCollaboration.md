@@ -15,6 +15,9 @@ title: Update-MgSecurityCollaboration
 
 Update the navigation property collaboration in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCollaboration](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCollaboration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

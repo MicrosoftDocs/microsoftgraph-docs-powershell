@@ -15,6 +15,9 @@ title: Remove-MgSecurityAuditLog
 
 Delete navigation property auditLog for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAuditLog](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAuditLog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

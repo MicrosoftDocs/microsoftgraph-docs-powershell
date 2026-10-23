@@ -15,6 +15,9 @@ title: Remove-MgSecurityDataSecurityAndGovernanceProtectionScope
 
 Delete navigation property protectionScopes for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
