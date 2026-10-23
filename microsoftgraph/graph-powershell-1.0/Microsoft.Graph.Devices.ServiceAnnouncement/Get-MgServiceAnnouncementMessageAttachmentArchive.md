@@ -15,6 +15,9 @@ title: Get-MgServiceAnnouncementMessageAttachmentArchive
 
 Get the list of attachments associated with a service message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
