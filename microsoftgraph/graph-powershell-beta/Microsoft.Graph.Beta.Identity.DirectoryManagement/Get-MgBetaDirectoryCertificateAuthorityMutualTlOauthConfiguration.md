@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of the specified mutualTlsOauthConfiguration resource.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MutualTlsOauthConfiguration.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MutualTlsOauthConfiguration.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

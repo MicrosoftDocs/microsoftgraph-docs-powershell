@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties of a specific externalUserProfile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalUserProfile.Read.All, ExternalUserProfile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalUserProfile.Read.All, ExternalUserProfile.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

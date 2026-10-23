@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties of a governancePolicyTemplate object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-PolicyTemplate.Read.All, TenantGovernance-PolicyTemplate.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-PolicyTemplate.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
