@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Retrieve the conditional access settings, which include the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the Global Secure Access services.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
