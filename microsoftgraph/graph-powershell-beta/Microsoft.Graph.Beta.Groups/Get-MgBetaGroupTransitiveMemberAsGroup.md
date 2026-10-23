@@ -69,12 +69,18 @@ This operation is transitive and returns a flat list of all nested members.
 An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar  -ConsistencyLevel eventual
+Get-MgBetaGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgBetaGroupTransitiveMemberAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
