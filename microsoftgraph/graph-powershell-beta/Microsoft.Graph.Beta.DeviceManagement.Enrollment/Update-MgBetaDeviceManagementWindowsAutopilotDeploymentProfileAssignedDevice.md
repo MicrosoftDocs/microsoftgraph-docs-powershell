@@ -1776,7 +1776,7 @@ The default is FALSE.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddevice)
+- [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddevice)
 
 
 
