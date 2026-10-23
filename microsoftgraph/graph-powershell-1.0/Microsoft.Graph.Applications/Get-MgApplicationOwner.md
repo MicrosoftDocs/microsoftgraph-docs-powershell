@@ -49,12 +49,17 @@ Retrieve a list of owners for an application that are directoryObject types.
 | Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationOwner -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationOwner Cmdlet.
+
 
 ## PARAMETERS
 
