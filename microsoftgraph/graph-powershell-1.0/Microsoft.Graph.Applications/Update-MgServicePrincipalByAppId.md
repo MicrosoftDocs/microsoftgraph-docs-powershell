@@ -3597,8 +3597,8 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
+- [Update-MgServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
 
 
 

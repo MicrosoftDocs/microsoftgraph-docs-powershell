@@ -602,8 +602,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
-- [](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)
+- [Add-MgApplicationPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)
 
 
 
