@@ -149,7 +149,7 @@ HelpMessage: ''
 
 ### -Blocked
 
-.
+
 
 ```yaml
 Type: System.String
@@ -302,7 +302,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -329,7 +329,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -383,7 +383,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -410,7 +410,7 @@ HelpMessage: ''
 
 ### -Email
 
-.
+
 
 ```yaml
 Type: System.String
@@ -500,7 +500,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -555,7 +555,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -582,7 +582,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -637,7 +637,7 @@ HelpMessage: ''
 
 ### -PaymentMethodId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -692,7 +692,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -719,7 +719,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -746,7 +746,7 @@ HelpMessage: ''
 
 ### -Picture
 
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -887,7 +887,7 @@ HelpMessage: ''
 
 ### -ShipmentMethodId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -914,7 +914,7 @@ HelpMessage: ''
 
 ### -TaxAreaDisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -941,7 +941,7 @@ HelpMessage: ''
 
 ### -TaxAreaId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -968,7 +968,7 @@ HelpMessage: ''
 
 ### -TaxLiable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -995,7 +995,7 @@ HelpMessage: ''
 
 ### -TaxRegistrationNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1022,7 +1022,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1049,7 +1049,7 @@ HelpMessage: ''
 
 ### -Website
 
-.
+
 
 ```yaml
 Type: System.String
