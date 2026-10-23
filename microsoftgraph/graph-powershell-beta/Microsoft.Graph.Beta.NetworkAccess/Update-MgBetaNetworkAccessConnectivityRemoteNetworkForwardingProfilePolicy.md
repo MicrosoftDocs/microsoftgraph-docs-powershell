@@ -654,7 +654,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkforwardingprofilepolicy)
+- [Update-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkforwardingprofilepolicy)
 
 
 
