@@ -15,6 +15,9 @@ title: Remove-MgBetaUserManagedDeviceCategory
 
 Delete navigation property deviceCategory for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

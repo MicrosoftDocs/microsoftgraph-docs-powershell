@@ -15,6 +15,9 @@ title: Disable-MgBetaUserManagedDeviceLostMode
 
 Disable lost mode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Disable-MgUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Disable-MgUserManagedDeviceLostMode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Disable (Default)

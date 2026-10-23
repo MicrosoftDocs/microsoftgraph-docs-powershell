@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppRelationship
 
 Create new navigation property to mobileAppRelationships for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
