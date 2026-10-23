@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationCallAudioRoutingGroup
 
 Create a new audioRoutingGroup.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
