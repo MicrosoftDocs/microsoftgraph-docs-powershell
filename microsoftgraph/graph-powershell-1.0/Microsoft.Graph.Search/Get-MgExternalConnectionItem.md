@@ -68,12 +68,17 @@ Read the properties and relationships of an externalItem object.
 | Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
+
+```
+This example shows how to use the Get-MgExternalConnectionItem Cmdlet.
+
 
 ## PARAMETERS
 

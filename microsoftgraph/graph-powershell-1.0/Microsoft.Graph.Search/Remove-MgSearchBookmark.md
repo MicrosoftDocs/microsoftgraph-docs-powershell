@@ -56,12 +56,17 @@ Delete a bookmark object.
 | Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
 Remove-MgSearchBookmark -BookmarkId $bookmarkId
+
+```
+This example shows how to use the Remove-MgSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 
