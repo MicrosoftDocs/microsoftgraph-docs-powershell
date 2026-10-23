@@ -87,8 +87,9 @@ Update the navigation property skills in users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -101,6 +102,10 @@ proficiency = "advancedProfessional"
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileSkill -UserId $userId -SkillProficiencyId $skillProficiencyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 
