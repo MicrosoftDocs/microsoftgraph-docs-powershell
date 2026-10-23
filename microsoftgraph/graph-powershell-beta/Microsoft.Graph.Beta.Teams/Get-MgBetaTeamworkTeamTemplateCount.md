@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamTemplates.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamTemplates.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
