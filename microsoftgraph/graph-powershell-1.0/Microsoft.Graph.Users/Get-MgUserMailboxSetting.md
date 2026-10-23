@@ -48,6 +48,14 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 Requires $select to retrieve.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
+| Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
+| Application | MailboxSettings.Read, MailboxSettings.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
