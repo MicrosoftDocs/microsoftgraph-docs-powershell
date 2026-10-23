@@ -1889,7 +1889,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage)
+- [New-MgBetaUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage)
 
 
 
