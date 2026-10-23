@@ -15,6 +15,9 @@ title: Get-MgReportOffice365ActivationUserCount
 
 Get the count of users that are enabled and the ones that activated the Office subscription on desktop or devices or shared computers.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
