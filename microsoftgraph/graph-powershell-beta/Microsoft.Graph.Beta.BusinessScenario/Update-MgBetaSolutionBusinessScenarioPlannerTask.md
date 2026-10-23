@@ -113,8 +113,9 @@ Update the properties of a businessScenarioTask object.
 | Application | BusinessScenarioData.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
@@ -128,6 +129,10 @@ $params = @{
 }
 
 Update-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BusinessScenarioTaskId $businessScenarioTaskId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSolutionBusinessScenarioPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 
