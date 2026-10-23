@@ -21,6 +21,9 @@ The provided timestamp must be older than the current createdDateTime for a chan
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Start-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

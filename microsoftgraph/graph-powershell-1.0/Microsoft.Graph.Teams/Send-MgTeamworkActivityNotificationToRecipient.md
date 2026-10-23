@@ -16,6 +16,9 @@ title: Send-MgTeamworkActivityNotificationToRecipient
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgMarkUserChatReadForUser
 
 Mark a chat as read for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaMarkUserChatReadForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)
