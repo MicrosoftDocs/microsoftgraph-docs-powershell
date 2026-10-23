@@ -657,7 +657,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment)
+- [Get-MgGroupConversationThreadPostAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment)
 
 
 

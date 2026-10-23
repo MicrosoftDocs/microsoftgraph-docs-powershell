@@ -460,8 +460,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
-- [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
+- [Get-MgGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
 
 
 

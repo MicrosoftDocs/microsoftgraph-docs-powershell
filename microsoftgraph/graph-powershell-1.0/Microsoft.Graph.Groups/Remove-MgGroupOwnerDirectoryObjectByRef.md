@@ -445,8 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref)
-- [](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
+- [Remove-MgGroupOwnerDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
 
 
 
