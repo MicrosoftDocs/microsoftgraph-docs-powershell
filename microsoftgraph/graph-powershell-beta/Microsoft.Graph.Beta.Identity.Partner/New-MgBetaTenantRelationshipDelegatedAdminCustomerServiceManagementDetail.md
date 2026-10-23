@@ -536,7 +536,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail)
+- [New-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomerservicemanagementdetail)
 
 
 
