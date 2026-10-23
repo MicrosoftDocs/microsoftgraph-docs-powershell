@@ -427,8 +427,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutuserdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-1.0)
+- [Invoke-MgCheckoutUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutuserdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-1.0)
 
 
 
