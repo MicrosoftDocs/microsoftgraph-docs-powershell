@@ -633,8 +633,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
-- [](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-beta)
+- [Get-MgBetaGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-beta)
 
 
 

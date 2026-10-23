@@ -427,8 +427,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaapplicationsynchronizationjob)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta)
+- [Start-MgBetaApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaapplicationsynchronizationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta)
 
 
 

@@ -797,8 +797,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalapproleassignedto)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignedto?view=graph-rest-beta)
+- [New-MgBetaServicePrincipalAppRoleAssignedTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalapproleassignedto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignedto?view=graph-rest-beta)
 
 
 

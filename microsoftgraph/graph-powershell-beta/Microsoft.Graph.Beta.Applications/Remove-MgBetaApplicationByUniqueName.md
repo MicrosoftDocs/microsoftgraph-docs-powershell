@@ -424,8 +424,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename)
-- [](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-beta)
+- [Remove-MgBetaApplicationByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-beta)
 
 
 
