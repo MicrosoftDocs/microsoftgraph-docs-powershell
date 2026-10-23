@@ -51,6 +51,14 @@ Typically, synchronizing calendars in a mailbox in a local store entails a round
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 Using deltas allows you to incrementally maintain and synchronize a local store of calendars in the specified mailbox.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+| Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
