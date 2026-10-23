@@ -63,6 +63,14 @@ This cmdlet has the following aliases,
 
 Create a new bookingStaffMember in the specified bookingBusiness.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
