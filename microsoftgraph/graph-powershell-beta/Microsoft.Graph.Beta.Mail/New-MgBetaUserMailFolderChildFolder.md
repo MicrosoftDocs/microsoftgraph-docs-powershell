@@ -15,6 +15,9 @@ title: New-MgBetaUserMailFolderChildFolder
 
 Create new navigation property to childFolders for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
