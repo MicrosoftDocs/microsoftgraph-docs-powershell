@@ -517,7 +517,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancestagedecisioninstancedefinition)
+- [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancestagedecisioninstancedefinition)
 
 
 
