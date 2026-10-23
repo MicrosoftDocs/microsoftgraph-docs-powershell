@@ -54,16 +54,6 @@ Create a new b2bManagementPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.B2BManagementPolicy,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -518,6 +508,7 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyb2bmanagementpolicy)
 - [](https://learn.microsoft.com/graph/api/policyroot-post-b2bmanagementpolicies?view=graph-rest-beta)
+
 
 
 
