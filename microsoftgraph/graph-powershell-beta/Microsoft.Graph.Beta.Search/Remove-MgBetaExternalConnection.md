@@ -15,6 +15,9 @@ title: Remove-MgBetaExternalConnection
 
 Delete an externalConnection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
