@@ -652,19 +652,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSCONTAINER <IMicrosoftGraphDelegatedAdminAccessContainer>: delegatedAdminAccessContainer
+ACCESSCONTAINER `<IMicrosoftGraphDelegatedAdminAccessContainer>`: delegatedAdminAccessContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessContainerId <String>]: The identifier of the access container (for example, a security group).
 For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
   [AccessContainerType <String>]: delegatedAdminAccessContainerType
 
-ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>: delegatedAdminAccessDetails
+ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]: The directory roles that the Microsoft partner is assigned in the customer tenant.
     [RoleDefinitionId <String>]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER <IMicrosoftGraphDelegatedAdminAccessAssignment>: delegatedAdminAccessAssignment
+BODYPARAMETER `<IMicrosoftGraphDelegatedAdminAccessAssignment>`: delegatedAdminAccessAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -684,7 +684,7 @@ Read-only.
 Read-only.
   [Status <String>]: delegatedAdminAccessAssignmentStatus
 
-INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   [DelegatedAdminAccessAssignmentId <String>]: The unique identifier of delegatedAdminAccessAssignment
   [DelegatedAdminCustomerId <String>]: The unique identifier of delegatedAdminCustomer
   [DelegatedAdminRelationshipId <String>]: The unique identifier of delegatedAdminRelationship
@@ -697,3 +697,25 @@ INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
 - [](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
