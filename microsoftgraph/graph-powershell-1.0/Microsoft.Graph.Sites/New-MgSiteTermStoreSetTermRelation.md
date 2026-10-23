@@ -1082,7 +1082,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermrelation)
+- [New-MgSiteTermStoreSetTermRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermrelation)
 
 
 
