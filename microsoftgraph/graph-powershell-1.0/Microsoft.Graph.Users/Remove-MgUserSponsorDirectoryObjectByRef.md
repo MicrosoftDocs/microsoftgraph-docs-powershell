@@ -15,6 +15,9 @@ title: Remove-MgUserSponsorDirectoryObjectByRef
 
 Remove an agentUser's sponsor.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSponsorDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
