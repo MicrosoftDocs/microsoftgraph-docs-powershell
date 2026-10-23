@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric
 
 Get b2BRegistrationMetrics from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

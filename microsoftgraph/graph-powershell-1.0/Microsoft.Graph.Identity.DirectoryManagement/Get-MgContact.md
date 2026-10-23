@@ -15,6 +15,9 @@ title: Get-MgContact
 
 Get the properties and relationships of an organizational contact.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
