@@ -15,6 +15,9 @@ title: Get-MgBetaSiteContentType
 
 Retrieve the metadata for a content type in a site or a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

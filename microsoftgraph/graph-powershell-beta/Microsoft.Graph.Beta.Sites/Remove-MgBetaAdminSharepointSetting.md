@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminSharepointSetting
 
 Delete navigation property settings for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Remove-MgAdminSharepointSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

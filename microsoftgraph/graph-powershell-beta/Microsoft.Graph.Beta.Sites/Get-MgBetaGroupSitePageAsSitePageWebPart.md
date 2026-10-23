@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageAsSitePageWebPart
 
 Collection of webparts on the SharePoint page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

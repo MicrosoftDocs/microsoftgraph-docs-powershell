@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteContentType
 
 Update the navigation property contentTypes in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSiteList
 
 Return the metadata for a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
