@@ -61,12 +61,17 @@ However, teachers can't remove resources marked as 'distributeToStudents', after
 | Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 
