@@ -531,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
   [ConfigurationBaselineId <String>]: The unique identifier of configurationBaseline
   [ConfigurationDriftId <String>]: The unique identifier of configurationDrift
   [ConfigurationMonitorId <String>]: The unique identifier of configurationMonitor
@@ -544,3 +544,25 @@ INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationsnapshotjob)
 - [](https://learn.microsoft.com/graph/api/configurationsnapshotjob-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/configurationmanagement-list-configurationsnapshotjobs?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
