@@ -15,6 +15,9 @@ title: Get-MgBetaUserTeamworkInstalledApp
 
 Retrieve the app installed in the personal scope of the specified user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

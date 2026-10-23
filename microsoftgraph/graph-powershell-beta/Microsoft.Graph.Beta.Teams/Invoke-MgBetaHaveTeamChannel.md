@@ -15,6 +15,9 @@ title: Invoke-MgBetaHaveTeamChannel
 
 Determine whether a user has access to a channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Have (Default)

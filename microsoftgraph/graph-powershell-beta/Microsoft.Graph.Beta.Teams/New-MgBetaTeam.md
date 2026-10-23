@@ -15,6 +15,9 @@ title: New-MgBetaTeam
 
 Create a new team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

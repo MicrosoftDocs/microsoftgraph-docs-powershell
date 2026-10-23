@@ -15,6 +15,9 @@ title: Update-MgBetaTeamPrimaryChannelMessageReply
 
 Update the navigation property replies in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

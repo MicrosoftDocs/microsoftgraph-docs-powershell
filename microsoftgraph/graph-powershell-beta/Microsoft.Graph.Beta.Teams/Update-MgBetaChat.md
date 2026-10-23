@@ -15,6 +15,9 @@ title: Update-MgBetaChat
 
 Update the properties of a chat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChat](/powershell/module/Microsoft.Graph.Teams/Update-MgChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
