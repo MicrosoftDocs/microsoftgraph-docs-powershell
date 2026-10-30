@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight
 
 Delete navigation property insights for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

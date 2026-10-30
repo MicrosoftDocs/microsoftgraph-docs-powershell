@@ -15,6 +15,9 @@ title: Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisi
 
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reset (Default)

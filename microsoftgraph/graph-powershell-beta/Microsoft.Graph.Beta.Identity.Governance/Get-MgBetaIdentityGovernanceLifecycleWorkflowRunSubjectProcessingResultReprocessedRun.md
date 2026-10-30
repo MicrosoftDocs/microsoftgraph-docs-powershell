@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultRe
 
 The reprocessed runs associated with this subject processing result.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

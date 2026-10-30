@@ -15,6 +15,9 @@ title: Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceB
 
 Get the instances of active role assignments for the calling principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
