@@ -560,7 +560,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalert)
+- [Get-MgBetaTenantRelationshipManagedTenantAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantalert)
 
 
 
