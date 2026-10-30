@@ -16,6 +16,9 @@ title: Update-MgBetaOauth2PermissionGrant
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgOauth2PermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

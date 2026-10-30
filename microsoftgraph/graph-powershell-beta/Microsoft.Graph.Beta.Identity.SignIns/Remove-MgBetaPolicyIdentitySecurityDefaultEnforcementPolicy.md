@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
