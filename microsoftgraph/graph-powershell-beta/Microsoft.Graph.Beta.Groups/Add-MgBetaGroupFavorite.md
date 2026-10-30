@@ -52,12 +52,17 @@ The group shows up in Outlook and Teams favorites.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Add-MgBetaGroupFavorite -GroupId $groupId
+
+```
+This example shows how to use the Add-MgBetaGroupFavorite Cmdlet.
+
 
 ## PARAMETERS
 
