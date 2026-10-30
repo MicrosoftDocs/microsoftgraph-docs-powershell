@@ -17,6 +17,9 @@ When the request activates an ownership or membership assignment in PIM for Grou
 Otherwise, it's null.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

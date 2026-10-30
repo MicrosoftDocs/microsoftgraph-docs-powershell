@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceG
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

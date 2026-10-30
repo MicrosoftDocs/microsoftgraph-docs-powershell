@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupResource
 
 Get resources from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

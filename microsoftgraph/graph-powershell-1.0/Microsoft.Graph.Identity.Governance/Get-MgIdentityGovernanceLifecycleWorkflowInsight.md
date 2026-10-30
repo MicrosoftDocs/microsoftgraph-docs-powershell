@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowInsight
 
 The insight container holding workflow insight summaries for a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

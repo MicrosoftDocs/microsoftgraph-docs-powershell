@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTa
 
 The related workflow task
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

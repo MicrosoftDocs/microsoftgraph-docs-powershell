@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask
 
 Create new navigation property to tasks for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

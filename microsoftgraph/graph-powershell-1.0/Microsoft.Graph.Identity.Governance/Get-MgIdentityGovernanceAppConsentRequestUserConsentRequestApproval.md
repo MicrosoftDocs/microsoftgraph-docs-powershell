@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval
 
 Approval decisions associated with a request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
