@@ -54,16 +54,6 @@ Invoke action addApps
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -402,6 +392,7 @@ BODYPARAMETER `<IPaths17XorxvDevicemanagementAndroidmanagedstoreaccountenterpris
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/add-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
+
 
 
 
