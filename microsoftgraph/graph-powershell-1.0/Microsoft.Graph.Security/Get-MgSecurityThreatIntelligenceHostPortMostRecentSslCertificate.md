@@ -416,7 +416,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate)
+- [Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate)
 
 
 
