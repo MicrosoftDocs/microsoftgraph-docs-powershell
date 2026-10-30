@@ -78,16 +78,6 @@ After the rule is applied, the state is either completed or completedWithErrors.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Configuration.Read.All, BackupRestore-Configuration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -616,6 +606,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicydriveinclusionrule)
 - [](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules?view=graph-rest-1.0)
+
 
 
 
