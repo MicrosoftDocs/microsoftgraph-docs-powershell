@@ -15,6 +15,9 @@ title: Get-MgVirtualEventTownhallRegistrationSession
 
 Sessions for a registration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallRegistrationSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallRegistrationSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

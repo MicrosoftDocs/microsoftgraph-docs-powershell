@@ -15,6 +15,9 @@ title: Update-MgVirtualEvent
 
 Update the navigation property events in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

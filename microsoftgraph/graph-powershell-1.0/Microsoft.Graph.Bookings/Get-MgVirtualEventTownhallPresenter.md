@@ -16,6 +16,9 @@ title: Get-MgVirtualEventTownhallPresenter
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: \r- virtualEventTownhall\r- virtualEventWebinar
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

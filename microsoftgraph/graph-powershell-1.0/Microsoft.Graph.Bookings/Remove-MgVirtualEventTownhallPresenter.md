@@ -16,6 +16,9 @@ title: Remove-MgVirtualEventTownhallPresenter
 Delete a virtualEventPresenter from a virtual event.
 Currently the supported virtual event types are:\r- virtualEventTownhall\r- virtualEventWebinar
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

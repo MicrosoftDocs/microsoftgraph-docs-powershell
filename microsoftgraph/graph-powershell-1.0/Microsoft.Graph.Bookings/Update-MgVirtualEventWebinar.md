@@ -16,6 +16,9 @@ title: Update-MgVirtualEventWebinar
 Update the properties of a virtualEventWebinar object.
 Only the Organizer and Co-organizer can make changes to a webinar event.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
