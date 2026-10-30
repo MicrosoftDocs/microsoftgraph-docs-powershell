@@ -402,8 +402,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/start-mgdevicemanagementvirtualendpointonpremiseconnectionhealthcheck)
-- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-1.0)
+- [Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/start-mgdevicemanagementvirtualendpointonpremiseconnectionhealthcheck)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-1.0)
 
 
 
