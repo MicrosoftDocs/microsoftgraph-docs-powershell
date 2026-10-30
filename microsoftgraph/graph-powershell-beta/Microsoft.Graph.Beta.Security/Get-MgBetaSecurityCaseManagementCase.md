@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a microsoft.graph.security.caseManagement.case object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
