@@ -15,6 +15,9 @@ title: Get-MgBetaTenantRelationshipDelegatedAdminRelationship
 
 Read the properties of a delegatedAdminRelationship object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
