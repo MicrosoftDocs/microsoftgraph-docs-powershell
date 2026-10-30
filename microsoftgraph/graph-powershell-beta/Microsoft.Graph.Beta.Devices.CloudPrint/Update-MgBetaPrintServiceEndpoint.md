@@ -15,6 +15,9 @@ title: Update-MgBetaPrintServiceEndpoint
 
 Update the navigation property endpoints in print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintServiceEndpoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
