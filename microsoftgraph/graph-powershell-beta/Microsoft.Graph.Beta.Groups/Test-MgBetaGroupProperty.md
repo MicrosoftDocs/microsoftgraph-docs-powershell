@@ -76,6 +76,14 @@ The following validations are performed for the display name and mail nickname p
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.Read.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
