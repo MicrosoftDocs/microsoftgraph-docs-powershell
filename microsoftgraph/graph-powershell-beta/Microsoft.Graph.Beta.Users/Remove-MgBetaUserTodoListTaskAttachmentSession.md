@@ -15,6 +15,9 @@ title: Remove-MgBetaUserTodoListTaskAttachmentSession
 
 Delete navigation property attachmentSessions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

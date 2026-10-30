@@ -15,6 +15,9 @@ title: Get-MgBetaUserSettingWorkHourAndLocationOccurrence
 
 Collection of work plan occurrences.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

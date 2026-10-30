@@ -15,6 +15,9 @@ title: New-MgBetaUserSettingWindows
 
 Create new navigation property to windows for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingWindows?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

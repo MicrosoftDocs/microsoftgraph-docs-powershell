@@ -16,6 +16,9 @@ title: Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation
 Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation](/powershell/module/Microsoft.Graph.Users/Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
