@@ -55,14 +55,6 @@ This cmdlet has the following aliases,
 
 Get a zone object by a specific zoneId.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityZone
-
 ## PARAMETERS
 
 ### -All
@@ -647,6 +639,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityzone)
 - [](https://learn.microsoft.com/graph/api/security-zone-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-security-list-zones?view=graph-rest-beta)
+
+
 
 
 

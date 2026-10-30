@@ -55,16 +55,6 @@ This action initiates the migration process for one or more Microsoft Defender f
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesMigration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -383,6 +373,7 @@ BODYPARAMETER `<IPathsX2WxgdSecurityIdentitiesSensormigrationMicrosoftGraphSecur
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityidentitysensormigration)
 - [](https://learn.microsoft.com/graph/api/security-sensormigration-migrate?view=graph-rest-beta)
+
 
 
 

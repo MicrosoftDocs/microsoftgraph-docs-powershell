@@ -55,14 +55,6 @@ This cmdlet has the following aliases,
 
 References a workspace in Security Copilot.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityCopilotWorkspace
-
 ## PARAMETERS
 
 ### -All
@@ -646,6 +638,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycopilotworkspace)
 - [](https://learn.microsoft.com/graph/api/securitycopilot-list-workspaces?view=graph-rest-beta)
+
+
 
 
 
