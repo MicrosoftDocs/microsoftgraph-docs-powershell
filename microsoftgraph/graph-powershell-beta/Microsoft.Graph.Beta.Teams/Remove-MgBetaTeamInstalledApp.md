@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamInstalledApp
 
 Uninstalls an app from the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

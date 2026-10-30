@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamScheduleTimeOffRequest
 
 Create new navigation property to timeOffRequests for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

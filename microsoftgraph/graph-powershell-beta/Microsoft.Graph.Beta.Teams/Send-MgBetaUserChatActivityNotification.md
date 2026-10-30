@@ -16,6 +16,9 @@ title: Send-MgBetaUserChatActivityNotification
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgUserChatActivityNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
