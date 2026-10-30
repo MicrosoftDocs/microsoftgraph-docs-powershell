@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreMailboxProtectionUnit
 
 Delete navigation property mailboxProtectionUnits for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreMailboxProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

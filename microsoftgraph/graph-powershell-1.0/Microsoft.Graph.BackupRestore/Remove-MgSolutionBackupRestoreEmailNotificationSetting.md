@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreEmailNotificationSetting
 
 Delete navigation property emailNotificationsSetting for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

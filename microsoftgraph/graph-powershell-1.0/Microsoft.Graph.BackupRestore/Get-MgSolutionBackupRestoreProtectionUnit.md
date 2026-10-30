@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreProtectionUnit
 
 Read the properties and relationships of a protectionUnitBase object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
