@@ -668,7 +668,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmaplevel)
+- [New-MgPlaceAsBuildingMapLevel](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmaplevel)
 
 
 

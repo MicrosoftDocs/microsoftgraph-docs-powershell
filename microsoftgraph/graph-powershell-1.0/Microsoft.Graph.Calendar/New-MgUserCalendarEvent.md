@@ -3208,7 +3208,7 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent)
+- [New-MgUserCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent)
 
 
 

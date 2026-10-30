@@ -543,7 +543,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasfloorcheck)
+- [New-MgPlaceAsFloorCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasfloorcheck)
 
 
 

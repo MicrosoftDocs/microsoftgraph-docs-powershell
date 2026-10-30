@@ -413,8 +413,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmap)
-- [](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-1.0)
+- [Remove-MgPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasbuildingmap)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-1.0)
 
 
 
