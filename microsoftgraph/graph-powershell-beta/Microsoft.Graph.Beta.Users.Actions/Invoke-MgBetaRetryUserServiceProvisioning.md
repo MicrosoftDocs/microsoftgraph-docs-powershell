@@ -375,8 +375,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning)
-- [](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta)
+- [Invoke-MgBetaRetryUserServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-beta)
 
 
 
