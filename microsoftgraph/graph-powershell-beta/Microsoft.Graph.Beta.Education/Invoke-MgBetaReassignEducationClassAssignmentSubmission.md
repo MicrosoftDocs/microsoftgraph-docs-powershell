@@ -55,6 +55,14 @@ This means that the reassigned status will be mapped to the returned status, and
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWrite.All, Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
