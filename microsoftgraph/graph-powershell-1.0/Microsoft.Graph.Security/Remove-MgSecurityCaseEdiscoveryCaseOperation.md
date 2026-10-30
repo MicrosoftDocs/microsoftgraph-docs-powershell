@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseOperation
 
 Delete navigation property operations for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgSecurityAuditLogQuery
 
 Create a new auditLogQuery object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAuditLogQuery](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAuditLogQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

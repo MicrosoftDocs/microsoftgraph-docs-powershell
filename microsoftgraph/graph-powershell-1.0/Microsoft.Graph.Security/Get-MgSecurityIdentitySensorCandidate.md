@@ -15,6 +15,9 @@ title: Get-MgSecurityIdentitySensorCandidate
 
 Represents Microsoft Defender for Identity sensors that are ready to be activated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -16,6 +16,9 @@ title: Invoke-MgInvokeSecurityIdentityAccountAction
 Perform actions such as revoking accounts and forcing password reset for identity accounts that are observed in Microsoft Defender for Identity.
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInvokeSecurityIdentityAccountAction](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaInvokeSecurityIdentityAccountAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InvokeExpanded (Default)
