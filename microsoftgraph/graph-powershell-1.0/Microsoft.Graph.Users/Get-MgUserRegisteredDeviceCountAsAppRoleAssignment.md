@@ -15,6 +15,9 @@ title: Get-MgUserRegisteredDeviceCountAsAppRoleAssignment
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserRegisteredDeviceCountAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserRegisteredDeviceCountAsAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

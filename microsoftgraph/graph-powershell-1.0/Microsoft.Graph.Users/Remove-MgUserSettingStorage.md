@@ -15,6 +15,9 @@ title: Remove-MgUserSettingStorage
 
 Delete navigation property storage for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSettingStorage](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

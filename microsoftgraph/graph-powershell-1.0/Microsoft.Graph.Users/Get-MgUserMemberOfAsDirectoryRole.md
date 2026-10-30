@@ -15,6 +15,9 @@ title: Get-MgUserMemberOfAsDirectoryRole
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfAsDirectoryRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
