@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Add (pin) a tab to the specified chat.
 \rThe corresponding app must already be installed in the chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat, TeamsTab.ReadWriteSelfForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.Create, TeamsTab.Create.Chat, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWriteSelfForChat.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

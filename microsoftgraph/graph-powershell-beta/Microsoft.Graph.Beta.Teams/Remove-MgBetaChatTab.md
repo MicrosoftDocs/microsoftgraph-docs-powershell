@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Remove (unpin) a tab from the specified chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForChat,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsTab.ReadWriteSelfForChat.All, TeamsTab.Delete.Chat, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
