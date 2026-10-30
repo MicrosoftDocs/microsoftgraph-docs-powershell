@@ -15,7 +15,7 @@ title: Invoke-MgBetaSupportedUserOutlookLanguage
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
+You can subsequently get the preferred language by\rgetting the user's mailbox settings.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
+You can subsequently get the preferred language by\rgetting the user's mailbox settings.
 
 ## EXAMPLES
 
@@ -409,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -448,3 +448,25 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage)
 - [](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
