@@ -15,6 +15,9 @@ title: Get-MgEducationUserAssignmentSubmissionResourceDependentResourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
