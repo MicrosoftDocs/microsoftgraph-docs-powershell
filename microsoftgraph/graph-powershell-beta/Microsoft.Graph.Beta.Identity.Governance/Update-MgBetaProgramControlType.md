@@ -169,7 +169,7 @@ HelpMessage: ''
 
 ### -ControlTypeGroupId
 
-.
+
 
 ```yaml
 Type: System.String
