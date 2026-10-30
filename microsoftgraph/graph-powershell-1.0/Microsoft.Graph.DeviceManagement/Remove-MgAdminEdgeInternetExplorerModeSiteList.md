@@ -436,8 +436,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelist)
-- [](https://learn.microsoft.com/graph/api/internetexplorermode-delete-sitelists?view=graph-rest-1.0)
+- [Remove-MgAdminEdgeInternetExplorerModeSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internetexplorermode-delete-sitelists?view=graph-rest-1.0)
 
 
 
