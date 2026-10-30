@@ -15,6 +15,9 @@ title: Update-MgBetaExternal
 
 Update external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
