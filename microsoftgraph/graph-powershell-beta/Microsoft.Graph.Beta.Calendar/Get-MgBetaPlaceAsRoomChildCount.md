@@ -355,7 +355,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomchildcount)
+- [Get-MgBetaPlaceAsRoomChildCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomchildcount)
 
 
 
