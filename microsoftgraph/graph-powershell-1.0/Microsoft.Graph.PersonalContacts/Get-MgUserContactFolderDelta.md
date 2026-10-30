@@ -63,13 +63,18 @@ This allows you to maintain and synchronize \ra local store of a user's contact 
 | Application | Contacts.Read, Contacts.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.PersonalContacts
 
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolderDelta -UserId $userId
+
+```
+This example shows how to use the Get-MgUserContactFolderDelta Cmdlet.
+
 
 ## PARAMETERS
 
