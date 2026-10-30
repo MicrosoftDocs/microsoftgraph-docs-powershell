@@ -65,20 +65,6 @@ This cmdlet has the following aliases,
 
 Get details about SharePoint activity by user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -421,6 +407,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetail)
 - [](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)
+
 
 
 
