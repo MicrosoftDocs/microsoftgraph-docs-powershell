@@ -468,8 +468,8 @@ BODYPARAMETER `<IPaths12Jg47YDirectoryDeleteditemsMicrosoftGraphValidateproperti
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorydeleteditemproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaDirectoryDeletedItemProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorydeleteditemproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 

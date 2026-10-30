@@ -479,7 +479,7 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
+- [Update-MgBetaDirectoryCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthority)
 
 
 
