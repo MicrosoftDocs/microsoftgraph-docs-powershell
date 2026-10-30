@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementReport
 
 Delete navigation property reports for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Remove-MgDeviceManagementReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

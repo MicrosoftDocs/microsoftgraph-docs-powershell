@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartnerBillingReconciliationUnbilled
 
 Represents details for unbilled invoice reconciliation data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingReconciliationUnbilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

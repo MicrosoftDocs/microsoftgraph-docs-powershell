@@ -15,6 +15,9 @@ title: New-MgBetaReportPartnerBillingOperation
 
 Create new navigation property to operations for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
