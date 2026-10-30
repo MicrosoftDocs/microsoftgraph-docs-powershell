@@ -1278,7 +1278,7 @@ SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicecustomer)
+- [Update-MgBetaFinancialCompanySaleInvoiceCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoicecustomer)
 
 
 
