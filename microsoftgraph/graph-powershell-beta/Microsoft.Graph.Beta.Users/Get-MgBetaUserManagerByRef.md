@@ -55,16 +55,6 @@ Returns the user or organizational contact assigned as the agentUser's manager.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -370,6 +360,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanagerbyref)
 - [](https://learn.microsoft.com/graph/api/agentuser-list-manager?view=graph-rest-beta)
+
 
 
 
