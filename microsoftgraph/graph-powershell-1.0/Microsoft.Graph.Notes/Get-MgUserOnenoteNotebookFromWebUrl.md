@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Create, Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
