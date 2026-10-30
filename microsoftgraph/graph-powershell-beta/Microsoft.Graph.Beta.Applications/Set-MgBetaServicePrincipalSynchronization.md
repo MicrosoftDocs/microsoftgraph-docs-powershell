@@ -15,6 +15,9 @@ title: Set-MgBetaServicePrincipalSynchronization
 
 Update the navigation property synchronization in servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

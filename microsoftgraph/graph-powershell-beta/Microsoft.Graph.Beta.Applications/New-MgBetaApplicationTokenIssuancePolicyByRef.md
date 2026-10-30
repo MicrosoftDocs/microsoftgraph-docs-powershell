@@ -15,6 +15,9 @@ title: New-MgBetaApplicationTokenIssuancePolicyByRef
 
 Assign a tokenIssuancePolicy to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

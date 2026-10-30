@@ -16,6 +16,9 @@ title: Get-MgBetaApplicationByUniqueName
 Get the properties and relationships of an application object.
 This API can be used to get agentIdentityBlueprint objects as well by their ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

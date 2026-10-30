@@ -15,6 +15,9 @@ title: Invoke-MgBetaFunctionApplicationSynchronizationJobSchema
 
 List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Function (Default)

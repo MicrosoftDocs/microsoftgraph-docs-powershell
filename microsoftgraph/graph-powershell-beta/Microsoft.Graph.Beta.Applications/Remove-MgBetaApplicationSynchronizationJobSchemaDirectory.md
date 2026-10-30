@@ -15,6 +15,9 @@ title: Remove-MgBetaApplicationSynchronizationJobSchemaDirectory
 
 Delete navigation property directories for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
