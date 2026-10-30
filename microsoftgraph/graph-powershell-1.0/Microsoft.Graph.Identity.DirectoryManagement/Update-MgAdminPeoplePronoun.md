@@ -416,8 +416,8 @@ The default value is false, and pronouns are disabled.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeoplepronoun)
-- [](https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-1.0)
+- [Update-MgAdminPeoplePronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeoplepronoun)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-1.0)
 
 
 

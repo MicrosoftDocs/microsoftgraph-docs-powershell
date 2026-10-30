@@ -535,7 +535,7 @@ Not all calculated object changes may be successfully applied; see totalObjectsM
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecoveryjob)
+- [New-MgDirectoryRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecoveryjob)
 
 
 
