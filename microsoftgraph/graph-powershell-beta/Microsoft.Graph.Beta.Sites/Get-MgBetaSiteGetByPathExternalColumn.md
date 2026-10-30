@@ -15,6 +15,9 @@ title: Get-MgBetaSiteGetByPathExternalColumn
 
 The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathExternalColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

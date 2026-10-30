@@ -15,6 +15,9 @@ title: Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

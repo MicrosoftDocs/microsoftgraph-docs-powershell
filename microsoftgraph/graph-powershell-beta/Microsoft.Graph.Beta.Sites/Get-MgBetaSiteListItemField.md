@@ -15,6 +15,9 @@ title: Get-MgBetaSiteListItemField
 
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

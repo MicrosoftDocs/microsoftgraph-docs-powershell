@@ -15,6 +15,9 @@ title: Get-MgBetaSiteDrive
 
 The collection of drives (document libraries) under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

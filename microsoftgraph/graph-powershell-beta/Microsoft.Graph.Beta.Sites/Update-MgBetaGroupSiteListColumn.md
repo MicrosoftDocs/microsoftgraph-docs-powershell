@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteListColumn
 
 Update the navigation property columns in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
