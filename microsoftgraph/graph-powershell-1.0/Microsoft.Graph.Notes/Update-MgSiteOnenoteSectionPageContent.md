@@ -15,6 +15,9 @@ title: Update-MgSiteOnenoteSectionPageContent
 
 Invoke action onenotePatchContent
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)
