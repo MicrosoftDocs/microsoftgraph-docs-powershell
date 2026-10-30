@@ -800,7 +800,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDomain>: domain
+BODYPARAMETER `<IMicrosoftGraphDomain>`: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -955,7 +955,7 @@ For a list of statuses, see certificateUpdateResult status.
 Read-only.
   [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
-ROOTDOMAIN <IMicrosoftGraphDomain>: domain
+ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1078,7 +1078,7 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
   [Ttl <Int32?>]: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host.
 Not nullable.
 
-STATE <IMicrosoftGraphDomainState>: domainState
+STATE `<IMicrosoftGraphDomainState>`: domainState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastActionDateTime <DateTime?>]: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
@@ -1108,3 +1108,25 @@ Not nullable.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
 - [](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
