@@ -600,9 +600,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest)
-- [](https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-1.0)
+- [Get-MgTeamScheduleSwapShiftChangeRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/swapshiftschangerequest-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/swapshiftschangerequest-list?view=graph-rest-1.0)
 
 
 
