@@ -15,6 +15,9 @@ title: Invoke-MgGraphUserChatMessageReply
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphUserChatMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)

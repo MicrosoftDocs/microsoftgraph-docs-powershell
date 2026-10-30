@@ -15,6 +15,9 @@ title: Get-MgTeamPrimaryChannelFileFolder
 
 Metadata for the location where the channel's files are stored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelFileFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

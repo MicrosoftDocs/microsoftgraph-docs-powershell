@@ -15,6 +15,9 @@ title: Get-MgTeamChannelMessage
 
 Retrieve a single message or a message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)
