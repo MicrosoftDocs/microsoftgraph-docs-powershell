@@ -15,6 +15,9 @@ title: Get-MgGroupSitePageAsSitePageCanvaLayout
 
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
