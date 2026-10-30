@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Indicates the state of synchronization for a user between the cloud and on-premises Active Directory.
 Supports $filter only with advanced query capabilities, for example, $filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -75,6 +75,14 @@ This cmdlet has the following aliases,
 The user's profile photo.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.ReadBasic.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.Read.All, ProfilePhoto.ReadWrite.All, User.Read.All, User.ReadBasic.All, User.ReadWrite.CrossCloud,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
