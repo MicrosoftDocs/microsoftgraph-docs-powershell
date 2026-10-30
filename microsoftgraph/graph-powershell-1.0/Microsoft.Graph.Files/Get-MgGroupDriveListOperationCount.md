@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListOperationCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListOperationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

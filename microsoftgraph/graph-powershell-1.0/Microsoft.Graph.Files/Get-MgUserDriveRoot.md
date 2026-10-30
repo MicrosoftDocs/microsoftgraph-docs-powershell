@@ -16,6 +16,9 @@ title: Get-MgUserDriveRoot
 The root folder of the drive.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

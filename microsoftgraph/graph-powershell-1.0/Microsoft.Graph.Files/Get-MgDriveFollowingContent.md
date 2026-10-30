@@ -15,6 +15,9 @@ title: Get-MgDriveFollowingContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveFollowingContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveFollowingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

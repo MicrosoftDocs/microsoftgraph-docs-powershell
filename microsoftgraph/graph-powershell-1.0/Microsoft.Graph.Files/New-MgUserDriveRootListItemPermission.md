@@ -15,6 +15,9 @@ title: New-MgUserDriveRootListItemPermission
 
 Create new navigation property to permissions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

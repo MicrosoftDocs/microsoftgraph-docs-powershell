@@ -15,6 +15,9 @@ title: Remove-MgDriveItemSubscription
 
 Delete navigation property subscriptions for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

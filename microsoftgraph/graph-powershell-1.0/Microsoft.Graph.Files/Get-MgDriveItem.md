@@ -17,6 +17,9 @@ All items contained in the drive.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

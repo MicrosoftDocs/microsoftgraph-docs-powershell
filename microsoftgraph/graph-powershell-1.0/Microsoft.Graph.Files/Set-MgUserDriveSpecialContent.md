@@ -15,6 +15,9 @@ title: Set-MgUserDriveSpecialContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveSpecialContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveSpecialContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
