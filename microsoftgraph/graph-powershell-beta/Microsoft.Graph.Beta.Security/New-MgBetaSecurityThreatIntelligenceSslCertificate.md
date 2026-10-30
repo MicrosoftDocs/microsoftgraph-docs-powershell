@@ -15,6 +15,9 @@ title: New-MgBetaSecurityThreatIntelligenceSslCertificate
 
 Create new navigation property to sslCertificates for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaSecurityLabelCategorySubcategory
 
 Create a new subcategoryTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
