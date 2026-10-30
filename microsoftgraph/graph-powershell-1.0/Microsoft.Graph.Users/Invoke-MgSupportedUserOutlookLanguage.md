@@ -50,6 +50,14 @@ Get the list of locales and languages that are supported for the user, as config
 When setting up an Outlook client, the user selects the preferred language from this supported list.
 You can subsequently get the preferred language by\rgetting the user's mailbox settings.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
+| Delegated (personal Microsoft account) | User.Read,  |
+| Application | User.Read.All, User.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
