@@ -526,8 +526,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/copy-mgbetausermessage)
-- [](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta)
+- [Copy-MgBetaUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/copy-mgbetausermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta)
 
 
 

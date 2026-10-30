@@ -653,7 +653,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessageattachment)
+- [Get-MgBetaUserMailFolderChildFolderMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessageattachment)
 
 
 
