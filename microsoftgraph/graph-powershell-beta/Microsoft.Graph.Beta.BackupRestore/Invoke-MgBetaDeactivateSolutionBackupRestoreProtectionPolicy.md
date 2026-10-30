@@ -390,8 +390,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy)
-- [](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta)
+- [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetadeactivatesolutionbackuprestoreprotectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta)
 
 
 

@@ -424,7 +424,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreexchangeprotectionpolicy)
+- [Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreexchangeprotectionpolicy)
 
 
 
