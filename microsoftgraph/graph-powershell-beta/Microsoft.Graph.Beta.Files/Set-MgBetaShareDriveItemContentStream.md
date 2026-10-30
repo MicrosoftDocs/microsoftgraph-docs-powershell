@@ -457,7 +457,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharedriveitemcontentstream)
+- [Set-MgBetaShareDriveItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharedriveitemcontentstream)
 
 
 

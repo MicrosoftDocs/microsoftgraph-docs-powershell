@@ -593,8 +593,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetagroupdrivelistcontenttypewithhubsite)
-- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
+- [Join-MgBetaGroupDriveListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetagroupdrivelistcontenttypewithhubsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
 
 
 

@@ -447,7 +447,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivefollowingcontentstream)
+- [Remove-MgBetaGroupDriveFollowingContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivefollowingcontentstream)
 
 
 
