@@ -53,6 +53,14 @@ If the Accept-Language header is set to an existing locale identified by the val
 This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
