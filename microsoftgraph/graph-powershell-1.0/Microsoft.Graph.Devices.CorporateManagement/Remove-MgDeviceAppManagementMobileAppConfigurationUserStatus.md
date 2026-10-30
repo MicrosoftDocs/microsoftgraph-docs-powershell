@@ -59,12 +59,17 @@ Delete navigation property userStatuses for deviceAppManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationUserStatusId $managedDeviceMobileAppConfigurationUserStatusId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus Cmdlet.
+
 
 ## PARAMETERS
 
