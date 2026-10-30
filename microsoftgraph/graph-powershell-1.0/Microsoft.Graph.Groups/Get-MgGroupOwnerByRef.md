@@ -17,6 +17,9 @@ Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
