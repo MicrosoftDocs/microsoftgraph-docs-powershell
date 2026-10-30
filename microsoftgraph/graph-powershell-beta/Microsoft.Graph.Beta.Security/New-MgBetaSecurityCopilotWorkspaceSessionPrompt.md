@@ -866,7 +866,7 @@ SKILLINPUTDESCRIPTORS <IMicrosoftGraphSecurityCopilotSkillInputDescriptor[]>: Sk
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspacesessionprompt)
+- [New-MgBetaSecurityCopilotWorkspaceSessionPrompt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspacesessionprompt)
 
 
 
