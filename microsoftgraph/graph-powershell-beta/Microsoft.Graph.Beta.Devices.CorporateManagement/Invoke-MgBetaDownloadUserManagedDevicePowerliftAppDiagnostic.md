@@ -610,7 +610,7 @@ REQUEST `<IMicrosoftGraphPowerliftAppDiagnosticDownloadRequest>`: This type cont
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddevicepowerliftappdiagnostic)
+- [Invoke-MgBetaDownloadUserManagedDevicePowerliftAppDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetadownloadusermanageddevicepowerliftappdiagnostic)
 
 
 
