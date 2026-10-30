@@ -75,6 +75,14 @@ This cmdlet has the following aliases,
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Read, Chat.ReadWrite, Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
