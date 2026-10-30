@@ -492,8 +492,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)
-- [](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyAuthenticationFlowPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-beta)
 
 
 

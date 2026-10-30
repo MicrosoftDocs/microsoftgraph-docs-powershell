@@ -503,8 +503,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant)
-- [](https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-beta)
+- [Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-beta)
 
 
 
