@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementTermAndConditionAssignmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndConditionAssignmentCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAssignmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
