@@ -15,6 +15,9 @@ title: Get-MgBetaUserCalendarPermission
 
 Get the specified permissions object of a user or group calendar that has been shared.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
