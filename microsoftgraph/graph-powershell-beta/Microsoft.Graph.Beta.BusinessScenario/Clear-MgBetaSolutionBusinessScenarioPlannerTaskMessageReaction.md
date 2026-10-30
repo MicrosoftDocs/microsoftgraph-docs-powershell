@@ -544,8 +544,8 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/clear-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
-- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta)
+- [Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/clear-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta)
 
 
 
