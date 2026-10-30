@@ -99,7 +99,7 @@ HelpMessage: ''
 
 ### -AutoTooltip
 
-.
+
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ HelpMessage: ''
 
 ### -HasProtection
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +333,7 @@ HelpMessage: ''
 
 ### -IsDefault
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +354,7 @@ HelpMessage: ''
 
 ### -IsEndpointProtectionEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +375,7 @@ HelpMessage: ''
 
 ### -IsScopedToUser
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -396,7 +396,7 @@ HelpMessage: ''
 
 ### -Locale
 
-.
+
 
 ```yaml
 Type: System.String
@@ -417,7 +417,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -438,7 +438,7 @@ HelpMessage: ''
 
 ### -Priority
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -566,7 +566,7 @@ HelpMessage: ''
 
 ### -Sublabels
 
-.
+
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
@@ -588,7 +588,7 @@ HelpMessage: ''
 
 ### -ToolTip
 
-.
+
 
 ```yaml
 Type: System.String
