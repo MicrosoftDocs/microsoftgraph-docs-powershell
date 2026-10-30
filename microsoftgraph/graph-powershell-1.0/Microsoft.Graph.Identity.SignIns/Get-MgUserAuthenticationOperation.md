@@ -17,6 +17,9 @@ Read the properties and relationships of a longRunningOperation object.
 This API allows you to retrieve the details and status of the following long-running Microsoft Graph API operations.
 The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

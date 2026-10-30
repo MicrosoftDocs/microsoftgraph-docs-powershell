@@ -15,6 +15,9 @@ title: Update-MgPolicyRoleManagementPolicyEffectiveRule
 
 Update the navigation property effectiveRules in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

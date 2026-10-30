@@ -15,6 +15,9 @@ title: Update-MgRiskyServicePrincipalHistory
 
 Update the navigation property history in identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

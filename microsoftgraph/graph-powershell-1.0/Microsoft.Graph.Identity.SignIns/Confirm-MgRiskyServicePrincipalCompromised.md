@@ -16,6 +16,9 @@ title: Confirm-MgRiskyServicePrincipalCompromised
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyServicePrincipalCompromised?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
