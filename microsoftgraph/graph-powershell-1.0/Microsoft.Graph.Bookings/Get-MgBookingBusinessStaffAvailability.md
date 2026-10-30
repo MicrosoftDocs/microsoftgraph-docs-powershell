@@ -594,8 +594,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0)
+- [Get-MgBookingBusinessStaffAvailability](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0)
 
 
 
