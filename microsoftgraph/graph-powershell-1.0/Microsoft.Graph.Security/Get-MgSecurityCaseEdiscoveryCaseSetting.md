@@ -57,12 +57,17 @@ Read the properties and relationships of an ediscoveryCaseSettings object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
+
 
 ## PARAMETERS
 

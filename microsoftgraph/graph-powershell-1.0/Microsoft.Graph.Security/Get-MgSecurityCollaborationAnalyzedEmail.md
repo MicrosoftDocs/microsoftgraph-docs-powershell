@@ -67,16 +67,6 @@ Read the properties and relationships of an analyzedEmail object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityAnalyzedMessage.Read.All, SecurityAnalyzedMessage.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -619,6 +609,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycollaborationanalyzedemail)
 - [](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/security-collaborationroot-list-analyzedemails?view=graph-rest-1.0)
+
+
 
 
 
