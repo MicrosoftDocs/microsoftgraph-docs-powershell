@@ -1339,7 +1339,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook)
+- [Update-MgUserOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook)
 
 
 
