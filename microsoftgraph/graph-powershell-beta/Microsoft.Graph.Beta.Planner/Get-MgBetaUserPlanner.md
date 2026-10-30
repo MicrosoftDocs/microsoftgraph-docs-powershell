@@ -17,6 +17,9 @@ Selective Planner services available to the user.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlanner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
