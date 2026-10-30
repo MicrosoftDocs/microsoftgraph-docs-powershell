@@ -351,7 +351,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercount)
+- [Get-MgUserContactFolderCount](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercount)
 
 
 
