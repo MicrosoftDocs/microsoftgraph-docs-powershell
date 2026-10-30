@@ -463,7 +463,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportcorrelationidentity)
+- [Remove-MgBetaReportCorrelationIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportcorrelationidentity)
 
 
 

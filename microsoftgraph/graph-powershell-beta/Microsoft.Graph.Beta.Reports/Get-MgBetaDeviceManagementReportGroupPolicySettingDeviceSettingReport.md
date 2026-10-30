@@ -615,7 +615,7 @@ BODYPARAMETER `<IPathsZ8GcywDevicemanagementReportsMicrosoftGraphGetgrouppolicys
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportgrouppolicysettingdevicesettingreport)
+- [Get-MgBetaDeviceManagementReportGroupPolicySettingDeviceSettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportgrouppolicysettingdevicesettingreport)
 
 
 
