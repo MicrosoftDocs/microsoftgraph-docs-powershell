@@ -1212,7 +1212,7 @@ Use outOfBoxExperienceSetting instead.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
+- [New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
 
 
 
