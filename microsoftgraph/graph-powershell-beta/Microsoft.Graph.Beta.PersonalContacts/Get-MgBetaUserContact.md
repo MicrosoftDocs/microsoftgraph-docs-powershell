@@ -17,6 +17,9 @@ The user's contacts.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
