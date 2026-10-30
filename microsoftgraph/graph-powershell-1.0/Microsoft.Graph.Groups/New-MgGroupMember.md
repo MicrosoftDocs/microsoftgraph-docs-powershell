@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 10/02/2026
+ms.date: 10/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupMember
 ---
@@ -61,6 +61,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add a member to an Office 365 group or security group through the members navigation property.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Groups
+
+$UserId = (Get-MgUser -UserId John.Doe@contoso.com).Id
+$GroupId = Get-MgGroup -Filter "displayname eq 'Microsoft Graph PowerShell SDK Gurus'" | Select-Object -ExpandProperty Id
+New-MgGroupMember -GroupId $GroupId -DirectoryObjectId $UserId
 
 ## PARAMETERS
 
@@ -450,7 +460,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [New-MgGroupMember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember)
-
 
 
 
