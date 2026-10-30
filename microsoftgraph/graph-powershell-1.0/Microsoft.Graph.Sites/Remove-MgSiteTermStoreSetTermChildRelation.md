@@ -586,7 +586,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresettermchildrelation)
+- [Remove-MgSiteTermStoreSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresettermchildrelation)
 
 
 

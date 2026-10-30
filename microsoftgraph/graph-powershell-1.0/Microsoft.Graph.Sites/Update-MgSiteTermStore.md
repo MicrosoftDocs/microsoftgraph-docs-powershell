@@ -964,8 +964,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore)
-- [](https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0)
+- [Update-MgSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0)
 
 
 
