@@ -405,7 +405,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemdocumentsetversioncount)
+- [Get-MgGroupDriveListItemDocumentSetVersionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemdocumentsetversioncount)
 
 
 
