@@ -15,6 +15,9 @@ title: Update-MgBetaDriveRootThumbnail
 
 Update the navigation property thumbnails in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

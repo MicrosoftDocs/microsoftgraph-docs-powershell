@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveListItem
 
 Delete navigation property items for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
