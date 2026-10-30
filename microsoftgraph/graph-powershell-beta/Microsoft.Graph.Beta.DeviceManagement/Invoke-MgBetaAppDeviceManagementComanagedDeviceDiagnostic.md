@@ -516,7 +516,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaappdevicemanagementcomanageddevicediagnostic)
+- [Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaappdevicemanagementcomanageddevicediagnostic)
 
 
 

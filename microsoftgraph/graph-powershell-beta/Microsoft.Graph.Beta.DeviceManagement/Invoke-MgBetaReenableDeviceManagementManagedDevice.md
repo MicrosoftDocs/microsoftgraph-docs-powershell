@@ -473,7 +473,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetareenabledevicemanagementmanageddevice)
+- [Invoke-MgBetaReenableDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetareenabledevicemanagementmanageddevice)
 
 
 

@@ -625,7 +625,7 @@ DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency[]>: Collection of
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
+- [New-MgBetaDeviceManagementSettingDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
 
 
 
