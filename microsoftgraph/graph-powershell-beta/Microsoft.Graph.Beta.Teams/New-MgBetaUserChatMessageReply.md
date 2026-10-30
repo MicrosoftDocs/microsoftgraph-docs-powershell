@@ -1809,7 +1809,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmessagereply)
+- [New-MgBetaUserChatMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmessagereply)
 
 
 

@@ -575,7 +575,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchattargetedmessagereplyhostedcontent)
+- [Set-MgBetaUserChatTargetedMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchattargetedmessagereplyhostedcontent)
 
 
 

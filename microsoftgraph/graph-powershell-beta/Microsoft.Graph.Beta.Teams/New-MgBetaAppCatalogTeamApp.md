@@ -641,8 +641,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
-- [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+- [New-MgBetaAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
 
 
 
