@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember
 
 Delete navigation property scopedRoleMembers for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

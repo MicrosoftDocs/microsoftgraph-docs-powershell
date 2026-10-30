@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 Delete navigation property customSecurityAttributeDefinitions for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

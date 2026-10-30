@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryRecoveryJob
 
 Collection of all recovery jobs (both preview and recovery) for the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecoveryJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

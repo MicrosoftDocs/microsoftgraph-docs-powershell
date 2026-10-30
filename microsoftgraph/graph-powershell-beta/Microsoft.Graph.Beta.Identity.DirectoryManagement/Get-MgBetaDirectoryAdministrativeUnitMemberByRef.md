@@ -16,6 +16,9 @@ title: Get-MgBetaDirectoryAdministrativeUnitMemberByRef
 Users and groups that are members of this administrative unit.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Confirm-MgBetaDeviceMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDeviceMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDeviceMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

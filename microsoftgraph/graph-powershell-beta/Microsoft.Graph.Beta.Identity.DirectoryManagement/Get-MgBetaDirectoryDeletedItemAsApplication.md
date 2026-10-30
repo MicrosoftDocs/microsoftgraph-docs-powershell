@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryDeletedItemAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItemAsApplication](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemAsApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

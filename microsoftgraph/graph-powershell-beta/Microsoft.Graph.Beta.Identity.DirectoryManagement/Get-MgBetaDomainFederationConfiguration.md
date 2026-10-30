@@ -15,6 +15,9 @@ title: Get-MgBetaDomainFederationConfiguration
 
 Read the properties and relationships of an internalDomainFederation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
