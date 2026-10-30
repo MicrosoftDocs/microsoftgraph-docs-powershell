@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a referenceDefinition object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-ReferenceDefinition.Read.All, IndustryData-ReferenceDefinition.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-ReferenceDefinition.Read.All, IndustryData-ReferenceDefinition.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
