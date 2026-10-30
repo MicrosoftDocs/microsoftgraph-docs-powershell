@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Invoke action addActivities
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -550,6 +540,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity)
+
 
 
 
