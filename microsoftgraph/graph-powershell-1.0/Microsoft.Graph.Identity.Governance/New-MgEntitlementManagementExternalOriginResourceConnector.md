@@ -59,16 +59,6 @@ Creates a new externalOriginResourceConnector object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -572,6 +562,7 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementexternaloriginresourceconnector)
 - [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-1.0)
+
 
 
 
