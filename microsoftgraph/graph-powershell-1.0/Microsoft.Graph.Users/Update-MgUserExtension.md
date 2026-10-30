@@ -508,7 +508,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension)
+- [Update-MgUserExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension)
 
 
 
