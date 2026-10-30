@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 
 The list of SharePoint protection policies in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

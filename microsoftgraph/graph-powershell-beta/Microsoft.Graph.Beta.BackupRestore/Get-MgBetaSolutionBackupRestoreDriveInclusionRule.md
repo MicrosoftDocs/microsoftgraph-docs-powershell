@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreDriveInclusionRule
 
 The list of drive inclusion rules applied to the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreDriveInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreDriveInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

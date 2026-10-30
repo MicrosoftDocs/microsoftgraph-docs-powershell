@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestor
 
 A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

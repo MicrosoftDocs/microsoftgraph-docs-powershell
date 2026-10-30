@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularD
 
 A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

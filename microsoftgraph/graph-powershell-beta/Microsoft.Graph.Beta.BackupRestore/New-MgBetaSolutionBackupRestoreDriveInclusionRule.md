@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreDriveInclusionRule
 
 Create new navigation property to driveInclusionRules for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreDriveInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreDriveInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
