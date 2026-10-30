@@ -15,6 +15,9 @@ title: New-MgBetaEducationUserAssignmentSubmissionOutcome
 
 Create new navigation property to outcomes for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
