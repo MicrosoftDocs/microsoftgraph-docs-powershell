@@ -15,6 +15,9 @@ title: Confirm-MgOrganizationMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaOrganizationMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

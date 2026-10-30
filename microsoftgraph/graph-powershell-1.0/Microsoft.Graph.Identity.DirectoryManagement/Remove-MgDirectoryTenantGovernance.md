@@ -15,6 +15,9 @@ title: Remove-MgDirectoryTenantGovernance
 
 Delete navigation property tenantGovernance for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryTenantGovernance](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryTenantGovernance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
