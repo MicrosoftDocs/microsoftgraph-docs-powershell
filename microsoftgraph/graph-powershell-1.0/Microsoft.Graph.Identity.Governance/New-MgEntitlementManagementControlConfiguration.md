@@ -477,7 +477,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcontrolconfiguration)
+- [New-MgEntitlementManagementControlConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcontrolconfiguration)
 
 
 
