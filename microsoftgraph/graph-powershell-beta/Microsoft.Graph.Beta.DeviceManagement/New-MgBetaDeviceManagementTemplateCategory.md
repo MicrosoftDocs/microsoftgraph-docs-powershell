@@ -579,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplateSettingCategory>: Entity representing a template setting category
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementTemplateSettingCategory>`: Entity representing a template setting category
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The category name
   [HasRequiredSetting <Boolean?>]: The category contains top level required setting
@@ -607,7 +607,7 @@ Read-only.
     [DefinitionId <String>]: The ID of the setting definition for this instance
     [ValueJson <String>]: JSON representation of the value
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -743,3 +743,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatecategory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
