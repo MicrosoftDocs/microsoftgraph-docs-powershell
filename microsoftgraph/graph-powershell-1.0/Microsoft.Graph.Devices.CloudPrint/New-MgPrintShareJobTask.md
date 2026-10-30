@@ -15,6 +15,9 @@ title: New-MgPrintShareJobTask
 
 Create new navigation property to tasks for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

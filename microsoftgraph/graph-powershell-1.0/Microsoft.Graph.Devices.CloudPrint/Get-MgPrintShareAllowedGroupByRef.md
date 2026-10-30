@@ -15,6 +15,9 @@ title: Get-MgPrintShareAllowedGroupByRef
 
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

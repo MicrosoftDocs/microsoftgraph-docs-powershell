@@ -16,6 +16,9 @@ title: Start-MgPrintPrinterJob
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintPrinterJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Start (Default)
