@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a virtualEventRegistration object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All, VirtualEventRegistration-Anon.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

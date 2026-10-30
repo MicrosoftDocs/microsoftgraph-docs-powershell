@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
