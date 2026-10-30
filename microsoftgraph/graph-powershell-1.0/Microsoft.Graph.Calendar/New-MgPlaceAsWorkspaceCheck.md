@@ -15,6 +15,9 @@ title: New-MgPlaceAsWorkspaceCheck
 
 Create new navigation property to checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsWorkspaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsWorkspaceCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgPlaceAsBuildingMapFootprint
 Represents the approximate physical extent of a referenced building.
 It corresponds to footprint.geojson in IMDF format.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsBuildingMapFootprint](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsBuildingMapFootprint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

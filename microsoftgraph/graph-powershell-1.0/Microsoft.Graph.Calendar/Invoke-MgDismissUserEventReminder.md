@@ -15,6 +15,9 @@ title: Invoke-MgDismissUserEventReminder
 
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Calendar/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Dismiss (Default)

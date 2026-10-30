@@ -15,6 +15,9 @@ title: Get-MgPlaceCountAsWorkspace
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceCountAsWorkspace](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCountAsWorkspace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
