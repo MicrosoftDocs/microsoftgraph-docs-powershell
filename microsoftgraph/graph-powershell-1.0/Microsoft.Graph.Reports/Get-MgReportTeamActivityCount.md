@@ -50,12 +50,17 @@ Get the number of team activities across Microsoft Teams.
 The activity types are related to meetings and messages.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamActivityCount -Period $periodId
+Get-MgReportTeamActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

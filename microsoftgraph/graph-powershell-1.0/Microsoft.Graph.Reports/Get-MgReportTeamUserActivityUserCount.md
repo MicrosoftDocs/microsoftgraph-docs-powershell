@@ -50,12 +50,17 @@ Get the number of Microsoft Teams users by activity type.
 The activity types are number of teams chat messages, private chat messages, calls, or meetings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamUserActivityUserCount -Period $periodId
+Get-MgReportTeamUserActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamUserActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
