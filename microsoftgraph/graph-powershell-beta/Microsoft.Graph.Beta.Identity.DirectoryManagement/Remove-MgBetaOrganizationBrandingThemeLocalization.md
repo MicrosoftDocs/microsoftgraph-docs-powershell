@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property localizations for organization
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
