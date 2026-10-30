@@ -15,6 +15,9 @@ title: Remove-MgBetaUserMailFolderMessageExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
