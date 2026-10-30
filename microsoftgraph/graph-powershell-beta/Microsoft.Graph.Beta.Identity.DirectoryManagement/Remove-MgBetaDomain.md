@@ -56,12 +56,17 @@ Delete a domain from a tenant.
 | Application | Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDomain -DomainId $domainId
+
+```
+This example shows how to use the Remove-MgBetaDomain Cmdlet.
+
 
 ## PARAMETERS
 
