@@ -80,16 +80,6 @@ Use the monitor URL to track progress until the operation completes.
 The copy operation is restricted to 30,000 driveItems.
 For more information, see SharePoint limits.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -707,6 +697,7 @@ For OneDrive, this property isn't populated.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetagroupdriveitem)
 - [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+
 
 
 

@@ -71,12 +71,17 @@ Nullable.
 | Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get metadata about a shared driveItem object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example will get metadata about a shared driveitem object
+
 
 ## PARAMETERS
 
