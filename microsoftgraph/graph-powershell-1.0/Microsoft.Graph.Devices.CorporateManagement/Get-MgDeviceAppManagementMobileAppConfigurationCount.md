@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppConfigurationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

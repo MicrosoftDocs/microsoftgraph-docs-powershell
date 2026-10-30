@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLo
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserDeviceManagementTroubleshootingEvent
 
 Update the navigation property deviceManagementTroubleshootingEvents in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
