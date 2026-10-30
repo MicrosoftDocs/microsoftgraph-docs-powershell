@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Delete a specific targeted message from a chat context.
 Teams administrators can use this API to remove targeted messages from group chats.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -491,6 +481,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchattargetedmessage)
 - [](https://learn.microsoft.com/graph/api/chat-delete-targetedmessages?view=graph-rest-beta)
+
 
 
 

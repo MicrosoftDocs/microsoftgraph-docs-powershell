@@ -67,24 +67,39 @@ Retrieve the properties and relationships of the specified team.
 | Application | TeamSettings.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, TeamSettings.ReadWrite.Group,  |
 
 ## EXAMPLES
+### Example 1: Get a list of teams
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeam
 
-### EXAMPLE 2
+```
+This example will get a list of teams
+
+### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2
+Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2 
 
-### EXAMPLE 3
+```
+This example will use $filter and $top to get two teams with a display name that starts with 'a'
+
+### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
+Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
+
+```
+This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
+
 
 ## PARAMETERS
 
