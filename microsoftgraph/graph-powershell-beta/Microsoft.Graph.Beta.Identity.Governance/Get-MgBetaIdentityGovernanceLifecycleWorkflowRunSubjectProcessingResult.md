@@ -69,14 +69,6 @@ Read the properties and relationships of a subjectProcessingResult object for a 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult -WorkflowId $workflowId -RunId $runId -SubjectProcessingResultId $subjectProcessingResultId
-
 ## PARAMETERS
 
 ### -All
@@ -710,6 +702,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowrunsubjectprocessingresult)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-subjectprocessingresult-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-run-list-subjectprocessingresults?view=graph-rest-beta)
+
+
 
 
 

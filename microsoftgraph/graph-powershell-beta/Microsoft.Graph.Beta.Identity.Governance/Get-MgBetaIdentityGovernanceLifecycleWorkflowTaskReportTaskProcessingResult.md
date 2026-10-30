@@ -63,18 +63,28 @@ This cmdlet has the following aliases,
 The related lifecycle workflow taskProcessingResults.
 
 ## EXAMPLES
+### Example 1: List the task processing results that are included in a task report for a workflow
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId
 
-### EXAMPLE 2
+```
+This example will list the task processing results that are included in a task report for a workflow
+
+### Example 2: List the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task"
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task" 
+
+```
+This example will list the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
 
 ## PARAMETERS
 

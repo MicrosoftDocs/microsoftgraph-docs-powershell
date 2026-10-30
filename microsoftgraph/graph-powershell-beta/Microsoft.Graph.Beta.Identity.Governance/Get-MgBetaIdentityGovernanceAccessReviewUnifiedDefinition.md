@@ -68,14 +68,6 @@ Represents the unified (vNext) template and scheduling for an access review.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -654,6 +646,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunifieddefinition)
 - [](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions?view=graph-rest-beta)
+
+
 
 
 
