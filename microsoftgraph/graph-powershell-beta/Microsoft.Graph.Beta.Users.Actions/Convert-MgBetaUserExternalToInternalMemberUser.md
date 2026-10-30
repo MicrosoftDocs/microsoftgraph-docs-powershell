@@ -72,6 +72,14 @@ Convert an externally authenticated user into an internal user.
 The user is able to sign into the host tenant as an internal user and access resources as a member.
 For more information about this conversion, see Convert external users to internal users.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User-ConvertToInternal.ReadWrite.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
