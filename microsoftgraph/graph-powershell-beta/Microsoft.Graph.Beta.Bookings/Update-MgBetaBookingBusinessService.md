@@ -15,6 +15,9 @@ title: Update-MgBetaBookingBusinessService
 
 Update the navigation property services in bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

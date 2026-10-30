@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventTownhallRegistrationConfiguration
 
 Update the navigation property registrationConfiguration in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhallRegistrationConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhallRegistrationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
