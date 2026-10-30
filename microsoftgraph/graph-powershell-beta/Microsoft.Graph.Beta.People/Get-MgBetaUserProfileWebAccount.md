@@ -64,13 +64,18 @@ Represents web accounts the user has indicated they use or has added to their us
 | Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileWebAccount -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 
