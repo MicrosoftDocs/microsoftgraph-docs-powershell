@@ -88,8 +88,9 @@ Alternatively, reply-all to a message in a single action.
 | Application | Mail.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Mail
 
@@ -108,6 +109,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageReplyAll -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserMessageReplyAll Cmdlet.
+
 
 ## PARAMETERS
 

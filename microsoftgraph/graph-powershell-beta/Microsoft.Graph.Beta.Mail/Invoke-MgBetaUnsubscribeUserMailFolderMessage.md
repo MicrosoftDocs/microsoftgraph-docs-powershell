@@ -60,16 +60,6 @@ If the unsubscribeEnabled property of a message is true, you can use the unsubsc
 A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -439,6 +429,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfoldermessage)
 - [](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
+
 
 
 
