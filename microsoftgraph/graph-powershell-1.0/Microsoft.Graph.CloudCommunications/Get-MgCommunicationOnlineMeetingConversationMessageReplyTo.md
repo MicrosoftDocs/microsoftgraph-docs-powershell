@@ -15,6 +15,9 @@ title: Get-MgCommunicationOnlineMeetingConversationMessageReplyTo
 
 The parent message to which this message is a reply, if it is part of a reply chain.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyTo](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

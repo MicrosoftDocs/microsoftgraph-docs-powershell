@@ -15,6 +15,9 @@ title: Get-MgCommunicationCallContentSharingSessionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallContentSharingSessionCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSessionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

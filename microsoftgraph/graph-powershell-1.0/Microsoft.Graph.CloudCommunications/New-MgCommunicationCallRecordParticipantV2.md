@@ -15,6 +15,9 @@ title: New-MgCommunicationCallRecordParticipantV2
 
 Create new navigation property to participants_v2 for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordParticipantV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
