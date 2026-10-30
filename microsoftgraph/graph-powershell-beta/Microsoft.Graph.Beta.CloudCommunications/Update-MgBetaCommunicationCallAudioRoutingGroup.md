@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationCallAudioRoutingGroup
 
 Modify sources and receivers of an audioRoutingGroup.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

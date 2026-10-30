@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationAdhocCallTranscript
 
 Update the navigation property transcripts in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationAdhocCallTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
