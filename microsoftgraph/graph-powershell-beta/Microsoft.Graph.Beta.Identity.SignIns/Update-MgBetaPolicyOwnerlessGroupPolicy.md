@@ -57,8 +57,9 @@ To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -67,6 +68,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyOwnerlessGroupPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyOwnerlessGroupPolicy Cmdlet.
+
 
 ## PARAMETERS
 

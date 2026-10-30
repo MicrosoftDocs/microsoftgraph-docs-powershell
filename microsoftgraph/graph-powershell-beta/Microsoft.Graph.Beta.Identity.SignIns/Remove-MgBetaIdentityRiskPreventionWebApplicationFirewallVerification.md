@@ -50,12 +50,17 @@ This cmdlet has the following aliases,
 Delete a webApplicationFirewallVerificationModel object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification -WebApplicationFirewallVerificationModelId $webApplicationFirewallVerificationModelId
+
+```
+This example shows how to use the Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification Cmdlet.
+
 
 ## PARAMETERS
 

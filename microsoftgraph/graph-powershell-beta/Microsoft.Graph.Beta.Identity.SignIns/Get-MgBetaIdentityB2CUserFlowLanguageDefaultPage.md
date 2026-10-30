@@ -70,12 +70,17 @@ This collection doesn't allow any kind of modification.
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
+
+```
+This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage Cmdlet.
+
 
 ## PARAMETERS
 
