@@ -57,12 +57,17 @@ Delete a microsoftAuthenticatorAuthenticationMethod object.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-MicrosoftAuthApp.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId -MicrosoftAuthenticatorAuthenticationMethodId $microsoftAuthenticatorAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod Cmdlet.
+
 
 ## PARAMETERS
 
