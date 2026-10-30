@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedA
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

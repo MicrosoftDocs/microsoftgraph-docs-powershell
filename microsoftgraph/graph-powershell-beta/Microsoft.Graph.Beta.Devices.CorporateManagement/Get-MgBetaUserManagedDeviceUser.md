@@ -15,6 +15,9 @@ title: Get-MgBetaUserManagedDeviceUser
 
 The primary users associated with the managed device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
