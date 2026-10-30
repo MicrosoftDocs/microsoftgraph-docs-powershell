@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Represents a specific user MFA/SSPR registration or reset event, including whether the event was successful, which authentication method was targeted, and failure reason if any.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportAuthenticationMethodUserEventSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserEventSummary Cmdlet.
+
 
 ## PARAMETERS
 

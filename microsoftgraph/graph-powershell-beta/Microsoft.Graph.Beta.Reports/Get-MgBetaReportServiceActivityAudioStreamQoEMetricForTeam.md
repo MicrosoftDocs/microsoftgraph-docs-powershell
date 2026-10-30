@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get metrics based on the percentage of audio streams for which quality of experience (QoE) telemetry was received by the Teams service.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityAudioStreamQoEMetricForTeam
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityAudioStreamQoEMetricForTeam Cmdlet.
+
 
 ## PARAMETERS
 
