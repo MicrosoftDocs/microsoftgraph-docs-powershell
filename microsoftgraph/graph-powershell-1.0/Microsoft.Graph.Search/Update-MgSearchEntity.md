@@ -15,6 +15,9 @@ title: Update-MgSearchEntity
 
 Update search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchEntity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
