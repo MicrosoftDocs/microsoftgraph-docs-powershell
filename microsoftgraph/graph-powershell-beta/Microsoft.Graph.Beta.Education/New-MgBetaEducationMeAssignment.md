@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to assignments for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AddedStudentAction
@@ -1187,6 +1177,7 @@ If the value is null, the student uploaded the resource.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignment)
+
 
 
 
