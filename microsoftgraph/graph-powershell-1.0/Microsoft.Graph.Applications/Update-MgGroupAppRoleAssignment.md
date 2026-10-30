@@ -780,7 +780,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mggroupapproleassignment)
+- [Update-MgGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mggroupapproleassignment)
 
 
 
