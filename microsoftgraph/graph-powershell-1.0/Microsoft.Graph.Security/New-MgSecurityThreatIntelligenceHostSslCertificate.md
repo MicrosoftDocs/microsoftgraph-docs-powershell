@@ -480,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityHostSslCertificate>: hostSslCertificate
+BODYPARAMETER `<IMicrosoftGraphSecurityHostSslCertificate>`: hostSslCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -757,7 +757,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Port <Int32?>]: The port number.
   [SslCertificate <IMicrosoftGraphSecuritySslCertificate>]: sslCertificate
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1042,7 +1042,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Port <Int32?>]: The port number.
 
-SSLCERTIFICATE <IMicrosoftGraphSecuritySslCertificate>: sslCertificate
+SSLCERTIFICATE `<IMicrosoftGraphSecuritySslCertificate>`: sslCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1321,3 +1321,25 @@ Note: This is not the signature.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostsslcertificate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
