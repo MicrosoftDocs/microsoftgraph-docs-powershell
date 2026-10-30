@@ -460,8 +460,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointusersetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcusersetting-delete?view=graph-rest-beta)
+- [Remove-MgBetaDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointusersetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcusersetting-delete?view=graph-rest-beta)
 
 
 

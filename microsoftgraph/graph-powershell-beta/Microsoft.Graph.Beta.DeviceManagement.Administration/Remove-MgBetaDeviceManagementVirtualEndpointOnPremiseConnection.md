@@ -457,8 +457,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta)
+- [Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta)
 
 
 
