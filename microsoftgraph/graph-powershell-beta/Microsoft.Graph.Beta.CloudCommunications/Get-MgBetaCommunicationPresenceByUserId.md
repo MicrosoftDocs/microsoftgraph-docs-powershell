@@ -57,8 +57,9 @@ Get the presence information for multiple users.
 | Application | Presence.Read.All, Presence.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -70,6 +71,10 @@ $params = @{
 }
 
 Get-MgBetaCommunicationPresenceByUserId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaCommunicationPresenceByUserId Cmdlet.
+
 
 ## PARAMETERS
 
