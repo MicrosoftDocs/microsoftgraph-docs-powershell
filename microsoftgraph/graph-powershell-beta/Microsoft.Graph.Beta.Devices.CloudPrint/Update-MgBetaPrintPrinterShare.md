@@ -629,7 +629,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
