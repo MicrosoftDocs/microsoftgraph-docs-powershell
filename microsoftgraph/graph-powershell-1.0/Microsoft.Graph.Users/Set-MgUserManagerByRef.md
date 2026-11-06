@@ -560,8 +560,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref)
-- [](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)
+- [Set-MgUserManagerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusermanagerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)
 
 
 

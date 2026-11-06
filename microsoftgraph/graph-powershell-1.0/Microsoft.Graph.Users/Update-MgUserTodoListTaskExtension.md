@@ -564,7 +564,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskextension)
+- [Update-MgUserTodoListTaskExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskextension)
 
 
 

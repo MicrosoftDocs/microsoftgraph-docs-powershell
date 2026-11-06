@@ -721,7 +721,7 @@ See the section Type property values for supported types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsighttrending)
+- [Update-MgUserInsightTrending](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsighttrending)
 
 
 
