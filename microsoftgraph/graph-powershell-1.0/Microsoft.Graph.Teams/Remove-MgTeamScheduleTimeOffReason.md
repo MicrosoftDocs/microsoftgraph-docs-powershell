@@ -50,6 +50,14 @@ Every team must include at least one timeoff reason.
 This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
