@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContribut
 
 Invoke action getDeviceManagementIntentPerSettingContributingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

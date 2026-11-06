@@ -15,6 +15,9 @@ title: Update-MgBetaReportPartnerBillingReconciliationUnbilled
 
 Update the navigation property unbilled in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingReconciliationUnbilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

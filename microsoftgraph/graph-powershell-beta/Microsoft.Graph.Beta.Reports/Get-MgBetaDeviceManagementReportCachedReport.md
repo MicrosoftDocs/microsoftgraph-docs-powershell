@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportCachedReport
 
 Invoke action getCachedReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportCachedReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportCachedReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
