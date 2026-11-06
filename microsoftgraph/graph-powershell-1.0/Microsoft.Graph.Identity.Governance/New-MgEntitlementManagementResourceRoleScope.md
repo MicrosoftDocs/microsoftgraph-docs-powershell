@@ -433,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRoleScope>: accessPackageResourceRoleScope
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageResourceRoleScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -555,7 +555,7 @@ Supports $filter (eq).
     [Type <String>]: roleType
   [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
-ROLE <IMicrosoftGraphAccessPackageResourceRole>: accessPackageResourceRole
+ROLE `<IMicrosoftGraphAccessPackageResourceRole>`: accessPackageResourceRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -670,7 +670,7 @@ Supports $filter (eq).
       [Status <String>]: customDataProvidedResourceUploadStatus
   [Type <String>]: roleType
 
-SCOPE <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
+SCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -789,3 +789,25 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
