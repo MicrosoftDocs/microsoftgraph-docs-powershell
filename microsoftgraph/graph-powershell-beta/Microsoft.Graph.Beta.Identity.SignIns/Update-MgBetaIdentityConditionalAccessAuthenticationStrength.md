@@ -159,7 +159,7 @@ HelpMessage: ''
 
 ### -Combinations
 
-.
+
 
 ```yaml
 Type: System.String[]
