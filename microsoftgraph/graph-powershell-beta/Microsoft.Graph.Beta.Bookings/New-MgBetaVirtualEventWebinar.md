@@ -1610,8 +1610,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar)
-- [](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta)
+- [New-MgBetaVirtualEventWebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta)
 
 
 

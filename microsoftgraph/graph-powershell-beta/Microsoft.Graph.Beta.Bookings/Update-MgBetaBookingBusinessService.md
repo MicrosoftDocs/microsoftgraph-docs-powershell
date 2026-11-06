@@ -1749,7 +1749,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)
+- [Update-MgBetaBookingBusinessService](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)
 
 
 
