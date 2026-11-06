@@ -61,6 +61,14 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read, Mail.ReadBasic,  |
+| Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
+| Application | Mail.Read, Mail.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
