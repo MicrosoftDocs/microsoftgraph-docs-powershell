@@ -81,16 +81,6 @@ Update the navigation property prompts in security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityCopilotWorkspaces.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -905,6 +895,7 @@ SKILLINPUTDESCRIPTORS <IMicrosoftGraphSecurityCopilotSkillInputDescriptor[]>: Sk
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycopilotworkspacesessionprompt)
+
 
 
 

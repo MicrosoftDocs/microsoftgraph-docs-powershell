@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property parent for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -529,6 +519,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotectionsensitivitylabelparent)
+
 
 
 
