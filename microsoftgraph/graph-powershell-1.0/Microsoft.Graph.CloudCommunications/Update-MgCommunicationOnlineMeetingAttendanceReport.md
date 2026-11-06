@@ -15,6 +15,9 @@ title: Update-MgCommunicationOnlineMeetingAttendanceReport
 
 Update the navigation property attendanceReports in communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

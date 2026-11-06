@@ -16,6 +16,9 @@ title: Send-MgUserOnlineMeetingVirtualAppointmentReminderSm
 Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

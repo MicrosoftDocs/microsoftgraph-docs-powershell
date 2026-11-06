@@ -15,6 +15,9 @@ title: Get-MgCommunicationOnlineMeetingConversationStarterReplyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
