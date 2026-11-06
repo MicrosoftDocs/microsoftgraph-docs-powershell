@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Invoke action getUnhealthyFirewallSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -596,6 +586,7 @@ BODYPARAMETER `<IPaths1Cmsu6IDevicemanagementReportsMicrosoftGraphGetunhealthyfi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthyfirewallsummaryreport)
+
 
 
 

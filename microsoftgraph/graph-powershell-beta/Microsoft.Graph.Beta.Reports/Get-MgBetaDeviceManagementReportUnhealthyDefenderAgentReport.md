@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Invoke action getUnhealthyDefenderAgentsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -596,6 +586,7 @@ BODYPARAMETER `<IPathsIdq7HwDevicemanagementReportsMicrosoftGraphGetunhealthydef
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthydefenderagentreport)
+
 
 
 
