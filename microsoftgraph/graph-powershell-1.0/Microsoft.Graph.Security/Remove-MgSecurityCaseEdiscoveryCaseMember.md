@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Remove an ediscoveryCaseMember from an ediscoveryCase.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCaseMemberId $ediscoveryCaseMemberId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseMember Cmdlet.
+
 
 ## PARAMETERS
 

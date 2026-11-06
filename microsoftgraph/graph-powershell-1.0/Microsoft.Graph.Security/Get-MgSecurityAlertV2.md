@@ -67,18 +67,28 @@ Get the properties and relationships of an alert object.
 | Application | SecurityAlert.Read.All, SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get all alerts
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAlertV2
 
-### EXAMPLE 2
+```
+This example will get all alerts
+
+### Example 2: Get all alerts from Microsoft Sentinel
+
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAlertV2 -Filter "serviceSource eq 'microsoftSentinel'"
+Get-MgSecurityAlertV2 -Filter "serviceSource eq 'microsoftSentinel'" 
+
+```
+This example will get all alerts from microsoft sentinel
+
 
 ## PARAMETERS
 

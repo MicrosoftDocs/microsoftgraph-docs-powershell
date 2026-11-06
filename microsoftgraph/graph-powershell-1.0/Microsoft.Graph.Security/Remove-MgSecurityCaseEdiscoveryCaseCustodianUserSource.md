@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Delete a userSource object associated with an ediscoveryCustodian.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -UserSourceId $userSourceId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 
