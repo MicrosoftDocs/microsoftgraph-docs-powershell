@@ -15,6 +15,9 @@ title: Get-MgSitePage
 
 Get the metadata for a baseSitePage in the site pages list in a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

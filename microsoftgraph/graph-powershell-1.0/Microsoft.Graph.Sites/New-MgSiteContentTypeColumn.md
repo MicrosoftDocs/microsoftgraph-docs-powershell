@@ -15,6 +15,9 @@ title: New-MgSiteContentTypeColumn
 
 Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

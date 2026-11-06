@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListItemDocumentSetVersionField
 
 A collection of the fields and values for this version of the list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

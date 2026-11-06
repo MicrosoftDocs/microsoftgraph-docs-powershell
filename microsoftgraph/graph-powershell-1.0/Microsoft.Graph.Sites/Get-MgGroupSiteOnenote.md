@@ -15,6 +15,9 @@ title: Get-MgGroupSiteOnenote
 
 Calls the OneNote service for notebook related operations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

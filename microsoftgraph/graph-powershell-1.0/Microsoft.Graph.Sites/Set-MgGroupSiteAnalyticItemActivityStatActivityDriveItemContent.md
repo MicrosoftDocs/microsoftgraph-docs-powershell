@@ -15,6 +15,9 @@ title: Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

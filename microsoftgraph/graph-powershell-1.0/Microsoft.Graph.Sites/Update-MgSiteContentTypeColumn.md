@@ -15,6 +15,9 @@ title: Update-MgSiteContentTypeColumn
 
 Update a site, a list, or a content type column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart
 
 Create new navigation property to webparts for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

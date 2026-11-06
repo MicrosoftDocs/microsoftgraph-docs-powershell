@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListContentTypeColumn
 
 The collection of column definitions for this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
