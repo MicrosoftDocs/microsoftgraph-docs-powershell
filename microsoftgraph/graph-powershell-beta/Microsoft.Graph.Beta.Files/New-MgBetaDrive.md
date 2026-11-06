@@ -15,6 +15,9 @@ title: New-MgBetaDrive
 
 Add new entity to drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDrive](/powershell/module/Microsoft.Graph.Files/New-MgDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

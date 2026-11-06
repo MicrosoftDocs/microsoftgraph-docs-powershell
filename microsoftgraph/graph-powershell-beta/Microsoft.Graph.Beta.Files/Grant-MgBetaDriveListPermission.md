@@ -15,6 +15,9 @@ title: Grant-MgBetaDriveListPermission
 
 Grant users access to a link represented by a permission.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgDriveListPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveListPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

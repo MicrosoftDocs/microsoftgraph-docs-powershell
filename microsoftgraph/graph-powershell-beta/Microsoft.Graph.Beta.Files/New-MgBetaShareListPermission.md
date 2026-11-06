@@ -15,6 +15,9 @@ title: New-MgBetaShareListPermission
 
 Create new navigation property to permissions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListPermission](/powershell/module/Microsoft.Graph.Files/New-MgShareListPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

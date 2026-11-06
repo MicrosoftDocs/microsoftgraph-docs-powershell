@@ -15,6 +15,9 @@ title: Restore-MgBetaUserDriveItemListItemVersion
 
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgUserDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

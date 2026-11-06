@@ -15,6 +15,9 @@ title: Get-MgBetaDriveRootAnalyticTime
 
 Get allTime from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootAnalyticTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

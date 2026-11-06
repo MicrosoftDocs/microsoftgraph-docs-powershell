@@ -15,6 +15,9 @@ title: Update-MgBetaDriveListColumn
 
 Update the navigation property columns in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

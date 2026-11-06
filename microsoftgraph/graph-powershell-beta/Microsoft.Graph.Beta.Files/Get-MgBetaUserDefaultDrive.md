@@ -16,6 +16,9 @@ title: Get-MgBetaUserDefaultDrive
 The user's OneDrive.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDefaultDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

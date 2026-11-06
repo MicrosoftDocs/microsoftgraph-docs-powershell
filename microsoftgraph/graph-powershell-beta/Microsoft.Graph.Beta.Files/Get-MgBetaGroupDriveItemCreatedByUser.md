@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveItemCreatedByUser
 
 Get createdByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

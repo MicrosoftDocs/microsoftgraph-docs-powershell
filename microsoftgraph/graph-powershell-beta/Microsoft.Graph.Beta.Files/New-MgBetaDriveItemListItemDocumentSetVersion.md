@@ -15,6 +15,9 @@ title: New-MgBetaDriveItemListItemDocumentSetVersion
 
 Create new navigation property to documentSetVersions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

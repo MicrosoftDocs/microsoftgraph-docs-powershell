@@ -15,6 +15,9 @@ title: Invoke-MgBetaFollowUserDriveRoot
 
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)

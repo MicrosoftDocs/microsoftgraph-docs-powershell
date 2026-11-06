@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
