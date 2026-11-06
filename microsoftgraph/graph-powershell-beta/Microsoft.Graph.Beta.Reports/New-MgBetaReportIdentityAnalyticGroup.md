@@ -1212,7 +1212,7 @@ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportidentityanalyticgroup)
+- [New-MgBetaReportIdentityAnalyticGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportidentityanalyticgroup)
 
 
 

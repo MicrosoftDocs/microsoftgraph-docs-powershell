@@ -365,7 +365,7 @@ Expandable using $expand=usageByApp.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)
+- [New-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)
 
 
 
