@@ -1387,7 +1387,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthreadpost)
+- [Update-MgBetaGroupConversationThreadPost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthreadpost)
 
 
 
