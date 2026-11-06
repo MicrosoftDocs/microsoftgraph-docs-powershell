@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
