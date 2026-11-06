@@ -58,8 +58,9 @@ Create a new custom identityUserFlowAttribute object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -70,6 +71,10 @@ $params = @{
 }
 
 New-MgIdentityUserFlowAttribute -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityUserFlowAttribute Cmdlet.
+
 
 ## PARAMETERS
 

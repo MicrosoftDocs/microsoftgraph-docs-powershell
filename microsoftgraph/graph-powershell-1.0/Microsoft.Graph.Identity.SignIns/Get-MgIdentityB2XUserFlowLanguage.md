@@ -73,12 +73,17 @@ Note: Language customization is enabled by default in Microsoft Entra user flows
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowLanguage Cmdlet.
+
 
 ## PARAMETERS
 
