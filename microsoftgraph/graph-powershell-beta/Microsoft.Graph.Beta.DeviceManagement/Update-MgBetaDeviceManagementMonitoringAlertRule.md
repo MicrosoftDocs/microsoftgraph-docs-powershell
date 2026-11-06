@@ -932,8 +932,8 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
-- [](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceManagementMonitoringAlertRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-beta)
 
 
 

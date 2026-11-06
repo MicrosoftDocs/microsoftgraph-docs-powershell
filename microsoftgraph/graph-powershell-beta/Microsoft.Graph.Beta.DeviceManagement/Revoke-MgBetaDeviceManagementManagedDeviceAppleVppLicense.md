@@ -473,7 +473,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/revoke-mgbetadevicemanagementmanageddeviceapplevpplicense)
+- [Revoke-MgBetaDeviceManagementManagedDeviceAppleVppLicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/revoke-mgbetadevicemanagementmanageddeviceapplevpplicense)
 
 
 

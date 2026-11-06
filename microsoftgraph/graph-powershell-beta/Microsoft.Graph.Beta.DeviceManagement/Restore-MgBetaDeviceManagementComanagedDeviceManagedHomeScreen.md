@@ -466,7 +466,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/restore-mgbetadevicemanagementcomanageddevicemanagedhomescreen)
+- [Restore-MgBetaDeviceManagementComanagedDeviceManagedHomeScreen](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/restore-mgbetadevicemanagementcomanageddevicemanagedhomescreen)
 
 
 
