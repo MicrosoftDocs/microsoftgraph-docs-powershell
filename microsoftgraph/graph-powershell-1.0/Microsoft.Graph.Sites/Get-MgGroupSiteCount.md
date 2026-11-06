@@ -381,7 +381,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecount)
+- [Get-MgGroupSiteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecount)
 
 
 

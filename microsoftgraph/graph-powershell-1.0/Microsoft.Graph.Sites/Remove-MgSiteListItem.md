@@ -488,8 +488,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitem)
-- [](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
+- [Remove-MgSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
 
 
 

@@ -459,8 +459,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepermission)
-- [](https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0)
+- [Remove-MgSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0)
 
 
 
