@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -427,6 +417,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorcitationtemplate)
+
 
 
 
