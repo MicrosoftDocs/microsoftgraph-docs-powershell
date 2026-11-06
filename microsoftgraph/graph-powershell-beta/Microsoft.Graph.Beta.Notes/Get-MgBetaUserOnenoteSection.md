@@ -17,6 +17,9 @@ The sections in all OneNote notebooks that the user or group owns.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

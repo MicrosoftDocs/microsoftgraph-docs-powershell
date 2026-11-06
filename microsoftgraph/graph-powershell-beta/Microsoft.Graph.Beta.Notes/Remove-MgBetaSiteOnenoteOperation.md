@@ -15,6 +15,9 @@ title: Remove-MgBetaSiteOnenoteOperation
 
 Delete navigation property operations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteOnenoteOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
