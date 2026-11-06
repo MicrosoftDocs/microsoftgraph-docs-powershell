@@ -362,7 +362,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumncount)
+- [Get-MgShareListColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcolumncount)
 
 
 

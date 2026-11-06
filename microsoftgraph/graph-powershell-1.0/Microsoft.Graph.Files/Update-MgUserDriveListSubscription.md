@@ -1039,7 +1039,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription)
+- [Update-MgUserDriveListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription)
 
 
 

@@ -748,7 +748,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemretentionlabel)
+- [Update-MgGroupDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemretentionlabel)
 
 
 
