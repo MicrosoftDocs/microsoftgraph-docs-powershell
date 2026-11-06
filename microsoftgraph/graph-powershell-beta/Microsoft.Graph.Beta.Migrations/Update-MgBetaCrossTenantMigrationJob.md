@@ -85,8 +85,9 @@ Use this function to change when the crossTenantMigrationJob starts processing.
 If completeAfterDateTime is set to the past, the crossTenantMigrationJob starts processing.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Update-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 
