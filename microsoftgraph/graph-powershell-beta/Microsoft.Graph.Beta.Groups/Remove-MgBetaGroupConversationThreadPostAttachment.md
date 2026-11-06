@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupConversationThreadPostAttachment
 
 Delete navigation property attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

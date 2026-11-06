@@ -16,6 +16,9 @@ title: Get-MgBetaGroupTransitiveMemberOf
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

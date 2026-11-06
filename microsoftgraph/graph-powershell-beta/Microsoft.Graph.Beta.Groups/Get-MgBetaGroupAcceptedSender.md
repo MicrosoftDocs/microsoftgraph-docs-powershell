@@ -17,6 +17,9 @@ Get a list of users or groups that are in the accepted-senders list for this gro
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSender?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
