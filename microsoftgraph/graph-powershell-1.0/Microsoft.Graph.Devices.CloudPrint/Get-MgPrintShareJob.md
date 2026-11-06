@@ -15,6 +15,9 @@ title: Get-MgPrintShareJob
 
 The list of jobs that are queued for printing by the printer/printerShare.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

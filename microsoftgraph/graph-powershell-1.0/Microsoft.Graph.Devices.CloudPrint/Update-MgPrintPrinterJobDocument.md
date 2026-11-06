@@ -15,6 +15,9 @@ title: Update-MgPrintPrinterJobDocument
 
 Update the navigation property documents in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
