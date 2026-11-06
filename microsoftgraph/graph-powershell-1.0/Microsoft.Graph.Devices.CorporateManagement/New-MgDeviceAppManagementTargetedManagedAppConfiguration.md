@@ -632,7 +632,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphTargetedManagedAppConfiguration>: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+BODYPARAMETER `<IMicrosoftGraphTargetedManagedAppConfiguration>`: Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomSettings <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
     [Name <String>]: Name for this key-value pair
@@ -673,7 +673,7 @@ CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>: A set of string key and string v
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -690,3 +690,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
