@@ -15,6 +15,9 @@ title: Remove-MgBetaPrivacySubjectRightsRequestNote
 
 Delete navigation property notes for privacy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
