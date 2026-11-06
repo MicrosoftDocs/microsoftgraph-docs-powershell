@@ -65,12 +65,17 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 | Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+
+```
+This example shows how to use the Get-MgOrganizationBrandingLocalizationBannerLogo Cmdlet.
+
 
 ## PARAMETERS
 

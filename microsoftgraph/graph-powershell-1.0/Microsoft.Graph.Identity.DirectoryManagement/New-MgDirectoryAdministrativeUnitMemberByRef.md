@@ -80,8 +80,9 @@ Currently it's only possible to add one member at a time to an administrative un
 | Application | AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Group.Create, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add an existing user or group
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example will add an existing user or group
+
 
 ## PARAMETERS
 
