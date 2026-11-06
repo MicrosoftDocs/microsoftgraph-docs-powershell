@@ -498,7 +498,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityHostComponent>: hostComponent
+BODYPARAMETER `<IMicrosoftGraphSecurityHostComponent>`: hostComponent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -775,7 +775,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Version <String>]: The component version running on the artifact, for example, v8.5.
 This shouldn't be assumed to be strictly numerical.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1055,3 +1055,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcomponent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
