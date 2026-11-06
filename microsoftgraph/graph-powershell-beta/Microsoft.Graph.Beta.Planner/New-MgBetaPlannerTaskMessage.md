@@ -73,8 +73,9 @@ This cmdlet has the following aliases,
 Create a new plannerTaskChatMessage on a plannerTask.
 
 ## EXAMPLES
+### Example 1: Create a message
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -84,7 +85,12 @@ $params = @{
 
 New-MgBetaPlannerTaskMessage -PlannerTaskId $plannerTaskId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a message
+
+### Example 2: Create a message with mentions
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -100,6 +106,10 @@ $params = @{
 }
 
 New-MgBetaPlannerTaskMessage -PlannerTaskId $plannerTaskId -BodyParameter $params
+
+```
+This example will create a message with mentions
+
 
 ## PARAMETERS
 
