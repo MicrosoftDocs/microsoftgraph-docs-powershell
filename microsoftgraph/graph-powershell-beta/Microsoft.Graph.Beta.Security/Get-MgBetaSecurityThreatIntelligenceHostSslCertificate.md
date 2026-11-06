@@ -112,12 +112,17 @@ This cmdlet has the following aliases,
 Get the properties and relationships of a hostSslCertificate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId $hostSslCertificateId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostSslCertificate Cmdlet.
+
 
 ## PARAMETERS
 

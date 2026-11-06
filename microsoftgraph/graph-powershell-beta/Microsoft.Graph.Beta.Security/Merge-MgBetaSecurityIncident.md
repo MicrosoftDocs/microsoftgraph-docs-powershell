@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Merge multiple incident resources into a single incident.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -421,6 +411,7 @@ BODYPARAMETER `<IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeinciden
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/merge-mgbetasecurityincident)
 - [](https://learn.microsoft.com/graph/api/security-incident-mergeincidents?view=graph-rest-beta)
+
 
 
 

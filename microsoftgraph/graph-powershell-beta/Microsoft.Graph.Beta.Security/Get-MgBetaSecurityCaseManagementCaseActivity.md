@@ -67,14 +67,6 @@ The response can be a comment or auditLog object, identified by @odata.type.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityCaseManagementCaseActivity -CaseId $caseId
-
 ## PARAMETERS
 
 ### -ActivityId
@@ -686,6 +678,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaseactivity)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-activity-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-activities?view=graph-rest-beta)
+
+
 
 
 

@@ -55,8 +55,9 @@ Update multiple alerts in one request instead of multiple requests.
 | Application | SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Update-MgBetaSecurityAlertMultiple -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAlertMultiple Cmdlet.
+
 
 ## PARAMETERS
 
