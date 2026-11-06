@@ -128,7 +128,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -344,7 +344,7 @@ HelpMessage: ''
 
 ### -MessageIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -456,7 +456,7 @@ HelpMessage: ''
 
 ### -TargetChatIds
 
-.
+
 
 ```yaml
 Type: System.String[]

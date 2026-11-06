@@ -558,7 +558,7 @@ HelpMessage: ''
 
 ### -HasReplies
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
