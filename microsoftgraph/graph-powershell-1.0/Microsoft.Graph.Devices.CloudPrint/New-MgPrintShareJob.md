@@ -1054,8 +1054,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
-- [](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
+- [New-MgPrintShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-post-jobs?view=graph-rest-1.0)
 
 
 
