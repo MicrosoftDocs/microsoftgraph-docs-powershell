@@ -15,6 +15,9 @@ title: New-MgUserActivityHistoryItem
 
 Create new navigation property to historyItems for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
