@@ -15,6 +15,9 @@ title: New-MgBetaUserManagedDeviceLogCollectionResponse
 
 Create new navigation property to logCollectionRequests for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

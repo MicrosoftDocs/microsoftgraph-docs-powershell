@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 
 Create new navigation property to intendedPolicies for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

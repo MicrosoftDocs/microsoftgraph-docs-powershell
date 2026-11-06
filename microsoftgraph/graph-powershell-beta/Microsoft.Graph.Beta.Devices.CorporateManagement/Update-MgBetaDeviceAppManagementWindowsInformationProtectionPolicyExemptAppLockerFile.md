@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptA
 
 Update the navigation property exemptAppLockerFiles in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

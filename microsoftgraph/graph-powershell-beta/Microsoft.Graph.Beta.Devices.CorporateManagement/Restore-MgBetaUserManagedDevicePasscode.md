@@ -15,6 +15,9 @@ title: Restore-MgBetaUserManagedDevicePasscode
 
 Recover passcode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Restore-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recover (Default)

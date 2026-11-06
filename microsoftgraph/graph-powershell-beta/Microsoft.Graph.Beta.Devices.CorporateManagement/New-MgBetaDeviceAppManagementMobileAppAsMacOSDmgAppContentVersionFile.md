@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile
 
 Create new navigation property to files for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

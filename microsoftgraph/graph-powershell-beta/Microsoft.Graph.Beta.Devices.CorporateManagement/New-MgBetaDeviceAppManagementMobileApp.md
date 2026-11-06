@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileApp
 
 Create new navigation property to mobileApps for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
