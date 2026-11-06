@@ -82,18 +82,28 @@ The provided timestamp is used to replace the existing createdDateTime of the ch
 This API supportes the following channel types.
 
 ## EXAMPLES
+### Example 1: Start the migration on an existing channel with a specific timestamp
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+```
+This example will start the migration on an existing channel with a specific timestamp
+
+### Example 2: Start the migration when a channel is already in migration mode
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 2
+```
+This example will start the migration when a channel is already in migration mode
 
-Import-Module Microsoft.Graph.Beta.Teams
-
-Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
