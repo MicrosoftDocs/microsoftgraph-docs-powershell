@@ -632,8 +632,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-list-calendarview?view=graph-rest-1.0)
+- [Get-MgBookingBusinessCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-list-calendarview?view=graph-rest-1.0)
 
 
 
