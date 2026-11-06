@@ -15,6 +15,9 @@ title: Get-MgReportYammerActivityCount
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

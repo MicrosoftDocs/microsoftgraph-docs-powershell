@@ -15,6 +15,9 @@ title: Get-MgAuditLogDirectoryAuditCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

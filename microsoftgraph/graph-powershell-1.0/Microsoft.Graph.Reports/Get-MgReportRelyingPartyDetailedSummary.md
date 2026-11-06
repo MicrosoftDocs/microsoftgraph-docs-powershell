@@ -15,6 +15,9 @@ title: Get-MgReportRelyingPartyDetailedSummary
 
 Get a summary of AD FS relying parties information.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportRelyingPartyDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportRelyingPartyDetailedSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

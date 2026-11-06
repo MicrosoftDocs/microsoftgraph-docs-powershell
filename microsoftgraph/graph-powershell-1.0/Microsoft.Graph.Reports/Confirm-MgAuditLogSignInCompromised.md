@@ -18,6 +18,9 @@ Events marked as risky by an admin are immediately flagged as high risk in Micro
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Beta.Reports/Confirm-MgBetaAuditLogSignInCompromised?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
