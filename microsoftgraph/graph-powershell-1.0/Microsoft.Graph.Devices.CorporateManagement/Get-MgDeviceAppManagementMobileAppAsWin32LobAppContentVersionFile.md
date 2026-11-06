@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile
 
 The list of files for this app content version.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

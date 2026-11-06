@@ -15,6 +15,9 @@ title: Restart-MgUserManagedDeviceNow
 
 Reboot device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Restart-MgBetaUserManagedDeviceNow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reboot (Default)

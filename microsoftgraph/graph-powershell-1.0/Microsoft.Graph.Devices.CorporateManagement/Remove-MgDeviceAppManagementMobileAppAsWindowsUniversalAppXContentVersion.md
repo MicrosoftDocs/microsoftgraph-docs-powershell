@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion
 
 Delete navigation property contentVersions for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

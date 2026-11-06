@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp
 
 Create new navigation property to containedApps for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

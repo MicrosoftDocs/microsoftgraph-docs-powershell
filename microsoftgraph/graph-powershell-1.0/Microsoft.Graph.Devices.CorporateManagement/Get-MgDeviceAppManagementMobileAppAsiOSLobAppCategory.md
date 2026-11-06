@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory
 
 The list of categories for this app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

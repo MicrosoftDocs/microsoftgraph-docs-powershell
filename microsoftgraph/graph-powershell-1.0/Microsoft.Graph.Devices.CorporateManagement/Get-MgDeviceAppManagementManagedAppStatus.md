@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedAppStatus
 
 The managed app statuses.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
