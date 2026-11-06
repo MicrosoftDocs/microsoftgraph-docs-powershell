@@ -629,7 +629,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths16Rtv1JUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths16Rtv1JUsersUserIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
   [Id <String>]: 
@@ -637,7 +637,7 @@ BODYPARAMETER <IPaths16Rtv1JUsersUserIdOnenoteSectiongroupsSectiongroupIdSection
   [SiteCollectionId <String>]: 
   [SiteId <String>]: 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -656,3 +656,25 @@ INPUTOBJECT <INotesIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetauseronenotesectiongroupsectiontosectiongroup)
 - [](https://learn.microsoft.com/graph/api/section-copytosectiongroup?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
