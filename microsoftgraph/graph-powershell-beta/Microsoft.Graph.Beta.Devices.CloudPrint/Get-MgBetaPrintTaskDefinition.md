@@ -16,6 +16,9 @@ title: Get-MgBetaPrintTaskDefinition
 Get details about a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
