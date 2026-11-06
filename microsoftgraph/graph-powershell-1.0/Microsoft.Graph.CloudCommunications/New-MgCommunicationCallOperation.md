@@ -582,7 +582,7 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
+- [New-MgCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
 
 
 

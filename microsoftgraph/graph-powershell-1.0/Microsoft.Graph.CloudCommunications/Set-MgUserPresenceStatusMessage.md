@@ -585,8 +585,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencestatusmessage)
-- [](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
+- [Set-MgUserPresenceStatusMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguserpresencestatusmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
 
 
 
