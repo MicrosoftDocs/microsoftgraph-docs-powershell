@@ -58,12 +58,17 @@ Set the isPublished property to false, and the publicUrl property to null.
 | Application | Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Unpublish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Unpublish-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 
