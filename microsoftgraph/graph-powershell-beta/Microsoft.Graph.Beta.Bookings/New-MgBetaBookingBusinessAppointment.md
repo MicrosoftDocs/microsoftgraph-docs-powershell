@@ -1545,7 +1545,7 @@ HelpMessage: ''
 
 ### -OnlineMeetingUrl
 
-.
+
 
 ```yaml
 Type: System.String
