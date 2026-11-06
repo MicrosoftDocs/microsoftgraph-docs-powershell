@@ -630,8 +630,8 @@ For more information, see Supported property data types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta)
+- [New-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta)
 
 
 
