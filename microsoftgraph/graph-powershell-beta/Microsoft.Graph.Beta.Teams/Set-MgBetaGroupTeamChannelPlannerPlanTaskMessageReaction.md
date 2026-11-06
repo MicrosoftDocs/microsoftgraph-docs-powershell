@@ -644,8 +644,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelplannerplantaskmessagereaction)
-- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
+- [Set-MgBetaGroupTeamChannelPlannerPlanTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelplannerplantaskmessagereaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
 
 
 
