@@ -15,6 +15,9 @@ title: Get-MgSearchQnaCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchQnaCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQnaCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
