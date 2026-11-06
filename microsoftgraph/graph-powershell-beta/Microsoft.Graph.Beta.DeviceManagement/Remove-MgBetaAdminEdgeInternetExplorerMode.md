@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminEdgeInternetExplorerMode
 
 Delete navigation property internetExplorerMode for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerMode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
