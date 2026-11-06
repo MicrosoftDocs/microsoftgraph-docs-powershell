@@ -15,6 +15,9 @@ title: Remove-MgSecurityIncident
 
 Delete navigation property incidents for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

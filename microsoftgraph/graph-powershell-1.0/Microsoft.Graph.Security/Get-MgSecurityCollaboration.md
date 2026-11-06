@@ -15,6 +15,9 @@ title: Get-MgSecurityCollaboration
 
 Get collaboration from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCollaboration](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCollaboration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

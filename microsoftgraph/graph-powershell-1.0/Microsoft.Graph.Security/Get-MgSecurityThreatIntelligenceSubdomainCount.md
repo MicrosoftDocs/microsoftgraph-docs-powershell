@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceSubdomainCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSubdomainCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSubdomainCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

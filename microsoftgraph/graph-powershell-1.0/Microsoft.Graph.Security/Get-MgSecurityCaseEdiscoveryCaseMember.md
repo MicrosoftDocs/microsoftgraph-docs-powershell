@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseMember
 
 Represents members of an eDiscovery case.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

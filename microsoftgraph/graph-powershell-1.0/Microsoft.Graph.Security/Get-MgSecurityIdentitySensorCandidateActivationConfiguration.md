@@ -15,6 +15,9 @@ title: Get-MgSecurityIdentitySensorCandidateActivationConfiguration
 
 Read the properties and relationships of microsoft.graph.security.sensorCandidateActivationConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorCandidateActivationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

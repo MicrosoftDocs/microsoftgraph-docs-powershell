@@ -15,6 +15,9 @@ title: Remove-MgSecurityAttackSimulationLoginPage
 
 Delete navigation property loginPages for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

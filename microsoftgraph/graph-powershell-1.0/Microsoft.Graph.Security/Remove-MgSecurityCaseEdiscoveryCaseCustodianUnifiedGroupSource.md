@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 
 Delete a unifiedGroupSource object associated with an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
