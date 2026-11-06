@@ -705,8 +705,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
-- [](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0)
+- [Copy-MgTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-1.0)
 
 
 

@@ -418,7 +418,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannel)
+- [Remove-MgTeamPrimaryChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannel)
 
 
 

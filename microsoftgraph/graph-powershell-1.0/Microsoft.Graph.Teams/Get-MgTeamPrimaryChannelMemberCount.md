@@ -374,7 +374,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmembercount)
+- [Get-MgTeamPrimaryChannelMemberCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmembercount)
 
 
 

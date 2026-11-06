@@ -608,9 +608,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest)
-- [](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0)
+- [Get-MgTeamScheduleOfferShiftRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0)
 
 
 

@@ -645,8 +645,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
+- [New-MgTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
 
 
 
