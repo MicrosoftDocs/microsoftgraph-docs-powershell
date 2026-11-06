@@ -1119,7 +1119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
+BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1366,7 +1366,7 @@ Read-only.
     [ContentType <String>]: bodyType
   [SharedDayNote <IMicrosoftGraphItemBody>]: itemBody
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1624,7 +1624,7 @@ Read-only.
   [State <String>]: timeCardState
   [UserId <String>]: User ID to which the timeCard belongs.
 
-TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
+TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovedLocation <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1714,3 +1714,25 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
