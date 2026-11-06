@@ -16,6 +16,9 @@ title: Remove-MgBetaUserMessageContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMessageContent](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
