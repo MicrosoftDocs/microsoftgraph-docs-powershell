@@ -381,7 +381,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatuscount)
+- [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusCount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatuscount)
 
 
 
