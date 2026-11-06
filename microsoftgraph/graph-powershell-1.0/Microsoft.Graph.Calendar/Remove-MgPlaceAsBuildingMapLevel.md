@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsBuildingMapLevel
 
 Delete navigation property levels for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsBuildingMapLevel](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsBuildingMapLevel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

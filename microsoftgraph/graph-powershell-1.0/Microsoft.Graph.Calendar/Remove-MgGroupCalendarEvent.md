@@ -15,6 +15,9 @@ title: Remove-MgGroupCalendarEvent
 
 Delete navigation property events for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

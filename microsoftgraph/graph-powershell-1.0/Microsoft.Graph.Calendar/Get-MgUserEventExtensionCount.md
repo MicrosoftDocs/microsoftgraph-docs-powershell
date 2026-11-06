@@ -15,6 +15,9 @@ title: Get-MgUserEventExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventExtensionCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
