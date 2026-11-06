@@ -77,8 +77,9 @@ External sponsors are a set of users who can approve requests on behalf of other
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef Cmdlet.
+
 
 ## PARAMETERS
 

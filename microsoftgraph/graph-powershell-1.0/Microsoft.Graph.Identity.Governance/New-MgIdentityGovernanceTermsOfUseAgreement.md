@@ -50,8 +50,9 @@ This cmdlet has the following aliases,
 Create a new agreement object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
+
 
 ## PARAMETERS
 

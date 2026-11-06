@@ -73,8 +73,9 @@ This cmdlet has the following aliases,
 Create a new localized agreement file.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 New-MgIdentityGovernanceTermsOfUseAgreementFile -AgreementId $agreementId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceTermsOfUseAgreementFile Cmdlet.
+
 
 ## PARAMETERS
 

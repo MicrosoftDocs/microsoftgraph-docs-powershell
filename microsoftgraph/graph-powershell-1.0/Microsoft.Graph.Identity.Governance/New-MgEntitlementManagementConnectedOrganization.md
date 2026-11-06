@@ -58,8 +58,9 @@ Create a new connectedOrganization object.
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a connected organization
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -77,6 +78,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
+
+```
+This example will create a connected organization
+
 
 ## PARAMETERS
 
