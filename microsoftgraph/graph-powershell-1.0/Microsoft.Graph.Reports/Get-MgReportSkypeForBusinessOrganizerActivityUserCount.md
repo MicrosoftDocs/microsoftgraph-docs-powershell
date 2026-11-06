@@ -375,8 +375,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)
+- [Get-MgReportSkypeForBusinessOrganizerActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)
 
 
 

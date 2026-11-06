@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0)
+- [Get-MgReportYammerGroupActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0)
 
 
 

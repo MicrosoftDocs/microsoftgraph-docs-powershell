@@ -436,8 +436,8 @@ BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
+- [Export-MgReportPartnerBillingUsageUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
 
 
 

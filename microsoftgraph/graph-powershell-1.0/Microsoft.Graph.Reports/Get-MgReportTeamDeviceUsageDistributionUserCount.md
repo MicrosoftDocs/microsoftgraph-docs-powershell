@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0)
+- [Get-MgReportTeamDeviceUsageDistributionUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0)
 
 
 

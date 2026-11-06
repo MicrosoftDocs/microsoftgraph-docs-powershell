@@ -566,8 +566,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
-- [](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
+- [Get-MgReportPartnerBillingManifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
 
 
 

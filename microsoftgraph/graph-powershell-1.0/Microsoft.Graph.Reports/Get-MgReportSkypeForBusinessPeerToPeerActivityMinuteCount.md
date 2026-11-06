@@ -375,8 +375,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityminutecount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)
+- [Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinesspeertopeeractivityminutecount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)
 
 
 

@@ -415,8 +415,8 @@ BODYPARAMETER `<IPaths1K0Im7HAuditlogsSigninsMicrosoftGraphDismissPostRequestbod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mgdismissauditlogsignin)
-- [](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-1.0)
+- [Invoke-MgDismissAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mgdismissauditlogsignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-1.0)
 
 
 
