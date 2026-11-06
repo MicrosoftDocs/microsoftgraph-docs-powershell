@@ -717,11 +717,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION <IMicrosoftGraphSecurityCopilotPluginAuth>: pluginAuth
+AUTHORIZATION `<IMicrosoftGraphSecurityCopilotPluginAuth>`: pluginAuth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthType <String>]: pluginAuthTypes
 
-BODYPARAMETER <IMicrosoftGraphSecurityCopilotPlugin>: plugin
+BODYPARAMETER `<IMicrosoftGraphSecurityCopilotPlugin>`: plugin
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Authorization <IMicrosoftGraphSecurityCopilotPluginAuth>]: pluginAuth
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -750,7 +750,7 @@ Primary key.
     [Value <String>]: Value
   [SupportedAuthTypes <String>]: pluginAuthTypes
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -884,3 +884,25 @@ SETTINGS <IMicrosoftGraphSecurityCopilotPluginSetting[]>: Settings for the plugi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspaceplugin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

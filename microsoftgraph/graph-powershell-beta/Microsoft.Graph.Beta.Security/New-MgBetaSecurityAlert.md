@@ -1242,7 +1242,7 @@ ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>: .
   [Method <String>]: 
   [Name <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphAlert>: alert
+BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1625,7 +1625,7 @@ Recommended value range of 0-1, which equates to a percentage.
   [UserAccountType <String>]: userAccountSecurityType
   [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1643,3 +1643,25 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

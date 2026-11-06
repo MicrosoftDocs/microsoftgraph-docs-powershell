@@ -621,7 +621,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [ScanProtocol <String>]: The specific protocol used to scan the hostPort.
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPortBanner in all its scans.
 
-BODYPARAMETER <IMicrosoftGraphSecurityHostPort>: hostPort
+BODYPARAMETER `<IMicrosoftGraphSecurityHostPort>`: hostPort
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -900,7 +900,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Status <String>]: hostPortStatus
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-HOST1 <IMicrosoftGraphSecurityHost>: host
+HOST1 `<IMicrosoftGraphSecurityHost>`: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1178,7 +1178,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-MOSTRECENTSSLCERTIFICATE <IMicrosoftGraphSecuritySslCertificate>: sslCertificate
+MOSTRECENTSSLCERTIFICATE `<IMicrosoftGraphSecuritySslCertificate>`: sslCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1738,3 +1738,25 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
