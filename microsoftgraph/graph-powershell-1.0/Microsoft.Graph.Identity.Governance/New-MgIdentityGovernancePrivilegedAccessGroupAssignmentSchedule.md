@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
 ## SYNOPSIS
 
 Create new navigation property to assignmentSchedules for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 

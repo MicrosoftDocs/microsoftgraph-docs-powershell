@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifiedinstancecontactedreviewer
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer
 ---
@@ -17,9 +17,6 @@ Returns the collection of reviewers who were contacted to complete this review.
 While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities.
 Supports $select.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer?view=graph-powershell-beta)
 
 ## SYNTAX
 

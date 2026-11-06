@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgRoleManagementDirectoryRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgRoleManagementDirectoryRoleAssignment
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 

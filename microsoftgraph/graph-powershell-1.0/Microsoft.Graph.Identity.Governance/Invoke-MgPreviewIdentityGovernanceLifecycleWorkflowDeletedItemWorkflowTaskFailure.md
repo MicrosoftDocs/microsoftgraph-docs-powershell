@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflowtaskfailure
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskFailure
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTas
 Validate the tasks configured in a workflow to check for configuration errors.
 This action identifies any tasks that would fail during execution, allowing you to fix issues before running the workflow.
 Returns an empty collection if no task failures are detected.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskFailure](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskFailure?view=graph-powershell-beta)
 
 ## SYNTAX
 

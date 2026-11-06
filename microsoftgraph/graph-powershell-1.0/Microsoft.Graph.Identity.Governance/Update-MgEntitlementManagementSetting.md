@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementSetting
 ## SYNOPSIS
 
 Update an existing entitlementManagementSettings object to change one or more of its properties.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 

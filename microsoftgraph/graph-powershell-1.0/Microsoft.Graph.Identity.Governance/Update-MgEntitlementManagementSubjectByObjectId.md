@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubjectbyobjectid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementSubjectByObjectId
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementSubjectByObjectId
 ## SYNOPSIS
 
 Update an external directory user represented by an existing accessPackageSubject object to change the subject lifecycle.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubjectByObjectId](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubjectByObjectId?view=graph-powershell-beta)
 
 ## SYNTAX
 

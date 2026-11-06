@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementacceptance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgAgreementAcceptance
 ---
@@ -14,9 +14,6 @@ title: Remove-MgAgreementAcceptance
 ## SYNOPSIS
 
 Delete navigation property acceptances for agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 

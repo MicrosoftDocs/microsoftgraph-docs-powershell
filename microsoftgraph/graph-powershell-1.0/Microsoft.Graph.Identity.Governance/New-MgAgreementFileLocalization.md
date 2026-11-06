@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfilelocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAgreementFileLocalization
 ---
@@ -14,9 +14,6 @@ title: New-MgAgreementFileLocalization
 ## SYNOPSIS
 
 Create new navigation property to localizations for agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 

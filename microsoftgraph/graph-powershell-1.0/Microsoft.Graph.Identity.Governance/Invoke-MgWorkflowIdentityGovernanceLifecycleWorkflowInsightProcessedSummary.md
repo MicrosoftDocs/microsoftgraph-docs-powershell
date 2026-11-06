@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSumma
 
 Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
 Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 

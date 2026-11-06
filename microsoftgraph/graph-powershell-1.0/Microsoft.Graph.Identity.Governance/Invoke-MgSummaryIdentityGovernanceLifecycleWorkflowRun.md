@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowrun
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun
 
 Get a runSummary for run objects over a specified time period.
 Because the number of runs returned by the list API call can be overwhelming, this summary allows administrators to get a quick overview based on counts.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
 
 ## SYNTAX
 

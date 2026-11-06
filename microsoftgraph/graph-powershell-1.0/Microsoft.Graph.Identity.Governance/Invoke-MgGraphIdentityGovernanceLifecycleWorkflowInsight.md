@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mggraphidentitygovernancelifecycleworkflowinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgGraphIdentityGovernanceLifecycleWorkflowInsight
 
 Provide a summary from the insights resource of workflow objects processed by category in a tenant.
 This allows you to quickly get category information, by numerical value, without retrieving the other information included in the workflowsProcessedSummary call.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaGraphIdentityGovernanceLifecycleWorkflowInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 

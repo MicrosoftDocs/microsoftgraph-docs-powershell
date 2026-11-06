@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementexternaloriginresourceconnectorcount
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEntitlementManagementExternalOriginResourceConnectorCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgEntitlementManagementExternalOriginResourceConnectorCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementExternalOriginResourceConnectorCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementExternalOriginResourceConnectorCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

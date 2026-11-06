@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ---
@@ -14,9 +14,6 @@ title: Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## SYNOPSIS
 
 Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 

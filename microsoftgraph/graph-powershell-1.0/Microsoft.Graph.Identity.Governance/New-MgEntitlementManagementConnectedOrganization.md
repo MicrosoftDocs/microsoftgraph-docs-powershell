@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementConnectedOrganization
 ---
@@ -14,9 +14,6 @@ title: New-MgEntitlementManagementConnectedOrganization
 ## SYNOPSIS
 
 Create a new connectedOrganization object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 

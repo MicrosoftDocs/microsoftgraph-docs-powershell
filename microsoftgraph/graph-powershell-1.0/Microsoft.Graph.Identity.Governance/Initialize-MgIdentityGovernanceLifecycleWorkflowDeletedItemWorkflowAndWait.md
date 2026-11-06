@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflowdeleteditemworkflowandwait
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait
 ---
@@ -16,9 +16,6 @@ title: Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWai
 Activate a lifecycle workflow for a specified subject and synchronously wait for execution to complete.
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait?view=graph-powershell-beta)
 
 ## SYNTAX
 

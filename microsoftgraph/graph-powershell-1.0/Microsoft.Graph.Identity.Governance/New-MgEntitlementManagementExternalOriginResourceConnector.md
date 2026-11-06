@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementexternaloriginresourceconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementExternalOriginResourceConnector
 ---
@@ -14,9 +14,6 @@ title: New-MgEntitlementManagementExternalOriginResourceConnector
 ## SYNOPSIS
 
 Creates a new externalOriginResourceConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementExternalOriginResourceConnector](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementExternalOriginResourceConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 

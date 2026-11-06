@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalizationversion
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAgreementFileLocalizationVersion
 ---
@@ -15,9 +15,6 @@ title: Get-MgAgreementFileLocalizationVersion
 
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalizationVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 

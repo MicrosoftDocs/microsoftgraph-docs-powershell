@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsubjectprocessingresulttaskprocessingresultsubjectmailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting
 ---
@@ -16,9 +16,6 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProce
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 Requires $select to retrieve.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 

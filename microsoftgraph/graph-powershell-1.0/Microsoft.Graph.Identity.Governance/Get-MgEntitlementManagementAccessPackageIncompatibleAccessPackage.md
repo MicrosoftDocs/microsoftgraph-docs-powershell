@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage
 ---
@@ -14,9 +14,6 @@ title: Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage
 ## SYNOPSIS
 
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-beta)
 
 ## SYNTAX
 

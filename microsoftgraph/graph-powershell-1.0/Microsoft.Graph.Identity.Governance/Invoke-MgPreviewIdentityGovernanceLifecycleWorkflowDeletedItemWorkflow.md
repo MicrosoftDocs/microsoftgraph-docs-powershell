@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 
 Run a workflow in preview mode for selected directory objects without affecting production users.
 This action triggers workflow processing in preview mode, and results can be retrieved by using the List userProcessingResults operation with $filter=workflowExecutionType eq 'previewMode'.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
 
 ## SYNTAX
 

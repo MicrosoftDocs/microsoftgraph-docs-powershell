@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
 ---
@@ -15,9 +15,6 @@ title: Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
 
 Remove a user or a group from the externalSponsors relationship of a connectedOrganization.
 External sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 

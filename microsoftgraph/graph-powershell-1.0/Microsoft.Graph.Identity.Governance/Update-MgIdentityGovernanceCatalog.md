@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalog
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceCatalog
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceCatalog
 ## SYNOPSIS
 
 Update the navigation property catalogs in identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceCatalog?view=graph-powershell-beta)
 
 ## SYNTAX
 

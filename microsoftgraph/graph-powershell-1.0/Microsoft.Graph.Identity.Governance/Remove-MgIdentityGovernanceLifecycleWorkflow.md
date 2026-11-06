@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityGovernanceLifecycleWorkflow
 ---
@@ -16,9 +16,6 @@ title: Remove-MgIdentityGovernanceLifecycleWorkflow
 Delete a workflow object and its associated tasks, taskProcessingResults and versions.
 The deleted workflow is sent to the deleted workflows container.
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## SYNTAX
 

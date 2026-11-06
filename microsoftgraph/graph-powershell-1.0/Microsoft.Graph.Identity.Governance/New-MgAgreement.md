@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAgreement
 ---
@@ -14,9 +14,6 @@ title: New-MgAgreement
 ## SYNOPSIS
 
 Add new entity to agreements
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 

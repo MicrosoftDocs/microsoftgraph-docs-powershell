@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/clear-mgidentitygovernancelifecycleworkflowdeleteditemworkflowquarantine
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine
 ---
@@ -16,9 +16,6 @@ title: Clear-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine
 Release a quarantined workflow so that it resumes processing.
 A workflow is automatically quarantined when a run exceeds the threshold conditions defined in its quarantineConfiguration.
 After an administrator reviews the cause of the quarantine, calling this action clears the quarantine state and allows the workflow to run again.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Clear-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine?view=graph-powershell-beta)
 
 ## SYNTAX
 

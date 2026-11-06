@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 ---
@@ -16,9 +16,6 @@ title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 Resume a taskProcessingResult that's inProgress.
 In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see Lifecycle Workflows extensibility approach.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
 
 ## SYNTAX
 

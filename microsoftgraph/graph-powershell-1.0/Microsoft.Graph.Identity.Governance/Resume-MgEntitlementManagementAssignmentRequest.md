@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgEntitlementManagementAssignmentRequest
 ---
@@ -16,9 +16,6 @@ title: Resume-MgEntitlementManagementAssignmentRequest
 Resume a user's access package request after waiting for a callback from a custom extension.
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Resume-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewunifieddefinitioninstancestagerecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation
 ---
@@ -17,9 +17,6 @@ Accept the recommendations on all accessReviewInstanceDecisionItem objects that 
 Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there's no recommendation on an accessReviewInstanceDecisionItem object, no decision is recorded.
 This action accepts recommendations for the decisions in a specific stage only, unlike accessReviewInstance: acceptRecommendations, which operates across the entire instance.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation?view=graph-powershell-beta)
 
 ## SYNTAX
 

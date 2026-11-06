@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal
 ---
@@ -14,9 +14,6 @@ title: Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal
 ## SYNOPSIS
 
 The principal that's getting a role assignment or that's eligible for a role through the request.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 

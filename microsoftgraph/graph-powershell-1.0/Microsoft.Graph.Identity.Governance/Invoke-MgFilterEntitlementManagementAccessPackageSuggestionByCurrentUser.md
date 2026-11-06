@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagesuggestionbycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgFilterEntitlementManagementAccessPackageSuggestionByCurrentUser
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgFilterEntitlementManagementAccessPackageSuggestionByCurrentUser
 Retrieve suggested accessPackageSuggestion objects for the current end user.
 This operation returns access packages that are suggested based on various criteria such as related people insights and the user's assignment history.
 The suggestions help end users discover relevant access packages they may need for their role or work context.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

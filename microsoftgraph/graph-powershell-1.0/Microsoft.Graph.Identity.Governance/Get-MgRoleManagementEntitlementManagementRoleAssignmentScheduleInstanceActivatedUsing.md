@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentscheduleinstanceactivatedusing
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing
 ---
@@ -16,9 +16,6 @@ title: Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAc
 If the request is from an eligible administrator to activate a role, this parameter shows the related eligible assignment for that activation.
 Otherwise, it's null.
 Supports $expand and $select nested in $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-beta)
 
 ## SYNTAX
 

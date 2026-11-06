@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentscheduleinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
 ---
@@ -14,9 +14,6 @@ title: New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
 ## SYNOPSIS
 
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 

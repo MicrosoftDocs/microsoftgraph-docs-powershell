@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentdirectoryscope
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope
 ---
@@ -16,9 +16,6 @@ title: Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope
 The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand for the directory provider.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentDirectoryScope?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleactivatedusing
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing
 ---
@@ -16,9 +16,6 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedU
 When the request activates an ownership or membership assignment in PIM for Groups, this object represents the eligibility relationship.
 Otherwise, it's null.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
 
 ## SYNTAX
 

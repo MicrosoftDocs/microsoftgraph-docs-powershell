@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgEntitlementManagementAssignmentRequest
 ---
@@ -16,9 +16,6 @@ title: Remove-MgEntitlementManagementAssignmentRequest
 Delete an accessPackageAssignmentRequest object.
 This request can be made to remove a denied or completed request.
 You cannot delete an access package assignment request if it has any accessPackageAssignment objects.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsighttaskprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummar
 Provide a summary from the insights resource of the most processed task objects, known as top tasks, for a specified time period in a tenant.
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 

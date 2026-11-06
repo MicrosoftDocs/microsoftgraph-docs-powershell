@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptancecount
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 11/06/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAgreementAcceptanceCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgAgreementAcceptanceCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptanceCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptanceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
