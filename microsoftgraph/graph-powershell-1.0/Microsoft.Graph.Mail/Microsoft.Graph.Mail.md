@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: 63721095-98fd-462c-9eb0-64fc43775c70
+Module Guid: 0bdbc3de-c2cb-4dc5-8673-56048fec5967
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.mail/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -252,23 +252,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserMessage](Update-MgUserMessage.md)
 
 ### [Update-MgUserMessageExtension](Update-MgUserMessageExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
