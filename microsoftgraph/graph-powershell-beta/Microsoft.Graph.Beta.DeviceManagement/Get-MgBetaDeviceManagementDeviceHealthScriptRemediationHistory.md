@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Function to get the number of remediations by a device health scripts
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementScripts.Read.All, DeviceManagementScripts.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementScripts.Read.All, DeviceManagementScripts.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
