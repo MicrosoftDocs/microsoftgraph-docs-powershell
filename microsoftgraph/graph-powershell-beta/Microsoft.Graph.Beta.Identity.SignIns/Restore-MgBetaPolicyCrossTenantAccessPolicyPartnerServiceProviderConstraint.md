@@ -436,7 +436,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicycrosstenantaccesspolicypartnerserviceproviderconstraint)
+- [Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicycrosstenantaccesspolicypartnerserviceproviderconstraint)
 
 
 

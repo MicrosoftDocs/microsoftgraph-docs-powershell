@@ -795,8 +795,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta)
+- [New-MgBetaIdentityB2CUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta)
 
 
 
