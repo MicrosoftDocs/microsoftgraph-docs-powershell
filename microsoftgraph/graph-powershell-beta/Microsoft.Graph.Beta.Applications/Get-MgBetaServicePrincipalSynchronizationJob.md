@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalSynchronizationJob
 
 Retrieve an existing synchronizationJob and its properties.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

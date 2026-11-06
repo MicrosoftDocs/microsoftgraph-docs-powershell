@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationSynchronizationJobSchemaDirectoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJobSchemaDirectoryCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchemaDirectoryCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClien
 Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 You can configure a maximum of 20 approved client apps.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
