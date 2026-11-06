@@ -741,7 +741,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGranularDriveRestoreArtifact>: granularDriveRestoreArtifact
+BODYPARAMETER `<IMicrosoftGraphGranularDriveRestoreArtifact>`: granularDriveRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
@@ -757,7 +757,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -796,3 +796,25 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
