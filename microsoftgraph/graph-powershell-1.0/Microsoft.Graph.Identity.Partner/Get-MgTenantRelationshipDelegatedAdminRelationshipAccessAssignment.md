@@ -581,9 +581,9 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
-- [](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0)
+- [Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-accessassignments?view=graph-rest-1.0)
 
 
 
