@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete the map of a specific building.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaPlaceAsBuildingMap -PlaceId $placeId
+
+```
+This example shows how to use the Remove-MgBetaPlaceAsBuildingMap Cmdlet.
+
 
 ## PARAMETERS
 
