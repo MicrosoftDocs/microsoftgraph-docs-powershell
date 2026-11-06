@@ -37,16 +37,6 @@ This cmdlet has the following aliases,
 Entry point for the unified (vNext) access reviews API surface.
 Requests under this path are routed to the vNext service through the dedicated accessReviews/unified path segment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -286,6 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunified)
+
 
 
 

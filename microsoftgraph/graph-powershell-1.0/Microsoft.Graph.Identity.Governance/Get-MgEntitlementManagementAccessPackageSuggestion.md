@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Suggested access packages for end users based on various criteria such as related people insights and assignment history.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSuggestionId
@@ -611,6 +601,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagesuggestion)
+
 
 
 
