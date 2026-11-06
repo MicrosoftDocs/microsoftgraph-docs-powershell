@@ -61,8 +61,9 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
 ## EXAMPLES
+### Example 2: Create a subscription targeting a Web Push endpoint
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaSubscription -BodyParameter $params
+
+```
+This example will create a subscription targeting a web push endpoint
+
 
 ## PARAMETERS
 
