@@ -16,6 +16,9 @@ title: Get-MgBetaUserContactFolderChildFolderContactPhoto
 Optional contact picture.
 You can get or set a photo for a contact.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

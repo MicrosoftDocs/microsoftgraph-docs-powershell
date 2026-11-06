@@ -15,6 +15,9 @@ title: New-MgBetaUserContactFolderChildFolder
 
 Create new navigation property to childFolders for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
