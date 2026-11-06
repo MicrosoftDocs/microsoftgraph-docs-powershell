@@ -15,6 +15,9 @@ title: New-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion
 
 Create new navigation property to questions for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhallRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhallRegistrationConfigurationQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
