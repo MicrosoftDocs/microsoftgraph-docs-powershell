@@ -1525,7 +1525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ANSWEREDBY <IMicrosoftGraphParticipantInfo>: participantInfo
+ANSWEREDBY `<IMicrosoftGraphParticipantInfo>`: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -1559,7 +1559,7 @@ Read-only.
   [RoutingMode <String>]: routingMode
   [Sources <String[]>]: List of source participant ids.
 
-BODYPARAMETER <IMicrosoftGraphCall>: call
+BODYPARAMETER `<IMicrosoftGraphCall>`: call
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1728,7 +1728,7 @@ tenantId in Microsoft Entra ID.
     [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
     [State <String>]: callTranscriptionState
 
-CALLOPTIONS <IMicrosoftGraphCallOptions>: callOptions
+CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HideBotAfterEscalation <Boolean?>]: Indicates whether to hide the app after the call is escalated.
   [IsContentSharingNotificationEnabled <Boolean?>]: Indicates whether content sharing notifications should be enabled for the call.
@@ -1751,7 +1751,7 @@ For example, in the access reviews decisions API, this property might record the
   [Original <IMicrosoftGraphIdentitySet>]: identitySet
   [RoutingType <String>]: routingType
 
-CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
+CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier for a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
@@ -1763,7 +1763,7 @@ Read-only.
   [PngOfCurrentSlide <Byte[]>]: 
   [PresenterParticipantId <String>]: 
 
-INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
+INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ObservedParticipantId <String>]: The id of the participant that is under observation.
 Read-only.
@@ -1782,21 +1782,21 @@ For example, in the access reviews decisions API, this property might record the
 Read-only.
   [Transferor <IMicrosoftGraphIdentitySet>]: identitySet
 
-MEDIACONFIG <IMicrosoftGraphMediaConfig>: mediaConfig
+MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RemoveFromDefaultAudioGroup <Boolean?>]: Remove media from the default audio group.
 
-MEDIASTATE <IMicrosoftGraphCallMediaState>: callMediaState
+MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Audio <String>]: mediaState
 
-MEETINGCAPABILITY <IMicrosoftGraphMeetingCapability>: meetingCapability
+MEETINGCAPABILITY `<IMicrosoftGraphMeetingCapability>`: meetingCapability
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAnonymousUsersToDialOut <Boolean?>]: Indicates whether anonymous users dialout is allowed in a meeting.
   [AllowAnonymousUsersToStartMeeting <Boolean?>]: Indicates whether anonymous users are allowed to start a meeting.
   [AutoAdmittedUsers <String>]: autoAdmittedUsersType
 
-MEETINGINFO <IMicrosoftGraphMeetingInfo>: meetingInfo
+MEETINGINFO `<IMicrosoftGraphMeetingInfo>`: meetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowConversationWithoutHost <Boolean?>]: 
 
@@ -1873,13 +1873,13 @@ This property correlates with the id parameter that the detection bot passed to 
     [IsParticipantTrusted <Boolean?>]: Set to true if the participant is classified as trusted or reliable (for example, a known internal user); otherwise, false.
     [SyntheticConfidence <Double?>]: Confidence score (0.0 to 1.0) that the participant's media is synthetic.
 
-RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
+RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <Int32?>]: The result code.
   [Message <String>]: The message.
   [Subcode <Int32?>]: The result sub-code.
 
-SOURCE <IMicrosoftGraphParticipantInfo>: participantInfo
+SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -1930,12 +1930,12 @@ Whether to remove them from the main mixer.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-TONEINFO <IMicrosoftGraphToneInfo>: toneInfo
+TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SequenceId <Int64?>]: An incremental identifier used for ordering DTMF events.
   [Tone <String>]: tone
 
-TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
+TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedDateTime <DateTime?>]: The state modified time in UTC.
   [State <String>]: callTranscriptionState
@@ -1945,3 +1945,25 @@ TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall)
 - [](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
