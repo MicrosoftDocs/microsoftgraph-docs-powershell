@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Migrations
-Module Guid: 3aa1bb65-2265-44d3-9f73-5fc220c4979c
+Module Guid: 2014277b-aa0c-434a-96e6-b4714d546a8a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.migrations/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
