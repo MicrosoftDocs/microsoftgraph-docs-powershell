@@ -584,7 +584,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingworkhourandlocationoccurrence)
+- [Get-MgBetaUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingworkhourandlocationoccurrence)
 
 
 
