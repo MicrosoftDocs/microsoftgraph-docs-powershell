@@ -362,7 +362,7 @@ BODY `<IPathsMzlge2DeviceappmanagementAndroidmanagedappprotectionsMicrosoftGraph
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementandroidmanagedappprotectionpayloadlink)
+- [Invoke-MgBetaHasDeviceAppManagementAndroidManagedAppProtectionPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementandroidmanagedappprotectionpayloadlink)
 
 
 
