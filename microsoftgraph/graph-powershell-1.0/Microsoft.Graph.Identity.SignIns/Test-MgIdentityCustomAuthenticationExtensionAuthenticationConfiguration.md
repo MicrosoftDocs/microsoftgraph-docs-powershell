@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension object, which can represent one of the following derived types:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
