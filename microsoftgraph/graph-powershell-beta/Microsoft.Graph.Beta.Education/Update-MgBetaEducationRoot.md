@@ -117,7 +117,7 @@ HelpMessage: ''
 
 ### -Classes
 
-.
+
 To construct, see NOTES section for CLASSES properties and create a hash table.
 
 ```yaml
@@ -353,7 +353,7 @@ HelpMessage: ''
 
 ### -Schools
 
-.
+
 To construct, see NOTES section for SCHOOLS properties and create a hash table.
 
 ```yaml
@@ -375,7 +375,7 @@ HelpMessage: ''
 
 ### -Users
 
-.
+
 To construct, see NOTES section for USERS properties and create a hash table.
 
 ```yaml
