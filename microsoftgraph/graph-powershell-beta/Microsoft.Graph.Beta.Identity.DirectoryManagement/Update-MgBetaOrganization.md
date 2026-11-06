@@ -1189,7 +1189,7 @@ HelpMessage: ''
 
 ### -ResourceQuotas
 
-.
+
 To construct, see NOTES section for RESOURCEQUOTAS properties and create a hash table.
 
 ```yaml

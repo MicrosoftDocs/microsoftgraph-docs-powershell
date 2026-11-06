@@ -277,7 +277,7 @@ HelpMessage: ''
 
 ### -CompletedBySystemDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -304,7 +304,7 @@ HelpMessage: ''
 
 ### -CompletedByUserDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -435,7 +435,7 @@ HelpMessage: ''
 
 ### -FailedReviewDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -829,7 +829,7 @@ HelpMessage: ''
 
 ### -NeedsMoreActionResourceCount
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -856,7 +856,7 @@ HelpMessage: ''
 
 ### -NistClassifications
 
-.
+
 To construct, see NOTES section for NISTCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -1083,7 +1083,7 @@ HelpMessage: ''
 
 ### -RemediatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -1214,7 +1214,7 @@ HelpMessage: ''
 
 ### -StatusModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -1241,7 +1241,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 To construct, see NOTES section for TAGS properties and create a hash table.
 
 ```yaml
