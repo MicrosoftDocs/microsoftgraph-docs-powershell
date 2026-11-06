@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 The items (chats, channels, meetings, or communities) organized within the section.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.Read, TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.Read.All, TeamworkSection.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
