@@ -376,7 +376,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevicecount)
+- [Get-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDeviceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyaudienceapplicablecontentmatcheddevicecount)
 
 
 
