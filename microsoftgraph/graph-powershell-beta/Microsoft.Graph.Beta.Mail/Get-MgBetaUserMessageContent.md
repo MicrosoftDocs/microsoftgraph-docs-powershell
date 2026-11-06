@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 The unique identifier for an entity.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Read, Mail.ReadBasic,  |
+| Delegated (personal Microsoft account) | Mail.Read, Mail.ReadBasic,  |
+| Application | Mail.Read, Mail.ReadBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
