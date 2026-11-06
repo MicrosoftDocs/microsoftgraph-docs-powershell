@@ -85,16 +85,6 @@ You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
 Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -665,6 +655,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta)
 - [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
+
 
 
 
