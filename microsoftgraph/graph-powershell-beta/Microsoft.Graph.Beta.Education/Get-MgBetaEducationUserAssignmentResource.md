@@ -17,6 +17,9 @@ Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

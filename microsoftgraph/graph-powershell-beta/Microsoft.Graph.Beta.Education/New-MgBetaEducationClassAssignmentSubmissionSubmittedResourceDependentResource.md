@@ -15,6 +15,9 @@ title: New-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentRes
 
 Create new navigation property to dependentResources for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

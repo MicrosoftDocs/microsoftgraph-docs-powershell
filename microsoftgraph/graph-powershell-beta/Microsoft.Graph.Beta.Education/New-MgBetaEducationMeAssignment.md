@@ -15,6 +15,9 @@ title: New-MgBetaEducationMeAssignment
 
 Create new navigation property to assignments for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

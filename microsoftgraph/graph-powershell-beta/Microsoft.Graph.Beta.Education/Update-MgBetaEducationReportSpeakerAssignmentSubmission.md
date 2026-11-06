@@ -15,6 +15,9 @@ title: Update-MgBetaEducationReportSpeakerAssignmentSubmission
 
 Update the navigation property speakerAssignmentSubmissions in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Update-MgEducationReportSpeakerAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

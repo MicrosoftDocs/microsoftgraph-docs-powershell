@@ -22,6 +22,9 @@ The status of the assignment goes back to draft if there is any backend failure 
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
