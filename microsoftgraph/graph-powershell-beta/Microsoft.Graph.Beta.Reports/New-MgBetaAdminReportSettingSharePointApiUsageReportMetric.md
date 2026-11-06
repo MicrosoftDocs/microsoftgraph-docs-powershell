@@ -387,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphApiUsageReportEnablementStatus>: apiUsageReportEnablementStatus
+BODYPARAMETER `<IMicrosoftGraphApiUsageReportEnablementStatus>`: apiUsageReportEnablementStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Metric <String>]: The name of the API usage report metric.
 The supported values are: egressReport, throttlingReport.
@@ -397,3 +397,25 @@ The supported values are: egressReport, throttlingReport.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetaadminreportsettingsharepointapiusagereportmetric)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
