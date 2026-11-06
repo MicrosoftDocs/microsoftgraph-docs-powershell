@@ -15,6 +15,9 @@ title: Update-MgBetaUserCalendarGroup
 
 Update the navigation property calendarGroups in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

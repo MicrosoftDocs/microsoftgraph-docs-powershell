@@ -15,6 +15,9 @@ title: New-MgBetaPlaceAsBuildingMapLevelSection
 
 Create new navigation property to sections for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsBuildingMapLevelSection](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsBuildingMapLevelSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

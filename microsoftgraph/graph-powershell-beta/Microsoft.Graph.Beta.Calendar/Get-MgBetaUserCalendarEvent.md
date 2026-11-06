@@ -17,6 +17,9 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaGroupCalendarEvent
 
 Create new navigation property to events for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

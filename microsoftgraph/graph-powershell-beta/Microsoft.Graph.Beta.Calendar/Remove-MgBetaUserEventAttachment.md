@@ -15,6 +15,9 @@ title: Remove-MgBetaUserEventAttachment
 
 Delete navigation property attachments for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
