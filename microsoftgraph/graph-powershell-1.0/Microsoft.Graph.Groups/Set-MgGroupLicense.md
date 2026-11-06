@@ -74,6 +74,14 @@ Group-based licensing is an alternative to direct user licensing.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LicenseAssignment.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
