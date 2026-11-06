@@ -575,8 +575,8 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactdelta)
-- [](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-beta)
+- [Get-MgBetaUserContactFolderContactDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-beta)
 
 
 
