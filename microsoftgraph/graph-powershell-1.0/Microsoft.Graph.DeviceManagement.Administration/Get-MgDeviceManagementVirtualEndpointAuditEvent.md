@@ -573,9 +573,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointauditevent)
-- [](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0)
+- [Get-MgDeviceManagementVirtualEndpointAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointauditevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0)
 
 
 

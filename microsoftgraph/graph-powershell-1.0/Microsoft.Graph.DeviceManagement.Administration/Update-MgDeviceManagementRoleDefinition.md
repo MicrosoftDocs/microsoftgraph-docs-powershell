@@ -755,7 +755,7 @@ These must match the actionName that is defined as part of the rolePermission.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
+- [Update-MgDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinition)
 
 
 
