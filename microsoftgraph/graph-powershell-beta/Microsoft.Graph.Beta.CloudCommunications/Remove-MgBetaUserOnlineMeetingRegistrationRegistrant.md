@@ -49,6 +49,14 @@ Cancel an onlineMeeting registration for a meetingRegistrant on behalf of the re
 Only use this method when the allowedRegistrant property of the meetingRegistration object has a value of organization and the registrant's delegated permission was used to enroll.
 When the allowedRegistrant value is everyone, registrants can only use the link in the email they receive to cancel their registration.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
