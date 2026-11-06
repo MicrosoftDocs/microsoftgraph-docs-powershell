@@ -15,6 +15,9 @@ title: Remove-MgUserContactFolderChildFolderPermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolderChildFolderPermanent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
