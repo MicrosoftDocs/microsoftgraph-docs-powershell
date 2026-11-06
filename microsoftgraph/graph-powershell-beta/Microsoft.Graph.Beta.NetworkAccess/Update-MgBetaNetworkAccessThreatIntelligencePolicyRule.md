@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property policyRules in networkAccess
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
