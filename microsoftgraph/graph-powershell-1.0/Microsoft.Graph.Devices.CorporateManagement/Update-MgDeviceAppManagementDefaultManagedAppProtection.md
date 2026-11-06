@@ -120,8 +120,9 @@ Update the navigation property defaultManagedAppProtections in deviceAppManageme
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -178,6 +179,10 @@ faceIdBlocked = $true
 }
 
 Update-MgDeviceAppManagementDefaultManagedAppProtection -DefaultManagedAppProtectionId $defaultManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

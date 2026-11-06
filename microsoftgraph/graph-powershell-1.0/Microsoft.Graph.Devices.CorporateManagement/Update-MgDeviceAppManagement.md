@@ -74,8 +74,9 @@ Update the properties of a deviceAppManagement object.
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -84,6 +85,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagement -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagement Cmdlet.
+
 
 ## PARAMETERS
 
