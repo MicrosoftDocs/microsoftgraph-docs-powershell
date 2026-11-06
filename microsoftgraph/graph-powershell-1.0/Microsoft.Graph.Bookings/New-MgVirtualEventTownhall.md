@@ -15,6 +15,9 @@ title: New-MgVirtualEventTownhall
 
 Create a new virtualEventTownhall object in draft mode.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

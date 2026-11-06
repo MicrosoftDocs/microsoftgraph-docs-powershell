@@ -15,6 +15,9 @@ title: Stop-MgVirtualEventTownhallRegistration
 
 Invoke action cancel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventTownhallRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventTownhallRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)
