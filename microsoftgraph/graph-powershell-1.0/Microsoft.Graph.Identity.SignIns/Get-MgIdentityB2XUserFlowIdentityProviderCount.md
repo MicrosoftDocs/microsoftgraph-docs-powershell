@@ -15,6 +15,9 @@ title: Get-MgIdentityB2XUserFlowIdentityProviderCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowIdentityProviderCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

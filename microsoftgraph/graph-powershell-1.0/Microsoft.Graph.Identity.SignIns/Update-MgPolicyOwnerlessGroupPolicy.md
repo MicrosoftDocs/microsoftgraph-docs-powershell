@@ -18,6 +18,9 @@ If the policy doesn't exist, it creates a new one; if the policy exists, it upda
 To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyOwnerlessGroupPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyOwnerlessGroupPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

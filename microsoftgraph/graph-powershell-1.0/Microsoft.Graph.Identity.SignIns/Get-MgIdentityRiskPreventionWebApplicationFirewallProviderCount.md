@@ -15,6 +15,9 @@ title: Get-MgIdentityRiskPreventionWebApplicationFirewallProviderCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProviderCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProviderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

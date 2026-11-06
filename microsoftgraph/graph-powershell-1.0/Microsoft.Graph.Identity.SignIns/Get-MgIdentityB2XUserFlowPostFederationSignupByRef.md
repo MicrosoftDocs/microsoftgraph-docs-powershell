@@ -15,6 +15,9 @@ title: Get-MgIdentityB2XUserFlowPostFederationSignupByRef
 
 Get ref of postFederationSignup from identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

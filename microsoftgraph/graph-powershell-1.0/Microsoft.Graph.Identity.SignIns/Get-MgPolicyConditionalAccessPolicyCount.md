@@ -15,6 +15,9 @@ title: Get-MgPolicyConditionalAccessPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyConditionalAccessPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyConditionalAccessPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

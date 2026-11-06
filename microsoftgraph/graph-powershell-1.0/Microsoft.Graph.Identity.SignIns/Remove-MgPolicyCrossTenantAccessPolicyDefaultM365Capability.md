@@ -15,6 +15,9 @@ title: Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability
 
 Delete navigation property m365Capabilities for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

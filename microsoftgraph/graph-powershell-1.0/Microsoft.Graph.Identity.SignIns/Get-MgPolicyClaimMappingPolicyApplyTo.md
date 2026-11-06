@@ -15,6 +15,9 @@ title: Get-MgPolicyClaimMappingPolicyApplyTo
 
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyClaimMappingPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyClaimMappingPolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

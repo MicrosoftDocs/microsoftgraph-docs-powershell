@@ -15,6 +15,9 @@ title: Get-MgIdentityRiskPreventionFraudProtectionProviderCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionFraudProtectionProviderCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionFraudProtectionProviderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

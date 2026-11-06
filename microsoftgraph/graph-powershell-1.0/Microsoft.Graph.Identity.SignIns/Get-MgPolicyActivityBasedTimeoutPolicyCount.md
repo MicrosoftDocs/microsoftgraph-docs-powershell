@@ -15,6 +15,9 @@ title: Get-MgPolicyActivityBasedTimeoutPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyActivityBasedTimeoutPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
