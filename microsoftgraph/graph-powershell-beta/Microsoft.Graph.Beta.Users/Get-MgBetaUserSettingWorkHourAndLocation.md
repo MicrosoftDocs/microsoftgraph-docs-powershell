@@ -15,6 +15,9 @@ title: Get-MgBetaUserSettingWorkHourAndLocation
 
 The user's settings for work hours and location preferences for scheduling and availability management.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWorkHourAndLocation](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWorkHourAndLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

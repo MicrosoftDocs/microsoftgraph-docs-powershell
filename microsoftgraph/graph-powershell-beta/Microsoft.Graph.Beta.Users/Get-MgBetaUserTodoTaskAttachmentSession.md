@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoTaskAttachmentSession
 
 Get attachmentSessions from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

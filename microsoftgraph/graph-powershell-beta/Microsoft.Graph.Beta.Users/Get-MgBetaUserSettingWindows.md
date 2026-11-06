@@ -15,6 +15,9 @@ title: Get-MgBetaUserSettingWindows
 
 The Windows settings of the user stored in the cloud.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindows?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

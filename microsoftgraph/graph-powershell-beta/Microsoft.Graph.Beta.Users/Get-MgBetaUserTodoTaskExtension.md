@@ -16,6 +16,9 @@ title: Get-MgBetaUserTodoTaskExtension
 The collection of open extensions defined for the task.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
