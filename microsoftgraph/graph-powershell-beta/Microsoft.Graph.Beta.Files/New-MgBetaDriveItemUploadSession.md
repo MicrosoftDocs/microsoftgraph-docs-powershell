@@ -569,7 +569,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemuploadsession)
+- [New-MgBetaDriveItemUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemuploadsession)
 
 
 

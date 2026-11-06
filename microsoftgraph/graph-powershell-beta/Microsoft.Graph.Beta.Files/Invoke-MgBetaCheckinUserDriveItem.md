@@ -613,8 +613,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckinuserdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta)
+- [Invoke-MgBetaCheckinUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckinuserdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-beta)
 
 
 
