@@ -64,14 +64,6 @@ Get a correlatedIdentity object from an identityCorrelation object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLog.Read.All, ProvisioningLog.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportCorrelationIdentity -IdentityCorrelationId $identityCorrelationId
-
 ## PARAMETERS
 
 ### -All
@@ -629,6 +621,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelationidentity)
 - [](https://learn.microsoft.com/graph/api/correlatedidentity-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/identitycorrelation-list-identities?view=graph-rest-beta)
+
+
 
 
 
