@@ -412,8 +412,8 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship)
-- [](https://learn.microsoft.com/graph/api/delegatedadminrelationship-delete?view=graph-rest-beta)
+- [Remove-MgBetaTenantRelationshipDelegatedAdminRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationship)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminrelationship-delete?view=graph-rest-beta)
 
 
 
