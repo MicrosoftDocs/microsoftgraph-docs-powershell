@@ -802,7 +802,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphServicePrincipalRiskDetection>: servicePrincipalRiskDetection
+BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipalRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -855,7 +855,7 @@ Supports $filter (eq).
 For example, identityProtection.
   [TokenIssuerType <String>]: tokenIssuerType
 
-LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
+LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: Provides the city where the sign-in originated and is determined using latitude/longitude information from the sign-in activity.
   [CountryOrRegion <String>]: Provides the country code info (two letter code) where the sign-in originated.
@@ -878,3 +878,25 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgserviceprincipalriskdetection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
