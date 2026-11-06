@@ -457,8 +457,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucketdelta)
-- [](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta)
+- [Get-MgBetaPlannerBucketDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucketdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta)
 
 
 
