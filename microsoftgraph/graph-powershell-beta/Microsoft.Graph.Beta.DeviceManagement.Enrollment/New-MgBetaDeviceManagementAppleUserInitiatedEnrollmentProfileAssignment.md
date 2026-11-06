@@ -539,7 +539,7 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofileassignment)
+- [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofileassignment)
 
 
 

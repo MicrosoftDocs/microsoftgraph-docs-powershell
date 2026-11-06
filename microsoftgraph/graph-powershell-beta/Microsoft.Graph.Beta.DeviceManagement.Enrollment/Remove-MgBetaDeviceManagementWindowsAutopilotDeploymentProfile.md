@@ -416,7 +416,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
+- [Remove-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementwindowsautopilotdeploymentprofile)
 
 
 

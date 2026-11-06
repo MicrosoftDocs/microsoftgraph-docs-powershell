@@ -429,7 +429,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroleassignmentappscope)
+- [Remove-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroleassignmentappscope)
 
 
 
