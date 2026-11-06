@@ -542,7 +542,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
+- [Update-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
 
 
 

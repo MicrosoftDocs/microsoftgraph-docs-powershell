@@ -985,8 +985,8 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
-- [](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
+- [Update-MgBetaSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-beta)
 
 
 
