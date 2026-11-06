@@ -15,6 +15,9 @@ title: Set-MgApplicationSynchronizationSecret
 
 Update property secrets value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationSecret?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

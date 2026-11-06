@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalMemberOfCountAsAdministrativeUnit
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

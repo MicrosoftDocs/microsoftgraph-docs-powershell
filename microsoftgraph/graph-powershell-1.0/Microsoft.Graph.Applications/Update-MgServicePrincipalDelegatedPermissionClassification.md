@@ -15,6 +15,9 @@ title: Update-MgServicePrincipalDelegatedPermissionClassification
 
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

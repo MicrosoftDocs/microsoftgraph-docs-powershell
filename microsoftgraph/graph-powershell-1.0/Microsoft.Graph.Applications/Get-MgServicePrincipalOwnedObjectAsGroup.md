@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalOwnedObjectAsGroup
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
