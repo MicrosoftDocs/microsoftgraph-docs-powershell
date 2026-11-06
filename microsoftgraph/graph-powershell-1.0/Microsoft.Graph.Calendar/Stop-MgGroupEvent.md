@@ -544,8 +544,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/stop-mggroupevent)
-- [](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
+- [Stop-MgGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/stop-mggroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
 
 
 

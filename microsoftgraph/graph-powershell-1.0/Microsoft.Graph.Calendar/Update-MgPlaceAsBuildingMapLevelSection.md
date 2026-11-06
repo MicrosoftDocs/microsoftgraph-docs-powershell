@@ -594,7 +594,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelsection)
+- [Update-MgPlaceAsBuildingMapLevelSection](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelsection)
 
 
 

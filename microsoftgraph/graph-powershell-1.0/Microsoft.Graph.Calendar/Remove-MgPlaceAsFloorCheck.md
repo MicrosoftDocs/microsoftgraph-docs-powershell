@@ -421,7 +421,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasfloorcheck)
+- [Remove-MgPlaceAsFloorCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasfloorcheck)
 
 
 
