@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreSiteInclusionRule
 
 Create new navigation property to siteInclusionRules for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSiteInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSiteInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

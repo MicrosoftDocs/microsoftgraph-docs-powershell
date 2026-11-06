@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArti
 
 Delete a siteRestoreArtifactsBulkAdditionRequest object associated with a sharepointRestoreSession.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession
 
 Invoke action browse
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBrowseSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgBrowseSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### BrowseExpanded (Default)

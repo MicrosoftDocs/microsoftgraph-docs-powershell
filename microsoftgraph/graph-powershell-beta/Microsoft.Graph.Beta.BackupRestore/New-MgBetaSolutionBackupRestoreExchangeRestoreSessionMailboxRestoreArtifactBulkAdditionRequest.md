@@ -16,6 +16,9 @@ title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifa
 Create a new mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 The following steps describe how to create and manage an exchangeRestoreSession with bulk artifact additions:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
