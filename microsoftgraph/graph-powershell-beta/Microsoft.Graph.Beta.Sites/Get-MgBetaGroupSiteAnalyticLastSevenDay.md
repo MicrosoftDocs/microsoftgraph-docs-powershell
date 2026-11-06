@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteAnalyticLastSevenDay
 
 Get lastSevenDays from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalyticLastSevenDay?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

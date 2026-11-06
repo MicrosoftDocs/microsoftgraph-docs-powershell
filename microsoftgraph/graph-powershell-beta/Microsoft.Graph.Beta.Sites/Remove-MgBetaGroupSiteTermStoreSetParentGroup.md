@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteTermStoreSetParentGroup
 
 Delete navigation property parentGroup for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

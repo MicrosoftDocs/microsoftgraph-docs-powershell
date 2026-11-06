@@ -16,6 +16,9 @@ title: Get-MgBetaGroupSitePermission
 The permissions associated with the site.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
