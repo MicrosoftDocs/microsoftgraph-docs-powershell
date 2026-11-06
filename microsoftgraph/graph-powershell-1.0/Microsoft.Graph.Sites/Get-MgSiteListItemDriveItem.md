@@ -56,16 +56,6 @@ For document libraries, the driveItem relationship exposes the listItem as a dri
 | Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -445,6 +435,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdriveitem)
+
 
 
 
