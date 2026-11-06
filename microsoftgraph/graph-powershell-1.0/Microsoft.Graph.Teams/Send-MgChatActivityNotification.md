@@ -250,7 +250,7 @@ This example will notify the chat members about a task created in a chat
 
 ### -ActivityType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -304,7 +304,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -353,7 +353,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -492,7 +492,7 @@ HelpMessage: ''
 
 ### -IconId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -708,7 +708,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -735,7 +735,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-.
+
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
