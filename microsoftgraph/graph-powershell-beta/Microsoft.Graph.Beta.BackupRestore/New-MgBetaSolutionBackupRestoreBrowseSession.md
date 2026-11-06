@@ -557,7 +557,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestorebrowsesession)
+- [New-MgBetaSolutionBackupRestoreBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestorebrowsesession)
 
 
 
