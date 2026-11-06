@@ -86,8 +86,9 @@ If the user requires a new Temporary Access Pass while the current Temporary Acc
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-TAP.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserAuthenticationTemporaryAccessPassMethod Cmdlet.
+
 
 ## PARAMETERS
 

@@ -46,12 +46,17 @@ This cmdlet has the following aliases,
 Restore a deleted crossTenantAccessPolicyConfigurationPartner object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Restore-MgBetaPolicyDeletedItemCrossTenantPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
+
+```
+This example shows how to use the Restore-MgBetaPolicyDeletedItemCrossTenantPartner Cmdlet.
+
 
 ## PARAMETERS
 

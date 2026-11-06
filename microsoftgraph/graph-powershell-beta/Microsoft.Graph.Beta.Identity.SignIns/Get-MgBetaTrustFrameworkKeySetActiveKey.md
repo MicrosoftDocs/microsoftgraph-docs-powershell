@@ -55,12 +55,17 @@ Only one key is active in the keyset at a time.
 | Application | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaTrustFrameworkKeySetActiveKey -TrustFrameworkKeySetId $trustFrameworkKeySetId
+
+```
+This example shows how to use the Get-MgBetaTrustFrameworkKeySetActiveKey Cmdlet.
+
 
 ## PARAMETERS
 

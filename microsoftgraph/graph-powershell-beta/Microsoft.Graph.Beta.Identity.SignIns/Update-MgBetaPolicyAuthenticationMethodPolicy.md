@@ -66,8 +66,9 @@ Update the properties of an authenticationMethodsPolicy object.
 | Application | Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 
