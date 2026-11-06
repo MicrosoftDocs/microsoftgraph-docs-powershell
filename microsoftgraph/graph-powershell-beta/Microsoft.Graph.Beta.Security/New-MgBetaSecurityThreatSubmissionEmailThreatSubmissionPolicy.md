@@ -715,7 +715,7 @@ Optional for creation.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
+- [New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy)
 
 
 

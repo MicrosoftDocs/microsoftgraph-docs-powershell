@@ -518,8 +518,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityzoneenvironment)
-- [](https://learn.microsoft.com/graph/api/security-environment-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityZoneEnvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityzoneenvironment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-environment-delete?view=graph-rest-beta)
 
 
 

@@ -1299,7 +1299,7 @@ This property will be removed from this resource on 2026-10-01.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule)
+- [Update-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule)
 
 
 

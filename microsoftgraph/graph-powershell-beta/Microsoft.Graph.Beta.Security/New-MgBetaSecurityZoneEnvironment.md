@@ -609,8 +609,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityzoneenvironment)
-- [](https://learn.microsoft.com/graph/api/security-zone-post-environments?view=graph-rest-beta)
+- [New-MgBetaSecurityZoneEnvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityzoneenvironment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-zone-post-environments?view=graph-rest-beta)
 
 
 

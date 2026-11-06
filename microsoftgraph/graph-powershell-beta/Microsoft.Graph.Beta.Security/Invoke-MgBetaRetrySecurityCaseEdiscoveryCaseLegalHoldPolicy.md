@@ -504,8 +504,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaretrysecuritycaseediscoverycaselegalholdpolicy)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-retrypolicy?view=graph-rest-beta)
+- [Invoke-MgBetaRetrySecurityCaseEdiscoveryCaseLegalHoldPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaretrysecuritycaseediscoverycaselegalholdpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-retrypolicy?view=graph-rest-beta)
 
 
 

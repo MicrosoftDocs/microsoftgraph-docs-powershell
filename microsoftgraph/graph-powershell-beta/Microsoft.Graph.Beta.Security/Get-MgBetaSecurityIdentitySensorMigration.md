@@ -637,8 +637,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensormigration)
-- [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensormigration?view=graph-rest-beta)
+- [Get-MgBetaSecurityIdentitySensorMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensormigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensormigration?view=graph-rest-beta)
 
 
 
