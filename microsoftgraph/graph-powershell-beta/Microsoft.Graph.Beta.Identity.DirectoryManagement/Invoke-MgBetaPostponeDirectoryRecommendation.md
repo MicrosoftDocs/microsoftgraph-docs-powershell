@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Postpone action on a recommendation object to a specified future date and time by marking its status as postponed.
 On the date and time provided, Microsoft Entra ID will automatically update the status of the recommendation object to active again.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DirectoryRecommendations.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DirectoryRecommendations.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

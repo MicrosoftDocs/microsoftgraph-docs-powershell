@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
