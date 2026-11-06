@@ -755,7 +755,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpost)
+- [Invoke-MgReplyGroupThreadPost](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpost)
 
 
 

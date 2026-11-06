@@ -473,8 +473,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0)
+- [Remove-MgGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0)
 
 
 
