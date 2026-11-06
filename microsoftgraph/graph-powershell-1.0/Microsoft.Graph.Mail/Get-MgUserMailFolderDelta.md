@@ -62,16 +62,6 @@ This allows you to maintain and synchronize\ra local store of a user's mail fold
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
 | Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -568,6 +558,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderdelta)
 - [](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)
+
 
 
 
