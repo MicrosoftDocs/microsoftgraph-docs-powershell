@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementConnectedOrganization
 
 Retrieve the properties and relationships of a connectedOrganization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)

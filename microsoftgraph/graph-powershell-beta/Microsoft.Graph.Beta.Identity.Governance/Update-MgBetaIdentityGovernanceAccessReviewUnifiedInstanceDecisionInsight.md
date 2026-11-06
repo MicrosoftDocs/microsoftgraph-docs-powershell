@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight
 
 Update the navigation property insights in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

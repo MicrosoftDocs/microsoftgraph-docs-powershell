@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernancePrivilegedAccessGroup
 
 Delete navigation property group for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

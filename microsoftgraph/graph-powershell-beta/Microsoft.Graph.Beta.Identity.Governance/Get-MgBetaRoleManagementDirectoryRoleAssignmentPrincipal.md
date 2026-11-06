@@ -17,6 +17,9 @@ Referencing the assigned principal.
 Read-only.
 Supports $expand except for the Exchange provider.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentPrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

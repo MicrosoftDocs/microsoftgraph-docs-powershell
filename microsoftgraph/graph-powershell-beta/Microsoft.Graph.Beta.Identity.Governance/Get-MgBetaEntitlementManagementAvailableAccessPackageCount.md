@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementAvailableAccessPackageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAvailableAccessPackageCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAvailableAccessPackageCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
