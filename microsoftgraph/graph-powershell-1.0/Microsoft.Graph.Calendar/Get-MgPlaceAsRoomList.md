@@ -61,12 +61,17 @@ Read the properties of a place object specified by its ID.
 The place object can be one of the following types: The listed resources are derived from the place object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgPlaceAsRoomList -PlaceId $placeId
+
+```
+This example shows how to use the Get-MgPlaceAsRoomList Cmdlet.
+
 
 ## PARAMETERS
 

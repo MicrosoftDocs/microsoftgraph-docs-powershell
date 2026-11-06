@@ -61,8 +61,9 @@ You can also use this method to create the following child object types: buildin
 | Application | Place.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a building
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -73,7 +74,12 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a building
+
+### Example 2: Create a floor
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -85,7 +91,12 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a floor
+
+### Example 3: Create a section
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -97,7 +108,12 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create a section
+
+### Example 4: Create a desk
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -109,7 +125,12 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create a desk
+
+### Example 5: Create a room
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -122,7 +143,12 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create a room
+
+### Example 6: Create a workspace
+
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -136,6 +162,10 @@ $params = @{
 }
 
 New-MgPlace -BodyParameter $params
+
+```
+This example will create a workspace
+
 
 ## PARAMETERS
 
