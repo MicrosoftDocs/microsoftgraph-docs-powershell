@@ -56,8 +56,9 @@ Currently only the Exchange Online RBAC provider is supported.
 | Application | RoleManagement.ReadWrite.Exchange,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
+
 
 ## PARAMETERS
 

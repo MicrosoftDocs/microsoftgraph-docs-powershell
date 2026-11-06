@@ -66,12 +66,17 @@ Retrieve the properties and relationships of a unifiedRoleAssignment object.
 | Application | RoleManagement.Read.Exchange, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange,  |
 
 ## EXAMPLES
+### Example 1: Get details of a role assignment from Exchange Online Provider
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Get-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example will get details of a role assignment from exchange online provider
+
 
 ## PARAMETERS
 
