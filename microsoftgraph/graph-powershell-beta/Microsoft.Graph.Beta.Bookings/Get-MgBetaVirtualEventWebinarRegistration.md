@@ -69,24 +69,39 @@ Get the properties and relationships of a virtualEventRegistration object.
 | Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All, VirtualEventRegistration-Anon.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve a list of virtual event registrations
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId
 
-### EXAMPLE 2
+```
+This example will retrieve a list of virtual event registrations
+
+### Example 2: Retrieve a virtual event registration by user ID
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'"
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "userId eq 'b7ef013a-c73c-4ec7-8ccb-e56290f45f68'" 
 
-### EXAMPLE 3
+```
+This example will retrieve a virtual event registration by user id
+
+### Example 3: Retrieve a virtual event registration by email
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "email eq 'EmileeMPham@contoso.com'"
+Get-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -Filter "email eq 'EmileeMPham@contoso.com'" 
+
+```
+This example will retrieve a virtual event registration by email
+
 
 ## PARAMETERS
 
