@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityLabelFilePlanReference
 
 Read the properties and relationships of a filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

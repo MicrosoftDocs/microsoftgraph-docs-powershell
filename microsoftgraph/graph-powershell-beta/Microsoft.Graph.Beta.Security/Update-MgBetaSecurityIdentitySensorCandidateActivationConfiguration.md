@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration
 
 Update the navigation property sensorCandidateActivationConfiguration in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentitySensorCandidateActivationConfiguration](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentitySensorCandidateActivationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

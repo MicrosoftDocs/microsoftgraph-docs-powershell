@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource
 
 Delete a siteSource object associated with an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

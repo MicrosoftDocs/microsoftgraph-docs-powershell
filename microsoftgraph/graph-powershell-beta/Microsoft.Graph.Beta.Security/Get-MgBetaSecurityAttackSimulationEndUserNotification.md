@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAttackSimulationEndUserNotification
 
 Represents an end user's notification for an attack simulation training.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

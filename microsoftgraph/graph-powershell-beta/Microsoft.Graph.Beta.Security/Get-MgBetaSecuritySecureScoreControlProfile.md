@@ -15,6 +15,9 @@ title: Get-MgBetaSecuritySecureScoreControlProfile
 
 Get secureScoreControlProfiles from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

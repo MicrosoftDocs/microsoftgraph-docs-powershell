@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostPairChildHost
 
 Host reached via the parentHost.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPairChildHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPairChildHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

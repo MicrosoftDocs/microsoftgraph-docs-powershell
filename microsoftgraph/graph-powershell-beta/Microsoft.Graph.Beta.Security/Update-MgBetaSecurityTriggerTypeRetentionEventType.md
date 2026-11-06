@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityTriggerTypeRetentionEventType
 
 Update the navigation property retentionEventTypes in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

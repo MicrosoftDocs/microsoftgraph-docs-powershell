@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseMember
 
 Returns a list of ediscoveryCaseMember objects associated to this case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

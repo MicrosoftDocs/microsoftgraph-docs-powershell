@@ -15,6 +15,9 @@ title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelInhe
 
 Calculate the sensitivity label that should be inherited by an output artifact, given a set of sensitivity labels from input or referenced artifacts.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance](/powershell/module/Microsoft.Graph.Security/Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelInheritance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Compute (Default)

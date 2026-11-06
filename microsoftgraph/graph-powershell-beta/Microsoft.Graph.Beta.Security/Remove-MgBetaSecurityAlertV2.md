@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityAlertV2
 
 Delete navigation property alerts_v2 for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAlertV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
