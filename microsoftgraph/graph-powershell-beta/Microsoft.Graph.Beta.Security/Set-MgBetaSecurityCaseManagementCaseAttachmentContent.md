@@ -54,6 +54,14 @@ The maximum file size is 100 MB.
 Upload files in chunks of no more than 1 MB.
 For files larger than 1 MB, send one PUT request for each chunk until all byte ranges are uploaded.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

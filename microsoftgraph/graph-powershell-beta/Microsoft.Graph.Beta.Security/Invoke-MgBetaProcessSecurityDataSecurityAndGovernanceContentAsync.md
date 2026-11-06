@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 
 Invoke action processContentAsync
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Content.Process.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Content.Process.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
