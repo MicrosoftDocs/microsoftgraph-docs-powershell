@@ -95,7 +95,7 @@ HelpMessage: ''
 
 ### -AssignmentState
 
-.
+
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ HelpMessage: ''
 
 ### -Duration
 
-.
+
 
 ```yaml
 Type: System.String
@@ -350,7 +350,7 @@ HelpMessage: ''
 
 ### -Reason
 
-.
+
 
 ```yaml
 Type: System.String
@@ -371,7 +371,7 @@ HelpMessage: ''
 
 ### -RequestedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -414,7 +414,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -479,7 +479,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -500,7 +500,7 @@ HelpMessage: ''
 
 ### -TicketNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ HelpMessage: ''
 
 ### -TicketSystem
 
-.
+
 
 ```yaml
 Type: System.String
@@ -542,7 +542,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String
@@ -563,7 +563,7 @@ HelpMessage: ''
 
 ### -UserId
 
-.
+
 
 ```yaml
 Type: System.String

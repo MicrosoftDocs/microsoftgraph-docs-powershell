@@ -80,7 +80,7 @@ HelpMessage: ''
 
 ### -AssignmentApprovals
 
-.
+
 To construct, see NOTES section for ASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
