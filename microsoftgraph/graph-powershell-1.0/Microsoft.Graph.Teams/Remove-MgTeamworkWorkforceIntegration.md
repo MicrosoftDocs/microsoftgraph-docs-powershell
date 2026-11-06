@@ -56,12 +56,17 @@ Delete an instance of a workforceIntegration.
 | Application | WorkforceIntegration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
+
+```
+This example shows how to use the Remove-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -98,12 +98,17 @@ A collection of membership records associated with the channel, including both d
 | Application | ChannelMember.Read.Group, ChannelMember.Read.All, ChannelMember.ReadWrite.All, ChannelMember.ReadWrite.Group,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -88,16 +88,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to replies for chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1593,6 +1583,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagereply)
+
 
 
 

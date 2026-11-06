@@ -81,16 +81,6 @@ The specified timestamp must be earlier than the current createdDateTime of the 
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -572,6 +562,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mguserchatmigration)
 - [](https://learn.microsoft.com/graph/api/chat-startmigration?view=graph-rest-1.0)
+
 
 
 

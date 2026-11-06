@@ -67,12 +67,17 @@ Retrieve the properties and relationships of a workforceIntegration object.
 | Application | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamworkWorkforceIntegration
+
+```
+This example shows how to use the Get-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

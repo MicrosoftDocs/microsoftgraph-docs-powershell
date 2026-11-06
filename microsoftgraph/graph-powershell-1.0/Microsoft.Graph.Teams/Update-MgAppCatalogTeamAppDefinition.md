@@ -80,16 +80,6 @@ Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publi
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -873,6 +863,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition)
 - [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
+
 
 
 
