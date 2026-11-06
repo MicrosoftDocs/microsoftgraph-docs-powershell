@@ -498,8 +498,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-tags?view=graph-rest-1.0)
+- [Remove-MgSecurityCaseEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-tags?view=graph-rest-1.0)
 
 
 

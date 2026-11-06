@@ -456,8 +456,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-resettodefault?view=graph-rest-1.0)
+- [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-resettodefault?view=graph-rest-1.0)
 
 
 

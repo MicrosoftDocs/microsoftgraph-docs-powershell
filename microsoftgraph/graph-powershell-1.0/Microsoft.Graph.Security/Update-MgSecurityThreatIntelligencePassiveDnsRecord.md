@@ -1261,7 +1261,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencepassivednsrecord)
+- [Update-MgSecurityThreatIntelligencePassiveDnsRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencepassivednsrecord)
 
 
 
