@@ -15,6 +15,9 @@ title: Update-MgBetaInformationProtection
 
 Update informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
