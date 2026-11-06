@@ -719,7 +719,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessFilteringProfile>: filteringProfile
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessFilteringProfile>`: filteringProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [LastModifiedDateTime <DateTime?>]: The date and time when the profile was last modified.
@@ -764,7 +764,7 @@ Read-only.
   [DisplayName <String>]: Represents the human-readable name or title assigned to the conditional access policy.
   [ModifiedDateTime <DateTime?>]: Indicates the date and time when the conditional access policy was last modified.
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -814,3 +814,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofile)
 - [](https://learn.microsoft.com/graph/api/networkaccess-filteringprofile-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
