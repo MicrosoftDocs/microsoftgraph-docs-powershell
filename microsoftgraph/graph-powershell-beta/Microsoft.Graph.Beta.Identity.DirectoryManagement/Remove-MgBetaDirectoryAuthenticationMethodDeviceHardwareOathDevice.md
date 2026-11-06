@@ -49,12 +49,17 @@ Delete a Hardware OATH token.
 Token needs to be unassigned.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -HardwareOathTokenAuthenticationMethodDeviceId $hardwareOathTokenAuthenticationMethodDeviceId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice Cmdlet.
+
 
 ## PARAMETERS
 
