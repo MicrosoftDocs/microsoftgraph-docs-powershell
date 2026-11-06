@@ -15,6 +15,9 @@ title: Get-MgChatMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgGroupTeamScheduleSchedulingGroupCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleSchedulingGroupCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

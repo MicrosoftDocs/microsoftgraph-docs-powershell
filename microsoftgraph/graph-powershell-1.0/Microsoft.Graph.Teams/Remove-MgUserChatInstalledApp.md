@@ -15,6 +15,9 @@ title: Remove-MgUserChatInstalledApp
 
 Delete navigation property installedApps for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

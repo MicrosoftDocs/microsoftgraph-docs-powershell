@@ -15,6 +15,9 @@ title: New-MgUserChatPinnedMessage
 
 Create new navigation property to pinnedMessages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

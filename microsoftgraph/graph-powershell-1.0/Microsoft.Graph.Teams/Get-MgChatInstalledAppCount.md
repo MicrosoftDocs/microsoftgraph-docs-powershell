@@ -15,6 +15,9 @@ title: Get-MgChatInstalledAppCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledAppCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledAppCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

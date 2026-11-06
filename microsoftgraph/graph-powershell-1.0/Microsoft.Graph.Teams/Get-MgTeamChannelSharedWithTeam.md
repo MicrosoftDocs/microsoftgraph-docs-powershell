@@ -16,6 +16,9 @@ title: Get-MgTeamChannelSharedWithTeam
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

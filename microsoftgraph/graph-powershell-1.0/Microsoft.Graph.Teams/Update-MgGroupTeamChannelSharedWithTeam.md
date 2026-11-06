@@ -15,6 +15,9 @@ title: Update-MgGroupTeamChannelSharedWithTeam
 
 Update the navigation property sharedWithTeams in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

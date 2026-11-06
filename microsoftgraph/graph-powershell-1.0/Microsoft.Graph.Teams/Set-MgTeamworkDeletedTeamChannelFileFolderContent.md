@@ -15,6 +15,9 @@ title: Set-MgTeamworkDeletedTeamChannelFileFolderContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

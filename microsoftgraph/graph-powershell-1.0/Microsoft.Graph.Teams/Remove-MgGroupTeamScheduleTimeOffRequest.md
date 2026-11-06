@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamScheduleTimeOffRequest
 
 Delete navigation property timeOffRequests for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
