@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property photo for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.ReadWrite, ProfilePhoto.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProfilePhoto.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
