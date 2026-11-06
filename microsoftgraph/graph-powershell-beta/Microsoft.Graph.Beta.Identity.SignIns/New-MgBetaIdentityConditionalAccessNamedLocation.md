@@ -494,7 +494,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNamedLocation>: namedLocation
+BODYPARAMETER `<IMicrosoftGraphNamedLocation>`: namedLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [CreatedDateTime <DateTime?>]: The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time.
@@ -512,3 +512,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
 - [](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
