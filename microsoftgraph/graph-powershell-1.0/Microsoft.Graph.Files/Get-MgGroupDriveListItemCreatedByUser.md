@@ -16,6 +16,9 @@ title: Get-MgGroupDriveListItemCreatedByUser
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgShareListContentType
 
 Delete navigation property contentTypes for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

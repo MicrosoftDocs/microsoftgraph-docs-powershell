@@ -15,6 +15,9 @@ title: Get-MgDriveBundleContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundleContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

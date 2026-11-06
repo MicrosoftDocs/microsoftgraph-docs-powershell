@@ -15,6 +15,9 @@ title: Update-MgUserDriveRootRetentionLabel
 
 Update the navigation property retentionLabel in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

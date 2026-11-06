@@ -15,6 +15,9 @@ title: Remove-MgDriveItemAnalyticItemActivityStat
 
 Delete navigation property itemActivityStats for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

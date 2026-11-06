@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListContentTypeColumnLinkCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumnLinkCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

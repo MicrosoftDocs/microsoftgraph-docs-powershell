@@ -15,6 +15,9 @@ title: Remove-MgUserDriveListPermission
 
 Delete navigation property permissions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

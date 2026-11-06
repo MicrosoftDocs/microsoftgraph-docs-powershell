@@ -15,6 +15,9 @@ title: Invoke-MgUnfollowUserDriveRoot
 
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)

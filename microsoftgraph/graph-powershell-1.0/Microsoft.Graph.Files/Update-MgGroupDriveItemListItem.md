@@ -15,6 +15,9 @@ title: Update-MgGroupDriveItemListItem
 
 Update the navigation property listItem in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
