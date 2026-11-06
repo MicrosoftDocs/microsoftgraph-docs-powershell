@@ -756,7 +756,7 @@ Read-only.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>: managedTenantAlertRuleDefinition
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -846,11 +846,11 @@ Optional.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-DEFINITIONTEMPLATE <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>: alertRuleDefinitionTemplate
+DEFINITIONTEMPLATE `<IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>`: alertRuleDefinitionTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultSeverity <String>]: alertSeverity
 
-INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
+INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -894,3 +894,25 @@ INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalertruledefinition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
