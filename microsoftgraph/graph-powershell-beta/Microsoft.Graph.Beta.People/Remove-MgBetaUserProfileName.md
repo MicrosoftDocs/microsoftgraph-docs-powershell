@@ -53,13 +53,18 @@ Delete navigation property names for users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileName -UserId $userId -PersonNameId $personNameId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileName Cmdlet.
+
 
 ## PARAMETERS
 
