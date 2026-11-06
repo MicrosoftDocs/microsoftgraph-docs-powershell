@@ -59,12 +59,17 @@ This cmdlet has the following aliases,
 Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
+
 
 ## PARAMETERS
 

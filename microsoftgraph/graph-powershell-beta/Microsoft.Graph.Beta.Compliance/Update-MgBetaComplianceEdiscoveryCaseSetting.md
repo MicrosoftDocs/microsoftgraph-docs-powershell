@@ -78,8 +78,9 @@ Update the properties of a an eDiscovery caseSettings object.
 | Application | eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
+
 
 ## PARAMETERS
 
