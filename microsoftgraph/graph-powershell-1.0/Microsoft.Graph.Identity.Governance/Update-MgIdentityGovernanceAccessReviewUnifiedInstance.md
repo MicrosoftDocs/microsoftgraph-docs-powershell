@@ -1191,7 +1191,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstance)
+- [Update-MgIdentityGovernanceAccessReviewUnifiedInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstance)
 
 
 

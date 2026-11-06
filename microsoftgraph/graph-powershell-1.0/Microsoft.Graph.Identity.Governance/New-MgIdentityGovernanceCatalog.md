@@ -12228,7 +12228,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalog)
+- [New-MgIdentityGovernanceCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalog)
 
 
 

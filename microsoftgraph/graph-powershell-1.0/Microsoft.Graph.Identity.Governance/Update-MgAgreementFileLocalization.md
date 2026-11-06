@@ -878,7 +878,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfilelocalization)
+- [Update-MgAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfilelocalization)
 
 
 

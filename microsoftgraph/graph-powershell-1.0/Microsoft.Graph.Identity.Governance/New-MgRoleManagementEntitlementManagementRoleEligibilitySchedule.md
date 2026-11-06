@@ -901,7 +901,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityschedule)
+- [New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityschedule)
 
 
 

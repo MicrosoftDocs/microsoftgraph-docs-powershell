@@ -446,7 +446,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowrunsubjectprocessingresult)
+- [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowrunsubjectprocessingresult)
 
 
 
