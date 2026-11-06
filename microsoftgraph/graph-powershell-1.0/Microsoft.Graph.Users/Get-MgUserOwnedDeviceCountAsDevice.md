@@ -15,6 +15,9 @@ title: Get-MgUserOwnedDeviceCountAsDevice
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDeviceCountAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceCountAsDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

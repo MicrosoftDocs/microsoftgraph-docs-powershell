@@ -15,6 +15,9 @@ title: Get-MgUserInsightUsed
 
 Calculated relationship that identifies the latest documents viewed or modified by a user, including OneDrive for work or school and SharePoint documents, ranked by recency of use.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightUsed](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightUsed?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

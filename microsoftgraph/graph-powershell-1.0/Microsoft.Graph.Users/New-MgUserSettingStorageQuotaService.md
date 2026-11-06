@@ -15,6 +15,9 @@ title: New-MgUserSettingStorageQuotaService
 
 Create new navigation property to services for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingStorageQuotaService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

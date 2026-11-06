@@ -15,6 +15,9 @@ title: Get-MgUserTodoTaskChecklistItem
 
 A collection of checklistItems linked to a task.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

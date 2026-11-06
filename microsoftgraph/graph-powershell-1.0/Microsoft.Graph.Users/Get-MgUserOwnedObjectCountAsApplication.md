@@ -15,6 +15,9 @@ title: Get-MgUserOwnedObjectCountAsApplication
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedObjectCountAsApplication](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectCountAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

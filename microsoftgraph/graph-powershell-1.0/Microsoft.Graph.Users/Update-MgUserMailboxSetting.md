@@ -15,6 +15,9 @@ title: Update-MgUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
