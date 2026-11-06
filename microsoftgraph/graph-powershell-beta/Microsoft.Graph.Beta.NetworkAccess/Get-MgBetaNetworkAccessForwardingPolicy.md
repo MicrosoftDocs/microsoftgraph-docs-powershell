@@ -568,9 +568,9 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicy-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-forwardingpolicies?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessForwardingPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessforwardingpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicy-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-forwardingpolicies?view=graph-rest-beta)
 
 
 

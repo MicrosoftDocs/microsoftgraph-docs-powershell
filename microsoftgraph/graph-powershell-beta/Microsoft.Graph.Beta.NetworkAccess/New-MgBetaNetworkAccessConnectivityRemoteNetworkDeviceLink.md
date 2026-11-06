@@ -756,7 +756,7 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
+- [New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
 
 
 
