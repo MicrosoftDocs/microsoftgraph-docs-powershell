@@ -15,6 +15,9 @@ title: Get-MgAdminConfigurationManagementConfigurationSnapshot
 
 A container for configuration snapshot baselines.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationSnapshot](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationSnapshot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
