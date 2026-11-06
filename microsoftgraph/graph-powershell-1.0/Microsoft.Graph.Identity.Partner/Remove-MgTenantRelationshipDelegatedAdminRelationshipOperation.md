@@ -15,6 +15,9 @@ title: Remove-MgTenantRelationshipDelegatedAdminRelationshipOperation
 
 Delete navigation property operations for tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
