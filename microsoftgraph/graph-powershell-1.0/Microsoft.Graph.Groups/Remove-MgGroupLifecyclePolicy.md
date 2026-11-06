@@ -15,6 +15,9 @@ title: Remove-MgGroupLifecyclePolicy
 
 Delete a groupLifecyclePolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

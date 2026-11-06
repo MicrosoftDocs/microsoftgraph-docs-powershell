@@ -15,6 +15,9 @@ title: Remove-MgGroupConversationThreadPostExtension
 
 Delete navigation property extensions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversationThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

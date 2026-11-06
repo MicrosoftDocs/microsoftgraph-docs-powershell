@@ -15,6 +15,9 @@ title: Get-MgGroupTransitiveMemberCountAsOrgContact
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberCountAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberCountAsOrgContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
