@@ -577,8 +577,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey)
-- [](https://learn.microsoft.com/graph/api/agentidentityblueprint-removekey?view=graph-rest-beta)
+- [Remove-MgBetaApplicationKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationkey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentidentityblueprint-removekey?view=graph-rest-beta)
 
 
 

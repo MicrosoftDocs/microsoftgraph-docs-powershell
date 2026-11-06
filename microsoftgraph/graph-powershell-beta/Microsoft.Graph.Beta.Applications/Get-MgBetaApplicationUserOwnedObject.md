@@ -386,8 +386,8 @@ BODYPARAMETER `<IPaths16VdybwApplicationsMicrosoftGraphGetuserownedobjectsPostRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationuserownedobject)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+- [Get-MgBetaApplicationUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationuserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 
