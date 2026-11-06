@@ -821,7 +821,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetchild)
+- [Get-MgBetaSiteTermStoreSetParentGroupSetChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetchild)
 
 
 

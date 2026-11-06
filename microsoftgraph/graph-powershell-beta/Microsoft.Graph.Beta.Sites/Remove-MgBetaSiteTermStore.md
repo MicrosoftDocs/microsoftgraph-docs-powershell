@@ -442,7 +442,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstore)
+- [Remove-MgBetaSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstore)
 
 
 

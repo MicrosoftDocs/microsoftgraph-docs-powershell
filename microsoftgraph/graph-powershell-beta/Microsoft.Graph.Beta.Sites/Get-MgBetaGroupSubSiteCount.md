@@ -419,7 +419,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsubsitecount)
+- [Get-MgBetaGroupSubSiteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsubsitecount)
 
 
 

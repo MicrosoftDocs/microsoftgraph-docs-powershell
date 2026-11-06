@@ -952,7 +952,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresettermchildrelation)
+- [Update-MgBetaSiteTermStoreSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresettermchildrelation)
 
 
 

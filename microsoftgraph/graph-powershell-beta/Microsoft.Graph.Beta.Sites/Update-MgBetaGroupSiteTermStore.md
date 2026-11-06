@@ -816,7 +816,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstore)
+- [Update-MgBetaGroupSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstore)
 
 
 

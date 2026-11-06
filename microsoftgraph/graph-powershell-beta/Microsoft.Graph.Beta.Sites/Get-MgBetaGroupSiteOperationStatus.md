@@ -374,8 +374,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperationstatus)
-- [](https://learn.microsoft.com/graph/api/site-getoperationstatus?view=graph-rest-beta)
+- [Get-MgBetaGroupSiteOperationStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteoperationstatus)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getoperationstatus?view=graph-rest-beta)
 
 
 

@@ -527,7 +527,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresettermrelation)
+- [Remove-MgBetaGroupSiteTermStoreSetTermRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresettermrelation)
 
 
 

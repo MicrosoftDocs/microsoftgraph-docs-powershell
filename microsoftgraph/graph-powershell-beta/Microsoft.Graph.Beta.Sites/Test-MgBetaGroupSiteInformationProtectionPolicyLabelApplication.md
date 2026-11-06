@@ -622,8 +622,8 @@ The message appears in administrative logs.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelapplication)
-- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)
+- [Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectionpolicylabelapplication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta)
 
 
 

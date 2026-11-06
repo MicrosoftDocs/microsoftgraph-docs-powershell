@@ -460,7 +460,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiterecyclebin)
+- [Remove-MgBetaGroupSiteRecycleBin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiterecyclebin)
 
 
 
