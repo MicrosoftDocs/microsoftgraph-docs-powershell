@@ -15,6 +15,9 @@ title: Get-MgContactDirectReportAsOrgContact
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDirectReportAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDirectReportAsOrgContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

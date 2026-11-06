@@ -15,6 +15,9 @@ title: Update-MgDirectoryTenantGovernancePolicyTemplate
 
 Update the navigation property governancePolicyTemplates in directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

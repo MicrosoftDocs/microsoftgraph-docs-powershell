@@ -16,6 +16,9 @@ title: Get-MgDirectoryDeletedItem
 Retrieve the properties of a recently deleted directory object from deleted items.
 The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

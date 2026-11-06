@@ -15,6 +15,9 @@ title: Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguratio
 
 Update certificateAuthorityDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDirectoryRecoveryJobCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRecoveryJobCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRecoveryJobCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
