@@ -15,6 +15,9 @@ title: Update-MgBetaTeamChannelMessageReplyHostedContent
 
 Update the navigation property hostedContents in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

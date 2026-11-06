@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamworkTeamAppSetting
 
 Delete navigation property teamsAppSettings for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

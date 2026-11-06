@@ -15,6 +15,9 @@ title: Update-MgBetaTeam
 
 Update the properties of the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

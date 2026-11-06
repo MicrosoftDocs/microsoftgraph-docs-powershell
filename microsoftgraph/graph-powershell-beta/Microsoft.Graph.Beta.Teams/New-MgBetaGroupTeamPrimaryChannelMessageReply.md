@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamPrimaryChannelMessageReply
 
 Create new navigation property to replies for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamPrimaryChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

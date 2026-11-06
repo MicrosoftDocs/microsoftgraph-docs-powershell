@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamworkDeletedChat
 
 Delete navigation property deletedChats for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

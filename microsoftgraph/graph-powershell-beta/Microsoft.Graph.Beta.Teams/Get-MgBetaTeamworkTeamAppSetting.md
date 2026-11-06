@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkTeamAppSetting
 
 Read the properties and relationships of a teamsAppSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

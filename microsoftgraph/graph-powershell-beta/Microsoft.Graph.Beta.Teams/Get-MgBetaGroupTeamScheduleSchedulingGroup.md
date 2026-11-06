@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleSchedulingGroup
 
 The logical grouping of users in the schedule (usually by role).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

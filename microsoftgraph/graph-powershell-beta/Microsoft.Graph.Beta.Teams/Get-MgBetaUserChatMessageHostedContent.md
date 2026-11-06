@@ -15,6 +15,9 @@ title: Get-MgBetaUserChatMessageHostedContent
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

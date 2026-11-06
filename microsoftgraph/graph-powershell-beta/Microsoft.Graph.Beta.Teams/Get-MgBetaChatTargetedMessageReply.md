@@ -16,6 +16,9 @@ title: Get-MgBetaChatTargetedMessageReply
 Replies for a specified message.
 Supports $expand for channel messages.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatTargetedMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTargetedMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
