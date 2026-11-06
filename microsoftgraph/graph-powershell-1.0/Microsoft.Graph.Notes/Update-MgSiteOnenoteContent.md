@@ -15,6 +15,9 @@ title: Update-MgSiteOnenoteContent
 
 Update the navigation property onenote in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

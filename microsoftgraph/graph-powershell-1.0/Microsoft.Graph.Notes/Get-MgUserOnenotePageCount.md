@@ -15,6 +15,9 @@ title: Get-MgUserOnenotePageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenotePageCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

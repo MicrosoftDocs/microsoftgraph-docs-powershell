@@ -16,6 +16,9 @@ title: Copy-MgUserOnenoteNotebookSectionGroupSectionPageToSection
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserOnenoteNotebookSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Beta.Notes/Copy-MgBetaUserOnenoteNotebookSectionGroupSectionPageToSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
