@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -377,6 +367,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootretentionlabel)
+
 
 
 
