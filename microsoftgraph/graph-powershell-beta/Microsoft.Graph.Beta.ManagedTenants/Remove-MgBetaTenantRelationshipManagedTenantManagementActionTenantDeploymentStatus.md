@@ -419,7 +419,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
+- [Remove-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
 
 
 
