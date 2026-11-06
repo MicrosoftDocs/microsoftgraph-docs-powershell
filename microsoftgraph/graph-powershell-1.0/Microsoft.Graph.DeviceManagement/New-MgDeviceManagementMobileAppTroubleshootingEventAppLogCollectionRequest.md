@@ -82,8 +82,9 @@ Create new navigation property to appLogCollectionRequests for deviceManagement
 | Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -98,6 +99,10 @@ completedDateTime = [System.DateTime]::Parse("2016-12-31T23:58:52.3534526-08:00"
 }
 
 New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest Cmdlet.
+
 
 ## PARAMETERS
 
