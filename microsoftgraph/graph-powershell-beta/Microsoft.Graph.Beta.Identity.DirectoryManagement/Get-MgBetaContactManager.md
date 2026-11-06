@@ -15,6 +15,9 @@ title: Get-MgBetaContactManager
 
 Get the contact's manager
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

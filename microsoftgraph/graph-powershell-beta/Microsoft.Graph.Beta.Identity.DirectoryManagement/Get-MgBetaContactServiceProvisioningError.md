@@ -16,6 +16,9 @@ title: Get-MgBetaContactServiceProvisioningError
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

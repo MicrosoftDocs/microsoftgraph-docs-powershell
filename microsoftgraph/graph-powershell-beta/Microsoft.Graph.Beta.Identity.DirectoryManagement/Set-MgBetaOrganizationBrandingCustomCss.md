@@ -16,6 +16,9 @@ title: Set-MgBetaOrganizationBrandingCustomCss
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingCustomCss?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
