@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 A collection of setting values for a given windowsSetting.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.Read.All,  |
+| Delegated (personal Microsoft account) | UserWindowsSettings.Read,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
