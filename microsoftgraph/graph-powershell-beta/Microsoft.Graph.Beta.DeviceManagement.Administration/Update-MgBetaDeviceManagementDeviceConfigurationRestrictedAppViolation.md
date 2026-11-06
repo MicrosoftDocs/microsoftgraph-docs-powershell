@@ -795,7 +795,7 @@ RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp[]>: List of violated res
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+- [Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
 
 
 

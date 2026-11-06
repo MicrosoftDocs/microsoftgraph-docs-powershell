@@ -602,9 +602,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage)
-- [](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointgalleryimage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-beta)
 
 
 
