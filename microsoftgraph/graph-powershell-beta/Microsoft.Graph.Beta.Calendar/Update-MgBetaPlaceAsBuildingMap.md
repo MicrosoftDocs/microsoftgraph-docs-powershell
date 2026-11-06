@@ -661,7 +661,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmap)
+- [Update-MgBetaPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasbuildingmap)
 
 
 

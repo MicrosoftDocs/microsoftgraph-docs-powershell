@@ -379,7 +379,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventextensioncount)
+- [Get-MgBetaUserEventExtensionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventextensioncount)
 
 
 

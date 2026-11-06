@@ -574,8 +574,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozeusereventreminder)
-- [](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
+- [Invoke-MgBetaSnoozeUserEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozeusereventreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
 
 
 
