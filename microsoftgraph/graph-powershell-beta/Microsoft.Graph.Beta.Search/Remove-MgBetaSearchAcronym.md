@@ -15,6 +15,9 @@ title: Remove-MgBetaSearchAcronym
 
 Delete an acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchAcronym?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

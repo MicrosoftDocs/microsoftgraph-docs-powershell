@@ -15,6 +15,9 @@ title: Update-MgBetaSearchQna
 
 Update the properties of a qna object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
