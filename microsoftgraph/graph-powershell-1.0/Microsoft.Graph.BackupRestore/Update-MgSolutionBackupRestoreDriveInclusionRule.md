@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreDriveInclusionRule
 
 Update the navigation property driveInclusionRules in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreDriveInclusionRule](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreDriveInclusionRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
