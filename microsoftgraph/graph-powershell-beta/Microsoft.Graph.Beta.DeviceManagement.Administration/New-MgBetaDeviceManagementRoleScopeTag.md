@@ -437,7 +437,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The Id of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphRoleScopeTag>: Role Scope Tag
+BODYPARAMETER `<IMicrosoftGraphRoleScopeTag>`: Role Scope Tag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -455,3 +455,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementrolescopetag)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
