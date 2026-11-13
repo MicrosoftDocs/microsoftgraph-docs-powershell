@@ -530,8 +530,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy)
-- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
+- [New-MgPolicyHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 
