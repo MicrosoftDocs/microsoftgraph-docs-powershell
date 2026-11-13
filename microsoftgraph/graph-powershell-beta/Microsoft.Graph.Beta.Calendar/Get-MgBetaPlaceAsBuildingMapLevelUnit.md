@@ -16,6 +16,9 @@ title: Get-MgBetaPlaceAsBuildingMapLevelUnit
 Collection of units (such as rooms or offices) on this level.
 Supports upsert.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingMapLevelUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

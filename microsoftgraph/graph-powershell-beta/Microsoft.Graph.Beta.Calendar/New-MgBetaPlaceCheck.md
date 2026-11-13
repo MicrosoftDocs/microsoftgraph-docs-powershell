@@ -16,6 +16,9 @@ title: New-MgBetaPlaceCheck
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlaceCheck](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

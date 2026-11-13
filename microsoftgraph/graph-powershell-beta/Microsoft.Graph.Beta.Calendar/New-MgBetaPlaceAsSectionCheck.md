@@ -15,6 +15,9 @@ title: New-MgBetaPlaceAsSectionCheck
 
 Create new navigation property to checkIns for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsSectionCheck](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsSectionCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
