@@ -591,8 +591,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsupportedregion)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsupportedregion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-supportedregions?view=graph-rest-beta)
 
 
 

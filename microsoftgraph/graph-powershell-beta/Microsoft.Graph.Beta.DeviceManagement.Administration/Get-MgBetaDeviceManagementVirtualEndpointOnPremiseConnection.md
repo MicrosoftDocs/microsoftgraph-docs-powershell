@@ -613,9 +613,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta)
 
 
 
