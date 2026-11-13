@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Create a new deviceTemplate used to identify attributes and manage a group of devices with similar characteristics.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

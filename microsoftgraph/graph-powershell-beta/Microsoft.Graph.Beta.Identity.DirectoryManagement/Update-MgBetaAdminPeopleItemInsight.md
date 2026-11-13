@@ -49,6 +49,14 @@ Update privacy settings to display or return the specified type of insightsSetti
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\r-  Customize item insights privacy \r-  Customize people insights privacy
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
