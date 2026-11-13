@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreProtectionPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreProtectionPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
