@@ -424,7 +424,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata)
+- [Export-MgUserDeviceAndAppManagementData](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata)
 
 
 
