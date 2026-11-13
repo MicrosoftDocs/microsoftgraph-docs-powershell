@@ -72,8 +72,9 @@ Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -84,6 +85,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserPresenceManualLocation -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserPresenceManualLocation Cmdlet.
+
 
 ## PARAMETERS
 
