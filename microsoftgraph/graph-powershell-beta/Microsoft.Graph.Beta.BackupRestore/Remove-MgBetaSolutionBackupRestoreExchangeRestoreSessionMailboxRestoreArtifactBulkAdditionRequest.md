@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArt
 
 Delete a mailboxRestoreArtifactsBulkAdditionRequest object associated with an exchangeRestoreSession.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionU
 
 Get a mailboxProtectionUnitsBulkAdditionJob object by the ID associated with an exchangeProtectionPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

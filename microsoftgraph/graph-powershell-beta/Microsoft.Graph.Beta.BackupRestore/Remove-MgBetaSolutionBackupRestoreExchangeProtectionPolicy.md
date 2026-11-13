@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreExchangeProtectionPolicy
 
 Delete navigation property exchangeProtectionPolicies for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreExchangeProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreExchangeProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

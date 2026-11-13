@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob
 
 Update the navigation property siteProtectionUnitsBulkAdditionJobs in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

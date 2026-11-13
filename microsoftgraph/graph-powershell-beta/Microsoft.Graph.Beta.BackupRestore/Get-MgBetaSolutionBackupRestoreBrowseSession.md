@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreBrowseSession
 
 The list of browse sessions in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

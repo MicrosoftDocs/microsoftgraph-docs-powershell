@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 
 The list of OneDrive for Business restore sessions available in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

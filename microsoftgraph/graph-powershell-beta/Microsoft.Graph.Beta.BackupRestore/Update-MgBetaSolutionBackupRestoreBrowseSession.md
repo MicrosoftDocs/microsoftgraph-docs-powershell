@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreBrowseSession
 
 Update the navigation property browseSessions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
