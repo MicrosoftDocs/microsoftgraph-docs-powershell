@@ -266,7 +266,7 @@ HelpMessage: ''
 
 ### -Body
 
-.
+
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -718,7 +718,7 @@ HelpMessage: ''
 
 ### -ScopeId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -751,7 +751,7 @@ HelpMessage: ''
 
 ### -ScopeType
 
-.
+
 
 ```yaml
 Type: System.String
