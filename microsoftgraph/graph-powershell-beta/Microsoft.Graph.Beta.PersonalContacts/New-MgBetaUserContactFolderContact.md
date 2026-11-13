@@ -1966,7 +1966,7 @@ WEBSITES <IMicrosoftGraphWebsite[]>: Web sites associated with the contact.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact)
+- [New-MgBetaUserContactFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact)
 
 
 
