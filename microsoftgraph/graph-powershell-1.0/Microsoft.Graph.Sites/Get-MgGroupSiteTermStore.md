@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstore
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteTermStore
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupSiteTermStore
 ## SYNOPSIS
 
 The default termStore under this site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStore?view=graph-powershell-beta)
 
 ## SYNTAX
 

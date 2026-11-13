@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresettermrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreSetTermRelation
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteTermStoreSetTermRelation
 ## SYNOPSIS
 
 To indicate which terms are related to the current term as either pinned or reused.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetTermRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 

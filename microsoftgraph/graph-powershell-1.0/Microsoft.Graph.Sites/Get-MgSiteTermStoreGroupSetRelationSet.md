@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetrelationset
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteTermStoreGroupSetRelationSet
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteTermStoreGroupSetRelationSet
 ## SYNOPSIS
 
 The [set] in which the relation is relevant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetRelationSet?view=graph-powershell-beta)
 
 ## SYNTAX
 

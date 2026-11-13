@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSiteTermStoreSetRelation
 ---
@@ -14,9 +14,6 @@ title: Update-MgSiteTermStoreSetRelation
 ## SYNOPSIS
 
 Update the navigation property relations in sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 

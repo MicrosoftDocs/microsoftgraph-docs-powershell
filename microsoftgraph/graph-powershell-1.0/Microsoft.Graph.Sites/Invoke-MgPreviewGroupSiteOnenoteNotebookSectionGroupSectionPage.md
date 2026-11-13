@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewgroupsiteonenotenotebooksectiongroupsectionpage
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage
 ## SYNOPSIS
 
 Invoke function preview
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 

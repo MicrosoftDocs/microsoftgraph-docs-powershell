@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteDelta
 ---
@@ -18,9 +18,6 @@ A delta function call for sites is similar to a GET request, except that by appr
 It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\rThe application calls the API without specifying any parameters.\rThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\rYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
 After you receive all the changes, you can apply them to your local state.\rTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 

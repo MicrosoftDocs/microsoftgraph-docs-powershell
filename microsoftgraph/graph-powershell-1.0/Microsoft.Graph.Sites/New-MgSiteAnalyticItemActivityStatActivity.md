@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsiteanalyticitemactivitystatactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/02/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteAnalyticItemActivityStatActivity
 ---
@@ -14,9 +14,6 @@ title: New-MgSiteAnalyticItemActivityStatActivity
 ## SYNOPSIS
 
 Create new navigation property to activities for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 

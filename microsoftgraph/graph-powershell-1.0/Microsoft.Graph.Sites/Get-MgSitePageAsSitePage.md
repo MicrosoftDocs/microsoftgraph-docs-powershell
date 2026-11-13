@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSitePageAsSitePage
 ---
@@ -14,9 +14,6 @@ title: Get-MgSitePageAsSitePage
 ## SYNOPSIS
 
 Returns the metadata for a sitePage in the site pages list in a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePage?view=graph-powershell-beta)
 
 ## SYNTAX
 

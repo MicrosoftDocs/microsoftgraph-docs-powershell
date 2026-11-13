@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetgraphbprepathactivitybyinterval
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteGetGraphBPrePathActivityByInterval
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteGetGraphBPrePathActivityByInterval
 ## SYNOPSIS
 
 Invoke function getActivitiesByInterval
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-beta)
 
 ## SYNTAX
 

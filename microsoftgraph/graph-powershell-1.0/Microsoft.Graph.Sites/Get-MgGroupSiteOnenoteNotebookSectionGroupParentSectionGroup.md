@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupparentsectiongroup
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteOnenoteNotebookSectionGroupParentSectionGroup
 ---
@@ -15,9 +15,6 @@ title: Get-MgGroupSiteOnenoteNotebookSectionGroupParentSectionGroup
 
 The section group that contains the section group.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupParentSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionGroupParentSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

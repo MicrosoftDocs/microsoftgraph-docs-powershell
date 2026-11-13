@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteGetByPathContentType
 ---
@@ -14,9 +14,6 @@ title: New-MgSiteGetByPathContentType
 ## SYNOPSIS
 
 Create new navigation property to contentTypes for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversionfield
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteListItemDocumentSetVersionField
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteListItemDocumentSetVersionField
 ## SYNOPSIS
 
 A collection of the fields and values for this version of the list item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 

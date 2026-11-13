@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttypecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteListContentTypeColumn
 ---
@@ -14,9 +14,6 @@ title: New-MgSiteListContentTypeColumn
 ## SYNOPSIS
 
 Create new navigation property to columns for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

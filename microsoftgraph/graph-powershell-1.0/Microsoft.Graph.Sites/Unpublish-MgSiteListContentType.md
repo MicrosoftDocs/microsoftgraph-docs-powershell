@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitelistcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Unpublish-MgSiteListContentType
 ---
@@ -14,9 +14,6 @@ title: Unpublish-MgSiteListContentType
 ## SYNOPSIS
 
 Unpublish a contentType from a content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 

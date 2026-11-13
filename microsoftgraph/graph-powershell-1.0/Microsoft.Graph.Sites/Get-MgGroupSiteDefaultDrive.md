@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitedefaultdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteDefaultDrive
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupSiteDefaultDrive
 ## SYNOPSIS
 
 The default drive (document library) for this site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteDefaultDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 

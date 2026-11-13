@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoresettermrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupSiteTermStoreSetTermRelation
 ---
@@ -14,9 +14,6 @@ title: Remove-MgGroupSiteTermStoreSetTermRelation
 ## SYNOPSIS
 
 Delete navigation property relations for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 

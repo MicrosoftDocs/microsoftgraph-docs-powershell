@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/22/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteListPermission
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupSiteListPermission
 The set of permissions for the item.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 

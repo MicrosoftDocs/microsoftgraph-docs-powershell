@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteContentTypeColumn
 ---
@@ -14,9 +14,6 @@ title: New-MgSiteContentTypeColumn
 ## SYNOPSIS
 
 Add a column to a content type in a site, or a list with a request that specifies a columnDefinition.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

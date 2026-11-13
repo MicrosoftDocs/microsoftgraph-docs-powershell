@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mggroupsitelistitemversion
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgGroupSiteListItemVersion
 ---
@@ -15,9 +15,6 @@ title: Restore-MgGroupSiteListItemVersion
 
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mggroupsiteonenotepagetosection
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupSiteOnenotePageToSection
 ---
@@ -15,9 +15,6 @@ title: Copy-MgGroupSiteOnenotePageToSection
 
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaGroupSiteOnenotePageToSection?view=graph-powershell-beta)
 
 ## SYNTAX
 

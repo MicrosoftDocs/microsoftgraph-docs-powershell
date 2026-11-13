@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/02/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSiteList
 ---
@@ -14,9 +14,6 @@ title: New-MgSiteList
 ## SYNOPSIS
 
 Create a new list in a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 

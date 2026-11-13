@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemdocumentsetversionfield
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupSiteListItemDocumentSetVersionField
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupSiteListItemDocumentSetVersionField
 ## SYNOPSIS
 
 Update the navigation property fields in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 

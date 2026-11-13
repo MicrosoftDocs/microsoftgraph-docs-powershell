@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/02/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgSite
 ---
@@ -14,9 +14,6 @@ title: Add-MgSite
 ## SYNOPSIS
 
 Follow a user's site or multiple sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
 ## SYNTAX
 

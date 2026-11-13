@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepage
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 10/02/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSitePage
 ---
@@ -14,9 +14,6 @@ title: New-MgSitePage
 ## SYNOPSIS
 
 Create a new sitePage in the site pages list in a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePage?view=graph-powershell-beta)
 
 ## SYNTAX
 

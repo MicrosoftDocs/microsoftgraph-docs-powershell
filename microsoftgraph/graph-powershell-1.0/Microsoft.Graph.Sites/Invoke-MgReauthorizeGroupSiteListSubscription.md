@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizegroupsitelistsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReauthorizeGroupSiteListSubscription
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgReauthorizeGroupSiteListSubscription
 ## SYNOPSIS
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 

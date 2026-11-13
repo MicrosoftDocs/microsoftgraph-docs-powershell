@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mggroupsitelistcontenttypepublished
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgGroupSiteListContentTypePublished
 ---
@@ -14,9 +14,6 @@ title: Test-MgGroupSiteListContentTypePublished
 ## SYNOPSIS
 
 Check the publishing status of a contentType in a content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaGroupSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaGroupSiteListContentTypePublished?view=graph-powershell-beta)
 
 ## SYNTAX
 

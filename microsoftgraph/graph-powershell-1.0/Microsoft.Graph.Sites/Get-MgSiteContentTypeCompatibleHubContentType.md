@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecompatiblehubcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteContentTypeCompatibleHubContentType
 ---
@@ -17,9 +17,6 @@ Get a list of compatible content types from the content type hub that can be add
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates – August 2021.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 

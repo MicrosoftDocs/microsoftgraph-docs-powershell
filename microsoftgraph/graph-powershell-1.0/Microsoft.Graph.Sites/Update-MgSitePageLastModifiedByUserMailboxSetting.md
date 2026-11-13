@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepagelastmodifiedbyusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 11/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSitePageLastModifiedByUserMailboxSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgSitePageLastModifiedByUserMailboxSetting
 ## SYNOPSIS
 
 Update property mailboxSettings value.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
