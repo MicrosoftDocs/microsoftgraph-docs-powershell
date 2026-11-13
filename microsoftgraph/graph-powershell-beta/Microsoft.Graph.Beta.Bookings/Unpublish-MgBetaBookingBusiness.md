@@ -64,6 +64,14 @@ This cmdlet has the following aliases,
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and publicUrl property to null.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Bookings.Manage.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
