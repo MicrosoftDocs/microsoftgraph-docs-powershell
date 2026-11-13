@@ -15,6 +15,9 @@ title: New-MgGroupTeamScheduleDayNote
 
 Create new navigation property to dayNotes for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleDayNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

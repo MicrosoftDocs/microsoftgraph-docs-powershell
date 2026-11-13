@@ -15,6 +15,9 @@ title: Set-MgTeamPrimaryChannelFileFolderContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

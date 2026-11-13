@@ -15,6 +15,9 @@ title: Remove-MgTeamworkDeletedTeamChannelMember
 
 Delete navigation property allMembers for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

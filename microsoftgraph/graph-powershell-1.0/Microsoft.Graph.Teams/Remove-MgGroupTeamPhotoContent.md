@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamPhotoContent
 
 The profile photo for the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

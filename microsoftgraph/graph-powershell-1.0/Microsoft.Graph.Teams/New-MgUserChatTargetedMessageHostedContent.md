@@ -15,6 +15,9 @@ title: New-MgUserChatTargetedMessageHostedContent
 
 Create new navigation property to hostedContents for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTargetedMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgTeamworkDeletedChat
 
 Create new navigation property to deletedChats for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
