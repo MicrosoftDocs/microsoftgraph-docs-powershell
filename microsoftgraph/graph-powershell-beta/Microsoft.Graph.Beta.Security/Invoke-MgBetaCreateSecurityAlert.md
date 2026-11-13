@@ -409,8 +409,8 @@ Use 0 or omit the value to create a new incident.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
-- [](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)
+- [Invoke-MgBetaCreateSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)
 
 
 

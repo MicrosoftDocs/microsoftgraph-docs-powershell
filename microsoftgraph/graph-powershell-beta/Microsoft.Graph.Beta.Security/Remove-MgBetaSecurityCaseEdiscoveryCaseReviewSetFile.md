@@ -538,7 +538,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetfile)
+- [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetfile)
 
 
 

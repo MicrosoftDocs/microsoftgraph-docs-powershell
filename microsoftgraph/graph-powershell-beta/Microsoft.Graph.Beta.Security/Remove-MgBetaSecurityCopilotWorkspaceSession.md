@@ -516,7 +516,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycopilotworkspacesession)
+- [Remove-MgBetaSecurityCopilotWorkspaceSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycopilotworkspacesession)
 
 
 

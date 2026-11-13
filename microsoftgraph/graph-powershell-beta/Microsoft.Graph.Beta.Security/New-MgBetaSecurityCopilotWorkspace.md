@@ -564,7 +564,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspace)
+- [New-MgBetaSecurityCopilotWorkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspace)
 
 
 

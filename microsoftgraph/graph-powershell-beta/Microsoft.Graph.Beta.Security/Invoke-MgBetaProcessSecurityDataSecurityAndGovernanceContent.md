@@ -487,8 +487,8 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
-- [](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)
+- [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)
 
 
 

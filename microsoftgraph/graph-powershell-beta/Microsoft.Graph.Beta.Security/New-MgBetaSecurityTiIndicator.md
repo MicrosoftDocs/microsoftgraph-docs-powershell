@@ -1753,8 +1753,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
-- [](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
+- [New-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
 
 
 
