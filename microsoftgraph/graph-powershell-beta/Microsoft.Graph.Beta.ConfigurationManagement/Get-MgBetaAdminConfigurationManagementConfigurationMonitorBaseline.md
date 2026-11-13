@@ -15,6 +15,9 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline
 
 Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationMonitorBaseline](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationMonitorBaseline?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
