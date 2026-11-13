@@ -15,6 +15,9 @@ title: Update-MgVirtualEventWebinarRegistrationByEmail
 
 Update the navigation property registrations in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationByEmail](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationByEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

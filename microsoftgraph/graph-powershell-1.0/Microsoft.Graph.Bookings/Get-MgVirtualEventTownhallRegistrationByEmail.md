@@ -15,6 +15,9 @@ title: Get-MgVirtualEventTownhallRegistrationByEmail
 
 Registration records of the town hall.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallRegistrationByEmail](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallRegistrationByEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

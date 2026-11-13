@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventSession
 
 Delete navigation property sessions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
