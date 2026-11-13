@@ -16,6 +16,9 @@ title: Remove-MgApplicationLogo
 The main logo for the application.
 Not nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

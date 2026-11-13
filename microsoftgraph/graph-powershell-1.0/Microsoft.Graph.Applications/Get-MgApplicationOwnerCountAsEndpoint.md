@@ -15,6 +15,9 @@ title: Get-MgApplicationOwnerCountAsEndpoint
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerCountAsEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

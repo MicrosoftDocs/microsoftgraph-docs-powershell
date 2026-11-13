@@ -15,6 +15,9 @@ title: Remove-MgUserAppRoleAssignment
 
 Delete an appRoleAssignment that has been granted to a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
