@@ -57,8 +57,9 @@ This cmdlet has the following aliases,
 Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -76,6 +77,10 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
+
 
 ## PARAMETERS
 
