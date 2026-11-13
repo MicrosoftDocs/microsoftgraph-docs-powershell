@@ -15,6 +15,9 @@ title: New-MgBetaPlannerPlan
 
 Create a new plannerPlan object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
