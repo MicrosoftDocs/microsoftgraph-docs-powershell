@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleSchedul
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfigurationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

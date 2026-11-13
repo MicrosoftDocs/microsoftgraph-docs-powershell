@@ -15,6 +15,9 @@ title: Remove-MgAdminEdge
 
 Delete navigation property edge for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdge?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
