@@ -895,8 +895,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessageforward)
-- [](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-beta)
+- [New-MgBetaUserMailFolderChildFolderMessageForward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessageforward)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-beta)
 
 
 

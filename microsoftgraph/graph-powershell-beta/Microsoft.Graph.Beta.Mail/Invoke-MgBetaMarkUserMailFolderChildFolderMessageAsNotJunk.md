@@ -556,8 +556,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermailfolderchildfoldermessageasnotjunk)
-- [](https://learn.microsoft.com/graph/api/message-markasnotjunk?view=graph-rest-beta)
+- [Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetamarkusermailfolderchildfoldermessageasnotjunk)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-markasnotjunk?view=graph-rest-beta)
 
 
 
