@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action retrieveCloudPkiLeafCertificateSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,6 +428,7 @@ BODY `<IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcert
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport)
+
 
 
 
