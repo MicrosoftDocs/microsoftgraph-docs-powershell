@@ -72,8 +72,9 @@ This cmdlet has the following aliases,
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 

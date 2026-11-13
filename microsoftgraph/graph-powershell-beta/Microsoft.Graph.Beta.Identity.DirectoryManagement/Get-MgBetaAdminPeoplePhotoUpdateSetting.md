@@ -44,12 +44,17 @@ Get the properties of a photoUpdateSettings object.
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaAdminPeoplePhotoUpdateSetting
+
+```
+This example shows how to use the Get-MgBetaAdminPeoplePhotoUpdateSetting Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,8 +54,9 @@ Update the properties of a namePronunciationSettings object.
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -65,6 +66,10 @@ $params = @{
 }
 
 Update-MgBetaAdminPeopleNamePronunciation -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaAdminPeopleNamePronunciation Cmdlet.
+
 
 ## PARAMETERS
 

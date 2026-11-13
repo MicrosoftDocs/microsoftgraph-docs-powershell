@@ -63,12 +63,17 @@ For details, see Role template IDs.
 | Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Get the definition of a directory role using roleTemplateId
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryRoleByRoleTemplateId
+
+```
+This example will get the definition of a directory role using roletemplateid
+
 
 ## PARAMETERS
 

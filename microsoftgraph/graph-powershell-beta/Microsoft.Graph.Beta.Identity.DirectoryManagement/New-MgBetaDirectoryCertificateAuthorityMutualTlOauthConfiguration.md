@@ -57,8 +57,9 @@ Create a mutualTlsOauthConfiguration resource that contains a specified certific
 | Application | MutualTlsOauthConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -73,6 +74,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
