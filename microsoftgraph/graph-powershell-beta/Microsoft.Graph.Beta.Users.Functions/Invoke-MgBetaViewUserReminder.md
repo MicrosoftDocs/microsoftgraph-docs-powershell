@@ -49,20 +49,6 @@ This cmdlet has the following aliases,
 
 Return a list of event reminders in a user calendar within the specified start and end times.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -468,6 +454,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder)
 - [](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-beta)
+
 
 
 
