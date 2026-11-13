@@ -15,6 +15,9 @@ title: Update-MgBetaUserSettingWindowsInstance
 
 Update the navigation property instances in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWindowsInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

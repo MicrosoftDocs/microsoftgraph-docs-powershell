@@ -15,6 +15,9 @@ title: Get-MgBetaUserRegisteredDeviceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserRegisteredDeviceCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
