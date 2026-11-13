@@ -486,8 +486,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshareallowedgroupbyref)
-- [](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0)
+- [Remove-MgPrintShareAllowedGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshareallowedgroupbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0)
 
 
 

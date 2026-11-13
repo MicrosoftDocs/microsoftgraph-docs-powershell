@@ -570,8 +570,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
-- [](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
+- [New-MgPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
 
 
 
