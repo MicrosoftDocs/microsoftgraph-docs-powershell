@@ -15,6 +15,9 @@ title: New-MgBetaPrintShare
 
 Create a new printerShare for the specified printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

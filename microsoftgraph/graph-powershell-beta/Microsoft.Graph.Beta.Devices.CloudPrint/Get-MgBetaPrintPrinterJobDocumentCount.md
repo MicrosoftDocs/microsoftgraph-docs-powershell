@@ -15,6 +15,9 @@ title: Get-MgBetaPrintPrinterJobDocumentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobDocumentCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobDocumentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
