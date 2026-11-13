@@ -537,8 +537,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
-- [](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta)
+- [Update-MgBetaUserPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-beta)
 
 
 
