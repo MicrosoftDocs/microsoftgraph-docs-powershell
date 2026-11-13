@@ -503,7 +503,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmapfootprint)
+- [New-MgPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasbuildingmapfootprint)
 
 
 

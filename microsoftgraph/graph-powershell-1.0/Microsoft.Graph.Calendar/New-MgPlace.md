@@ -754,8 +754,8 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace)
-- [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-1.0)
+- [New-MgPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-1.0)
 
 
 

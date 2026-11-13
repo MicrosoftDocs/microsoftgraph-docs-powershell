@@ -502,7 +502,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
+- [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgcalendarusercalendarallowedcalendarsharingroles)
 
 
 
