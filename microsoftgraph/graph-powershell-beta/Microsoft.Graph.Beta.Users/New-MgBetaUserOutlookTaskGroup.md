@@ -876,7 +876,7 @@ Nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup)
+- [New-MgBetaUserOutlookTaskGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup)
 
 
 

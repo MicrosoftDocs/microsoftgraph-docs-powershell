@@ -543,8 +543,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref)
-- [](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-beta)
+- [New-MgBetaUserSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-beta)
 
 
 

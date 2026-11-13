@@ -443,8 +443,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolderpermanent)
-- [](https://learn.microsoft.com/graph/api/outlooktaskfolder-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserOutlookTaskGroupTaskFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolderpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outlooktaskfolder-permanentdelete?view=graph-rest-beta)
 
 
 
