@@ -15,6 +15,9 @@ title: Get-MgBetaUserOnenote
 
 Get onenote from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
