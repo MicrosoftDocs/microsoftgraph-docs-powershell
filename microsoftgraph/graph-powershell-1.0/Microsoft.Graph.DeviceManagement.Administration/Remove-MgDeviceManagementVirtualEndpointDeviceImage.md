@@ -431,8 +431,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage)
-- [](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0)
+- [Remove-MgDeviceManagementVirtualEndpointDeviceImage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0)
 
 
 
