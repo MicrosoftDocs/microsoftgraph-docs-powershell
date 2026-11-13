@@ -542,8 +542,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
-- [](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta)
+- [Invoke-MgBetaMuteAllCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamuteallcommunicationcallparticipant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-muteall?view=graph-rest-beta)
 
 
 
