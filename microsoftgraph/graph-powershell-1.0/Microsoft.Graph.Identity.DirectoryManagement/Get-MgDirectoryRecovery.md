@@ -15,6 +15,9 @@ title: Get-MgDirectoryRecovery
 
 Get recovery from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRecovery](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRecovery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

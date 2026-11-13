@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRecoverySnapshot
 
 Delete navigation property snapshots for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRecoverySnapshot](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRecoverySnapshot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgDirectoryTenantGovernanceRequest
 
 Create new navigation property to governanceRequests for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryTenantGovernanceRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
