@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
