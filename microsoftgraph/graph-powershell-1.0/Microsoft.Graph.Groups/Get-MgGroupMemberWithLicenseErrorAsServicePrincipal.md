@@ -593,7 +593,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorasserviceprincipal)
+- [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorasserviceprincipal)
 
 
 
