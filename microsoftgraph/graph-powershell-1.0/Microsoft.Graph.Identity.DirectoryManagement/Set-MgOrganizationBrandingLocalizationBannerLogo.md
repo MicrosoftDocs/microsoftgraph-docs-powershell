@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
