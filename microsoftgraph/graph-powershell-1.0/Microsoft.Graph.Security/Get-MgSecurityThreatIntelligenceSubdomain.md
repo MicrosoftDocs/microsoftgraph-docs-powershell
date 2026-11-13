@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a subdomain object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligenceSubdomain -SubdomainId $subdomainId
+
+```
+This example shows how to use the Get-MgSecurityThreatIntelligenceSubdomain Cmdlet.
+
 
 ## PARAMETERS
 
