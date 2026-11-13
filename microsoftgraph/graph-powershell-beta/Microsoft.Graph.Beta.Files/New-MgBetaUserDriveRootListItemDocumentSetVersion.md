@@ -857,7 +857,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootlistitemdocumentsetversion)
+- [New-MgBetaUserDriveRootListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootlistitemdocumentsetversion)
 
 
 

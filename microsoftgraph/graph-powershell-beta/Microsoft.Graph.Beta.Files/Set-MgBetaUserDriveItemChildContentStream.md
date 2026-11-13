@@ -521,7 +521,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriveitemchildcontentstream)
+- [Set-MgBetaUserDriveItemChildContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriveitemchildcontentstream)
 
 
 
