@@ -58,12 +58,17 @@ Cancel an eligibility assignment request to a group whose membership and ownersh
 | Application | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest -PrivilegedAccessGroupEligibilityScheduleRequestId $privilegedAccessGroupEligibilityScheduleRequestId
+
+```
+This example shows how to use the Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

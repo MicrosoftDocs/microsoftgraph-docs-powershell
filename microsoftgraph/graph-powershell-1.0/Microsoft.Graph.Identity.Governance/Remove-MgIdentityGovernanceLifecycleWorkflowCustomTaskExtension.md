@@ -59,12 +59,17 @@ A custom task extension  can only be deleted if it is not referenced in any task
 | Application | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId
+
+```
+This example shows how to use the Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 

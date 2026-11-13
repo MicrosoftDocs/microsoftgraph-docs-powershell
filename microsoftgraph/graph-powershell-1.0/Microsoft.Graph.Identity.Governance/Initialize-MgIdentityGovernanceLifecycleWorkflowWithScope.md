@@ -76,8 +76,9 @@ Workflows created from the 'Real-time employee termination' template are run on-
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
 ## EXAMPLES
+### Example 1: Activate a workflow with a specific scope of 2 users
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -94,7 +95,12 @@ $params = @{
 
 Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will activate a workflow with a specific scope of 2 users
+
+### Example 2: Activate a workflow with a specific scope of 2 users who don't exist
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -111,7 +117,12 @@ $params = @{
 
 Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will activate a workflow with a specific scope of 2 users who don't exist
+
+### Example 3: Activate a workflow with a specific processing result scope
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -131,6 +142,10 @@ $params = @{
 }
 
 Initialize-MgIdentityGovernanceLifecycleWorkflowWithScope -WorkflowId $workflowId -BodyParameter $params
+
+```
+This example will activate a workflow with a specific processing result scope
+
 
 ## PARAMETERS
 

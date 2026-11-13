@@ -58,12 +58,17 @@ Cancel an access assignment request to a group whose membership and ownership ar
 | Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -PrivilegedAccessGroupAssignmentScheduleRequestId $privilegedAccessGroupAssignmentScheduleRequestId
+
+```
+This example shows how to use the Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

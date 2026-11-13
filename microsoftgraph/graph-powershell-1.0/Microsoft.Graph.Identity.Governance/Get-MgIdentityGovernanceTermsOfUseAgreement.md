@@ -60,18 +60,28 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of an agreement object.
 
 ## EXAMPLES
+### Example 1: Retrieve an agreement
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
 
-### EXAMPLE 2
+```
+This example will retrieve an agreement
+
+### Example 2: Retrieve an agreement and its related files
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files"
+Get-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files" 
+
+```
+This example will retrieve an agreement and its related files
+
 
 ## PARAMETERS
 

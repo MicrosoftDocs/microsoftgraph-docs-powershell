@@ -53,12 +53,17 @@ In Microsoft Entra entitlement management, delete an accessPackageAssignmentPoli
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
 
 ## PARAMETERS
 

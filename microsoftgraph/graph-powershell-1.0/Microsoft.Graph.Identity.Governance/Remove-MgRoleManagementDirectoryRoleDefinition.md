@@ -60,12 +60,17 @@ This feature requires a Microsoft Entra ID P1 or P2 license.
 | Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example shows how to use the Remove-MgRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 
