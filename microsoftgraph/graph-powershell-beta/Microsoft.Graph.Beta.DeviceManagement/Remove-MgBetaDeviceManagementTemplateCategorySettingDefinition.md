@@ -539,7 +539,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementtemplatecategorysettingdefinition)
+- [Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementtemplatecategorysettingdefinition)
 
 
 
