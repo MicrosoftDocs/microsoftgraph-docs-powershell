@@ -564,8 +564,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
-- [](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)
+- [New-MgSecurityTriggerTypeRetentionEventType](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)
 
 
 

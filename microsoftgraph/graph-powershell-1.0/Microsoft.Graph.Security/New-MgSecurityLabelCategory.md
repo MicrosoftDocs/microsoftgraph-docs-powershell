@@ -516,8 +516,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
+- [New-MgSecurityLabelCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
 
 
 
