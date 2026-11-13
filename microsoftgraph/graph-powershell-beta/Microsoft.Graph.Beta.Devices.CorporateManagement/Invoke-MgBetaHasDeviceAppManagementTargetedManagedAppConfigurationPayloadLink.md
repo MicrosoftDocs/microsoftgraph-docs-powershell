@@ -362,7 +362,7 @@ BODY `<IPathsOw6D8EDeviceappmanagementTargetedmanagedappconfigurationsMicrosoftG
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementtargetedmanagedappconfigurationpayloadlink)
+- [Invoke-MgBetaHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementtargetedmanagedappconfigurationpayloadlink)
 
 
 
