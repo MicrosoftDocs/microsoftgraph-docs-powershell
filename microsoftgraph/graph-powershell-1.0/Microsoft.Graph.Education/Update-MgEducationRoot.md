@@ -29122,7 +29122,7 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot)
+- [Update-MgEducationRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot)
 
 
 

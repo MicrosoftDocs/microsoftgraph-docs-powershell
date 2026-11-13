@@ -569,8 +569,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportspeakerassignmentsubmission)
-- [](https://learn.microsoft.com/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-1.0)
+- [Get-MgEducationReportSpeakerAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportspeakerassignmentsubmission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-1.0)
 
 
 
