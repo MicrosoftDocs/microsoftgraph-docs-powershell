@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 
 Collection of evaluations
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityCopilotWorkspaces.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityCopilotWorkspaces.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
