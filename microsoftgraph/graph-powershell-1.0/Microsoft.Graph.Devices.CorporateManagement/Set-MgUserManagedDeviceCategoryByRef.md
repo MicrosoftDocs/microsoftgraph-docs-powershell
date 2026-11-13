@@ -578,7 +578,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgusermanageddevicecategorybyref)
+- [Set-MgUserManagedDeviceCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgusermanageddevicecategorybyref)
 
 
 

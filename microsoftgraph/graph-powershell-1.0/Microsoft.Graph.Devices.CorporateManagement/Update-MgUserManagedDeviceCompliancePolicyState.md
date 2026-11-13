@@ -763,7 +763,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicecompliancepolicystate)
+- [Update-MgUserManagedDeviceCompliancePolicyState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicecompliancepolicystate)
 
 
 
