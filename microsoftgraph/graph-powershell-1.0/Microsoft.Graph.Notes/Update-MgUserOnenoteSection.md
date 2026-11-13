@@ -15,6 +15,9 @@ title: Update-MgUserOnenoteSection
 
 Update the navigation property sections in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

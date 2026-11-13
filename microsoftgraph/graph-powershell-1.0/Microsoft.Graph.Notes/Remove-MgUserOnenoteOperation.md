@@ -15,6 +15,9 @@ title: Remove-MgUserOnenoteOperation
 
 Delete navigation property operations for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

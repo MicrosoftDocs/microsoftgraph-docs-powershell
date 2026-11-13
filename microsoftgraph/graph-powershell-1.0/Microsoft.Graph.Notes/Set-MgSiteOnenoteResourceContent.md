@@ -15,6 +15,9 @@ title: Set-MgSiteOnenoteResourceContent
 
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
