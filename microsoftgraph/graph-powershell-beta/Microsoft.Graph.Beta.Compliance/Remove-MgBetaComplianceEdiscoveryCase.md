@@ -53,12 +53,17 @@ Delete a case object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
+
+```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

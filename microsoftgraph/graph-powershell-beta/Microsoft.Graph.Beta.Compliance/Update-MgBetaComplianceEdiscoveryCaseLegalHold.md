@@ -85,8 +85,9 @@ Update the properties of a legalHold object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
+
 
 ## PARAMETERS
 
