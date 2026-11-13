@@ -2575,8 +2575,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch)
-- [](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-branches?view=graph-rest-beta)
+- [New-MgBetaNetworkAccessConnectivityBranch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-connectivity-post-branches?view=graph-rest-beta)
 
 
 
