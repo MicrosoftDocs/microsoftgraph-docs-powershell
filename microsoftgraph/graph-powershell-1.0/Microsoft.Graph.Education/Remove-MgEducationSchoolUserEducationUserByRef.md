@@ -15,6 +15,9 @@ title: Remove-MgEducationSchoolUserEducationUserByRef
 
 Delete a user from a school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolUserEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolUserEducationUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

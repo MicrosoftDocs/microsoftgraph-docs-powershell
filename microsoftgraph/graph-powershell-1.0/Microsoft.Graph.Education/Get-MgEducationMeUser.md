@@ -15,6 +15,9 @@ title: Get-MgEducationMeUser
 
 Retrieve the simple directory user that corresponds to this educationUser.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

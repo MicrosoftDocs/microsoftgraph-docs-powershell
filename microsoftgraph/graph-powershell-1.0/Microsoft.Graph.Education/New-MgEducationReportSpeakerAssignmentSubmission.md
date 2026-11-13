@@ -15,6 +15,9 @@ title: New-MgEducationReportSpeakerAssignmentSubmission
 
 Create new navigation property to speakerAssignmentSubmissions for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationReportSpeakerAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
