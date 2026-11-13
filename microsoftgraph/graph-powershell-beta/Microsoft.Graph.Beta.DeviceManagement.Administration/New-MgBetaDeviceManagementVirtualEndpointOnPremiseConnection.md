@@ -629,7 +629,7 @@ HelpMessage: ''
 
 ### -ScopeIds
 
-.
+
 
 ```yaml
 Type: System.String[]
