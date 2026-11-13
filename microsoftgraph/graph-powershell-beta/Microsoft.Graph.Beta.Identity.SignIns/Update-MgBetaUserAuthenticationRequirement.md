@@ -76,8 +76,9 @@ Use this API to update the following information:
 | Application | Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Update a user's MFA state
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -86,6 +87,10 @@ $params = @{
 }
 
 Update-MgBetaUserAuthenticationRequirement -UserId $userId -BodyParameter $params
+
+```
+This example will update a user's mfa state
+
 
 ## PARAMETERS
 

@@ -71,18 +71,28 @@ The following derived types are currently supported.
 | Application | CustomAuthenticationExtension.Read.All, CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get an onTokenIssuanceStartCustomExtension object
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
+
+```
+This example will get an ontokenissuancestartcustomextension object
+
+### Example 2: Get an onVerifiedIdClaimValidationCustomExtension object
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
 
-### EXAMPLE 2
+```
+This example will get an onverifiedidclaimvalidationcustomextension object
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId
 
 ## PARAMETERS
 
