@@ -48,12 +48,17 @@ Cancel a specific crossTenantMigrationTask for a User within a CrossTenantMigrat
 If the User migration can't be canceled or is in a terminal state, a 409 CONFLICT response code is returned, and the migration continues.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Stop-MgBetaCrossTenantMigrationJobUser -CrossTenantMigrationJobId $crossTenantMigrationJobId -CrossTenantMigrationTaskId $crossTenantMigrationTaskId
+
+```
+This example shows how to use the Stop-MgBetaCrossTenantMigrationJobUser Cmdlet.
+
 
 ## PARAMETERS
 
