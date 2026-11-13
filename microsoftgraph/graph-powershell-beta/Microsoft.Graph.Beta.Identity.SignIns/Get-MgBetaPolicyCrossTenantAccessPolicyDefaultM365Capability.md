@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability
 
 Defines the default Microsoft 365 cross-tenant capabilities for inbound access from external organizations.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

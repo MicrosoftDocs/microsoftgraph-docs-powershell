@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpE
 
 Get the item of type microsoft.graph.authenticationEventsFlow as microsoft.graph.externalUsersSelfServiceSignUpEventsFlow
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaPolicyTokenIssuancePolicy
 
 Create a new tokenIssuancePolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

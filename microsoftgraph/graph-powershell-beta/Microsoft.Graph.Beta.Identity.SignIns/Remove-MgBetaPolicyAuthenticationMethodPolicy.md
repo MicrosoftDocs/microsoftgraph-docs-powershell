@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyAuthenticationMethodPolicy
 
 Delete navigation property authenticationMethodsPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

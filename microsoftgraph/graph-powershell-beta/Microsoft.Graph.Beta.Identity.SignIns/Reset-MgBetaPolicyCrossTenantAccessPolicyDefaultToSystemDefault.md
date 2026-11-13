@@ -15,6 +15,9 @@ title: Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault
 
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reset (Default)

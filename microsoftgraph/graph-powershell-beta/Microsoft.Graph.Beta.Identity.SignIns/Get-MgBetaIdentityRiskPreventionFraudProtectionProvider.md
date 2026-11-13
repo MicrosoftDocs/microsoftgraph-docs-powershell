@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityRiskPreventionFraudProtectionProvider
 
 Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

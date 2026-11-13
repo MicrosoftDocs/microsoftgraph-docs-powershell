@@ -15,6 +15,9 @@ title: Get-MgBetaInvitationInvitedUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitationInvitedUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

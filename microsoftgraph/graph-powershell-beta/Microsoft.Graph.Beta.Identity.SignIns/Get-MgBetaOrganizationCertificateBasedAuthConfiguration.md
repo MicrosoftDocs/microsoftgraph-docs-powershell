@@ -15,6 +15,9 @@ title: Get-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 Get the properties of a certificateBasedAuthConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

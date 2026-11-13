@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyTokenIssuancePolicyApplyTo
 
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyTokenIssuancePolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenIssuancePolicyApplyTo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
