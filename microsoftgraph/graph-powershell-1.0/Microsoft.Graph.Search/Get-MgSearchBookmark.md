@@ -553,9 +553,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark)
-- [](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
+- [Get-MgSearchBookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
 
 
 
