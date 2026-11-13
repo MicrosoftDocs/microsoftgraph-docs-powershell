@@ -62,16 +62,6 @@ Create new navigation property to androidDeviceOwnerEnrollmentProfiles for devic
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccountId
@@ -904,6 +894,7 @@ QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mi
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroiddeviceownerenrollmentprofile)
+
 
 
 
