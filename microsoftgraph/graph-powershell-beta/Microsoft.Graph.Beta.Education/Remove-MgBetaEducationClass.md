@@ -50,12 +50,17 @@ Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationClass -EducationClassId $educationClassId
+
+```
+This example shows how to use the Remove-MgBetaEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

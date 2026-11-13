@@ -70,12 +70,17 @@ To update the properties of a published assignment, see update an assignment.
 | Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Publish-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Publish-MgBetaEducationClassAssignment Cmdlet.
+
 
 ## PARAMETERS
 
