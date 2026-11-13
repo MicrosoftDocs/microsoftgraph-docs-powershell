@@ -413,8 +413,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive)
-- [](https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-1.0)
+- [Invoke-MgKeepCommunicationCallAlive](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-1.0)
 
 
 
