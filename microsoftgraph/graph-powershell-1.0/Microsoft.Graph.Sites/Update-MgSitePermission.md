@@ -76,8 +76,9 @@ This cmdlet has the following aliases,
 Update an application permission object on a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

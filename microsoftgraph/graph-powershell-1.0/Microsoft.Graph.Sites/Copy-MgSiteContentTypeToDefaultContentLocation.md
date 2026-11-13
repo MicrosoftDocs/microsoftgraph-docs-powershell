@@ -79,8 +79,9 @@ The file can then be added as a default file or template via a POST operation.
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
+
 
 ## PARAMETERS
 

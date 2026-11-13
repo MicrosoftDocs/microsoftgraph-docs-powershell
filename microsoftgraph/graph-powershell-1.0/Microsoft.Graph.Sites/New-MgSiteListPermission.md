@@ -83,16 +83,6 @@ Create a new permission object on a list.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1118,6 +1108,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistpermission)
 - [](https://learn.microsoft.com/graph/api/list-post-permissions?view=graph-rest-1.0)
+
 
 
 

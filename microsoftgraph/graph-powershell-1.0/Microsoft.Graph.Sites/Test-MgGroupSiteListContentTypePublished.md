@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Check the publishing status of a contentType in a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -411,6 +401,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mggroupsitelistcontenttypepublished)
 - [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
+
 
 
 

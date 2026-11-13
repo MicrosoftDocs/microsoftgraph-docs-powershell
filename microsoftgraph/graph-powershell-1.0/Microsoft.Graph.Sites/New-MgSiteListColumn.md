@@ -98,8 +98,9 @@ Create a column for a list with a request that specifies a columnDefinition.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -118,6 +119,10 @@ $params = @{
 }
 
 New-MgSiteListColumn -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteListColumn Cmdlet.
+
 
 ## PARAMETERS
 

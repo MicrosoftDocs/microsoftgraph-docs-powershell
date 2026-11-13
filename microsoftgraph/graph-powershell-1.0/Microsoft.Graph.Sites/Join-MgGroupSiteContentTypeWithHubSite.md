@@ -66,16 +66,6 @@ This cmdlet has the following aliases,
 
 Associate a published content type present in a content type hub with a list of hub sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -619,6 +609,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mggroupsitecontenttypewithhubsite)
 - [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+
 
 
 
