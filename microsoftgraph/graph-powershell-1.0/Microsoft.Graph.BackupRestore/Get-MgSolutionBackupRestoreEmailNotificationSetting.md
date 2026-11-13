@@ -276,8 +276,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreemailnotificationsetting)
-- [](https://learn.microsoft.com/graph/api/emailnotificationssetting-get?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestoreEmailNotificationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreemailnotificationsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/emailnotificationssetting-get?view=graph-rest-1.0)
 
 
 

@@ -381,7 +381,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointprotectionpolicysiteinclusionrulecount)
+- [Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteInclusionRuleCount](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoresharepointprotectionpolicysiteinclusionrulecount)
 
 
 

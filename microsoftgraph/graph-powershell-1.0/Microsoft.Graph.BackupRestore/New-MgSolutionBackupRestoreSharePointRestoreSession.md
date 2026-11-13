@@ -913,8 +913,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresharepointrestoresession)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-1.0)
+- [New-MgSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoresharepointrestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-1.0)
 
 
 

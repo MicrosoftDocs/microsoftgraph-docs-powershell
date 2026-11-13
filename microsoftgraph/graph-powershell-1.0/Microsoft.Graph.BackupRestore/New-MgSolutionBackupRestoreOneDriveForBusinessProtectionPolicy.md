@@ -868,8 +868,8 @@ RETENTIONSETTINGS <IMicrosoftGraphRetentionSetting[]>: Contains the retention se
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-1.0)
+- [New-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/new-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies?view=graph-rest-1.0)
 
 
 
