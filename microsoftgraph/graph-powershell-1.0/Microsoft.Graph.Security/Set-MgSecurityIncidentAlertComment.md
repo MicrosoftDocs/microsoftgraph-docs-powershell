@@ -417,7 +417,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -497,3 +497,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

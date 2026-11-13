@@ -656,7 +656,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphEndUserNotificationDetail>: endUserNotificationDetail
+BODYPARAMETER `<IMicrosoftGraphEndUserNotificationDetail>`: endUserNotificationDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -673,7 +673,7 @@ For example, in the access reviews decisions API, this property might record the
     [Email <String>]: Email address of the user.
   [Subject <String>]: Mail subject.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -749,7 +749,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-SENTFROM <IMicrosoftGraphEmailIdentity>: emailIdentity
+SENTFROM `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -761,3 +761,25 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationendusernotificationdetail)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
