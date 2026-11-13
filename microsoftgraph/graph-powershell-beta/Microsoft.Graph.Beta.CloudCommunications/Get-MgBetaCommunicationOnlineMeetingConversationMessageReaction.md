@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
 
 A collection of reactions (such as like and smile) that users have applied to this message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversationMessageReaction](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversationMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

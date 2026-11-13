@@ -15,6 +15,9 @@ title: Remove-MgBetaCommunicationAdhocCallRecording
 
 Delete navigation property recordings for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationAdhocCallRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationOnlineMeeting
 
 Create new navigation property to onlineMeetings for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
