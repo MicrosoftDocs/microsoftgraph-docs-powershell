@@ -16,6 +16,9 @@ title: Get-MgSubscription
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
