@@ -388,8 +388,8 @@ BODYPARAMETER `<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentA
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- [Get-MgBetaGroupById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 
 

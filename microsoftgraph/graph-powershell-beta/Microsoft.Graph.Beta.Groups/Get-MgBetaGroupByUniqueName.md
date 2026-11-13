@@ -378,8 +378,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename)
-- [](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-beta)
+- [Get-MgBetaGroupByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-beta)
 
 
 

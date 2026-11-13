@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup)
-- [](https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta)
+- [Get-MgBetaGroupLifecyclePolicyByGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta)
 
 
 

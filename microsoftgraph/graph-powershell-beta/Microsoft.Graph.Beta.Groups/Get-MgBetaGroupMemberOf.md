@@ -617,8 +617,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof)
-- [](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)
+- [Get-MgBetaGroupMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-memberof?view=graph-rest-beta)
 
 
 
