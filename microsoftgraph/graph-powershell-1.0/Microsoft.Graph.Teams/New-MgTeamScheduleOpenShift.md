@@ -823,8 +823,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift)
-- [](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-1.0)
+- [New-MgTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-1.0)
 
 
 

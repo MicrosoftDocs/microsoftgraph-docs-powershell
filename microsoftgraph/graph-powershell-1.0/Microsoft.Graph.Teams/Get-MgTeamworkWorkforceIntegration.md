@@ -580,9 +580,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
+- [Get-MgTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
 
 
 

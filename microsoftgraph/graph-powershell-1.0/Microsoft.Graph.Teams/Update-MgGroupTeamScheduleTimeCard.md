@@ -924,7 +924,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduletimecard)
+- [Update-MgGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduletimecard)
 
 
 

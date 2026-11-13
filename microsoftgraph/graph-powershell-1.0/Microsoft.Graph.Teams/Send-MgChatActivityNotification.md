@@ -928,8 +928,8 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification)
-- [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
+- [Send-MgChatActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
 
 
 

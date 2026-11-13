@@ -395,8 +395,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphoto)
-- [](https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0)
+- [Get-MgTeamPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphoto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0)
 
 
 

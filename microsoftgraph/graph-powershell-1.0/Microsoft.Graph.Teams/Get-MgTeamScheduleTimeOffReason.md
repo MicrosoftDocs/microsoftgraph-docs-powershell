@@ -608,9 +608,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffreason)
-- [](https://learn.microsoft.com/graph/api/timeoffreason-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/schedule-list-timeoffreasons?view=graph-rest-1.0)
+- [Get-MgTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffreason)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoffreason-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-list-timeoffreasons?view=graph-rest-1.0)
 
 
 

@@ -382,7 +382,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequestcount)
+- [Get-MgTeamScheduleSwapShiftChangeRequestCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequestcount)
 
 
 
