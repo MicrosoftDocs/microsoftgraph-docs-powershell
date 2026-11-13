@@ -1149,7 +1149,7 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendor)
+- [Update-MgBetaFinancialCompanyPurchaseInvoiceVendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendor)
 
 
 
