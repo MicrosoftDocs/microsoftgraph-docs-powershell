@@ -79,8 +79,9 @@ This API cannot create a new chat; you must use the list chats method to retriev
 | Application | Chat.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 New-MgChatPinnedMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatPinnedMessage Cmdlet.
+
 
 ## PARAMETERS
 
