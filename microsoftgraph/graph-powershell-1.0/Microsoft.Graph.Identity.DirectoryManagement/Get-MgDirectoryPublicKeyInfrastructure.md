@@ -38,16 +38,6 @@ This cmdlet has the following aliases,
 
 The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -287,6 +277,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructure)
+
 
 
 
