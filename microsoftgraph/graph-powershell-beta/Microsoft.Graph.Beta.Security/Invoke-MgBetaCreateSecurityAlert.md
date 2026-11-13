@@ -368,7 +368,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths17Ljn1USecurityAlertsV2MicrosoftGraphSecurityCreatealertPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths17Ljn1USecurityAlertsV2MicrosoftGraphSecurityCreatealertPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreateAlertInput <IMicrosoftGraphSecurityCreateAlertInput>]: createAlertInput
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -389,7 +389,7 @@ Use 0 or omit the value to create a new incident.
     [Severity <String>]: alertSeverity
     [Title <String>]: Short display name shown for the alert in the Defender portal.
 
-CREATEALERTINPUT <IMicrosoftGraphSecurityCreateAlertInput>: createAlertInput
+CREATEALERTINPUT `<IMicrosoftGraphSecurityCreateAlertInput>`: createAlertInput
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category <String>]: MITRE ATT&CK category for the alert.
   [Description <String>]: Free-text explanation of the suspicious activity or policy violation.
@@ -413,3 +413,25 @@ Use 0 or omit the value to create a new incident.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
 - [](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

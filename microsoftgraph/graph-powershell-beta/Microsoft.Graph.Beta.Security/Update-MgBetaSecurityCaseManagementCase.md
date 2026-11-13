@@ -811,7 +811,7 @@ The maximum file size is 100 MB.
     [ResourceType <String>]: attachmentOriginType
   [ScanResult <String>]: attachmentScanResult
 
-BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementCase>: case
+BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementCase>`: case
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: The user or service that created the resource.
   [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
@@ -886,7 +886,7 @@ Supports $filter.
     [Priority <String>]: caseTaskPriority
     [Status <String>]: taskStatus
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -1041,3 +1041,25 @@ Supports $filter.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
