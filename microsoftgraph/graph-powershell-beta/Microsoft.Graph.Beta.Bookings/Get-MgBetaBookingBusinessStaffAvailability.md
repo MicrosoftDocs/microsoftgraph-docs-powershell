@@ -598,8 +598,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta)
+- [Get-MgBetaBookingBusinessStaffAvailability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta)
 
 
 
