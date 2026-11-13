@@ -579,8 +579,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendardelta)
-- [](https://learn.microsoft.com/graph/api/calendar-delta?view=graph-rest-beta)
+- [Get-MgBetaUserCalendarDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendardelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-delta?view=graph-rest-beta)
 
 
 

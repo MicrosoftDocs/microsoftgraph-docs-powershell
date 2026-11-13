@@ -713,8 +713,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermission)
-- [](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-beta)
+- [Get-MgBetaUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-beta)
 
 
 
