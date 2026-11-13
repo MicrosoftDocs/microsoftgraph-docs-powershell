@@ -15,6 +15,9 @@ title: Get-MgBetaChatMessageHostedContent
 
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

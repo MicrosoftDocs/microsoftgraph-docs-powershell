@@ -15,6 +15,9 @@ title: New-MgBetaTeamPrimaryChannelMessage
 
 Create new navigation property to messages for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

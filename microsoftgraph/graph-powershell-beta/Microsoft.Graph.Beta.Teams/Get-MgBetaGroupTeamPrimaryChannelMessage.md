@@ -16,6 +16,9 @@ title: Get-MgBetaGroupTeamPrimaryChannelMessage
 A collection of all the messages in the channel.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

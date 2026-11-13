@@ -15,6 +15,9 @@ title: Get-MgBetaAllTeamChannel
 
 List of channels either hosted in or shared with the team (incoming channels).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

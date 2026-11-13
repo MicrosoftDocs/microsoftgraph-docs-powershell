@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent
 
 Create new navigation property to hostedContents for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
