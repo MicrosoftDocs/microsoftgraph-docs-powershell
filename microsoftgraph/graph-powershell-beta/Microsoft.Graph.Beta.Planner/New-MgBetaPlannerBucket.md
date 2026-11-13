@@ -59,8 +59,9 @@ Create a new plannerBucket object.
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 New-MgBetaPlannerBucket -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPlannerBucket Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,16 +60,6 @@ Collection of goals in the plan.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -575,6 +565,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplangoal)
 - [](https://learn.microsoft.com/graph/api/plannerplan-list-goals?view=graph-rest-beta)
+
+
 
 
 
