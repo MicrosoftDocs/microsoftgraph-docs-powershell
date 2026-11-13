@@ -15,6 +15,9 @@ title: New-MgBetaContract
 
 Add new entity to contracts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

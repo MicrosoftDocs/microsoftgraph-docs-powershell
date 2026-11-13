@@ -15,6 +15,9 @@ title: Get-MgBetaAdminPeopleProfilePropertySetting
 
 Read the properties and relationships of a profilePropertySetting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

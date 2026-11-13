@@ -16,6 +16,9 @@ title: Get-MgBetaContactOnPremiseSyncBehavior
 Indicates the state of synchronization for an orgContact between the cloud and on-premises Active Directory.
 Supports $filter only with advanced query capabilities, for example, $filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactOnPremiseSyncBehavior?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

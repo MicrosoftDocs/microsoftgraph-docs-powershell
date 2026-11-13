@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryTenantGovernanceRelatedTenant
 
 Create new navigation property to relatedTenants for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
