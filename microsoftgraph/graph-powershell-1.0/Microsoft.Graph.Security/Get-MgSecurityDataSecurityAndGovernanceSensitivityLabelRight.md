@@ -15,6 +15,9 @@ title: Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight
 
 Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelRight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityLabelAuthority
 
 Read the properties and relationships of a authorityTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

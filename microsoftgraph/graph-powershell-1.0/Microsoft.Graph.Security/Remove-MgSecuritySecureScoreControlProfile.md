@@ -15,6 +15,9 @@ title: Remove-MgSecuritySecureScoreControlProfile
 
 Delete navigation property secureScoreControlProfiles for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

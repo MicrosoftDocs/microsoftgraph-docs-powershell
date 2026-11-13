@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseSearch
 
 Delete an ediscoverySearch object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

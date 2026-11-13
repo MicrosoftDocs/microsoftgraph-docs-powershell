@@ -15,6 +15,9 @@ title: Update-MgSecurityIdentitySensorCandidate
 
 Update the navigation property sensorCandidates in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
