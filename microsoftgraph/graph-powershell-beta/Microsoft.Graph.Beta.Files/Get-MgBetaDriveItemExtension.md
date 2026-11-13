@@ -66,16 +66,6 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -625,6 +615,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemextension)
+
 
 
 
