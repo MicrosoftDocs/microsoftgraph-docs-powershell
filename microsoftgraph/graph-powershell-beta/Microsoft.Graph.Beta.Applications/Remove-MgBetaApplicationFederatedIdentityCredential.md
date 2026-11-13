@@ -462,8 +462,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredential)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-beta)
+- [Remove-MgBetaApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-beta)
 
 
 
