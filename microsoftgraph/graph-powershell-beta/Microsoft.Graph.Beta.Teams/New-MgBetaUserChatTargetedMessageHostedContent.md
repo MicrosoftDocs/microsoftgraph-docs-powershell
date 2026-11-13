@@ -623,7 +623,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattargetedmessagehostedcontent)
+- [New-MgBetaUserChatTargetedMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattargetedmessagehostedcontent)
 
 
 

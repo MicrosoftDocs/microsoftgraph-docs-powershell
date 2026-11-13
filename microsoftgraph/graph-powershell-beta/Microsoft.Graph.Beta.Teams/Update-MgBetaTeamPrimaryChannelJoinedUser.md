@@ -638,7 +638,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneljoineduser)
+- [Update-MgBetaTeamPrimaryChannelJoinedUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychanneljoineduser)
 
 
 

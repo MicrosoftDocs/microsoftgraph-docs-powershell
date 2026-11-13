@@ -538,8 +538,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychanneljoineduser)
-- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
+- [Add-MgBetaTeamPrimaryChannelJoinedUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamprimarychanneljoineduser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
 
 
 
