@@ -57,16 +57,6 @@ The item is automatically moved back to its default system-defined section.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -498,6 +488,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworksectionitem)
 - [](https://learn.microsoft.com/graph/api/teamworksectionitem-delete?view=graph-rest-beta)
+
 
 
 

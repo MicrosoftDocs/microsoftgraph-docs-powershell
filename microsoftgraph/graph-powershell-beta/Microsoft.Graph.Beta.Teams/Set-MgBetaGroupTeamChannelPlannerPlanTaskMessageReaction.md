@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 
 Set a reaction to a plannerTaskChatMessage for the current user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -656,6 +646,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelplannerplantaskmessagereaction)
 - [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
+
 
 
 

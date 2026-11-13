@@ -67,12 +67,17 @@ Get the properties and relationships of a timeCard object by ID.
 | Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamScheduleTimeCard -TeamId $teamId -Top 2 -Filter "state eq 'clockedOut'"
+Get-MgBetaTeamScheduleTimeCard -TeamId $teamId -Top 2 -Filter "state eq 'clockedOut'" 
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleTimeCard Cmdlet.
+
 
 ## PARAMETERS
 

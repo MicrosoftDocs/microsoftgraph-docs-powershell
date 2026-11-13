@@ -81,16 +81,6 @@ If the item is already in another user-defined section, use the move action to r
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -665,6 +655,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworksectionitem)
 - [](https://learn.microsoft.com/graph/api/teamworksection-post-items?view=graph-rest-beta)
+
 
 
 
