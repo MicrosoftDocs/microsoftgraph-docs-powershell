@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.Read.All, BusinessScenarioConfig.ReadWrite.All, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
