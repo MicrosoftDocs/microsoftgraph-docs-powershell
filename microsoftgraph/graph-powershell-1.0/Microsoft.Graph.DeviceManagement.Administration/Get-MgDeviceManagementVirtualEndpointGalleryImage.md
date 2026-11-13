@@ -69,12 +69,17 @@ Read the properties and relationships of a specific cloudPcGalleryImage object.
 | Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementVirtualEndpointGalleryImage
+
+```
+This example shows how to use the Get-MgDeviceManagementVirtualEndpointGalleryImage Cmdlet.
+
 
 ## PARAMETERS
 
