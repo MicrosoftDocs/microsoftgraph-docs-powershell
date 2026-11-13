@@ -80,16 +80,6 @@ After you finish receiving all the changes, you may apply them to your local st
 Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -714,6 +704,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemdelta)
 - [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+
 
 
 

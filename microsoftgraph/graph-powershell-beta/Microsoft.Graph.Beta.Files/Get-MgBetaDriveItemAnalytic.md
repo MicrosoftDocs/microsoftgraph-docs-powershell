@@ -56,12 +56,17 @@ Get itemAnalytics about the views that took place under this resource.\rThe item
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgBetaDriveItemAnalytic Cmdlet.
+
 
 ## PARAMETERS
 

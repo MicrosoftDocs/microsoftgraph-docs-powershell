@@ -80,24 +80,39 @@ Deleted items are returned with the deleted facet.\rItems with this property set
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId
 
-### EXAMPLE 2
+```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest"
+Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest" 
 
-### EXAMPLE 3
+```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z"
+Get-MgBetaDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z" 
+
+```
+This example shows how to use the Get-MgBetaDriveItemDelta Cmdlet.
+
 
 ## PARAMETERS
 
