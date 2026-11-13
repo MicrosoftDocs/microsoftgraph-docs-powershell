@@ -490,7 +490,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotesectiongroupsectionpagecontent)
+- [Set-MgUserOnenoteSectionGroupSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mguseronenotesectiongroupsectionpagecontent)
 
 
 
