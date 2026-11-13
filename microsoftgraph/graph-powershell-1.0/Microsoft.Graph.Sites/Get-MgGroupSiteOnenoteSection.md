@@ -622,7 +622,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesection)
+- [Get-MgGroupSiteOnenoteSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesection)
 
 
 

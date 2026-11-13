@@ -1120,7 +1120,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresettermrelation)
+- [Update-MgSiteTermStoreSetTermRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresettermrelation)
 
 
 

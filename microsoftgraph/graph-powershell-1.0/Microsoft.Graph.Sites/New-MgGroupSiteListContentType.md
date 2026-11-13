@@ -2333,7 +2333,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttype)
+- [New-MgGroupSiteListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcontenttype)
 
 
 

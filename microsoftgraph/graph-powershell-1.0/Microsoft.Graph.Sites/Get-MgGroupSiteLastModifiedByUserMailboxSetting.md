@@ -466,7 +466,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelastmodifiedbyusermailboxsetting)
+- [Get-MgGroupSiteLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelastmodifiedbyusermailboxsetting)
 
 
 

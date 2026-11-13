@@ -1392,7 +1392,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroupsectionpage)
+- [New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroupsectionpage)
 
 
 

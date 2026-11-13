@@ -624,7 +624,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathtermstore)
+- [Get-MgGroupSiteGetByPathTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathtermstore)
 
 
 

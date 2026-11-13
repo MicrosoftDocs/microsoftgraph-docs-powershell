@@ -465,7 +465,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversionfield)
+- [Get-MgGroupSiteListItemVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversionfield)
 
 
 

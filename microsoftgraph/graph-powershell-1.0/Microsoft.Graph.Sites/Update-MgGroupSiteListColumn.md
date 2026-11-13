@@ -1958,7 +1958,7 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcolumn)
+- [Update-MgGroupSiteListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcolumn)
 
 
 

@@ -1527,7 +1527,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebooksectiongroupsection)
+- [Update-MgGroupSiteOnenoteNotebookSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebooksectiongroupsection)
 
 
 

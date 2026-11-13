@@ -386,7 +386,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mguserfollowedsitecount)
+- [Get-MgUserFollowedSiteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mguserfollowedsitecount)
 
 
 

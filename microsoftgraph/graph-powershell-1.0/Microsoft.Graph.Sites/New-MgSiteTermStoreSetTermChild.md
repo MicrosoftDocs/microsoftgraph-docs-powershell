@@ -1261,7 +1261,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermchild)
+- [New-MgSiteTermStoreSetTermChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermchild)
 
 
 

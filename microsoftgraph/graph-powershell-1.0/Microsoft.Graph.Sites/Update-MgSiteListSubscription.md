@@ -1055,7 +1055,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription)
+- [Update-MgSiteListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription)
 
 
 

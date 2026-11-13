@@ -518,7 +518,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsitelistitemdriveitemcontent)
+- [Set-MgGroupSiteListItemDriveItemContent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsitelistitemdriveitemcontent)
 
 
 

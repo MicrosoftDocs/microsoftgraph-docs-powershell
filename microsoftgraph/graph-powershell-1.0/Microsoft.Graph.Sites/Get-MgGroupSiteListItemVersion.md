@@ -673,7 +673,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion)
+- [Get-MgGroupSiteListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemversion)
 
 
 

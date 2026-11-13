@@ -486,7 +486,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemfield)
+- [Remove-MgGroupSiteListItemField](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemfield)
 
 
 
