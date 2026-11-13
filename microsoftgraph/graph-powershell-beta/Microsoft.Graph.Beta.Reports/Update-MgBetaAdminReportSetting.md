@@ -458,8 +458,8 @@ The supported values are: egressReport, throttlingReport.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
-- [](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
+- [Update-MgBetaAdminReportSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
 
 
 

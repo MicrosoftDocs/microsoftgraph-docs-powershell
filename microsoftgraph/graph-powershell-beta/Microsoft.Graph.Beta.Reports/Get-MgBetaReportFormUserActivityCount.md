@@ -397,7 +397,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportformuseractivitycount)
+- [Get-MgBetaReportFormUserActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportformuseractivitycount)
 
 
 

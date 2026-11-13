@@ -363,8 +363,8 @@ BODYPARAMETER `<IPaths1Ip676DAdminReportsettingsSharepointMicrosoftGraphEnableap
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/enable-mgbetaadminreportsettingsharepointapiusagereport)
-- [](https://learn.microsoft.com/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta)
+- [Enable-MgBetaAdminReportSettingSharePointApiUsageReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/enable-mgbetaadminreportsettingsharepointapiusagereport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta)
 
 
 

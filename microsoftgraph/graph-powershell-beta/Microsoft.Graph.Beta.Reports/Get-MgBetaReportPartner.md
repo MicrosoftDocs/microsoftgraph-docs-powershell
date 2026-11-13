@@ -276,7 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartner)
+- [Get-MgBetaReportPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartner)
 
 
 
