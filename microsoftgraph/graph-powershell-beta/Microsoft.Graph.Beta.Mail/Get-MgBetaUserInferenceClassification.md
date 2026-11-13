@@ -15,6 +15,9 @@ title: Get-MgBetaUserInferenceClassification
 
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInferenceClassification](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
