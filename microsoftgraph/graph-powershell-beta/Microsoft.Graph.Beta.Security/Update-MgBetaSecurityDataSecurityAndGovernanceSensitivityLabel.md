@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel
 
 Update the navigation property sensitivityLabels in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

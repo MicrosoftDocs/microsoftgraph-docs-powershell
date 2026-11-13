@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityLabelCitation
 
 Read the properties and relationships of a citationTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCitation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

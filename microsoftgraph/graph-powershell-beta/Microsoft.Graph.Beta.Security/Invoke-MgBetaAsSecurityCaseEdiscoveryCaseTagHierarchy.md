@@ -15,6 +15,9 @@ title: Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy
 
 List eDiscovery review tags with the tag hierarchy shown.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### As (Default)

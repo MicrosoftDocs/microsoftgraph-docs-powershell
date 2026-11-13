@@ -15,6 +15,9 @@ title: New-MgBetaSecurityThreatIntelligenceArticle
 
 Create new navigation property to articles for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

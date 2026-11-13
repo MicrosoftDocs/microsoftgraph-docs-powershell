@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityIdentityHealthIssue
 
 Delete navigation property healthIssues for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityIdentityHealthIssue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityAttackSimulationLoginPage
 
 Update the navigation property loginPages in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
