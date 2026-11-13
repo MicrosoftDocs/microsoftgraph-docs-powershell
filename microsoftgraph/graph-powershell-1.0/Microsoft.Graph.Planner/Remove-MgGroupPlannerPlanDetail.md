@@ -15,6 +15,9 @@ title: Remove-MgGroupPlannerPlanDetail
 
 Delete navigation property details for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

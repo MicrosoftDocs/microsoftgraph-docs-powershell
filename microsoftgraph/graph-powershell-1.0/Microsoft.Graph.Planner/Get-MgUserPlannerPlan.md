@@ -17,6 +17,9 @@ Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
