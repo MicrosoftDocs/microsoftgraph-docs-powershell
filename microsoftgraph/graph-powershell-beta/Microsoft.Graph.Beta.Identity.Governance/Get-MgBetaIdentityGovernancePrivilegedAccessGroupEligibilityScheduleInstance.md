@@ -69,12 +69,17 @@ Read the properties and relationships of a privilegedAccessGroupEligibilitySched
 | Application | PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: Get all eligibility schedule instances
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance -PrivilegedAccessGroupEligibilityScheduleInstanceId $privilegedAccessGroupEligibilityScheduleInstanceId
+
+```
+This example will get all eligibility schedule instances
+
 
 ## PARAMETERS
 
