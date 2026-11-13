@@ -56,8 +56,9 @@ Create a new sourceSystemDefinition object.
 | Application | IndustryData-SourceSystem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataSourceSystem -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 
