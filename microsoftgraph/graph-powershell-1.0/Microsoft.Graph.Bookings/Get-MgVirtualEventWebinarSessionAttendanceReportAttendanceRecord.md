@@ -65,12 +65,17 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
+### Example 1: List attendance records of a webinar session's attendance report
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId -MeetingAttendanceReportId $meetingAttendanceReportId
+
+```
+This example will list attendance records of a webinar session's attendance report
+
 
 ## PARAMETERS
 
