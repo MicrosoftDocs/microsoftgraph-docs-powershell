@@ -16,6 +16,9 @@ title: Get-MgPrivacySubjectRightsRequestFinalReport
 Get the final report for a subject rights request.
 The report is a text file that contains information about the files that were included by the privacy administrator.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestFinalReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
