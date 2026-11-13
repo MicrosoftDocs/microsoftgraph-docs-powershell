@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Reset a user's PIN and generate a new temporary PIN that's represented by a qrPin object and is linked to the user's QR Code authentication method object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
