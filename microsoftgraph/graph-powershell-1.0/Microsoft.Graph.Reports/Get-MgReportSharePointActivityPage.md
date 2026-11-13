@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the number of unique pages visited by users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointActivityPage -Period $periodId
+Get-MgReportSharePointActivityPage -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSharePointActivityPage Cmdlet.
+
 
 ## PARAMETERS
 
