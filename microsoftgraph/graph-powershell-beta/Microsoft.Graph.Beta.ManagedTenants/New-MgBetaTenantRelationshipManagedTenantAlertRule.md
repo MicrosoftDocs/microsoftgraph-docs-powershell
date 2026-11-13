@@ -782,7 +782,7 @@ Read-only.
   [TenantId <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>: managedTenantAlertRule
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRule>`: managedTenantAlertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -873,7 +873,7 @@ Read-only.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-RULEDEFINITION <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>: managedTenantAlertRuleDefinition
+RULEDEFINITION `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -974,3 +974,25 @@ Optional.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
