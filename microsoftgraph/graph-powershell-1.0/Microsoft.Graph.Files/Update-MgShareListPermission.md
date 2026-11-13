@@ -15,6 +15,9 @@ title: Update-MgShareListPermission
 
 Update the navigation property permissions in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

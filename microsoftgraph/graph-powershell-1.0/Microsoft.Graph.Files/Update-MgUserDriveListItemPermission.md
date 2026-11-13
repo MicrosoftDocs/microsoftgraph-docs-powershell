@@ -15,6 +15,9 @@ title: Update-MgUserDriveListItemPermission
 
 Update the navigation property permissions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

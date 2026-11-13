@@ -15,6 +15,9 @@ title: Get-MgGroupDriveItemContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

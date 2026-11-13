@@ -15,6 +15,9 @@ title: Update-MgDriveRootListItemPermission
 
 Update the navigation property permissions in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

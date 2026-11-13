@@ -15,6 +15,9 @@ title: Remove-MgUserDriveItemPermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

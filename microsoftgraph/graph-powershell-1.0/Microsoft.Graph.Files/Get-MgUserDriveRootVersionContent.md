@@ -15,6 +15,9 @@ title: Get-MgUserDriveRootVersionContent
 
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

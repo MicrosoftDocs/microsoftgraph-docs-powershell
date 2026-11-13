@@ -15,6 +15,9 @@ title: Set-MgUserDriveItemVersionContent
 
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

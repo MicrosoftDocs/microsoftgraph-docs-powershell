@@ -16,6 +16,9 @@ title: Restore-MgDriveItemVersion
 Restore a previous version of a driveItem to be the current version.
 This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

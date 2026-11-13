@@ -15,6 +15,9 @@ title: Unpublish-MgGroupDriveListContentType
 
 Unpublish a contentType from a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
