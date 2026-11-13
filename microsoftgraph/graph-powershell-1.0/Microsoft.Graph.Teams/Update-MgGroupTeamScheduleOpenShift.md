@@ -662,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphOpenShift>: openShift
+BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -707,7 +707,7 @@ Required.
   [SchedulingGroupId <String>]: The ID of the schedulingGroup that contains the openShift.
   [SharedOpenShift <IMicrosoftGraphOpenShiftItem>]: openShiftItem
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -718,7 +718,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
+DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -745,7 +745,7 @@ Required.
   [Theme <String>]: scheduleEntityTheme
   [OpenSlotCount <Int32?>]: Count of the number of slots for the given open shift.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -783,7 +783,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -794,7 +794,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
+SHAREDOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -825,3 +825,25 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
