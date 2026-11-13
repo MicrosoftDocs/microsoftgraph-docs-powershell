@@ -15,6 +15,9 @@ title: Update-MgIdentityB2XUserFlow
 
 Update the navigation property b2xUserFlows in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

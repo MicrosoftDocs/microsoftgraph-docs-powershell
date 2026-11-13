@@ -15,6 +15,9 @@ title: Update-MgPolicyPermissionGrantPolicyInclude
 
 Update the navigation property includes in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
