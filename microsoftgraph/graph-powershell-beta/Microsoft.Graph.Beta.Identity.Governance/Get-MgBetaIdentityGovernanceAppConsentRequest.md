@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAppConsentRequest
 
 Read the properties and relationships of an appConsentRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

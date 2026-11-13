@@ -16,6 +16,9 @@ title: Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleRequestBy
 In PIM, retrieve the requests for active role assignments for a particular principal.
 The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinit
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
 Supports $expand and $select nested in $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageB
 
 Remove an access package from the list of access packages marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

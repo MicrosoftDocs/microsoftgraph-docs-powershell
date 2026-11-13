@@ -16,6 +16,9 @@ title: Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessi
 Provide a subjectSummary for subjectProcessingResult objects over a specified time period.
 Because the number of subject processing results returned by the list API can be overwhelming, this summary allows administrators to get a quick overview based on counts.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Summary (Default)
