@@ -318,7 +318,7 @@ HelpMessage: ''
 
 ### -CustomWorkflowExtensions
 
-.
+
 To construct, see NOTES section for CUSTOMWORKFLOWEXTENSIONS properties and create a hash table.
 
 ```yaml
@@ -638,7 +638,7 @@ HelpMessage: ''
 
 ### -ResourceRoles
 
-.
+
 To construct, see NOTES section for RESOURCEROLES properties and create a hash table.
 
 ```yaml
@@ -694,7 +694,7 @@ HelpMessage: ''
 
 ### -ResourceScopes
 
-.
+
 To construct, see NOTES section for RESOURCESCOPES properties and create a hash table.
 
 ```yaml
