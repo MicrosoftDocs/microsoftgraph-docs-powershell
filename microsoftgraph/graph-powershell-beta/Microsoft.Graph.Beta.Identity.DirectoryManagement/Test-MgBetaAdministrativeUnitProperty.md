@@ -465,8 +465,8 @@ BODYPARAMETER `<IPaths1B6V5BxAdministrativeunitsMicrosoftGraphValidateproperties
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaAdministrativeUnitProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetaadministrativeunitproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 
