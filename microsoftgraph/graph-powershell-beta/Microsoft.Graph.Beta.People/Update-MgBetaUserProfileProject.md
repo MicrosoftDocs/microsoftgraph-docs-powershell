@@ -981,7 +981,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphProjectParticipation>: projectParticipation
+BODYPARAMETER `<IMicrosoftGraphProjectParticipation>`: projectParticipation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1061,7 +1061,7 @@ Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wa
   [Sponsors <IMicrosoftGraphRelatedPerson[]>]: The Person or people who sponsored the project.
   [ThumbnailUrl <String>]: 
 
-CLIENT <IMicrosoftGraphCompanyDetail>: companyDetail
+CLIENT `<IMicrosoftGraphCompanyDetail>`: companyDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1090,7 +1090,7 @@ COLLEAGUES <IMicrosoftGraphRelatedPerson[]>: Lists people that also worked on th
   [UserId <String>]: The user's directory object ID (Microsoft Entra ID or CID).
   [UserPrincipalName <String>]: Email address or reference to person within the organization.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1102,7 +1102,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DETAIL <IMicrosoftGraphPositionDetail>: positionDetail
+DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Company <IMicrosoftGraphCompanyDetail>]: companyDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1139,12 +1139,12 @@ For information on how to set the value for the companyCode, see profileSourceAn
   [StartMonthYear <DateTime?>]: The start date of the position.
   [Summary <String>]: The summary of the position.
 
-INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
+INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -1168,7 +1168,7 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1180,7 +1180,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
+SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -1199,3 +1199,25 @@ SPONSORS <IMicrosoftGraphRelatedPerson[]>: The Person or people who sponsored th
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
