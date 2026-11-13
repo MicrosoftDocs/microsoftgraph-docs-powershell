@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Gets a list of the number of successful sign ins for each authentication method that is available.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Invoke-MgBetaSignReportAuthenticationMethod -Period $periodId
+Invoke-MgBetaSignReportAuthenticationMethod -Period $periodId 
+
+```
+This example shows how to use the Invoke-MgBetaSignReportAuthenticationMethod Cmdlet.
+
 
 ## PARAMETERS
 

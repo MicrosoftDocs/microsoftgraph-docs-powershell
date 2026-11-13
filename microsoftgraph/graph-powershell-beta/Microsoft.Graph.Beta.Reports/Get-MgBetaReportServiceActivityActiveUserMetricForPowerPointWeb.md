@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get all the active usage based on the number of active users who open or save PowerPoint for the web.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityActiveUserMetricForPowerPointWeb
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityActiveUserMetricForPowerPointWeb Cmdlet.
+
 
 ## PARAMETERS
 

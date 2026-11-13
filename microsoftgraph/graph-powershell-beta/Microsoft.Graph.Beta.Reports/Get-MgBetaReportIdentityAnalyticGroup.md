@@ -55,20 +55,6 @@ This cmdlet has the following aliases,
 
 Read the properties of a groupAnalytics object that contains point-in-time analytics for a group in a Microsoft Entra tenant, as part of identity analytics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportIdentityAnalyticGroup
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportIdentityAnalyticGroup -Filter "isValidGroup eq true and guestTransitiveUserCount gt 0" -Property "id,displayName,createdDateTime,groupType,transitiveUserCount,guestTransitiveUserCount" -Sort "createdDateTime desc" -Top 10
-
 ## PARAMETERS
 
 ### -All
@@ -599,6 +585,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportidentityanalyticgroup)
 - [](https://learn.microsoft.com/graph/api/groupanalytics-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/identityanalyticsroot-list-groups?view=graph-rest-beta)
+
+
 
 
 
