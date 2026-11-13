@@ -76,6 +76,14 @@ When using MIME format:\r- Provide the applicable Internet message headers and t
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
