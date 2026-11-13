@@ -569,8 +569,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage)
-- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta)
+- [Get-MgBetaEducationReportReadingCoachPassage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationreportreadingcoachpassage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta)
 
 
 

@@ -413,8 +413,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationuserassignmentsubmission)
-- [](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-beta)
+- [Invoke-MgBetaReassignEducationUserAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationuserassignmentsubmission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-beta)
 
 
 
