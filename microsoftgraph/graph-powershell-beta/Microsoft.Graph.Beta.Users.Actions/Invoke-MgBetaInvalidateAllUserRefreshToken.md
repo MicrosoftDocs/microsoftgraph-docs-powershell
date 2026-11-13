@@ -54,6 +54,14 @@ In fact, this operation would force the user to sign in again for all applicatio
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application receives an error.
 If this happens, the application needs to acquire a new refresh token by making a request to the OAuth 2.0 /authorize endpoint, which forces the user to sign in.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.RevokeSessions.All, Directory.ReadWrite.All, User.ReadWrite,  |
+| Delegated (personal Microsoft account) | User.ReadWrite,  |
+| Application | User.RevokeSessions.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
