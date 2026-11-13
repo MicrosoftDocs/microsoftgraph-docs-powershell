@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReportDeviceAppInstallationStatusReport
 
 Invoke action retrieveDeviceAppInstallationStatusReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RetrieveExpanded (Default)

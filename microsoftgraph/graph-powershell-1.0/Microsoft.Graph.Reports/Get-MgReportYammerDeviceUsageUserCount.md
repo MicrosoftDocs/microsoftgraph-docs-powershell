@@ -15,6 +15,9 @@ title: Get-MgReportYammerDeviceUsageUserCount
 
 Get the number of daily users by device type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

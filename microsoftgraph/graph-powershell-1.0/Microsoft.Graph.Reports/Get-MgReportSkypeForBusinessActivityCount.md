@@ -16,6 +16,9 @@ title: Get-MgReportSkypeForBusinessActivityCount
 Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business.
 The report also includes the number of peer-to-peer sessions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
