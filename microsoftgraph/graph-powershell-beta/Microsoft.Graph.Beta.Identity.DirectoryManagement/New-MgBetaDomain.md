@@ -639,7 +639,7 @@ HelpMessage: ''
 
 ### -SharedEmailDomainInvitations
 
-.
+
 To construct, see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
 
 ```yaml
