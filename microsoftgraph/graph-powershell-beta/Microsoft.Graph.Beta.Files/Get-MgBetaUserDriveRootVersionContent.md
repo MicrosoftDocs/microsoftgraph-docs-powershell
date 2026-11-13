@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveRootVersionContent
 
 Get content for the navigation property versions from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

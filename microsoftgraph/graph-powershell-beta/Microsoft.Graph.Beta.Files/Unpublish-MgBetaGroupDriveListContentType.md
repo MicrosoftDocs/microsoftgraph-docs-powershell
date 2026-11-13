@@ -15,6 +15,9 @@ title: Unpublish-MgBetaGroupDriveListContentType
 
 Invoke action unpublish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgGroupDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)

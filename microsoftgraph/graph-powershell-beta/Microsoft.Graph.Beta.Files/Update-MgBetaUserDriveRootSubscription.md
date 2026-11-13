@@ -15,6 +15,9 @@ title: Update-MgBetaUserDriveRootSubscription
 
 Update the navigation property subscriptions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

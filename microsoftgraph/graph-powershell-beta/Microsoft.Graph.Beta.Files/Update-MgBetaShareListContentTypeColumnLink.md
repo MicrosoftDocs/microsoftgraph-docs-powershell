@@ -15,6 +15,9 @@ title: Update-MgBetaShareListContentTypeColumnLink
 
 Update the navigation property columnLinks in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

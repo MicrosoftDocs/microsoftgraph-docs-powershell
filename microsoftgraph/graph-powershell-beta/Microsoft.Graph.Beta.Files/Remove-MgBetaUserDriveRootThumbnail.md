@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveRootThumbnail
 
 Delete navigation property thumbnails for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
