@@ -15,6 +15,9 @@ title: Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 Update the properties of a delegatedAdminAccessAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
