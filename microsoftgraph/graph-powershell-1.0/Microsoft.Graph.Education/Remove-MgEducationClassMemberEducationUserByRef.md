@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Remove an educationUser from an educationClass.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassMemberEducationUserByRef -EducationClassId $educationClassId -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgEducationClassMemberEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 
