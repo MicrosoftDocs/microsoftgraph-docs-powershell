@@ -16,6 +16,9 @@ title: Get-MgBetaEducationClassTeacher
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaEducationUserAssignmentSubmissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmissionCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

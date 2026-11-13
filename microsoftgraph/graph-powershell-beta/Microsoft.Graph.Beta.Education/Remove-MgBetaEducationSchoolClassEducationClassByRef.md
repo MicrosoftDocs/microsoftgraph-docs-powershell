@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationSchoolClassEducationClassByRef
 
 Delete a class from a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchoolClassEducationClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassEducationClassByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
