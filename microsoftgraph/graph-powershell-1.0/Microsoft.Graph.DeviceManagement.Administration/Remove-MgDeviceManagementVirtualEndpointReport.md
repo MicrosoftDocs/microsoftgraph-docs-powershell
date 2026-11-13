@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementVirtualEndpointReport
 
 Delete navigation property report for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
