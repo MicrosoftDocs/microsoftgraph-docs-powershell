@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 Restart a stopped synchronizationJob, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -570,6 +560,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-beta)
+
 
 
 
