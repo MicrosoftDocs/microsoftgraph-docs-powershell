@@ -15,6 +15,9 @@ title: Update-MgUserMailFolderChildFolder
 
 Update the navigation property childFolders in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

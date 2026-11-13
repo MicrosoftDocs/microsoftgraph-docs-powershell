@@ -15,6 +15,9 @@ title: Get-MgUserMailFolderCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
