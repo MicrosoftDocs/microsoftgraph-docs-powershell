@@ -447,8 +447,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight)
-- [](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
+- [Update-MgAdminPeopleItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleiteminsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
 
 
 

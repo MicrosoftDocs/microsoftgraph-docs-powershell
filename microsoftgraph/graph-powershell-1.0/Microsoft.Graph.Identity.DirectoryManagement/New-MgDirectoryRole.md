@@ -598,8 +598,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole)
-- [](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)
+- [New-MgDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)
 
 
 
