@@ -593,8 +593,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant)
-- [](https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0)
+- [Get-MgUserOauth2PermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0)
 
 
 
