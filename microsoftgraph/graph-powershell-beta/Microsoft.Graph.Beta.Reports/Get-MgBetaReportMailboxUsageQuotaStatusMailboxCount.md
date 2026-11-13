@@ -15,6 +15,9 @@ title: Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount
 
 Invoke function getMailboxUsageQuotaStatusMailboxCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportMailboxUsageQuotaStatusMailboxCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMailboxUsageQuotaStatusMailboxCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

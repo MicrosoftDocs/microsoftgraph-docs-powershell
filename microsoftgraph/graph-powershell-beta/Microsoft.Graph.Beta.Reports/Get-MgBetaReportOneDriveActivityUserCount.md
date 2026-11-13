@@ -15,6 +15,9 @@ title: Get-MgBetaReportOneDriveActivityUserCount
 
 Invoke function getOneDriveActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOneDriveActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveActivityUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
