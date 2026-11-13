@@ -802,8 +802,8 @@ Only Users are supported at this time.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob)
-- [](https://learn.microsoft.com/graph/api/migrationsroot-post-crosstenantmigrationjobs?view=graph-rest-beta)
+- [New-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/migrationsroot-post-crosstenantmigrationjobs?view=graph-rest-beta)
 
 
 
