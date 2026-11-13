@@ -387,8 +387,8 @@ BODYPARAMETER `<IPaths1Izu2OlDirectoryobjectsMicrosoftGraphGetavailableextension
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)
+- [Get-MgDirectoryObjectAvailableExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-1.0)
 
 
 
