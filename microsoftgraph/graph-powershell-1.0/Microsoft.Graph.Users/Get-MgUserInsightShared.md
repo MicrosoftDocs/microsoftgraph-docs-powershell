@@ -64,16 +64,6 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -592,6 +582,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightshared)
+
 
 
 
