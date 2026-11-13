@@ -69,6 +69,14 @@ Reorder the sections in a user's teamwork.
 The sectionsOrder collection must contain every section ID returned by List sections, exactly once.
 If the collection contains the *QuickViews* system section, that section must be first.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
