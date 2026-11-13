@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupConversation
 
 Delete conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

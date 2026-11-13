@@ -15,6 +15,9 @@ title: New-MgBetaGroupConversationThreadPostAttachment
 
 Create new navigation property to attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

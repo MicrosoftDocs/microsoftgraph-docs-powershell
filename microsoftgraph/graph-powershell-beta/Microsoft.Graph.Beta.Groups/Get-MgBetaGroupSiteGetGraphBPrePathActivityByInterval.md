@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval
 
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
