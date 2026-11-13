@@ -15,6 +15,9 @@ title: Remove-MgUserContactFolderChildFolderContactExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContactExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
