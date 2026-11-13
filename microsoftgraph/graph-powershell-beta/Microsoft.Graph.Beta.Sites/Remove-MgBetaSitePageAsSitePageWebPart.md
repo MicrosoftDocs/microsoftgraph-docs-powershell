@@ -497,8 +497,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagewebpart)
-- [](https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-beta)
+- [Remove-MgBetaSitePageAsSitePageWebPart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagewebpart)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-beta)
 
 
 
