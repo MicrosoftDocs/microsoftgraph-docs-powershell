@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteGetByPathPage
 
 The collection of pages in the baseSitePages list on this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

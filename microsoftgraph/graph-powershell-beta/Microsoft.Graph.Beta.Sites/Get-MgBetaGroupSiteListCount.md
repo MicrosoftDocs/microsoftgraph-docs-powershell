@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteListCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
