@@ -54,6 +54,14 @@ This cmdlet has the following aliases,
 
 Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
