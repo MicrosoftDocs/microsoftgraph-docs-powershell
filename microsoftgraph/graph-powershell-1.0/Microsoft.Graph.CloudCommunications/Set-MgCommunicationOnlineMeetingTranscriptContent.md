@@ -16,6 +16,9 @@ title: Set-MgCommunicationOnlineMeetingTranscriptContent
 The content of the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingTranscriptContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

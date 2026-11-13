@@ -15,6 +15,9 @@ title: Remove-MgUserOnlineMeetingTranscript
 
 Delete navigation property transcripts for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

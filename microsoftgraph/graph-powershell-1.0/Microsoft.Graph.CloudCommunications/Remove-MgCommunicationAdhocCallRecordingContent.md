@@ -16,6 +16,9 @@ title: Remove-MgCommunicationAdhocCallRecordingContent
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationAdhocCallRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationAdhocCallRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
