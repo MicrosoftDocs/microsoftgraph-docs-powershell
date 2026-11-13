@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceAccessReviewDefinitionInstanceStage
 
 Create new navigation property to stages for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

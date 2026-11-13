@@ -18,6 +18,9 @@ A review that doesn't recur will have exactly one instance.
 Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
 If a review has multiple resources and multiple instances, each resource has a unique instance for each recurrence.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

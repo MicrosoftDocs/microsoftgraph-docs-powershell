@@ -17,6 +17,9 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it's null.
 Supports $expand and $select nested in $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 
 Get resourceActions from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

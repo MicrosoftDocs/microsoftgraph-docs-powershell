@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision
 
 Update the navigation property decisions in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

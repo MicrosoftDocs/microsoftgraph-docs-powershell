@@ -16,6 +16,9 @@ title: Get-MgAgreementFileVersion
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

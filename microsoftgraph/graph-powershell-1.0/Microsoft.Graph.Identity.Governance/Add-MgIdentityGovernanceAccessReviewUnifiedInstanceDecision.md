@@ -16,6 +16,9 @@ title: Add-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be Completed to call this method.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Apply (Default)

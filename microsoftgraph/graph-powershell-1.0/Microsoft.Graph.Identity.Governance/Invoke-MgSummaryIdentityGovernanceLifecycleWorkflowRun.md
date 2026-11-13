@@ -16,6 +16,9 @@ title: Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun
 Get a runSummary for run objects over a specified time period.
 Because the number of runs returned by the list API call can be overwhelming, this summary allows administrators to get a quick overview based on counts.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Summary (Default)

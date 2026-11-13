@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceTermsOfUseAgreementFileVersion
 
 Create new navigation property to versions for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

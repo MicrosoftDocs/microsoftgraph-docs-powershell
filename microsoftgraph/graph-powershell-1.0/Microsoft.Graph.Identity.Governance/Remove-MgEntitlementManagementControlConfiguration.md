@@ -15,6 +15,9 @@ title: Remove-MgEntitlementManagementControlConfiguration
 
 Delete navigation property controlConfigurations for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementControlConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

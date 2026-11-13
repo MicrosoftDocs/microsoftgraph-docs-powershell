@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementSubject
 
 Get subjects from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that doesn't recur will have exactly one instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

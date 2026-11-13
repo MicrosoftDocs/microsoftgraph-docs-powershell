@@ -16,6 +16,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRo
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowTask
 
 Update the navigation property tasks in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

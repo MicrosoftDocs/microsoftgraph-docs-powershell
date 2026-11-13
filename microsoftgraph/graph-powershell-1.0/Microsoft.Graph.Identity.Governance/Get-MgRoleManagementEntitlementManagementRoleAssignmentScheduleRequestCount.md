@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestCou
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

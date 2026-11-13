@@ -15,6 +15,9 @@ title: Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCu
 
 Get the instances of eligible roles for the calling principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

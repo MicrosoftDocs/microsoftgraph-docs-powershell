@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult
 
 Per-user workflow execution results.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

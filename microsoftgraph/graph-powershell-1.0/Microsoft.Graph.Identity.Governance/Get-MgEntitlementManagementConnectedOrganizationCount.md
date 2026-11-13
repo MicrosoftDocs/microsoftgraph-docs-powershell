@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementConnectedOrganizationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

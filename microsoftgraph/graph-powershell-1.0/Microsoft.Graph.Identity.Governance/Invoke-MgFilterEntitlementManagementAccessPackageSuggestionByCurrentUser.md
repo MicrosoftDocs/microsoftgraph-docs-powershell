@@ -17,6 +17,9 @@ Retrieve suggested accessPackageSuggestion objects for the current end user.
 This operation returns access packages that are suggested based on various criteria such as related people insights and the user's assignment history.
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask
 
 Update the navigation property tasks in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

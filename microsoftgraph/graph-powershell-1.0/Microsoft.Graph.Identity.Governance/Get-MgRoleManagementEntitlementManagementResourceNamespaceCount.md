@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagementResourceNamespaceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
