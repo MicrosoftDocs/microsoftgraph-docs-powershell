@@ -560,9 +560,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter)
-- [](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0)
+- [Get-MgReportDailyPrintUsageByPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0)
 
 
 
