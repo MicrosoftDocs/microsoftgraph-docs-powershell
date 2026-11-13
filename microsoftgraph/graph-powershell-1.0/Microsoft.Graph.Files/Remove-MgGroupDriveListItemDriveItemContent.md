@@ -448,7 +448,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemdriveitemcontent)
+- [Remove-MgGroupDriveListItemDriveItemContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemdriveitemcontent)
 
 
 

@@ -679,7 +679,7 @@ This is only available when a folder thumbnail is requested.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootthumbnail)
+- [New-MgGroupDriveRootThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootthumbnail)
 
 
 

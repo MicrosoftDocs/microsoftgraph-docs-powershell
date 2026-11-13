@@ -750,7 +750,7 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitemlink)
+- [New-MgUserDriveListItemLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitemlink)
 
 
 

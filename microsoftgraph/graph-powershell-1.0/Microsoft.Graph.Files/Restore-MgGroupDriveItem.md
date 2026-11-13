@@ -627,8 +627,8 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mggroupdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
+- [Restore-MgGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mggroupdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
 
 
 

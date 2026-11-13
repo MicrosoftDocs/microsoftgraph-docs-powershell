@@ -710,7 +710,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootlistitemversion)
+- [Update-MgUserDriveRootListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootlistitemversion)
 
 
 

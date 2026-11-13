@@ -494,8 +494,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopyfromcontenttypehub)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
+- [Add-MgShareListContentTypeCopyFromContentTypeHub](https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopyfromcontenttypehub)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-1.0)
 
 
 

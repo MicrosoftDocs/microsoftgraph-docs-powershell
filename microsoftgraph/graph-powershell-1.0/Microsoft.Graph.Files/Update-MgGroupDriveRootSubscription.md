@@ -1040,7 +1040,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootsubscription)
+- [Update-MgGroupDriveRootSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootsubscription)
 
 
 

@@ -568,7 +568,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession)
+- [New-MgDriveItemUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession)
 
 
 

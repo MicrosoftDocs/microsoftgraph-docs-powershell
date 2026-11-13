@@ -514,7 +514,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticitemactivitystatactivity)
+- [Get-MgGroupDriveRootAnalyticItemActivityStatActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticitemactivitystatactivity)
 
 
 

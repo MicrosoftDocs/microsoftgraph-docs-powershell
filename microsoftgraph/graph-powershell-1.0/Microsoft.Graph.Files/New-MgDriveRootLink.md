@@ -699,8 +699,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlink)
-- [](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
+- [New-MgDriveRootLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlink)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
 
 
 

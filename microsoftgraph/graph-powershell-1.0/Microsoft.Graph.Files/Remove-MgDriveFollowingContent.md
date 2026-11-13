@@ -427,7 +427,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivefollowingcontent)
+- [Remove-MgDriveFollowingContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivefollowingcontent)
 
 
 

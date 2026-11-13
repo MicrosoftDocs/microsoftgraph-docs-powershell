@@ -1943,7 +1943,7 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttypecolumn)
+- [Update-MgUserDriveListContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttypecolumn)
 
 
 

@@ -609,8 +609,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mggroupdrivelistitempermission)
-- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+- [Grant-MgGroupDriveListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mggroupdrivelistitempermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
 
 
 
