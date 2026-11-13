@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

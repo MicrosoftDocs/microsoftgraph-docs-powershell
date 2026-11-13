@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedEBookInstallSummary
 
 Mobile App Install Summary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
