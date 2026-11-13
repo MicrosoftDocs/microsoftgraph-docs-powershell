@@ -81,8 +81,9 @@ Update the properties of an approvedClientApp object for a remotedesktopsecurity
 | Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -ApprovedClientAppId $approvedClientAppId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
+
 
 ## PARAMETERS
 

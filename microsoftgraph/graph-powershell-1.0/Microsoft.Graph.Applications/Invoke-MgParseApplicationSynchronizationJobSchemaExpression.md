@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -715,6 +705,7 @@ Not nullable.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationjobschemaexpression)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
+
 
 
 
