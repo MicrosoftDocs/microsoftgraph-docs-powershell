@@ -368,7 +368,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof)
+- [Get-MgApplicationCreatedOnBehalfOf](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof)
 
 
 

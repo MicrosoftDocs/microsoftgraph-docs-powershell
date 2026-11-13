@@ -747,7 +747,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty)
+- [Update-MgApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty)
 
 
 
