@@ -15,6 +15,9 @@ title: Get-MgUserOwnedObjectAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedObjectAsApplication](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

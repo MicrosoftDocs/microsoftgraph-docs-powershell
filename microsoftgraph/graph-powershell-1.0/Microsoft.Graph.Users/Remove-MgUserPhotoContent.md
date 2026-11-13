@@ -16,6 +16,9 @@ title: Remove-MgUserPhotoContent
 The user's profile photo.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
