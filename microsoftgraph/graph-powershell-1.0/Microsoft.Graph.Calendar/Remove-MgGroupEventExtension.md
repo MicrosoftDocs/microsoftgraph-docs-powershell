@@ -15,6 +15,9 @@ title: Remove-MgGroupEventExtension
 
 Delete navigation property extensions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

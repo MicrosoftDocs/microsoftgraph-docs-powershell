@@ -15,6 +15,9 @@ title: New-MgGroupEvent
 
 Use this API to create a new event.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
