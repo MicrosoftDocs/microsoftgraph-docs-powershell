@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Set the state of a user's presence session as an application.
 For more information about presence sessions, states permutations, and timeouts, see Manage presence state using the Microsoft Graph API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Presence.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Presence.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
