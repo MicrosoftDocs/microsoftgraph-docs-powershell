@@ -15,6 +15,9 @@ title: Get-MgBetaExternalConnectionOperation
 
 Get operations from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
