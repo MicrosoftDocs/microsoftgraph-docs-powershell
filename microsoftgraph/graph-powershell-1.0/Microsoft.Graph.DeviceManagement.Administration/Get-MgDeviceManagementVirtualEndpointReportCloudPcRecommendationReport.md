@@ -596,7 +596,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -612,3 +612,25 @@ BODY <IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrieveclo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
 - [](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
