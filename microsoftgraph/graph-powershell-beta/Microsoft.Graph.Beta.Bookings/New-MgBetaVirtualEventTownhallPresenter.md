@@ -16,6 +16,9 @@ title: New-MgBetaVirtualEventTownhallPresenter
 Create a new virtualEventPresenter object on a virtual event.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhallPresenter](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhallPresenter?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventWebinarRegistrationByUserId
 
 Update the navigation property registrations in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarRegistrationByUserId](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarRegistrationByUserId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

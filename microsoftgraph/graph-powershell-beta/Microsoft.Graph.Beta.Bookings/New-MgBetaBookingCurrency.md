@@ -15,6 +15,9 @@ title: New-MgBetaBookingCurrency
 
 Add new entity to bookingCurrencies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

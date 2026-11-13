@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventSessionAttendanceReport
 
 Update the navigation property attendanceReports in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionAttendanceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
