@@ -528,7 +528,7 @@ HelpMessage: ''
 
 ### -ExternalColumns
 
-.
+
 To construct, see NOTES section for EXTERNALCOLUMNS properties and create a hash table.
 
 ```yaml
