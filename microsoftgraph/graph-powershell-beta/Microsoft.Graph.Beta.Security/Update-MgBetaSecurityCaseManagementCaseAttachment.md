@@ -82,16 +82,6 @@ Update the properties of an attachment object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -957,6 +947,7 @@ ORIGIN `<IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>`: attachmentOrig
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseattachment)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-update?view=graph-rest-beta)
+
 
 
 

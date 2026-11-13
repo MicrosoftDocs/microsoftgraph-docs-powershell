@@ -53,16 +53,6 @@ Trigger a retry of an eDiscovery hold policy.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -516,6 +506,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaretrysecuritycaseediscoverycaselegalholdpolicy)
 - [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-retrypolicy?view=graph-rest-beta)
+
 
 
 
