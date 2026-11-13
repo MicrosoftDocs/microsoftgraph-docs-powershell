@@ -15,6 +15,9 @@ title: Get-MgBetaCompliance
 
 Get compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Get-MgCompliance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
