@@ -953,7 +953,7 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance)
+- [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance)
 
 
 
