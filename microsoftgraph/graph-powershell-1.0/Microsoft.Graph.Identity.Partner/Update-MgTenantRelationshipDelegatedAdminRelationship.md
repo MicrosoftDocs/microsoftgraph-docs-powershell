@@ -94,8 +94,9 @@ The following restrictions apply:\r- You can update this relationship when its s
 | Application | DelegatedAdminRelationship.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Partner
 
@@ -125,6 +126,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipDelegatedAdminRelationship -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTenantRelationshipDelegatedAdminRelationship Cmdlet.
+
 
 ## PARAMETERS
 
