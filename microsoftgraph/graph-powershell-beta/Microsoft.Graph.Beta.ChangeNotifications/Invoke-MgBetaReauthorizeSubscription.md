@@ -15,6 +15,9 @@ title: Invoke-MgBetaReauthorizeSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Invoke-MgReauthorizeSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reauthorize (Default)
