@@ -15,6 +15,9 @@ title: Request-MgBetaUserManagedDeviceRemoteAssistance
 
 Request remote assistance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Request-MgUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Request-MgUserManagedDeviceRemoteAssistance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Request (Default)
