@@ -392,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths2Iq6I3DirectoryroletemplatesMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths2Iq6I3DirectoryroletemplatesMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: 
   [UserId <String>]:
@@ -402,3 +402,25 @@ BODYPARAMETER <IPaths2Iq6I3DirectoryroletemplatesMicrosoftGraphGetuserownedobjec
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplateuserownedobject)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
