@@ -575,8 +575,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
-- [](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-beta)
+- [New-MgBetaSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-beta)
 
 
 
