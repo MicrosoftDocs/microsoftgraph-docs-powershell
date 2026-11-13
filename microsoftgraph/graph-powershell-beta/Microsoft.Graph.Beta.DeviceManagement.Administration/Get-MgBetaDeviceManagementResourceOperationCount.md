@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementResourceOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementResourceOperationCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementResourceOperationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

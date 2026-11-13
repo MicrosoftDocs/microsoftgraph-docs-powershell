@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementApplePushNotificationCertificate
 
 Delete navigation property applePushNotificationCertificate for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
