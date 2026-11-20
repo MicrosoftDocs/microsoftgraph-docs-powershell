@@ -539,8 +539,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordingstatus)
-- [](https://learn.microsoft.com/graph/api/call-updaterecordingstatus?view=graph-rest-1.0)
+- [Update-MgCommunicationCallRecordingStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordingstatus)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-updaterecordingstatus?view=graph-rest-1.0)
 
 
 

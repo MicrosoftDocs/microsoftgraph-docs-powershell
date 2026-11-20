@@ -613,8 +613,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingconversationmessagereaction)
-- [](https://learn.microsoft.com/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-1.0)
+- [Get-MgCommunicationOnlineMeetingConversationMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingconversationmessagereaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-1.0)
 
 
 

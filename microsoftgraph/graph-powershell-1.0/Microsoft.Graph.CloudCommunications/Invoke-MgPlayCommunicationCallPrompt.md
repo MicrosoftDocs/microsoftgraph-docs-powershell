@@ -548,8 +548,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt)
-- [](https://learn.microsoft.com/graph/api/call-playprompt?view=graph-rest-1.0)
+- [Invoke-MgPlayCommunicationCallPrompt](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-playprompt?view=graph-rest-1.0)
 
 
 
