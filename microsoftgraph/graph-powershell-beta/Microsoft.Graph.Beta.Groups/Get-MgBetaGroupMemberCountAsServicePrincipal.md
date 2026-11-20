@@ -15,6 +15,9 @@ title: Get-MgBetaGroupMemberCountAsServicePrincipal
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberCountAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

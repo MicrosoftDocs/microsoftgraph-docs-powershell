@@ -19,6 +19,9 @@ Group-based licensing is an alternative to direct user licensing.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

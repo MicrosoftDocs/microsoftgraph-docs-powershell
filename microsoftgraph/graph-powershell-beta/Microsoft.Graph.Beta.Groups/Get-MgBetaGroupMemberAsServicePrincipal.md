@@ -17,6 +17,9 @@ Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

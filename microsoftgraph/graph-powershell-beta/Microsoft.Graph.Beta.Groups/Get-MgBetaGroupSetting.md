@@ -16,6 +16,9 @@ title: Get-MgBetaGroupSetting
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
