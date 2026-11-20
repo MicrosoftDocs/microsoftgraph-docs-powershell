@@ -775,7 +775,7 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance)
+- [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance)
 
 
 
