@@ -48,6 +48,14 @@ Delete an externalUserProfile object.
 Note: To permanently delete the externalUserProfile, follow permanently delete an item.
 To restore an externalUserProfile, follow restore a deleted item.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ExternalUserProfile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ExternalUserProfile.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

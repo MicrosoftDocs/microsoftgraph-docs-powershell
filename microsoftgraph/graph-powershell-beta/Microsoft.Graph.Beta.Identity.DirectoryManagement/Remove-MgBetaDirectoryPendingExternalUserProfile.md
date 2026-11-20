@@ -48,6 +48,14 @@ Delete a pendingExternalUserProfile object.
 Note: To permanently delete the pendingExternalUserProfile, follow permanently delete an item.
 To restore a pendingExternalUserProfile, follow restore a deleted item.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PendingExternalUserProfile.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PendingExternalUserProfile.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
