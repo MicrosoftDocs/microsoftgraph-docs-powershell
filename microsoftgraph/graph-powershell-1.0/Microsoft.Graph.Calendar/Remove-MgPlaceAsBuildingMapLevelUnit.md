@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsBuildingMapLevelUnit
 
 Delete a unitMap object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

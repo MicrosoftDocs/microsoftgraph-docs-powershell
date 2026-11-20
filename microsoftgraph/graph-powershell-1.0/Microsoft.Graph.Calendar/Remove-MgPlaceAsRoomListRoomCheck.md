@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsRoomListRoomCheck
 
 Delete navigation property checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsRoomListRoomCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsRoomListRoomCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
