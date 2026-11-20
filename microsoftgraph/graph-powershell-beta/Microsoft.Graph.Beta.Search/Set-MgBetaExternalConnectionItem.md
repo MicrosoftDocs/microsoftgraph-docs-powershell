@@ -17,6 +17,9 @@ Create a new externalItem.
 This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
