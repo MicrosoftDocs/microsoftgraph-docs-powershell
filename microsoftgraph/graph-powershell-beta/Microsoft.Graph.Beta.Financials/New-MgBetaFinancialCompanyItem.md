@@ -114,7 +114,7 @@ HelpMessage: ''
 
 ### -BaseUnitOfMeasureId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ HelpMessage: ''
 
 ### -Blocked
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +266,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -293,7 +293,7 @@ HelpMessage: ''
 
 ### -Gtin
 
-.
+
 
 ```yaml
 Type: System.String
@@ -383,7 +383,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -438,7 +438,7 @@ HelpMessage: ''
 
 ### -Inventory
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -493,7 +493,7 @@ HelpMessage: ''
 
 ### -ItemCategoryCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -520,7 +520,7 @@ HelpMessage: ''
 
 ### -ItemCategoryId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -547,7 +547,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -574,7 +574,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -601,7 +601,7 @@ HelpMessage: ''
 
 ### -Picture
 
-.
+
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -629,7 +629,7 @@ HelpMessage: ''
 
 ### -PriceIncludesTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -741,7 +741,7 @@ HelpMessage: ''
 
 ### -TaxGroupCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -768,7 +768,7 @@ HelpMessage: ''
 
 ### -TaxGroupId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -795,7 +795,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String
@@ -822,7 +822,7 @@ HelpMessage: ''
 
 ### -UnitCost
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -849,7 +849,7 @@ HelpMessage: ''
 
 ### -UnitPrice
 
-.
+
 
 ```yaml
 Type: System.Decimal
