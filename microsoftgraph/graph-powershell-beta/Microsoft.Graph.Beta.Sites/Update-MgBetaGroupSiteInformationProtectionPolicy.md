@@ -66,16 +66,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property policy in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -632,6 +622,7 @@ Active labels should be hidden or disabled in user interfaces.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicy)
+
 
 
 
