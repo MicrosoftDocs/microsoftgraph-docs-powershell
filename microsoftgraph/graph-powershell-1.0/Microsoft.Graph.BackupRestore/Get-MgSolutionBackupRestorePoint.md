@@ -556,8 +556,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestorepoint)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-1.0)
 
 
 
