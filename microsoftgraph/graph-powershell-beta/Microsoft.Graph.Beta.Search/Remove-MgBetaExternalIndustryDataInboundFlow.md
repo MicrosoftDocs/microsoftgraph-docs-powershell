@@ -421,8 +421,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta)
+- [Remove-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundflow-delete?view=graph-rest-beta)
 
 
 
