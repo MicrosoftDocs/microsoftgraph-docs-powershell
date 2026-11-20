@@ -86,9 +86,9 @@ Update the navigation property settings in users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -97,6 +97,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserSetting -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
