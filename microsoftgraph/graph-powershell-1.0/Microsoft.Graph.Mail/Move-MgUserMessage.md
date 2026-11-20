@@ -78,8 +78,9 @@ This creates a new copy of the message in the destination folder and removes the
 | Application | Mail.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Mail
 
@@ -89,6 +90,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgUserMessage Cmdlet.
+
 
 ## PARAMETERS
 
