@@ -120,8 +120,9 @@ The ID is also known as the tenantId of the organization.
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -146,6 +147,10 @@ technicalNotificationMails = @(
 }
 
 Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOrganization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -67,9 +67,9 @@ Retrieve the properties and relationships of domain object.
 | Application | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a list of domain objects
 
-### EXAMPLE 1
-
+```powershell
 Get-MgBetaDomain | Format-List
 
 AuthenticationType               : Managed
@@ -90,6 +90,9 @@ State                            : Microsoft.Graph.PowerShell.Models.MicrosoftGr
 SupportedServices                : {Email, OfficeCommunicationsOnline}
 VerificationDnsRecords           :
 AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
+```
+
+This example retrieves a list of the domain objects.
 
 ## PARAMETERS
 

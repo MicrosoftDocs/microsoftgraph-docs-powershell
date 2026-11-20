@@ -44,12 +44,17 @@ Delete navigation property photoUpdateSettings for admin
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaAdminPeoplePhotoUpdateSetting
+
+```
+This example shows how to use the Remove-MgBetaAdminPeoplePhotoUpdateSetting Cmdlet.
+
 
 ## PARAMETERS
 

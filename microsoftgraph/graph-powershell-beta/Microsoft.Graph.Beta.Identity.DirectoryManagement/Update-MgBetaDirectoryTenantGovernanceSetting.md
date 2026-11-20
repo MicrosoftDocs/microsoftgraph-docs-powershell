@@ -52,8 +52,9 @@ Update the canReceiveInvitations property of the tenantGovernanceSetting singlet
 This property controls whether the tenant can receive governance invitations.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -62,6 +63,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryTenantGovernanceSetting Cmdlet.
+
 
 ## PARAMETERS
 

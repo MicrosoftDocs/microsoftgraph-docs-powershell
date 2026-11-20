@@ -49,12 +49,17 @@ To learn how to customize the privacy of item insights in an organization, see C
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaAdminPeopleItemInsight
+
+```
+This example shows how to use the Get-MgBetaAdminPeopleItemInsight Cmdlet.
+
 
 ## PARAMETERS
 

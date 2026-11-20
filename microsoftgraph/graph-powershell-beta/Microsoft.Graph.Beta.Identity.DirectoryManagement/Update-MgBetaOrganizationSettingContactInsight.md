@@ -81,8 +81,9 @@ To learn more about customizing insights privacy for your organization, see:\r- 
 | Application | Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update settings for contact insights
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationSettingContactInsight -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example will update settings for contact insights
+
 
 ## PARAMETERS
 

@@ -56,12 +56,17 @@ Delete a samlOrWsFedExternalDomainFederation object.
 | Application | Domain.ReadWrite.All, IdentityProvider.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryFederationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

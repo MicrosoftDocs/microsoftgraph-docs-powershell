@@ -51,12 +51,17 @@ Given a tenant ID, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant cross-tenant access settings between you and the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Find-MgBetaTenantRelationshipTenantInformationByTenantId
+
+```
+This example shows how to use the Find-MgBetaTenantRelationshipTenantInformationByTenantId Cmdlet.
+
 
 ## PARAMETERS
 
