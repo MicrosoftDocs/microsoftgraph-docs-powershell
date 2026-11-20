@@ -50,8 +50,9 @@ This cmdlet has the following aliases,
 Move one or more alert resources to a new or existing incident.
 
 ## EXAMPLES
+### Example 1: Move alerts to an incident
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -66,6 +67,10 @@ newCorrelationReasons = "sameAsset, temporalProximity"
 }
 
 Move-MgSecurityAlert -BodyParameter $params
+
+```
+This example will move alerts to an incident
+
 
 ## PARAMETERS
 

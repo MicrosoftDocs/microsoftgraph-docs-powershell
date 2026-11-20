@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 Represents members of an eDiscovery case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseMember Cmdlet.
+
 
 ## PARAMETERS
 

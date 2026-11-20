@@ -85,8 +85,9 @@ Update the properties of a sensor object.
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -101,6 +102,10 @@ $params = @{
 }
 
 Update-MgSecurityIdentitySensor -SensorId $sensorId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityIdentitySensor Cmdlet.
+
 
 ## PARAMETERS
 
