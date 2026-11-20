@@ -75,8 +75,9 @@ Create a new cloudFirewallRule object in a cloudFirewallPolicy.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -127,6 +128,10 @@ protocols = "tcp"
 }
 
 New-MgBetaNetworkAccessCloudFirewallPolicyRule -CloudFirewallPolicyId $cloudFirewallPolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessCloudFirewallPolicyRule Cmdlet.
+
 
 ## PARAMETERS
 

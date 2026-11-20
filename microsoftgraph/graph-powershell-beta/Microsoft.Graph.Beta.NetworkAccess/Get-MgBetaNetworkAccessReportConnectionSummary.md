@@ -47,12 +47,17 @@ This cmdlet has the following aliases,
 Returns connections count per traffic type: Private/Internet/Microsoft.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessReportConnectionSummary
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessReportConnectionSummary Cmdlet.
+
 
 ## PARAMETERS
 

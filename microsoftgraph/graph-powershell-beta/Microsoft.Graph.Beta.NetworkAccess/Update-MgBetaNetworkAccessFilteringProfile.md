@@ -83,8 +83,9 @@ Update the properties of a filteringProfile object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -93,6 +94,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessFilteringProfile -FilteringProfileId $filteringProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessFilteringProfile Cmdlet.
+
 
 ## PARAMETERS
 

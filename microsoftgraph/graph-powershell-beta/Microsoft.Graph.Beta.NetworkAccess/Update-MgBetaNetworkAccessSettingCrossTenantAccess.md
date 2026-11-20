@@ -55,8 +55,9 @@ Update the cross-tenant access settings to include network packet tagging for en
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingCrossTenantAccess -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessSettingCrossTenantAccess Cmdlet.
+
 
 ## PARAMETERS
 
