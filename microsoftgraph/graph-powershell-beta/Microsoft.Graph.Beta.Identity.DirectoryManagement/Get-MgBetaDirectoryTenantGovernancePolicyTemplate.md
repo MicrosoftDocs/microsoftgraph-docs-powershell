@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernancePolicyTemplate
 
 Read the properties of a governancePolicyTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

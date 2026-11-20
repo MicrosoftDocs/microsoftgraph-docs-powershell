@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryAdministrativeUnitScopedRoleMember
 
 Update the navigation property scopedRoleMembers in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

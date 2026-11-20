@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryPublicKeyInfrastructure
 
 Update the navigation property publicKeyInfrastructure in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryPublicKeyInfrastructure?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

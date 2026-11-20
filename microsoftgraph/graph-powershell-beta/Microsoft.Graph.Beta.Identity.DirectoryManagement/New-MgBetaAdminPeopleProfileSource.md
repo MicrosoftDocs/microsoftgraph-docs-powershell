@@ -15,6 +15,9 @@ title: New-MgBetaAdminPeopleProfileSource
 
 Create a new profileSource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfileSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

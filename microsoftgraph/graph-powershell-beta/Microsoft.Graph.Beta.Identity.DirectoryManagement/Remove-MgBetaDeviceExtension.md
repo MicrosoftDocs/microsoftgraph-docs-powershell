@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceExtension
 
 Delete navigation property extensions for devices
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

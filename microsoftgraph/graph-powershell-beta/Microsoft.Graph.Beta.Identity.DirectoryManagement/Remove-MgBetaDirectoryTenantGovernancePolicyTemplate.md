@@ -16,6 +16,9 @@ title: Remove-MgBetaDirectoryTenantGovernancePolicyTemplate
 Delete a governancePolicyTemplate object.
 You can't delete the default template or templates currently used by active relationships.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

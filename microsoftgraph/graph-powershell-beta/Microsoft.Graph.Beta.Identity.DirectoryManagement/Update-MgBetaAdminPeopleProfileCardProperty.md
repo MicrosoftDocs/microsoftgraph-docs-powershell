@@ -15,6 +15,9 @@ title: Update-MgBetaAdminPeopleProfileCardProperty
 
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
