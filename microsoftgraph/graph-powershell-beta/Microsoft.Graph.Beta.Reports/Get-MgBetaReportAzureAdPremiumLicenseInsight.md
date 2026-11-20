@@ -49,14 +49,6 @@ Tenants without a premium license receive a 403 Forbidden response with the miss
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Reports.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportAzureAdPremiumLicenseInsight
-
 ## PARAMETERS
 
 ### -Break
@@ -297,6 +289,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight)
 - [](https://learn.microsoft.com/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta)
+
 
 
 

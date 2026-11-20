@@ -58,8 +58,9 @@ Export the billed invoice reconciliation data.
 | Application | PartnerBilling.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -69,6 +70,10 @@ $params = @{
 }
 
 Export-MgBetaReportPartnerBillingReconciliationBilled -BodyParameter $params
+
+```
+This example shows how to use the Export-MgBetaReportPartnerBillingReconciliationBilled Cmdlet.
+
 
 ## PARAMETERS
 

@@ -50,14 +50,6 @@ This cmdlet has the following aliases,
 Returns aggregated non-interactive sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual requestIds via the /signIns endpoint.
 This includes autonomous agent sign-in events.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaAuditLogSummarizedNonInteractiveSignIn -AggregationWindow $aggregationWindowId
-
 ## PARAMETERS
 
 ### -AggregationWindow
@@ -543,6 +535,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizednoninteractivesignin)
 - [](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizednoninteractivesignins?view=graph-rest-beta)
+
 
 
 

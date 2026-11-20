@@ -57,14 +57,6 @@ This cmdlet has the following aliases,
 
 The collection of API usage report metrics and the status of their enablement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaAdminReportSettingSharePointApiUsageReportMetric
-
 ## PARAMETERS
 
 ### -All
@@ -594,6 +586,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsettingsharepointapiusagereportmetric)
 - [](https://learn.microsoft.com/graph/api/sharepointreportsettings-list-apiusagereportmetrics?view=graph-rest-beta)
+
+
 
 
 

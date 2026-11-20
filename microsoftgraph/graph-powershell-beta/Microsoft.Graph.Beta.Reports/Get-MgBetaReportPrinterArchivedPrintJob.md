@@ -50,12 +50,17 @@ This cmdlet has the following aliases,
 Get a list of archived print jobs that were queued for particular printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportPrinterArchivedPrintJob
+
+```
+This example shows how to use the Get-MgBetaReportPrinterArchivedPrintJob Cmdlet.
+
 
 ## PARAMETERS
 
