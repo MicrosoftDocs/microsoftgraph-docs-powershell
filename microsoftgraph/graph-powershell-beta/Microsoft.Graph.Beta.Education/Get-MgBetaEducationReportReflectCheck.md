@@ -60,18 +60,28 @@ This cmdlet has the following aliases,
 Details of check-in responses.
 
 ## EXAMPLES
+### Example 1: Get the Reflect check-in responses from the last 24 hours
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationReportReflectCheck
 
-### EXAMPLE 2
+```
+This example will get the reflect check-in responses from the last 24 hours
+
+### Example 2: Get the Reflect check-in responses for a specific date using $filter
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationReportReflectCheck -Filter "submitDateTime gt 2023-10-10T00:00:00.000Z"
+Get-MgBetaEducationReportReflectCheck -Filter "submitDateTime gt 2023-10-10T00:00:00.000Z" 
+
+```
+This example will get the reflect check-in responses for a specific date using $filter
+
 
 ## PARAMETERS
 
