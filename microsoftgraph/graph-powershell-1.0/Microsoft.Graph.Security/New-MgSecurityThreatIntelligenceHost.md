@@ -707,7 +707,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityHost>: host
+BODYPARAMETER `<IMicrosoftGraphSecurityHost>`: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3191,7 +3191,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Status <String>]: hostPortStatus
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-REPUTATION <IMicrosoftGraphSecurityHostReputation>: hostReputation
+REPUTATION `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4032,7 +4032,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Value <String>]: The identification value for the hostTracker.
 
-WHOIS <IMicrosoftGraphSecurityWhoisRecord>: whoisRecord
+WHOIS `<IMicrosoftGraphSecurityWhoisRecord>`: whoisRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Abuse <IMicrosoftGraphSecurityWhoisContact>]: whoisContact
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -4312,3 +4312,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
