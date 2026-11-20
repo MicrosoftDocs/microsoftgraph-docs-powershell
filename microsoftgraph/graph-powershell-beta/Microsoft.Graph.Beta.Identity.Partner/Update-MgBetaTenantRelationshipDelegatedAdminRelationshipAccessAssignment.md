@@ -711,8 +711,8 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
-- [](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-beta)
+- [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-beta)
 
 
 
