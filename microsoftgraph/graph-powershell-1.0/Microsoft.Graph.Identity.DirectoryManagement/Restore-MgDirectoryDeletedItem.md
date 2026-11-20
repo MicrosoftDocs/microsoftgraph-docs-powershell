@@ -54,6 +54,14 @@ You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.DeleteRestore.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprint.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All, User.ReadWrite.CrossCloud,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

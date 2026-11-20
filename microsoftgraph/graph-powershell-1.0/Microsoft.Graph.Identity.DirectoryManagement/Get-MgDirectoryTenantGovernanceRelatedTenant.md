@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get relatedTenants from directory
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-RelatedTenant.Read.All, TenantGovernance-RelatedTenant.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-RelatedTenant.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
