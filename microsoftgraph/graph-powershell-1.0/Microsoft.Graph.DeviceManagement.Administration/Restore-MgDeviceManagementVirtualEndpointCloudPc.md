@@ -537,8 +537,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/restore-mgdevicemanagementvirtualendpointcloudpc)
-- [](https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-1.0)
+- [Restore-MgDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/restore-mgdevicemanagementvirtualendpointcloudpc)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-restore?view=graph-rest-1.0)
 
 
 

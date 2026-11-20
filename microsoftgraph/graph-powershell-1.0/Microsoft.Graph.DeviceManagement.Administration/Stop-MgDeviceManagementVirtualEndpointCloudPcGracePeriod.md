@@ -413,8 +413,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod)
-- [](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
+- [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
 
 
 
