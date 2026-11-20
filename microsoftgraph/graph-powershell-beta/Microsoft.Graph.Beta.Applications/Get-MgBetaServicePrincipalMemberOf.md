@@ -18,6 +18,9 @@ HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

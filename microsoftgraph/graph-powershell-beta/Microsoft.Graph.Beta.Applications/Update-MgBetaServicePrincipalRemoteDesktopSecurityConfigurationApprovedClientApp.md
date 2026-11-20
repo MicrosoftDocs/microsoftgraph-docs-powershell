@@ -15,6 +15,9 @@ title: Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedCl
 
 Update the properties of an approvedClientApp object for a remotedesktopsecurityconfiguration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

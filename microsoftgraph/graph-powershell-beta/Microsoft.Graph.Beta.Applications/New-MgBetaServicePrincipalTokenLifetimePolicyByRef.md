@@ -16,6 +16,9 @@ title: New-MgBetaServicePrincipalTokenLifetimePolicyByRef
 Assign a tokenLifetimePolicy to a servicePrincipal.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per service principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalTokenLifetimePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

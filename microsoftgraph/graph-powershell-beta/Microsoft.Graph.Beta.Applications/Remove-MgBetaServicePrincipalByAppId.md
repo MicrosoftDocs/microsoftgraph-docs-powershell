@@ -16,6 +16,9 @@ title: Remove-MgBetaServicePrincipalByAppId
 Delete a servicePrincipal object.
 This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
