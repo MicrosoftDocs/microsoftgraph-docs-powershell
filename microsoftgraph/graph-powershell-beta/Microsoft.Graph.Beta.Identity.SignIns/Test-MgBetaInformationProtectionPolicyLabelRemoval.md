@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | InformationProtectionPolicy.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

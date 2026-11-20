@@ -70,6 +70,14 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | APIConnectors.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | APIConnectors.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

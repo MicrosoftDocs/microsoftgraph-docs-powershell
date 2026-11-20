@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property temporaryQRCode for users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a countryNamedLocation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
