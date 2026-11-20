@@ -60,6 +60,14 @@ This cmdlet has the following aliases,
 Set of access reviews instances for this access review series.
 Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
