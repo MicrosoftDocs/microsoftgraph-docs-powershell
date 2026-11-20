@@ -1934,7 +1934,7 @@ TERTIARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontact)
+- [New-MgUserContactFolderChildFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfoldercontact)
 
 
 
