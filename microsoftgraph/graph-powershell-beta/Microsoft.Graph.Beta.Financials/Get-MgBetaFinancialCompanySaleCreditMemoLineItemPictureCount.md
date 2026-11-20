@@ -394,7 +394,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemolineitempicturecount)
+- [Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemolineitempicturecount)
 
 
 

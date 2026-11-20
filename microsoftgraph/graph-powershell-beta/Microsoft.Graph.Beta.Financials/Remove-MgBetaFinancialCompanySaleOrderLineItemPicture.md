@@ -522,7 +522,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysaleorderlineitempicture)
+- [Remove-MgBetaFinancialCompanySaleOrderLineItemPicture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysaleorderlineitempicture)
 
 
 

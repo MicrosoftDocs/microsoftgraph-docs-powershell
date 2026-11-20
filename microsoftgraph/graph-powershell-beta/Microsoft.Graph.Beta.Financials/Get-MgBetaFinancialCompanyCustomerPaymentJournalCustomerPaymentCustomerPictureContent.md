@@ -437,7 +437,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomerpicturecontent)
+- [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomerpicturecontent)
 
 
 
