@@ -58,8 +58,9 @@ The usage category report categorizes a Cloud PC as Undersized, Oversized, Right
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get device recommendation reports grouped by service plan and usage category
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -79,7 +80,12 @@ groupBy = @(
 
 Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will get device recommendation reports grouped by service plan and usage category
+
+### Example 2: Get device usage category reports for Cloud PCs
+
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -102,6 +108,10 @@ top = 15
 }
 
 Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+
+```
+This example will get device usage category reports for cloud pcs
+
 
 ## PARAMETERS
 
