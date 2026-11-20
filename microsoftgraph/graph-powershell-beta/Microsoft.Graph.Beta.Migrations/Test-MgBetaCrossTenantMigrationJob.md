@@ -53,12 +53,17 @@ This action is asynchronous.
 After you call the validate API, poll the Get crossTenantMigrationJob endpoint to check for a terminal status of validatePassed or validateFailed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Test-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId
+
+```
+This example shows how to use the Test-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,12 +60,17 @@ Read the properties and relationships of crossTenantMigrationTask, which shows t
 The crossTenantMigrationTask contains the status details of migrations for the workloads specified in the crossTenantMigrationJob.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Get-MgBetaCrossTenantMigrationJobUser -CrossTenantMigrationJobId $crossTenantMigrationJobId
+
+```
+This example shows how to use the Get-MgBetaCrossTenantMigrationJobUser Cmdlet.
+
 
 ## PARAMETERS
 
