@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Knowledge base article associated with the release when the known issue was first reported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -389,6 +379,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesproductknownissueoriginatingknowledgebasearticle)
+
 
 
 
