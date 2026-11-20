@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -72,6 +72,14 @@ This enables the authentication experience defined by the user flow to be enable
 An application can only be linked to one user flow.
 The app must have an associated service principal in the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

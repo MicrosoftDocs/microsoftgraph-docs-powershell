@@ -51,6 +51,14 @@ This cmdlet has the following aliases,
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomAuthenticationExtension.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

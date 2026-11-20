@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagementPolicy.Read.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, RoleManagementPolicy.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Get federatedTokenValidationPolicy from policies
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.FedTokenValidation,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.FedTokenValidation,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
