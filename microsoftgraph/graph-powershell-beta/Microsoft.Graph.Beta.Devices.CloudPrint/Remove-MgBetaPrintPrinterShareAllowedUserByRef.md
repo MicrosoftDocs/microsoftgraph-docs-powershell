@@ -480,8 +480,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintersharealloweduserbyref)
-- [](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+- [Remove-MgBetaPrintPrinterShareAllowedUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintersharealloweduserbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
 
 
 
