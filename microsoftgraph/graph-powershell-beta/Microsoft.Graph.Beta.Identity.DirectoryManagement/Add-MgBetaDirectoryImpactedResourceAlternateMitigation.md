@@ -404,7 +404,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetadirectoryimpactedresourcealternatemitigation)
+- [Add-MgBetaDirectoryImpactedResourceAlternateMitigation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetadirectoryimpactedresourcealternatemitigation)
 
 
 

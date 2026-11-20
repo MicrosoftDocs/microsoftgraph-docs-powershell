@@ -388,8 +388,8 @@ BODYPARAMETER `<IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- [Get-MgBetaDeviceById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 
 

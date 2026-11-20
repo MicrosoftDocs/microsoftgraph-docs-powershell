@@ -447,8 +447,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight)
-- [](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-beta)
+- [Update-MgBetaAdminPeopleItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-beta)
 
 
 
