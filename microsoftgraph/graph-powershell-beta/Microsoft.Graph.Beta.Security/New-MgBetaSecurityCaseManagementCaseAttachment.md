@@ -86,16 +86,6 @@ After creating the attachment, use Upload attachment content.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -934,6 +924,7 @@ ORIGIN `<IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>`: attachmentOrig
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaseattachment)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-attachments?view=graph-rest-beta)
+
 
 
 

@@ -66,12 +66,17 @@ Read the properties and relationships of a securityScoreHistory object.
 | Application | PartnerSecurity.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityPartnerSecurityScoreHistory
+
+```
+This example shows how to use the Get-MgBetaSecurityPartnerSecurityScoreHistory Cmdlet.
+
 
 ## PARAMETERS
 

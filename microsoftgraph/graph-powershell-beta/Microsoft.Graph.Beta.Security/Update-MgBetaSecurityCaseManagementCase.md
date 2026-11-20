@@ -83,16 +83,6 @@ Update the properties of a microsoft.graph.security.caseManagement.case object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -1049,6 +1039,7 @@ Supports $filter.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)
+
 
 
 

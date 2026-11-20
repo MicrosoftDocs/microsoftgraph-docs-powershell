@@ -67,12 +67,17 @@ Read the properties and relationships of a healthIssue object.
 | Application | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIdentityHealthIssue
+
+```
+This example shows how to use the Get-MgBetaSecurityIdentityHealthIssue Cmdlet.
+
 
 ## PARAMETERS
 

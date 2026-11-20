@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 Create a new zone object.
 You can create up to 1,000 zones per tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -572,6 +562,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityzone)
 - [](https://learn.microsoft.com/graph/api/security-security-post-zones?view=graph-rest-beta)
+
 
 
 

@@ -65,14 +65,6 @@ Read the properties and relationships of an attachment object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityCaseManagementCaseAttachment -CaseId $caseId
-
 ## PARAMETERS
 
 ### -All
@@ -684,6 +676,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaseattachment)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-attachments?view=graph-rest-beta)
+
+
 
 
 

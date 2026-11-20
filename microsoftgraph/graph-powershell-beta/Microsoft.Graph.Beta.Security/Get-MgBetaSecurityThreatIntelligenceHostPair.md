@@ -99,12 +99,17 @@ Read the properties and relationships of a hostPair object.
 | Application | ThreatIntelligence.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceHostPair -HostPairId $hostPairId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHostPair Cmdlet.
+
 
 ## PARAMETERS
 

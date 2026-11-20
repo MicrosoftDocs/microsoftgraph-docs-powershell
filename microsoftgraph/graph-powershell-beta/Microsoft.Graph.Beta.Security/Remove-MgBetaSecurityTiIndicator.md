@@ -53,12 +53,17 @@ Delete a tiIndicator object.
 | Application | ThreatIndicators.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
+
+```
+This example shows how to use the Remove-MgBetaSecurityTiIndicator Cmdlet.
+
 
 ## PARAMETERS
 

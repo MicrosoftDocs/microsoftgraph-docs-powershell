@@ -62,14 +62,6 @@ Don't download content when scanResult is malicious.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Get-MgBetaSecurityCaseManagementCaseAttachmentContent -CaseId $caseId -AttachmentId $attachmentId
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -500,6 +492,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaseattachmentcontent)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta)
+
 
 
 
