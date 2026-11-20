@@ -18,6 +18,9 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

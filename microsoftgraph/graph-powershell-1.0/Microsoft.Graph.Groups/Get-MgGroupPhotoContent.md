@@ -15,6 +15,9 @@ title: Get-MgGroupPhotoContent
 
 The group's profile photo
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

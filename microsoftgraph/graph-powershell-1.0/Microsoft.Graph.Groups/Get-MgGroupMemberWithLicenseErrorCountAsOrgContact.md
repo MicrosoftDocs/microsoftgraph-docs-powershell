@@ -15,6 +15,9 @@ title: Get-MgGroupMemberWithLicenseErrorCountAsOrgContact
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberWithLicenseErrorCountAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorCountAsOrgContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
