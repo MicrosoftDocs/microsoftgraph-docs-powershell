@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession
 
 Create a new oneDriveForBusinessBrowseSession object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
