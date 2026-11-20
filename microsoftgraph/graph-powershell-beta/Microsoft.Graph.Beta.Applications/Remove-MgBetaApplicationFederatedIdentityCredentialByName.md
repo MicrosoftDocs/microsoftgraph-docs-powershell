@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Delete a federatedIdentityCredential object from an application or an agentIdentityBlueprint.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -452,6 +442,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationfederatedidentitycredentialbyname)
 - [](https://learn.microsoft.com/graph/api/federatedidentitycredential-delete?view=graph-rest-beta)
+
 
 
 
