@@ -15,6 +15,9 @@ title: Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
 
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Verify (Default)
