@@ -562,8 +562,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasfloor)
-- [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
+- [Get-MgBetaPlaceAsFloor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasfloor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-beta)
 
 
 
