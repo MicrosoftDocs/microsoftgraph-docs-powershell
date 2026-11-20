@@ -644,7 +644,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphItemRetentionLabel>: itemRetentionLabel
+BODYPARAMETER `<IMicrosoftGraphItemRetentionLabel>`: itemRetentionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -681,7 +681,7 @@ Read-only.
     [IsRecordLocked <Boolean?>]: Specifies whether the item is locked.
 Read-write.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -707,7 +707,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LABELAPPLIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LABELAPPLIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -718,7 +718,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RETENTIONSETTINGS <IMicrosoftGraphRetentionLabelSettings>: retentionLabelSettings
+RETENTIONSETTINGS `<IMicrosoftGraphRetentionLabelSettings>`: retentionLabelSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BehaviorDuringRetentionPeriod <String>]: behaviorDuringRetentionPeriod
   [IsContentUpdateAllowed <Boolean?>]: Specifies whether updates to document content are allowed.
@@ -737,3 +737,25 @@ Read-write.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemretentionlabel)
 - [](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
