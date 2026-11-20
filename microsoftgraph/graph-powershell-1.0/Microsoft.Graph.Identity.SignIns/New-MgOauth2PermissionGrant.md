@@ -538,8 +538,8 @@ Must not exceed 3,850 characters in length.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant)
-- [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0)
+- [New-MgOauth2PermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0)
 
 
 

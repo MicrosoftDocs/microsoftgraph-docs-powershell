@@ -415,8 +415,8 @@ BODYPARAMETER `<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmco
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised)
-- [](https://learn.microsoft.com/graph/api/riskyuser-confirmcompromised?view=graph-rest-1.0)
+- [Confirm-MgRiskyUserCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-confirmcompromised?view=graph-rest-1.0)
 
 
 
