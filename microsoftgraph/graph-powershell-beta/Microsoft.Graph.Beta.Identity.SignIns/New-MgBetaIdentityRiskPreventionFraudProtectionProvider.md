@@ -52,8 +52,9 @@ Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
 ## EXAMPLES
+### Example 1: Create a new arkoseFraudProtectionProvider object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -68,7 +69,12 @@ $params = @{
 
 New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a new arkosefraudprotectionprovider object
+
+### Example 2: Create a new humanSecurityFraudProtectionProvider object
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -80,6 +86,10 @@ $params = @{
 }
 
 New-MgBetaIdentityRiskPreventionFraudProtectionProvider -BodyParameter $params
+
+```
+This example will create a new humansecurityfraudprotectionprovider object
+
 
 ## PARAMETERS
 

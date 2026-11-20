@@ -60,12 +60,17 @@ This disables the authentication experience that's defined by the user flow for 
 | Application | EventListener.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication -AuthenticationEventsFlowId $authenticationEventsFlowId -AuthenticationConditionApplicationAppId $authenticationConditionApplicationAppId
+
+```
+This example shows how to use the Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication Cmdlet.
+
 
 ## PARAMETERS
 

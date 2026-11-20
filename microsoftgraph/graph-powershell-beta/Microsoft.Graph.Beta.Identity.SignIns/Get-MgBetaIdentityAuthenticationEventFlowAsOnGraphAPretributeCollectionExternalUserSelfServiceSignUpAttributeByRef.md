@@ -42,16 +42,6 @@ This cmdlet has the following aliases,
 Get an identityUserFlowAttribute collection associated with an external identities self-service sign up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -441,6 +431,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflowasongraphapretributecollectionexternaluserselfservicesignupattributebyref)
 - [](https://learn.microsoft.com/graph/api/onattributecollectionexternalusersselfservicesignup-list-attributes?view=graph-rest-beta)
+
 
 
 

@@ -73,8 +73,9 @@ This cmdlet has the following aliases,
 Update an existing Microsoft 365 cross-tenant capability for the default cross-tenant access policy.
 
 ## EXAMPLES
+### Example 1: Update only the access setting
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -86,7 +87,12 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability -M365CapabilityBaseName $m365CapabilityBaseName -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update only the access setting
+
+### Example 2: Update the access setting and resource scopes
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -115,6 +121,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability -M365CapabilityBaseName $m365CapabilityBaseName -BodyParameter $params
+
+```
+This example will update the access setting and resource scopes
+
 
 ## PARAMETERS
 

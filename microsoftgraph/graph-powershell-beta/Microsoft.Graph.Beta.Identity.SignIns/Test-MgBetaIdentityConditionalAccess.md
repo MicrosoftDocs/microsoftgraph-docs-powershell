@@ -59,8 +59,9 @@ Evaluates the applicability of Conditional Access Policies in your tenant based 
 | Application | Policy.Read.ConditionalAccess, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Identify conditional access policies that would apply to a user accessing an application
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,7 +96,12 @@ appliedPoliciesOnly = $true
 
 Test-MgBetaIdentityConditionalAccess -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will identify conditional access policies that would apply to a user accessing an application
+
+### Example 2: Identify conditional access policies that would apply to a user accessing a sensitive file protected by an authentication context
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -128,7 +134,12 @@ $params = @{
 
 Test-MgBetaIdentityConditionalAccess -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will identify conditional access policies that would apply to a user accessing a sensitive file protected by an authentication context
+
+### Example 3: Identify conditional access policies that would apply to a user performing a user action
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -162,7 +173,12 @@ $params = @{
 
 Test-MgBetaIdentityConditionalAccess -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will identify conditional access policies that would apply to a user performing a user action
+
+### Example 4: Identify conditional access policies that apply to a service principal
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -186,6 +202,10 @@ appliedPoliciesOnly = $true
 }
 
 Test-MgBetaIdentityConditionalAccess -BodyParameter $params
+
+```
+This example will identify conditional access policies that apply to a service principal
+
 
 ## PARAMETERS
 
