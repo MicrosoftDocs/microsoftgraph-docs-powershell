@@ -15,6 +15,9 @@ title: Get-MgUserDriveListContentTypeColumnPositionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListContentTypeColumnPositionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

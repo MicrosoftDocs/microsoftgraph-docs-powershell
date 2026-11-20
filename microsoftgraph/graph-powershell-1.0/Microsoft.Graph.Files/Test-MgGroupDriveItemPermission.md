@@ -15,6 +15,9 @@ title: Test-MgGroupDriveItemPermission
 
 Invoke action validatePermission
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgUserDriveRootVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootVersionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootVersionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

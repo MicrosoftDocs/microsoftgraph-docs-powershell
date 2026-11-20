@@ -15,6 +15,9 @@ title: Get-MgUserDriveCreatedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

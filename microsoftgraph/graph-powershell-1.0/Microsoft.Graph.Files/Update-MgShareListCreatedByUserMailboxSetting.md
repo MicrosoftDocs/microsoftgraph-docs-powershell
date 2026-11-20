@@ -15,6 +15,9 @@ title: Update-MgShareListCreatedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListCreatedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

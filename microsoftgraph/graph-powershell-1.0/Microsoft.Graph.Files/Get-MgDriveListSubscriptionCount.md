@@ -15,6 +15,9 @@ title: Get-MgDriveListSubscriptionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListSubscriptionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

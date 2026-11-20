@@ -15,6 +15,9 @@ title: New-MgGroupDriveItemVersion
 
 Create new navigation property to versions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

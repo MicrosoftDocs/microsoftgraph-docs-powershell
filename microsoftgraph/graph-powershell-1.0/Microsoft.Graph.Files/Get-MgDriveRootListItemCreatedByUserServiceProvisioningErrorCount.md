@@ -15,6 +15,9 @@ title: Get-MgDriveRootListItemCreatedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

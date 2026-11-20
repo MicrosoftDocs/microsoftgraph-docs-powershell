@@ -15,6 +15,9 @@ title: Update-MgDriveListContentTypeColumnLink
 
 Update the navigation property columnLinks in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

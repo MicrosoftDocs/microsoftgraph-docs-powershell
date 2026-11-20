@@ -15,6 +15,9 @@ title: Get-MgUserDriveBundleCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveBundleCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveBundleCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

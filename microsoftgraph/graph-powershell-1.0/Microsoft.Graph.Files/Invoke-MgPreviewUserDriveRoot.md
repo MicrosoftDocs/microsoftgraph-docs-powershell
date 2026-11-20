@@ -15,6 +15,9 @@ title: Invoke-MgPreviewUserDriveRoot
 
 Invoke action preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)
