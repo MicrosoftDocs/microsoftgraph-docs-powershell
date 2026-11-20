@@ -441,7 +441,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportidentityanalyticgroup)
+- [Remove-MgBetaReportIdentityAnalyticGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportidentityanalyticgroup)
 
 
 

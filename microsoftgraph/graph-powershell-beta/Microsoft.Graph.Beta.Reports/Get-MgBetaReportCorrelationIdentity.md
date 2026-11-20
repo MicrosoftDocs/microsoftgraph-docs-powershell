@@ -618,9 +618,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelationidentity)
-- [](https://learn.microsoft.com/graph/api/correlatedidentity-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identitycorrelation-list-identities?view=graph-rest-beta)
+- [Get-MgBetaReportCorrelationIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelationidentity)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/correlatedidentity-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycorrelation-list-identities?view=graph-rest-beta)
 
 
 

@@ -764,7 +764,7 @@ Supports $filter (eq, startsWith) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserregistrationdetail)
+- [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserregistrationdetail)
 
 
 

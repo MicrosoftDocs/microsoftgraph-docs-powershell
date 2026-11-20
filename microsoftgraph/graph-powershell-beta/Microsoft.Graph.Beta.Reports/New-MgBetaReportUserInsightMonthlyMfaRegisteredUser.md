@@ -430,7 +430,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser)
+- [New-MgBetaReportUserInsightMonthlyMfaRegisteredUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportuserinsightmonthlymfaregistereduser)
 
 
 

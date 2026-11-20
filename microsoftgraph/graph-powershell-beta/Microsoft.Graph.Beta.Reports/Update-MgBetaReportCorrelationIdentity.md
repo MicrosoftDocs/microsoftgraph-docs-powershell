@@ -745,7 +745,7 @@ TARGETIDENTITY `<IMicrosoftGraphIdentityInfo>`: identityInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportcorrelationidentity)
+- [Update-MgBetaReportCorrelationIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportcorrelationidentity)
 
 
 

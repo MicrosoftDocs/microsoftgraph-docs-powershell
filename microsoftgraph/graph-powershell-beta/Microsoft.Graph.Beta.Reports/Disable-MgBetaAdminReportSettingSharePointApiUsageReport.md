@@ -363,8 +363,8 @@ BODYPARAMETER `<IPaths1S5OblkAdminReportsettingsSharepointMicrosoftGraphDisablea
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport)
-- [](https://learn.microsoft.com/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta)
+- [Disable-MgBetaAdminReportSettingSharePointApiUsageReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta)
 
 
 
