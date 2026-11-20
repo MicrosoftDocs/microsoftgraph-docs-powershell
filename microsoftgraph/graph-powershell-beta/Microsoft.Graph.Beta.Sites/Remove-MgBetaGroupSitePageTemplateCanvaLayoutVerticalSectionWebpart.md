@@ -503,7 +503,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpart)
+- [Remove-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepagetemplatecanvalayoutverticalsectionwebpart)
 
 
 

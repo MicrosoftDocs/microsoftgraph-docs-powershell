@@ -567,8 +567,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaextractgroupsiteinformationprotectionpolicylabel)
-- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
+- [Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaextractgroupsiteinformationprotectionpolicylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
 
 
 

@@ -803,7 +803,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstore)
+- [Update-MgBetaSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstore)
 
 
 

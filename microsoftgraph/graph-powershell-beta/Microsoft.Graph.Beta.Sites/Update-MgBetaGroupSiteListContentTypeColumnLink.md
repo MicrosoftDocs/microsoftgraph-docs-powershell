@@ -663,7 +663,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttypecolumnlink)
+- [Update-MgBetaGroupSiteListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitelistcontenttypecolumnlink)
 
 
 

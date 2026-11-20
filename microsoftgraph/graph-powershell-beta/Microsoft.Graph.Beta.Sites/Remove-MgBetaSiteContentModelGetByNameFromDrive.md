@@ -569,8 +569,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive)
-- [](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
+- [Remove-MgBetaSiteContentModelGetByNameFromDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontentmodelgetbynamefromdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
 
 
 

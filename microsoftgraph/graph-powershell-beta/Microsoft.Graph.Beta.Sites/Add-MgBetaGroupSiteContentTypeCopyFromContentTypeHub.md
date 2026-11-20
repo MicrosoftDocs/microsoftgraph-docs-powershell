@@ -557,8 +557,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontenttypecopyfromcontenttypehub)
-- [](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta)
+- [Add-MgBetaGroupSiteContentTypeCopyFromContentTypeHub](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetagroupsitecontenttypecopyfromcontenttypehub)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta)
 
 
 
