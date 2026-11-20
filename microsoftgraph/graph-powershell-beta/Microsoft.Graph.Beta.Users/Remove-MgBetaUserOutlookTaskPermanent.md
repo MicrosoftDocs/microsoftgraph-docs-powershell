@@ -438,8 +438,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskpermanent)
-- [](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserOutlookTaskPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outlooktask-permanentdelete?view=graph-rest-beta)
 
 
 

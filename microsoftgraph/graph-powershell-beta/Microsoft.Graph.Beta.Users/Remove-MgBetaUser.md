@@ -449,8 +449,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser)
-- [](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta)
+- [Remove-MgBetaUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-beta)
 
 
 
