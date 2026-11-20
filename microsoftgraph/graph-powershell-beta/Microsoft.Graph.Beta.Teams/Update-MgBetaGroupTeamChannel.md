@@ -616,7 +616,7 @@ HelpMessage: ''
 
 ### -JoinedUsers
 
-.
+
 To construct, see NOTES section for JOINEDUSERS properties and create a hash table.
 
 ```yaml
