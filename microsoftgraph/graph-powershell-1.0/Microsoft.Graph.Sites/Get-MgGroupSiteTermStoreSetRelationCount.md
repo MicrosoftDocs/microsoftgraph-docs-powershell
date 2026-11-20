@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreSetRelationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetRelationCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetRelationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

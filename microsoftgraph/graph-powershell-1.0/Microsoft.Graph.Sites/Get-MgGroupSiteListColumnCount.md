@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListColumnCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

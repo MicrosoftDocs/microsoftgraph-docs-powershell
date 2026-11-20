@@ -15,6 +15,9 @@ title: Update-MgGroupSiteListPermission
 
 Update the navigation property permissions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

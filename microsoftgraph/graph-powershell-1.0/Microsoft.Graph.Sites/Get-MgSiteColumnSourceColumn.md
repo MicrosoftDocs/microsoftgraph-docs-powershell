@@ -15,6 +15,9 @@ title: Get-MgSiteColumnSourceColumn
 
 The source column for the content type column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteColumnSourceColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgSiteListOperation
 
 Update the navigation property operations in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgSiteGetByPathColumn
 
 Create new navigation property to columns for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

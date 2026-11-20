@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreSetRelationSet
 
 The [set] in which the relation is relevant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetRelationSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

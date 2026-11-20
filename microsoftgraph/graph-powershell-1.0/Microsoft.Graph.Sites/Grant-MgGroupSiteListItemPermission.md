@@ -15,6 +15,9 @@ title: Grant-MgGroupSiteListItemPermission
 
 Grant users access to a link represented by a permission.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaGroupSiteListItemPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaGroupSiteListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

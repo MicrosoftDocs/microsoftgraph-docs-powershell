@@ -15,6 +15,9 @@ title: Get-MgAdminSharepoint
 
 Get sharepoint from admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

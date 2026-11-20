@@ -15,6 +15,9 @@ title: Get-MgGroupSitePermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePermissionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermissionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

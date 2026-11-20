@@ -15,6 +15,9 @@ title: Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn
 
 The set of vertical columns in this section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

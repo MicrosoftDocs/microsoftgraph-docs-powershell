@@ -15,6 +15,9 @@ title: Get-MgSiteGetByPathAnalytic
 
 Analytics about the view activities that took place on this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

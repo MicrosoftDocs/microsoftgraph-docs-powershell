@@ -15,6 +15,9 @@ title: Update-MgGroupSiteAnalytic
 
 Update the navigation property analytics in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

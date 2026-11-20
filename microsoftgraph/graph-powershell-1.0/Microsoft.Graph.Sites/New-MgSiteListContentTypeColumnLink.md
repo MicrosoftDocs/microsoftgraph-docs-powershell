@@ -15,6 +15,9 @@ title: New-MgSiteListContentTypeColumnLink
 
 Create new navigation property to columnLinks for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSiteTermStoreGroup
 
 Delete a group object in a term [store].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

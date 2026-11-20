@@ -15,6 +15,9 @@ title: Get-MgSiteTermStoreSetTermChildRelationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetTermChildRelationCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetTermChildRelationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
