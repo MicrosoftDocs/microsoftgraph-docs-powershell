@@ -63,8 +63,9 @@ The following derived types are currently supported.
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -96,7 +97,12 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an ontokenissuancestartcustomextension object
+
+### Example 2: Create an onAttributeCollectionStartCustomExtension object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -120,7 +126,12 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create an onattributecollectionstartcustomextension object
+
+### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -144,7 +155,12 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create an onattributecollectionsubmitcustomextension object
+
+### Example 4: Create an onOtpSendCustomExtension object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -170,6 +186,10 @@ $params = @{
 }
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
+
+```
+This example will create an onotpsendcustomextension object
+
 
 ## PARAMETERS
 
