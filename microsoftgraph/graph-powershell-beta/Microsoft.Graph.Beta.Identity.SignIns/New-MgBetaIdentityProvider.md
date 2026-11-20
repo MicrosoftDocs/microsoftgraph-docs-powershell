@@ -470,8 +470,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
+- [New-MgBetaIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta)
 
 
 

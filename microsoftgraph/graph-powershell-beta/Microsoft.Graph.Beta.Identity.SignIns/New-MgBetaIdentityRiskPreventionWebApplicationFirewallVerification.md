@@ -531,7 +531,7 @@ This is the host or zone name to which the configuration applies.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallverification)
+- [New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallverification)
 
 
 

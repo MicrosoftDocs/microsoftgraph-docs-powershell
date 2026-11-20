@@ -537,8 +537,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
-- [](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityContinuouAccessEvaluationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta)
 
 
 
