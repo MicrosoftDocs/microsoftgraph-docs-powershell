@@ -294,7 +294,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -384,7 +384,7 @@ HelpMessage: ''
 
 ### -ResourceActions
 
-.
+
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
