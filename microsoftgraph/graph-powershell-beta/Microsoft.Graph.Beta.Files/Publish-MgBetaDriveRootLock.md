@@ -50,16 +50,6 @@ After successful release, the file is immediately available for other users to l
 Only the user who currently holds the lock can release it.
 The server identifies the lock from the file's current state (no lock identifier is required from the caller).
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -401,6 +391,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadriverootlock)
 - [](https://learn.microsoft.com/graph/api/driveitem-releaselock?view=graph-rest-beta)
+
 
 
 
