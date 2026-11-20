@@ -526,7 +526,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphInferenceClassificationOverride>: inferenceClassificationOverride
+BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClassificationOverride
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -536,7 +536,7 @@ Read-only.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -546,7 +546,7 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   [MessageRuleId <String>]: The unique identifier of messageRule
   [UserId <String>]: The unique identifier of user
 
-SENDEREMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
+SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of the person or entity.
   [Name <String>]: The display name of the person or entity.
@@ -555,3 +555,25 @@ SENDEREMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
