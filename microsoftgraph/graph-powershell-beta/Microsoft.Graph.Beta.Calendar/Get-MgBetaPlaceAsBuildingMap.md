@@ -15,6 +15,9 @@ title: Get-MgBetaPlaceAsBuildingMap
 
 Get the map of a building in IMDF format.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsBuildingMap](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsBuildingMap?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

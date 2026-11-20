@@ -15,6 +15,9 @@ title: New-MgBetaUserCalendarEvent
 
 Create new navigation property to events for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaPlaceAsBuildingMapLevelFixture
 
 Create new navigation property to fixtures for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsBuildingMapLevelFixture?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
