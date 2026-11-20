@@ -15,6 +15,9 @@ title: Remove-MgExternalConnectionItemActivity
 
 Delete navigation property activities for external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
