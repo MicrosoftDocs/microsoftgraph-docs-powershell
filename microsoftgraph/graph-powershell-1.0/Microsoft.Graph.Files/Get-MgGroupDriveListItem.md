@@ -602,7 +602,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitem)
+- [Get-MgGroupDriveListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitem)
 
 
 

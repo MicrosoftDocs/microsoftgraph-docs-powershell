@@ -1111,7 +1111,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitempermission)
+- [New-MgGroupDriveItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitempermission)
 
 
 

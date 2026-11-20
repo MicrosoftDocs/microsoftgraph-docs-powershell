@@ -480,7 +480,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootchildcontent)
+- [Set-MgUserDriveRootChildContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootchildcontent)
 
 
 

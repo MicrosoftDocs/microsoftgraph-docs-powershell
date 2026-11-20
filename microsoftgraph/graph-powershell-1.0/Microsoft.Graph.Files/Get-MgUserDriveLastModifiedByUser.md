@@ -423,7 +423,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelastmodifiedbyuser)
+- [Get-MgUserDriveLastModifiedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelastmodifiedbyuser)
 
 
 

@@ -650,8 +650,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdelta)
-- [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
+- [Get-MgShareListItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
 
 
 

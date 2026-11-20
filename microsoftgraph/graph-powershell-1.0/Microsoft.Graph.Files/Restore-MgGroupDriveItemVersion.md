@@ -450,8 +450,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mggroupdriveitemversion)
-- [](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-1.0)
+- [Restore-MgGroupDriveItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mggroupdriveitemversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-1.0)
 
 
 

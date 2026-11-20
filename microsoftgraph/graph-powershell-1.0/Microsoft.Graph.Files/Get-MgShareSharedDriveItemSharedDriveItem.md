@@ -570,8 +570,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem)
-- [](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
+- [Get-MgShareSharedDriveItemSharedDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
 
 
 

@@ -391,7 +391,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlastmodifiedbyusermailboxsetting)
+- [Get-MgGroupDriveRootLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlastmodifiedbyusermailboxsetting)
 
 
 

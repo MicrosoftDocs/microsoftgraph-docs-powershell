@@ -550,8 +550,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
+- [Search-MgDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
 
 
 

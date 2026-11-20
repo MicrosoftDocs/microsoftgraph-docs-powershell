@@ -274,7 +274,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
+- [Get-MgShareCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
 
 
 

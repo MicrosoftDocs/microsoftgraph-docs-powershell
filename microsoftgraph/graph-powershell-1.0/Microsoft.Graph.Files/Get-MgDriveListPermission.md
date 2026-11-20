@@ -578,7 +578,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistpermission)
+- [Get-MgDriveListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistpermission)
 
 
 

@@ -508,7 +508,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemfield)
+- [Update-MgDriveItemListItemField](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemfield)
 
 
 

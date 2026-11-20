@@ -427,7 +427,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootanalytic)
+- [Remove-MgUserDriveRootAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootanalytic)
 
 
 

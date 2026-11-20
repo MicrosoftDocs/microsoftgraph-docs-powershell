@@ -383,7 +383,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootpermissioncount)
+- [Get-MgGroupDriveRootPermissionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootpermissioncount)
 
 
 

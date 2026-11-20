@@ -369,7 +369,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcreatedbyusermailboxsetting)
+- [Get-MgDriveRootCreatedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcreatedbyusermailboxsetting)
 
 
 
