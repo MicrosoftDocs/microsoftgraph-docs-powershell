@@ -863,7 +863,7 @@ For example, in the access reviews decisions API, this property might record the
   [DisplayName <String>]: The display name of the dataSource, and is the name of the SharePoint site.
   [HoldStatus <String>]: dataSourceHoldStatus
 
-ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addToReviewSetOperation
+ADDTOREVIEWSETOPERATION `<IMicrosoftGraphEdiscoveryAddToReviewSetOperation>`: addToReviewSetOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: caseAction
   [CompletedDateTime <DateTime?>]: The date and time the operation was completed.
@@ -979,7 +979,7 @@ Read-only.
       [ApplyHoldToSource <Boolean?>]: Indicates if hold is applied to noncustodial data source (such as mailbox or site).
       [DataSource <IMicrosoftGraphEdiscoveryDataSource>]: dataSource
 
-BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
+BODYPARAMETER `<IMicrosoftGraphEdiscoverySourceCollection>`: sourceCollection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1095,7 +1095,7 @@ Read-only.
     [ApplyHoldToSource <Boolean?>]: Indicates if hold is applied to noncustodial data source (such as mailbox or site).
     [DataSource <IMicrosoftGraphEdiscoveryDataSource>]: dataSource
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1125,7 +1125,7 @@ For example, in the access reviews decisions API, this property might record the
   [DisplayName <String>]: The display name of the dataSource, and is the name of the SharePoint site.
   [HoldStatus <String>]: dataSourceHoldStatus
 
-INPUTOBJECT <IComplianceIdentity>: Identity Parameter
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -1145,7 +1145,7 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [UserPrincipalName <String>]: Alternate key of user
   [UserSourceId <String>]: The unique identifier of userSource
 
-LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>: estimateStatisticsOperation
+LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>`: estimateStatisticsOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: caseAction
   [CompletedDateTime <DateTime?>]: The date and time the operation was completed.
@@ -1261,7 +1261,7 @@ Read-only.
   [UnindexedItemCount <Int64?>]: The estimated count of unindexed items for the collection.
   [UnindexedItemsSize <Int64?>]: The estimated size of unindexed items for the collection.
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1322,3 +1322,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasesourcecollection)
 - [](https://learn.microsoft.com/graph/api/ediscovery-case-post-sourcecollections?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
