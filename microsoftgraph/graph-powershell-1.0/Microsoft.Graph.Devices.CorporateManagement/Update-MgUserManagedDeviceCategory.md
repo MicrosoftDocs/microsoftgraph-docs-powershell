@@ -15,6 +15,9 @@ title: Update-MgUserManagedDeviceCategory
 
 Update the navigation property deviceCategory in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

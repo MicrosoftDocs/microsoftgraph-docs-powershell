@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAp
 
 Update the navigation property containedApps in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

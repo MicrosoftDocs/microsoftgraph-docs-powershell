@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsIoStoreApp
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

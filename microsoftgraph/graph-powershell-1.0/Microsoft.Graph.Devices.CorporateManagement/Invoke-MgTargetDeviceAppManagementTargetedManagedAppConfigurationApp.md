@@ -15,6 +15,9 @@ title: Invoke-MgTargetDeviceAppManagementTargetedManagedAppConfigurationApp
 
 Invoke action targetApps
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaTargetDeviceAppManagementTargetedManagedAppConfigurationApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### TargetExpanded (Default)

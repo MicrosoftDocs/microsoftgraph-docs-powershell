@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagement
 
 Read properties and relationships of the deviceAppManagement object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

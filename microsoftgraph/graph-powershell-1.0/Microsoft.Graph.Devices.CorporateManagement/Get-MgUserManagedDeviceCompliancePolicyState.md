@@ -15,6 +15,9 @@ title: Get-MgUserManagedDeviceCompliancePolicyState
 
 Device compliance policy states for this device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Sync-MgDeviceAppManagementVppTokenLicense
 
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Sync (Default)

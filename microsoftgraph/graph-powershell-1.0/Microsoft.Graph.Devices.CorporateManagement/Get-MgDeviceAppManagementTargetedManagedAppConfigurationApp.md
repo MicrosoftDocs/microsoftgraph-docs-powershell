@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp
 
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

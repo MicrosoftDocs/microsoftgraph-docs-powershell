@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLo
 
 Another way to input protected apps through xml files
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

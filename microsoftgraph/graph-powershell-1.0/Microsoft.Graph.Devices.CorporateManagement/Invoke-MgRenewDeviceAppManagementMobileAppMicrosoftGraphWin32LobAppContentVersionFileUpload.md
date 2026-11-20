@@ -15,6 +15,9 @@ title: Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppConten
 
 Renews the SAS URI for an application file upload.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFileUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Renew (Default)

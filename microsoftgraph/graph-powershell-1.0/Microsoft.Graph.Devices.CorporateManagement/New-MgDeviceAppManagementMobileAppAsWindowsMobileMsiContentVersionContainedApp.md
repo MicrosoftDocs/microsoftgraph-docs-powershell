@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContain
 
 Create new navigation property to containedApps for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
