@@ -951,8 +951,8 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
-- [](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta)
 
 
 

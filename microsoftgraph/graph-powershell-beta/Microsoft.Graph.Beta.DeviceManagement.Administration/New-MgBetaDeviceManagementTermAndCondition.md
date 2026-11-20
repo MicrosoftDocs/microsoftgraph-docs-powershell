@@ -795,7 +795,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandcondition)
+- [New-MgBetaDeviceManagementTermAndCondition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandcondition)
 
 
 

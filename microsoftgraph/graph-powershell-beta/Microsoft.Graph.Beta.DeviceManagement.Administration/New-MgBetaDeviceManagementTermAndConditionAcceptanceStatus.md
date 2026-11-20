@@ -759,7 +759,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandconditionacceptancestatus)
+- [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandconditionacceptancestatus)
 
 
 
