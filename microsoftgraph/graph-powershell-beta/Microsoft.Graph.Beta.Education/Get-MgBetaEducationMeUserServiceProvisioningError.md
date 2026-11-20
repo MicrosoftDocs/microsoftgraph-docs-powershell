@@ -450,7 +450,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror)
+- [Get-MgBetaEducationMeUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror)
 
 
 

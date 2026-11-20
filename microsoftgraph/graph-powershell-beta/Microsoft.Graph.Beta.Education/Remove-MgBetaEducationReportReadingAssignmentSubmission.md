@@ -402,7 +402,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationreportreadingassignmentsubmission)
+- [Remove-MgBetaEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationreportreadingassignmentsubmission)
 
 
 
