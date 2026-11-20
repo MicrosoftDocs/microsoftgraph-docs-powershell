@@ -602,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementSettingDefinition>: Entity representing the defintion for a given setting
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementSettingDefinition>`: Entity representing the defintion for a given setting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -628,3 +628,25 @@ DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency[]>: Collection of
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -732,7 +732,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -831,19 +831,19 @@ Read-only.
     [UserPrincipalName <String>]: UserPrincipalName.
   [Version <Int32?>]: Version of the device configuration.
 
-DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>: deviceManagementApplicabilityRuleDeviceMode
+DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE `<IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>`: deviceManagementApplicabilityRuleDeviceMode
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceMode <Windows10DeviceModeType?>]: Windows 10 Device Mode type.
   [Name <String>]: Name for object.
   [RuleType <DeviceManagementApplicabilityRuleType?>]: Supported Applicability rule types for Device Configuration
 
-DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>: deviceManagementApplicabilityRuleOsEdition
+DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION `<IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>`: deviceManagementApplicabilityRuleOsEdition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: Name for object.
   [OSEditionTypes <Windows10EditionType[]>]: Applicability rule OS edition type.
   [RuleType <DeviceManagementApplicabilityRuleType?>]: Supported Applicability rule types for Device Configuration
 
-DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>: deviceManagementApplicabilityRuleOsVersion
+DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION `<IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>`: deviceManagementApplicabilityRuleOsVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaxOSVersion <String>]: Max OS version for Applicability Rule.
   [MinOSVersion <String>]: Min OS version for Applicability Rule.
@@ -875,7 +875,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>: deviceConfigurationDeviceOverview
+DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -997,7 +997,7 @@ Read-only.
   [UserDisplayName <String>]: User name of the DevicePolicyStatus.
   [UserPrincipalName <String>]: UserPrincipalName.
 
-USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
+USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1014,3 +1014,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
