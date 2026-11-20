@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl
 
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Create (Default)

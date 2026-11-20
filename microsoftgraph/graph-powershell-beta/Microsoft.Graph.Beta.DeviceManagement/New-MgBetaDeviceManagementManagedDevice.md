@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementManagedDevice
 
 Create new navigation property to managedDevices for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

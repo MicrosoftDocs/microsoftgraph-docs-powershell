@@ -16,6 +16,9 @@ title: Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleSch
 The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

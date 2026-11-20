@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementNotificationMessageTemplate
 
 Create new navigation property to notificationMessageTemplates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
