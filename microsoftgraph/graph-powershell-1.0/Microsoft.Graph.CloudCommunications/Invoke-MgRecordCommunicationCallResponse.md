@@ -13,7 +13,7 @@ title: Invoke-MgRecordCommunicationCallResponse
 
 ## SYNOPSIS
 
-Records a short audio response from the caller.\r\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.\rA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Records a short audio response from the caller.\r\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.\rA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -684,7 +684,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BargeInAllowed <Boolean?>]: 
   [ClientContext <String>]: 
@@ -695,7 +695,7 @@ BODYPARAMETER <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordrespons
   [Prompts <IMicrosoftGraphPrompt[]>]: 
   [StopTones <String[]>]: 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -721,3 +721,25 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse)
 - [](https://learn.microsoft.com/graph/api/call-record?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
