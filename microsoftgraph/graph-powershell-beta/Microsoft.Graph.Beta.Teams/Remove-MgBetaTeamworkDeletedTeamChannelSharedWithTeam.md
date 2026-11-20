@@ -477,7 +477,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelsharedwithteam)
+- [Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelsharedwithteam)
 
 
 

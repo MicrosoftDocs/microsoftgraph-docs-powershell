@@ -679,8 +679,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchanneljoineduser)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
+- [Remove-MgBetaTeamChannelJoinedUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchanneljoineduser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
 
 
 
