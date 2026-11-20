@@ -922,8 +922,8 @@ ORIGIN `<IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>`: attachmentOrig
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaseattachment)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-attachments?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseManagementCaseAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaseattachment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-attachments?view=graph-rest-beta)
 
 
 

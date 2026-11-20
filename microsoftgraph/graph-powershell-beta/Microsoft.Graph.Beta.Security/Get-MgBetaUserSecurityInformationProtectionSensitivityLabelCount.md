@@ -460,7 +460,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionsensitivitylabelcount)
+- [Get-MgBetaUserSecurityInformationProtectionSensitivityLabelCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionsensitivitylabelcount)
 
 
 

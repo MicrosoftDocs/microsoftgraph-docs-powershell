@@ -624,7 +624,7 @@ MFA `<IMicrosoftGraphPartnerSecurityCustomerMfaInsight>`: customerMfaInsight
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscorecustomerinsight)
+- [Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscorecustomerinsight)
 
 
 

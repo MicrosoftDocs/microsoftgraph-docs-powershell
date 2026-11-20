@@ -19685,7 +19685,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycaselegalhold)
+- [Update-MgBetaSecurityCaseEdiscoveryCaseLegalHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycaselegalhold)
 
 
 

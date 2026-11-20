@@ -995,7 +995,7 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>: Li
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
+- [New-MgBetaSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
 
 
 

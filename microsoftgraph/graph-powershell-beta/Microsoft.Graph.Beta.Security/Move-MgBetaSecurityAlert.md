@@ -431,8 +431,8 @@ BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert)
-- [](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-beta)
+- [Move-MgBetaSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-beta)
 
 
 

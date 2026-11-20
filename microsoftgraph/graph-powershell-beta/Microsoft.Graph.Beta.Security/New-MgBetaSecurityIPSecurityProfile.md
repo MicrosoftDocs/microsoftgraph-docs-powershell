@@ -694,7 +694,7 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
+- [New-MgBetaSecurityIPSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
 
 
 

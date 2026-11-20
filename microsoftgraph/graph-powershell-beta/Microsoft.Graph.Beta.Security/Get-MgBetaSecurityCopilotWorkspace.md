@@ -636,8 +636,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycopilotworkspace)
-- [](https://learn.microsoft.com/graph/api/securitycopilot-list-workspaces?view=graph-rest-beta)
+- [Get-MgBetaSecurityCopilotWorkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycopilotworkspace)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securitycopilot-list-workspaces?view=graph-rest-beta)
 
 
 

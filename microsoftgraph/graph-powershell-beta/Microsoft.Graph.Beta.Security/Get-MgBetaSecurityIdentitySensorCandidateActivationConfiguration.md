@@ -284,8 +284,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidateactivationconfiguration)
-- [](https://learn.microsoft.com/graph/api/security-sensorcandidateactivationconfiguration-get?view=graph-rest-beta)
+- [Get-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidateactivationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensorcandidateactivationconfiguration-get?view=graph-rest-beta)
 
 
 
