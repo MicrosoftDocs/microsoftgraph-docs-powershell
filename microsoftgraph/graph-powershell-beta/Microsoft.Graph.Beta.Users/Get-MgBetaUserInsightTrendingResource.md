@@ -15,6 +15,9 @@ title: Get-MgBetaUserInsightTrendingResource
 
 Used for navigating to the trending document.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightTrendingResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightTrendingResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

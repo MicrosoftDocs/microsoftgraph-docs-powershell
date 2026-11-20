@@ -15,6 +15,9 @@ title: Update-MgBetaUserTodoListTaskChecklistItem
 
 Update the navigation property checklistItems in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

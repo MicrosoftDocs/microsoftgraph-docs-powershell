@@ -15,6 +15,9 @@ title: Remove-MgBetaUserPhoto
 
 Delete navigation property photo for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Remove-MgUserPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
