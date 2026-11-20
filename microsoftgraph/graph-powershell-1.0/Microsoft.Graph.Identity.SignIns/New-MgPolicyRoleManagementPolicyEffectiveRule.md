@@ -15,6 +15,9 @@ title: New-MgPolicyRoleManagementPolicyEffectiveRule
 
 Create new navigation property to effectiveRules for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Restore-MgIdentityConditionalAccessDeletedItemNamedLocation
 
 Invoke action restore
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

@@ -15,6 +15,9 @@ title: Update-MgUserAuthenticationExternalAuthenticationMethod
 
 Update the navigation property externalAuthenticationMethods in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

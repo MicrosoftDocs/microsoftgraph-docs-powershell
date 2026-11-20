@@ -15,6 +15,9 @@ title: Get-MgIdentityRiskPreventionWebApplicationFirewallProvider
 
 Read the properties and relationships of webApplicationFirewallProvider object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

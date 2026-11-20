@@ -16,6 +16,9 @@ title: Get-MgIdentityRiskPreventionFraudProtectionProvider
 Read the properties and relationships of fraudProtectionProvider object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -16,6 +16,9 @@ title: New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 Add an identity provider to an external identities self-service user flow represented by an externalUsersSelfServiceSignupEventsFlow object type.
 The identity provider must first be configured in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

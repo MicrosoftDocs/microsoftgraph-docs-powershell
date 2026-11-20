@@ -16,6 +16,9 @@ title: Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdent
 Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values.
 In its reset state, the template has no impact on user synchronization settings, other than that unconfigured user synchronization settings are created if needed, for every multitenant organization tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

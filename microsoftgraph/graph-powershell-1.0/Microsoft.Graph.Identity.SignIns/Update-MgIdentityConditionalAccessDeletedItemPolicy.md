@@ -15,6 +15,9 @@ title: Update-MgIdentityConditionalAccessDeletedItemPolicy
 
 Update the navigation property policies in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

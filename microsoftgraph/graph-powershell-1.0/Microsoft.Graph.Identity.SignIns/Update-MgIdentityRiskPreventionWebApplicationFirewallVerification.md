@@ -15,6 +15,9 @@ title: Update-MgIdentityRiskPreventionWebApplicationFirewallVerification
 
 Update the navigation property webApplicationFirewallVerifications in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

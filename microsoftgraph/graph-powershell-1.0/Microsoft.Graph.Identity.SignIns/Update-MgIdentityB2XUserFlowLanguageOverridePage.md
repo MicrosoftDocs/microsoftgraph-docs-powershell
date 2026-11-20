@@ -16,6 +16,9 @@ title: Update-MgIdentityB2XUserFlowLanguageOverridePage
 Update the values in an userFlowLanguagePage object.
 You may only update the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

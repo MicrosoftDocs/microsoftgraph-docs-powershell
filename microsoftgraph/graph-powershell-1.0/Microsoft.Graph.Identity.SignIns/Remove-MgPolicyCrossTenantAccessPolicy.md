@@ -15,6 +15,9 @@ title: Remove-MgPolicyCrossTenantAccessPolicy
 
 Delete navigation property crossTenantAccessPolicy for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

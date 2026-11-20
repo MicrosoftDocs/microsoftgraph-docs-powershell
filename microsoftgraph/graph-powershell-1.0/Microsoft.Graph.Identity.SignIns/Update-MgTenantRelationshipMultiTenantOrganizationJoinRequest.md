@@ -17,6 +17,9 @@ Join a multitenant organization, after the owner of the multitenant organization
 Before a tenant added to a multitenant organization can participate in the multitenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait up to 2 hours before joining a multitenant organization is completed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

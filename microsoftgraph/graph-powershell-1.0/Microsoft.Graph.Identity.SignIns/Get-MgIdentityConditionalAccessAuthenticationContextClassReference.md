@@ -15,6 +15,9 @@ title: Get-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

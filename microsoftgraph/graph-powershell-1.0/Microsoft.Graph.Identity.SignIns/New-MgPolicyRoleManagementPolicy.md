@@ -15,6 +15,9 @@ title: New-MgPolicyRoleManagementPolicy
 
 Create new navigation property to roleManagementPolicies for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
