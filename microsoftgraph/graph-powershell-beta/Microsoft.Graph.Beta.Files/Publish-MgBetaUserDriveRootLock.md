@@ -410,8 +410,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetauserdriverootlock)
-- [](https://learn.microsoft.com/graph/api/driveitem-releaselock?view=graph-rest-beta)
+- [Publish-MgBetaUserDriveRootLock](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetauserdriverootlock)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-releaselock?view=graph-rest-beta)
 
 
 

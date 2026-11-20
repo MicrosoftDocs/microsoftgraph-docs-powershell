@@ -912,7 +912,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitemdocumentsetversion)
+- [Update-MgBetaGroupDriveItemListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemlistitemdocumentsetversion)
 
 
 

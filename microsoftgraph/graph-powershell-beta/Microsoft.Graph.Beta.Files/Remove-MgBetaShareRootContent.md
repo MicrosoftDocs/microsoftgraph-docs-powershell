@@ -413,7 +413,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharerootcontent)
+- [Remove-MgBetaShareRootContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharerootcontent)
 
 
 
