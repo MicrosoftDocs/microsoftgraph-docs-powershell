@@ -15,6 +15,9 @@ title: Get-MgBetaPrintShareAllowedGroupServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedGroupServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedGroupServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

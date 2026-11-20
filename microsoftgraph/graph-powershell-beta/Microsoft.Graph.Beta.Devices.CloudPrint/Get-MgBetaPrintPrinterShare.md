@@ -15,6 +15,9 @@ title: Get-MgBetaPrintPrinterShare
 
 Get printerShares from print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

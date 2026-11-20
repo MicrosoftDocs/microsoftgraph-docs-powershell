@@ -15,6 +15,9 @@ title: Remove-MgBetaPrintShareJob
 
 Delete navigation property jobs for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
