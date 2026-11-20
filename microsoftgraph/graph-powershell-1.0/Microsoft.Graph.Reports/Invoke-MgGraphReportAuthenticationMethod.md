@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -401,6 +391,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mggraphreportauthenticationmethod)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-1.0)
+
 
 
 

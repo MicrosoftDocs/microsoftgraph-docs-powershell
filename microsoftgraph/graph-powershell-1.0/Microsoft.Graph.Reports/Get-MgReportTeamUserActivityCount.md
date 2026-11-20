@@ -50,12 +50,17 @@ Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamUserActivityCount -Period $periodId
+Get-MgReportTeamUserActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportTeamUserActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

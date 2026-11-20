@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the count of user mailboxes in each quota category.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period $periodId
+Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportMailboxUsageQuotaStatusMailboxCount Cmdlet.
+
 
 ## PARAMETERS
 
