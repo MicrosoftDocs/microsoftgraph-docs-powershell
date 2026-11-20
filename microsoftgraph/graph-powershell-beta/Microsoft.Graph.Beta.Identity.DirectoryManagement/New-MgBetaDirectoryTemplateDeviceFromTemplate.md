@@ -74,7 +74,7 @@ Create a new device from a deviceTemplate.
 
 ### -AccountEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +128,7 @@ HelpMessage: ''
 
 ### -AlternativeNames
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -155,7 +155,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -253,7 +253,7 @@ HelpMessage: ''
 
 ### -ExternalDeviceId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -280,7 +280,7 @@ HelpMessage: ''
 
 ### -ExternalSourceName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -426,7 +426,7 @@ HelpMessage: ''
 
 ### -OperatingSystemVersion
 
-.
+
 
 ```yaml
 Type: System.String
