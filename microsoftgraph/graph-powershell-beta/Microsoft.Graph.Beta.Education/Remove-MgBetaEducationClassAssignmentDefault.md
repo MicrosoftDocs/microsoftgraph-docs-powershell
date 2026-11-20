@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationClassAssignmentDefault
 
 Delete navigation property assignmentDefaults for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

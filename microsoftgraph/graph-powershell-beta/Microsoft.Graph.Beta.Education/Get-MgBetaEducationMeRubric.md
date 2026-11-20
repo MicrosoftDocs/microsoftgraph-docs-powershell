@@ -16,6 +16,9 @@ title: Get-MgBetaEducationMeRubric
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

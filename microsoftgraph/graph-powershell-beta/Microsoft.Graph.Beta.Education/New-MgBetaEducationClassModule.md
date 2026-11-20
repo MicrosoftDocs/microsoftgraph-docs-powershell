@@ -17,6 +17,9 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students won't see the modules until publication.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

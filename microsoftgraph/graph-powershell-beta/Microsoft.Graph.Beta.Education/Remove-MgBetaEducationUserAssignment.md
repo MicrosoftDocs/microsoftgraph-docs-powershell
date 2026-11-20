@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationUserAssignment
 
 Delete navigation property assignments for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
