@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -398,6 +388,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenariobyuniquename)
 - [](https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-beta)
+
 
 
 
