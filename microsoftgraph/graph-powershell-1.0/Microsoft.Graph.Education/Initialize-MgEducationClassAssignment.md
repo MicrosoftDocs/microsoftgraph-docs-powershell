@@ -404,8 +404,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationclassassignment)
-- [](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0)
+- [Initialize-MgEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationclassassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0)
 
 
 

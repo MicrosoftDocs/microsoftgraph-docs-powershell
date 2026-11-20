@@ -850,7 +850,7 @@ CHALLENGINGWORDS <IMicrosoftGraphChallengingWord[]>: List of words that the stud
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationreportreadingassignmentsubmission)
+- [New-MgEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationreportreadingassignmentsubmission)
 
 
 

@@ -406,8 +406,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
-- [](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)
+- [Invoke-MgPinEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)
 
 
 

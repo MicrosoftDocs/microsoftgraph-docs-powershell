@@ -619,7 +619,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingscheme)
+- [Update-MgEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingscheme)
 
 
 

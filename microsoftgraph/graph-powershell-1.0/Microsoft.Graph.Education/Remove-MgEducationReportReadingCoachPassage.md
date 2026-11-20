@@ -402,7 +402,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationreportreadingcoachpassage)
+- [Remove-MgEducationReportReadingCoachPassage](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationreportreadingcoachpassage)
 
 
 

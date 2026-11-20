@@ -622,8 +622,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsettinggradingscheme)
-- [](https://learn.microsoft.com/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-1.0)
+- [New-MgEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsettinggradingscheme)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-1.0)
 
 
 

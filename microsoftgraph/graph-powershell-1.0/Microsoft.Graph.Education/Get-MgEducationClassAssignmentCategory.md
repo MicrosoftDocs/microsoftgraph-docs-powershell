@@ -703,10 +703,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory)
-- [](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
+- [Get-MgEducationClassAssignmentCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 
 
 
