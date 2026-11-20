@@ -449,8 +449,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment)
-- [](https://learn.microsoft.com/graph/api/group-delete-approleassignments?view=graph-rest-1.0)
+- [Remove-MgGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-approleassignments?view=graph-rest-1.0)
 
 
 
