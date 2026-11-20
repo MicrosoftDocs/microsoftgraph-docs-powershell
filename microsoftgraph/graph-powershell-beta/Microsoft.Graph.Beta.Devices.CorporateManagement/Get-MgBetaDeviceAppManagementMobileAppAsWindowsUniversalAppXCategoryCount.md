@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

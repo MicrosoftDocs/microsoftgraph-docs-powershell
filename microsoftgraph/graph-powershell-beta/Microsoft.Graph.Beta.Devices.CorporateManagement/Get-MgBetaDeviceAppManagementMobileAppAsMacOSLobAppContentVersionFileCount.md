@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCoun
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

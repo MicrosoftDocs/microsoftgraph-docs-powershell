@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment
 
 Delete navigation property assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationAppliedPolicy
 
 Invoke action targetApps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgTargetDeviceAppManagementManagedAppRegistrationAppliedPolicyApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### TargetExpanded (Default)

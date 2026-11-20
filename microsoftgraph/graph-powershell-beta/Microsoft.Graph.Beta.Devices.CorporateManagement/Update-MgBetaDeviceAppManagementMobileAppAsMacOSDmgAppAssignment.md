@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment
 
 Update the navigation property assignments in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

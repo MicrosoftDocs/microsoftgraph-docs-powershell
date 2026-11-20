@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedIOSLobApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

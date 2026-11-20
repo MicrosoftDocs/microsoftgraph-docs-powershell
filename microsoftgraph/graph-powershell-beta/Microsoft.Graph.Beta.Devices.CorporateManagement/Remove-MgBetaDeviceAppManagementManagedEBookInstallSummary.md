@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary
 
 Delete navigation property installSummary for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

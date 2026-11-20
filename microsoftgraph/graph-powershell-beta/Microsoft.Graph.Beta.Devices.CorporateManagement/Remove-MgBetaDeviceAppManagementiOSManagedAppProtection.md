@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementiOSManagedAppProtection
 
 Delete navigation property iosManagedAppProtections for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

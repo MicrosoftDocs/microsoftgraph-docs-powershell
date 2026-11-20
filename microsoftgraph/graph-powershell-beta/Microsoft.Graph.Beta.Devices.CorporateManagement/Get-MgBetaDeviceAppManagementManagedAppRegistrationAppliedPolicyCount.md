@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicyCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

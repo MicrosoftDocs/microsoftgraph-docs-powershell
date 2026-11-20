@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile
 
 Delete navigation property files for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedCont
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Set-MgBetaDeviceAppManagementMobileApp
 
 Invoke action assign
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

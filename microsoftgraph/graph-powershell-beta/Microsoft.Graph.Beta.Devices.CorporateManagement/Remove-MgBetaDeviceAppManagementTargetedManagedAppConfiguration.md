@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration
 
 Delete navigation property targetedManagedAppConfigurations for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
