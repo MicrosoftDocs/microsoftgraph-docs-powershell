@@ -15,6 +15,9 @@ title: Update-MgDirectoryTenantGovernanceInvitation
 
 Update the navigation property governanceInvitations in directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryTenantGovernanceInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryTenantGovernanceInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

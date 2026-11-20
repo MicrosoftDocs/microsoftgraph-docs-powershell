@@ -15,6 +15,9 @@ title: Update-MgDirectoryTenantGovernance
 
 Update the navigation property tenantGovernance in directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryTenantGovernance](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryTenantGovernance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

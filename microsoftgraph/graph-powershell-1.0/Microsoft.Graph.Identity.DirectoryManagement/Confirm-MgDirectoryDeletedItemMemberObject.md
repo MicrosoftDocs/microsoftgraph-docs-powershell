@@ -15,6 +15,9 @@ title: Confirm-MgDirectoryDeletedItemMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaDirectoryDeletedItemMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDirectoryDeletedItemMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

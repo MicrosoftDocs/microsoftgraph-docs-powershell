@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceRelatedTenant
 
 Get relatedTenants from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgDirectoryAdministrativeUnitMemberCountAsApplication
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsApplication](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberCountAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

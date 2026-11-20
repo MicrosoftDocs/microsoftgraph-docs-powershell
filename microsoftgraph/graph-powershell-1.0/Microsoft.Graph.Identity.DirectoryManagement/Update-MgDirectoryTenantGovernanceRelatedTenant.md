@@ -15,6 +15,9 @@ title: Update-MgDirectoryTenantGovernanceRelatedTenant
 
 Invoke action refresh
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Refresh (Default)

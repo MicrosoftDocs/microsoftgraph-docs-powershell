@@ -15,6 +15,9 @@ title: Get-MgDeviceRegisteredOwnerAsUser
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwnerAsUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

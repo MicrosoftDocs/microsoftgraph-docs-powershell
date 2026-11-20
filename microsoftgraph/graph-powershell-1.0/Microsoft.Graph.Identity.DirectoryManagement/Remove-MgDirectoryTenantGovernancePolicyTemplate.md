@@ -15,6 +15,9 @@ title: Remove-MgDirectoryTenantGovernancePolicyTemplate
 
 Delete navigation property governancePolicyTemplates for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

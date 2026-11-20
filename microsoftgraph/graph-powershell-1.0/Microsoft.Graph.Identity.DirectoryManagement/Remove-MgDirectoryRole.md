@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRole
 
 Delete entity from directoryRoles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

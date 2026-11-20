@@ -15,6 +15,9 @@ title: Remove-MgDirectoryTenantGovernanceRelationship
 
 Delete navigation property governanceRelationships for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryTenantGovernanceRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryTenantGovernanceRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgDirectoryTenantGovernancePolicyTemplate
 
 Create new navigation property to governancePolicyTemplates for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

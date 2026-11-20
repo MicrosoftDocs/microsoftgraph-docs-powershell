@@ -15,6 +15,9 @@ title: Update-MgDirectoryRecovery
 
 Update the navigation property recovery in directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRecovery](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRecovery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

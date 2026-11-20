@@ -15,6 +15,9 @@ title: Get-MgAdminPeopleProfileSource
 
 A collection of profile source settings configured by an administrator in an organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

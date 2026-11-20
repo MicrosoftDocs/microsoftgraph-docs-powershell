@@ -16,6 +16,9 @@ title: Get-MgDirectoryAdministrativeUnitExtension
 The collection of open extensions defined for this administrative unit.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgDirectoryAdministrativeUnitMemberByRef
 
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

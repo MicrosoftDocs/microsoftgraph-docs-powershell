@@ -15,6 +15,9 @@ title: Get-MgDeviceByDeviceId
 
 Get the properties and relationships of a device object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

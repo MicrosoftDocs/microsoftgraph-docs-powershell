@@ -16,6 +16,9 @@ title: Update-MgAdminPeoplePronoun
 Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeoplePronoun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

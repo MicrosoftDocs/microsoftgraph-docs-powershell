@@ -15,6 +15,9 @@ title: Remove-MgDirectoryTenantGovernanceInvitation
 
 Delete navigation property governanceInvitations for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryTenantGovernanceInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryTenantGovernanceInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

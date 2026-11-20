@@ -15,6 +15,9 @@ title: Set-MgOrganizationBrandingLocalizationBannerLogo
 
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

@@ -15,6 +15,9 @@ title: New-MgDevice
 
 Create and register a new device in the organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
