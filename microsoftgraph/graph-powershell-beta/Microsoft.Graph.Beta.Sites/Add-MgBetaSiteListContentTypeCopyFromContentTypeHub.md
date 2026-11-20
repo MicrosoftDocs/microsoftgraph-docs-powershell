@@ -84,8 +84,9 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Synchronous pull
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -95,7 +96,12 @@ $params = @{
 
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example synchronous pull
+
+### Example 2: Asynchronous pull
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -104,6 +110,10 @@ $params = @{
 }
 
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example asynchronous pull
+
 
 ## PARAMETERS
 

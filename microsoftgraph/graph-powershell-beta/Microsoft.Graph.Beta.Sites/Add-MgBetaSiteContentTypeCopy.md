@@ -67,16 +67,6 @@ This cmdlet has the following aliases,
 
 Invoke action addCopy
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -534,6 +524,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopy)
 - [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
+
 
 
 
