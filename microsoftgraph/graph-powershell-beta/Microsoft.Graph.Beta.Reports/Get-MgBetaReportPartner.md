@@ -15,6 +15,9 @@ title: Get-MgBetaReportPartner
 
 Represents billing details for a Microsoft direct partner.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartner](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

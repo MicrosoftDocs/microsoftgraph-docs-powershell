@@ -15,6 +15,9 @@ title: Get-MgBetaReportOffice365ActivationUserCount
 
 Invoke function getOffice365ActivationsUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActivationUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

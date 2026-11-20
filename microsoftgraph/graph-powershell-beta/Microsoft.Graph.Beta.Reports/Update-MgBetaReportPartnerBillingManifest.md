@@ -15,6 +15,9 @@ title: Update-MgBetaReportPartnerBillingManifest
 
 Update the navigation property manifests in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

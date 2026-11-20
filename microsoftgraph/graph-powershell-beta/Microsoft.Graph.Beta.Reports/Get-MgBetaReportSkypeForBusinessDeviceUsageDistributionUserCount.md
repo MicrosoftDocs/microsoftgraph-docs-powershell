@@ -15,6 +15,9 @@ title: Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount
 
 Invoke function getSkypeForBusinessDeviceUsageDistributionUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

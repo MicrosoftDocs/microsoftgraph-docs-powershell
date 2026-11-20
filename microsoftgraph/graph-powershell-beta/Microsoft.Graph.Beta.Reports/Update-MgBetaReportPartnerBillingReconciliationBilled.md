@@ -15,6 +15,9 @@ title: Update-MgBetaReportPartnerBillingReconciliationBilled
 
 Update the navigation property billed in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

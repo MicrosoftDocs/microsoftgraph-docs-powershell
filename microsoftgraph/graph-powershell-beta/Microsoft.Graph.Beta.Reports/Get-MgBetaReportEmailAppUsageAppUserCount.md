@@ -15,6 +15,9 @@ title: Get-MgBetaReportEmailAppUsageAppUserCount
 
 Invoke function getEmailAppUsageAppsUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportEmailAppUsageAppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailAppUsageAppUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
