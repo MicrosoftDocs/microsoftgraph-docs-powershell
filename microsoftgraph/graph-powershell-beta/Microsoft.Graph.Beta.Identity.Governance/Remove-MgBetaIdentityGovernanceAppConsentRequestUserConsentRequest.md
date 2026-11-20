@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest
 
 Delete navigation property userConsentRequests for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

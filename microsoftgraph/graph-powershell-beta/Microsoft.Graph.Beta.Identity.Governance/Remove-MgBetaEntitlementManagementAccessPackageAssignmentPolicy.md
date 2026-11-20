@@ -15,6 +15,9 @@ title: Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

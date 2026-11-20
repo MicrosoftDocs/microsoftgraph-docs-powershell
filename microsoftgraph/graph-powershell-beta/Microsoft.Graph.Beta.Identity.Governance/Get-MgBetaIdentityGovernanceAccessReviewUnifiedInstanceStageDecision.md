@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision
 
 Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

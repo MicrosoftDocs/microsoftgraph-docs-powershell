@@ -15,6 +15,9 @@ title: New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleReque
 
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance
 
 Create new navigation property to instances for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewUnifiedInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewUnifiedInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

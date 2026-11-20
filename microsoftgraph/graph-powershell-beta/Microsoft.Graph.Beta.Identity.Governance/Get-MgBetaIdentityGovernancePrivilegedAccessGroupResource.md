@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource
 
 Read the properties and relationships of a groupResource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

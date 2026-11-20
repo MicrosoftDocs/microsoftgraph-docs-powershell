@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceCatalog
 
 Get catalogs from identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceCatalog?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

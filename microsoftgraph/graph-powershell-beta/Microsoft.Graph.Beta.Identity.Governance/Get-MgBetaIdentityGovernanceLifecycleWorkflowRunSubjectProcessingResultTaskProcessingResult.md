@@ -16,6 +16,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTa
 The task-level processing results for this subject.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

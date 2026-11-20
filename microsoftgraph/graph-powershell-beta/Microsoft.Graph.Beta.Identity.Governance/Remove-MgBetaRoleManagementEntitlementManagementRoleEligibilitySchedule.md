@@ -15,6 +15,9 @@ title: Remove-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule
 
 Delete navigation property roleEligibilitySchedules for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

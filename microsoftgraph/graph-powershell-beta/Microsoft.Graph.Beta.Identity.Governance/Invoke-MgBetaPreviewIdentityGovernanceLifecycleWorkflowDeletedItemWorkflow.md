@@ -16,6 +16,9 @@ title: Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflo
 Run a workflow in preview mode for selected directory objects without affecting production users.
 This action triggers workflow processing in preview mode, and results can be retrieved by using the List userProcessingResults operation with $filter=workflowExecutionType eq 'previewMode'.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)

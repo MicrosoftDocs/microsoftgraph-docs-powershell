@@ -15,6 +15,9 @@ title: Remove-MgBetaEntitlementManagementConnectedOrganization
 
 Delete a connectedOrganization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

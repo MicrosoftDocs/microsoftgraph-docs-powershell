@@ -15,6 +15,9 @@ title: Update-MgBetaEntitlementManagementConnectedOrganization
 
 Update a connectedOrganization object to change one or more of its properties.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowSubjectProcessingR
 
 Invoke function summary
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowSubjectProcessingResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Summary (Default)
