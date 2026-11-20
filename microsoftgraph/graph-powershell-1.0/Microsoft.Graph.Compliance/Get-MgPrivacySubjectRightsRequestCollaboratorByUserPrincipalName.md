@@ -15,6 +15,9 @@ title: Get-MgPrivacySubjectRightsRequestCollaboratorByUserPrincipalName
 
 Collection of users who can collaborate on the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestCollaboratorByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestCollaboratorByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
