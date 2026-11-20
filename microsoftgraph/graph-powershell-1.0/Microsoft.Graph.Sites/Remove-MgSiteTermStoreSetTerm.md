@@ -543,8 +543,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetterm)
-- [](https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0)
+- [Remove-MgSiteTermStoreSetTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetterm)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0)
 
 
 

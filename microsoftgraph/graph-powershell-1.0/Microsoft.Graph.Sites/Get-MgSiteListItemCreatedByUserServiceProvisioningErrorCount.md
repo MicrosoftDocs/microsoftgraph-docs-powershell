@@ -425,7 +425,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcreatedbyuserserviceprovisioningerrorcount)
+- [Get-MgSiteListItemCreatedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcreatedbyuserserviceprovisioningerrorcount)
 
 
 

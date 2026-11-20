@@ -426,7 +426,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathanalytic)
+- [Get-MgGroupSiteGetByPathAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathanalytic)
 
 
 

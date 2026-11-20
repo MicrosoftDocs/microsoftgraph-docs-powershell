@@ -510,7 +510,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitempermission)
+- [Remove-MgGroupSiteListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitempermission)
 
 
 

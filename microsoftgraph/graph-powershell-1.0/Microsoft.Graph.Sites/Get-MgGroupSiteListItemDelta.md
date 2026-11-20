@@ -723,8 +723,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdelta)
-- [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
+- [Get-MgGroupSiteListItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-1.0)
 
 
 

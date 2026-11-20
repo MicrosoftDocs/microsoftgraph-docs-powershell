@@ -389,7 +389,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperationcount)
+- [Get-MgSiteOperationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperationcount)
 
 
 
