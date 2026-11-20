@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview
 
 Update the navigation property deviceStatusOverview in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

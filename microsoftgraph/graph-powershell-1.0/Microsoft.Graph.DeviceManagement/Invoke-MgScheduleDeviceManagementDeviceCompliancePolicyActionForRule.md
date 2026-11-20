@@ -15,6 +15,9 @@ title: Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
 
 Invoke action scheduleActionsForRules
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScheduleExpanded (Default)
