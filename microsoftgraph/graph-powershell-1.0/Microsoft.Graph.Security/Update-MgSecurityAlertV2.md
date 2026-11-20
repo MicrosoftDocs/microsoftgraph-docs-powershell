@@ -85,6 +85,14 @@ This cmdlet has the following aliases,
 
 Update the properties of an alert object in an organization based on the specified alert id property.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
