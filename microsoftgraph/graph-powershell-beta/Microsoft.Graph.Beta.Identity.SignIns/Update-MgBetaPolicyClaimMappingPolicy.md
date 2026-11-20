@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyClaimMappingPolicy
 
 Update the properties of a claimsMappingPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -17,6 +17,9 @@ Update the properties of the specified external identity provider configured in 
 Among the types of providers derived from identityProviderBase, in Microsoft Entra, this operation can update a socialIdentityProvider, appleManagedIdentityProvider (external tenant only), or an oidcIdentityProvider (external tenant only) resource.
 In Azure AD B2C, this operation can update a socialIdentityProvider, appleManagedIdentityProvider, builtinIdentityProvider, or an openIdConnectIdentityProvider resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

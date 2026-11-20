@@ -16,6 +16,9 @@ title: Remove-MgBetaIdentityAuthenticationEventFlow
 Delete a specific authenticationEventsFlow resource by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventFlow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

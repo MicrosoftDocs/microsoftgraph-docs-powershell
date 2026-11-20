@@ -16,6 +16,9 @@ title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyFeatureRolloutPolicy
 
 Update the properties of featureRolloutPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaInformationProtectionThreatAssessmentRequest
 
 Update the navigation property threatAssessmentRequests in informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

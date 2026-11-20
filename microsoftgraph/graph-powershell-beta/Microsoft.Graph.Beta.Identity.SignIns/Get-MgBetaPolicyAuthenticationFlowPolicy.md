@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyAuthenticationFlowPolicy
 
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Set-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef
 
 Update the ref of navigation property postAttributeCollection in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

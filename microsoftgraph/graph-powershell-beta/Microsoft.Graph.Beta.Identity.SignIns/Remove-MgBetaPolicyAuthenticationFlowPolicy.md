@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyAuthenticationFlowPolicy
 
 Delete navigation property authenticationFlowsPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

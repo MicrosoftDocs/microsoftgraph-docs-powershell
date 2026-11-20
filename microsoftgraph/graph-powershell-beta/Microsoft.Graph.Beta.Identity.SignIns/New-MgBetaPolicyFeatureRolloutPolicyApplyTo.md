@@ -15,6 +15,9 @@ title: New-MgBetaPolicyFeatureRolloutPolicyApplyTo
 
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

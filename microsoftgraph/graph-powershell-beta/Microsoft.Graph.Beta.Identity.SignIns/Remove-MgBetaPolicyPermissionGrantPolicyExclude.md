@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyPermissionGrantPolicyExclude
 
 Delete a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaUserAuthenticationOperation
 
 Create new navigation property to operations for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
