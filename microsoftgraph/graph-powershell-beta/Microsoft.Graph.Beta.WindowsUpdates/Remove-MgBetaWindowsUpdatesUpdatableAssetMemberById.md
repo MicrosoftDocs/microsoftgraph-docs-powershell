@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
