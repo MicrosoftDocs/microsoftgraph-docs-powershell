@@ -582,8 +582,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagedelta)
-- [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-beta)
+- [Get-MgBetaUserMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-beta)
 
 
 

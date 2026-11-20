@@ -449,8 +449,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfolderchildfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
+- [Invoke-MgBetaUnsubscribeUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfolderchildfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
 
 
 
