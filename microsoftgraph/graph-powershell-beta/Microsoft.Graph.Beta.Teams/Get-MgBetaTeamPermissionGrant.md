@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 A collection of permissions granted to apps to access the team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamPermissionGrant -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamPermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

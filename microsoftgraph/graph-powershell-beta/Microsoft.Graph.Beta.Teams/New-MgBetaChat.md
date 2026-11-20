@@ -65,8 +65,9 @@ Create a new chat object.
 | Application | Chat.Create,  |
 
 ## EXAMPLES
+### Example 1: Create a one-on-one chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -92,7 +93,12 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a one-on-one chat
+
+### Example 2: Create a group chat
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -126,7 +132,12 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a group chat
+
+### Example 3: Create a one-on-one chat with installed apps
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -157,7 +168,12 @@ installedApps = @(
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create a one-on-one chat with installed apps
+
+### Example 4: Create a one-on-one chat using user principal name
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -183,7 +199,12 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create a one-on-one chat using user principal name
+
+### Example 5: Create a group chat with in-tenant guest
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -217,7 +238,12 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create a group chat with in-tenant guest
+
+### Example 6: Create a one-on-one chat with a federated user (outside of own organization)
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -243,6 +269,10 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
+
+```
+This example will create a one-on-one chat with a federated user (outside of own organization)
+
 
 ## PARAMETERS
 

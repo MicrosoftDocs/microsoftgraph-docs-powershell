@@ -79,13 +79,18 @@ This cmdlet has the following aliases,
 The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
+
 
 ## PARAMETERS
 

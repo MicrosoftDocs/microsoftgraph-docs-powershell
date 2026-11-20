@@ -56,12 +56,17 @@ Delete a shift from the schedule.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
+
+```
+This example shows how to use the Remove-MgBetaTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 
