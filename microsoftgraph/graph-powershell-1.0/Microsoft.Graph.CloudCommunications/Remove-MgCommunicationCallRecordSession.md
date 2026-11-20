@@ -15,6 +15,9 @@ title: Remove-MgCommunicationCallRecordSession
 
 Delete navigation property sessions for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

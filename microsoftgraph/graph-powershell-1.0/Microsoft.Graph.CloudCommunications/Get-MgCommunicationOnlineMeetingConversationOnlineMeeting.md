@@ -15,6 +15,9 @@ title: Get-MgCommunicationOnlineMeetingConversationOnlineMeeting
 
 The online meeting associated with the conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingConversationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingConversationOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
