@@ -15,6 +15,9 @@ title: Update-MgBetaUserMailFolderMessageExtension
 
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaUserInferenceClassification
 
 Update the navigation property inferenceClassification in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassification](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
