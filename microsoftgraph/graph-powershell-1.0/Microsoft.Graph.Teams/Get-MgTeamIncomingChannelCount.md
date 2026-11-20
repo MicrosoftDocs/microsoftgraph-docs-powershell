@@ -15,6 +15,9 @@ title: Get-MgTeamIncomingChannelCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamIncomingChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannelCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

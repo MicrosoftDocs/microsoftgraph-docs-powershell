@@ -15,6 +15,9 @@ title: Remove-MgChatTargetedMessageReply
 
 Delete navigation property replies for chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatTargetedMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatTargetedMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

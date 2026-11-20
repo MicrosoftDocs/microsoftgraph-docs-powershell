@@ -15,6 +15,9 @@ title: New-MgUserChatTargetedMessageReply
 
 Create new navigation property to replies for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTargetedMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTargetedMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

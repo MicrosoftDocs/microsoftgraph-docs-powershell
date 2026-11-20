@@ -15,6 +15,9 @@ title: Update-MgChatTargetedMessageReplyHostedContent
 
 Update the navigation property hostedContents in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatTargetedMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTargetedMessageReplyHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

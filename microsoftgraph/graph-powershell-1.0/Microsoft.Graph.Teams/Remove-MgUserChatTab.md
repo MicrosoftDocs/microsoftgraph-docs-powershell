@@ -15,6 +15,9 @@ title: Remove-MgUserChatTab
 
 Delete navigation property tabs for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

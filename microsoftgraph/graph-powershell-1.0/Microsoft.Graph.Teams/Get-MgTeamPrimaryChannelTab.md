@@ -16,6 +16,9 @@ title: Get-MgTeamPrimaryChannelTab
 A collection of all the tabs in the channel.
 A navigation property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

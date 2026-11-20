@@ -15,6 +15,9 @@ title: Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember
 
 A collection of team members who have access to the shared channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

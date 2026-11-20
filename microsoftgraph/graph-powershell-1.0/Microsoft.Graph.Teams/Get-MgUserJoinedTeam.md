@@ -15,6 +15,9 @@ title: Get-MgUserJoinedTeam
 
 Get joinedTeams from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
