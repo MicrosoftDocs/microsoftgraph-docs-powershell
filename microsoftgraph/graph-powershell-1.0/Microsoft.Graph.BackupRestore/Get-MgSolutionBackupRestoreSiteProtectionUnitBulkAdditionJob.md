@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob
 
 Get siteProtectionUnitsBulkAdditionJobs from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

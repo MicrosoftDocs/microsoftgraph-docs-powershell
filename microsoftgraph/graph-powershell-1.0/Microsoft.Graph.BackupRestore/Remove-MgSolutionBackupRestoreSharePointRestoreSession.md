@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreSharePointRestoreSession
 
 Delete navigation property sharePointRestoreSessions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreEmailNotificationSetting
 
 Read the properties and relationships of an emailNotificationsSetting object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

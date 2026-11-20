@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtec
 
 Get a driveProtectionUnitsBulkAdditionJob object by the ID associated with a oneDriveForBusinessProtectionPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

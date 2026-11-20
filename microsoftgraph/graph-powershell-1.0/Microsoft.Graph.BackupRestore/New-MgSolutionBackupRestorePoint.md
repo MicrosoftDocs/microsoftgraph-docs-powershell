@@ -15,6 +15,9 @@ title: New-MgSolutionBackupRestorePoint
 
 Create new navigation property to restorePoints for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
