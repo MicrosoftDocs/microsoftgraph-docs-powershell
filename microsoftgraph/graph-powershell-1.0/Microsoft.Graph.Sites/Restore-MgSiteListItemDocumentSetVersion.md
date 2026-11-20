@@ -57,12 +57,17 @@ Restore a document set version.
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+
+```
+This example shows how to use the Restore-MgSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 
