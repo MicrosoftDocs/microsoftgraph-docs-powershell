@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementPartner
 
 Delete navigation property deviceManagementPartners for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
