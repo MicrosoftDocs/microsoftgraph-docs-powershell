@@ -92,18 +92,28 @@ A channel can’t be archived or unarchived if its team is archived.
 | Application | ChannelSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Archive a channel
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will archive a channel
+
+### Example 2: Archive a channel when the team is archived
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 2
+```
+This example will archive a channel when the team is archived
 
-Import-Module Microsoft.Graph.Teams
-
-Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 

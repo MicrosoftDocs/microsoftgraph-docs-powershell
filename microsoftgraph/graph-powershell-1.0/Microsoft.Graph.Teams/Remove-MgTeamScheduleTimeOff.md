@@ -56,12 +56,17 @@ Delete a timeOff instance from a schedule.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
+
+```
+This example shows how to use the Remove-MgTeamScheduleTimeOff Cmdlet.
+
 
 ## PARAMETERS
 

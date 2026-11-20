@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -753,6 +743,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason)
 - [](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-1.0)
+
 
 
 
