@@ -65,12 +65,17 @@ Read the properties and relationships of a fileValidateOperation object.
 | Application | IndustryData.ReadBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve a long-running operation from the industry data service
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalIndustryDataOperation -LongRunningOperationId $longRunningOperationId
+
+```
+This example will retrieve a long-running operation from the industry data service
+
 
 ## PARAMETERS
 
