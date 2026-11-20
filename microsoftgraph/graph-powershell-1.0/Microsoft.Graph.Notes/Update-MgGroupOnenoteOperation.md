@@ -15,6 +15,9 @@ title: Update-MgGroupOnenoteOperation
 
 Update the navigation property operations in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
