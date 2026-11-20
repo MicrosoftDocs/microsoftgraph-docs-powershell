@@ -497,7 +497,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementRoleAssignment>: The Role Assignment resource.
+BODYPARAMETER `<IMicrosoftGraphDeviceAndAppManagementRoleAssignment>`: The Role Assignment resource.
 Role assignments tie together a role definition with members and scopes.
 There can be one or more role assignments per role.
 This applies to custom and built-in roles.
@@ -550,7 +550,7 @@ Read-only.
   [Members <String[]>]: Indicates the list of role member security group Entra IDs.
 For example: {dec942f4-6777-4998-96b4-522e383b08e2}.
 
-ROLEDEFINITION <IMicrosoftGraphRoleDefinition>: The Role Definition resource.
+ROLEDEFINITION `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
@@ -591,3 +591,25 @@ These must match the actionName that is defined as part of the rolePermission.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroleassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
