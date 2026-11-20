@@ -14,7 +14,7 @@ title: Update-MgUserPassword
 ## SYNOPSIS
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.\r\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\rTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## SYNTAX
@@ -67,7 +67,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the signed-in user's password.
-Any user can update their password without belonging to any administrator role.\r\nTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
+Any user can update their password without belonging to any administrator role.\rTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
 ## EXAMPLES
@@ -518,12 +518,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IComponents89FyhbRequestbodiesChangepasswordrequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentPassword <String>]: 
   [NewPassword <String>]: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
@@ -531,3 +531,25 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword)
 - [](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
