@@ -16,6 +16,9 @@ title: Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordParentHost
 The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligencePassiveDnsRecordParentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecordParentHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

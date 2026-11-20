@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCollaborationAnalyzedEmail
 
 Read the properties and relationships of an analyzedEmail object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

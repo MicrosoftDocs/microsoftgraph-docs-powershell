@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostTrackerCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostTrackerCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTrackerCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

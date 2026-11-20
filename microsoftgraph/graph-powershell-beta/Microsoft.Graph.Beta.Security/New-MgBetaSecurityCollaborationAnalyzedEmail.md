@@ -15,6 +15,9 @@ title: New-MgBetaSecurityCollaborationAnalyzedEmail
 
 Create new navigation property to analyzedEmails for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

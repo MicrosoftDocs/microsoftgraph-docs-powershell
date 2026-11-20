@@ -15,6 +15,9 @@ title: Move-MgBetaSecurityAlert
 
 Move one or more alert resources to a new or existing incident.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Move-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)

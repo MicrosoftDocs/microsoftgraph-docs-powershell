@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAuditLog
 
 The entry point for Microsoft Purview audit log queries and operations.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLog?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

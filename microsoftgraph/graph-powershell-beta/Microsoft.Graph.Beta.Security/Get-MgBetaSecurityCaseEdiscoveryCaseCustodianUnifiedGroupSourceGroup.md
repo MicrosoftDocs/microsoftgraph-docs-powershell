@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup
 
 Represents a group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

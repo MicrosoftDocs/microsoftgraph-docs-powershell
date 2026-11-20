@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceSubdomain
 
 Read the properties and relationships of a subdomain object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAttackSimulationPayload
 
 Get an attack simulation campaign payload for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
