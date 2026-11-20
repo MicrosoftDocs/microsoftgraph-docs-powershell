@@ -15,6 +15,9 @@ title: New-MgIdentityGovernancePrivilegedAccessGroupResource
 
 Create new navigation property to resources for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernancePrivilegedAccessGroupResource](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

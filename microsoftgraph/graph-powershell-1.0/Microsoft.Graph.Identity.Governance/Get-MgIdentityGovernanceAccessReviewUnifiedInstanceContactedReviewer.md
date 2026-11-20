@@ -18,6 +18,9 @@ While the reviewers and fallbackReviewers properties of the accessReviewSchedule
 Supports $select.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

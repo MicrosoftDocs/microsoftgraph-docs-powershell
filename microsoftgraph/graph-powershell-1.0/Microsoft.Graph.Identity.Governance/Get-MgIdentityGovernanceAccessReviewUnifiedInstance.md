@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAccessReviewUnifiedInstance
 
 Represents the unified (vNext) instance of a review.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

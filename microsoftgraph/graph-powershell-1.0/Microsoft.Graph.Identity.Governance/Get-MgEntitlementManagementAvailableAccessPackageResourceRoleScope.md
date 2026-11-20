@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope
 
 The resource role scopes associated with this available access package.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

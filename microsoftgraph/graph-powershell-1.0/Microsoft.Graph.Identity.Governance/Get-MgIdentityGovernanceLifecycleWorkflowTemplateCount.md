@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowTemplateCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

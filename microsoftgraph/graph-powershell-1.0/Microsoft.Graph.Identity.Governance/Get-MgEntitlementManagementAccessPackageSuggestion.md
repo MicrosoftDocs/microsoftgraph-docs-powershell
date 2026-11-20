@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementAccessPackageSuggestion
 
 Suggested access packages for end users based on various criteria such as related people insights and assignment history.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageSuggestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageSuggestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

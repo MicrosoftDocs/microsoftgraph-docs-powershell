@@ -17,6 +17,9 @@ Release a quarantined workflow so that it resumes processing.
 A workflow is automatically quarantined when a run exceeds the threshold conditions defined in its quarantineConfiguration.
 After an administrator reviews the cause of the quarantine, calling this action clears the quarantine state and allows the workflow to run again.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Clear (Default)

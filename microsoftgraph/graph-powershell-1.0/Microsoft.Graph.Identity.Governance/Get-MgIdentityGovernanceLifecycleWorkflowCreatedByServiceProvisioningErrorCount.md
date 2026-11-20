@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErro
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

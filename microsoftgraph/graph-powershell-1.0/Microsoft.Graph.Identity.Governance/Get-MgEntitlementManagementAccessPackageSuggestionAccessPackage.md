@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementAccessPackageSuggestionAccessPackage
 
 The access package information for the suggested package.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageSuggestionAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageSuggestionAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

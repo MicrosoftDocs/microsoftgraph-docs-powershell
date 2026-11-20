@@ -15,6 +15,9 @@ title: New-MgEntitlementManagementSubject
 
 Create new navigation property to subjects for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

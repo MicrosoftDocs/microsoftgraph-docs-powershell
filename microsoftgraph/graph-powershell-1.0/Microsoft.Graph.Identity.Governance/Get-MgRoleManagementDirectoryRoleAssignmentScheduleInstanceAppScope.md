@@ -16,6 +16,9 @@ title: Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope
 Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

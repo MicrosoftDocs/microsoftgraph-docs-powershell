@@ -15,6 +15,9 @@ title: New-MgEntitlementManagementAccessPackageAssignmentPolicy
 
 Create new navigation property to assignmentPolicies for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

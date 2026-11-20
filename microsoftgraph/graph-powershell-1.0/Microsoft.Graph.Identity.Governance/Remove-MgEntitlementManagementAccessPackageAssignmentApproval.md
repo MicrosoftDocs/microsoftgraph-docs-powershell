@@ -15,6 +15,9 @@ title: Remove-MgEntitlementManagementAccessPackageAssignmentApproval
 
 Delete navigation property accessPackageAssignmentApprovals for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

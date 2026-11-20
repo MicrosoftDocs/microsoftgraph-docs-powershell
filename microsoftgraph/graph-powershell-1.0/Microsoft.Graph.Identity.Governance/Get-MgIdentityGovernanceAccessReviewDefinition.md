@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernanceAccessReviewDefinition
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

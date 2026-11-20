@@ -15,6 +15,9 @@ title: Invoke-MgFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByC
 
 Retrieve all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

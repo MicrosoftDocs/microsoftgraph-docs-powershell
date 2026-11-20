@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifi
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceCatalog
 
 Create new navigation property to catalogs for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

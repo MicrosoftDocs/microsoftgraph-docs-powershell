@@ -15,6 +15,9 @@ title: Set-MgEntitlementManagementControlConfiguration
 
 Update the navigation property controlConfigurations in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgBetaEntitlementManagementControlConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
