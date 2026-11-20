@@ -15,6 +15,9 @@ title: Update-MgBetaTeamOperation
 
 Update the navigation property operations in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamOperation](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

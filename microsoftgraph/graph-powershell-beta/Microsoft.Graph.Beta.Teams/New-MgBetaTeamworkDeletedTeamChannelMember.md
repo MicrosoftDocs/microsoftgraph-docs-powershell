@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeamChannelMember
 
 Create new navigation property to allMembers for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

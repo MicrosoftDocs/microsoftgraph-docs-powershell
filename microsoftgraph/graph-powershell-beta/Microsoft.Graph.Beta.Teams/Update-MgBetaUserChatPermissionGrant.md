@@ -15,6 +15,9 @@ title: Update-MgBetaUserChatPermissionGrant
 
 Update the navigation property permissionGrants in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaUserChat
 
 Update the navigation property chats in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

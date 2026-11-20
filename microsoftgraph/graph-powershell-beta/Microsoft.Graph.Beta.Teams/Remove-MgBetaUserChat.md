@@ -15,6 +15,9 @@ title: Remove-MgBetaUserChat
 
 Delete navigation property chats for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

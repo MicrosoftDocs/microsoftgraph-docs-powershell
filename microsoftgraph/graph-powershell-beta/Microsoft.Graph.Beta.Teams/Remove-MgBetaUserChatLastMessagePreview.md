@@ -15,6 +15,9 @@ title: Remove-MgBetaUserChatLastMessagePreview
 
 Delete navigation property lastMessagePreview for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatLastMessagePreview?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

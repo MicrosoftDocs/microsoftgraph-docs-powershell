@@ -15,6 +15,9 @@ title: Get-MgBetaUserTeamworkInstalledAppChat
 
 Retrieve the chat of the specified user and Teams app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

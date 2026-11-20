@@ -16,6 +16,9 @@ title: Set-MgBetaTeamChannelMessageReplyHostedContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

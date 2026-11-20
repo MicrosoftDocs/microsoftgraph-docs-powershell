@@ -15,6 +15,9 @@ title: Update-MgBetaChatTargetedMessageReply
 
 Update the navigation property replies in chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChatTargetedMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTargetedMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

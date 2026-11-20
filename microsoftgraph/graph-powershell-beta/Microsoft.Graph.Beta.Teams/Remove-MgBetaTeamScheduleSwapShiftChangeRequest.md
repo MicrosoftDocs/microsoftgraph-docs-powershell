@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamScheduleSwapShiftChangeRequest
 
 Delete navigation property swapShiftsChangeRequests for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

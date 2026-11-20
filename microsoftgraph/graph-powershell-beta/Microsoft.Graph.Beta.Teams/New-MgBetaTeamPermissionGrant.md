@@ -15,6 +15,9 @@ title: New-MgBetaTeamPermissionGrant
 
 Create new navigation property to permissionGrants for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

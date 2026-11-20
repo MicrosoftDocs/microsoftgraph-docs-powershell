@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamChannelSharedWithTeam
 
 A collection of teams with which a channel is shared.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

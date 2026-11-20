@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamPrimaryChannelMessage
 
 Update the navigation property messages in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

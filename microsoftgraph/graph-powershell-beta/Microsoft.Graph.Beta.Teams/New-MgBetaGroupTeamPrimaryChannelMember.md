@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamPrimaryChannelMember
 
 Create new navigation property to allMembers for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamPrimaryChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

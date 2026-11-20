@@ -15,6 +15,9 @@ title: New-MgBetaTeamPrimaryChannelMessageReplyHostedContent
 
 Create new navigation property to hostedContents for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
