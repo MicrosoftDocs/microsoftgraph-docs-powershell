@@ -74,6 +74,14 @@ When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.Send,  |
+| Delegated (personal Microsoft account) | Mail.Send,  |
+| Application | Mail.Send,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
