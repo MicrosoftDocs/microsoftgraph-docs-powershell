@@ -85,18 +85,28 @@ Students will not see the grade or feedback until the assignment has been releas
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Get submissions
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-### EXAMPLE 2
+```
+This example will get submissions
+
+### Example 2: Get submissions with $expand options
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
+Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes" 
+
+```
+This example will get submissions with $expand options
+
 
 ## PARAMETERS
 

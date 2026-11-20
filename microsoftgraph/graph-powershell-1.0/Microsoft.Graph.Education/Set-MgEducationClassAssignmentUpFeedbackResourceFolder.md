@@ -52,8 +52,9 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -61,6 +62,10 @@ $params = @{
 }
 
 Set-MgEducationClassAssignmentUpFeedbackResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentUpFeedbackResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 
