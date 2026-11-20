@@ -14,7 +14,7 @@ title: Get-MgBetaRoleManagementDeviceManagementRoleAssignment
 ## SYNOPSIS
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## EXAMPLES
 
@@ -539,7 +539,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -574,3 +574,25 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementroleassignment)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
