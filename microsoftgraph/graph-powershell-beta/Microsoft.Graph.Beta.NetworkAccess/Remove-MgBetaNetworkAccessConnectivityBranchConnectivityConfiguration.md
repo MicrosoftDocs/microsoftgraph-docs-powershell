@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property connectivityConfiguration for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -BranchSiteId
@@ -417,6 +407,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessconnectivitybranchconnectivityconfiguration)
+
 
 
 
