@@ -48,20 +48,6 @@ This cmdlet has the following aliases,
 
 Create a new entitlement management accessPackageAssignment
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -10262,6 +10248,7 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignment)
+
 
 
 
