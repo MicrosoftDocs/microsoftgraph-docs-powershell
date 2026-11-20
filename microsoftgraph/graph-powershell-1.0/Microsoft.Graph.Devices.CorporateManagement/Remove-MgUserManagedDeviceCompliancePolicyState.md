@@ -461,7 +461,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgusermanageddevicecompliancepolicystate)
+- [Remove-MgUserManagedDeviceCompliancePolicyState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgusermanageddevicecompliancepolicystate)
 
 
 
