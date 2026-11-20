@@ -410,8 +410,8 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderpermanent)
-- [](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserContactFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolderpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contactfolder-permanentdelete?view=graph-rest-beta)
 
 
 
