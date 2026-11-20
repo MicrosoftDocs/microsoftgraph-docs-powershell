@@ -15,6 +15,9 @@ title: Get-MgPlannerTaskBucketTaskBoardFormat
 
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
