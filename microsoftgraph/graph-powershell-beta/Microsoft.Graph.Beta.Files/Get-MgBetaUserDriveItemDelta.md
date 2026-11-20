@@ -14,9 +14,9 @@ title: Get-MgBetaUserDriveItemDelta
 ## SYNOPSIS
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you finish receiving all the changes, you may apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.\r\nItems with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you finish receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 ## SYNTAX
@@ -72,9 +72,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you finish receiving all the changes, you may apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.\r\nItems with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you finish receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 Note: you should only delete a folder locally if it's empty after syncing all the changes.
 
 ## EXAMPLES
@@ -679,7 +679,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -711,3 +711,25 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemdelta)
 - [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
