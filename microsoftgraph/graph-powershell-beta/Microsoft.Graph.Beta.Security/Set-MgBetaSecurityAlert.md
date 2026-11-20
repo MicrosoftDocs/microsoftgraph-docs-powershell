@@ -398,7 +398,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -521,3 +521,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert)
 - [](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
