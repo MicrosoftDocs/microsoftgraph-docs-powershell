@@ -567,9 +567,9 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/get-mgbetacrosstenantmigrationjobuser)
-- [](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-list-users?view=graph-rest-beta)
+- [Get-MgBetaCrossTenantMigrationJobUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/get-mgbetacrosstenantmigrationjobuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-list-users?view=graph-rest-beta)
 
 
 
