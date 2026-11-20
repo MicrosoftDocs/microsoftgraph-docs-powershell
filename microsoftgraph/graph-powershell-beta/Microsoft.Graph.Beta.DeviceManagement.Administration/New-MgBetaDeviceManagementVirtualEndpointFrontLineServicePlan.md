@@ -71,7 +71,7 @@ HelpMessage: ''
 
 ### -AllotmentLicensesCount
 
-.
+
 
 ```yaml
 Type: System.Int32
