@@ -867,7 +867,7 @@ SPEAKERS <IMicrosoftGraphMeetingSpeaker[]>: The meeting speaker's information.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration)
+- [Update-MgBetaUserOnlineMeetingRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistration)
 
 
 
