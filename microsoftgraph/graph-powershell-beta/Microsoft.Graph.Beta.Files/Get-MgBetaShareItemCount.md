@@ -15,6 +15,9 @@ title: Get-MgBetaShareItemCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareItemCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareItemCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveListContentTypeColumnLink
 
 Delete navigation property columnLinks for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

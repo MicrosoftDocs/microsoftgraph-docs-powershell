@@ -15,6 +15,9 @@ title: Update-MgBetaDriveRootListItemDocumentSetVersionField
 
 Update the navigation property fields in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

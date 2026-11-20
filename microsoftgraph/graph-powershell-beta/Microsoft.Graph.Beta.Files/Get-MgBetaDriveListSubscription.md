@@ -15,6 +15,9 @@ title: Get-MgBetaDriveListSubscription
 
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveRootVersion
 
 Create new navigation property to versions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootVersion](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

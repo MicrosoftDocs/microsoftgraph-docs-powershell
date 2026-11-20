@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveItemThumbnail
 
 Update the navigation property thumbnails in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveListItemDocumentSetVersion
 
 Update the navigation property documentSetVersions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

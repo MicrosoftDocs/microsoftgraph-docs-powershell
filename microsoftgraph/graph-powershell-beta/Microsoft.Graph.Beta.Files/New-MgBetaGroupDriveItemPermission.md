@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveItemPermission
 
 Create new navigation property to permissions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

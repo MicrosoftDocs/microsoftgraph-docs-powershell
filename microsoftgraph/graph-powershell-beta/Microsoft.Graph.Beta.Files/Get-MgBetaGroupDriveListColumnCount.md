@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveListColumnCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListColumnCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListColumnCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

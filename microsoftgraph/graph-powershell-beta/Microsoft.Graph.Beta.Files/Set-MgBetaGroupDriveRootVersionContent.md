@@ -15,6 +15,9 @@ title: Set-MgBetaGroupDriveRootVersionContent
 
 Update content for the navigation property versions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

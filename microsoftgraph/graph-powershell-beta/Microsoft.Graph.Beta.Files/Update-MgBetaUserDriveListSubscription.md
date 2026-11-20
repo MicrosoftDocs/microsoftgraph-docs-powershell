@@ -15,6 +15,9 @@ title: Update-MgBetaUserDriveListSubscription
 
 Update the navigation property subscriptions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

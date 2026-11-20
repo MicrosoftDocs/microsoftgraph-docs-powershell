@@ -15,6 +15,9 @@ title: Update-MgBetaUserDriveListContentTypeColumn
 
 Update the navigation property columns in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

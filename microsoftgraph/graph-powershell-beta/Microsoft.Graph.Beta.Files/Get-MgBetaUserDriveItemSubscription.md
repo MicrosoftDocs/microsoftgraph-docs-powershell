@@ -16,6 +16,9 @@ title: Get-MgBetaUserDriveItemSubscription
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

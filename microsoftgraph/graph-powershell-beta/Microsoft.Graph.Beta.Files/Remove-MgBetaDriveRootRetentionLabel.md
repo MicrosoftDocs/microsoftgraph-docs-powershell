@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveRootRetentionLabel
 
 Delete navigation property retentionLabel for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Unpublish-MgBetaShareListContentType
 
 Invoke action unpublish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)

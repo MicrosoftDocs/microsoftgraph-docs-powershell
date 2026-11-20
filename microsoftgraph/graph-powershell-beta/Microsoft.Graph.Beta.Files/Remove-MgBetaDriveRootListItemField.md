@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveRootListItemField
 
 Delete navigation property fields for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

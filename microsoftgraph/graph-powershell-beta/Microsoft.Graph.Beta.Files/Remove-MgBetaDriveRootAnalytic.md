@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveRootAnalytic
 
 Delete navigation property analytics for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
