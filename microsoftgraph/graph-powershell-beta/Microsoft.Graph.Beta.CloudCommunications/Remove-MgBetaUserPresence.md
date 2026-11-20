@@ -15,6 +15,9 @@ title: Remove-MgBetaUserPresence
 
 Delete navigation property presence for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
