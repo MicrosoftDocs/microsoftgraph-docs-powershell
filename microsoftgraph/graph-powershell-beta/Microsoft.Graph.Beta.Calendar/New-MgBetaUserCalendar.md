@@ -1081,7 +1081,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCalendar>: calendar
+BODYPARAMETER `<IMicrosoftGraphCalendar>`: calendar
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1925,7 +1925,7 @@ For recurring events, the value is the same for the series master and all of its
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1954,7 +1954,7 @@ Nullable.
 Read-only.
   [Value <String[]>]: A collection of property values.
 
-OWNER <IMicrosoftGraphEmailAddress>: emailAddress
+OWNER `<IMicrosoftGraphEmailAddress>`: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of an entity instance.
   [Name <String>]: The display name of an entity instance.
@@ -1970,3 +1970,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

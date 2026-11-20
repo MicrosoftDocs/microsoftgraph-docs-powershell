@@ -569,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths19YagsdGroupsGroupIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths19YagsdGroupsGroupIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ProposedNewTime <IMicrosoftGraphTimeSlot>]: timeSlot
@@ -583,7 +583,7 @@ See below for possible values.
     [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [SendResponse <Boolean?>]: 
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -605,7 +605,7 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
 
-PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
+PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [End <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -620,3 +620,25 @@ See below for possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent)
 - [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
