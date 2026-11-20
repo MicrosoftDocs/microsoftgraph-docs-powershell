@@ -74,8 +74,9 @@ In Microsoft Entra entitlement management, when an access package policy has bee
 It's performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Resume-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId -BodyParameter $params
+
+```
+This example shows how to use the Resume-MgEntitlementManagementAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

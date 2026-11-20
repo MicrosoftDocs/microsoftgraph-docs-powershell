@@ -75,8 +75,9 @@ This cmdlet has the following aliases,
 Update an external directory user represented by an existing accessPackageSubject object to change the subject lifecycle.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -84,7 +85,11 @@ $params = @{
 	subjectLifecycle = "governed"
 }
 
-Update-MgEntitlementManagementSubjectByObjectId -BodyParameter $params -ObjectId $objectIdId
+Update-MgEntitlementManagementSubjectByObjectId -BodyParameter $params -ObjectId $objectIdId 
+
+```
+This example shows how to use the Update-MgEntitlementManagementSubjectByObjectId Cmdlet.
+
 
 ## PARAMETERS
 

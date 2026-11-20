@@ -64,12 +64,17 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
+
+```
+This example shows how to use the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
 
 ## PARAMETERS
 
