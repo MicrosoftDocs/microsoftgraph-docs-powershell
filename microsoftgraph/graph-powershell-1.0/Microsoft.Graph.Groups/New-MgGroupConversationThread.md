@@ -15,7 +15,7 @@ title: New-MgGroupConversationThread
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \r\nto that thread.
+Use reply thread to further post \rto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
@@ -75,7 +75,7 @@ This cmdlet has the following aliases,
 
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post \r\nto that thread.
+Use reply thread to further post \rto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
@@ -768,7 +768,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
+BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -859,7 +859,7 @@ Requires $select to retrieve.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -956,3 +956,25 @@ Requires $select to retrieve.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
 - [](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -537,7 +537,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
   [SkuId <String>]: The unique identifier for the SKU.
 Corresponds to the skuId from subscribedSkus or companySubscription.
 
-BODYPARAMETER <IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddLicenses <IMicrosoftGraphAssignedLicense[]>]: 
     [DisabledPlans <String[]>]: A collection of the unique identifiers for plans that have been disabled.
@@ -546,7 +546,7 @@ IDs are available in servicePlans > servicePlanId in the tenant's subscribedSkus
 Corresponds to the skuId from subscribedSkus or companySubscription.
   [RemoveLicenses <String[]>]: 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -572,3 +572,25 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggrouplicense)
 - [](https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
