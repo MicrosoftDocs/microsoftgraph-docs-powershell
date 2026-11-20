@@ -706,8 +706,8 @@ SETTINGS `<IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>`: cloudFirew
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesscloudfirewallpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessCloudFirewallPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesscloudfirewallpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-update?view=graph-rest-beta)
 
 
 

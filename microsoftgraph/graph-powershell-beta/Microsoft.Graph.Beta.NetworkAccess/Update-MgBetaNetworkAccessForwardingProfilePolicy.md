@@ -653,8 +653,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicylink-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofilepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingpolicylink-update?view=graph-rest-beta)
 
 
 
