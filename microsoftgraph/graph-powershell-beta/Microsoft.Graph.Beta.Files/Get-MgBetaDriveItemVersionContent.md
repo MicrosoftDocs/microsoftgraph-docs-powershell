@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Get content for the navigation property versions from drives
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
