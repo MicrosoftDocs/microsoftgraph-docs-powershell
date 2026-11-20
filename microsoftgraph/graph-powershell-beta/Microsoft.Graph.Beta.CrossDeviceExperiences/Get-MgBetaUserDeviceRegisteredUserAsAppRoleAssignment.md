@@ -608,7 +608,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregistereduserasapproleassignment)
+- [Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregistereduserasapproleassignment)
 
 
 
