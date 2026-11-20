@@ -435,7 +435,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerrorcount)
+- [Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerrorcount)
 
 
 

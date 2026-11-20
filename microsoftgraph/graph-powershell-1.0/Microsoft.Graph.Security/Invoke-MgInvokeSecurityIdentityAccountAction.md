@@ -637,8 +637,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mginvokesecurityidentityaccountaction)
-- [](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-1.0)
+- [Invoke-MgInvokeSecurityIdentityAccountAction](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mginvokesecurityidentityaccountaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-1.0)
 
 
 

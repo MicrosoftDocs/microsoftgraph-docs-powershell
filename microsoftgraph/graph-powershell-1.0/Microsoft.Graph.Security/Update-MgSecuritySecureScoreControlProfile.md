@@ -1189,8 +1189,8 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
-- [](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
+- [Update-MgSecuritySecureScoreControlProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
 
 
 

@@ -1458,7 +1458,7 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycollaborationanalyzedemail)
+- [New-MgSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycollaborationanalyzedemail)
 
 
 

@@ -610,9 +610,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority)
-- [](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
+- [Get-MgSecurityLabelAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
 
 
 

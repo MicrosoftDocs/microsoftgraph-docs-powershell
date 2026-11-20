@@ -276,7 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype)
+- [Get-MgSecurityTriggerType](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype)
 
 
 

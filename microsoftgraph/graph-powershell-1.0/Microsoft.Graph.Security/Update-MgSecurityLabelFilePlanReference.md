@@ -627,7 +627,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelfileplanreference)
+- [Update-MgSecurityLabelFilePlanReference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelfileplanreference)
 
 
 

@@ -611,8 +611,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain)
-- [](https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceSubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0)
 
 
 
