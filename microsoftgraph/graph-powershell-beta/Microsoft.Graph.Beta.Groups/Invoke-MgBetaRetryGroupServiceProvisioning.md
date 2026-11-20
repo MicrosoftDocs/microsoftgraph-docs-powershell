@@ -396,8 +396,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning)
-- [](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-beta)
+- [Invoke-MgBetaRetryGroupServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-beta)
 
 
 

@@ -398,8 +398,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
-- [](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta)
+- [Remove-MgBetaGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupfavorite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-beta)
 
 
 

@@ -425,8 +425,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderdirectoryobjectbyref)
-- [](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta)
+- [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupacceptedsenderdirectoryobjectbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta)
 
 
 

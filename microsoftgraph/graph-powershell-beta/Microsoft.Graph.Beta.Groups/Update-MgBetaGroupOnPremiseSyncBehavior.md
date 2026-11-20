@@ -544,8 +544,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
-- [](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
+- [Update-MgBetaGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
 
 
 
