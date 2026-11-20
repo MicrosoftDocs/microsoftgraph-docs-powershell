@@ -86,8 +86,9 @@ Create a new browserSharedCookie object in a browserSiteList.
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie Cmdlet.
+
 
 ## PARAMETERS
 
