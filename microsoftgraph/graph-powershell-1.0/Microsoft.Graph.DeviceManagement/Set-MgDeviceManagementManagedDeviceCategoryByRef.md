@@ -548,7 +548,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddevicecategorybyref)
+- [Set-MgDeviceManagementManagedDeviceCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddevicecategorybyref)
 
 
 

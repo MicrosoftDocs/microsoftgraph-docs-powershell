@@ -593,7 +593,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdetectedappmanageddevice)
+- [Get-MgDeviceManagementDetectedAppManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdetectedappmanageddevice)
 
 
 
