@@ -15,6 +15,9 @@ title: Get-MgEducationClassAssignmentSettingGradingCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

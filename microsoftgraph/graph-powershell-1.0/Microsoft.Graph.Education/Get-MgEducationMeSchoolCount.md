@@ -15,6 +15,9 @@ title: Get-MgEducationMeSchoolCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeSchoolCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgEducationReportReadingCoachPassage
 
 Update the navigation property readingCoachPassages in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportReadingCoachPassage](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportReadingCoachPassage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
