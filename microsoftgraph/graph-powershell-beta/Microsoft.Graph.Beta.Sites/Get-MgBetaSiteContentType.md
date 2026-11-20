@@ -550,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -618,3 +618,25 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttype)
 - [](https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
