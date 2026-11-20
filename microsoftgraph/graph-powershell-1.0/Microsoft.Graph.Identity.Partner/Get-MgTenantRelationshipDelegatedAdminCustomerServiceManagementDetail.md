@@ -63,12 +63,17 @@ This cmdlet has the following aliases,
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Partner
 
 Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -DelegatedAdminCustomerId $delegatedAdminCustomerId
+
+```
+This example shows how to use the Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail Cmdlet.
+
 
 ## PARAMETERS
 
