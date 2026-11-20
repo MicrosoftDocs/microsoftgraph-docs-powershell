@@ -67,12 +67,17 @@ You can use this method with the following child object type: qualityUpdateRing.
 | Application | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Get-MgBetaWindowsUpdatesPolicyRing -PolicyId $policyId -Filter "isof('microsoft.graph.windowsUpdates.qualityUpdateRing')"
+Get-MgBetaWindowsUpdatesPolicyRing -PolicyId $policyId -Filter "isof('microsoft.graph.windowsUpdates.qualityUpdateRing')" 
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesPolicyRing Cmdlet.
+
 
 ## PARAMETERS
 
