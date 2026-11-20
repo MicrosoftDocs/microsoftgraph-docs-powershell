@@ -65,18 +65,28 @@ Retrieving the content of the transcript returns the stream of text associated w
 | Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
 
 ## EXAMPLES
+### Example 1: Get a callTranscript content
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 
-### EXAMPLE 2
+```
+This example will get a calltranscript content
+
+### Example 2: Get a callTranscript content specifying $format query param
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+
+```
+This example will get a calltranscript content specifying $format query param
+
 
 ## PARAMETERS
 
