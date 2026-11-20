@@ -80,9 +80,8 @@ This cmdlet has the following aliases,
 Update the navigation property roleSettings in privilegedAccess
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	AdminEligibleSettings = @(
@@ -93,6 +92,9 @@ $params = @{
 	)
 }
 Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -58,11 +58,13 @@ This cmdlet has the following aliases,
 Get entity from privilegedRoleAssignmentRequests by key
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleAssignmentRequest
+```
+This example shows how to use the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

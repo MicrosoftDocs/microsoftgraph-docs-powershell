@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a customDataProvidedResourceUploadSession object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession -AccessPackageCatalogId $accessPackageCatalogId -AccessPackageResourceId $accessPackageResourceId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession Cmdlet.
+
 
 ## PARAMETERS
 
