@@ -1154,7 +1154,7 @@ Some settings are inherited from the template.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob)
+- [Update-MgBetaApplicationSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob)
 
 
 

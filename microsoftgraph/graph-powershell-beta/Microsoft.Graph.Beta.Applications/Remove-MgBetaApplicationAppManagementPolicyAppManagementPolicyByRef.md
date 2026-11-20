@@ -457,8 +457,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationappmanagementpolicyappmanagementpolicybyref)
-- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-beta)
+- [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationappmanagementpolicyappmanagementpolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete-appliesto?view=graph-rest-beta)
 
 
 

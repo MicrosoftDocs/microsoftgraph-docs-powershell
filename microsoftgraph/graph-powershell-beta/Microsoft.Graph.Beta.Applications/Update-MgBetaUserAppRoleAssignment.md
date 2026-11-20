@@ -791,7 +791,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetauserapproleassignment)
+- [Update-MgBetaUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetauserapproleassignment)
 
 
 
