@@ -76,7 +76,7 @@ Create new navigation property to aiInsights for communications
 
 ### -ActionItems
 
-.
+
 To construct, see NOTES section for ACTIONITEMS properties and create a hash table.
 
 ```yaml
@@ -180,7 +180,7 @@ HelpMessage: ''
 
 ### -CallId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -229,7 +229,7 @@ HelpMessage: ''
 
 ### -ContentCorrelationId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -283,7 +283,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -429,7 +429,7 @@ HelpMessage: ''
 
 ### -MeetingNotes
 
-.
+
 To construct, see NOTES section for MEETINGNOTES properties and create a hash table.
 
 ```yaml
