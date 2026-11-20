@@ -609,7 +609,7 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter)
+- [New-MgVirtualEventPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventpresenter)
 
 
 

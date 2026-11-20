@@ -593,9 +593,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
-- [](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-1.0)
+- [Get-MgVirtualEventWebinarSession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsession-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualevent-list-sessions?view=graph-rest-1.0)
 
 
 
