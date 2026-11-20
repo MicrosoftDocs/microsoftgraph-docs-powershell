@@ -560,9 +560,9 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeployment)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-deployment-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-deployments?view=graph-rest-beta)
+- [Get-MgBetaWindowsUpdatesDeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeployment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deployment-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/adminwindowsupdates-list-deployments?view=graph-rest-beta)
 
 
 

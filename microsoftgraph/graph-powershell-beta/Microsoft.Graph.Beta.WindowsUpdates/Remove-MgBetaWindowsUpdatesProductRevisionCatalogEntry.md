@@ -419,7 +419,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesproductrevisioncatalogentry)
+- [Remove-MgBetaWindowsUpdatesProductRevisionCatalogEntry](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesproductrevisioncatalogentry)
 
 
 

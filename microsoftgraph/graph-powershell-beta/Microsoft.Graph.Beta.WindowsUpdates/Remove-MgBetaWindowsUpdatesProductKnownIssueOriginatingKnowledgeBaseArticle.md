@@ -420,7 +420,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesproductknownissueoriginatingknowledgebasearticle)
+- [Remove-MgBetaWindowsUpdatesProductKnownIssueOriginatingKnowledgeBaseArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesproductknownissueoriginatingknowledgebasearticle)
 
 
 

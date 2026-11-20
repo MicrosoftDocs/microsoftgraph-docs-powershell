@@ -872,8 +872,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-deployment-update?view=graph-rest-beta)
+- [Update-MgBetaWindowsUpdatesDeployment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deployment-update?view=graph-rest-beta)
 
 
 
