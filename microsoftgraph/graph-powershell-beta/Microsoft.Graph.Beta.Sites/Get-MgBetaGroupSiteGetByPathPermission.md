@@ -16,6 +16,9 @@ title: Get-MgBetaGroupSiteGetByPathPermission
 The permissions associated with the site.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

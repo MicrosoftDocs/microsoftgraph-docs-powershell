@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteListOperation
 
 Update the navigation property operations in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

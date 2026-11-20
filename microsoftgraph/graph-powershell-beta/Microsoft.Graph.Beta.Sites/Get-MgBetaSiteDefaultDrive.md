@@ -15,6 +15,9 @@ title: Get-MgBetaSiteDefaultDrive
 
 The default drive (document library) for this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteDefaultDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDefaultDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

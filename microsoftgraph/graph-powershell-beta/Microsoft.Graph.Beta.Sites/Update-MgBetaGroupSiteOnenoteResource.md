@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteOnenoteResource
 
 Update the navigation property resources in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

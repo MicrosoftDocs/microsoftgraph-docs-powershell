@@ -15,6 +15,9 @@ title: Update-MgBetaSiteAnalyticItemActivityStatActivity
 
 Update the navigation property activities in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

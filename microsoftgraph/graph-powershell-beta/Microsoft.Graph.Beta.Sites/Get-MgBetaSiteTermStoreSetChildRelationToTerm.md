@@ -16,6 +16,9 @@ title: Get-MgBetaSiteTermStoreSetChildRelationToTerm
 The to [term] of the relation.
 The term to which the relationship is defined.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildRelationToTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

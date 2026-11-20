@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteGetByPathList
 
 Create new navigation property to lists for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

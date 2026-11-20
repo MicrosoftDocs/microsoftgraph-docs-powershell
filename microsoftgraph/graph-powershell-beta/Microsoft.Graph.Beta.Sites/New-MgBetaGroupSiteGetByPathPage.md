@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteGetByPathPage
 
 Create new navigation property to pages for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

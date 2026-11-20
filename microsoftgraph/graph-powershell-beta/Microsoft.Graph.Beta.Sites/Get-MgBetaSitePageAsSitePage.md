@@ -15,6 +15,9 @@ title: Get-MgBetaSitePageAsSitePage
 
 Returns the metadata for a sitePage in the site pages list in a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

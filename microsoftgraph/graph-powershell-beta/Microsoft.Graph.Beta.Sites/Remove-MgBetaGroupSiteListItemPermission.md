@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSiteListItemPermission
 
 Delete navigation property permissions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListItemPermission](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

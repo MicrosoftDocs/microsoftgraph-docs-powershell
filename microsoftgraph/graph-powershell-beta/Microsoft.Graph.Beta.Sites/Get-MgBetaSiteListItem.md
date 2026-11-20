@@ -15,6 +15,9 @@ title: Get-MgBetaSiteListItem
 
 Returns the metadata for an item in a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

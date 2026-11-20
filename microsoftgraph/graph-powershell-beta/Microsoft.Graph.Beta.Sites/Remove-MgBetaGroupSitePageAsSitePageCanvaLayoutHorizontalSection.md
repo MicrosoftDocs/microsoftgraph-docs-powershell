@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection
 
 Delete navigation property horizontalSections for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
