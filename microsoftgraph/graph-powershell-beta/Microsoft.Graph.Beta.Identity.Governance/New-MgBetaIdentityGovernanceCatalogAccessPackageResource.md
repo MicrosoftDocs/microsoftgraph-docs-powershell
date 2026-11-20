@@ -784,7 +784,7 @@ HelpMessage: ''
 
 ### -UploadSessions
 
-.
+
 To construct, see NOTES section for UPLOADSESSIONS properties and create a hash table.
 
 ```yaml
