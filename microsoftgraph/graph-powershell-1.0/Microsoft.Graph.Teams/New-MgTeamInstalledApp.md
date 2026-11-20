@@ -762,8 +762,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp)
-- [](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)
+- [New-MgTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)
 
 
 

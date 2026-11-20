@@ -2003,8 +2003,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage)
-- [](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-1.0)
+- [New-MgTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-1.0)
 
 
 

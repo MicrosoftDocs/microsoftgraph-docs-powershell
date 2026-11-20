@@ -484,8 +484,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelsharedwithteam)
-- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-1.0)
+- [Remove-MgTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamchannelsharedwithteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-1.0)
 
 
 

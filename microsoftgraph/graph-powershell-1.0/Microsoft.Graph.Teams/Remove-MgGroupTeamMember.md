@@ -632,8 +632,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteammember)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
+- [Remove-MgGroupTeamMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteammember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
 
 
 

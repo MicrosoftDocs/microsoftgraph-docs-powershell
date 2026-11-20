@@ -397,8 +397,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mggroupteamscheduletimecard)
-- [](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0)
+- [Confirm-MgGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mggroupteamscheduletimecard)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0)
 
 
 

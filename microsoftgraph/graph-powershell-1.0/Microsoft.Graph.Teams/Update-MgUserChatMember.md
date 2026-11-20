@@ -651,7 +651,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember)
+- [Update-MgUserChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember)
 
 
 

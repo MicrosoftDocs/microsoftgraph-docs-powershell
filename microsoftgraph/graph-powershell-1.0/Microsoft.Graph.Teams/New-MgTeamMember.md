@@ -642,8 +642,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember)
-- [](https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0)
+- [New-MgTeamMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteammember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0)
 
 
 

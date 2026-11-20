@@ -426,8 +426,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam)
-- [](https://learn.microsoft.com/graph/api/team-unarchive?view=graph-rest-1.0)
+- [Invoke-MgUnarchiveTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-unarchive?view=graph-rest-1.0)
 
 
 
