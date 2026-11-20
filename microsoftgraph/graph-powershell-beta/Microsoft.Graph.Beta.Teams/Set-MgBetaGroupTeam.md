@@ -100,6 +100,14 @@ Create a new team from a group.
 In order to create a team, the group must have at least one owner.
 If the group was created less than 15 minutes ago, calls to create a team might fail with a 404 Not Found error because the group information didn't fully replicate.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

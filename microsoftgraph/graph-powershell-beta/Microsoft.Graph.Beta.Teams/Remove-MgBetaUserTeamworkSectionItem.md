@@ -49,6 +49,14 @@ Remove an item from a user-defined section in a user's teamwork.
 This API doesn't delete the underlying chat, channel, meeting, or community; it only removes the item from the user-defined section.
 The item is automatically moved back to its default system-defined section.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

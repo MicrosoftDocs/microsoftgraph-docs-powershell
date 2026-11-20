@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 The definitions of the roles in the schedule.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All, SchedulePermissions.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.Read.All, Schedule.ReadWrite.All, SchedulePermissions.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
