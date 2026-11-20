@@ -15,6 +15,9 @@ title: Get-MgBetaPrivacySubjectRightsRequestApproverCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestApproverCount](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApproverCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
