@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property reputation in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -650,6 +640,7 @@ RULES <IMicrosoftGraphSecurityHostReputationRule[]>: A collection of rules that 
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation)
+
 
 
 
