@@ -52,7 +52,7 @@ Create new navigation property to userSecurityProfiles for security
 
 ### -Accounts
 
-.
+
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -95,7 +95,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -223,7 +223,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -329,7 +329,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -435,7 +435,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -456,7 +456,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -477,7 +477,7 @@ HelpMessage: ''
 
 ### -UserPrincipalName
 
-.
+
 
 ```yaml
 Type: System.String

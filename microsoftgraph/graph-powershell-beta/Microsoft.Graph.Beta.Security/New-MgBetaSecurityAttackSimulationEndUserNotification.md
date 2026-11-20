@@ -209,7 +209,7 @@ HelpMessage: ''
 
 ### -Details
 
-.
+
 To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
