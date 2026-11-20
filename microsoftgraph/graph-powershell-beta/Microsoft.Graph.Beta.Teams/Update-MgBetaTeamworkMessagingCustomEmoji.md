@@ -550,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphTeamworkCustomEmoji>: teamworkCustomEmoji
+BODYPARAMETER `<IMicrosoftGraphTeamworkCustomEmoji>`: teamworkCustomEmoji
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentBytes <String>]: The base64-encoded image content of the emoji.
 Supported formats include PNG and GIF.
@@ -572,7 +572,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
 Key.
 Must be unique and must not conflict with existing emoji names.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -630,3 +630,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkmessagingcustomemoji)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
