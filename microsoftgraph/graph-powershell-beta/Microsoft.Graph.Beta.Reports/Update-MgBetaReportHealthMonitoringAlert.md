@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Update the properties of a Microsoft Entra health monitoring alert object.
 For example, change an alert's state from active to resolved.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | HealthMonitoringAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | HealthMonitoringAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

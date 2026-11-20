@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a Microsoft Entra health monitoring alertConfiguration object.
 The returned alertConfiguration object contains the settings for the distribution groups where alert notifications are to be sent.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | HealthMonitoringAlertConfig.Read.All, HealthMonitoringAlertConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | HealthMonitoringAlertConfig.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
