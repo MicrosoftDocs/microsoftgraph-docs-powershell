@@ -627,7 +627,7 @@ BODYPARAMETER `<IPathsJ8K6OfDevicemanagementReportsMicrosoftGraphGetpolicynoncom
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportpolicynoncompliancesummaryreport)
+- [Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportpolicynoncompliancesummaryreport)
 
 
 

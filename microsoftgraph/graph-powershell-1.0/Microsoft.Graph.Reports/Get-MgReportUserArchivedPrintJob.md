@@ -481,8 +481,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
-- [](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
+- [Get-MgReportUserArchivedPrintJob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
 
 
 

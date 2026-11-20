@@ -405,8 +405,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetail)
-- [](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)
+- [Get-MgReportSharePointActivityUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)
 
 
 
