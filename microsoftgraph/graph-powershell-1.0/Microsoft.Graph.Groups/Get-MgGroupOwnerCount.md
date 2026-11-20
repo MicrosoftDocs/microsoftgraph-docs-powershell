@@ -387,7 +387,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount)
+- [Get-MgGroupOwnerCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercount)
 
 
 

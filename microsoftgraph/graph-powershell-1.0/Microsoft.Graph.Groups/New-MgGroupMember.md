@@ -459,7 +459,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember)
+- [New-MgGroupMember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember)
 
 
 

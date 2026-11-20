@@ -400,7 +400,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostinreplytoattachmentcount)
+- [Get-MgGroupThreadPostInReplyToAttachmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostinreplytoattachmentcount)
 
 
 
