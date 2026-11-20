@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Delete a fixture on a specified floor.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Calendar
 
 Remove-MgPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId
+
+```
+This example shows how to use the Remove-MgPlaceAsBuildingMapLevelFixture Cmdlet.
+
 
 ## PARAMETERS
 
