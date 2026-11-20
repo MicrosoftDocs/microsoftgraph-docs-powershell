@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Create a Microsoft 365 Defender alert by invoking a bound action on the alerts_v2 collection and returning the created alert resource.
 The action accepts a createAlertInput complex type that combines alert metadata and creation-specific options in one request object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

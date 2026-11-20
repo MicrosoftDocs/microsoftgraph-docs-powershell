@@ -70,6 +70,14 @@ Update a comment activity in a case timeline.
 Only comment activities support update.
 Include @odata.type with #microsoft.graph.security.caseManagement.comment in the request body to identify the concrete activity type.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

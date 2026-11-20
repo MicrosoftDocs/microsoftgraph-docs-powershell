@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
 When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -99,6 +99,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a tiIndicator object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
