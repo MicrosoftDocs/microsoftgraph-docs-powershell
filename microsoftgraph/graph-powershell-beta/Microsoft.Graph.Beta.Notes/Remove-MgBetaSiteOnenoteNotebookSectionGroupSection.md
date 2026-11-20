@@ -458,7 +458,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotenotebooksectiongroupsection)
+- [Remove-MgBetaSiteOnenoteNotebookSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotenotebooksectiongroupsection)
 
 
 
