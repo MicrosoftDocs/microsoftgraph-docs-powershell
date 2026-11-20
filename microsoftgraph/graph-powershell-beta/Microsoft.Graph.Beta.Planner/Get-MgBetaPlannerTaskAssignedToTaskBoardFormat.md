@@ -15,6 +15,9 @@ title: Get-MgBetaPlannerTaskAssignedToTaskBoardFormat
 
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

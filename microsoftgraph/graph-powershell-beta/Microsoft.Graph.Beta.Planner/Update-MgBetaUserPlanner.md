@@ -15,6 +15,9 @@ title: Update-MgBetaUserPlanner
 
 Update the navigation property planner in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
