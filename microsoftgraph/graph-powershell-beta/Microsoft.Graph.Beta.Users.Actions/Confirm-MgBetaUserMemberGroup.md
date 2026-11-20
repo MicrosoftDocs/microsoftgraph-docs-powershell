@@ -501,8 +501,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
+- [Confirm-MgBetaUserMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta)
 
 
 
