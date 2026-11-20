@@ -51,6 +51,14 @@ This API supports the retrieval of call transcripts from all meeting types excep
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
