@@ -15,6 +15,9 @@ title: Update-MgBetaBookingBusinessCustomer
 
 Update the navigation property customers in bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

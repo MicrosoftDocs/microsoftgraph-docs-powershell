@@ -15,6 +15,9 @@ title: New-MgBetaVirtualEventTownhallSession
 
 Create new navigation property to sessions for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhallSession](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhallSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

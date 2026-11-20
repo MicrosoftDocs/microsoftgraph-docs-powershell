@@ -15,6 +15,9 @@ title: Remove-MgBetaBookingBusinessStaffMember
 
 Delete navigation property staffMembers for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

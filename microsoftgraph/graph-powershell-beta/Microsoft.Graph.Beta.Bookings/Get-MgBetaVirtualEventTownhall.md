@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventTownhall
 
 Read the properties and relationships of a virtualEventTownhall object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventTownhall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

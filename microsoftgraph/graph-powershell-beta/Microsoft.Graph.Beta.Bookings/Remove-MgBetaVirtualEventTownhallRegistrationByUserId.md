@@ -15,6 +15,9 @@ title: Remove-MgBetaVirtualEventTownhallRegistrationByUserId
 
 Delete navigation property registrations for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventTownhallRegistrationByUserId](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventTownhallRegistrationByUserId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
