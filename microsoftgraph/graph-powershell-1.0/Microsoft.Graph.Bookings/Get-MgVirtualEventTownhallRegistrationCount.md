@@ -15,6 +15,9 @@ title: Get-MgVirtualEventTownhallRegistrationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallRegistrationCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallRegistrationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

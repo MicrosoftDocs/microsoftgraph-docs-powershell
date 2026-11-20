@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventTownhallRegistrationByEmail
 
 Delete navigation property registrations for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallRegistrationByEmail](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallRegistrationByEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
