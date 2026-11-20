@@ -15,6 +15,9 @@ title: Get-MgSecurityAttackSimulationEndUserNotificationDetailCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationEndUserNotificationDetailCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationDetailCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

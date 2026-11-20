@@ -15,6 +15,9 @@ title: Update-MgSecurityIdentity
 
 Update the navigation property identities in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentity](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

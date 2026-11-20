@@ -15,6 +15,9 @@ title: Get-MgSecurityIncidentAlertCommentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncidentAlertCommentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentAlertCommentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

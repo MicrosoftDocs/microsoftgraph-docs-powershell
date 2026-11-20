@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceHostSslCertificateHost
 
 The host for this hostSslCertificate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

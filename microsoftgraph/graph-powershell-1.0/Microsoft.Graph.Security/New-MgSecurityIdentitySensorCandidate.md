@@ -15,6 +15,9 @@ title: New-MgSecurityIdentitySensorCandidate
 
 Create new navigation property to sensorCandidates for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

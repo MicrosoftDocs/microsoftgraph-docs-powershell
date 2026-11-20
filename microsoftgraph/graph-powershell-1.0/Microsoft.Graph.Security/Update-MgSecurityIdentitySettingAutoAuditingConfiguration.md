@@ -15,6 +15,9 @@ title: Update-MgSecurityIdentitySettingAutoAuditingConfiguration
 
 Update the properties of an autoAuditingConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

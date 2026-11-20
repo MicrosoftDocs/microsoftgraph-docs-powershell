@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceWhoisRecordHost
 
 The host associated to this WHOIS object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

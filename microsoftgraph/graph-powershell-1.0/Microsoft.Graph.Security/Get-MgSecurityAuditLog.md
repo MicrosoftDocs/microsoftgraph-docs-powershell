@@ -15,6 +15,9 @@ title: Get-MgSecurityAuditLog
 
 The entry point for the audit log query API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAuditLog](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAuditLog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

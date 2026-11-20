@@ -15,6 +15,9 @@ title: Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabelCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabelCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabelSublabelCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

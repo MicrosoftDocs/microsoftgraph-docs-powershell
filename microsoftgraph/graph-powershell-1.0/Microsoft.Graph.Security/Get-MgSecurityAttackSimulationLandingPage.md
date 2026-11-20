@@ -15,6 +15,9 @@ title: Get-MgSecurityAttackSimulationLandingPage
 
 Get a landingPage associated with an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

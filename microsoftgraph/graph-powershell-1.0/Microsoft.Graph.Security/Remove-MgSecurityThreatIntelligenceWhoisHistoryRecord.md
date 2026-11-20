@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligenceWhoisHistoryRecord
 
 Delete navigation property whoisHistoryRecords for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
