@@ -78,8 +78,9 @@ Grant users access to a link represented by a permission.
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+
+```
+This example shows how to use the Grant-MgSharePermission Cmdlet.
+
 
 ## PARAMETERS
 

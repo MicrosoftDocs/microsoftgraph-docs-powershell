@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Used to access the permission representing the underlying sharing link
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -375,6 +365,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission)
+
 
 
 
