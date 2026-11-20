@@ -451,7 +451,7 @@ Maximum length is 256 characters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorypublickeyinfrastructure)
+- [Update-MgDirectoryPublicKeyInfrastructure](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorypublickeyinfrastructure)
 
 
 
