@@ -600,7 +600,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicy)
+- [Set-MgBetaDeviceManagementDeviceCompliancePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementdevicecompliancepolicy)
 
 
 

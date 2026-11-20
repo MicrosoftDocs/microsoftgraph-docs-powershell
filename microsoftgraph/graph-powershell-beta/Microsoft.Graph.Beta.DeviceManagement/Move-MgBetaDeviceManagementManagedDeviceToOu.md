@@ -413,7 +413,7 @@ BODYPARAMETER `<IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedev
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementmanageddevicetoou)
+- [Move-MgBetaDeviceManagementManagedDeviceToOu](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/move-mgbetadevicemanagementmanageddevicetoou)
 
 
 

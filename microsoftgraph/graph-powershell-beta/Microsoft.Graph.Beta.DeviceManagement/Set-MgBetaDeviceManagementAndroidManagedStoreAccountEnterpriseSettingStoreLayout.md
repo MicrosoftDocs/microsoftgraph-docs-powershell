@@ -385,7 +385,7 @@ Values correspond directly to the store layout types of Google enterprise object
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)
+- [Set-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingStoreLayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)
 
 
 

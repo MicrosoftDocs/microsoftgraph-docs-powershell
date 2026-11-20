@@ -646,7 +646,7 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementembeddedsimactivationcodepoolassignment)
+- [Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementembeddedsimactivationcodepoolassignment)
 
 
 

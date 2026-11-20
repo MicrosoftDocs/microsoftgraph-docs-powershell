@@ -857,7 +857,7 @@ PAYLOADS <IMicrosoftGraphPayloadByFilter[]>: Indicates associated assignments fo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter)
+- [Update-MgBetaDeviceManagementAssignmentFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementassignmentfilter)
 
 
 
