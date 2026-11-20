@@ -15,6 +15,9 @@ title: New-MgUserTodoListTaskAttachment
 
 Create new navigation property to attachments for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

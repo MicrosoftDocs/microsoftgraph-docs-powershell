@@ -15,6 +15,9 @@ title: Get-MgUserTransitiveMemberOfCountAsDirectoryRole
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

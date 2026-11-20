@@ -15,6 +15,9 @@ title: Get-MgUserSetting
 
 Get settings from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
