@@ -95,8 +95,9 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 | Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -123,6 +124,10 @@ $params = @{
 }
 
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 
