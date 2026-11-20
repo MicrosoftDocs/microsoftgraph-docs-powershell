@@ -15,6 +15,9 @@ title: Update-MgBetaSiteOnenoteSectionGroupSectionContent
 
 Update the navigation property sections in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenoteSectionGroupSectionContent](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteSectionGroupSectionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaUserOnenoteResource
 
 Create new navigation property to resources for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteResource](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
