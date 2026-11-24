@@ -15,52 +15,8 @@ ms.author: eunicewaweru
 
 Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication. For example, you can manage environment, application ID, and certificate settings. In this article, we look at the different cmdlets that are associated with authentication.
 
-## Prepare for an upcoming browser-based interactive sign-in change
-
 > [!IMPORTANT]
-> Starting February 23, 2027 at 11:00 a.m. Pacific Standard Time (7:00 p.m. Coordinated Universal Time), Microsoft plans to require a more secure browser response for interactive sign-in through the default Microsoft Graph PowerShell application.
-
-The change prevents authorization codes from being returned in localhost URL query strings.
-
-You're affected only if all the following conditions apply:
-
-- You use Microsoft Graph PowerShell version 2.36.0 or earlier.
-- You use browser-based interactive sign-in.
-- You use the default Microsoft Graph PowerShell application, **Microsoft Graph Command Line Tools**, application ID `14d82eec-204b-4c2f-b7e8-296a70dab67e`.
-
-If all three conditions apply, upgrade to Microsoft Graph PowerShell version 2.37.0 or later before enforcement. Otherwise, sign-in or reauthentication will fail and Microsoft Graph PowerShell won't obtain an access token.
-
-Check the installed authentication module:
-
-```powershell
-Get-Module Microsoft.Graph.Authentication -ListAvailable |
-    Sort-Object Version -Descending |
-    Select-Object Name, Version, Path
-```
-
-Update the complete Microsoft Graph PowerShell module:
-
-```powershell
-Update-Module Microsoft.Graph
-```
-
-If you installed only the authentication module, update it directly:
-
-```powershell
-Update-Module Microsoft.Graph.Authentication
-```
-
-Close and reopen PowerShell after updating. Then validate browser-based interactive sign-in and the commands your organization relies on.
-
-The following authentication methods and configurations aren't directly affected:
-
-- Windows brokered sign-in
-- Device code authentication
-- Application-only authentication with a certificate, client secret, or managed identity
-- Customer-owned application registrations
-- Access tokens obtained outside Microsoft Graph PowerShell and supplied by the caller
-
-For updates and known issues, follow [GitHub issue #3629](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/3629).
+> When you use Microsoft Graph PowerShell with the **Microsoft Graph Command Line Tools** application, use Microsoft Graph PowerShell version 2.37.0 or later. If you use an earlier version, [learn about the upcoming interactive sign-in change](<developer-blog-url>).
 
 ## Use Connect-MgGraph
 
