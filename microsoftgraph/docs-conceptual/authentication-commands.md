@@ -3,7 +3,7 @@ title: "Use Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 11/24/2026
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
@@ -14,6 +14,9 @@ ms.author: eunicewaweru
 # Authentication module cmdlets in Microsoft Graph PowerShell
 
 Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication. For example, you can manage environment, application ID, and certificate settings. In this article, we look at the different cmdlets that are associated with authentication.
+
+> [!IMPORTANT]
+> When you use Microsoft Graph PowerShell with the **Microsoft Graph Command Line Tools** application, use Microsoft Graph PowerShell version 2.37.0 or later. If you use an earlier version, [learn about the upcoming interactive sign-in change](<developer-blog-url>).
 
 ## Use Connect-MgGraph
 
