@@ -1464,7 +1464,7 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifiedinstancestage)
+- [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifiedinstancestage)
 
 
 

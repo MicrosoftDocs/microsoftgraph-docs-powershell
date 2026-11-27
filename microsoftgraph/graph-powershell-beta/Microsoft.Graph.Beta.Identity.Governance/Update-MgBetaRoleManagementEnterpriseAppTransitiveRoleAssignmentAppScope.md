@@ -663,7 +663,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapptransitiveroleassignmentappscope)
+- [Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapptransitiveroleassignmentappscope)
 
 
 

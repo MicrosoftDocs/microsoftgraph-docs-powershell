@@ -836,8 +836,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
-- [](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta)
+- [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta)
 
 
 
