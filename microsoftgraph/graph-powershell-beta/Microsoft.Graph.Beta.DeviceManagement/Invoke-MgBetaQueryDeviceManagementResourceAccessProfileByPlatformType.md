@@ -370,7 +370,7 @@ BODY `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyp
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype)
+- [Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype)
 
 
 

@@ -673,7 +673,7 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicyassignment)
+- [New-MgBetaDeviceManagementCompliancePolicyAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicyassignment)
 
 
 

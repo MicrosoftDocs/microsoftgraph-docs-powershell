@@ -704,7 +704,7 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationassignment)
+- [Update-MgBetaDeviceManagementDeviceConfigurationAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationassignment)
 
 
 
