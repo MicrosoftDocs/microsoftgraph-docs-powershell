@@ -409,8 +409,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
-- [](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
+- [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
 
 
 

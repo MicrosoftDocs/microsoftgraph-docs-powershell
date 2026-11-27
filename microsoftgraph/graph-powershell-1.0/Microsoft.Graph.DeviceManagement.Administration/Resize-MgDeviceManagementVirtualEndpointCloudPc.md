@@ -536,8 +536,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
-- [](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)
+- [Resize-MgDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)
 
 
 
