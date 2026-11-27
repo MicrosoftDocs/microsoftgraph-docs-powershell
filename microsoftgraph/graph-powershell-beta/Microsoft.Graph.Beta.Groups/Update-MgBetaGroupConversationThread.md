@@ -83,16 +83,6 @@ Update the navigation property threads in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1029,6 +1019,7 @@ Returned only on $select.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
+
 
 
 

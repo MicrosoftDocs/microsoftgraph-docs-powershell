@@ -81,16 +81,6 @@ You can specify both the parent conversation and thread in the request, \ror, yo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -651,6 +641,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost)
 - [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
+
 
 
 

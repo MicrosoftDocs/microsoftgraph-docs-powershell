@@ -67,12 +67,17 @@ Retrieve the properties and relationships of conversation object.
 | Application | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupConversation -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 
