@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a sourceSystemDefinition object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-SourceSystem.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-SourceSystem.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
