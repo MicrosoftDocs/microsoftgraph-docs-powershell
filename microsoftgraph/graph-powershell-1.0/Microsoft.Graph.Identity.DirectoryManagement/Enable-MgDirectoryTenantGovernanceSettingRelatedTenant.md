@@ -15,6 +15,9 @@ title: Enable-MgDirectoryTenantGovernanceSettingRelatedTenant
 
 Invoke action enableRelatedTenants
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Enable (Default)

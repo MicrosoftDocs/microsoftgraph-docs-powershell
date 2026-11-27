@@ -15,6 +15,9 @@ title: Get-MgDirectoryAdministrativeUnitMemberCountAsServicePrincipal
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberCountAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

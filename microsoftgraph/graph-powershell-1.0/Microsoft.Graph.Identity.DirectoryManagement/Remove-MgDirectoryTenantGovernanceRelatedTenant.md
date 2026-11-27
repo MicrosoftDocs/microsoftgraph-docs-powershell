@@ -15,6 +15,9 @@ title: Remove-MgDirectoryTenantGovernanceRelatedTenant
 
 Delete navigation property relatedTenants for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

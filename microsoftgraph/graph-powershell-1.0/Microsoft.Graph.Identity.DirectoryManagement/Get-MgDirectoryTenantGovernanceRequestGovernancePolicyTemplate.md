@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceRequestGovernancePolicyTemplate
 
 Get governancePolicyTemplate from directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceRequestGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceRequestGovernancePolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

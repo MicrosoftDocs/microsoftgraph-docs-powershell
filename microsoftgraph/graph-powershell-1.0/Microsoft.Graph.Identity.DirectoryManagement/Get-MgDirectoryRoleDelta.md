@@ -16,6 +16,9 @@ title: Get-MgDirectoryRoleDelta
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRecovery
 
 Delete navigation property recovery for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRecovery](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRecovery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

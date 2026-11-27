@@ -15,6 +15,9 @@ title: New-MgDirectoryRecoveryJob
 
 Create new navigation property to jobs for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRecoveryJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

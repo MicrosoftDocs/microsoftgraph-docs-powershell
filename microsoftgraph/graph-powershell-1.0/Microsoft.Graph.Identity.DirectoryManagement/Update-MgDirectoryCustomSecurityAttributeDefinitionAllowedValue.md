@@ -15,6 +15,9 @@ title: Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 Update the properties of an allowedValue object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

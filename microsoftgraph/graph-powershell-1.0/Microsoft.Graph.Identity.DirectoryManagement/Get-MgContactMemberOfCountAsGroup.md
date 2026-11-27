@@ -15,6 +15,9 @@ title: Get-MgContactMemberOfCountAsGroup
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactMemberOfCountAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

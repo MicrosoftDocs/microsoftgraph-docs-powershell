@@ -15,6 +15,9 @@ title: Get-MgDeviceMemberOfCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
