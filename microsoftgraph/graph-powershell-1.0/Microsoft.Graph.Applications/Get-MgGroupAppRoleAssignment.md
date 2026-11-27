@@ -63,9 +63,9 @@ Represents the app roles granted to a group for an application.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Get appRoleAssignments granted to a group
 
-### EXAMPLE 1
-
+```powershell
 Get-MgGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
   Format-List
 
@@ -79,6 +79,9 @@ PrincipalType        : Group
 ResourceDisplayName  : Common Data Service
 ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
 AdditionalProperties : {}
+```
+
+This example get all app role assignments granted to the specified group.
 
 ## PARAMETERS
 
