@@ -439,8 +439,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter)
-- [](https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta)
+- [Remove-MgBetaVirtualEventTownhallPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallpresenter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventpresenter-delete?view=graph-rest-beta)
 
 
 

@@ -1049,8 +1049,8 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallpresenter)
-- [](https://learn.microsoft.com/graph/api/virtualevent-post-presenters?view=graph-rest-beta)
+- [New-MgBetaVirtualEventTownhallPresenter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallpresenter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualevent-post-presenters?view=graph-rest-beta)
 
 
 
