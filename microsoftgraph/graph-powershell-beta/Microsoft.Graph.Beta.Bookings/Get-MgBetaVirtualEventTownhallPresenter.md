@@ -71,12 +71,17 @@ Currently the supported virtual event types are: virtualEventTownhall, virtualEv
 | Application | VirtualEvent.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 Get-MgBetaVirtualEventTownhallPresenter -VirtualEventTownhallId $virtualEventTownhallId
+
+```
+This example shows how to use the Get-MgBetaVirtualEventTownhallPresenter Cmdlet.
+
 
 ## PARAMETERS
 
