@@ -15,6 +15,9 @@ title: Remove-MgPrivacySubjectRightsRequest
 
 Delete navigation property subjectRightsRequests for privacy
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

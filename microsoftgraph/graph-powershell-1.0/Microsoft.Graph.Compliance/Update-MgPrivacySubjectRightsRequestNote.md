@@ -15,6 +15,9 @@ title: Update-MgPrivacySubjectRightsRequestNote
 
 Update the navigation property notes in privacy
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
