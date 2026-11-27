@@ -57,12 +57,17 @@ Delete navigation property iosManagedAppProtections for deviceAppManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Remove-MgDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtectionId $iosManagedAppProtectionId
+
+```
+This example shows how to use the Remove-MgDeviceAppManagementiOSManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 
