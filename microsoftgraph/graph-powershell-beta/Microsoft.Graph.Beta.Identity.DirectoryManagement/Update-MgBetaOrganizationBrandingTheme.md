@@ -78,8 +78,9 @@ Update the properties of an organizationalBrandingTheme object.
 | Application | OrganizationalBranding.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBrandingTheme -OrganizationId $organizationId -OrganizationalBrandingThemeId $organizationalBrandingThemeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaOrganizationBrandingTheme Cmdlet.
+
 
 ## PARAMETERS
 

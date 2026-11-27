@@ -65,12 +65,17 @@ Read-only, Nullable.
 Does not support $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDomainServiceConfigurationRecord -DomainId $domainId
+
+```
+This example shows how to use the Get-MgBetaDomainServiceConfigurationRecord Cmdlet.
+
 
 ## PARAMETERS
 
