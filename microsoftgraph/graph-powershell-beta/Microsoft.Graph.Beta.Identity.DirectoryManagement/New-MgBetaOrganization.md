@@ -1161,7 +1161,7 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
   [ServicePlanId <String>]: A GUID that identifies the service plan.
 For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER <IMicrosoftGraphOrganization>: organization
+BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1565,7 +1565,7 @@ Not nullable.
     [Name <String>]: The domain name; for example, contoso.com.
     [Type <String>]: For example, Managed.
 
-BRANDING <IMicrosoftGraphOrganizationalBranding>: organizationalBranding
+BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
@@ -1840,7 +1840,7 @@ Read-only.
     [IssuerSki <String>]: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
 
-CERTIFICATECONNECTORSETTING <IMicrosoftGraphCertificateConnectorSetting>: Certificate connector settings.
+CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Certificate connector settings.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertExpiryTime <DateTime?>]: Certificate expire time
   [ConnectorVersion <String>]: Version of certificate connector
@@ -1849,7 +1849,7 @@ CERTIFICATECONNECTORSETTING <IMicrosoftGraphCertificateConnectorSetting>: Certif
   [LastUploadVersion <Int64?>]: Version of last uploaded certificate connector
   [Status <Int32?>]: Certificate connector status
 
-DIRECTORYSIZEQUOTA <IMicrosoftGraphDirectorySizeQuota>: directorySizeQuota
+DIRECTORYSIZEQUOTA `<IMicrosoftGraphDirectorySizeQuota>`: directorySizeQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Total <Int32?>]: Total amount of the directory quota.
   [Used <Int32?>]: Used amount of the directory quota.
@@ -1859,7 +1859,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-PARTNERINFORMATION <IMicrosoftGraphPartnerInformation>: partnerInformation
+PARTNERINFORMATION `<IMicrosoftGraphPartnerInformation>`: partnerInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommerceUrl <String>]: 
   [CompanyName <String>]: 
@@ -1870,7 +1870,7 @@ PARTNERINFORMATION <IMicrosoftGraphPartnerInformation>: partnerInformation
   [SupportTelephones <String[]>]: 
   [SupportUrl <String>]: 
 
-PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>: privacyProfile
+PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContactEmail <String>]: A valid smtp email address for the privacy statement contact.
 Not required.
@@ -1891,7 +1891,7 @@ RESOURCEQUOTAS <IMicrosoftGraphResourceQuota[]>: .
   [ResourceType <String>]: resourceQuotaType
   [Total <Int32?>]: 
 
-SETTINGS <IMicrosoftGraphOrganizationSettings>: organizationSettings
+SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1931,3 +1931,25 @@ Not nullable.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganization)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
