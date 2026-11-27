@@ -625,8 +625,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-memberof?view=graph-rest-1.0)
+- [Get-MgUserMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-memberof?view=graph-rest-1.0)
 
 
 
