@@ -700,7 +700,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetagroupplannerplanhistoryitem)
+- [New-MgBetaGroupPlannerPlanHistoryItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetagroupplannerplanhistoryitem)
 
 
 

@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplantask)
-- [](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-beta)
+- [Get-MgBetaPlannerPlanTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplantask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-beta)
 
 
 
