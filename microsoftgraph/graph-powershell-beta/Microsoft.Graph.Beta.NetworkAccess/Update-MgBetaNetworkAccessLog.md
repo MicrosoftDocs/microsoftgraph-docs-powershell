@@ -159,7 +159,7 @@ HelpMessage: ''
 
 ### -GenerativeAiInsights
 
-.
+
 To construct, see NOTES section for GENERATIVEAIINSIGHTS properties and create a hash table.
 
 ```yaml
