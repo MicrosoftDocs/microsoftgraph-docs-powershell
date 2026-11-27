@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Get a specific commercial subscription that an organization has acquired.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All, Organization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

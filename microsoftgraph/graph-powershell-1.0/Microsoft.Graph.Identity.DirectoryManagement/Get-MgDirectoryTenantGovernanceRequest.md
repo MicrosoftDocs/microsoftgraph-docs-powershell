@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get governanceRequests from directory
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-Request.Read.All, TenantGovernance-Request.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-Request.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
