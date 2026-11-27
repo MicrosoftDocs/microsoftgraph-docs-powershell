@@ -614,7 +614,7 @@ By default, the data in the file is partitioned by the number of line items.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest)
+- [New-MgBetaReportPartnerBillingManifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest)
 
 
 

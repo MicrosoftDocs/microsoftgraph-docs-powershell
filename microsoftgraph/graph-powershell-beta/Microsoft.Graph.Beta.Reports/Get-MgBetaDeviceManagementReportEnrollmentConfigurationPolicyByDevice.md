@@ -562,7 +562,7 @@ BODYPARAMETER `<IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentco
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice)
+- [Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice)
 
 
 

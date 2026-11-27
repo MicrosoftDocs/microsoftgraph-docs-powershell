@@ -362,8 +362,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationtrainingusercoverage)
-- [](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta)
+- [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationtrainingusercoverage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta)
 
 
 

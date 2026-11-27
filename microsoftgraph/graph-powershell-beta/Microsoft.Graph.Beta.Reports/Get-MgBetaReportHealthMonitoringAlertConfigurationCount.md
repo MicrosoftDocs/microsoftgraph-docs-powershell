@@ -279,7 +279,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalertconfigurationcount)
+- [Get-MgBetaReportHealthMonitoringAlertConfigurationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalertconfigurationcount)
 
 
 

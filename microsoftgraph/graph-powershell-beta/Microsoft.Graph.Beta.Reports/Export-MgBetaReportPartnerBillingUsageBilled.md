@@ -413,8 +413,8 @@ BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPart
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta)
+- [Export-MgBetaReportPartnerBillingUsageBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-beta)
 
 
 
