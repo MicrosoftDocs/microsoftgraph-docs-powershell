@@ -602,9 +602,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangeprotectionpolicymailboxinclusionrule)
-- [](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxinclusionrules?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxInclusionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangeprotectionpolicymailboxinclusionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangeprotectionpolicy-list-mailboxinclusionrules?view=graph-rest-1.0)
 
 
 
