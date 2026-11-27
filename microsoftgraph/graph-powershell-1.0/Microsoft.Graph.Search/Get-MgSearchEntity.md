@@ -15,6 +15,9 @@ title: Get-MgSearchEntity
 
 Get search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchEntity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

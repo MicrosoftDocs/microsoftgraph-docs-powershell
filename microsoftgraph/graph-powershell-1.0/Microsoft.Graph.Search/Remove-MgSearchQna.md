@@ -15,6 +15,9 @@ title: Remove-MgSearchQna
 
 Delete a qna object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
