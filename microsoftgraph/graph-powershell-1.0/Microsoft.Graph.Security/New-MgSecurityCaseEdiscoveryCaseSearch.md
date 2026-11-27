@@ -866,7 +866,7 @@ For example, in the access reviews decisions API, this property might record the
   [DisplayName <String>]: The display name of the dataSource and is the name of the SharePoint site.
   [HoldStatus <String>]: dataSourceHoldStatus
 
-ADDTOREVIEWSETOPERATION <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>: ediscoveryAddToReviewSetOperation
+ADDTOREVIEWSETOPERATION `<IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>`: ediscoveryAddToReviewSetOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: caseAction
   [CompletedDateTime <DateTime?>]: The date and time the operation was completed.
@@ -983,7 +983,7 @@ Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphSecurityEdiscoverySearch>: ediscoverySearch
+BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentQuery <String>]: 
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1100,7 +1100,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1128,7 +1128,7 @@ For example, in the access reviews decisions API, this property might record the
   [DisplayName <String>]: The display name of the dataSource and is the name of the SharePoint site.
   [HoldStatus <String>]: dataSourceHoldStatus
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1204,7 +1204,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>: ediscoveryEstimateOperation
+LASTESTIMATESTATISTICSOPERATION `<IMicrosoftGraphSecurityEdiscoveryEstimateOperation>`: ediscoveryEstimateOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: caseAction
   [CompletedDateTime <DateTime?>]: The date and time the operation was completed.
@@ -1321,7 +1321,7 @@ Read-only.
   [UnindexedItemCount <Int64?>]: The estimated count of unindexed items for the collection.
   [UnindexedItemsSize <Int64?>]: The estimated size of unindexed items for the collection.
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1379,3 +1379,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
