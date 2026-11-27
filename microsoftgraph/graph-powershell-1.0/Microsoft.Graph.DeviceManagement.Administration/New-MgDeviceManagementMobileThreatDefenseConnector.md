@@ -64,8 +64,9 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 
