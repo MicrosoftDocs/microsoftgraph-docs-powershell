@@ -54,6 +54,14 @@ You can create up to 30 configurationMonitor objects per tenant.
 Each monitor runs at a fixed interval of 6 hours and cannot be configured to run at any other frequency.
 An administrator can monitor up to 800 configuration resources per day per tenant across all monitors.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConfigurationMonitoring.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
