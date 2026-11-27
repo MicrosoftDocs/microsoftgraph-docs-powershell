@@ -14,7 +14,7 @@ title: Find-MgUserMeetingTime
 ## SYNOPSIS
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
@@ -74,7 +74,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
@@ -713,7 +713,7 @@ ATTENDEES <IMicrosoftGraphAttendeeBase[]>: .
     [Name <String>]: The display name of the person or entity.
   [Type <String>]: attendeeType
 
-BODYPARAMETER <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphAttendeeBase[]>]: 
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
@@ -769,10 +769,10 @@ Default is true.
 See below for more possible values.
       [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-LOCATIONCONSTRAINT <IMicrosoftGraphLocationConstraint>: locationConstraint
+LOCATIONCONSTRAINT `<IMicrosoftGraphLocationConstraint>`: locationConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsRequired <Boolean?>]: The client requests the service to include in the response a meeting location for the meeting.
 If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions.
@@ -805,7 +805,7 @@ If set to false and the specified resource is busy, findMeetingTimes returns the
 Default is true.
   [SuggestLocation <Boolean?>]: The client requests the service to suggest one or more meeting locations.
 
-TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>: timeConstraint
+TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityDomain <String>]: activityDomain
   [TimeSlots <IMicrosoftGraphTimeSlot[]>]: 
@@ -821,3 +821,25 @@ See below for more possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
 - [](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
