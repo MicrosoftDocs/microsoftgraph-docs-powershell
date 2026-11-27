@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Retrieve a Teams app icon associated with a specific definition of an app.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppCatalog.Read.All, AppCatalog.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

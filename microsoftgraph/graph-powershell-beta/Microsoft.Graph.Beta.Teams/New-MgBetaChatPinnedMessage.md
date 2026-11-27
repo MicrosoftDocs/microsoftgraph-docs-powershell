@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

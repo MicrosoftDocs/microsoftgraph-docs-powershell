@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the activity status of a Microsoft Teams-enabled device.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
