@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 The attendance reports of an online meeting.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingArtifact.Read.All, OnlineMeetingArtifact.Read.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
