@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityLabelRetentionLabelDescriptor
 
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

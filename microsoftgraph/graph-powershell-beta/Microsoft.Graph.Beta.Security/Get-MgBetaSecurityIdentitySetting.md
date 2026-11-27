@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentitySetting
 
 Represents a container for security identities settings APIs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

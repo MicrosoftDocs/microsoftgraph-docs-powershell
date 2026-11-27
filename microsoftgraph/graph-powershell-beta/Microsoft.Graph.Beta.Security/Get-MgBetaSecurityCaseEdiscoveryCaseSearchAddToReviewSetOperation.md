@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation
 
 Adds the results of the eDiscovery search to the specified reviewSet.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

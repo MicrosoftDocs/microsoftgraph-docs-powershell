@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseReviewSetQueryCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetQueryCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

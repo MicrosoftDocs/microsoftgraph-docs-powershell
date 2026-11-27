@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 Delete navigation property noncustodialDataSources for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

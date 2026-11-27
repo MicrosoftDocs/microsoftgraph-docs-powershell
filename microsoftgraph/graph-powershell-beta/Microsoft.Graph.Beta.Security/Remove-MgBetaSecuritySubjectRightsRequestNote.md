@@ -15,6 +15,9 @@ title: Remove-MgBetaSecuritySubjectRightsRequestNote
 
 Delete navigation property notes for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Remove-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

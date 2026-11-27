@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityThreatIntelligenceHostReputation
 
 Delete navigation property reputation for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

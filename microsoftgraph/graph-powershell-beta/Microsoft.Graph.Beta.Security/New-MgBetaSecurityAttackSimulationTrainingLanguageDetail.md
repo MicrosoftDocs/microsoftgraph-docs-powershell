@@ -15,6 +15,9 @@ title: New-MgBetaSecurityAttackSimulationTrainingLanguageDetail
 
 Create new navigation property to languageDetails for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

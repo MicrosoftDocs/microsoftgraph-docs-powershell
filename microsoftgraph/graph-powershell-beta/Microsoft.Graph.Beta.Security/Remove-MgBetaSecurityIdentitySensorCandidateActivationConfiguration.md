@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityIdentitySensorCandidateActivationConfiguration
 
 Delete navigation property sensorCandidateActivationConfiguration for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityIdentitySensorCandidateActivationConfiguration](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityIdentitySensorCandidateActivationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
