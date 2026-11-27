@@ -15,6 +15,9 @@ title: Get-MgTeamMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

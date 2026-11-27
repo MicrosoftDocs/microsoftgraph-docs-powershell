@@ -16,6 +16,9 @@ title: Set-MgChatMessageHostedContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

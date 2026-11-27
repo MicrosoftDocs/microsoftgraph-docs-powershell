@@ -15,6 +15,9 @@ title: Clear-MgUserChatTargetedMessageReplyReaction
 
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserChatTargetedMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaUserChatTargetedMessageReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)

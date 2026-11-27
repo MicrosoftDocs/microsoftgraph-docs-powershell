@@ -15,6 +15,9 @@ title: Remove-MgUserChatTargetedMessage
 
 Delete navigation property targetedMessages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTargetedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

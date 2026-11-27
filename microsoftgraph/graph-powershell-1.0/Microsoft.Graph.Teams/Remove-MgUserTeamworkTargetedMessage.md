@@ -16,6 +16,9 @@ title: Remove-MgUserTeamworkTargetedMessage
 Delete a specific targeted message from a channel context.
 Teams administrators can use this API to remove targeted messages by providing the message ID, team ID, and channel ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamworkTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkTargetedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DeleteExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgGroupTeamChannelRetainedMessage
 Get all retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelRetainedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

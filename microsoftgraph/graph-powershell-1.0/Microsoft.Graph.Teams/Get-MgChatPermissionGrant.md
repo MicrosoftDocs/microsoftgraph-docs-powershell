@@ -15,6 +15,9 @@ title: Get-MgChatPermissionGrant
 
 A collection of permissions granted to apps for the chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Set-MgChatTargetedMessageReplyReaction
 
 Invoke action setReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaChatTargetedMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatTargetedMessageReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

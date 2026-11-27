@@ -16,6 +16,9 @@ title: Get-MgTeamChannelTabTeamApp
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTabTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

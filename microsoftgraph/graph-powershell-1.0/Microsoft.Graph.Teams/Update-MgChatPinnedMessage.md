@@ -15,6 +15,9 @@ title: Update-MgChatPinnedMessage
 
 Update the navigation property pinnedMessages in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgUserChatMessageReply
 
 Delete navigation property replies for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -19,6 +19,9 @@ For more information, see Import third-party platform messages to Teams using Mi
 After a completeMigration request is made for an existing or new chat, you can start a migration session by calling chat: startMigration.
 This API supportes the following channel types.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaUserChatMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaUserChatMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Complete (Default)

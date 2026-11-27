@@ -15,6 +15,9 @@ title: Get-MgTeamScheduleTimeCard
 
 The time cards in the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

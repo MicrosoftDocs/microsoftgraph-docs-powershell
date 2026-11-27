@@ -15,6 +15,9 @@ title: Get-MgGroupTeamInstalledAppTeamApp
 
 The app that is installed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamInstalledAppTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
