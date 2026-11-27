@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action getTargetedUsersAndDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -373,6 +363,7 @@ BODYPARAMETER `<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphG
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice)
+
 
 
 

@@ -35,16 +35,6 @@ This cmdlet has the following aliases,
 
 Gets the Managed Google Play store layout type from Google EMM API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -240,6 +230,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingstorelayout)
+
 
 
 

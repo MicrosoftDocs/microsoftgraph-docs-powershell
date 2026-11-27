@@ -54,16 +54,6 @@ Invoke action completeSignup
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -402,6 +392,7 @@ BODYPARAMETER `<IPathsRk2EjiDevicemanagementAndroidmanagedstoreaccountenterprise
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/complete-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignup)
+
 
 
 
