@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
