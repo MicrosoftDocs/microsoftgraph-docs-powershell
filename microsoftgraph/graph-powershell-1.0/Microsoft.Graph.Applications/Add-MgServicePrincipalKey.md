@@ -76,6 +76,14 @@ As part of the request validation for this method, a proof of possession of an e
 ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
