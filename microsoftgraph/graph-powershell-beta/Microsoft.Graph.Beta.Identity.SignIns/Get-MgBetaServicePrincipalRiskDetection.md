@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalRiskDetection
 
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

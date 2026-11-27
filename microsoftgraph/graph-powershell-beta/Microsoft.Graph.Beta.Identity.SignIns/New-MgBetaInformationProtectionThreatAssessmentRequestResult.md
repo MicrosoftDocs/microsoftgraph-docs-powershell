@@ -15,6 +15,9 @@ title: New-MgBetaInformationProtectionThreatAssessmentRequestResult
 
 Create new navigation property to results for informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

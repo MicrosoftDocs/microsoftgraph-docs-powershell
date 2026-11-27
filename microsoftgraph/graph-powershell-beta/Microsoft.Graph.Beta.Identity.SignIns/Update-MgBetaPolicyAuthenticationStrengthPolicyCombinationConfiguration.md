@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 Update the navigation property combinationConfigurations in policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganization
 
 Delete navigation property multiTenantOrganizationPartnerConfiguration for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

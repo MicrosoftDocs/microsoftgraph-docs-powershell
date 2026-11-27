@@ -16,6 +16,9 @@ title: Get-MgBetaPolicyCrossTenantAccessPolicyDefault
 Read the default configuration of a cross-tenant access policy.
 This default configuration may be the service default assigned by Microsoft Entra ID (isServiceDefault is true) or may be customized in your tenant (isServiceDefault is false).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

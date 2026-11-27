@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

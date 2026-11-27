@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIde
 
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

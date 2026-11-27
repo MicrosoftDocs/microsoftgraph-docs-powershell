@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 Update the properties of a partner-specific configuration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
