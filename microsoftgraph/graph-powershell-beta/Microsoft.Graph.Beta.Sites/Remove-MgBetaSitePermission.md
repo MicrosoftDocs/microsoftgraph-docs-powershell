@@ -476,7 +476,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepermission)
+- [Remove-MgBetaSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepermission)
 
 
 

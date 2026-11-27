@@ -418,7 +418,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionthreatassessmentrequestcount)
+- [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionthreatassessmentrequestcount)
 
 
 

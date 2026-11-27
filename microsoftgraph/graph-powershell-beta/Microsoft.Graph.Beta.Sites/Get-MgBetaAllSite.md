@@ -428,8 +428,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
-- [](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
+- [Get-MgBetaAllSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
 
 
 
