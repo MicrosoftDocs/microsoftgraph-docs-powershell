@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernanceRelatedTenant
 
 Read the properties and relationships of microsoft.graph.tenantGovernanceServices.relatedTenant object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

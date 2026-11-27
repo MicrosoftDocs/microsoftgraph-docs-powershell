@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryRecoverySnapshot
 
 Update the navigation property snapshots in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRecoverySnapshot](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRecoverySnapshot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

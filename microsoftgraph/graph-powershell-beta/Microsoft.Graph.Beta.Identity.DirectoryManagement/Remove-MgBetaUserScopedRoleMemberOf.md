@@ -15,6 +15,9 @@ title: Remove-MgBetaUserScopedRoleMemberOf
 
 Delete navigation property scopedRoleMemberOf for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

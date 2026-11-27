@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryRemoteTenantGroup
 
 Create new navigation property to remoteTenantGroups for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRemoteTenantGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

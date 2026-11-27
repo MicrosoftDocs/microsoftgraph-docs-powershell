@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernanceRelationship
 
 Read the properties of a governanceRelationship object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceRelationship](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 Read the properties and relationships of a customSecurityAttributeDefinition object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

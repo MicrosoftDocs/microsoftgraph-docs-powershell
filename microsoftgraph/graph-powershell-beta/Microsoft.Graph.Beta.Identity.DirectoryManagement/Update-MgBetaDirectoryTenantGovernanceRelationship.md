@@ -17,6 +17,9 @@ Update the status property of a governanceRelationship to initiate the terminati
 There are two models for termination:\r1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryTenantGovernanceRelationship](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryTenantGovernanceRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

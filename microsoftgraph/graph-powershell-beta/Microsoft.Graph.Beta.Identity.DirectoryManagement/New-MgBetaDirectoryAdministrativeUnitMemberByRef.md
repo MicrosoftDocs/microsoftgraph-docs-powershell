@@ -15,6 +15,9 @@ title: New-MgBetaDirectoryAdministrativeUnitMemberByRef
 
 Create new navigation property ref to members for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

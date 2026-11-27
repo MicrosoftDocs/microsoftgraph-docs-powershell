@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernanceRelatedTenantBillingMetric
 
 Get billingMetrics from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceRelatedTenantBillingMetric](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceRelatedTenantBillingMetric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

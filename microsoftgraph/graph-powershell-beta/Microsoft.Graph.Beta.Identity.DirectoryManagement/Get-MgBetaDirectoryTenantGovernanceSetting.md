@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryTenantGovernanceSetting
 
 Read the properties of the tenantGovernanceSetting singleton, which controls related tenant discovery and invitation capabilities.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

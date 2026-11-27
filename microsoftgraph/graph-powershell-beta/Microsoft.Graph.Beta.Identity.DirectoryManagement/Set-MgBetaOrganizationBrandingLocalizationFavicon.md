@@ -15,6 +15,9 @@ title: Set-MgBetaOrganizationBrandingLocalizationFavicon
 
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationFavicon?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

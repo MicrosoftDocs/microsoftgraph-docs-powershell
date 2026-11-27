@@ -16,6 +16,9 @@ title: Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant
 Enable the related tenants feature for tenant discovery.
 After calling this action, the isRelatedTenantsEnabled property of tenantGovernanceSetting is set to true, which allows the use of related tenant APIs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgDirectoryTenantGovernanceSettingRelatedTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Enable-MgDirectoryTenantGovernanceSettingRelatedTenant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Enable (Default)

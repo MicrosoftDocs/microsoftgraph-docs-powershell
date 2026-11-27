@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceRegisteredOwnerAsEndpoint
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredOwnerAsEndpoint](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerAsEndpoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

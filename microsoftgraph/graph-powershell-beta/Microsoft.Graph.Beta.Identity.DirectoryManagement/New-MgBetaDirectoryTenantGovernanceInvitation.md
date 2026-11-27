@@ -16,6 +16,9 @@ title: New-MgBetaDirectoryTenantGovernanceInvitation
 Create a new governanceInvitation to establish a governance relationship with a governed tenant.
 Invitations provide an alternative mechanism to governance requests for initiating relationships.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernanceInvitation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernanceInvitation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
