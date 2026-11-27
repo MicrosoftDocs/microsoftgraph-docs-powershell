@@ -1941,8 +1941,8 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn)
-- [](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0)
+- [New-MgSiteListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0)
 
 
 

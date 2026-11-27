@@ -429,7 +429,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathlastmodifiedbyuser)
+- [Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathlastmodifiedbyuser)
 
 
 

@@ -1731,8 +1731,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild)
-- [](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
+- [New-MgSiteTermStoreSetChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetchild)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
 
 
 

@@ -480,8 +480,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagewebpart)
-- [](https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-1.0)
+- [Remove-MgSitePageAsSitePageWebPart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagewebpart)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/webpart-delete?view=graph-rest-1.0)
 
 
 

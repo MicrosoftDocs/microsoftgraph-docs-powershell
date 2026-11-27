@@ -989,7 +989,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore)
+- [Update-MgGroupSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstore)
 
 
 
