@@ -86,8 +86,9 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.ChangeNotifications
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSubscription Cmdlet.
+
 
 ## PARAMETERS
 
