@@ -580,7 +580,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeploymentaudienceexclusion)
+- [Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeploymentaudienceexclusion)
 
 
 
