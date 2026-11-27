@@ -614,8 +614,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mguseronlinemeetingvirtualappointmentsm)
-- [](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
+- [Send-MgUserOnlineMeetingVirtualAppointmentSm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mguseronlinemeetingvirtualappointmentsm)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
 
 
 
