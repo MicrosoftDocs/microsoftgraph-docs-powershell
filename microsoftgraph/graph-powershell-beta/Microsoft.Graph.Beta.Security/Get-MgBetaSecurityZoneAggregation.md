@@ -51,16 +51,6 @@ Read-only.
 Supports $filter (eq) on the kind property.
 For example, $filter=aggregations/any(a: a/kind eq 'azureSubscription').
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AggregatedEnvironmentKind
@@ -492,6 +482,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityzoneaggregation)
+
 
 
 

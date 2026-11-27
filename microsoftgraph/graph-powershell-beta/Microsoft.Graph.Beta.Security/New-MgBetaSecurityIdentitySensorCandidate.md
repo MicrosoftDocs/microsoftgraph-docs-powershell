@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to sensorCandidates for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -494,6 +484,7 @@ This flagged enumeration allows multiple members to be returned simultaneously.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensorcandidate)
+
 
 
 

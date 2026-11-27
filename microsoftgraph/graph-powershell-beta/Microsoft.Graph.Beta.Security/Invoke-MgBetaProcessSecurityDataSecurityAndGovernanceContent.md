@@ -60,16 +60,6 @@ For A2T scenarios: The response contains any applicable policy actions together 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Content.Process.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -499,6 +489,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontent)
 - [](https://learn.microsoft.com/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta)
+
 
 
 
