@@ -15,6 +15,9 @@ title: Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender
 
 Invoke action windowsDefenderScan
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.DeviceManagement/Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ScanExpanded (Default)

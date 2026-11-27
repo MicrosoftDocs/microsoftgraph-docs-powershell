@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementManagedDeviceWindowsProtectionState
 
 Delete navigation property windowsProtectionState for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

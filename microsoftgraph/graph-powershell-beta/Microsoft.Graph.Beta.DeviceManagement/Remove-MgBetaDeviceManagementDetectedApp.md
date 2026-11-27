@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementDetectedApp
 
 Delete navigation property detectedApps for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
