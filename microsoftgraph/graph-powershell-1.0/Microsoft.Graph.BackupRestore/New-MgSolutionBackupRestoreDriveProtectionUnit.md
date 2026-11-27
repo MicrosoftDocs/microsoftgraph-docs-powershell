@@ -15,6 +15,9 @@ title: New-MgSolutionBackupRestoreDriveProtectionUnit
 
 Create new navigation property to driveProtectionUnits for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreDriveProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreDriveProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

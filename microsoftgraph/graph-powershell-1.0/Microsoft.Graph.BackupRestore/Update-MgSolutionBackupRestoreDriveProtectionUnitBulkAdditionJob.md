@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob
 
 Update the navigation property driveProtectionUnitsBulkAdditionJobs in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
