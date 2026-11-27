@@ -626,7 +626,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRoleScope>: accessPackageResourceRoleScope
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageResourceRoleScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -748,7 +748,7 @@ Supports $filter (eq).
     [Type <String>]: roleType
   [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -828,7 +828,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-ROLE <IMicrosoftGraphAccessPackageResourceRole>: accessPackageResourceRole
+ROLE `<IMicrosoftGraphAccessPackageResourceRole>`: accessPackageResourceRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -943,7 +943,7 @@ Supports $filter (eq).
       [Status <String>]: customDataProvidedResourceUploadStatus
   [Type <String>]: roleType
 
-SCOPE <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
+SCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1063,3 +1063,25 @@ Supports $filter (eq).
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope)
 - [](https://learn.microsoft.com/graph/api/accesspackage-post-resourcerolescopes?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

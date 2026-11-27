@@ -441,7 +441,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>: lifecycleManagementSettings
+BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>`: lifecycleManagementSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -464,7 +464,7 @@ Each condition is either a countBasedQuarantineCondition or a percentageBasedQua
 This interval has a minimum value of 1 and a maximum value of 24.
 The default value is 3 hours.
 
-EMAILSETTINGS <IMicrosoftGraphEmailSettings>: emailSettings
+EMAILSETTINGS `<IMicrosoftGraphEmailSettings>`: emailSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SenderDomain <String>]: Specifies the domain that should be used when sending email notifications.
 This domain must be verified in order to be used.
@@ -475,7 +475,7 @@ The banner logo will replace the Microsoft logo at the top of the email notifica
 If true the banner logo will be taken from the tenant’s branding settings.
 This value can only be set to true if the organizationalBranding bannerLogo property is set.
 
-QUARANTINECONFIGURATION <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>: quarantineConfiguration
+QUARANTINECONFIGURATION `<IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>`: quarantineConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
 Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
@@ -486,3 +486,25 @@ Each condition is either a countBasedQuarantineCondition or a percentageBasedQua
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
