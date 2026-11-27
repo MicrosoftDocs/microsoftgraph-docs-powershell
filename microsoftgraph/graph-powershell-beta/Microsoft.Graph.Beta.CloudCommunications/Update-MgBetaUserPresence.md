@@ -685,7 +685,7 @@ WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence)
+- [Update-MgBetaUserPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence)
 
 
 

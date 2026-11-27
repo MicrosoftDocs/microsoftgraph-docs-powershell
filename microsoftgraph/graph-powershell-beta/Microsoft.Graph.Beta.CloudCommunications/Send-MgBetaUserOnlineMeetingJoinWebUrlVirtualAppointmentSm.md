@@ -582,8 +582,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetauseronlinemeetingjoinweburlvirtualappointmentsm)
-- [](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta)
+- [Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentSm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetauseronlinemeetingjoinweburlvirtualappointmentsm)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta)
 
 
 
