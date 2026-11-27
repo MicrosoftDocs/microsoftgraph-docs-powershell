@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 The list of Exchange Connectors configured by the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
