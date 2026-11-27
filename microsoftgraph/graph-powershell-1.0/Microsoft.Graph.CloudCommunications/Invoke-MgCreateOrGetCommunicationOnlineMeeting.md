@@ -16,6 +16,9 @@ title: Invoke-MgCreateOrGetCommunicationOnlineMeeting
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

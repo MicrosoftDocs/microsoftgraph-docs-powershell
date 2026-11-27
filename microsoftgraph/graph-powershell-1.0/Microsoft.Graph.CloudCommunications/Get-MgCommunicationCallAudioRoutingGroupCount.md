@@ -15,6 +15,9 @@ title: Get-MgCommunicationCallAudioRoutingGroupCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroupCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallAudioRoutingGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
