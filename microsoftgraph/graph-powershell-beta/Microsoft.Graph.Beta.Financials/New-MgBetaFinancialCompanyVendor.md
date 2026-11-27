@@ -1129,7 +1129,7 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor)
+- [New-MgBetaFinancialCompanyVendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor)
 
 
 

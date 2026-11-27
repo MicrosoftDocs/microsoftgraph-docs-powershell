@@ -273,7 +273,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial)
+- [Get-MgBetaFinancial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial)
 
 
 
