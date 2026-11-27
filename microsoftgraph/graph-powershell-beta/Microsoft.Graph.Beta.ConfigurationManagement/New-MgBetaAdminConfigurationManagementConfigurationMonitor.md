@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Create a new configurationMonitor object that runs periodically in the background at a scheduled frequency.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConfigurationMonitoring.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
