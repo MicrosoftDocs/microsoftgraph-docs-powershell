@@ -18,6 +18,9 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Requires $select to retrieve.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUserMailboxSetting](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
