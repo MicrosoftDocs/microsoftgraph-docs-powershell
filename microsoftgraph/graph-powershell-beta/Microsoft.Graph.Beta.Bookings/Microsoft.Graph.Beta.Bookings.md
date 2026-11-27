@@ -437,3 +437,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
