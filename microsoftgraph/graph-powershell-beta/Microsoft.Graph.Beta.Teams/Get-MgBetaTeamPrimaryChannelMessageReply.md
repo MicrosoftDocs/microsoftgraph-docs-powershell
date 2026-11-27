@@ -16,6 +16,9 @@ title: Get-MgBetaTeamPrimaryChannelMessageReply
 Replies for a specified message.
 Supports $expand for channel messages.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

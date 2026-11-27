@@ -15,6 +15,9 @@ title: Remove-MgBetaChatMember
 
 Remove a conversationMember from a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

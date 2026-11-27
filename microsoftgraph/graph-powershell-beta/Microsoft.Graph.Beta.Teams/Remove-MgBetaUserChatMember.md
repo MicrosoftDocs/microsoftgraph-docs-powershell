@@ -15,6 +15,9 @@ title: Remove-MgBetaUserChatMember
 
 Delete navigation property members for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

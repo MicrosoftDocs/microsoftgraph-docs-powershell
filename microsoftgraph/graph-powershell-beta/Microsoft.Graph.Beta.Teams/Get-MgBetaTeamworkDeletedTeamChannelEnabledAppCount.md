@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelEnabledAppCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelEnabledAppCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelEnabledAppCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

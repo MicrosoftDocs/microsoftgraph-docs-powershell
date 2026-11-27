@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleOpenShiftCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOpenShiftCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

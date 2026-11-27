@@ -18,6 +18,9 @@ The content property will have a potentially breaking change in behavior in the 
 It will stream content directly instead of redirecting.
 To proactively opt in to the new behavior ahead of time, use the contentStream property instead.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelFileFolderContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

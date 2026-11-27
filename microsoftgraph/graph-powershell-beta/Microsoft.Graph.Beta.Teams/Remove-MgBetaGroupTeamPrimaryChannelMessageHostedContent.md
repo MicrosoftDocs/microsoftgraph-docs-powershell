@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamPrimaryChannelMessageHostedContent
 
 Delete navigation property hostedContents for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

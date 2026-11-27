@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamPhotoContent
 
 The team photo.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

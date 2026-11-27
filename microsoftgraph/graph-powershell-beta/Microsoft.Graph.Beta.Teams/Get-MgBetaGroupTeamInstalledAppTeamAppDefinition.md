@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamInstalledAppTeamAppDefinition
 
 The details of this version of the app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledAppTeamAppDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

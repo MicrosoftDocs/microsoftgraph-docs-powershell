@@ -15,6 +15,9 @@ title: Get-MgBetaTeamChannelSharedWithTeamAllowedMember
 
 A collection of team members who have access to the shared channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

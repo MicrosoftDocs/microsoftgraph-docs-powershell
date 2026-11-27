@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamOperation
 
 Create new navigation property to operations for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamOperation](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

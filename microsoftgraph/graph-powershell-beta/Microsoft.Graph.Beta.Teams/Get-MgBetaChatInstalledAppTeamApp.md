@@ -15,6 +15,9 @@ title: Get-MgBetaChatInstalledAppTeamApp
 
 The app that is installed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledAppTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

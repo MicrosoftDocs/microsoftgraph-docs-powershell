@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamScheduleShift
 
 Create new navigation property to shifts for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
