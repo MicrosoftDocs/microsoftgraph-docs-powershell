@@ -124,7 +124,7 @@ HelpMessage: ''
 
 ### -Applications
 
-.
+
 To construct, see NOTES section for APPLICATIONS properties and create a hash table.
 
 ```yaml
@@ -398,7 +398,7 @@ HelpMessage: ''
 
 ### -Members
 
-.
+
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
