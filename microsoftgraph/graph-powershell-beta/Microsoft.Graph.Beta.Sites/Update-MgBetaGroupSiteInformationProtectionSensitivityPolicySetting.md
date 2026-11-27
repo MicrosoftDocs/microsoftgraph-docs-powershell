@@ -197,7 +197,7 @@ HelpMessage: ''
 
 ### -DowngradeSensitivityRequiresJustification
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +272,7 @@ HelpMessage: ''
 
 ### -HelpWebUrl
 
-.
+
 
 ```yaml
 Type: System.String
@@ -397,7 +397,7 @@ HelpMessage: ''
 
 ### -IsMandatory
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
