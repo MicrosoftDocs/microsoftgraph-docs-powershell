@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Get an event object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read,  |
+| Application | Calendars.ReadBasic, Calendars.Read,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
