@@ -58,18 +58,28 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-### EXAMPLE 2
+```
+This example shows how to use the Get-MgBetaShareDriveItem Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
+
+```
+This example shows how to use the Get-MgBetaShareDriveItem Cmdlet.
+
 
 ## PARAMETERS
 
