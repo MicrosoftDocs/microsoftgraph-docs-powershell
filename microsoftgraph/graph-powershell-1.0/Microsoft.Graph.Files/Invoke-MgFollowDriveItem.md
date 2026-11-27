@@ -56,12 +56,17 @@ Follow a driveItem.
 | Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
 Invoke-MgFollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Invoke-MgFollowDriveItem Cmdlet.
+
 
 ## PARAMETERS
 
