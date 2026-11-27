@@ -16,6 +16,9 @@ title: Remove-MgBetaUserOnlineMeetingTranscriptContent
 The content of the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

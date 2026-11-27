@@ -15,6 +15,9 @@ title: Remove-MgBetaCommunicationPresence
 
 Delete navigation property presences for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

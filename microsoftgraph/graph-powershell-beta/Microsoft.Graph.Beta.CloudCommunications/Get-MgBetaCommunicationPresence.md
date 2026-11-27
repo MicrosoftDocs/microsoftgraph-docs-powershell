@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationPresence
 
 Get a user's presence information.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

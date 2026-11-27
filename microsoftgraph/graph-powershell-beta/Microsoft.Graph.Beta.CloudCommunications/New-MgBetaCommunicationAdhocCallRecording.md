@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationAdhocCallRecording
 
 Create new navigation property to recordings for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationAdhocCallRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
