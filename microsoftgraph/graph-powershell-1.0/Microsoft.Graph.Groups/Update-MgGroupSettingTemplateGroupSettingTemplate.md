@@ -576,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGroupSettingTemplate>: groupSettingTemplate
+BODYPARAMETER `<IMicrosoftGraphGroupSettingTemplate>`: groupSettingTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -591,7 +591,7 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
     [Name <String>]: Name of the setting.
     [Type <String>]: Type of the setting.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -622,3 +622,25 @@ VALUES <IMicrosoftGraphSettingTemplateValue[]>: Collection of settingTemplateVal
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

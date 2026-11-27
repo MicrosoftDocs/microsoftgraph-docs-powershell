@@ -14,7 +14,7 @@ title: Get-MgGroupThread
 ## SYNOPSIS
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \r\nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \r\nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
 
 ## EXAMPLES
 
@@ -552,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -579,3 +579,25 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
 - [](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
