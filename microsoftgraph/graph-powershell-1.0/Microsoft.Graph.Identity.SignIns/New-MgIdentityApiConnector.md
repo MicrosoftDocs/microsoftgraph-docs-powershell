@@ -485,8 +485,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
-- [](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
+- [New-MgIdentityApiConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
 
 
 

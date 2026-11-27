@@ -431,8 +431,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider)
-- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-1.0)
+- [New-MgIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityriskpreventionfraudprotectionprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-fraudprotectionproviders?view=graph-rest-1.0)
 
 
 

@@ -440,8 +440,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0)
+- [New-MgIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0)
 
 
 
