@@ -358,7 +358,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecheckincount)
+- [Get-MgBetaPlaceCheckInCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplacecheckincount)
 
 
 
