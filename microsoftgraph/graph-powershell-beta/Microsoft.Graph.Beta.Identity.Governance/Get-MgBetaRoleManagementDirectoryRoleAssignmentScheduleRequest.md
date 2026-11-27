@@ -69,12 +69,17 @@ In PIM, read the details of a request for an active and persistent role assignme
 | Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 
