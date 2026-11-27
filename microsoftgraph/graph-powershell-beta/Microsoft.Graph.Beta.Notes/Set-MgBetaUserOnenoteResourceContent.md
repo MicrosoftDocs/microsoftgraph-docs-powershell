@@ -15,6 +15,9 @@ title: Set-MgBetaUserOnenoteResourceContent
 
 The content of the resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

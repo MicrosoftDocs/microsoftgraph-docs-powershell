@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupOnenoteResource
 
 Delete navigation property resources for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Remove-MgGroupOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

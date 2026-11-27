@@ -15,6 +15,9 @@ title: New-MgBetaSiteOnenoteSection
 
 Create new navigation property to sections for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
