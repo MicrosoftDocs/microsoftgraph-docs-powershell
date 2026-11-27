@@ -52,16 +52,6 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -402,6 +392,7 @@ BODYPARAMETER `<IPaths1T6Lra6ContractsMicrosoftGraphGetbyidsPostRequestbodyConte
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid)
 - [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+
 
 
 

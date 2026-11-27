@@ -63,8 +63,9 @@ This cmdlet has the following aliases,
 Create and register a new device in the organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -83,6 +84,10 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
+
+```
+This example shows how to use the New-MgDevice Cmdlet.
+
 
 ## PARAMETERS
 

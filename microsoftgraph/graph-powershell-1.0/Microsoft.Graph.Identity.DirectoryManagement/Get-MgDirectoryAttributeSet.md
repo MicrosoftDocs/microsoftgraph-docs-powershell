@@ -68,24 +68,39 @@ Read the properties and relationships of an attributeSet object.
 | Application | CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get all attribute sets
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAttributeSet
 
-### EXAMPLE 2
+```
+This example will get all attribute sets
+
+### Example 2: Get top attribute sets
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectoryAttributeSet -Top 10
+Get-MgDirectoryAttributeSet -Top 10 
 
-### EXAMPLE 3
+```
+This example will get top attribute sets
+
+### Example 3: Get attribute sets in order
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectoryAttributeSet -Sort "id"
+Get-MgDirectoryAttributeSet -Sort "id" 
+
+```
+This example will get attribute sets in order
+
 
 ## PARAMETERS
 

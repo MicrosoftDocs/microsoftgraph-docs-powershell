@@ -67,12 +67,17 @@ Get the properties and relationships of a device object.
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a device
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDevice -DeviceId $deviceId
+
+```
+This example will get a device
+
 
 ## PARAMETERS
 
