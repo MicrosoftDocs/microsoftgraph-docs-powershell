@@ -15,6 +15,9 @@ title: Update-MgBetaPlaceAsSectionCheck
 
 Update the navigation property checkIns in places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsSectionCheck](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsSectionCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaGroupCalendar
 The group's calendar.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendar?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
