@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteExternalColumn
 
 The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteExternalColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

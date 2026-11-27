@@ -15,6 +15,9 @@ title: Get-MgBetaSiteGetByPathContentType
 
 The collection of content types defined for this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

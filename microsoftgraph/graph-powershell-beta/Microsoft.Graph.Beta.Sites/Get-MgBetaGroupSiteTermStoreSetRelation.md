@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreSetRelation
 
 Indicates which terms have been pinned or reused directly under the set.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

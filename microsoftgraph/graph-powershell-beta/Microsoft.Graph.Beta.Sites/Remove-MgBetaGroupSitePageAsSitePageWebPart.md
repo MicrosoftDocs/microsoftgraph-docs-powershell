@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSitePageAsSitePageWebPart
 
 Delete navigation property webParts for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

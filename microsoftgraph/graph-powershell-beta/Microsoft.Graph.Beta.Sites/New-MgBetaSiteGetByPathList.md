@@ -15,6 +15,9 @@ title: New-MgBetaSiteGetByPathList
 
 Create new navigation property to lists for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

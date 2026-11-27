@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSitePageAsSitePageCanvaLayout
 
 Delete navigation property canvasLayout for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

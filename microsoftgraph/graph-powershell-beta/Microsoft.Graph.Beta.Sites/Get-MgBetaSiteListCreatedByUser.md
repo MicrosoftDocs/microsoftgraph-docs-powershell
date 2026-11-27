@@ -15,6 +15,9 @@ title: Get-MgBetaSiteListCreatedByUser
 
 Get createdByUser from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
