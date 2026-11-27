@@ -20,6 +20,9 @@ When using MIME format:\r- Provide the applicable Internet message headers and t
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ReplyExpanded1 (Default)

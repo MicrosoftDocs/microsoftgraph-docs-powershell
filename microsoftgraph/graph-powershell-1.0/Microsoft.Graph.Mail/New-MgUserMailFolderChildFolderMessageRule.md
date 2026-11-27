@@ -15,6 +15,9 @@ title: New-MgUserMailFolderChildFolderMessageRule
 
 Create new navigation property to messageRules for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgUserMailFolderMessageAttachment
 
 Delete navigation property attachments for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
