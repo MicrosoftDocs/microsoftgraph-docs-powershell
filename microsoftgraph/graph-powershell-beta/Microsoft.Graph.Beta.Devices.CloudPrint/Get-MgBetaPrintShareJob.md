@@ -67,12 +67,17 @@ The list of jobs that are queued for printing by the printer/printerShare.
 | Application | PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintShareJob -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Get-MgBetaPrintShareJob Cmdlet.
+
 
 ## PARAMETERS
 
