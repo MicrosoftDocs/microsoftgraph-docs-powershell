@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition
 
 Navigation link to the terms and conditions that are assigned.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
