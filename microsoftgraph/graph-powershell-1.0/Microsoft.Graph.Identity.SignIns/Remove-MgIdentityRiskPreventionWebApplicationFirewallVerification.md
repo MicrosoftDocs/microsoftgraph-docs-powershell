@@ -15,6 +15,9 @@ title: Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification
 
 Delete a webApplicationFirewallVerificationModel object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

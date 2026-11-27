@@ -16,6 +16,9 @@ title: New-MgPolicyCrossTenantAccessPolicyPartnerM365Capability
 Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 The @odata.type property in the request body is required to specify which type of capability to create.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

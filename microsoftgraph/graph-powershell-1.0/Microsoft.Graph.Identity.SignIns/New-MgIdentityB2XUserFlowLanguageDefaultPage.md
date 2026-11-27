@@ -15,6 +15,9 @@ title: New-MgIdentityB2XUserFlowLanguageDefaultPage
 
 Create new navigation property to defaultPages for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

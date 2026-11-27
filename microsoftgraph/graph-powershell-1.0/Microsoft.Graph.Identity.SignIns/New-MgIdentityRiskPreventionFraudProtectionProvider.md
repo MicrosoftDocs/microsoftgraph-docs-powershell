@@ -16,6 +16,9 @@ title: New-MgIdentityRiskPreventionFraudProtectionProvider
 Create a new fraudProtectionProvider object.
 You can create one of the following subtypes that are derived from fraudProtectionProvider.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionFraudProtectionProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionFraudProtectionProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

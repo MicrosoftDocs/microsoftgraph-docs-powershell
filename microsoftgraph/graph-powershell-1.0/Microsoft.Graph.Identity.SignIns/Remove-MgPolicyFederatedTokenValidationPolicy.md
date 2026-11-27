@@ -15,6 +15,9 @@ title: Remove-MgPolicyFederatedTokenValidationPolicy
 
 Delete navigation property federatedTokenValidationPolicy for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFederatedTokenValidationPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
