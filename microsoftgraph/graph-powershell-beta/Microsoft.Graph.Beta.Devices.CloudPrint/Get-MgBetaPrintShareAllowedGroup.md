@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
