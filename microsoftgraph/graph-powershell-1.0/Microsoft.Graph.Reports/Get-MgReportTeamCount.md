@@ -15,6 +15,9 @@ title: Get-MgReportTeamCount
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

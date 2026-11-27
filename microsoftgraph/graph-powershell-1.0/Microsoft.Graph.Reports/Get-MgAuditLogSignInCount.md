@@ -15,6 +15,9 @@ title: Get-MgAuditLogSignInCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignInCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignInCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

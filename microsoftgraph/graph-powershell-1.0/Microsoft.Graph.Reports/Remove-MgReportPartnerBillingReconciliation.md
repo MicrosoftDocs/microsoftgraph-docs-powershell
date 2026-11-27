@@ -15,6 +15,9 @@ title: Remove-MgReportPartnerBillingReconciliation
 
 Delete navigation property reconciliation for reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBillingReconciliation](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingReconciliation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgReportPartnerBillingUsageUnbilled
 
 Delete navigation property unbilled for reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

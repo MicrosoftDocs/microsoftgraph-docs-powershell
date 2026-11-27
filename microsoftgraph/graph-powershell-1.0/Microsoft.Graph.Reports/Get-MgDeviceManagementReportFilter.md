@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReportFilter
 
 Invoke action getReportFilters
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportFilter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportFilter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
