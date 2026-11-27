@@ -389,7 +389,7 @@ For example, the currency symbol for the US dollar and for the Australian dollar
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
+- [New-MgBookingCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency)
 
 
 

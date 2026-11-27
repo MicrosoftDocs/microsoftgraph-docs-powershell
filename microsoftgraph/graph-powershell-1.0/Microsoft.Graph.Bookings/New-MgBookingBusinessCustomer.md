@@ -532,8 +532,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0)
+- [New-MgBookingBusinessCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0)
 
 
 
