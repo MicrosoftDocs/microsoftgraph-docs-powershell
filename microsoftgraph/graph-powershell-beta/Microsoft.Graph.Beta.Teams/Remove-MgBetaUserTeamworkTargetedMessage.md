@@ -595,8 +595,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworktargetedmessage)
-- [](https://learn.microsoft.com/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-beta)
+- [Remove-MgBetaUserTeamworkTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworktargetedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-beta)
 
 
 

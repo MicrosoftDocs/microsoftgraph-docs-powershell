@@ -449,8 +449,8 @@ Must be unique and must not conflict with existing emoji names.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
-- [](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)
+- [New-MgBetaTeamworkMessagingCustomEmoji](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)
 
 
 

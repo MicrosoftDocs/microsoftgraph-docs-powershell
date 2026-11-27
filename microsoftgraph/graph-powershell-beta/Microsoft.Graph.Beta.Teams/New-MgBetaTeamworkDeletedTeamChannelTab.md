@@ -927,7 +927,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchanneltab)
+- [New-MgBetaTeamworkDeletedTeamChannelTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchanneltab)
 
 
 

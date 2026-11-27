@@ -608,9 +608,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworksection)
-- [](https://learn.microsoft.com/graph/api/teamworksection-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/userteamwork-list-sections?view=graph-rest-beta)
+- [Get-MgBetaUserTeamworkSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworksection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksection-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-list-sections?view=graph-rest-beta)
 
 
 

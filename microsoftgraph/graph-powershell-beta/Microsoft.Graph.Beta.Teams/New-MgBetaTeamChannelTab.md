@@ -934,7 +934,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab)
+- [New-MgBetaTeamChannelTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchanneltab)
 
 
 

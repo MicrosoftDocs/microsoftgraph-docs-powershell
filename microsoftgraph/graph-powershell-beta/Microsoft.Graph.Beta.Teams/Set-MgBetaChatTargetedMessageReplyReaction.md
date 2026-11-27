@@ -592,7 +592,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetachattargetedmessagereplyreaction)
+- [Set-MgBetaChatTargetedMessageReplyReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetachattargetedmessagereplyreaction)
 
 
 

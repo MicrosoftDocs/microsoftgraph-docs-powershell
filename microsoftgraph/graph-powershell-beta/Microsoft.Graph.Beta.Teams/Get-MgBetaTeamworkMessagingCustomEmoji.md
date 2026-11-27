@@ -573,8 +573,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkmessagingcustomemoji)
-- [](https://learn.microsoft.com/graph/api/teamworkmessaging-list-customemojis?view=graph-rest-beta)
+- [Get-MgBetaTeamworkMessagingCustomEmoji](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkmessagingcustomemoji)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkmessaging-list-customemojis?view=graph-rest-beta)
 
 
 

@@ -486,8 +486,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworksectionitem)
-- [](https://learn.microsoft.com/graph/api/teamworksectionitem-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserTeamworkSectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserteamworksectionitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksectionitem-delete?view=graph-rest-beta)
 
 
 
