@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents a custom security attribute audit log.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomSecAttributeAuditLogs.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomSecAttributeAuditLogs.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
