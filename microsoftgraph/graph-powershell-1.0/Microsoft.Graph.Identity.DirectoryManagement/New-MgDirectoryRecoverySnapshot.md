@@ -535,7 +535,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecoverysnapshot)
+- [New-MgDirectoryRecoverySnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecoverysnapshot)
 
 
 

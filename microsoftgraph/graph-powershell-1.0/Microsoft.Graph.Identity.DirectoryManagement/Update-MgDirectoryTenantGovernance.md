@@ -16948,7 +16948,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernance)
+- [Update-MgDirectoryTenantGovernance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernance)
 
 
 

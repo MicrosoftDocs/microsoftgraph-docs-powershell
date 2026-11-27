@@ -390,7 +390,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecordcount)
+- [Get-MgDomainVerificationDnsRecordCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecordcount)
 
 
 

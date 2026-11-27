@@ -391,8 +391,8 @@ BODYPARAMETER `<IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequ
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+- [Get-MgDirectoryRoleTemplateById](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 
 
 

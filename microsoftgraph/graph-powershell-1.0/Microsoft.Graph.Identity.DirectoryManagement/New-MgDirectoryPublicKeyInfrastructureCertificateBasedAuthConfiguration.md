@@ -572,8 +572,8 @@ Supports $filter (eq, startswith).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations?view=graph-rest-1.0)
+- [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations?view=graph-rest-1.0)
 
 
 
