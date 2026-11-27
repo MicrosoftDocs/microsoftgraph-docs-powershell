@@ -462,7 +462,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmanagedandroidlobappcontentversioncontainedapp)
+- [Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmanagedandroidlobappcontentversioncontainedapp)
 
 
 

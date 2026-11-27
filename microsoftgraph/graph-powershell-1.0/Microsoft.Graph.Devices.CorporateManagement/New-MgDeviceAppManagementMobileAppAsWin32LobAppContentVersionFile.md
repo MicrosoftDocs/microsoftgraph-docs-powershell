@@ -705,7 +705,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswin32lobappcontentversionfile)
+- [New-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswin32lobappcontentversionfile)
 
 
 
