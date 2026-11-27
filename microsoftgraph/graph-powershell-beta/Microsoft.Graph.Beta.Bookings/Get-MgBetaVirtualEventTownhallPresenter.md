@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a virtualEventPresenter object.
 Currently the supported virtual event types are: virtualEventTownhall, virtualEventWebinar.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.Read, VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEvent.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
