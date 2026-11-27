@@ -384,8 +384,8 @@ BODYPARAMETER `<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarch
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)
+- [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)
 
 
 
