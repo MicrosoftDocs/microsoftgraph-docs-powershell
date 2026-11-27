@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkAppSettings.Read.All, TeamworkAppSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

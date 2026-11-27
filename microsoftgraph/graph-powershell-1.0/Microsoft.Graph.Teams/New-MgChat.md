@@ -53,6 +53,14 @@ This cmdlet has the following aliases,
 
 Create a new chat object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.Create, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Create,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
