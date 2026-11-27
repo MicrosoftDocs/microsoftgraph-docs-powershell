@@ -53,6 +53,14 @@ This method allows your application to track changes to objects that the user ca
 The return value of this method might contain heterogeneous types of objects from Planner.
 For more information about tracking changes in Microsoft Graph data, see Use delta query to track changes in Microsoft Graph data.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Tasks.Read, Group.Read.All, Group.ReadWrite.All, Tasks.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
