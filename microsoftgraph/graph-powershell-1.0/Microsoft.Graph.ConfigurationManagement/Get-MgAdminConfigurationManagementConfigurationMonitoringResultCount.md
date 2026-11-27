@@ -15,6 +15,9 @@ title: Get-MgAdminConfigurationManagementConfigurationMonitoringResultCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResultCount](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResultCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
