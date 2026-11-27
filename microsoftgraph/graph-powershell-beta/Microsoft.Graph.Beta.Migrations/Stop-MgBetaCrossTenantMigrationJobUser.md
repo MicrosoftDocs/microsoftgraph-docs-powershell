@@ -377,8 +377,8 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjobuser)
-- [](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-cancel?view=graph-rest-beta)
+- [Stop-MgBetaCrossTenantMigrationJobUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjobuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-cancel?view=graph-rest-beta)
 
 
 
