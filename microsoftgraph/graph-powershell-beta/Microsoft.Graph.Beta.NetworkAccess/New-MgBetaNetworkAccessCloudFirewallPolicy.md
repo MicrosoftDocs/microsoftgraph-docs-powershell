@@ -505,7 +505,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessCloudFirewallPolicy>: cloudFirewallPolicy
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessCloudFirewallPolicy>`: cloudFirewallPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -527,7 +527,7 @@ POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definitio
 Read-only.
   [Name <String>]: Name.
 
-SETTINGS <IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>: cloudFirewallPolicySettings
+SETTINGS `<IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>`: cloudFirewallPolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultAction <String>]: cloudFirewallAction
 
@@ -536,3 +536,25 @@ SETTINGS <IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>: cloudFirewal
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesscloudfirewallpolicy)
 - [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-cloudfirewallpolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
