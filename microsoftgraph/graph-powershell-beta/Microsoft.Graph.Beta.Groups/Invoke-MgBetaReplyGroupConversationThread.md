@@ -751,8 +751,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta)
+- [Invoke-MgBetaReplyGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta)
 
 
 

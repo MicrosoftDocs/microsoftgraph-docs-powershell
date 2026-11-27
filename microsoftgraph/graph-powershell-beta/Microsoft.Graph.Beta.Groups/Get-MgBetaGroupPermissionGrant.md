@@ -588,8 +588,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
-- [](https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-beta)
+- [Get-MgBetaGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-beta)
 
 
 
