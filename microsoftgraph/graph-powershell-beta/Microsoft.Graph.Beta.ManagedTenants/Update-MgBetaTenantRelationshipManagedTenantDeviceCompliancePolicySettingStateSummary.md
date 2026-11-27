@@ -927,7 +927,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
+- [Update-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary)
 
 
 

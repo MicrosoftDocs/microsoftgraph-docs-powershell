@@ -657,7 +657,7 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
+- [Update-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
 
 
 

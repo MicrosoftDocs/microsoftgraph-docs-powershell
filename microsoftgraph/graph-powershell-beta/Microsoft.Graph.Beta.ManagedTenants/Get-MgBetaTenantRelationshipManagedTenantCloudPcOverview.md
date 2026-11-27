@@ -581,9 +581,9 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
-- [](https://learn.microsoft.com/graph/api/managedtenants-cloudpcoverview-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcsoverview?view=graph-rest-beta)
+- [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-cloudpcoverview-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcsoverview?view=graph-rest-beta)
 
 
 
