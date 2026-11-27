@@ -66,12 +66,17 @@ This cmdlet has the following aliases,
 Revoke the specified group's access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
+
+```
+This example shows how to use the Remove-MgPrintShareAllowedGroupByRef Cmdlet.
+
 
 ## PARAMETERS
 
