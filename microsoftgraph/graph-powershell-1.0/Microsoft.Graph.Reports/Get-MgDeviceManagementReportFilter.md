@@ -626,7 +626,7 @@ BODYPARAMETER `<IPaths1J4Do9UDevicemanagementReportsMicrosoftGraphGetreportfilte
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportfilter)
+- [Get-MgDeviceManagementReportFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportfilter)
 
 
 
