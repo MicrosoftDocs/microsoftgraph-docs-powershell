@@ -53,12 +53,17 @@ Delete a sourceSystemDefinition object.
 | Application | IndustryData-SourceSystem.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Remove-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaExternalIndustryDataSourceSystem Cmdlet.
+
 
 ## PARAMETERS
 
