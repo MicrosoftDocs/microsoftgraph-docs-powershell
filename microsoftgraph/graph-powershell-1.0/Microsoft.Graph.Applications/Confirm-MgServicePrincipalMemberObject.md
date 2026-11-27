@@ -497,7 +497,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgserviceprincipalmemberobject)
+- [Confirm-MgServicePrincipalMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgserviceprincipalmemberobject)
 
 
 

@@ -531,8 +531,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-removepassword?view=graph-rest-1.0)
+- [Remove-MgServicePrincipalPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-removepassword?view=graph-rest-1.0)
 
 
 
