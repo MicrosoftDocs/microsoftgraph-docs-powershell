@@ -16,6 +16,9 @@ title: Update-MgBetaUserByUserPrincipalName
 Update the properties of a user.
 To use this API to update an agentUser, specify an @odata.type property with a value of #microsoft.graph.agentUser in the request body.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Users/Update-MgUserByUserPrincipalName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoTaskLinkedResource
 
 A collection of resources linked to the task.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

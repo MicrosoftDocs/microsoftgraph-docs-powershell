@@ -15,6 +15,9 @@ title: Get-MgBetaUserDirectReportCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReportCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReportCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

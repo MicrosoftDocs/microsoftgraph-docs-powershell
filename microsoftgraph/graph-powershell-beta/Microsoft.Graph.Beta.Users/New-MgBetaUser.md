@@ -21,6 +21,9 @@ This operation returns by default only a subset of the properties for each user 
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUser](/powershell/module/Microsoft.Graph.Users/New-MgUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
