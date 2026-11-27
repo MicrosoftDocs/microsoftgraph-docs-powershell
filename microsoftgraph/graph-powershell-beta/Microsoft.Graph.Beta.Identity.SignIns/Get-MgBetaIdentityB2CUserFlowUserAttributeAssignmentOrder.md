@@ -53,12 +53,17 @@ Get the order of identityUserFlowAttributeAssignments being collected within a u
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -B2cIdentityUserFlowId $b2cIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet.
+
 
 ## PARAMETERS
 

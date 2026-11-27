@@ -73,12 +73,17 @@ The possible states of the long-running operation are notStarted, running, succe
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Retrieve the status of a password authentication method reset operation.
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
+
+```
+This example will retrieve the status of a password authentication method reset operation.
+
 
 ## PARAMETERS
 

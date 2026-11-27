@@ -57,12 +57,17 @@ The user won't be able to sign-in with any QR codes associated with the deleted 
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaUserAuthenticationQrCodePinMethod -UserId $userId
+
+```
+This example shows how to use the Remove-MgBetaUserAuthenticationQrCodePinMethod Cmdlet.
+
 
 ## PARAMETERS
 
