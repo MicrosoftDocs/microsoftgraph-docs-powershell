@@ -15,6 +15,9 @@ title: Update-MgBetaGroupOnPremiseSyncBehavior
 
 Update the properties of an onPremisesSyncBehavior object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnPremiseSyncBehavior?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

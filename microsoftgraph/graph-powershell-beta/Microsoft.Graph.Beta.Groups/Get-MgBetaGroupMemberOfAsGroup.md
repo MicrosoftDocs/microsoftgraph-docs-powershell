@@ -16,6 +16,9 @@ title: Get-MgBetaGroupMemberOfAsGroup
 Get security groups, administrative units, and admin roles that the security group is a direct member of, or administrative units and admin roles that the Microsoft 365 group is a direct member of.
 This operation is not transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOfAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

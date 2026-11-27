@@ -19,6 +19,9 @@ After that time, they are permanently deleted.
 This doesn't apply to Distribution groups that are permanently deleted immediately.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupByUniqueName](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

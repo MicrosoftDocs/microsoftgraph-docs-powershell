@@ -19,6 +19,9 @@ Use reply thread to further post\rto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

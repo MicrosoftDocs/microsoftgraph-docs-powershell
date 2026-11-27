@@ -18,6 +18,9 @@ Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
