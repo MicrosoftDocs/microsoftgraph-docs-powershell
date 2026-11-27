@@ -15,6 +15,9 @@ title: Invoke-MgBetaRecentUserActivity
 
 Invoke function recent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaUserActivity
 
 Delete navigation property activities for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
