@@ -499,7 +499,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharelistitemdriveitemcontent)
+- [Set-MgBetaShareListItemDriveItemContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetasharelistitemdriveitemcontent)
 
 
 

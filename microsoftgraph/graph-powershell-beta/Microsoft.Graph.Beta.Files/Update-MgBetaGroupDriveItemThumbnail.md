@@ -735,7 +735,7 @@ This is only available when a folder thumbnail is requested.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail)
+- [Update-MgBetaGroupDriveItemThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail)
 
 
 
