@@ -370,7 +370,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail)
+- [Get-MgGroupPlannerPlanDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail)
 
 
 
