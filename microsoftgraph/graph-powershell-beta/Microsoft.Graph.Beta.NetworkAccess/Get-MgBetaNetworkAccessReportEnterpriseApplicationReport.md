@@ -482,8 +482,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportenterpriseapplicationreport)
-- [](https://learn.microsoft.com/graph/api/networkaccess-reports-getenterpriseapplicationreport?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessReportEnterpriseApplicationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportenterpriseapplicationreport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-getenterpriseapplicationreport?view=graph-rest-beta)
 
 
 

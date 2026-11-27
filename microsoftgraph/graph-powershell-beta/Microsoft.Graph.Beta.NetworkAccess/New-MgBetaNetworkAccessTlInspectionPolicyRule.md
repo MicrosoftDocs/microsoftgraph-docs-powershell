@@ -566,8 +566,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicyrule)
-- [](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-post-policyrules?view=graph-rest-beta)
+- [New-MgBetaNetworkAccessTlInspectionPolicyRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicyrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlsinspectionpolicy-post-policyrules?view=graph-rest-beta)
 
 
 

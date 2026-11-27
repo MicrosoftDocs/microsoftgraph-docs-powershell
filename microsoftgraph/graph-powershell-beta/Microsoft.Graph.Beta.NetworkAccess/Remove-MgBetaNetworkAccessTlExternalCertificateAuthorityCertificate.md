@@ -428,8 +428,8 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
-- [](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-delete?view=graph-rest-beta)
+- [Remove-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-delete?view=graph-rest-beta)
 
 
 
