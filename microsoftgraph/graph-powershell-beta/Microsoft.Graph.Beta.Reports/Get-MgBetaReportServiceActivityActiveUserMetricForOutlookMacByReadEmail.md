@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Get all the active usage based on the number of users who successfully read emails using Outlook for Mac.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityActiveUserMetricForOutlookMacByReadEmail
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityActiveUserMetricForOutlookMacByReadEmail Cmdlet.
+
 
 ## PARAMETERS
 

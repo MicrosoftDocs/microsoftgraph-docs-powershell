@@ -47,18 +47,6 @@ This cmdlet has the following aliases,
 Enable a SharePoint API usage report metric for the tenant.
 After you enable a metric, SharePoint starts collecting and reporting data for that specific usage metric.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-$params = @{
-	metric = "egressReport"
-}
-
-Enable-MgBetaAdminReportSettingSharePointApiUsageReport -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,6 +365,7 @@ BODYPARAMETER `<IPaths1Ip676DAdminReportsettingsSharepointMicrosoftGraphEnableap
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/enable-mgbetaadminreportsettingsharepointapiusagereport)
 - [](https://learn.microsoft.com/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta)
+
 
 
 

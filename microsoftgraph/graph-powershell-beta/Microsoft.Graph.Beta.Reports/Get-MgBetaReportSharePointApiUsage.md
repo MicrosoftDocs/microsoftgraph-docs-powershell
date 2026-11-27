@@ -112,20 +112,6 @@ Each report type must be enabled (onboarded) for the tenant before its data is a
 Use enableApiUsageReport to enable a report metric, disableApiUsageReport to disable it, and List apiUsageReportMetrics to check the enablement status.
 If you request a report type that isn't enabled for the tenant, this method returns a 403 Forbidden response with the error code accessDenied and the message 'Tenant is not enabled for this report type.' CSV column headers use PascalCase (ThrottledRequests) while JSON properties use camelCase (throttledRequests) to maintain consistency with other Microsoft Graph reporting APIs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportSharePointApiUsage -Format "application/json"
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportSharePointApiUsage
-
 ## PARAMETERS
 
 ### -AppId
@@ -580,6 +566,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointapiusage)
 - [](https://learn.microsoft.com/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta)
+
 
 
 

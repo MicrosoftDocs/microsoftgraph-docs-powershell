@@ -60,12 +60,17 @@ Represents the summary of password resets and changes for a specific day.
 This includes the number of password resets that were self-service and those triggered by an administrator.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary Cmdlet.
+
 
 ## PARAMETERS
 
