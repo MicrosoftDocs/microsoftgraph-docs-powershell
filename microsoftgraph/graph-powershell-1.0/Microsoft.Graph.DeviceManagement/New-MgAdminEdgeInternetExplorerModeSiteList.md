@@ -762,8 +762,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
-- [](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
+- [New-MgAdminEdgeInternetExplorerModeSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
 
 
 
