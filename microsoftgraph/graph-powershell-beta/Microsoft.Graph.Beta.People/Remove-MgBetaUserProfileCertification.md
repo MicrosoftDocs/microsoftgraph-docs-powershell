@@ -443,8 +443,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
-- [](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserProfileCertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-beta)
 
 
 
