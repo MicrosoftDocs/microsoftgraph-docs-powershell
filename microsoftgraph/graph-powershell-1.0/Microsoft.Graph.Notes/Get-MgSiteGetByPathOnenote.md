@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Calls the OneNote service for notebook related operations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -384,6 +374,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsitegetbypathonenote)
+
 
 
 
