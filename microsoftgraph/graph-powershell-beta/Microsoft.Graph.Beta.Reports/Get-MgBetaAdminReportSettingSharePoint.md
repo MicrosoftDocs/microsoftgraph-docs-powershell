@@ -37,16 +37,6 @@ This cmdlet has the following aliases,
 A container for SharePoint-specific report settings.
 Access the SharePoint API usage report metrics through the operations defined on the sharePointReportSettings resource type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -286,6 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsettingsharepoint)
+
 
 
 
