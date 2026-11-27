@@ -857,8 +857,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
+- [New-MgBetaUserMailFolderChildFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
 
 
 
