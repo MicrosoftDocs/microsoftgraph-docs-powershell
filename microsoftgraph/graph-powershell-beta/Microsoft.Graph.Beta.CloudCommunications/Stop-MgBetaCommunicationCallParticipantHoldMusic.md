@@ -78,8 +78,9 @@ Reincorporate a participant previously put on hold to the call.
 | Application | Calls.JoinGroupCallasGuest.All, Calls.JoinGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Stop-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaCommunicationCallParticipantHoldMusic Cmdlet.
+
 
 ## PARAMETERS
 

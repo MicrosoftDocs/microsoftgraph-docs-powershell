@@ -63,12 +63,17 @@ This cmdlet has the following aliases,
 A collection of reactions (such as like and smile) that users have applied to this message.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction -OnlineMeetingEngagementConversationId $onlineMeetingEngagementConversationId -EngagementConversationMessageId $engagementConversationMessageId
+
+```
+This example shows how to use the Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction Cmdlet.
+
 
 ## PARAMETERS
 

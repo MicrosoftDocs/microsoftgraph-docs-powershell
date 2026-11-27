@@ -68,12 +68,17 @@ The resources related to the call should be cleaned up on the application side.
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
+
+```
+This example shows how to use the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet.
+
 
 ## PARAMETERS
 
