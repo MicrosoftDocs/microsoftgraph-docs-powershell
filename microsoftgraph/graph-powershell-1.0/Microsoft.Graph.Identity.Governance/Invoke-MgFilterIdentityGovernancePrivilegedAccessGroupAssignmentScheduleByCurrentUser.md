@@ -15,6 +15,9 @@ title: Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleB
 
 In PIM for Groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

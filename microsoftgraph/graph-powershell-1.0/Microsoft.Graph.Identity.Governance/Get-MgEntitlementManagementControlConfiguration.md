@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementControlConfiguration
 
 Configuration settings that control the lifecycle and access policies of entitlement management within a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementControlConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -17,6 +17,9 @@ Provide a summary from the insights resource of the workflow objects processed t
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Top (Default)

@@ -15,6 +15,9 @@ title: Remove-MgRoleManagementEntitlementManagementRoleDefinition
 
 Delete navigation property roleDefinitions for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

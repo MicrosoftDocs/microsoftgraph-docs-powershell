@@ -16,6 +16,9 @@ title: Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirecto
 Remove a user or a group from the internalSponsors relationship of a connectedOrganization.
 Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

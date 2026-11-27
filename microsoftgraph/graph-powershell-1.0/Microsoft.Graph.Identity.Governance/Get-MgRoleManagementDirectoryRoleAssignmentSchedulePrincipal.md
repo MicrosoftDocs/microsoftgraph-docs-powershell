@@ -15,6 +15,9 @@ title: Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal
 
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

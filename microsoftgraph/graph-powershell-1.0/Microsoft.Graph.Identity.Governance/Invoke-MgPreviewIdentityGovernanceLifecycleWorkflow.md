@@ -16,6 +16,9 @@ title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflow
 Run a workflow in preview mode for selected directory objects without affecting production users.
 This action triggers workflow processing in preview mode, and results can be retrieved by using the List userProcessingResults operation with $filter=workflowExecutionType eq 'previewMode'.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)

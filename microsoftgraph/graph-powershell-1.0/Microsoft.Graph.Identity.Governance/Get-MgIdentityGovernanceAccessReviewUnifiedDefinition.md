@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAccessReviewUnifiedDefinition
 
 Represents the unified (vNext) template and scheduling for an access review.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

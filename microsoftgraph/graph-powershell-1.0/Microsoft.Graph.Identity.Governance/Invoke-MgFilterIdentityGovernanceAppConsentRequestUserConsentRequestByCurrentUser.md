@@ -15,6 +15,9 @@ title: Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCur
 
 Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)
