@@ -15,6 +15,9 @@ title: Get-MgBetaEducationUserAssignmentGradingScheme
 
 When set, enables users to configure custom string grades based on the percentage of total points earned on this assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentGradingScheme](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentGradingScheme?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

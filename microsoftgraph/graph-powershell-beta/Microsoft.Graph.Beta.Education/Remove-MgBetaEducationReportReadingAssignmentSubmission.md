@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationReportReadingAssignmentSubmission
 
 Delete navigation property readingAssignmentSubmissions for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationReportReadingAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

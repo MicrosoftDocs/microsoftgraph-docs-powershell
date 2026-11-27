@@ -15,6 +15,9 @@ title: Get-MgBetaEducationReportReflectCheck
 
 Details of check-in responses.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Education/Get-MgEducationReportReflectCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
