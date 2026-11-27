@@ -74,7 +74,7 @@ HelpMessage: ''
 
 ### -AlertComment
 
-.
+
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ HelpMessage: ''
 
 ### -AlertIds
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -116,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -244,7 +244,7 @@ HelpMessage: ''
 
 ### -IncidentId
 
-.
+
 
 ```yaml
 Type: System.String
