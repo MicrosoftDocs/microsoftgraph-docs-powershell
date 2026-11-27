@@ -17,6 +17,9 @@ The sections in the section group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

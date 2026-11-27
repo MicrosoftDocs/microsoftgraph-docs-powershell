@@ -16,6 +16,9 @@ title: Get-MgGroupOnenoteSectionParentSectionGroup
 The section group that contains the section.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionParentSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
