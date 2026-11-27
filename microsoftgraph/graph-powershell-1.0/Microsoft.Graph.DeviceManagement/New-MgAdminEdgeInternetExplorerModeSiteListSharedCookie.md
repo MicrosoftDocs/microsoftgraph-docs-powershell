@@ -15,6 +15,9 @@ title: New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 Create a new browserSharedCookie object in a browserSiteList.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
