@@ -74,48 +74,83 @@ Students can't see the grade or feedback until the assignment is released.
 | Application | EduAssignments.Read.All, EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get recently modified submissions
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId
 
-### EXAMPLE 2
+```
+This example will get recently modified submissions
+
+### Example 2: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'" -Property "LastModifiedDateTime,status"
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'" -Property "LastModifiedDateTime,status" 
 
-### EXAMPLE 3
+```
+This example will get recently modified submissions with `$select` and `$filter` options on assignmentid property
 
-Import-Module Microsoft.Graph.Beta.Education
+### Example 3: Get recently modified submissions with `$expand` option
 
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -ExpandProperty "outcomes"
-
-### EXAMPLE 4
-
-Import-Module Microsoft.Graph.Beta.Education
-
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "status eq 'working'"
-
-### EXAMPLE 5
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Sort "lastModifiedDateTime" -Top 1
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -ExpandProperty "outcomes" 
 
-### EXAMPLE 6
+```
+This example will get recently modified submissions with `$expand` option
+
+### Example 4: Get recently modified submissions with `$filter` option
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Property "excusedDateTime"
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "status eq 'working'" 
 
-### EXAMPLE 7
+```
+This example will get recently modified submissions with `$filter` option
+
+### Example 5: Get recently modified submissions with `$orderby` and `$top` options
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2024-08-25T20:45:51.3485047Z and lastModifiedDateTime lt 2024-08-28T20:45:51.3485047Z"
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Sort "lastModifiedDateTime" -Top 1 
+
+```
+This example will get recently modified submissions with `$orderby` and `$top` options
+
+### Example 6: Get recently modified submissions with `$select` option
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Property "excusedDateTime" 
+
+```
+This example will get recently modified submissions with `$select` option
+
+### Example 7: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2024-08-25T20:45:51.3485047Z and lastModifiedDateTime lt 2024-08-28T20:45:51.3485047Z" 
+
+```
+This example will get recently modified submissions with `$filter` option for a range on lastmodifieddatetime property
+
 
 ## PARAMETERS
 

@@ -51,12 +51,17 @@ Note that if the delegated token is used, members can only be seen by other memb
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassMember -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgBetaEducationClassMember Cmdlet.
+
 
 ## PARAMETERS
 
