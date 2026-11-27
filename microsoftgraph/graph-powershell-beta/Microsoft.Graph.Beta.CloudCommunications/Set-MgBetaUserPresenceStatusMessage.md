@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Presence.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Presence.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
