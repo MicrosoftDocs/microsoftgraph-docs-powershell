@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a concrete relation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

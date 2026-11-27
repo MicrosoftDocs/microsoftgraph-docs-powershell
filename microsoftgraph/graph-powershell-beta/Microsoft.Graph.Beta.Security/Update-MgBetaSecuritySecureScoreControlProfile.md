@@ -78,6 +78,14 @@ This cmdlet has the following aliases,
 
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityEvents.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

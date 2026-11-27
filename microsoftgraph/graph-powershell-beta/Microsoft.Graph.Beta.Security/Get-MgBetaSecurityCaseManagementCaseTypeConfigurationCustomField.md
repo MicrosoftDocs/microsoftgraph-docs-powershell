@@ -61,6 +61,14 @@ The contained custom-field definitions that make up the blank-form schema for th
 Read-only.
 Supports $count, $expand, $filter, $orderby, $select, $skip, and $top.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
