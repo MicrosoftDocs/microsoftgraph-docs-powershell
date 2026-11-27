@@ -608,9 +608,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleschedulinggroup)
-- [](https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0)
+- [Get-MgTeamScheduleSchedulingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleschedulinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0)
 
 
 

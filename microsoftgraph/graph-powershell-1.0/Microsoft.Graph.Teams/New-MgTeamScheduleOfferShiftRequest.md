@@ -824,8 +824,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
-- [](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
+- [New-MgTeamScheduleOfferShiftRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
 
 
 

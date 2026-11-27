@@ -741,8 +741,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason)
-- [](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-1.0)
+- [Update-MgTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffreason)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-1.0)
 
 
 

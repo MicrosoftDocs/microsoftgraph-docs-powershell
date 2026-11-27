@@ -807,8 +807,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0)
+- [New-MgChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0)
 
 
 

@@ -1664,8 +1664,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
+- [New-MgTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
 
 
 

@@ -761,8 +761,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff)
-- [](https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0)
+- [Update-MgTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0)
 
 
 

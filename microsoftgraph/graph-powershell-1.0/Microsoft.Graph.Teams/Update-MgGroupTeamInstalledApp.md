@@ -559,8 +559,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteaminstalledapp)
-- [](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0)
+- [Update-MgGroupTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteaminstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0)
 
 
 

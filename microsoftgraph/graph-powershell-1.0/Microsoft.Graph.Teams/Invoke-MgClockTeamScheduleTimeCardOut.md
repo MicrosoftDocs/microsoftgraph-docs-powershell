@@ -572,7 +572,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardout)
+- [Invoke-MgClockTeamScheduleTimeCardOut](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardout)
 
 
 

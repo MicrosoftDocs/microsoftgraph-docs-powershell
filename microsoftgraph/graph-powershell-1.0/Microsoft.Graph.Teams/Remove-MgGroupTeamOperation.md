@@ -439,7 +439,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamoperation)
+- [Remove-MgGroupTeamOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamoperation)
 
 
 

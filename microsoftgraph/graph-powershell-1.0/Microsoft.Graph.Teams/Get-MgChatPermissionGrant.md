@@ -600,8 +600,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant)
-- [](https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)
+- [Get-MgChatPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)
 
 
 
