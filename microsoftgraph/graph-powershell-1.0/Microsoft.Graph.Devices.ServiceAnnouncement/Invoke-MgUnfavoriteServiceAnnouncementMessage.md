@@ -384,8 +384,8 @@ BODY `<IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostR
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgunfavoriteserviceannouncementmessage)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-1.0)
+- [Invoke-MgUnfavoriteServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgunfavoriteserviceannouncementmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-unfavorite?view=graph-rest-1.0)
 
 
 
