@@ -688,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGovernanceRelationship>: governanceRelationship
+BODYPARAMETER `<IMicrosoftGraphGovernanceRelationship>`: governanceRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +720,7 @@ Read-only.
     [PolicyId <String>]: 
   [Status <RelationshipStatus?>]: relationshipStatus
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -765,7 +765,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-POLICYSNAPSHOT <IMicrosoftGraphRelationshipPolicy>: relationshipPolicy
+POLICYSNAPSHOT `<IMicrosoftGraphRelationshipPolicy>`: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedAdministrationRoleAssignments <IMicrosoftGraphDelegatedAdministrationRoleAssignmentSnapshot[]>]: 
     [GroupDisplayName <String>]: 
@@ -790,3 +790,25 @@ POLICYSNAPSHOT <IMicrosoftGraphRelationshipPolicy>: relationshipPolicy
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerelationship)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
