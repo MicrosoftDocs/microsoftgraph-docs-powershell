@@ -648,7 +648,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSchemaExtension>: schemaExtension
+BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -674,7 +674,7 @@ Supports $filter (eq).
   [TargetTypes <String[]>]: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
 Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
+INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   [SchemaExtensionId <String>]: The unique identifier of schemaExtension
 
 PROPERTIES <IMicrosoftGraphExtensionSchemaProperty[]>: The collection of property names and types that make up the schema extension definition.
@@ -688,3 +688,25 @@ For more information, see Supported property data types.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension)
 - [](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
