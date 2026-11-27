@@ -565,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTIMPACT <IMicrosoftGraphDeviceManagementAlertImpact>: alertImpact
+ALERTIMPACT `<IMicrosoftGraphDeviceManagementAlertImpact>`: alertImpact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AggregationType <String>]: aggregationType
   [AlertImpactDetails <IMicrosoftGraphKeyValuePair[]>]: The detail information of the impact.
@@ -578,7 +578,7 @@ For example, 6 affectedCloudPcCount means that six Cloud PCs are affected.
 For the aggregation types of percentage and affectedCloudPcPercentage, the value indicates the percent of affected instances.
 For example, 12 affectedCloudPcPercentage means that 12% of Cloud PCs are affected.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementAlertRecord>: alertRecord
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementAlertRecord>`: alertRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -613,3 +613,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrecord)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
