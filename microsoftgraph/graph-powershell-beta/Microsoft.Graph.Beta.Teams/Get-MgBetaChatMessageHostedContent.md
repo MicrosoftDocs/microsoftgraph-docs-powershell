@@ -87,12 +87,17 @@ Retrieve the properties and relationships of chatMessageHostedContent object.
 | Application | ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: List hosted content for message in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+
+```
+This example will list hosted content for message in a chat
+
 
 ## PARAMETERS
 

@@ -64,16 +64,6 @@ The items (chats, channels, meetings, or communities) organized within the secti
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.Read.All, TeamworkSection.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -647,6 +637,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworksectionitem)
 - [](https://learn.microsoft.com/graph/api/teamworksection-list-items?view=graph-rest-beta)
+
+
 
 
 

@@ -58,12 +58,17 @@ Existing shift instances assigned to the scheduling group remain part of the gro
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -SchedulingGroupId $schedulingGroupId
+
+```
+This example shows how to use the Remove-MgBetaTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 
