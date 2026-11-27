@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventTownhallRegistrationConfigurationQuestion
 
 Delete navigation property questions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

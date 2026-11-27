@@ -15,6 +15,9 @@ title: Update-MgBookingBusiness
 
 Update the properties of a bookingBusiness object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
