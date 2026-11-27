@@ -632,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAssignmentRequest
+BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,7 +697,7 @@ Only Once is supported for now.
   [Type <String>]: 
   [UserId <String>]: 
 
-ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
+ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -735,7 +735,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
+SCHEDULE `<IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Duration <TimeSpan?>]: The duration of a role assignment.
 It is in format of a TimeSpan.
@@ -753,3 +753,25 @@ Only Once is supported for now.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
