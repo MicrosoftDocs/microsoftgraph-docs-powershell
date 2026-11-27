@@ -76,8 +76,9 @@ Update the properties of a tlsInspectionRule object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessTlInspectionPolicyRule -TlsInspectionPolicyId $tlsInspectionPolicyId -PolicyRuleId $policyRuleId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessTlInspectionPolicyRule Cmdlet.
+
 
 ## PARAMETERS
 

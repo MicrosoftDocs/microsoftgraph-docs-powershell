@@ -38,12 +38,17 @@ Retrieve the forwarding options for the tenant, with a specific focus on the 'sk
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingForwardingOption
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
+
 
 ## PARAMETERS
 
