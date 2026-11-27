@@ -1318,7 +1318,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebook)
+- [New-MgGroupOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebook)
 
 
 

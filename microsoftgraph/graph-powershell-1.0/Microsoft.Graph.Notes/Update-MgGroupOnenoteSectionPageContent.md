@@ -567,7 +567,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotesectionpagecontent)
+- [Update-MgGroupOnenoteSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotesectionpagecontent)
 
 
 

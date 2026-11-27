@@ -1260,7 +1260,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage)
+- [New-MgUserOnenotePage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage)
 
 
 
