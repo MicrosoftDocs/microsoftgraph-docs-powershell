@@ -806,8 +806,8 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric)
-- [](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
+- [Update-MgBetaEducationClassAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentrubric)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
 
 
 
