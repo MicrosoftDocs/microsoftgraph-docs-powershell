@@ -613,8 +613,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
-- [](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta)
+- [Add-MgBetaApplicationPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta)
 
 
 
