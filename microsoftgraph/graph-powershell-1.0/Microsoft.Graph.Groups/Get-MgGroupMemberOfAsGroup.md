@@ -63,12 +63,18 @@ Get security groups, administrative units, and admin roles that the security gro
 This operation is not transitive.
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual
+Get-MgGroupMemberOfAsGroup -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'A')"  -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgGroupMemberOfAsGroup Cmdlet.
+
 
 ## PARAMETERS
 
