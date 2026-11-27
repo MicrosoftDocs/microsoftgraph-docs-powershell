@@ -619,8 +619,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
-- [](https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0)
+- [New-MgPrintPrinterTaskTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-post-tasktriggers?view=graph-rest-1.0)
 
 
 

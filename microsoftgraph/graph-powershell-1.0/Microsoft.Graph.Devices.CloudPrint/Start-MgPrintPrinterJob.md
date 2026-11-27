@@ -376,8 +376,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob)
-- [](https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0)
+- [Start-MgPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintprinterjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-start?view=graph-rest-1.0)
 
 
 
