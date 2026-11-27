@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -410,6 +400,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsitecontenttypepublished)
 - [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
+
 
 
 

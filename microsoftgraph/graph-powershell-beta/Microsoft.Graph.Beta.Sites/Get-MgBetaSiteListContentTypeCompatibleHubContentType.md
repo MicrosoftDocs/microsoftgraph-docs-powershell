@@ -66,12 +66,17 @@ For more information, see addCopyFromContentTypeHub and the blog post Syntex Pro
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
+
+```
+This example shows how to use the Get-MgBetaSiteListContentTypeCompatibleHubContentType Cmdlet.
+
 
 ## PARAMETERS
 

@@ -67,16 +67,6 @@ This cmdlet has the following aliases,
 
 Remove a contentModel from a SharePoint document library.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -609,6 +599,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontentmodelfromdrive)
 - [](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
+
 
 
 
