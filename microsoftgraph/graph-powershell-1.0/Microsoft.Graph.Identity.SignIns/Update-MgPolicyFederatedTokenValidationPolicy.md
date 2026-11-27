@@ -57,16 +57,6 @@ Update the navigation property federatedTokenValidationPolicy in policies
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.FedTokenValidation,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,6 +429,7 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfederatedtokenvalidationpolicy)
+
 
 
 
