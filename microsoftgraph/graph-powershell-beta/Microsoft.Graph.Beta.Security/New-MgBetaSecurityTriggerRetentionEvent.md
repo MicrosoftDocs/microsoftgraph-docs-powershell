@@ -805,8 +805,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
-- [](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-beta)
+- [New-MgBetaSecurityTriggerRetentionEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-beta)
 
 
 

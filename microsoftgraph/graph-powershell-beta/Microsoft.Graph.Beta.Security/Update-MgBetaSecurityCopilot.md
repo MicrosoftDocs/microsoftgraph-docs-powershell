@@ -526,7 +526,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycopilot)
+- [Update-MgBetaSecurityCopilot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycopilot)
 
 
 

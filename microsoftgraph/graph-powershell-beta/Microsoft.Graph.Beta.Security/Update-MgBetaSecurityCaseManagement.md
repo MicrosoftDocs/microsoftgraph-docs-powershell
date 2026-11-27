@@ -634,7 +634,7 @@ Supports $filter and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagement)
+- [Update-MgBetaSecurityCaseManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagement)
 
 
 

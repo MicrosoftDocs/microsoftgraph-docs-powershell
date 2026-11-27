@@ -675,9 +675,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaserelation)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-relation-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-relations?view=graph-rest-beta)
+- [Get-MgBetaSecurityCaseManagementCaseRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaserelation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-relation-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-relations?view=graph-rest-beta)
 
 
 

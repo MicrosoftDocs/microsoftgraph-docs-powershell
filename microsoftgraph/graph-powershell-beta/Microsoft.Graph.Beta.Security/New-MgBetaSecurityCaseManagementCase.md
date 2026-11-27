@@ -750,8 +750,8 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcase)
-- [](https://learn.microsoft.com/graph/api/security-casemanagementroot-post-cases?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseManagementCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagementroot-post-cases?view=graph-rest-beta)
 
 
 

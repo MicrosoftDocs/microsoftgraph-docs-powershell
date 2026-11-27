@@ -541,7 +541,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorerequirement)
+- [New-MgBetaSecurityPartnerSecurityScoreRequirement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritypartnersecurityscorerequirement)
 
 
 
