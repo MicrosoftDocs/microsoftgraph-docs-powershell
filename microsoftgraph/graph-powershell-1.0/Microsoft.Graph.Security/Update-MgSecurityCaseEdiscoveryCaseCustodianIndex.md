@@ -15,6 +15,9 @@ title: Update-MgSecurityCaseEdiscoveryCaseCustodianIndex
 
 Trigger an indexOperation to make a custodian and associated sources searchable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Update (Default)

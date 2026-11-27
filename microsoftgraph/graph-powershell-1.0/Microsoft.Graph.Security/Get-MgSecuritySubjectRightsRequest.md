@@ -15,6 +15,9 @@ title: Get-MgSecuritySubjectRightsRequest
 
 Get subjectRightsRequests from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

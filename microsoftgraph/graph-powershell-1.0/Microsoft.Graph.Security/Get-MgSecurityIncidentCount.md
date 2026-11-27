@@ -15,6 +15,9 @@ title: Get-MgSecurityIncidentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

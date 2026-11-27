@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceWhoisHistoryRecord
 
 Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

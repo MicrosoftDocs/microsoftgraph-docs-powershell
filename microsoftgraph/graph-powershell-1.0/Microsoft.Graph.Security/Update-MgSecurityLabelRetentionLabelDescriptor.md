@@ -15,6 +15,9 @@ title: Update-MgSecurityLabelRetentionLabelDescriptor
 
 Update the navigation property descriptors in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabelDescriptor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

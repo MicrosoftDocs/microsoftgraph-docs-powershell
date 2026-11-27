@@ -15,6 +15,9 @@ title: New-MgSecurityThreatIntelligenceHostCookie
 
 Create new navigation property to hostCookies for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

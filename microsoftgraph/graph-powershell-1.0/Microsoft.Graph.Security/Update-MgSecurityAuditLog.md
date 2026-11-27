@@ -15,6 +15,9 @@ title: Update-MgSecurityAuditLog
 
 Update the navigation property auditLog in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAuditLog](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAuditLog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

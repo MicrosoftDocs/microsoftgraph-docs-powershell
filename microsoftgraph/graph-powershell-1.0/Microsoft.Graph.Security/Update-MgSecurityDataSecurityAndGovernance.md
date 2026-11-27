@@ -15,6 +15,9 @@ title: Update-MgSecurityDataSecurityAndGovernance
 
 Update the navigation property dataSecurityAndGovernance in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityDataSecurityAndGovernance](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityDataSecurityAndGovernance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSecurityLabelCategory
 
 Delete a categoryTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
