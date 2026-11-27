@@ -457,7 +457,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappconfigurationdevicestatussummary)
+- [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappconfigurationdevicestatussummary)
 
 
 

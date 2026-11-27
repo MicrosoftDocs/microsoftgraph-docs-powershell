@@ -632,7 +632,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationdevicestatus)
+- [Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationDeviceStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementioslobappprovisioningconfigurationdevicestatus)
 
 
 

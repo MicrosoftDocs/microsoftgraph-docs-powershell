@@ -453,7 +453,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarotateusermanageddevicerecoverylockpasscode)
+- [Invoke-MgBetaRotateUserManagedDeviceRecoveryLockPasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarotateusermanageddevicerecoverylockpasscode)
 
 
 

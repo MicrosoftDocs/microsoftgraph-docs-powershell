@@ -413,7 +413,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswin32lobappassignmentcount)
+- [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappaswin32lobappassignmentcount)
 
 
 

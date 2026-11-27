@@ -455,7 +455,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/restart-mgbetausermanageddevicenow)
+- [Restart-MgBetaUserManagedDeviceNow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/restart-mgbetausermanageddevicenow)
 
 
 

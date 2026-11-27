@@ -666,7 +666,7 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasmanagedmobilelobappassignment)
+- [New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasmanagedmobilelobappassignment)
 
 
 
