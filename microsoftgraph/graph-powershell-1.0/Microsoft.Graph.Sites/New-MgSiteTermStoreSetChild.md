@@ -222,8 +222,9 @@ This cmdlet has the following aliases,
 Create a new term object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -238,6 +239,10 @@ $params = @{
 }
 
 New-MgSiteTermStoreSetChild -SiteId $siteId -SetId $setId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteTermStoreSetChild Cmdlet.
+
 
 ## PARAMETERS
 

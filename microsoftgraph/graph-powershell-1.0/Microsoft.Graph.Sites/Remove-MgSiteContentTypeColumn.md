@@ -56,12 +56,17 @@ Remove a column from a site, a list, or a content type.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Remove-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
+
+```
+This example shows how to use the Remove-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

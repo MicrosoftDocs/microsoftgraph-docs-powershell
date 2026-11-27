@@ -60,12 +60,17 @@ Get site contentTypes that can be added to a list.
 | Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteApplicableContentTypeForList -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteApplicableContentTypeForList Cmdlet.
+
 
 ## PARAMETERS
 
