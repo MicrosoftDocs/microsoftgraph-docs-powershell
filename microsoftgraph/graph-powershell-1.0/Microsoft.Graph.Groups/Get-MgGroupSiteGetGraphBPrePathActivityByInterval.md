@@ -643,7 +643,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathactivitybyinterval)
+- [Get-MgGroupSiteGetGraphBPrePathActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathactivitybyinterval)
 
 
 

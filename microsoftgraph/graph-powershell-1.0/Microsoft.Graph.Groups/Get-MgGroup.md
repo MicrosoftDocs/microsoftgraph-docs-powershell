@@ -683,9 +683,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroup)
-- [](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/group-list?view=graph-rest-1.0)
+- [Get-MgGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list?view=graph-rest-1.0)
 
 
 

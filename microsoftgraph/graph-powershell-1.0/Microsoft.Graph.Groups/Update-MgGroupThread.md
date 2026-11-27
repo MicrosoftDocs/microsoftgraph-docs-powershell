@@ -962,8 +962,8 @@ Requires $select to retrieve.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
-- [](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
+- [Update-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
 
 
 
