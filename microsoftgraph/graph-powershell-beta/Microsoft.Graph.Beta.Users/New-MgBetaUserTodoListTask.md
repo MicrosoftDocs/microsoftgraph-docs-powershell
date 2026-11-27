@@ -186,7 +186,7 @@ HelpMessage: ''
 
 ### -AttachmentSessions
 
-.
+
 To construct, see NOTES section for ATTACHMENTSESSIONS properties and create a hash table.
 
 ```yaml
