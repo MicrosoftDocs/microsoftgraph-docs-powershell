@@ -17,6 +17,9 @@ Collection of common folders available in OneDrive.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

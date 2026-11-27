@@ -15,6 +15,9 @@ title: Update-MgUserDrive
 
 Update the navigation property drives in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

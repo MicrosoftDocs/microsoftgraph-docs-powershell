@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootListItemPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemPermissionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemPermissionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

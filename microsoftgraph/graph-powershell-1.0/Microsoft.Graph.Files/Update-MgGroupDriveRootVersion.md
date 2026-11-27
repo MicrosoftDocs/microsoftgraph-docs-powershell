@@ -15,6 +15,9 @@ title: Update-MgGroupDriveRootVersion
 
 Update the navigation property versions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

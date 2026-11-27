@@ -15,6 +15,9 @@ title: Add-MgDriveListContentTypeCopy
 
 Add a copy of a content type from a site to a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

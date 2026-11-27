@@ -15,6 +15,9 @@ title: New-MgDriveRootUploadSession
 
 Invoke action createUploadSession
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

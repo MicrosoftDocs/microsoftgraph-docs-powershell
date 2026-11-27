@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootVersionContent
 
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

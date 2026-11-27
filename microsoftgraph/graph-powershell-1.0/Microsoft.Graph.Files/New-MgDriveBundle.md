@@ -15,6 +15,9 @@ title: New-MgDriveBundle
 
 Create new navigation property to bundles for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

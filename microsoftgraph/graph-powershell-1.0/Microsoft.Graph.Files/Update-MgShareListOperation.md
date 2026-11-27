@@ -15,6 +15,9 @@ title: Update-MgShareListOperation
 
 Update the navigation property operations in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

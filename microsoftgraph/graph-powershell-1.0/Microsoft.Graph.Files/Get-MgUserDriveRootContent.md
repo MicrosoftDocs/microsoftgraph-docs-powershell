@@ -15,6 +15,9 @@ title: Get-MgUserDriveRootContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

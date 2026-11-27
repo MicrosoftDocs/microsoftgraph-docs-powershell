@@ -15,6 +15,9 @@ title: Get-MgDriveListColumnSourceColumn
 
 The source column for the content type column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumnSourceColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

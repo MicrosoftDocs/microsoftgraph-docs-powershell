@@ -19,6 +19,9 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemCheckout](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemCheckout?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discard (Default)

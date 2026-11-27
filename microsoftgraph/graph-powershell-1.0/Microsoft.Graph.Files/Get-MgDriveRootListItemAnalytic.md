@@ -15,6 +15,9 @@ title: Get-MgDriveRootListItemAnalytic
 
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
