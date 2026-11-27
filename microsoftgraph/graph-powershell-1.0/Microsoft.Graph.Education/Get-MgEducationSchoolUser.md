@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluser)
-- [](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
+- [Get-MgEducationSchoolUser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
 
 
 

@@ -402,7 +402,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentdefault)
+- [Remove-MgEducationClassAssignmentDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentdefault)
 
 
 
