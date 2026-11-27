@@ -343,7 +343,7 @@ HelpMessage: ''
 
 ### -IsDefault
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -455,7 +455,7 @@ HelpMessage: ''
 
 ### -RolePermissions
 
-.
+
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
