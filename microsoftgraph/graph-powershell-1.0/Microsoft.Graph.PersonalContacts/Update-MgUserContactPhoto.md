@@ -15,6 +15,9 @@ title: Update-MgUserContactPhoto
 
 Update the navigation property photo in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
