@@ -629,8 +629,8 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetagrouponenotenotebook)
-- [](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
+- [Copy-MgBetaGroupOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/copy-mgbetagrouponenotenotebook)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-beta)
 
 
 
