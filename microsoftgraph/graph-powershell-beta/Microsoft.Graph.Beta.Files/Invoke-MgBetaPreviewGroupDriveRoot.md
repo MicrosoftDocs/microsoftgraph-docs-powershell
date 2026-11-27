@@ -15,6 +15,9 @@ title: Invoke-MgBetaPreviewGroupDriveRoot
 
 Invoke action preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)

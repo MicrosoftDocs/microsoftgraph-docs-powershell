@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveRootListItemDocumentSetVersionField
 
 Delete navigation property fields for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

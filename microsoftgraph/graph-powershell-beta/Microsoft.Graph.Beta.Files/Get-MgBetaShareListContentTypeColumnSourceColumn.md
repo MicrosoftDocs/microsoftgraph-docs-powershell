@@ -15,6 +15,9 @@ title: Get-MgBetaShareListContentTypeColumnSourceColumn
 
 The source column for content type column.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeColumnSourceColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

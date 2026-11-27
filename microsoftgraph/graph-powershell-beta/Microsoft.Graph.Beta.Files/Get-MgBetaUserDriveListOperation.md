@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveListOperation
 
 The collection of long-running operations on the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

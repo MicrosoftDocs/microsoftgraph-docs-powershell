@@ -15,6 +15,9 @@ title: Remove-MgBetaShareListContentTypeColumnLink
 
 Delete navigation property columnLinks for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

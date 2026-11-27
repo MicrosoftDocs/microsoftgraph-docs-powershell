@@ -15,6 +15,9 @@ title: Remove-MgBetaSharePermission
 
 Delete navigation property permission for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Remove-MgSharePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

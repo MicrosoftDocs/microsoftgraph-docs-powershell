@@ -16,6 +16,9 @@ title: Get-MgBetaDriveItemActivityByInterval
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemActivityByInterval](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemActivityByInterval?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaUserDriveListOperation
 
 Update the navigation property operations in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveItemAnalyticLastSevenDay
 
 Get lastSevenDays from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticLastSevenDay?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

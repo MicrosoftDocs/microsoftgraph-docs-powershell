@@ -15,6 +15,9 @@ title: Update-MgBetaDriveListPermission
 
 Update the navigation property permissions in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveListPermission](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

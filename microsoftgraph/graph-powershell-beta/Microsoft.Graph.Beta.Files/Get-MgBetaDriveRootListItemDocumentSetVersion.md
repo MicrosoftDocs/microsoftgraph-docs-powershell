@@ -15,6 +15,9 @@ title: Get-MgBetaDriveRootListItemDocumentSetVersion
 
 Version information for a document set version created by a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

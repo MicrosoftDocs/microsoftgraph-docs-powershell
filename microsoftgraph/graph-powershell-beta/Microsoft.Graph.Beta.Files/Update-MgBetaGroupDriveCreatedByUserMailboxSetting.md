@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveCreatedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveCreatedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

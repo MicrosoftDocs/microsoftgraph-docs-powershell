@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveRootVersionContent
 
 Delete content for the navigation property versions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

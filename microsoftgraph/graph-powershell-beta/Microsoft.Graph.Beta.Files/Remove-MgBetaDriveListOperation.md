@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveListOperation
 
 Delete navigation property operations for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveListOperation](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaDriveRootVersion
 
 Create new navigation property to versions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
