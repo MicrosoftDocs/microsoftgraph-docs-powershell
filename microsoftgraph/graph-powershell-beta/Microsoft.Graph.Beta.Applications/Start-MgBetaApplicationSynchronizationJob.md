@@ -55,16 +55,6 @@ If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
 Use the start job only when the job is currently paused or in quarantine.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -439,6 +429,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaapplicationsynchronizationjob)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta)
+
 
 
 

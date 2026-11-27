@@ -58,12 +58,17 @@ Delete a approvedClientApp object for the remoteDesktopSecurityConfiguration obj
 | Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -ApprovedClientAppId $approvedClientAppId
+
+```
+This example shows how to use the Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
+
 
 ## PARAMETERS
 
