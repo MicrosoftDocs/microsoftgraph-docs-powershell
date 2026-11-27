@@ -124,7 +124,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -250,7 +250,7 @@ HelpMessage: ''
 
 ### -DetectionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -277,7 +277,7 @@ HelpMessage: ''
 
 ### -Detections
 
-.
+
 To construct, see NOTES section for DETECTIONS properties and create a hash table.
 
 ```yaml
@@ -368,7 +368,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -423,7 +423,7 @@ HelpMessage: ''
 
 ### -IsMalicious
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -450,7 +450,7 @@ HelpMessage: ''
 
 ### -OverallConfidence
 
-.
+
 
 ```yaml
 Type: System.Double
