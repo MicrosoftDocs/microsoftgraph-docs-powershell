@@ -427,3 +427,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Update-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

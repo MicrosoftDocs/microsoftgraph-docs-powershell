@@ -672,7 +672,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTEDVERSION <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>: managementTemplateStepVersion
+ACCEPTEDVERSION `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>`: managementTemplateStepVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -797,7 +797,7 @@ Read-only.
   [Version <Int32?>]: 
   [VersionInformation <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStep>: managementTemplateStep
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -926,7 +926,7 @@ INFORMATIONLINKS <IMicrosoftGraphActionUrl[]>: .
   [DisplayName <String>]: Brief title for the page that the links directs to.
   [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
 
-MANAGEMENTTEMPLATE <IMicrosoftGraphManagedTenantsManagementTemplate>: managementTemplate
+MANAGEMENTTEMPLATE `<IMicrosoftGraphManagedTenantsManagementTemplate>`: managementTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1050,7 +1050,7 @@ Read-only.
       [SettingId <String>]: 
       [ValueType <String>]: managementParameterValueType
 
-PORTALLINK <IMicrosoftGraphActionUrl>: actionUrl
+PORTALLINK `<IMicrosoftGraphActionUrl>`: actionUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Brief title for the page that the links directs to.
   [Url <String>]: The URL to the documentation or Microsoft Entra admin center page.
@@ -1183,3 +1183,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestep)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
