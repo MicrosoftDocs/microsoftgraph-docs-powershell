@@ -77,16 +77,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to activities for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActivationUrl
@@ -1059,6 +1049,7 @@ Short text description of the user's unique activity (for example, document name
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity)
+
 
 
 
