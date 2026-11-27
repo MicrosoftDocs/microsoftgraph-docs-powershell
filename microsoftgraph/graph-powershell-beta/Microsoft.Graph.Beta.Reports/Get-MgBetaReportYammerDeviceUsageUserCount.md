@@ -15,6 +15,9 @@ title: Get-MgBetaReportYammerDeviceUsageUserCount
 
 Invoke function getYammerDeviceUsageUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

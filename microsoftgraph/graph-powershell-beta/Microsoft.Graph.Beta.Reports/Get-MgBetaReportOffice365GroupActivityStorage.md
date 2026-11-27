@@ -15,6 +15,9 @@ title: Get-MgBetaReportOffice365GroupActivityStorage
 
 Invoke function getOffice365GroupsActivityStorage
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365GroupActivityStorage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityStorage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

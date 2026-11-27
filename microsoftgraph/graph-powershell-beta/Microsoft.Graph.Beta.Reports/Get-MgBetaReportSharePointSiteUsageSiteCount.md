@@ -15,6 +15,9 @@ title: Get-MgBetaReportSharePointSiteUsageSiteCount
 
 Invoke function getSharePointSiteUsageSiteCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsageSiteCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
