@@ -15,6 +15,9 @@ title: Get-MgGroupSubSite
 
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List2 (Default)

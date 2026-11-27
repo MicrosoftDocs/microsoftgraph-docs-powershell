@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteListItemVersion
 
 Delete navigation property versions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListItemActivityByInterval
 
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

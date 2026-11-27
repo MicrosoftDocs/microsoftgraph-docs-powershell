@@ -15,6 +15,9 @@ title: Invoke-MgReauthorizeSiteListSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaReauthorizeSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

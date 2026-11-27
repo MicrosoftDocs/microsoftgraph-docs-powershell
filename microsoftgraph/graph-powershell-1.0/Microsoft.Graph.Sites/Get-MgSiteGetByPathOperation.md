@@ -15,6 +15,9 @@ title: Get-MgSiteGetByPathOperation
 
 The collection of long-running operations on the site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

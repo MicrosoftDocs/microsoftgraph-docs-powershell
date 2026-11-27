@@ -15,6 +15,9 @@ title: New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn
 
 Create new navigation property to columns for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

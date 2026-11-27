@@ -15,6 +15,9 @@ title: Get-MgGroupSiteOnenoteSectionGroupSectionPageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

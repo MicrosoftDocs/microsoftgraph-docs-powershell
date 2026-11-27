@@ -15,6 +15,9 @@ title: Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpar
 
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
