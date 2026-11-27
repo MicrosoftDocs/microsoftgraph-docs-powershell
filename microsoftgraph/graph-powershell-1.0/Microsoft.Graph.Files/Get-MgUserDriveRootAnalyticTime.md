@@ -385,7 +385,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime)
+- [Get-MgUserDriveRootAnalyticTime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime)
 
 
 

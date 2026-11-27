@@ -509,8 +509,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mggraphdrive)
-- [](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
+- [Invoke-MgGraphDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mggraphdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
 
 
 

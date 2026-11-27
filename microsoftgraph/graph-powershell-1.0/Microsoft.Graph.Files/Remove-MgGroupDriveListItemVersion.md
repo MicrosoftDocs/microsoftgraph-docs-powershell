@@ -470,7 +470,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemversion)
+- [Remove-MgGroupDriveListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemversion)
 
 
 

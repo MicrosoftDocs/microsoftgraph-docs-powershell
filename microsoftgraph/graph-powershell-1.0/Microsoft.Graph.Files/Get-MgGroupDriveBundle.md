@@ -604,7 +604,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle)
+- [Get-MgGroupDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivebundle)
 
 
 

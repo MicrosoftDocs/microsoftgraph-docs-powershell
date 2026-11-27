@@ -470,7 +470,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemlistitempermission)
+- [Remove-MgUserDriveItemListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemlistitempermission)
 
 
 

@@ -383,7 +383,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemversioncount)
+- [Get-MgDriveItemListItemVersionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemversioncount)
 
 
 

@@ -698,8 +698,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemdelta)
-- [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
+- [Get-MgGroupDriveItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
 
 
 

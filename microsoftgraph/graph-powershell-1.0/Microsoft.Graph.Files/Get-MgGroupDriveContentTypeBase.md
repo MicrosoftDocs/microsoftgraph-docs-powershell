@@ -407,7 +407,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebase)
+- [Get-MgGroupDriveContentTypeBase](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivecontenttypebase)
 
 
 
