@@ -371,8 +371,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession)
-- [](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-beta)
+- [Revoke-MgBetaUserSignInSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-beta)
 
 
 
