@@ -468,8 +468,8 @@ BODYPARAMETER `<IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestb
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetacontactproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaContactProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetacontactproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 

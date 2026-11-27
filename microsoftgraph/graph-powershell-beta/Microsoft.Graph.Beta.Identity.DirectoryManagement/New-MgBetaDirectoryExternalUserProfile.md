@@ -641,7 +641,7 @@ It's a free-format string value, for example, 'United States'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryexternaluserprofile)
+- [New-MgBetaDirectoryExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryexternaluserprofile)
 
 
 

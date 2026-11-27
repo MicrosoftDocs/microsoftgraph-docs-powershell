@@ -487,8 +487,8 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting)
-- [](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)
+- [New-MgBetaDirectorySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-beta)
 
 
 

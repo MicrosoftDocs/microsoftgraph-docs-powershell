@@ -470,8 +470,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitdelta)
-- [](https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta)
+- [Get-MgBetaAdministrativeUnitDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta)
 
 
 
