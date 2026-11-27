@@ -62,16 +62,6 @@ This cmdlet has the following aliases,
 
 Get a driveProtectionUnitsBulkAdditionJob object by the ID associated with a oneDriveForBusinessProtectionPolicy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -600,6 +590,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicydriveprotectionunitbulkadditionjob)
 - [](https://learn.microsoft.com/graph/api/driveprotectionunitsbulkadditionjobs-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs?view=graph-rest-1.0)
+
 
 
 
