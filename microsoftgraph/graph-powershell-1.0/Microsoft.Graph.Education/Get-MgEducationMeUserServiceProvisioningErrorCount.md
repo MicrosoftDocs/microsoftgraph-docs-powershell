@@ -15,6 +15,9 @@ title: Get-MgEducationMeUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUserServiceProvisioningErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

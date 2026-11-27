@@ -15,6 +15,9 @@ title: Get-MgEducationUserAssignmentSubmissionSubmittedResource
 
 Get submittedResources from education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -17,6 +17,9 @@ When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCategoryByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
