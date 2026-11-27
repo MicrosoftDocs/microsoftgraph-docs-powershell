@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Offboard a protectionUnitBase.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -394,6 +384,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetaoffboardsolutionbackuprestoreprotectionunit)
 - [](https://learn.microsoft.com/graph/api/protectionunitbase-offboard?view=graph-rest-beta)
+
 
 
 

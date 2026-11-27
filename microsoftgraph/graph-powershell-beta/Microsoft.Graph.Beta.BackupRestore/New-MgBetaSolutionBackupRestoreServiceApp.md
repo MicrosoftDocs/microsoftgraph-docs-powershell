@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Create a new serviceApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -544,6 +534,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta)
+
 
 
 
