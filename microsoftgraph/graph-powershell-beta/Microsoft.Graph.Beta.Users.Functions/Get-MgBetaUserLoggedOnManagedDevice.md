@@ -474,7 +474,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserloggedonmanageddevice)
+- [Get-MgBetaUserLoggedOnManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserloggedonmanageddevice)
 
 
 
