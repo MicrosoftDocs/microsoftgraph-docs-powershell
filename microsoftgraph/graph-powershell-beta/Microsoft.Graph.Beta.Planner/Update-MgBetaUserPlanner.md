@@ -87,8 +87,9 @@ Update the navigation property planner in users
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -111,7 +112,12 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="'
+Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="' 
+
+
+```
+This example shows how to use the Update-MgBetaUserPlanner Cmdlet.
+
 
 ## PARAMETERS
 
