@@ -82,8 +82,9 @@ This cmdlet has the following aliases,
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -112,6 +113,10 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+
 
 ## PARAMETERS
 
