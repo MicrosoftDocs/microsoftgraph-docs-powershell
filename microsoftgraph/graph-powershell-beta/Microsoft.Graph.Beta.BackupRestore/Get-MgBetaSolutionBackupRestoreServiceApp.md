@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreServiceApp
 
 Read the properties and relationships of a serviceApp object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
