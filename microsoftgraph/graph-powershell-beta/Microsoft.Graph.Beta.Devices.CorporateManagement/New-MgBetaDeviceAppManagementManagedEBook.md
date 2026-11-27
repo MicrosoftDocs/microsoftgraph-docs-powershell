@@ -680,7 +680,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphManagedEBook>: An abstract class containing the base properties for Managed eBook.
+BODYPARAMETER `<IMicrosoftGraphManagedEBook>`: An abstract class containing the base properties for Managed eBook.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -757,7 +757,7 @@ Read-only.
   [OSVersion <String>]: OS Version.
   [UserName <String>]: Device User Name.
 
-INSTALLSUMMARY <IMicrosoftGraphEBookInstallSummary>: Contains properties for the installation summary of a book for a device.
+INSTALLSUMMARY `<IMicrosoftGraphEBookInstallSummary>`: Contains properties for the installation summary of a book for a device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -768,7 +768,7 @@ Read-only.
   [NotInstalledDeviceCount <Int32?>]: Number of Devices that does not have this book installed.
   [NotInstalledUserCount <Int32?>]: Number of Users that did not install this book.
 
-LARGECOVER <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+LARGECOVER `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -796,3 +796,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebook)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
