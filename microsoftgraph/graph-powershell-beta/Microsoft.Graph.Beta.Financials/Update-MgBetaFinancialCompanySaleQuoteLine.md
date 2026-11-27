@@ -1513,7 +1513,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT <IMicrosoftGraphAccount>: account
+ACCOUNT `<IMicrosoftGraphAccount>`: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -1523,7 +1523,7 @@ ACCOUNT <IMicrosoftGraphAccount>: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphSalesQuoteLine>: salesQuoteLine
+BODYPARAMETER `<IMicrosoftGraphSalesQuoteLine>`: salesQuoteLine
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1587,7 +1587,7 @@ Read-only.
   [UnitOfMeasureId <String>]: 
   [UnitPrice <Decimal?>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1625,7 +1625,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-ITEM <IMicrosoftGraphItem>: item
+ITEM `<IMicrosoftGraphItem>`: item
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BaseUnitOfMeasureId <String>]: 
   [Blocked <Boolean?>]: 
@@ -1660,3 +1660,25 @@ ITEM <IMicrosoftGraphItem>: item
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequoteline)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
