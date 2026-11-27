@@ -15,6 +15,9 @@ title: Update-MgDirectoryObject
 
 Update entity in directoryObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
