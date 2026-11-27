@@ -57,14 +57,6 @@ To track completion, get the ediscoveryHoldPolicy and review its isEnabled and e
 | Delegated (personal Microsoft account) | Not supported |
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Security
-
-Disable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
-
 ## PARAMETERS
 
 ### -Break
@@ -518,6 +510,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/disable-mgbetasecuritycaseediscoverycaselegalholdpolicy)
 - [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-disablepolicy?view=graph-rest-beta)
+
 
 
 

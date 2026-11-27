@@ -87,12 +87,17 @@ Get an attack simulation campaign payload for a tenant.
 | Application | AttackSimulation.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityAttackSimulationPayload -Filter "source eq 'Tenant'"
+Get-MgBetaSecurityAttackSimulationPayload -Filter "source eq 'Tenant'" 
+
+```
+This example shows how to use the Get-MgBetaSecurityAttackSimulationPayload Cmdlet.
+
 
 ## PARAMETERS
 

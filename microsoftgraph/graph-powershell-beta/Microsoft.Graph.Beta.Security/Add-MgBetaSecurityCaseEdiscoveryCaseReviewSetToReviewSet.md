@@ -87,8 +87,9 @@ The location provides a URL that returns an Add to review set operation.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add search with linked files and the latest cloud attachment version
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -102,7 +103,12 @@ $params = @{
 
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add search with linked files and the latest cloud attachment version
+
+### Example 2: Add search with all data options and the latest cloud and document versions
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -116,6 +122,10 @@ $params = @{
 }
 
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
+```
+This example will add search with all data options and the latest cloud and document versions
+
 
 ## PARAMETERS
 
