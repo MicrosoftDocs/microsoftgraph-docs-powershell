@@ -15,6 +15,9 @@ title: Get-MgTenantRelationshipDelegatedAdminCustomerCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
