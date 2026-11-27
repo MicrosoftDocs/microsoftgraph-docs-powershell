@@ -711,9 +711,9 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission)
-- [](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
+- [Get-MgUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
 
 
 

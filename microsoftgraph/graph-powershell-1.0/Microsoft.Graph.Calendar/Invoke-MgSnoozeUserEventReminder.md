@@ -570,8 +570,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgsnoozeusereventreminder)
-- [](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
+- [Invoke-MgSnoozeUserEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgsnoozeusereventreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-1.0)
 
 
 

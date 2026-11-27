@@ -586,8 +586,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule)
-- [](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
+- [Get-MgGroupCalendarSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
 
 
 
