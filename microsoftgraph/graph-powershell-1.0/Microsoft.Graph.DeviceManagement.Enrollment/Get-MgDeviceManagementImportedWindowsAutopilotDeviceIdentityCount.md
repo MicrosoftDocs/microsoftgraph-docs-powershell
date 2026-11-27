@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
