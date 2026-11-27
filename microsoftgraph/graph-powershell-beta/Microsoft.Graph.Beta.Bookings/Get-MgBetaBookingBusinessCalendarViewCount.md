@@ -15,6 +15,9 @@ title: Get-MgBetaBookingBusinessCalendarViewCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCalendarViewCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

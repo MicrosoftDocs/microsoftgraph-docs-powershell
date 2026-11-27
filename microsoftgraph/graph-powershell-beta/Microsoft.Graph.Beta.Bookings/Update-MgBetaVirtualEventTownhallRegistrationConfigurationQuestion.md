@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion
 
 Update the navigation property questions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhallRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhallRegistrationConfigurationQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

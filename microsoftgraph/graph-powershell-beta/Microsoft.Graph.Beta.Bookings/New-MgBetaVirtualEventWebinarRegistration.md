@@ -16,6 +16,9 @@ title: New-MgBetaVirtualEventWebinarRegistration
 Create a registration record for a registrant of a webinar or town hall.
 This method registers the person for the webinar or town hall.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
