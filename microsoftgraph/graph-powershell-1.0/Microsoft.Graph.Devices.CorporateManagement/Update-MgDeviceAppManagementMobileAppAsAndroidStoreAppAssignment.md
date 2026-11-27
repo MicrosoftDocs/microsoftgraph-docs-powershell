@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment
 
 Update the navigation property assignments in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion
 
 Delete navigation property contentVersions for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

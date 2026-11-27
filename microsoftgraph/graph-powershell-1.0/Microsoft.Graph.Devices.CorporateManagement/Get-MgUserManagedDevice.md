@@ -15,6 +15,9 @@ title: Get-MgUserManagedDevice
 
 The managed devices associated with the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

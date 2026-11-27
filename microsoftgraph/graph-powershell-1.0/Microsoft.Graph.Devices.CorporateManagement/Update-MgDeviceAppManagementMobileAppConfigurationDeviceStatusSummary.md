@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 
 Update the navigation property deviceStatusSummary in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

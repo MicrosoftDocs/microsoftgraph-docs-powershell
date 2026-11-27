@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementManagedEBookAssignment
 
 The list of assignments for this eBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

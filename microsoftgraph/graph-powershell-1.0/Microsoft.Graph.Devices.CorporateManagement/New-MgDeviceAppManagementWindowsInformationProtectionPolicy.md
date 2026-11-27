@@ -15,6 +15,9 @@ title: New-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 Create new navigation property to windowsInformationProtectionPolicies for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

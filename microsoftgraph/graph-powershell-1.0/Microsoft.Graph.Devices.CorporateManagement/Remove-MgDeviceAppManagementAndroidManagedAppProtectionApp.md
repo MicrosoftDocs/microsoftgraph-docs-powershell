@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementAndroidManagedAppProtectionApp
 
 Delete navigation property apps for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

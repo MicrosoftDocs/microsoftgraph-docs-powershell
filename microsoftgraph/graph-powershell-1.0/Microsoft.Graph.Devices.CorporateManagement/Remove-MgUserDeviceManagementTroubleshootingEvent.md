@@ -15,6 +15,9 @@ title: Remove-MgUserDeviceManagementTroubleshootingEvent
 
 Delete navigation property deviceManagementTroubleshootingEvents for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
