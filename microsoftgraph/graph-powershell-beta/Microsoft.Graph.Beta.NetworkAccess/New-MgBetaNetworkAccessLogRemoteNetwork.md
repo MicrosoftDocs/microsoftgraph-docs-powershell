@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to remoteNetworks for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -579,6 +569,7 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesslogremotenetwork)
+
 
 
 

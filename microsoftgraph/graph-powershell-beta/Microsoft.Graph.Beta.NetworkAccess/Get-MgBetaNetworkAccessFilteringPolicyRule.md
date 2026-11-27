@@ -65,16 +65,6 @@ Represents the definition of the policy ruleset that makes up the core definitio
 | Delegated (personal Microsoft account) | Not supported |
 | Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -594,6 +584,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringpolicyrule)
+
 
 
 

@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 The locations, such as branches, that are connected to Global Secure Access services through an IPsec tunnel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -559,6 +549,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetwork)
+
 
 
 
