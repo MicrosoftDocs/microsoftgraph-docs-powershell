@@ -398,8 +398,8 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta)
+- [Remove-MgBetaSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/remove-mgbetasubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-beta)
 
 
 
