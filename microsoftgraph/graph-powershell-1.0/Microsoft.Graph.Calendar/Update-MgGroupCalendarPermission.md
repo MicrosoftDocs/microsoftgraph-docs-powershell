@@ -15,6 +15,9 @@ title: Update-MgGroupCalendarPermission
 
 Update the navigation property calendarPermissions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

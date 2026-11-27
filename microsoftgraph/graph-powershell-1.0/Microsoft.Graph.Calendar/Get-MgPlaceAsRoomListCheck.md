@@ -15,6 +15,9 @@ title: Get-MgPlaceAsRoomListCheck
 
 A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

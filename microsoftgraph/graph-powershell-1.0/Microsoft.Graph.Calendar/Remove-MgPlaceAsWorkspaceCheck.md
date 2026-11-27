@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsWorkspaceCheck
 
 Delete navigation property checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsWorkspaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsWorkspaceCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

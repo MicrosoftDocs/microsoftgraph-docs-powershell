@@ -15,6 +15,9 @@ title: Remove-MgUserCalendarPermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

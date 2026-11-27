@@ -15,6 +15,9 @@ title: Get-MgPlaceAsRoomListRoom
 
 Get rooms from places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
