@@ -822,7 +822,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
+ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -917,7 +917,7 @@ Default value is false.
   [StaffMemberIds <String[]>]: The ID of each bookingStaffMember who is scheduled in this appointment.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-BODYPARAMETER <IMicrosoftGraphBookingBusiness>: Represents a Microsoft Bookings Business.
+BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsoft Bookings Business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1145,7 +1145,7 @@ Read-only.
   [WebSiteUrl <String>]: The URL of the business web site.
 The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
 
-BOOKINGPAGESETTINGS <IMicrosoftGraphBookingPageSettings>: bookingPageSettings
+BOOKINGPAGESETTINGS `<IMicrosoftGraphBookingPageSettings>`: bookingPageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessControl <String>]: bookingPageAccessControl
   [BookingPageColorCode <String>]: Custom color for the booking page.
@@ -1283,7 +1283,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowStaffSelection <Boolean?>]: True to allow customers to choose a specific person for the booking.
   [CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow[]>]: Custom availability of the service in a given time frame.
@@ -1422,3 +1422,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
