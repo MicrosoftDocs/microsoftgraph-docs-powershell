@@ -15,6 +15,9 @@ title: Update-MgUserTodoListTaskExtension
 
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

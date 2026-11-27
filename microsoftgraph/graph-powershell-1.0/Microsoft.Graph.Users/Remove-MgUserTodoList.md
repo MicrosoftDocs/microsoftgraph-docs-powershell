@@ -15,6 +15,9 @@ title: Remove-MgUserTodoList
 
 Delete navigation property lists for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
