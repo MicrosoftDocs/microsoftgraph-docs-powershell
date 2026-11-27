@@ -499,7 +499,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource)
+- [Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource)
 
 
 

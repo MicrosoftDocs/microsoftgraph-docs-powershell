@@ -955,8 +955,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
-- [](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
+- [Update-MgSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
 
 
 

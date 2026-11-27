@@ -437,8 +437,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabelright)
-- [](https://learn.microsoft.com/graph/api/usagerightsincluded-get?view=graph-rest-1.0)
+- [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernancesensitivitylabelright)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/usagerightsincluded-get?view=graph-rest-1.0)
 
 
 

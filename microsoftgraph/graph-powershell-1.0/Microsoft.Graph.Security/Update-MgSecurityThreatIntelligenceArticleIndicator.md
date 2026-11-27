@@ -586,7 +586,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticleindicator)
+- [Update-MgSecurityThreatIntelligenceArticleIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticleindicator)
 
 
 

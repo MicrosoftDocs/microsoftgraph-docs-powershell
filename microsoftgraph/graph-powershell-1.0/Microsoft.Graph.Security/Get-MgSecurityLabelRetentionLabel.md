@@ -618,9 +618,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel)
-- [](https://learn.microsoft.com/graph/api/security-retentionlabel-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-1.0)
+- [Get-MgSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionlabel-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-1.0)
 
 
 
