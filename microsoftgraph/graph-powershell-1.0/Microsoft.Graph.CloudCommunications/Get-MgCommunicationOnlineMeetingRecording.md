@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 The recordings of an online meeting.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -710,6 +700,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingrecording)
 - [](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-1.0)
+
 
 
 
