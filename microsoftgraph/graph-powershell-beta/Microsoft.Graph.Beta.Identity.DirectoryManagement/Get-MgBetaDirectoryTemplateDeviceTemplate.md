@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a deviceTemplate object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceTemplate.Read.All, DeviceTemplate.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

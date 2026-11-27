@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Collection of backup snapshots available for the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntraBackup.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntraBackup.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

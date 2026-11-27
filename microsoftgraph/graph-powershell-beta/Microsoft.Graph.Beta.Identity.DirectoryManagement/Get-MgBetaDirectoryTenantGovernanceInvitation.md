@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties of a governanceInvitation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-Invitation.Read.All, TenantGovernance-Invitation.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-Invitation.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
