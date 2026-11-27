@@ -62,18 +62,28 @@ Unarchiving is an asynchronous operation; a channel is unarchived when the async
 | Application | ChannelSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Unarchive a channel
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
+
+```
+This example will unarchive a channel
+
+### Example 2: Unarchive a channel when the team is archived
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 2
+```
+This example will unarchive a channel when the team is archived
 
-Import-Module Microsoft.Graph.Teams
-
-Invoke-MgUnarchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 

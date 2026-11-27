@@ -84,8 +84,9 @@ For more information, see sending Teams activity notifications.
 | Application | TeamsActivity.Send.User, TeamsActivity.Send,  |
 
 ## EXAMPLES
+### Example 1: Send notification to a user for a task created
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -108,7 +109,12 @@ $params = @{
 
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will send notification to a user for a task created
+
+### Example 2: Notify a user about an event using a custom topic
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -131,6 +137,10 @@ $params = @{
 }
 
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+
+```
+This example will notify a user about an event using a custom topic
+
 
 ## PARAMETERS
 

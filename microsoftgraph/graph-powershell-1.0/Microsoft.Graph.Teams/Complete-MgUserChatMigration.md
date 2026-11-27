@@ -55,16 +55,6 @@ For more information, see Import third-party platform messages to Teams using Mi
 After a completeMigration request is made for an existing or new chat, you can start a migration session by calling chat: startMigration.
 This API supportes the following channel types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -438,6 +428,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mguserchatmigration)
 - [](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)
+
 
 
 

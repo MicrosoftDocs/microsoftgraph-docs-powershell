@@ -110,8 +110,9 @@ This cmdlet has the following aliases,
 Create new navigation property to allMembers for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -123,6 +124,10 @@ $params = @{
 }
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 
