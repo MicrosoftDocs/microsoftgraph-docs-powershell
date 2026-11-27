@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationTokenIssuancePolicyByRef
 
 List the tokenIssuancePolicy objects that are assigned to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
