@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicy)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-beta)
+- [Get-MgBetaPolicyAuthenticationMethodPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-get?view=graph-rest-beta)
 
 
 

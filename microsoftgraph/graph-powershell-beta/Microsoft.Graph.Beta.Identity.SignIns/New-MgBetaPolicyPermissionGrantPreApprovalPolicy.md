@@ -509,8 +509,8 @@ CONDITIONS <IMicrosoftGraphPreApprovalDetail[]>: A list of condition sets descri
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy)
-- [](https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta)
+- [New-MgBetaPolicyPermissionGrantPreApprovalPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpreapprovalpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/policyroot-post-permissiongrantpreapprovalpolicies?view=graph-rest-beta)
 
 
 

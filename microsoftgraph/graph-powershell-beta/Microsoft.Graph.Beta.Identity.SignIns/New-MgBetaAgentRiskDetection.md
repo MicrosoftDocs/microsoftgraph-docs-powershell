@@ -874,7 +874,7 @@ Nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection)
+- [New-MgBetaAgentRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection)
 
 
 

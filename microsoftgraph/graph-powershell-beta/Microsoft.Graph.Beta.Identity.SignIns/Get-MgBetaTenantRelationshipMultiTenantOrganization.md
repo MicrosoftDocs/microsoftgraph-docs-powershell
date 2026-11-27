@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization)
-- [](https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-beta)
+- [Get-MgBetaTenantRelationshipMultiTenantOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-beta)
 
 
 

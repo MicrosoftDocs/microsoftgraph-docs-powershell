@@ -528,8 +528,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-beta)
+- [New-MgBetaIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-beta)
 
 
 
