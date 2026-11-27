@@ -15,6 +15,9 @@ title: New-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule
 
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

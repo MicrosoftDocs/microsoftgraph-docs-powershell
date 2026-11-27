@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstan
 
 The principal that's getting a role assignment or role eligibility through the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

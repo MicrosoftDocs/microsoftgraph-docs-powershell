@@ -15,6 +15,9 @@ title: New-MgBetaRoleManagementEntitlementManagementRoleDefinition
 
 Create new navigation property to roleDefinitions for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

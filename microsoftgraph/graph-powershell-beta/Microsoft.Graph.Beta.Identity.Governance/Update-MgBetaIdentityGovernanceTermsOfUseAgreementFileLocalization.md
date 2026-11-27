@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization
 
 Update the navigation property localizations in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInsta
 References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleReque
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

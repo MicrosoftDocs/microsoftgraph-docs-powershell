@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReview
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

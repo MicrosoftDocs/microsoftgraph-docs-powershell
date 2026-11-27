@@ -17,6 +17,9 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand for the entitlement provider only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
