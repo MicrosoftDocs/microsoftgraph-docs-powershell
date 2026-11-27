@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy
 
 Update the navigation property intendedPolicies in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

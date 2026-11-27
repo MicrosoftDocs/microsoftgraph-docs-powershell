@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppConfigurationAssignmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

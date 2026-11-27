@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

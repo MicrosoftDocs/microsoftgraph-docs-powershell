@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionApp
 
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementDefaultManagedAppProtectionApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

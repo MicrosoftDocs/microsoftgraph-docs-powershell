@@ -15,6 +15,9 @@ title: Invoke-MgBetaRetireUserManagedDevice
 
 Retire a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRetireUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retire (Default)

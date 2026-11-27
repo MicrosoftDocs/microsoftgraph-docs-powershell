@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppRelationship
 
 The mobile app relationship represents the dependency or supersedence relationship between two Intune mobile LOB applications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

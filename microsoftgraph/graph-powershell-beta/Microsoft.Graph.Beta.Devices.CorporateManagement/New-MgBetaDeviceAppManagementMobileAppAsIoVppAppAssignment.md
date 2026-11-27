@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment
 
 Create new navigation property to assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsIoVppAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

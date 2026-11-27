@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersio
 
 Create new navigation property to contentVersions for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

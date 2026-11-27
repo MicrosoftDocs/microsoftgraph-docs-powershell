@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSumm
 
 Update the navigation property deploymentSummary in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

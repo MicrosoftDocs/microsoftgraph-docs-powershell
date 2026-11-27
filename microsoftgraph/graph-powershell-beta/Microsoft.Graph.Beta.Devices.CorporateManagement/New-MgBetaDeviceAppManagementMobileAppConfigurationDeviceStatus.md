@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 Create new navigation property to deviceStatuses for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

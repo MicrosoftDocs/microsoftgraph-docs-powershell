@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp
 
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

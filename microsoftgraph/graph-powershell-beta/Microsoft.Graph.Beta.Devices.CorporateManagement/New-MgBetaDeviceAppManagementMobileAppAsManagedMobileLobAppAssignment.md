@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment
 
 Create new navigation property to assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

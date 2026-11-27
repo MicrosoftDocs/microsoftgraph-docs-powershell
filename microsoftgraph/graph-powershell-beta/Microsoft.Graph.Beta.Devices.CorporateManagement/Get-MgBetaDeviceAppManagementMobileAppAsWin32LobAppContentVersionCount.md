@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

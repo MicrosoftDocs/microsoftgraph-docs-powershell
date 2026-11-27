@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedEBookCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

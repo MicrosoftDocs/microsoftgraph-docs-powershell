@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion
 
 Create new navigation property to contentVersions for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

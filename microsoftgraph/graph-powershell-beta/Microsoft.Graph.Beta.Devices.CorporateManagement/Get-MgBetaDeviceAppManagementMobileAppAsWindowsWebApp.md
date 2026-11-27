@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsWebApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsWebApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

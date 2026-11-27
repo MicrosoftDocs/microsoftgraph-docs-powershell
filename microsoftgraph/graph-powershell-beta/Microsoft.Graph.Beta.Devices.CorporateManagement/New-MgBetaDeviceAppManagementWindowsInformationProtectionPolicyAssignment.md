@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment
 
 Create new navigation property to assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

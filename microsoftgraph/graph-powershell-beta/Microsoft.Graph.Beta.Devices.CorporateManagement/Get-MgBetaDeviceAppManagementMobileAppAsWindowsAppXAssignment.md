@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment
 
 The list of group assignments for this mobile app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

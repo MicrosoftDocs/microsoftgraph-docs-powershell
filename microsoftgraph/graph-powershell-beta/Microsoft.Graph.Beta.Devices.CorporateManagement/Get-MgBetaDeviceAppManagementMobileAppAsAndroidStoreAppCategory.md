@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory
 
 The list of categories for this app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
