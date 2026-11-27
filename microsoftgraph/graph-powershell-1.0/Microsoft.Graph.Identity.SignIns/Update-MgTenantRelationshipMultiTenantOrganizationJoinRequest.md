@@ -64,8 +64,9 @@ To allow for asynchronous processing, you must wait up to 2 hours before joining
 | Application | MultiTenantOrganization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Join a multitenant organization
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -75,7 +76,12 @@ $params = @{
 
 Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will join a multitenant organization
+
+### Example 2: Reset a failed join request
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -84,6 +90,10 @@ $params = @{
 }
 
 Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest -BodyParameter $params
+
+```
+This example will reset a failed join request
+
 
 ## PARAMETERS
 

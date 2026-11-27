@@ -72,8 +72,9 @@ Update the properties of a fraudProtectionProvider object.
 The following derived types are currently supported.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -83,6 +84,10 @@ $params = @{
 }
 
 Update-MgIdentityRiskPreventionFraudProtectionProvider -FraudProtectionProviderId $fraudProtectionProviderId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgIdentityRiskPreventionFraudProtectionProvider Cmdlet.
+
 
 ## PARAMETERS
 

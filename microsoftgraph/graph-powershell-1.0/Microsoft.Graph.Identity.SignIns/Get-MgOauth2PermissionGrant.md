@@ -69,12 +69,17 @@ An oAuth2PermissionGrant represents delegated permissions which have been grante
 | Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgOauth2PermissionGrant
+
+```
+This example shows how to use the Get-MgOauth2PermissionGrant Cmdlet.
+
 
 ## PARAMETERS
 

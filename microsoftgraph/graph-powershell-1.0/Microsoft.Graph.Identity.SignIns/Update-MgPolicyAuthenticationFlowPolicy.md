@@ -60,8 +60,9 @@ The properties id, type, and description cannot be modified.
 | Application | Policy.ReadWrite.AuthenticationFlows,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
 
 ## PARAMETERS
 

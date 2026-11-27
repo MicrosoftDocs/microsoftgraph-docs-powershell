@@ -58,12 +58,17 @@ Get the user synchronization policy of a partner-specific configuration.
 | Application | Policy.Read.All, Policy.ReadWrite.CrossTenantAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
+
+```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization Cmdlet.
+
 
 ## PARAMETERS
 
