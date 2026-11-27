@@ -605,8 +605,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-transitivereports?view=graph-rest-beta)
+- [Get-MgBetaUserTransitiveReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-transitivereports?view=graph-rest-beta)
 
 
 

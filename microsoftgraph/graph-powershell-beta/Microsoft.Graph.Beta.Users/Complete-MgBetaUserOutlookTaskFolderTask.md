@@ -421,8 +421,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/complete-mgbetauseroutlooktaskfoldertask)
-- [](https://learn.microsoft.com/graph/api/outlooktask-complete?view=graph-rest-beta)
+- [Complete-MgBetaUserOutlookTaskFolderTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/complete-mgbetauseroutlooktaskfoldertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/outlooktask-complete?view=graph-rest-beta)
 
 
 
