@@ -1220,7 +1220,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourcescoperesourcerole)
+- [Update-MgIdentityGovernanceCatalogResourceScopeResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourcescoperesourcerole)
 
 
 
