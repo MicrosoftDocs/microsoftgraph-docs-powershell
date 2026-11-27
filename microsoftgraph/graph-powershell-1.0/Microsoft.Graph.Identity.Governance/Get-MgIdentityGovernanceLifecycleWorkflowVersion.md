@@ -69,18 +69,28 @@ Read the properties and relationships of a workflowVersion object.
 | Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a workflow version
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
 
-### EXAMPLE 2
+```
+This example will get a workflow version
+
+### Example 2: Get specific properties of a version of a workflow
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks"
+Get-MgIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks" 
+
+```
+This example will get specific properties of a version of a workflow
+
 
 ## PARAMETERS
 

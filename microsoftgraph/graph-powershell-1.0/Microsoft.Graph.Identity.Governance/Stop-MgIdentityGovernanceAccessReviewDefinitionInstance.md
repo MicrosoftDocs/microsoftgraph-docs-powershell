@@ -63,12 +63,17 @@ To prevent a recurring access review from starting future instances, update the 
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Stop-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+
+```
+This example shows how to use the Stop-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
 
 ## PARAMETERS
 

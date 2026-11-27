@@ -60,12 +60,17 @@ Get the instances of active role assignments for the calling principal.
 | Application | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser -On $onId
+Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

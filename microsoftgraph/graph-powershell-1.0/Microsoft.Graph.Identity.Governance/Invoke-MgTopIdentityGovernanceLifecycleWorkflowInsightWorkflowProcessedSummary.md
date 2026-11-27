@@ -54,12 +54,17 @@ Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
+
+```
+This example shows how to use the Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 

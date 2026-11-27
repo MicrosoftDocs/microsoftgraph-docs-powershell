@@ -68,8 +68,9 @@ The request includes a reference to the accessPackage that contains this policy,
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a direct assignment policy
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -108,7 +109,12 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a direct assignment policy
+
+### Example 2: Create a policy for users from other organizations to request
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -228,7 +234,12 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a policy for users from other organizations to request
+
+### Example 3: Create a policy that automatically creates assignments based on a membership rule
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -255,7 +266,12 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create a policy that automatically creates assignments based on a membership rule
+
+### Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -353,7 +369,12 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
+
+### Example 5: Create a policy and specify the stages to trigger predefined access package custom extensions
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -401,7 +422,12 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create a policy and specify the stages to trigger predefined access package custom extensions
+
+### Example 6: Create a policy used to determine approvers dynamically from a Logic App
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -456,6 +482,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
+
+```
+This example will create a policy used to determine approvers dynamically from a logic app
+
 
 ## PARAMETERS
 
