@@ -400,8 +400,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector)
-- [](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-validate?view=graph-rest-beta)
+- [Test-MgBetaExternalIndustryDataConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/test-mgbetaexternalindustrydataconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-validate?view=graph-rest-beta)
 
 
 
