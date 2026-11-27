@@ -16,6 +16,9 @@ title: Get-MgBetaUserMailFolderChildFolderMessageExtension
 The collection of open extensions defined for the message.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
