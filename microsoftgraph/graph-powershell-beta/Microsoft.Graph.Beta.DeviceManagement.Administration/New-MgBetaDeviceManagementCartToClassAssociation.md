@@ -527,7 +527,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation)
+- [New-MgBetaDeviceManagementCartToClassAssociation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcarttoclassassociation)
 
 
 

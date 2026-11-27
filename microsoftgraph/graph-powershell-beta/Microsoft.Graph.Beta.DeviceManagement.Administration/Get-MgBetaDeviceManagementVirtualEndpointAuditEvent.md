@@ -602,9 +602,9 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent)
-- [](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-beta)
+- [Get-MgBetaDeviceManagementVirtualEndpointAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointauditevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-beta)
 
 
 

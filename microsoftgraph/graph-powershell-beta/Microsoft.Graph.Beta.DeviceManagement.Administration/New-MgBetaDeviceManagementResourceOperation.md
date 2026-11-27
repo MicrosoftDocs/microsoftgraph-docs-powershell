@@ -444,7 +444,7 @@ The description is used in mouse-over text for the operation when shown in the A
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementresourceoperation)
+- [New-MgBetaDeviceManagementResourceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementresourceoperation)
 
 
 
