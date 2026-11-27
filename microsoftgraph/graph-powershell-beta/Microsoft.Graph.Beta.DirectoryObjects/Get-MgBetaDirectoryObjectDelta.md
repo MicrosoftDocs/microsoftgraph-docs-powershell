@@ -506,8 +506,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta)
-- [](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
+- [Get-MgBetaDirectoryObjectDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
 
 
 
