@@ -62,6 +62,14 @@ This cmdlet has the following aliases,
 
 Invoke action permanentDelete
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
