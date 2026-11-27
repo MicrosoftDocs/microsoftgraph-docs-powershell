@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementRemoteAssistancePartner
 
 The remote assist partners.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

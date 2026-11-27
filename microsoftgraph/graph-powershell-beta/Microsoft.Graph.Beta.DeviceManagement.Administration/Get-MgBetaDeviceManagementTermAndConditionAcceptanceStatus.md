@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus
 
 The list of acceptance statuses for this T&C policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

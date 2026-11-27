@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus
 
 Create new navigation property to acceptanceStatuses for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
